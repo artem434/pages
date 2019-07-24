@@ -13,12 +13,12 @@
                         height: '300px',
                         overflow: 'hidden',
                     }">
-                            <router-link v-for="slide,index in slides" :to="slide.link" :key="index">
+                            <smart-link v-for="slide,index in slides" :to="slide.link" :key="index" :target="slide.target">
                                 <picture>
                                     <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
                                     <img :src="slide.cover" alt="" >
                                 </picture>
-                            </router-link>
+                            </smart-link>
                         </div>
                     </template>
                 </slider>
@@ -45,18 +45,18 @@
                     <template v-slot:slide="{slide}">
                         <div class="col-sm-6 col-md-4 col-lg-3 section__product">
                             <div class="product">
-                                <router-link :to="slide.link" class="product__link" target="_blank">
+                                <smart-link :to="slide.link" class="product__link" :target="slide.target">
                                     <picture class="product__image">
                                         <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
                                         <img :src="slide.cover"  alt=""  width="230" height="320">
                                     </picture>
-                                </router-link>
+                                </smart-link>
                                 <div class="product__info">
                                     <h3 class="product__title">{{slide.options.caption}}</h3>
                                     <span class="product__price">ціна від {{slide.options.min}} грн/міс</span>
                                 </div>
                                 <p class="product__btn">
-                                    <router-link :to="slide.link" class="btn page-btn page-btn--chevron-right"><span>Детальніше</span></router-link>
+                                    <smart-link :to="slide.link" class="btn page-btn page-btn--chevron-right" :target="slide.target"><span>Детальніше</span></smart-link>
                                 </p>
                             </div>
                         </div>

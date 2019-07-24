@@ -2,7 +2,7 @@ const mix = require('laravel-mix')
 const id = 13
 const alias = 'index'
 const files = [
-    'images/poster.jpg'
+    'static.php'
 ];
 mix.webpackConfig({
 })
@@ -17,6 +17,6 @@ mix.webpackConfig({
     .copy(`images/*`, `../../${id}_${alias}/images`)
     .version()
 
-//files.forEach(file=>mix.copy(file,`../../${id}_${alias}/${file}`))
+files.forEach(file=>mix.copy(file,`../../${id}_${alias}/${file}`))
 
 

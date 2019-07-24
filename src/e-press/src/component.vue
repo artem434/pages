@@ -2,114 +2,51 @@
     <div id="epress-index">
         <div class="section">
             <div class="container section__container">
+                <slider class="row justify-content-center" name="epressa_main">
+                    <template v-slot="{slides, current, prev, next, to}">
+                        <div class="prev" @click="prev">prev</div>
+                        <div class="next" @click="next">next</div>
+                        <div :style="{
+                        height: '300px',
+                        overflow: 'hidden',
+                    }">
+                            <router-link v-for="slide,index in slides" :to="slide.link" :key="index">
+                                <picture>
+                                    <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
+                                    <img :src="slide.cover" alt="">
+                                </picture>
+                            </router-link>
+                        </div>
+                    </template>
+                </slider>
                 <h2 class="section__title section-title"><span>Видання</span></h2>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Дебет-Кредит»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
+
+                <slider class="row justify-content-center" name="epressa_subs">
+                    <template v-slot:slide="{slide}">
+                        <div class="col-sm-6 col-md-4 col-lg-3 section__product">
+                            <div class="product">
+                                <picture class="product__image">
+                                    <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
+                                    <img :src="slide.cover"  class="" alt=""  width="230" height="320">
+                                </picture>
+                                <div class="product__info">
+                                    <h3 class="product__title">{{slide.options.caption}}</h3>
+                                    <span class="product__price">ціна від {{slide.options.min}} грн/міс</span>
+                                </div>
+                                <p class="product__btn">
+                                    <router-link :to="slide.link" class="btn page-btn"><span>Детальніше <svg aria-hidden="true"
+                                                                                          focusable="false"
+                                                                                          class="chevron-right"
+                                                                                          role="img"
+                                                                                          xmlns="http://www.w3.org/2000/svg"
+                                                                                          viewBox="0 0 320 512"><path
+                                            fill="currentColor"
+                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></router-link>
+                                </p>
                             </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Інтерактивна бухгалтерія»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Дебет-Кредит»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Дебет-Кредит»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Інтерактивна бухгалтерія»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Дебет-Кредит»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 section__product">
-                        <div class="product">
-                            <picture class="product__image">
-                                <source :srcset="mix('images/poster.png')" type="image/webp">
-                                <img :src="mix('images/poster.png')" width="230" height="320" class="" alt="">
-                            </picture>
-                            <div class="product__info">
-                                <h3 class="product__title">Бухгалтерський сервіс «Дебет-Кредит»</h3>
-                                <span class="product__price">ціна від 595 грн/міс</span>
-                            </div>
-                            <p class="product__btn">
-                                <a href="" class="btn page-btn"><span>Детальніше <svg aria-hidden="true" focusable="false" class="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    </template>
+                </slider>
             </div>
         </div>
     </div>
@@ -119,16 +56,16 @@
 import Page from '../../core/Page'
 
 export default {
-    mixins: [Page]
+    mixins: [Page],
 }
 </script>
 
 
 <style lang="scss">
-    @import "../node_modules/bootstrap-scss/functions";
-    @import "../node_modules/bootstrap-scss/variables";
-    @import "../node_modules/bootstrap-scss/mixins";
-    @import "../node_modules/bootstrap-scss/buttons";
+    @import "../../node_modules/bootstrap-scss/functions";
+    @import "../../node_modules/bootstrap-scss/variables";
+    @import "../../node_modules/bootstrap-scss/mixins";
+    @import "../../node_modules/bootstrap-scss/buttons";
 
     #epress-index {
         .section-title {

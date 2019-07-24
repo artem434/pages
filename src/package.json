@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/preset-env": "^7.5.5",
+        "@types/lodash": "^4.14.122",
+        "cross-env": "^5.1",
+        "laravel-mix": "^4.0.7",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "vue-masonry-css": "^1.0.3",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "axios": "^0.18",
+        "bootstrap-scss": "^4.3.1",
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.7",
+        "vuex": "^3.1.1"
+    }
+}

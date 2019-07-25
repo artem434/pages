@@ -1,6 +1,8 @@
 @import "../../node_modules/bootstrap-scss/functions";
 @import "../../node_modules/bootstrap-scss/variables";
 @import "../../node_modules/bootstrap-scss/mixins";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
 #epress-index {
   .main-slider {
@@ -31,6 +33,12 @@
       display: inline-block;
       padding-right: 20px;
       background: #fff;
+
+      @include media-breakpoint-up(md) {
+        > br {
+          display: none;
+        }
+      }
     }
 
     &:after {
@@ -57,6 +65,16 @@
       }
     }
 
+    &__container-carousel {
+      padding: 15px 0;
+
+
+      @include media-breakpoint-up(xl) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+
     &__title {
       margin-bottom: 15px;
 
@@ -66,10 +84,12 @@
     }
 
     &__product,
-    &__advantages {
+    &__advantages,
+    &__award {
       display: flex;
       justify-content: center;
       margin-bottom: 40px;
+
     }
 
     &__advantages {
@@ -98,7 +118,7 @@
     max-width: 230px;
     display: flex;
     flex-direction: column;
-
+    margin: 15px ;
     &__info {
       flex: 1 0 auto;
     }
@@ -182,5 +202,9 @@
     &__icon {
       margin-bottom: 20px;
     }
+  }
+
+  .award {
+    max-width: 230px;
   }
 }

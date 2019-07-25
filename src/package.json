@@ -16,8 +16,11 @@
     "dependencies": {
         "axios": "^0.18",
         "bootstrap-scss": "^4.3.1",
+        "jquery": "^3.4.1",
         "vue": "^2.6.10",
+        "vue-carousel": "^0.18.0",
         "vue-router": "^3.0.7",
+        "vue-slick": "^1.1.15",
         "vuex": "^3.1.1"
     }
 }

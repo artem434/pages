@@ -1,27 +1,8 @@
 <template>
     <div id="epress-index">
-        <div class="section main-slider">
-            <div class="container section__container">
-                <slider class="row justify-content-center" name="epressa_main">
-                    <template v-slot:placeholder>
-                        <svg class="placeholder-img" width="100%" height="300px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Responsive image"><title>Placeholder</title><rect width="100%" height="100%" fill="#e4e4e4"></rect></svg>
-                    </template>
-                    <template v-slot="{slides, current, prev, next, to}">
-                        <!--<div class="prev" @click="prev">prev</div>-->
-                        <!--<div class="next" @click="next">next</div>-->
-                        <div :style="{
-                        height: '300px',
-                        overflow: 'hidden',
-                    }">
-                            <smart-link v-for="slide,index in slides" :to="slide.link" :key="index" :target="slide.target">
-                                <picture>
-                                    <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
-                                    <img :src="slide.cover" alt="" >
-                                </picture>
-                            </smart-link>
-                        </div>
-                    </template>
-                </slider>
+        <div class="section">
+            <div class="container  section__container-carousel">
+                <carousel-main></carousel-main>
             </div>
         </div>
         <div class="section">
@@ -62,14 +43,7 @@
                         </div>
                     </template>
                 </slider>
-                <!--<slider name="epressa_win">-->
-                <!--<template v-slot:slide="{slide,index}">-->
-                    <!--<picture class="product__image" @click="winOpen=true">-->
-                        <!--<source v-if="slide.webp" :srcset="slide.webp" type="image/webp">-->
-                        <!--<img :src="slide.cover"  class="" alt=""  width="230" height="320">-->
-                    <!--</picture>-->
-                <!--</template>-->
-                <!--</slider>-->
+
                 <!--<slider v-if="winOpen" name="epressa_win">-->
                     <!--<template v-slot:slide="{slide}" @click="winOpen=false">-->
                         <!--<picture class="product__image">-->
@@ -123,16 +97,37 @@
                 </div>
             </div>
         </section>
+        <section class="section">
+            <div class="container section__container">
+                <h2 class="section__title section-title"><span>Наші дипломи <br> та нагороди</span></h2>
+                <slider class="row justify-content-center" name="epressa_win">
+                    <template v-slot:slide="{slide,index}">
+                        <div class="col-sm-6 col-md-6 col-lg-3 section__award">
+                            <div class="award">
+                                <picture class="award__image" @click="winOpen=false">
+                                    <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
+                                    <img :src="slide.cover"  alt=""  width="230" height="320">
+                                </picture>
+                                <p class="award__text">{{slide.options.caption}}</p>
+                            </div>
+                        </div>
+                    </template>
+                </slider>
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
 import Page from '../../core/Page'
+import CarouselMain from "./CarouselMain"
+
 
 export default {
+    components: {CarouselMain},
     mixins: [Page],
     data:()=>({
         winOpen: false
-    })
+    }),
 }
 </script>

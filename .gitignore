@@ -1,5 +1,8 @@
-*
 !.gitignore
-!src/*
+!/src/*
 src/node_modules
 src/yarn.lock
+node_modules
+[0-9]*
+yarn.lock
+package-lock.json

@@ -54,25 +54,9 @@ export default {
                 slidesToScroll: 1,
                 dots: true,
                 infinite: true,
-                speed: 300,
+                speed: 800,
                 autoplay: ! this.$prerendered,
                 autoplaySpeed: 3000,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            dots: false
-                        }
-                    }
-                ]
             },
         }
     },
@@ -123,29 +107,6 @@ export default {
             @include media-breakpoint-up(lg) {
                 overflow: visible;
             }
-        }
-
-        .slick-prev,
-        .slick-next {
-            z-index: 1;
-            width: 40px;
-            height: 40px;
-
-            &:before {
-                font-size: 40px;
-            }
-        }
-
-        .slick-prev {
-            left: 25px;
-        }
-
-        .slick-next {
-            right: 25px;
-        }
-
-        .slick-dots {
-            bottom: 20px;
         }
 
         .carousel-main {

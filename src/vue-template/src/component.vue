@@ -10,7 +10,7 @@
 import Page from '../../core/Page'
 
 export default {
-    mix||\ins: [Page],
+    mixins: [Page],
 }
 </script>
 

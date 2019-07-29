@@ -29,7 +29,7 @@
                                 <smart-link :to="slide.link" class="product__link" :target="slide.target">
                                     <picture class="product__image">
                                         <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
-                                        <img :src="slide.cover"  alt=""  width="" height="" class="img-fluid">
+                                        <img :src="slide.cover" alt="" class="img-fluid">
                                     </picture>
                                 </smart-link>
                                 <div class="product__info">
@@ -100,19 +100,7 @@
         <section class="section">
             <div class="container section__container">
                 <h2 class="section__title section-title"><span>Наші дипломи <br> та нагороди</span></h2>
-                <slider class="row justify-content-center" name="epressa_win">
-                    <template v-slot:slide="{slide,index}">
-                        <div class="col-sm-6 col-md-6 col-lg-3 section__award">
-                            <div class="award">
-                                <picture class="award__image" @click="winOpen=false">
-                                    <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
-                                    <img :src="slide.cover"  alt=""  width="230" height="320">
-                                </picture>
-                                <p class="award__text">{{slide.options.caption}}</p>
-                            </div>
-                        </div>
-                    </template>
-                </slider>
+                <awards-slider></awards-slider>
             </div>
         </section>
     </div>
@@ -121,10 +109,11 @@
 <script>
 import Page from '../../core/Page'
 import CarouselMain from "./CarouselMain"
+import AwardsSlider from "./AwardsSlider"
 
 
 export default {
-    components: {CarouselMain},
+    components: {AwardsSlider, CarouselMain},
     mixins: [Page],
     data:()=>({
         winOpen: false

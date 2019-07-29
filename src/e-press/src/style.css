@@ -35,7 +35,7 @@
 .slick-arrow.slick-hidden { display: none; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; z-index: 1; display: none !important; height: 40px; width: 40px; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; top: 50%; transform: translate(0, -50%) rotate(45deg); padding: 0; border: 2px solid #fff; border-radius: 2px; outline: none; }
+.slick-prev, .slick-next { position: absolute; z-index: 1; height: 40px; width: 40px; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; top: 50%; transform: translate(0, -50%) rotate(45deg); padding: 0; border: 2px solid #fff; border-radius: 2px; outline: none; }
 
 @media (min-width: 768px) { .slick-prev, .slick-next { display: block !important; } }
 
@@ -133,3 +133,5 @@
 #epress-index .advantages__icon { margin-bottom: 20px; }
 
 #epress-index .award { max-width: 230px; }
+
+#epress-index .award__text { margin-bottom: 0; }

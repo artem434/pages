@@ -102,6 +102,11 @@ export default {
             }
         }
 
+        .slick-prev,
+        .slick-next {
+            display: none!important;
+        }
+
         .slick-list {
 
             @include media-breakpoint-up(lg) {

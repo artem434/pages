@@ -213,5 +213,9 @@
 
   .award {
     max-width: 230px;
+
+    &__text {
+      margin-bottom: 0;
+    }
   }
 }

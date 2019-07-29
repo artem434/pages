@@ -83,13 +83,16 @@
       }
     }
 
+    &__product {
+      width: 50%;
+    }
+
     &__product,
     &__advantages,
     &__award {
       display: flex;
       justify-content: center;
       margin-bottom: 40px;
-
     }
 
     &__advantages {
@@ -118,7 +121,7 @@
     max-width: 230px;
     display: flex;
     flex-direction: column;
-    margin: 15px ;
+
     &__info {
       flex: 1 0 auto;
     }
@@ -138,28 +141,32 @@
 
     &__image {
       display: block;
-
-      img {
-        width: 230px;
-        height: 320px;
-      }
     }
 
     &__title {
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 1rem;
       font-weight: bold;
       color: #007094;
+
+      @media (min-width: 375px) {
+        font-size: 20px;
+      }
     }
 
     &__price {
       display: inline-block;
       margin-bottom: 15px;
       padding: 0 5px;
+      font-size: 14px;
       border-radius: 0.25rem;
       background: #d2f3ff;
       line-height: 24px;
       color: #007094;
+
+      @media (min-width: 375px) {
+        font-size: 1rem;
+      }
     }
 
     &__btn {

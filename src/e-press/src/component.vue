@@ -29,7 +29,7 @@
                                 <smart-link :to="slide.link" class="product__link" :target="slide.target">
                                     <picture class="product__image">
                                         <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
-                                        <img :src="slide.cover"  alt=""  width="230" height="320">
+                                        <img :src="slide.cover"  alt=""  width="" height="" class="img-fluid">
                                     </picture>
                                 </smart-link>
                                 <div class="product__info">

@@ -110,13 +110,13 @@
 
 #epress-index .product__image { display: block; }
 
-#epress-index .product__title { margin-bottom: 10px; font-size: 1rem; font-weight: bold; color: #007094; }
+#epress-index .product__title { margin-bottom: 10px; font-size: 12px; font-weight: bold; color: #007094; }
 
-@media (min-width: 375px) { #epress-index .product__title { font-size: 20px; } }
+@media (min-width: 768px) { #epress-index .product__title { font-size: 20px; } }
 
 #epress-index .product__price { display: inline-block; margin-bottom: 15px; padding: 0 5px; font-size: 14px; border-radius: 0.25rem; background: #d2f3ff; line-height: 24px; color: #007094; }
 
-@media (min-width: 375px) { #epress-index .product__price { font-size: 1rem; } }
+@media (min-width: 768px) { #epress-index .product__price { font-size: 1rem; } }
 
 #epress-index .product__btn { margin-top: auto; margin-bottom: 0; }
 

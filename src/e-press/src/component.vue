@@ -111,7 +111,6 @@ import Page from '../../core/Page'
 import CarouselMain from "./CarouselMain"
 import AwardsSlider from "./AwardsSlider"
 
-
 export default {
     components: {AwardsSlider, CarouselMain},
     mixins: [Page],

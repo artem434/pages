@@ -1,0 +1,37 @@
+@import "../../node_modules/bootstrap-scss/functions";
+@import "../../node_modules/bootstrap-scss/variables";
+@import "../../node_modules/bootstrap-scss/mixins";
+
+#page-order-liqpay-wrapper {
+  position: fixed;
+  top: 46px;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @include media-breakpoint-down(sm) {
+    background: white;
+    overflow: auto;
+    #page-order-liqpay {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    background: rgba(0, 0, 0, .5);
+
+    #page-order-liqpay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 385px;
+      border-radius: 6px;
+      transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+  }
+}

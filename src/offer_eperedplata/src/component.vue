@@ -1,5 +1,5 @@
 <template>
-    <div id="page-offer-epressa">
+    <div id="page-offer-eperedplata">
         <div class="page-oferta">
             <div class="container page-oferta__container">
                 <h2>Договір - оферта <span>Україна, м. Київ  01.07.2019 р.</span></h2>
@@ -7,7 +7,7 @@
                     <li class="oferta-list__title"><strong>Загальні положення</strong>
                         <ol class="oferta-sublist">
                             <li class="oferta-sublist__item">Дійсний Договір є Публічною офертою <strong>Товариства з
-                                обмеженою відповідальністю «Е-Преса»</strong> (надалі по тексту цієї оферти -
+                                обмеженою відповідальністю «Е-Передплата»</strong> (надалі по тексту цієї оферти -
                                 Постачальник) з оплати послуг на сайті
                                 <router-link to="/">https://e-pressa.com</router-link>
                                 через платіжні сервіси для здійснення одноразових та/або регулярних платежів у мережі
@@ -302,7 +302,7 @@ export default {
 
 
 <style lang="scss">
-    #page-offer-epressa {
+    #page-offer-eperedplata {
 
         .page-oferta {
 

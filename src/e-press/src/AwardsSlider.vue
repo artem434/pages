@@ -4,13 +4,13 @@
             <slick ref="slick"
                    :options="slickOptions">
                 <div class="award" v-for="slide,index in slides" :key="index">
-                    <smart-link :to="slide.link" :key="index" :target="slide.target">
+
                         <picture>
                             <source v-if="slide.webp" :srcset="slide.webp" type="image/webp">
                             <img :src="slide.cover" alt="" class="img-fluid">
                         </picture>
                         <p class="award__text">{{slide.options.caption}}</p>
-                    </smart-link>
+
                 </div>
             </slick>
         </template>
@@ -76,23 +76,30 @@ export default {
             text-align: center;
         }
 
-        .slick-prev {
-            left: 0;
-            border-left-color: #61d0f3;
-            border-bottom-color: #61d0f3;
+        .slick-prev,
+        .slick-next {
+            &:before,
+            &:after {
+                background: #61d0f3;
+            }
 
+            &:hover, &:focus {
+
+                &:before, &:after {
+                    background: darken(#61d0f3, 10%) ;
+                }
+            }
+        }
+
+        .slick-prev {
             @include media-breakpoint-up(md) {
-                left: -35px;
+                left: -55px;
             }
         }
 
         .slick-next {
-            right: 0;
-            border-right-color: #61d0f3;
-            border-top-color: #61d0f3;
-
             @include media-breakpoint-up(md) {
-                right: -35px;
+                right: -55px;
             }
         }
     }

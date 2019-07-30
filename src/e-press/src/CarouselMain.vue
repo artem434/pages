@@ -68,49 +68,34 @@ export default {
         @import "../../node_modules/bootstrap-scss/variables";
         @import "../../node_modules/bootstrap-scss/mixins";
 
-        .slick-dotted.slick-slider {
-            margin-bottom: 0;
-        }
-
-        .slick-dots li {
-            width: auto;
-            height: auto;
-
-            &:hover {
-                button {
-                    border-color: #fff;
-                }
-            }
-
-            &.slick-active {
-                button {
-                    background: #fff;
-                    border-color: #fff;
-                }
-            }
-
-            button {
-                width: 10px;
-                height: 10px;
-                background: rgba(255, 255, 255, .25);
-                border-radius: 50%;
-                border: 1px solid transparent;
-
-                &:before {
-                    display: none;
-                }
-            }
-        }
-
-        .slick-prev,
-        .slick-next {
-            display: none!important;
-        }
-
         .slick-list {
 
             @include media-breakpoint-up(lg) {
                 overflow: visible;
+            }
+        }
+
+        .slick-prev {
+            left: 20px;
+        }
+
+        .slick-next {
+            right: 20px;
+        }
+
+        .slick-arrow {
+            display: none!important;
+
+            @include media-breakpoint-up(md) {
+                display: block!important;
+            }
+        }
+
+        .slick-dots {
+            display: none!important;
+
+            @include media-breakpoint-up(md) {
+              display: block!important;
             }
         }
 

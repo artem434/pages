@@ -32,10 +32,10 @@
         }
         }" replace>12
         </router-link>
-        <div v-if="loading">
-            Loading
-        </div>
         <div v-if="processing">
+            Processing
+        </div>
+        <div v-if="loading">
             Loading
         </div>
         <div v-else>
@@ -185,7 +185,6 @@ export default {
                 options: this.options,
                 customer: this.customer,
             }).then(({ data: result }) => {
-                    this.processing = false
                     switch (result.action) {
                         case 'AWAIT':
                             this.done = true
@@ -240,7 +239,9 @@ export default {
                         alert('Виникла помилка, спробуйте пізніше.')
                     }
                 },
-            )
+            ).finally(() => {
+                this.processing = false
+            })
         },
     },
 }

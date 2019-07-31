@@ -1,0 +1,80 @@
+@import "../../node_modules/bootstrap-scss/functions";
+@import "../../node_modules/bootstrap-scss/variables";
+@import "../../node_modules/bootstrap-scss/mixins";
+
+& {
+  font-size: 18px;
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: li;
+  }
+
+  .container > ol {
+    padding-left: 20px;
+
+    li {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        counter-increment: li;
+        content: counters(li, ".") ".   ";
+        padding-right: 0.55ex;
+        transform: translate(-100%, 0);
+      }
+    }
+
+    > li {
+      padding: 2px 0 10px 0;
+      margin-bottom: 15px;
+      font-size: 18px;
+
+      &:before {
+        font-weight: bold;
+      }
+    }
+
+    ol {
+      padding-left: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      ol {
+        padding-left: 0;
+      }
+      li {
+        &:before {
+          position: initial;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

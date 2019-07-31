@@ -1,0 +1,40 @@
+.landing-section {
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__action {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #007094;
+    font-weight: bold;
+  }
+
+  @include media-breakpoint-down(md) {
+    .container {
+      padding-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .container {
+      padding-top: 10px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__action {
+      margin-top: -20px;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

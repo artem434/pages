@@ -1,9 +1,7 @@
 const mix = require('laravel-mix')
 const id = 23
 const alias = 'dtkt'
-const files = [
-    // 'images/2.jpg'
-];
+
 mix.webpackConfig({
 })
     .setResourceRoot('../')
@@ -14,8 +12,8 @@ mix.webpackConfig({
     .sass('src/style.scss', 'vue/style.css')
     .js('src/vue.js', 'vue/component.js')
     .copy('index.twig', `../../${id}_${alias}/index.twig`)
+    .copy(`src/images/*`, `../../${id}_${alias}/images`)
     .version()
 
-files.forEach(file=>mix.copy(file,`../../${id}_${alias}/${file}`))
 
 

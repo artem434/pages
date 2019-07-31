@@ -1,0 +1,83 @@
+#page-dtkt .landing-section .container { padding-top: 40px; padding-bottom: 40px; }
+
+#page-dtkt .landing-section__title { margin-bottom: 30px; }
+
+#page-dtkt .landing-section__action { margin-bottom: 30px; font-size: 20px; color: #007094; font-weight: bold; }
+
+@media (max-width: 991.98px) { #page-dtkt .landing-section .container { padding-top: 20px; } }
+
+@media (max-width: 767.98px) { #page-dtkt .landing-section .container { padding-top: 10px; }
+  #page-dtkt .landing-section__title { margin-bottom: 20px; }
+  #page-dtkt .landing-section__action { margin-top: -20px; font-size: 16px; text-align: center; } }
+
+#page-dtkt .landing-title { position: relative; font-size: 35px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.88px; color: #0b3a4a; }
+
+#page-dtkt .landing-title:after { content: ''; position: absolute; z-index: 1; bottom: 7px; left: 0; right: 0; width: 100%; height: 1px; background: #0b3a4a; }
+
+#page-dtkt .landing-title span { position: relative; z-index: 2; display: inline-block; padding-right: 20px; background: #fff; }
+
+@media (max-width: 767.98px) { #page-dtkt .landing-title { text-align: center; letter-spacing: 0.6px; }
+  #page-dtkt .landing-title:after { display: none; }
+  #page-dtkt .landing-title span { padding-right: 0; } }
+
+#page-dtkt .btn { font-size: 14px; font-weight: bold; color: #ffffff; background: #ff1053; min-width: 80%; padding: 0.23rem 0.75rem; }
+
+@media (min-width: 768px) { #page-dtkt .btn { font-size: 18px; min-width: 190px; } }
+
+#page-dtkt .btn:hover, #page-dtkt .btn:focus, #page-dtkt .btn:active { color: #ffffff; background: #bc0035; }
+
+#page-dtkt .btn span { position: relative; }
+
+#page-dtkt .about { color: #007094; }
+
+#page-dtkt .about p:last-child { margin-bottom: 0; }
+
+#page-dtkt .order__package { display: flex; justify-content: center; margin-bottom: 40px; }
+
+#page-dtkt .package { display: flex; flex-direction: column; box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.1); border-radius: 5px; }
+
+#page-dtkt .package__header { padding: 35px 0; font-size: 20px; text-align: center; color: #ffffff; background: #0b3a4a; }
+
+#page-dtkt .package__title { margin-bottom: 15px; font-size: 20px; font-weight: bold; }
+
+#page-dtkt .package__period { margin-bottom: 30px; color: #61d0f3; }
+
+#page-dtkt .package__price { margin-bottom: 5px; font-size: 40px; line-height: 35px; font-weight: bold; }
+
+#page-dtkt .package__price-half { margin-bottom: 0; color: #61d0f3; }
+
+#page-dtkt .package__body { flex: 1 0 auto; padding: 30px 20px; font-size: 14px; color: #007094; }
+
+#page-dtkt .package__presents { margin-bottom: 30px; }
+
+#page-dtkt .package__presents-title { margin-bottom: 20px; font-size: 20px; font-weight: bold; text-align: center; }
+
+#page-dtkt .package__presents-list { margin: 0; padding: 0; list-style: none; }
+
+#page-dtkt .package__presents-list li { position: relative; margin-bottom: 10px; padding-left: 30px; }
+
+#page-dtkt .package__presents-list li:before { content: ''; position: absolute; top: 0; left: 0; width: 20px; height: 20px; background: #61d0f3; border-radius: 50%; }
+
+#page-dtkt .package__presents-list li:last-child { margin-bottom: 0; }
+
+#page-dtkt .package__presents-list li a { color: #007094; text-decoration: underline; }
+
+#page-dtkt .package__presents-list li a:hover, #page-dtkt .package__presents-list li a:active { color: #007094; text-decoration: none; }
+
+#page-dtkt .package__btn { margin-bottom: 0; text-align: center; }
+
+#page-dtkt .package__abilities { padding-top: 30px; }
+
+#page-dtkt .package__abilities-title { margin-bottom: 20px; font-size: 20px; font-weight: bold; text-align: center; }
+
+#page-dtkt .package__abilities-list { margin: 0; padding-left: 20px; list-style: none; }
+
+#page-dtkt .package__abilities-list li { position: relative; margin-bottom: 10px; padding-left: 10px; }
+
+#page-dtkt .package__abilities-list li:last-child { margin-bottom: 0; }
+
+#page-dtkt .package__abilities-list li:before { content: "\2022"; position: absolute; top: 0; left: 0; color: red; font-weight: bold; }
+
+#page-dtkt .package__footer { text-align: center; padding-bottom: 45px; }
+
+@media (max-width: 991.98px) { #page-dtkt .package__title { margin-bottom: 15px; font-size: 20px; font-weight: bold; } }

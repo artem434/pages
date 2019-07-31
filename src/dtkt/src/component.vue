@@ -27,214 +27,119 @@
                     </div>
                 </div>
             </section>
-            <section class="landing-section">
+            <section id="order"  class="landing-section">
                 <div class="container">
                     <h2 class="landing-section__title landing-title"><span>Ціни</span></h2>
                     <p class="landing-section__action">Акційна пропозиція діє до 19 липня</p>
-                    <div id="order" class="order">
+                    <div class="order">
                         <div class="row justify-content-center">
                             <div class="col-md-4 col-lg-3 order__package">
-                                <div class="package">
-                                    <div class="package__header">
-                                        <h4 class="package__title">ПАКЕТ <br> «ТЕМАТИЧНІ РОЗСИЛКИ»</h4>
-                                        <p class="package__period">січень – грудень 2020</p>
-                                        <p class="package__price">49 грн/міс.</p>
-                                        <p class="package__price-half">294 грн за півріччя</p>
-                                    </div>
-                                    <div class="package__body">
-                                        <div class="package__presents">
-                                            <h5 class="package__presents-title">Подарунки</h5>
-                                            <ul class="package__presents-list">
-                                                <li>Відеозапис Великого бухгалтерського семінару</li>
-                                                <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="package__btn">
-                                            <a class="btn" target="_blank">Замовити</a>
-                                        </p>
-                                        <div class="package__abilities">
-                                            <h6 class="package__abilities-title">До пакету входить</h6>
-                                            <ul class="package__abilities-list">
-                                                <li>Регулярні періодичні добірки – у вашій поштовій скрині</li>
-                                                <li>Обирайте з 12 можливих тем те, що вам зараз дійсно потрібно</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="package__footer">
-                                        <a class="btn" target="_blank">Беру!</a>
-                                    </div>
-                                </div>
+                               <package article="ep-dtkt_tr">
+                                    <template v-slot:title>ПАКЕТ <br> «ТЕМАТИЧНІ РОЗСИЛКИ»</template>
+                                    <template v-slot:gifts>
+                                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                                    </template>
+                                    <template v-slot:abilities>
+                                        <li>Регулярні періодичні добірки – у вашій поштовій скрині</li>
+                                        <li>Обирайте з 12 можливих тем те, що вам зараз дійсно потрібно</li>
+                                    </template>
+                                </package>
                             </div>
                             <div class="col-md-4 col-lg-3 order__package">
-                                <div class="package">
-                                    <div class="package__header">
-                                        <h4 class="package__title">ПАКЕТ <br> «МІЙ АСИСТЕНТ»</h4>
-                                        <p class="package__period">січень – грудень 2020</p>
-                                        <p class="package__price">36 грн/міс.</p>
-                                        <p class="package__price-half">216 грн за півріччя</p>
-                                    </div>
-                                    <div class="package__body">
-                                        <div class="package__presents">
-                                            <h5 class="package__presents-title">Подарунки</h5>
-                                            <ul class="package__presents-list">
-                                                <li>Відеозапис Великого бухгалтерського семінару</li>
-                                                <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="package__btn">
-                                            <a class="btn" target="_blank">Замовити</a>
-                                        </p>
-                                        <div class="package__abilities">
-                                            <h6 class="package__abilities-title">До пакету входить</h6>
-                                            <ul class="package__abilities-list">
-                                                <li>Щоденна добірка новин</li>
-                                                <li>«Документи за тиждень»</li>
-                                                <li>«Запитання і відповіді» за тиждень</li>
-                                                <li>Розумний податковий календар</li>
-                                                <li>База нормативних документів</li>
-                                                <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                                                <li>Сервіс «Мій кабінет»</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="package__footer">
-                                        <a class="btn" target="_blank">Беру!</a>
-                                    </div>
-                                </div>
+                                <package article="ep-dtkt_ma" class="dddd">
+                                    <template v-slot:title>ПАКЕТ <br> «МІЙ АСИСТЕНТ»</template>
+                                    <template v-slot:gifts>
+                                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                                    </template>
+                                    <template v-slot:abilities>
+                                        <li>Щоденна добірка новин</li>
+                                        <li>«Документи за тиждень»</li>
+                                        <li>«Запитання і відповіді» за тиждень</li>
+                                        <li>Розумний податковий календар</li>
+                                        <li>База нормативних документів</li>
+                                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                                        <li>Сервіс «Мій кабінет»</li>
+                                    </template>
+                                </package>
                             </div>
                             <div class="col-md-4 col-lg-3 order__package">
-                                <div class="package">
-                                    <div class="package__header">
-                                        <h4 class="package__title">ПАКЕТ <br> «ЕКСПЕРТ»</h4>
-                                        <p class="package__period">січень – грудень 2020</p>
-                                        <p class="package__price">136 грн/міс.</p>
-                                        <p class="package__price-half">816 грн за півріччя</p>
-                                    </div>
-                                    <div class="package__body">
-                                        <div class="package__presents">
-                                            <h5 class="package__presents-title">Подарунки</h5>
-                                            <ul class="package__presents-list">
-                                                <li>Відеозапис Великого бухгалтерського семінару</li>
-                                                <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="package__btn">
-                                            <a class="btn" target="_blank">Замовити</a>
-                                        </p>
-                                        <div class="package__abilities">
-                                            <h6 class="package__abilities-title">До пакету входить</h6>
-                                            <ul class="package__abilities-list">
-                                                <li>Щоденна добірка новин</li>
-                                                <li>«Документи за тиждень»</li>
-                                                <li>«Запитання і відповіді» за тиждень</li>
-                                                <li>Розумний податковий календар</li>
-                                                <li>База нормативних документів</li>
-                                                <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                                                <li>Сервіс «Мій кабінет»</li>
-                                                <li>Пакет «Тематичні розсилки»</li>
-                                                <li>Електронний журнал «Дебет-Кредит»</li>
-                                                <li>Щомісячні спецвипуски</li>
-                                                <li>Доступ до архівних номерів на сайті</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="package__footer">
-                                        <a class="btn" target="_blank">Беру!</a>
-                                    </div>
-                                </div>
+                                <package article="ep-dtkt_ma" class="dddd">
+                                    <template v-slot:title>ПАКЕТ <br> «ЕКСПЕРТ»</template>
+                                    <template v-slot:gifts>
+                                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                                    </template>
+                                    <template v-slot:abilities>
+                                        <li>Щоденна добірка новин</li>
+                                        <li>«Документи за тиждень»</li>
+                                        <li>«Запитання і відповіді» за тиждень</li>
+                                        <li>Розумний податковий календар</li>
+                                        <li>База нормативних документів</li>
+                                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                                        <li>Сервіс «Мій кабінет»</li>
+                                        <li>Пакет «Тематичні розсилки»</li>
+                                        <li>Електронний журнал «Дебет-Кредит»</li>
+                                        <li>Щомісячні спецвипуски</li>
+                                        <li>Доступ до архівних номерів на сайті</li>
+                                    </template>
+                                </package>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-4 col-lg-3 order__package">
-                                <div class="package">
-                                    <div class="package__header">
-                                        <h4 class="package__title">ПАКЕТ <br> «ПРОФІ»</h4>
-                                        <p class="package__period">січень – грудень 2020</p>
-                                        <p class="package__price">249 грн/міс.</p>
-                                        <p class="package__price-half">1494 грн за півріччя</p>
-                                    </div>
-                                    <div class="package__body">
-                                        <div class="package__presents">
-                                            <h5 class="package__presents-title">Подарунки</h5>
-                                            <ul class="package__presents-list">
-                                                <li>Відеозапис Великого бухгалтерського семінару</li>
-                                                <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="package__btn">
-                                            <a class="btn" target="_blank">Замовити</a>
-                                        </p>
-                                        <div class="package__abilities">
-                                            <h6 class="package__abilities-title">До пакету входить</h6>
-                                            <ul class="package__abilities-list">
-                                                <li>Щоденна добірка новин</li>
-                                                <li>«Документи за тиждень»</li>
-                                                <li>«Запитання і відповіді» за тиждень</li>
-                                                <li>Розумний податковий календар</li>
-                                                <li>База нормативних документів</li>
-                                                <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                                                <li>Сервіс «Мій кабінет»</li>
-                                                <li>Пакет «Тематичні розсилки»</li>
-                                                <li>Електронний журнал «Дебет-Кредит»</li>
-                                                <li>Щомісячні спецвипуски</li>
-                                                <li>Доступ до архівних номерів на сайті</li>
-                                                <li>Сервіс «Постав запитання редакції»</li>
-                                                <li>Вебінари редакції</li>
-                                                <li>Велика настільна книга</li>
-                                                <li>Звітність у «СОТА»</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="package__footer">
-                                        <a class="btn" target="_blank">Беру!</a>
-                                    </div>
-                                </div>
+                                <package article="ep-dtkt_pr" class="dddd">
+                                    <template v-slot:title>ПАКЕТ <br> «ПРОФІ»</template>
+                                    <template v-slot:gifts>
+                                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                                    </template>
+                                    <template v-slot:abilities>
+                                        <li>Щоденна добірка новин</li>
+                                        <li>«Документи за тиждень»</li>
+                                        <li>«Запитання і відповіді» за тиждень</li>
+                                        <li>Розумний податковий календар</li>
+                                        <li>База нормативних документів</li>
+                                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                                        <li>Сервіс «Мій кабінет»</li>
+                                        <li>Пакет «Тематичні розсилки»</li>
+                                        <li>Електронний журнал «Дебет-Кредит»</li>
+                                        <li>Щомісячні спецвипуски</li>
+                                        <li>Доступ до архівних номерів на сайті</li>
+                                        <li>Сервіс «Постав запитання редакції»</li>
+                                        <li>Вебінари редакції</li>
+                                        <li>Велика настільна книга</li>
+                                        <li>Звітність у «СОТА»</li>
+                                    </template>
+                                </package>
                             </div>
                             <div class="col-md-4 col-lg-3 order__package">
-                                <div class="package">
-                                    <div class="package__header">
-                                        <h4 class="package__title">ПАКЕТ <br> «ПРОФІ ПЛЮС»</h4>
-                                        <p class="package__period">січень – грудень 2020</p>
-                                        <p class="package__price">249 грн/міс.</p>
-                                        <p class="package__price-half">1494 грн за півріччя</p>
-                                    </div>
-                                    <div class="package__body">
-                                        <div class="package__presents">
-                                            <h5 class="package__presents-title">Подарунки</h5>
-                                            <ul class="package__presents-list">
-                                                <li>Відеозапис Великого бухгалтерського семінару</li>
-                                                <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="package__btn">
-                                            <a class="btn" target="_blank">Замовити</a>
-                                        </p>
-                                        <div class="package__abilities">
-                                            <h6 class="package__abilities-title">До пакету входить</h6>
-                                            <ul class="package__abilities-list">
-                                                <li>Щоденна добірка новин</li>
-                                                <li>«Документи за тиждень»</li>
-                                                <li>«Запитання і відповіді» за тиждень</li>
-                                                <li>Розумний податковий календар</li>
-                                                <li>База нормативних документів</li>
-                                                <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                                                <li>Сервіс «Мій кабінет»</li>
-                                                <li>Пакет «Тематичні розсилки»</li>
-                                                <li>Електронний журнал «Дебет-Кредит»</li>
-                                                <li>Щомісячні спецвипуски</li>
-                                                <li>Доступ до архівних номерів на сайті</li>
-                                                <li>Сервіс «Постав запитання редакції»</li>
-                                                <li>Вебінари редакції</li>
-                                                <li>Велика настільна книга</li>
-                                                <li>Звітність у «СОТА»</li>
-                                                <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="package__footer">
-                                        <a class="btn" target="_blank">Беру!</a>
-                                    </div>
-                                </div>
+                                <package article="ep-dtkt_pp" class="dddd">
+                                    <template v-slot:title>ПАКЕТ <br> «ПРОФІ ПЛЮС»</template>
+                                    <template v-slot:gifts>
+                                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                                    </template>
+                                    <template v-slot:abilities>
+                                        <li>Щоденна добірка новин</li>
+                                        <li>«Документи за тиждень»</li>
+                                        <li>«Запитання і відповіді» за тиждень</li>
+                                        <li>Розумний податковий календар</li>
+                                        <li>База нормативних документів</li>
+                                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                                        <li>Сервіс «Мій кабінет»</li>
+                                        <li>Пакет «Тематичні розсилки»</li>
+                                        <li>Електронний журнал «Дебет-Кредит»</li>
+                                        <li>Щомісячні спецвипуски</li>
+                                        <li>Доступ до архівних номерів на сайті</li>
+                                        <li>Сервіс «Постав запитання редакції»</li>
+                                        <li>Вебінари редакції</li>
+                                        <li>Велика настільна книга</li>
+                                        <li>Звітність у «СОТА»</li>
+                                        <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
+                                    </template>
+                                </package>
                             </div>
                         </div>
                     </div>
@@ -257,7 +162,7 @@
             </section>
             <section class="landing-section landing-section--slider">
                 <div class="container">
-                    <h2 class="landing-section__title landing-title">Вас може зацікавити</h2>
+                    <h2 class="landing-section__title landing-title"><span>Вас може зацікавити</span></h2>
                     <div class="slider">
                         slider
                     </div>
@@ -269,9 +174,14 @@
 
 <script>
 import Page from '../../core/Page'
+import Package from './Package'
 
 export default {
     mixins: [Page],
+    components: {Package},
+    data:()=>({
+        showList: true
+    }),
     created(){
         this.$store.dispatch('sliders/retrieve', 'epressa_main')
     },

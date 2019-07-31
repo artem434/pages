@@ -91,12 +91,21 @@
   }
 
   &__btn {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-align: center;
   }
 
+  &__btn--collapsed {
+    margin-bottom: 0;
+    display: none;
+  }
+
   &__abilities {
-    padding-top: 30px;
+    padding-top: 20px;
+
+    &.collapsed {
+      display: block;
+    }
   }
 
   &__abilities-title {
@@ -142,6 +151,27 @@
       margin-bottom: 15px;
       font-size: 20px;
       font-weight: bold;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    max-width: 290px;
+
+    &__footer {
+      display: none;
+    }
+
+    &__btn--collapsed {
+      display: block;
+    }
+
+
+    &__abilities {
+      padding-bottom: 20px;
+
+      &.collapsed {
+        display: none;
+      }
     }
   }
 }

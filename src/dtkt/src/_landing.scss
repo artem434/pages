@@ -19,4 +19,24 @@
   span {
     position: relative;
   }
+
+  &--more {
+    background: #fff;
+    color: #0b3a4a;
+    border: solid 2px #0b3a4a;
+    outline: none;
+
+    &:hover {
+      color: #ffffff;
+      background: #0b3a4a;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:focus, &:active {
+      background: #fff;
+      color: #0b3a4a;
+    }
+
+  }
 }

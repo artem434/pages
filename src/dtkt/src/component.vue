@@ -65,7 +65,7 @@
                                 </package>
                             </div>
                             <div class="col-md-4 col-lg-3 order__package">
-                                <package article="ep-dtkt_ma" class="dddd">
+                                <package article="ep-dtkt_ek">
                                     <template v-slot:title>ПАКЕТ <br> «ЕКСПЕРТ»</template>
                                     <template v-slot:gifts>
                                         <li>Відеозапис Великого бухгалтерського семінару</li>

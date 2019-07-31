@@ -5,8 +5,13 @@
                 <slot name="title"/>
             </h4>
             <p class="package__period">січень – грудень 2020</p>
-            <p class="package__price">49 грн/міс.</p>
-            <p class="package__price-half">294 грн за півріччя</p>
+            <!-- Цена если есть. со своим контейнером
+            <price :article="article" name="line">
+                <template v-slot="{value}"><div style="text-decoration: line-through">{{value}}</div></template>
+            </price>
+            -->
+            <p class="package__price"><price :article="article"/> грн/міс.</p>
+            <p class="package__price-half"><price :article="article" quantity="6"/> грн за півріччя</p>
         </div>
         <div class="package__body">
             <div class="package__presents">

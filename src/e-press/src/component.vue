@@ -37,7 +37,7 @@
                                     <span class="product__price">ціна від {{slide.options.min}} грн/міс</span>
                                 </div>
                                 <p class="product__btn">
-                                    <smart-link :to="slide.link" class="btn page-btn page-btn--chevron-right" :target="slide.target"><span>Детальніше</span></smart-link>
+                                    <smart-link :to="slide.link" class="btn btn-block btn-order btn-arrow" :target="slide.target"><span>Детальніше</span></smart-link>
                                 </p>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
         </section>
         <section class="section">
             <div class="container section__container">
-                <h2 class="section__title section-title"><span>Наші дипломи <br> та нагороди</span></h2>
+                <h2 class="section__title section-title"><span>Наші нагороди</span></h2>
                 <awards-slider></awards-slider>
             </div>
         </section>

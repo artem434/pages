@@ -1,8 +1,7 @@
-.btn {
+.btnf {
   font-size: 14px;
   font-weight: bold;
-  color: #ffffff;
-  background: #ff1053;
+
   min-width: 80%;
   padding: 0.23rem 0.75rem;
 
@@ -11,10 +10,24 @@
     min-width: 190px;
   }
 
-  @include hover-focus-active() {
+  &.btn-order {
     color: #ffffff;
-    background: #bc0035;
+    background: #ff1053;
+
+    @include hover-focus-active() {
+      background: #bc0035;
+    }
   }
+
+  &.btn-dtkt {
+
+  }
+
+  &.btn-more {
+
+  }
+
+
 
   span {
     position: relative;
@@ -37,6 +50,26 @@
       background: #fff;
       color: #0b3a4a;
     }
+  }
 
+  &--dtkt {
+
+  }
+}
+
+.landing-cover {
+  position: relative;
+  display: block;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
   }
 }

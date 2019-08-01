@@ -1,0 +1,56 @@
+@mixin btn-epress($color, $background, $color_hover, $background_hover) {
+  color: $color;
+  background: $background;
+
+  &:hover,
+  &:active {
+    color: $color_hover;
+    background: $background_hover;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: none;
+  padding: 3px 10px;
+  min-width: 190px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-order {
+  @include btn-epress(#ffffff, #ff1053, #ffffff, #bc0035);
+
+}
+
+.btn-dtkt {
+  @include btn-epress(#ffffff, #004b20, #ffffff, #006f2f);
+}
+
+.btn-arrow {
+  position: relative;
+
+  &:after{
+    $square: 9px;
+    $border-color: #fff!default;
+    content: '';
+    display: inline-block;
+    width: $square;
+    height: $square;
+    background: transparent;
+    transform: rotate(-45deg);
+    border-bottom: 2px solid $border-color;
+    border-right: 2px solid $border-color;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 8px;
+    }
+  }
+}

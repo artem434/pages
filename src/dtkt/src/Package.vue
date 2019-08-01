@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <p class="package__btn">
-                <router-link :to="`/order?article=${article}&options[periods]=6`" class="btn" target="_blank">Замовити</router-link>
+                <router-link :to="`/order?article=${article}&options[periods]=6`" class="btn btn-order" target="_blank">Замовити</router-link>
             </p>
 
             <div class="package__abilities" :class="{collapsed}">
@@ -31,13 +31,13 @@
                 </ul>
             </div>
             <p class="package__btn  package__btn--collapsed">
-                <button v-on:click="collapsed = !collapsed" class="btn btn--more" :class="{collapsed}">
+                <button v-on:click="collapsed = !collapsed" class="btn btn-order" :class="{collapsed}">
                     Про пакет
                 </button>
             </p>
         </div>
         <div class="package__footer">
-            <router-link :to="`/order?article=${article}&options[periods]=6`" class="btn" target="_blank">Беру!</router-link>
+            <router-link :to="`/order?article=${article}&options[periods]=6`" class="btn btn-order" target="_blank">Беру!</router-link>
         </div>
     </div>
 </template>

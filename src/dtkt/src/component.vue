@@ -3,11 +3,14 @@
         <div class="landing">
             <div class="landing-section">
                 <div class="container">
-                    <picture v-if="cover" class="landing-cover">
-                        <source v-if="cover.webp" :srcset="cover.webp" type="image/webp">
-                        <img :src="cover.cover" class="img-fluid" alt="">
-                    </picture>
-                    <div v-else></div>
+                    <div class="landing-cover">
+                        <picture v-if="cover" class="landing-cover">
+                            <source v-if="cover.webp" :srcset="cover.webp" type="image/webp">
+                            <img :src="cover.cover" class="img-fluid" alt="">
+                        </picture>
+                        <div v-else></div>
+                        <a href="" class="landing-cover__btn btn btn-dtkt btn-arrow">Замовити</a>
+                    </div>
                 </div>
             </div>
             <section class="landing-section">

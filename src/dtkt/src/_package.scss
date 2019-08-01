@@ -10,6 +10,7 @@
     text-align: center;
     color: #ffffff;
     background: #0b3a4a;
+    border-radius: 5px 5px 0 0;
   }
 
   &__title {
@@ -19,6 +20,7 @@
   }
 
   &__period {
+    display: none;
     margin-bottom: 30px;
     color: #61d0f3;
   }
@@ -156,7 +158,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    max-width: 290px;
+    width: 290px;
 
     &__footer {
       display: none;

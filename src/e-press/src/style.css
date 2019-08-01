@@ -80,9 +80,25 @@
 
 .btn-order:hover, .btn-order:active { color: #ffffff; background: #bc0035; }
 
+.btn-package { color: #ffffff; background: #ff1053; min-width: 190px; font-size: 18px; }
+
+.btn-package:hover, .btn-package:active { color: #ffffff; background: #bc0035; }
+
 .btn-dtkt { color: #ffffff; background: #004b20; }
 
 .btn-dtkt:hover, .btn-dtkt:active { color: #ffffff; background: #006f2f; }
+
+.btn-more { min-width: 190px; font-size: 18px; color: #0b3a4a; border: solid 2px #0b3a4a; background: #fff; outline: none; }
+
+.btn-more span { position: relative; }
+
+.btn-more span:after { content: ''; position: absolute; top: 30%; right: -20px; width: 9px; height: 9px; transform: translateY(-30%) rotate(45deg); background: transparent; border-bottom: 2px solid #0b3a4a; border-right: 2px solid #0b3a4a; transition: transform 0.3s; }
+
+.btn-more.collapsed span:after { top: 70%; transform: translateY(-70%) rotate(225deg); }
+
+.btn-more:hover { color: #ffffff; background: #0b3a4a; outline: none; box-shadow: none; }
+
+.btn-more:focus, .btn-more:active { background: #fff; color: #0b3a4a; }
 
 .btn-arrow { position: relative; }
 

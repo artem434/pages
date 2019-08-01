@@ -15,7 +15,6 @@
   box-shadow: none;
   padding: 3px 10px;
 
-
   @include media-breakpoint-up(sm) {
     font-size: 18px;
     min-width: 190px;
@@ -30,8 +29,64 @@
   @include btn-epress(#ffffff, #ff1053, #ffffff, #bc0035);
 }
 
+.btn-package {
+  @include btn-epress(#ffffff, #ff1053, #ffffff, #bc0035);
+  min-width: 190px;
+  font-size: 18px;
+}
+
 .btn-dtkt {
   @include btn-epress(#ffffff, #004b20, #ffffff, #006f2f);
+}
+
+.btn-more {
+  min-width: 190px;
+  font-size: 18px;
+  color: #0b3a4a;
+  border: solid 2px #0b3a4a;
+  background: #fff;
+  outline: none;
+
+  span {
+    position: relative;
+
+    &:after{
+      $square: 9px;
+      $border-color: #0b3a4a;
+      content: '';
+      position: absolute;
+      top: 30%;
+      right: -20px;
+      width: $square;
+      height: $square;
+      transform:  translateY(-30%) rotate(45deg);
+      background: transparent;
+      border-bottom: 2px solid $border-color;
+      border-right: 2px solid $border-color;
+      transition: transform 0.3s,
+    }
+  }
+
+  &.collapsed {
+    span {
+      &:after {
+        top: 70%;
+        transform: translateY(-70%) rotate(225deg);
+      }
+    }
+  }
+
+  &:hover {
+    color: #ffffff;
+    background: #0b3a4a;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus, &:active {
+    background: #fff;
+    color: #0b3a4a;
+  }
 }
 
 .btn-arrow {

@@ -4,12 +4,10 @@
             <div class="landing-section">
                 <div class="container">
                     <div class="landing-cover">
-                        <picture v-if="cover" class="landing-cover">
-                            <source v-if="cover.webp" :srcset="cover.webp" type="image/webp">
-                            <img :src="cover.cover" class="img-fluid" alt="">
+                        <picture class="landing-cover">
+                            <source :srcset="mix('images/cover.webp')" type="image/webp">
+                            <img :src="mix('images/cover.jpg')" class="img-fluid" alt="">
                         </picture>
-                        <div v-else></div>
-                        <a href="" class="landing-cover__btn btn btn-dtkt btn-arrow">Замовити</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +34,7 @@
                     <p class="landing-section__action">Акційна пропозиція діє до 19 липня</p>
                     <div class="order">
                         <div class="row justify-content-center">
-                            <div class="col-md-4 col-lg-3 order__package">
+                            <div class="col-sm-6 col-md-4 col-lg-3 order__package">
                                <package article="ep-dtkt_tr">
                                     <template v-slot:title>ПАКЕТ <br> «ТЕМАТИЧНІ РОЗСИЛКИ»</template>
                                     <template v-slot:gifts>
@@ -49,7 +47,7 @@
                                     </template>
                                 </package>
                             </div>
-                            <div class="col-md-4 col-lg-3 order__package">
+                            <div class="col-sm-6 col-md-4 col-lg-3 order__package">
                                 <package article="ep-dtkt_ma" class="dddd">
                                     <template v-slot:title>ПАКЕТ <br> «МІЙ АСИСТЕНТ»</template>
                                     <template v-slot:gifts>
@@ -67,7 +65,7 @@
                                     </template>
                                 </package>
                             </div>
-                            <div class="col-md-4 col-lg-3 order__package">
+                            <div class="col-sm-6 col-md-4 col-lg-3 order__package">
                                 <package article="ep-dtkt_ek">
                                     <template v-slot:title>ПАКЕТ <br> «ЕКСПЕРТ»</template>
                                     <template v-slot:gifts>
@@ -185,16 +183,5 @@ export default {
     data:()=>({
         showList: true
     }),
-    created(){
-        this.$store.dispatch('sliders/retrieve', 'epressa_main')
-    },
-    mounted(){
-        this.$nextTick(() => this.$store.dispatch('sliders/fetch'))
-    },
-    computed:{
-        cover(){
-            return (this.$store.getters['sliders/sliders']['epressa_main'] || []).find(slide=>slide.link.params.page == 'dtkt')
-        }
-    }
 }
 </script>

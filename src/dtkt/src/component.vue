@@ -151,10 +151,40 @@
                     <h2 class="landing-section__title landing-title"><span>Переваги</span></h2>
                     <div class="advantages">
                         <div class="row">
-                            <div class="col-lg-3 advantages__item">
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
                                 <div class="advantage">
-                                    <h4>Актуальні матеріали</h4>
-                                    <p>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів- практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!</p>
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
+                                <div class="advantage">
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
+                                <div class="advantage">
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
+                                <div class="advantage">
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
+                                <div class="advantage">
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 advantages__item">
+                                <div class="advantage">
+                                    <b>Актуальні матеріали</b>
+                                    <br>Статті і консультації від авторів «Дебету-Кредиту», провідних податкових та бухгалтерських консультантів-практиків, працівників податкової служби та фондів, фахівців аудиторських компаній. Щотижня 64 сторінки корисної інформації!
                                 </div>
                             </div>
                         </div>
@@ -164,9 +194,9 @@
             <section class="landing-section landing-section--slider">
                 <div class="container">
                     <h2 class="landing-section__title landing-title"><span>Вас може зацікавити</span></h2>
-                    <div class="slider">
-                        slider
-                    </div>
+
+                        <products-slider></products-slider>
+
                 </div>
             </section>
         </div>
@@ -176,10 +206,12 @@
 <script>
 import Page from '../../core/Page'
 import Package from './Package'
+import Advantages from  './Advantages'
+import ProductsSlider from  './ProductsSlider'
 
 export default {
     mixins: [Page],
-    components: {Package},
+    components: {Package,Advantages,ProductsSlider},
     data:()=>({
         showList: true
     }),

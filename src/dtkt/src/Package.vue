@@ -32,7 +32,7 @@
             </div>
             <p class="package__btn  package__btn--collapsed">
                 <button v-on:click="collapsed = !collapsed" class="btn btn-more" :class="{collapsed}">
-                    <span>Про пакет</span>
+                    <span></span>
                 </button>
             </p>
         </div>

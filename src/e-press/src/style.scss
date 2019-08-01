@@ -1,10 +1,11 @@
 @import "../../node_modules/bootstrap-scss/functions";
 @import "../../node_modules/bootstrap-scss/variables";
 @import "../../node_modules/bootstrap-scss/mixins";
-@import "slick.scss";
-@import "btn.scss";
 
 #epress-index {
+  @import "btn.scss";
+  @import "slick.scss";
+
   .main-slider {
 
     &__container {

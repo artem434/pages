@@ -139,7 +139,7 @@
                         <h2>Дякуємо!</h2>
                         <p>Вам відправлено лист з рахунком</p>
                         <app-logo/>
-                        <span class="popup-close"></span>
+                        <span @click='done=false' class="popup-close"></span>
                     </div>
                 </div>
 

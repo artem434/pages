@@ -144,6 +144,10 @@
         box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
 
   .popup {

@@ -96,6 +96,12 @@
 
 #page-dtkt .btn-package:hover, #page-dtkt .btn-package:active { color: #ffffff; background: #bc0035; }
 
+#page-dtkt .btn-form, #page-dtkt .btn-card { min-width: 200px; font-size: 14px; padding-top: 8px; padding-bottom: 8px; }
+
+#page-dtkt .btn-card { color: #ff1053; border: solid 1px #ff1053; }
+
+#page-dtkt .btn-card:hover, #page-dtkt .btn-card:active { color: #fff; background: #ff1053; }
+
 #page-dtkt .btn-dtkt { color: #ffffff; background: #004b20; }
 
 #page-dtkt .btn-dtkt:hover, #page-dtkt .btn-dtkt:active { color: #ffffff; background: #006f2f; }

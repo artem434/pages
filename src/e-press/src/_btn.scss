@@ -35,6 +35,24 @@
   font-size: 18px;
 }
 
+.btn-form, .btn-card {
+  min-width: 200px;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-card {
+  color: #ff1053;
+  border: solid 1px #ff1053;
+
+  &:hover,
+  &:active {
+    color: #fff;
+    background: #ff1053;
+  }
+}
+
 .btn-dtkt {
   @include btn-epress(#ffffff, #004b20, #ffffff, #006f2f);
 }

@@ -12,6 +12,12 @@
 
 #epress-index .btn-package:hover, #epress-index .btn-package:active { color: #ffffff; background: #bc0035; }
 
+#epress-index .btn-form, #epress-index .btn-card { min-width: 200px; font-size: 14px; padding-top: 8px; padding-bottom: 8px; }
+
+#epress-index .btn-card { color: #ff1053; border: solid 1px #ff1053; }
+
+#epress-index .btn-card:hover, #epress-index .btn-card:active { color: #fff; background: #ff1053; }
+
 #epress-index .btn-dtkt { color: #ffffff; background: #004b20; }
 
 #epress-index .btn-dtkt:hover, #epress-index .btn-dtkt:active { color: #ffffff; background: #006f2f; }

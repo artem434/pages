@@ -149,12 +149,20 @@
     padding-bottom: 45px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     &__title {
       margin-bottom: 15px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
     }
+
+    &__price {
+      font-size: 30px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
   }
 
   @include media-breakpoint-down(sm) {

@@ -206,7 +206,8 @@
 
 #page-dtkt .package__footer { text-align: center; padding-bottom: 45px; }
 
-@media (max-width: 991.98px) { #page-dtkt .package__title { margin-bottom: 15px; font-size: 20px; font-weight: bold; } }
+@media (max-width: 1199.98px) { #page-dtkt .package__title { margin-bottom: 15px; font-size: 18px; font-weight: bold; }
+  #page-dtkt .package__price { font-size: 30px; } }
 
 @media (max-width: 767.98px) { #page-dtkt .package { width: 290px; }
   #page-dtkt .package__footer { display: none; }

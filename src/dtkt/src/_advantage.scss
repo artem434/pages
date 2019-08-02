@@ -6,14 +6,20 @@
 }
 
 .advantage {
-  padding: 25px;
-  color: #0b3a4a;
-  border: solid 1px #0b3a4a;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  overflow: hidden;
+  padding: 20px 25px;
+  color: #007094;
+  border: solid 1px #007094;
   background: transparent;
 
   &:hover {
     box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.2);
     background: #ffffff;
+    color: #0b3a4a;
+    border-color: transparent;
   }
 
   b {
@@ -21,7 +27,7 @@
     font-size: 20px;
   }
 
-  @include media-breakpoint-down(md) {
-
+  @include media-breakpoint-down(sm) {
+    height: 100%;
   }
 }

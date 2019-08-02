@@ -216,8 +216,10 @@
 
 #page-dtkt .advantages__item { margin-bottom: 30px; }
 
-#page-dtkt .advantage { padding: 25px; color: #0b3a4a; border: solid 1px #0b3a4a; background: transparent; }
+#page-dtkt .advantage { display: flex; flex-direction: column; height: 250px; overflow: hidden; padding: 20px 25px; color: #007094; border: solid 1px #007094; background: transparent; }
 
-#page-dtkt .advantage:hover { box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.2); background: #ffffff; }
+#page-dtkt .advantage:hover { box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.2); background: #ffffff; color: #0b3a4a; border-color: transparent; }
 
 #page-dtkt .advantage b { display: block; font-size: 20px; }
+
+@media (max-width: 767.98px) { #page-dtkt .advantage { height: 100%; } }

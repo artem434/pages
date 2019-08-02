@@ -91,6 +91,10 @@ export default {
             }
         }
 
+        .slick-list {
+            padding: 10px 0;
+        }
+
         .slick-slide {
             text-align: center;
         }

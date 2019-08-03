@@ -127,7 +127,7 @@
                 <!--<router-link :to="{-->
                 <!--name:'page',-->
                 <!--params:{page:'order'},-->
-                <!--query:{-->`
+                <!--query:{-->
                 <!--article:'ep-interbuh_gazeta',-->
                 <!--'options[periods]':12,-->
                 <!--'options[begin]': '2020-01-01',-->
@@ -154,7 +154,7 @@
 </template>
 
 <script>
-import Errors from 'form-backend-validation/src/Errors'
+import Errors from '../../core/Errors'
 import liqpayFactory from './liqpay'
 import AppLogo from './AppLogo'
 

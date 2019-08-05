@@ -9,6 +9,13 @@ mix.webpackConfig({
     .setPublicPath(`../../${id}_${alias}`)
     .options({
         extractVueStyles: true,
+        autoprefixer: {
+            options: {
+                overrideBrowserslist: [
+                    'last 6 versions',
+                ]
+            }
+        }
     })
     .sass('src/style.scss', 'vue/style.css')
     .js('src/vue.js', 'vue/component.js')

@@ -21,37 +21,37 @@
                         <h1 class="order__headline">Інформація про замовлення:</h1>
                         <div class="order__info-product">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Назва:</label>
-                                <div class="col-sm-9 col-form-value"><b>{{product.title}}</b></div>
+                                <label class="col-3 col-sm-3 col-form-label">Назва:</label>
+                                <div class="col-9 col-sm-9 col-form-value"><b>{{product.title}}</b></div>
                             </div>
                             <div class="form-group row align-items-center">
-                                <label class="col-sm-3 col-form-label">Сума:</label>
-                                <div class="col-sm-9">{{price.pretty}} грн</div>
+                                <label class="col-3 col-sm-3 col-form-label">Сума:</label>
+                                <div class="col-9 col-sm-9">{{price.pretty}} грн</div>
                             </div>
                             <div v-if="options.begin" class="form-group row align-items-center">
                                 <label class="col-sm-3 col-form-label">Початок:</label>
                                 <div class="col-sm-9">
-                                        <span v-if="product.options.beginValues && product.options.beginValues.length > 1">
-                                            <select class="form-control" v-model="options.begin">
-                                                <option v-for="value in product.options.beginValues" :key="value.value"
-                                                        :value="value.value"
-                                                        v-text="value.label"></option>
-                                            </select>
-                                        </span>
+                                    <div v-if="product.options.beginValues && product.options.beginValues.length > 1">
+                                        <select class="form-control" v-model="options.begin">
+                                            <option v-for="value in product.options.beginValues" :key="value.value"
+                                                    :value="value.value"
+                                                    v-text="value.label"></option>
+                                        </select>
+                                    </div>
                                     <span v-else>{{options.begin}}</span>
                                 </div>
                             </div>
                             <div v-if="options.periods" class="form-group row align-items-center">
                                 <label class="col-sm-3 col-form-label">Період:</label>
                                 <div class="col-sm-9">
-                                        <span v-if="product.options.periodValues && product.options.periodValues.length > 1">
-                                            <select class="form-control" v-model="options.periods">
-                                                <option v-for="value in product.options.periodValues" :key="value"
-                                                        :value="value"
-                                                        v-text="value">
-                                                </option>
-                                            </select>
-                                        </span>
+                                    <div v-if="product.options.periodValues && product.options.periodValues.length > 1">
+                                        <select class="form-control" v-model="options.periods">
+                                            <option v-for="value in product.options.periodValues" :key="value"
+                                                    :value="value"
+                                                    v-text="value">
+                                            </option>
+                                        </select>
+                                    </div>
                                     <span v-else>{{options.periods}}</span>
                                 </div>
                             </div>
@@ -68,23 +68,23 @@
                         </div>
                         <div class="order__info-payer">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">E-mail:</label>
+                                <label for="email" class="col-sm-3 col-form-label">E-mail:</label>
                                 <div class="col-sm-9">
-                                    <input v-model="customer.email" class="form-control"/>
+                                    <input v-model="customer.email" class="form-control" id="email"/>
                                     <span class="error" v-if="errors.has('customer.email')">{{errors.first('customer.email')}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Платник:</label>
+                                <label for="name" class="col-sm-3 col-form-label">Платник:</label>
                                 <div class="col-sm-9">
-                                    <input v-model="customer.name" class="form-control"/>
+                                    <input v-model="customer.name" class="form-control" id="name"/>
                                     <span class="error" v-if="errors.has('customer.name')">{{errors.first('customer.name')}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Телефон:</label>
+                                <label for="phone" class="col-sm-3 col-form-label">Телефон:</label>
                                 <div class="col-sm-9">
-                                    <input v-model="customer.phone" class="form-control"/>
+                                    <input v-model="customer.phone" class="form-control" id="phone"/>
                                     <span class="error" v-if="errors.has('customer.phone')">{{errors.first('customer.phone')}}</span>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@ import AppLogo from './AppLogo'
 
 const fill = (name, data) => Object.keys(data).reduce((obj, key) => Object.assign(obj, {[`${name}[${key}]`]: data[key]}), {})
 export default {
-    components: { AppLogo },
+    components: {AppLogo},
     props: {
         page: {
             type: Object,

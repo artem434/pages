@@ -162,7 +162,7 @@
 
 #page-dtkt .order__package { display: flex; justify-content: center; margin-bottom: 40px; }
 
-#page-dtkt .package { display: flex; flex-direction: column; box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.1); border-radius: 5px; }
+#page-dtkt .package { display: flex; flex-direction: column; box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.1); border-radius: 5px; width: 100%; }
 
 #page-dtkt .package__header { padding: 35px 0; font-size: 20px; text-align: center; color: #ffffff; background: #0b3a4a; border-radius: 5px 5px 0 0; }
 
@@ -174,7 +174,7 @@
 
 #page-dtkt .package__price-half { margin-bottom: 0; color: #61d0f3; }
 
-#page-dtkt .package__body { flex: 1 0 auto; padding: 30px 20px; font-size: 14px; color: #007094; }
+#page-dtkt .package__body { flex: 1 0 auto; padding: 30px 20px; font-size: 14px; color: #007094; width: 100%; }
 
 #page-dtkt .package__presents { display: none; margin-bottom: 30px; }
 

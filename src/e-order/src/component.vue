@@ -139,7 +139,7 @@
                         <h2>Дякуємо!</h2>
                         <p>Вам відправлено лист з рахунком</p>
                         <app-logo/>
-                        <span @click='done=false' class="popup-close"></span>
+                        <span @click='closeModal()' class="popup-close"></span>
                     </div>
                 </div>
 
@@ -304,6 +304,9 @@ export default {
                 this.processing = false
             })
         },
+        closeModal() {
+            window.close();
+        }
     },
 }
 </script>

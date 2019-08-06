@@ -34,7 +34,7 @@
                                 </smart-link>
                                 <div class="product__info">
                                     <h3 class="product__title">{{slide.options.caption}}</h3>
-                                    <span class="product__price">ціна від {{slide.options.min}} грн/міс</span>
+                                    <span class="product__price">від {{slide.options.min}} грн/міс</span>
                                 </div>
                                 <p class="product__btn">
                                     <smart-link :to="slide.link" class="btn btn-block btn-order btn-arrow" :target="slide.target"><span>Детальніше</span></smart-link>

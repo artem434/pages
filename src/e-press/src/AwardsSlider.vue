@@ -33,7 +33,7 @@ export default {
                 autoplaySpeed: 3000,
                 responsive: [
                     {
-                        breakpoint: 1023,
+                        breakpoint: 1200,
                         settings: {
                             slidesToShow: 3,
                         }

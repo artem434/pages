@@ -8,7 +8,7 @@
         <template v-slot:packages_list>
             <landing-package-row>
                 <landing-package article="ep-buhzakon">
-                    <template v-slot:title>БУХГАЛТЕР & ЗАКОН</template>
+                    <template v-slot:title>БУХГАЛТЕР&ЗАКОН</template>
                     <template v-slot:gifts>
                         <li>Відеозапис Великого бухгалтерського семінару</li>
                         <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -18,7 +18,7 @@
                         <li>Аналітичні матеріали з практичними рекомендаціями експертів</li>
                         <li>Доступ до архівних випусків видання</li>
                         <li>Функція «Задати питання автору»</li>
-                        <li>Безкоштовний доступ до «Право України» - унікальному рішенню для роботи з базою нормативних документів</li>
+                        <li>Безкоштовний доступ до «Право України» – унікальному рішенню для роботи з базою нормативних документів</li>
                     </template>
                 </landing-package>
             </landing-package-row>

@@ -18,6 +18,10 @@
 
 @media (min-width: 1200px) { #epress-index .section__container { padding: 20px 45px; } }
 
+#epress-index .section__container-products { padding-top: 15px; padding-bottom: 0; }
+
+@media (min-width: 1200px) { #epress-index .section__container-products { padding: 20px 45px 0 45px; } }
+
 #epress-index .section__container-carousel { padding-top: 15px; padding-bottom: 15px; }
 
 @media (min-width: 1200px) { #epress-index .section__container-carousel { padding-top: 20px; padding-bottom: 20px; max-width: 1180px; } }
@@ -26,15 +30,13 @@
 
 @media (min-width: 768px) { #epress-index .section__title { margin-bottom: 35px; } }
 
+@media (min-width: 768px) { #epress-index .section__title-products { margin-bottom: 15px; } }
+
 #epress-index .section__product { width: 50%; }
 
 #epress-index .section__product, #epress-index .section__advantages, #epress-index .section__award { display: flex; justify-content: center; }
 
-#epress-index .section__product { margin-bottom: 40px; }
-
-@media (min-width: 768px) { #epress-index .section__product { margin-bottom: 50px; } }
-
-@media (min-width: 992px) { #epress-index .section__product:nth-child(n+5) { margin-bottom: 0; } }
+#epress-index .section__product { padding-top: 20px; padding-bottom: 20px; }
 
 #epress-index .section__advantages { margin-bottom: 15px; }
 

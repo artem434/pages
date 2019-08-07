@@ -6,8 +6,8 @@
             </div>
         </div>
         <div class="section">
-            <div class="container section__container">
-                <h2 class="section__title section-title"><span>Видання</span></h2>
+            <div class="container section__container-products">
+                <h2 class="section__title-products section-title"><span>Видання</span></h2>
                 <slider class="row justify-content-center" name="epressa_subs">
                     <template v-slot:placeholder>
                         <div class="col-sm-6 col-md-4 col-lg-3 product-placeholder">

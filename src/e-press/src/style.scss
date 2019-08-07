@@ -74,10 +74,18 @@
       }
     }
 
+    &__container-products {
+      padding-top: 15px;
+      padding-bottom: 0;
+
+      @include media-breakpoint-up(xl) {
+        padding: 20px 45px 0 45px;
+      }
+    }
+
     &__container-carousel {
       padding-top: 15px;
       padding-bottom: 15px;
-
 
       @include media-breakpoint-up(xl) {
         padding-top: 20px;
@@ -94,6 +102,13 @@
       }
     }
 
+    &__title-products {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 15px;
+      }
+    }
+
+
     &__product {
       width: 50%;
     }
@@ -106,30 +121,15 @@
     }
 
     &__product {
-      margin-bottom: 40px;
-
-      @include media-breakpoint-up(md) {
-        margin-bottom: 50px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        &:nth-child(n+5) {
-          margin-bottom: 0;
-        }
-      }
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
-
     &__advantages {
-
       margin-bottom: 15px;
 
       &:last-child {
         margin-bottom: 0;
-      }
-
-      @include media-breakpoint-up(sm) {
-
       }
 
       @include media-breakpoint-up(md) {

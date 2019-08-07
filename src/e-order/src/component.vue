@@ -115,10 +115,11 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="order__logo"></div>
+                        <div v-if="product.processing.includes('CARD')">
+                            <div class="order__logo"></div>
+                        </div>
                     </div>
                 </div>
-
                 <!--<router-link :to="{-->
                 <!--name:'page',-->
                 <!--params:{page:'order'},-->
@@ -159,10 +160,9 @@
                         <span @click='closeModal()' class="popup-close"></span>
                     </div>
                 </div>
-
                 <div v-if="liqpay" id="page-order-liqpay-wrapper">
                     <div id="page-order-liqpay">
-                        <div class="close" @click="liqpay=false">x</div>
+                        <div class="close" @click="liqpay=false"></div>
                     </div>
                 </div>
             </div>

@@ -10,6 +10,42 @@
   right: 0;
   bottom: 0;
 
+  #page-order-liqpay {
+    .close {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      z-index: 4;
+      padding: 9px;
+      opacity: 1;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+
+      &:after,
+      &:before {
+        position: absolute;
+        content: '';
+        height: 20px;
+        width: 2px;
+        background: #000;
+      }
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
   @include media-breakpoint-down(sm) {
     background: white;
     overflow: auto;

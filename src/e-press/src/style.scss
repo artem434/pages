@@ -108,10 +108,6 @@
     &__product {
       margin-bottom: 40px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
       @include media-breakpoint-up(md) {
         margin-bottom: 50px;
       }

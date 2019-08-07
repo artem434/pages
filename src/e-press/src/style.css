@@ -32,8 +32,6 @@
 
 #epress-index .section__product { margin-bottom: 40px; }
 
-#epress-index .section__product:last-child { margin-bottom: 0; }
-
 @media (min-width: 768px) { #epress-index .section__product { margin-bottom: 50px; } }
 
 @media (min-width: 992px) { #epress-index .section__product:nth-child(n+5) { margin-bottom: 0; } }

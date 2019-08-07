@@ -84,29 +84,33 @@
                                     <input v-model.trim="$v.customer.name.$model" class="form-control" id="name"/>
                                     <span class="error"
                                           v-if="$v.customer.name.$error && !$v.customer.name.required">це поле необхідно заповнити</span>
-                                    <span class="error" v-else-if="$v.customer.name.$error && !$v.customer.name.minLength">ведіть не менше {{ $v.customer.name.$params.minLength.min }} символів</span>
+                                    <span class="error"
+                                          v-else-if="$v.customer.name.$error && !$v.customer.name.minLength">ведіть не менше {{ $v.customer.name.$params.minLength.min }} символів</span>
                                     <span class="error" v-else-if="errors.has('customer.name')">{{errors.first('customer.name')}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="phone" class="col-sm-3 col-form-label">Телефон:</label>
                                 <div class="col-sm-9">
-                                    <input v-model.trim="$v.customer.phone.$model" class="form-control" id="phone"/>
+                                    <input v-model.trim="$v.customer.phone.$model" class="form-control" id="phone"
+                                           v-mask="phoneMask"/>
                                     <span class="error"
                                           v-if="$v.customer.phone.$error && !$v.customer.phone.required">це поле необхідно заповнити</span>
-                                    <span class="error" v-else-if="$v.customer.phone.$error && !$v.customer.phone.phone">введіть правильний номер телефону</span>
+                                    <span class="error"
+                                          v-else-if="$v.customer.phone.$error && !$v.customer.phone.phone">введіть правильний номер телефону</span>
                                     <span class="error" v-else-if="errors.has('customer.phone')">{{errors.first('customer.phone')}}</span>
                                 </div>
                             </div>
                         </div>
                         <div class="order__controls align-items-center">
                             <div v-if="product.processing.includes('INVOICE')">
-                                <button @click="send('INVOICE')" class="btn btn-order btn-form" :disabled="$v.$anyError">
+                                <button @click="send('INVOICE')" class="btn btn-order btn-form"
+                                        :disabled="$v.$error">
                                     Отримати рахунок
                                 </button>
                             </div>
                             <div v-if="product.processing.includes('CARD')">
-                                <button @click="send('CARD')" class="btn btn-form btn-card" :disabled="$v.$anyError">
+                                <button @click="send('CARD')" class="btn btn-form btn-card" :disabled="$v.$error">
                                     Оплатити карткою
                                 </button>
                             </div>
@@ -234,6 +238,32 @@ export default {
     computed: {
         loading() {
             return this.product === null
+        },
+        phoneMask() {
+            let mask = '(0##) ###-##-##'
+            const val = this.customer.phone.replace(/\D/g, '')
+
+            if (val.match(/^(380|0)?(3(?:5[013-9]|[1-46-8])|4(?:[137][013-9]|6|[45][6-9]|8[4-6])|5(?:[1245][013-9]|6[0135-9]|3|7[4-6])|6(?:[49][013-9]|5[0135-9]|[12][13-8]))/)
+                || val.match(/^(380|0)?(3(?:5[013-9]|[1-46-8](?:22|[013-9]))|4(?:[137][013-9]|6(?:[013-9]|22)|[45][6-9]|8[4-6])|5(?:[1245][013-9]|6(?:3[02389]|[015689])|3|7[4-6])|6(?:[49][013-9]|5[0135-9]|[12][13-8]))/)
+            ) {
+                mask = '(0####) #####'
+            }
+
+            if (val.match(/^(380|0)?(3[1-8]2|4[13678]2|5(?:[12457]2|6[24])|6(?:[49]2|[12][29]|5[24])|8[0-8]|90)/)
+                || val.match(/^(380|0)?(3(?:[1-46-8]2[013-9]|52)|4(?:[1378]2|62[013-9])|5(?:[12457]2|6[24])|6(?:[49]2|[12][29]|5[24])|8[0-8]|90)/)
+            ) {
+                mask = '(0###) ###-###'
+            }
+
+            if (val.match(/^(380|0)?([38]9|4(?:[45][0-5]|87)|5(?:0|6[37]|7[37])|6[36-8]|7|9[1-9])/)
+                || val.match(/^(380|0)?([38]9|4(?:[45][0-5]|87)|5(?:0|6(?:3[14-7]|7)|7[37])|6[36-8]|7|9[1-9])/)
+            ) {
+                mask = '(0##) ###-####'
+            }
+
+            mask = '+38 ' + mask
+
+            return mask
         },
     },
     watch: {

@@ -8,7 +8,7 @@
         <template v-slot:packages_list>
             <landing-package-row>
                     <landing-package article="ep-contr-agent_ek">
-                        <template v-slot:title>Тариф<br>ECONOM</template>
+                        <template v-slot:title>ТАРИФ<br>«ECONOM»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -22,7 +22,7 @@
                         </template>
                     </landing-package>
                     <landing-package article="ep-contr-agent_pr">
-                        <template v-slot:title>Тариф<br>PREMIUM</template>
+                        <template v-slot:title>ТАРИФ<br>«PREMIUM»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -37,7 +37,7 @@
                         </template>
                     </landing-package>
                     <landing-package article="ep-contr-agent_pp">
-                        <template v-slot:title>Тариф<br>PREMIUM+</template>
+                        <template v-slot:title>ТАРИФ<br>«PREMIUM+»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>

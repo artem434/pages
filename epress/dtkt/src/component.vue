@@ -8,7 +8,7 @@
         <template v-slot:packages_list>
             <landing-package-row>
                     <landing-package article="ep-dtkt_tr">
-                        <template v-slot:title>ПАКЕТ <br> «ТЕМАТИЧНІ РОЗСИЛКИ»</template>
+                        <template v-slot:title>ПАКЕТ<br>«ТЕМАТИЧНІ РОЗСИЛКИ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -35,7 +35,7 @@
                         </template>
                     </landing-package>
                     <landing-package article="ep-dtkt_ek">
-                        <template v-slot:title>ПАКЕТ <br> «ЕКСПЕРТ»</template>
+                        <template v-slot:title>ПАКЕТ<br>«ЕКСПЕРТ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -57,7 +57,7 @@
             </landing-package-row>
             <landing-package-row>
                     <landing-package article="ep-dtkt_pr" class="dddd">
-                        <template v-slot:title>ПАКЕТ <br> «ПРОФІ»</template>
+                        <template v-slot:title>ПАКЕТ<br>«ПРОФІ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
@@ -81,7 +81,7 @@
                         </template>
                     </landing-package>
                     <landing-package article="ep-dtkt_pp">
-                        <template v-slot:title>ПАКЕТ <br> «ПРОФІ ПЛЮС»</template>
+                        <template v-slot:title>ПАКЕТ<br>«ПРОФІ ПЛЮС»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
                             <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>

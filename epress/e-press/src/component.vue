@@ -34,7 +34,7 @@
                                 </smart-link>
                                 <div class="product__info">
                                     <h3 class="product__title">{{slide.options.caption}}</h3>
-                                    <span class="product__price">від {{slide.options.min}} грн/міс</span>
+                                    <span class="product__price">від {{slide.options.min}} грн/міс.</span>
                                 </div>
                                 <p class="product__btn">
                                     <smart-link :to="slide.link" class="btn btn-block btn-order btn-arrow" :target="slide.target"><span>Детальніше</span></smart-link>
@@ -64,7 +64,7 @@
                                 <linearGradient id="icon-gradient" x2="1" y2="1"><stop offset="0%" stop-color="#61d0f3"></stop><stop offset="100%" stop-color="#007094"></stop></linearGradient>
                                 <linearGradient id="icon-gradient" x2="1" y2="1"><stop offset="0%" stop-color="#61d0f3"></stop><stop offset="100%" stop-color="#007094"></stop></linearGradient><path d="M352.86 121.29c-13.52-14.67-34.3-16.54-50.56-4.56L160.4 219.65c-4.99 2.9-8.87 5-12.76 5.87l-1.3.25a851.46 851.46 0 0 1 4.93-15.67c6.45-20.09 9.21-29.3 9.3-35.53.68-12.63.15-28.97-9.53-44.05l-.08-.12c-5.26-8.03-15.64-15.52-24.69-17.81-9.8-2.48-18.19-1.59-24.93 2.67-6.55 4.15-10.82 10.95-12.68 20.22-4.51 21.06-12.55 42.76-24.57 66.36-2.05 3.96-4.08 8.52-6.04 12.95-2.48 5.6-5.05 11.4-7.51 15.56l-.13.23c-9.47 16.67-11.87 32.4-12.9 44.2-.05.49-4.89 49.93-30.08 91.51-12.32 20.48-9.08 46.75 7.92 63.92l72.53 72.52.67.64a34.53 34.53 0 0 0 22.87 8.63c7 0 13.98-2.13 19.85-6.43l8.04-5.82c4.1-2.97 8.43-5.74 12.92-8.27 8.53-4.8 17.25-8.58 25.92-11.23 38.56-11.77 75.74-34.16 100.31-51.03 7.5-4.4 12.5-11.99 14.16-21.48l.11-.74c8.66-70.02-12.62-130.19-22.47-153.41l80.3-80.28c14.24-14.25 15.43-36.39 2.76-51.5zm0 0" fill="url(#icon-gradient)"></path><path d="M395.23 76.08c-33.5-33.5-88-33.5-121.5 0a15 15 0 1 0 21.22 21.22 55.97 55.97 0 0 1 79.05 0 55.97 55.97 0 0 1 0 79.06 15 15 0 1 0 21.23 21.22c33.5-33.5 33.5-88 0-121.5zm0 0" fill="url(#icon-gradient)"></path><path d="M433.77 40.73A138.15 138.15 0 0 0 335.42 0a138.17 138.17 0 0 0-98.34 40.73 15.01 15.01 0 0 0 21.22 21.23 108.36 108.36 0 0 1 77.12-31.94c29.13 0 56.52 11.34 77.12 31.94 42.53 42.52 42.53 111.71 0 154.24a15 15 0 1 0 21.23 21.22c54.22-54.22 54.22-142.46 0-196.69zm0 0" fill="url(#icon-gradient)"></path></svg>
                             <h4 class="advantages__title advantages__title--self">Вибір сервісу</h4>
-                            <p class="advantages__text">Оберіть передплату на улюбленні бухгалтерські сервіси</p>
+                            <p class="advantages__text">Оберіть передплату на улюблені бухгалтерські сервіси</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-3 section__advantages">

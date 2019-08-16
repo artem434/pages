@@ -38,7 +38,7 @@
                                                     v-text="value.label"></option>
                                         </select>
                                     </div>
-                                    <span v-else>{{options.begin}}</span>
+                                    <span v-else>{{begin}}</span>
                                 </div>
                             </div>
                             <div v-if="options.periods" class="form-group row align-items-center">
@@ -52,7 +52,7 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <span v-else>{{options.periods}}</span>
+                                    <span v-else>{{periods}}</span>
                                 </div>
                             </div>
                         </div>
@@ -265,6 +265,15 @@ export default {
 
             return mask
         },
+
+        periods(){
+            const period = this.product.options.periodValues.find(v=>v.value==this.options.periods);
+            return period ? period.caption:this.options.periods;
+        },
+        begin(){
+            const begin = this.product.options.beginValues.find(v=>v.value==this.options.begin);
+            return begin ? begin.label : this.options.begin;
+        }
     },
     watch: {
         options: {

@@ -21,10 +21,6 @@
 
 .landing-dtkt_august2019 .package-plus .btn-package:hover, .landing-dtkt_august2019 .package-plus .btn-package:active, .landing-dtkt_august2019 .package-plus .btn-package:focus { background-color: #ff330d; }
 
-.landing-dtkt_august2019 .package-plus-recommend { position: relative; }
-
-.landing-dtkt_august2019 .package-plus-recommend:before { position: absolute; content: "Рекомендуємо"; color: #ffffff; border-radius: 4px; background-color: #aa02a5; width: 180px; left: 50%; top: 6px; font-size: 14px; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
-
 .landing-dtkt_august2019 .package-plus-top { position: relative; }
 
 .landing-dtkt_august2019 .package-plus-top:before { position: absolute; content: "топ продажу"; color: #ffffff; border-radius: 4px; background-color: #aa02a5; width: 180px; left: 50%; top: 6px; font-size: 14px; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
@@ -47,13 +43,15 @@
 
 .landing-dtkt_august2019 .package__presents-list li:before { background: transparent url(images/gift_purple.svg) no-repeat top center; width: 20px; height: 24px; }
 
-.landing-dtkt_august2019 .package__presents-list .no-active { color: #6f6f6f; }
+.landing-dtkt_august2019 .package__presents-list .no-active { color: #bdbbbb; cursor: not-allowed; }
 
 .landing-dtkt_august2019 .package__presents-list .no-active:before { background: transparent url(images/gift_gray.svg) no-repeat top center; }
 
 .landing-dtkt_august2019 .btn-package--six { display: none; width: 190px; margin: 0  auto; }
 
 .landing-dtkt_august2019 .btn-package--twelve { display: block !important; width: 190px; margin: 0 auto; }
+
+.landing-dtkt_august2019 .btn-package--twelve:after { display: none; }
 
 .landing-dtkt_august2019 .btn-package { background-color: #d90fd3; }
 
@@ -66,3 +64,7 @@
 .landing-dtkt_august2019 .package__abilities-item-platform { margin-top: 50px; position: relative; }
 
 .landing-dtkt_august2019 .package__abilities-item-platform:after { position: absolute; content: " "; background: transparent url(images/plus.svg) no-repeat top center; top: -40px; left: 50%; transform: translate(-50%); width: 26px; height: 26px; }
+
+.landing-dtkt_august2019 .package__abilities-item-platform a { text-decoration: underline; }
+
+.landing-dtkt_august2019 .package__abilities-item-platform a:hover { text-decoration: none; }

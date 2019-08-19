@@ -50,25 +50,7 @@
 
   }
 
-  .package-plus-recommend{
-    position: relative;
-    &:before{
-      position: absolute;
-      content: "Рекомендуємо";
-      color: #ffffff;
-      border-radius: 4px;
-      background-color: #aa02a5;
-      width: 180px;
-      left: 50%;
-      top: 6px;
-      font-size: 14px;
-      line-height: 25px;
-      transform: translate(-50%);
-      text-align: center;
-      text-transform: uppercase;
-      z-index: 1;
-    }
-  }
+
 
   .package-plus-top{
     position: relative;
@@ -134,7 +116,8 @@
       }
     }
     .no-active{
-      color: #6f6f6f;
+      color: #bdbbbb;
+      cursor: not-allowed;
       &:before{
         background: transparent url(images/gift_gray.svg) no-repeat top center;
       }
@@ -150,6 +133,9 @@
     display: block!important;
     width: 190px;
     margin: 0 auto;
+    &:after{
+      display: none;
+    }
   }
   .btn-package{
     background-color: #d90fd3;
@@ -181,5 +167,12 @@
       height: 26px;
 
     }
+    a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
+
 }

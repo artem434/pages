@@ -24,18 +24,17 @@
             </div>
         </template>
         <template v-slot:action-due>
-            <p class="landing-section__action">Передплатіть бухгалтерський сервіс «Дебет-Кредит» на 2020 рік зі знижкою 54% та отримайте у подарунок портативну
-                стерео-колонку і відеозапис семінару «Автомобіль на підприємстві-2019».</p>
+            <p class="landing-section__action">Передплатіть бухгалтерський сервіс «Дебет-Кредит» на 2020 рік зі знижкою 54% та отримайте у подарунок bluetooth-стереоколонку і відеозапис семінару «Автомобіль на підприємстві-2019».</p>
          </template>
         <template v-slot:packages_list>
             <landing-package-row>
 
                     <landing-package article="ep-dtkt_ek_0819">
-                        <template v-slot:title>ЕКСПЕРТ<br>та подарунок</template>
+                        <template v-slot:title>ЕКСПЕРТ<br>та 1 подарунок</template>
                         <template v-slot:gifts>
                             <li>Відеозапис семінару <br> <a href="https://7eminar.com/01082019" target="_blank">«Автомобіль на
                                 підприємстві-2019»</a></li>
-                            <li class="no-active">Стерео-колонка <br> T&G Charge 2 mini</li>
+                            <li class="no-active">Bluetooth-стереоколонка <br> T&G Charge 2 mini</li>
                         </template>
                         <template v-slot:abilities>
                             <li>Щоденна добірка новин</li>
@@ -56,11 +55,11 @@
                     </landing-package>
 
                     <landing-package article="ep-dtkt_ek_0819_g" class="package-plus package-plus-recommend">
-                        <template v-slot:title>ЕКСПЕРТ <br>та подарунки</template>
+                        <template v-slot:title>ЕКСПЕРТ <br>та 2 подарунки</template>
                         <template v-slot:gifts>
                             <li>Відеозапис семінару <br> <a href="https://7eminar.com/01082019" target="_blank">«Автомобіль на
                                 підприємстві-2019»</a></li>
-                            <li>Стерео-колонка <br> <a href="/" target="_blank">T&G Charge 2 mini</a></li>
+                            <li>Bluetooth-стереоколонка <br> <a href="https://www.youtube.com/watch?v=cYBOHjWKNL8&feature=youtu.be&t=20" target="_blank">T&G Charge 2 mini</a></li>
                         </template>
                         <template v-slot:abilities>
                             <li>Щоденна добірка новин</li>
@@ -81,11 +80,11 @@
                     </landing-package>
 
                     <landing-package article="ep-dtkt_ekp_0819">
-                        <template v-slot:title>ЕКСПЕРТ + 7eminar.ua<br/> та подарунок</template>
+                        <template v-slot:title>ЕКСПЕРТ + 7eminar.ua<br/> та 1 подарунок</template>
                         <template v-slot:gifts>
                             <li>Відеозапис семінару <br> <a href="https://7eminar.com/01082019" target="_blank">«Автомобіль на
                                 підприємстві-2019»</a></li>
-                            <li class="no-active">Стерео-колонка <br> T&G Charge 2 mini</li>
+                            <li class="no-active">Bluetooth-стереоколонка <br> T&G Charge 2 mini</li>
                         </template>
                         <template v-slot:abilities>
                             <li>Щоденна добірка новин</li>
@@ -99,7 +98,7 @@
                             <li>Електронний журнал «Дебет-Кредит»</li>
                             <li>Щомісячні спецвипуски</li>
                             <li>Доступ до архівних номерів на сайті</li>
-                            <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a> понад 120 курсів та вебінарів для перегляду протягом 2020 р</li>
+                            <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a>: понад 120 курсів та вебінарів для перегляду протягом 2020 р.</li>
                         </template>
                         <template v-slot:old-price>
                             <div class="" style="text-decoration: line-through">6827 грн</div>
@@ -107,11 +106,11 @@
                     </landing-package>
 
                     <landing-package article="ep-dtkt_ekp_0819_g" class="package-plus package-plus-top">
-                        <template v-slot:title>ЕКСПЕРТ + 7eminar.ua<br/> та подарунки</template>
+                        <template v-slot:title>ЕКСПЕРТ + 7eminar.ua<br/> та 2 подарунки</template>
                         <template v-slot:gifts>
                             <li>Відеозапис семінару <br> <a href="https://7eminar.com/01082019" target="_blank">«Автомобіль на
                                 підприємстві-2019»</a></li>
-                            <li>Стерео-колонка <br> <a href="/" target="_blank">T&G Charge 2 mini</a></li>
+                            <li>Bluetooth-стереоколонка <br> <a href="https://www.youtube.com/watch?v=cYBOHjWKNL8&feature=youtu.be&t=20" target="_blank">T&G Charge 2 mini</a></li>
                         </template>
                         <template v-slot:abilities>
                             <li>Щоденна добірка новин</li>
@@ -125,7 +124,7 @@
                             <li>Електронний журнал «Дебет-Кредит»</li>
                             <li>Щомісячні спецвипуски</li>
                             <li>Доступ до архівних номерів на сайті</li>
-                            <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a> понад 120 курсів та вебінарів для перегляду протягом 2020 р</li>
+                            <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a>: понад 120 курсів та вебінарів для перегляду протягом 2020 р.</li>
                         </template>
                         <template v-slot:old-price>
                             <div class="" style="text-decoration: line-through">7677 грн</div>

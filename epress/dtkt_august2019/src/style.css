@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.landing-dtkt_august2019 .dtkt-promo { background-color: black; }
+
+.landing-dtkt_august2019 .landing-title--columns { padding-top: 50px; margin-bottom: 20px; }
+
+.landing-dtkt_august2019 .landing-title--columns:nth-child(2) { position: relative; }
+
+.landing-dtkt_august2019 .landing-title--columns span { color: #040207; }
+
+.landing-dtkt_august2019 .landing-section__action { color: #6f6f6f; font-size: 20px; }
+
+.landing-dtkt_august2019 .package__title { border-bottom: 25px; }
+
+.landing-dtkt_august2019 .package-plus { position: relative; }
+
+.landing-dtkt_august2019 .package-plus .package__header { position: relative; color: #040207; background-color: #ff6a4e; }
+
+.landing-dtkt_august2019 .package-plus .package__header .package__period { color: #040207; }
+
+.landing-dtkt_august2019 .package-plus .btn-package { background-color: #ff6a4e; }
+
+.landing-dtkt_august2019 .package-plus .btn-package:hover, .landing-dtkt_august2019 .package-plus .btn-package:active, .landing-dtkt_august2019 .package-plus .btn-package:focus { background-color: #ff330d; }
+
+.landing-dtkt_august2019 .package-plus-recommend { position: relative; }
+
+.landing-dtkt_august2019 .package-plus-recommend:before { position: absolute; content: "Рекомендуємо"; color: #ffffff; border-radius: 4px; background-color: #aa02a5; width: 180px; left: 50%; top: 6px; font-size: 14px; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
+
+.landing-dtkt_august2019 .package-plus-top { position: relative; }
+
+.landing-dtkt_august2019 .package-plus-top:before { position: absolute; content: "топ продажу"; color: #ffffff; border-radius: 4px; background-color: #aa02a5; width: 180px; left: 50%; top: 6px; font-size: 14px; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
+
+.landing-dtkt_august2019 .package__header { background-color: #000; }
+
+.landing-dtkt_august2019 .package__presents { display: block !important; }
+
+.landing-dtkt_august2019 .package__period { display: block !important; margin-bottom: 10px; color: #ff44f9; }
+
+.landing-dtkt_august2019 .package__price-half { display: none !important; }
+
+.landing-dtkt_august2019 .package__price { display: none; }
+
+.landing-dtkt_august2019 .package__total-price { margin-bottom: 5px; font-size: 40px; line-height: 35px; font-weight: bold; display: block; }
+
+.landing-dtkt_august2019 .package__presents-title { color: #040207; }
+
+.landing-dtkt_august2019 .package__presents-list li { color: #040207; }
+
+.landing-dtkt_august2019 .package__presents-list li:before { background: transparent url(images/gift_purple.svg) no-repeat top center; width: 20px; height: 24px; }
+
+.landing-dtkt_august2019 .package__presents-list .no-active { color: #6f6f6f; }
+
+.landing-dtkt_august2019 .package__presents-list .no-active:before { background: transparent url(images/gift_gray.svg) no-repeat top center; }
+
+.landing-dtkt_august2019 .btn-package--six { display: none; width: 190px; margin: 0  auto; }
+
+.landing-dtkt_august2019 .btn-package--twelve { display: block !important; width: 190px; margin: 0 auto; }
+
+.landing-dtkt_august2019 .btn-package { background-color: #d90fd3; }
+
+.landing-dtkt_august2019 .btn-package:hover, .landing-dtkt_august2019 .btn-package:active, .landing-dtkt_august2019 .btn-package:focus { background-color: #a90ba4; }
+
+.landing-dtkt_august2019 .package__abilities { color: #040207; }
+
+.landing-dtkt_august2019 .package__abilities li:before { color: #d90fd3; }
+
+.landing-dtkt_august2019 .package__abilities-item-platform { margin-top: 50px; position: relative; }
+
+.landing-dtkt_august2019 .package__abilities-item-platform:after { position: absolute; content: " "; background: transparent url(images/plus.svg) no-repeat top center; top: -40px; left: 50%; transform: translate(-50%); width: 26px; height: 26px; }

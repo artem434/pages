@@ -29,8 +29,8 @@
                                 <div class="col-9 col-sm-9">{{price.pretty}} грн</div>
                             </div>
                             <div v-if="options.begin" class="form-group row align-items-center">
-                                <label class="col-sm-3 col-form-label">Початок:</label>
-                                <div class="col-sm-9">
+                                <label class="col-3 col-sm-3 col-form-label">Початок:</label>
+                                <div class="col-9 col-sm-9">
                                     <div v-if="product.options.beginValues && product.options.beginValues.length > 1">
                                         <select class="form-control" v-model="options.begin">
                                             <option v-for="value in product.options.beginValues" :key="value.value"
@@ -38,12 +38,12 @@
                                                     v-text="value.label"></option>
                                         </select>
                                     </div>
-                                    <span v-else>{{options.begin}}</span>
+                                    <div v-else>{{begin}}</div>
                                 </div>
                             </div>
                             <div v-if="options.periods" class="form-group row align-items-center">
-                                <label class="col-sm-3 col-form-label">Період:</label>
-                                <div class="col-sm-9">
+                                <label class="col-3 col-sm-3 col-form-label">Період:</label>
+                                <div class="col-9 col-sm-9">
                                     <div v-if="product.options.periodValues && product.options.periodValues.length > 1">
                                         <select class="form-control" v-model="options.periods">
                                             <option v-for="value in product.options.periodValues" :key="value.value"
@@ -52,7 +52,7 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <span v-else>{{options.periods}}</span>
+                                    <div v-else>{{periods}}</div>
                                 </div>
                             </div>
                         </div>
@@ -265,6 +265,15 @@ export default {
 
             return mask
         },
+
+        periods(){
+            const period = this.product.options.periodValues.find(v=>v.value==this.options.periods);
+            return period ? period.caption:this.options.periods;
+        },
+        begin(){
+            const begin = this.product.options.beginValues.find(v=>v.value==this.options.begin);
+            return begin ? begin.label : this.options.begin;
+        }
     },
     watch: {
         options: {

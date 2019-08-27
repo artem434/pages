@@ -1,0 +1,248 @@
+.landing-dtkt_august2019_2 {
+
+  .dtkt-promo{
+    background-color: #f6f6f6;
+  }
+  .container--august{
+
+  }
+  .packages__column{
+    padding-top: 50px;
+
+  }
+  .landing-title--columns{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    &:nth-child(2){
+      position: relative;
+
+    }
+    span{
+      color: #040207;
+    }
+
+  }
+
+  .landing-section__action{
+    color: #6f6f6f;
+    font-size: 20px;
+  }
+
+  .package__title{
+    border-bottom: 25px;
+  }
+
+  .package-plus{
+    position: relative;
+
+    .package__header{
+      position: relative;
+      color: #fff;
+      background-color: #f75a2c;
+
+      .package__period{
+        color: #ffcdc4;
+      }
+
+    }
+    .btn-package{
+      background-color: #f75a2c;
+      &:hover,
+      &:active,
+      &:focus{
+        background-color: #ff330d;
+      }
+    }
+
+  }
+
+
+
+  .package-plus-top{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "топ продажу";
+      color: #002752;
+      border-radius: 4px;
+      background-color: #a3d0ea;
+      width: 180px;
+      left: 50%;
+      top: 38px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 25px;
+      transform: translate(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+
+  .package__header{
+    background-color: #002752;
+  }
+
+ .package__presents {
+   display: block !important;
+   text-align: left;
+ }
+
+  .package__period{
+    display: block!important;
+    margin-bottom: 10px;
+    color: #85cbfe;
+  }
+
+  .package__price-half{
+    display: none!important;
+  }
+
+  .package__price{
+    display: none;
+  }
+  .package__total-price{
+    margin-bottom: 5px;
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .package__presents-title{
+    color: #040207;
+  }
+
+  .package__presents-list {
+    li {
+      color: #040207;
+      &:before{
+        background: transparent url(images/gift_purple.svg) no-repeat top center;
+        width: 20px;
+        height: 24px;
+
+      }
+    }
+    .no-active{
+      color: #bdbbbb;
+      cursor: not-allowed;
+      &:before{
+        background: transparent url(images/gift_gray.svg) no-repeat top center;
+      }
+
+    }
+  }
+  .btn-package--six{
+    display: none;
+    width: 190px;
+    margin: 0  auto;
+  }
+  .btn-package--twelve{
+    display: block!important;
+    width: 190px;
+    margin: 0 auto;
+    &:after{
+      display: none;
+    }
+  }
+  .btn-package{
+    background-color: #002752;
+    &:hover,
+    &:active,
+    &:focus{
+      background-color: #165ba7;
+    }
+  }
+
+  .package__abilities{
+    color: #040207;
+    text-align: left;
+    .package__abilities-item--noactive{
+      color: #bdbbbb;
+      &:before{
+        color: #bdbbbb;
+      }
+    }
+    li{
+      &:before{
+        color: #002752;
+      }
+    }
+  }
+
+
+  .package__abilities-item-platform{
+    margin-top: 50px;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: " ";
+      background: transparent url(images/plus.svg) no-repeat top center;
+      top: -40px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 26px;
+      height: 26px;
+
+    }
+    a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+
+  }
+  .tab-frame{
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  div.tab-frame input{
+    display:none;
+  }
+
+  div.tab-frame label{
+    display:inline-block;
+    text-align: center;
+    padding:8px 10px;
+    width: 180px;
+    cursor:pointer;
+    margin-left: -5px;
+    margin-bottom: 0;
+    background: #c7c7c7;
+    font-size: 16px;
+    font-weight: 600;
+    color: #424242;
+    @media (max-width: 500px){
+      width: 50%;
+    }
+  }
+  div.tab-frame input:checked + label{
+    background-color: #f75a2c;
+    color:white;
+    cursor:default;
+  }
+
+  div.tab-frame div.tab{
+    display:none;
+    padding:5px 10px;
+    clear:left;
+  }
+  .label--left{
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+  }
+  .label--right{
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+  }
+
+  div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+  div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+  div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){
+    display:flex;
+  }
+}
+

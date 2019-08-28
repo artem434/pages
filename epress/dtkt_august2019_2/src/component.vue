@@ -6,8 +6,8 @@
                     <div class="container container--august">
                         <div class="cover">
                              <picture class="cover__img">
-                                 <source src="https://e-pressa.com/storage/pages/39_dtkt_august2019_2/images/head.webp" type="image/webp">
-                                 <img src="https://e-pressa.com/storage/pages/39_dtkt_august2019_2/images/head.gif" class="img-fluid" alt="">
+                                 <source :srcset="mix('images/head.webp')" type="image/webp">
+                                 <img :src="mix('images/head.gif')" class="img-fluid" alt="">
                              </picture>
                         </div>
                     </div>

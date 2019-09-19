@@ -5,10 +5,7 @@
                 <div class="landing-section">
                     <div class="container container--august">
                         <div class="cover">
-                             <picture class="cover__img">
-                                 <source :srcset="mix('images/head1.webp')" type="image/webp">
-                                 <img :src="mix('images/head_09_gif.gif')" class="img-fluid" alt="">
-                             </picture>
+                           <!-- <picture class="cover__img"><source srcset="/storage/pages/65_dtkt_september2019_1/images/head_10_gif.webp?id=284d6b122e69d65566e7" type="image/webp"> <img src="/storage/pages/65_dtkt_september2019_1/images/head_10_gif.gif?id=f26811f96e19aa835067" alt="" class="img-fluid"></picture>-->
                         </div>
                     </div>
                 </div>
@@ -20,7 +17,7 @@
         </template>
         <template v-slot:price-title>
             <div>
-                <h2 class="landing-title landing-title--columns"><span>Акційна пропозиція діє до 19 вересня</span></h2>
+                <h2 class="landing-title landing-title--columns"><span>Акційна пропозиція діє до 20 вересня</span></h2>
             </div>
         </template>
         <template v-slot:action-due>
@@ -41,6 +38,7 @@
                     <template v-slot:title>ЕКСПЕРТ<br>та подарунок</template>
                     <template v-slot:gifts>
                         <li>Осінній шарф</li>
+                        <li class="no-active">Парасолька</li>
                         <li class="no-active">Відеозапис семінару <br> «Все про ПДВ»</li>
                     </template>
                     <template v-slot:abilities>
@@ -65,6 +63,7 @@
                     <template v-slot:title>ЕКСПЕРТ + 7eminar.ua <br>та подарунки</template>
                     <template v-slot:gifts>
                         <li >Осінній шарф</li>
+                        <li class="no-active">Парасолька</li>
                         <li>Відеозапис семінару <br> <a href="https://7eminar.com/10092019" target="_blank">«Все про ПДВ»</a></li>
                     </template>
                     <template v-slot:abilities>
@@ -89,6 +88,7 @@
                 <landing-package article="ep-dtkt_pr_0911">
                     <template v-slot:title>ПРОФІ<br/>та подарунок</template>
                     <template v-slot:gifts>
+                        <li class="no-active" >Осінній шарф</li>
                         <li>Парасолька</li>
                         <li class="no-active">Відеозапис семінару <br>«Все про ПДВ»</li>
                     </template>
@@ -118,6 +118,7 @@
                 <landing-package article="ep-dtkt_prp_0911" class="package-plus package-plus-top">
                     <template v-slot:title>ПРОФІ + 7eminar.ua<br/>та подарунки</template>
                     <template v-slot:gifts>
+                        <li class="no-active" >Осінній шарф</li>
                         <li >Парасолька</li>
                         <li>Відеозапис семінару <br> <a href="https://7eminar.com/10092019" target="_blank">«Все про ПДВ»</a></li>
                     </template>

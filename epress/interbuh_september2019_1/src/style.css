@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.landing-interbuh_september2019_1 .cover { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_01-min.jpg"); max-width: 1110px; width: 100%; background-size: contain; background-repeat: no-repeat; background-position: center center; height: 292px; animation-name: test; animation-duration: 10s; animation-iteration-count: infinite; -webkit-animation-name: test; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; }
+
+.webp .landing-interbuh_september2019_1 .cover { background: url("/storage/pages/68_interbuh_september2019_1/images/head_10_gif_IB.webp"); }
+
+@media (max-width: 1200px) { .landing-interbuh_september2019_1 .cover { height: 244px; } }
+
+@media (max-width: 1200px) { .landing-interbuh_september2019_1 .cover { height: 181px; } }
+
+@media (max-width: 768px) { .landing-interbuh_september2019_1 .cover { height: 134px; } }
+
+@media (max-width: 500px) { .landing-interbuh_september2019_1 .cover { height: 85px; } }
+
+@keyframes test { 0% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_01-min.jpg"); }
+  33.3% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_02-min.jpg"); }
+  66.6% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_03-min.jpg"); } }
+
+@-webkit-keyframes test { 0% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_01-min.jpg"); }
+  33.3% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_02-min.jpg"); }
+  66.6% { background-image: url("/storage/pages/68_interbuh_september2019_1/images/head_10_ib_03-min.jpg"); } }
+
+.landing-interbuh_september2019_1 .dtkt-promo { background-color: #efa5b5; }
+
+.landing-interbuh_september2019_1 .packages__column { padding-top: 50px; }
+
+.landing-interbuh_september2019_1 .landing-title--columns { padding-top: 50px; margin-bottom: 20px; }
+
+.landing-interbuh_september2019_1 .landing-title--columns:nth-child(2) { position: relative; }
+
+.landing-interbuh_september2019_1 .landing-title--columns span { color: #040207; }
+
+.landing-interbuh_september2019_1 .landing-section__action { color: #6f6f6f; font-size: 20px; }
+
+.landing-interbuh_september2019_1 .package__title { border-bottom: 25px; }
+
+.landing-interbuh_september2019_1 .package-plus { position: relative; }
+
+.landing-interbuh_september2019_1 .package-plus .package__header { position: relative; color: #fff; background-color: #b22129; }
+
+.landing-interbuh_september2019_1 .package-plus .package__header .package__period { color: #ffcdc4; }
+
+.landing-interbuh_september2019_1 .package-plus .package__old-price { color: #ffcdc4; }
+
+.landing-interbuh_september2019_1 .package-plus .btn-package { background-color: #da148b; }
+
+.landing-interbuh_september2019_1 .package-plus .btn-package:hover, .landing-interbuh_september2019_1 .package-plus .btn-package:active, .landing-interbuh_september2019_1 .package-plus .btn-package:focus { background-color: #eb8206; }
+
+.landing-interbuh_september2019_1 .package-plus-top { position: relative; }
+
+.landing-interbuh_september2019_1 .package-plus-top:before { position: absolute; content: "топ продажу"; color: #b22129; border-radius: 4px; background-color: #ffffff; box-shadow: 0 0 13px rgba(51, 0, 12, 0.34); width: 180px; left: 50%; top: 38px; font-size: 14px; font-weight: 600; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
+
+.landing-interbuh_september2019_1 .package__header { color: #6c5057; background-color: #eed1d8; }
+
+.landing-interbuh_september2019_1 .package__presents { display: block !important; text-align: left; }
+
+.landing-interbuh_september2019_1 .package__present { display: none !important; text-align: left; }
+
+.landing-interbuh_september2019_1 .package__period { display: none !important; margin-bottom: 10px; color: #78112a; }
+
+.landing-interbuh_september2019_1 .package__price-half { display: none !important; }
+
+.landing-interbuh_september2019_1 .package__price { margin-bottom: 5px; font-size: 40px; line-height: 35px; font-weight: bold; display: block; }
+
+.landing-interbuh_september2019_1 .package__total-price { display: none; }
+
+.landing-interbuh_september2019_1 .package__presents-title { color: #040207; }
+
+.landing-interbuh_september2019_1 .package__presents-list li { color: #040207; }
+
+.landing-interbuh_september2019_1 .package__presents-list li:before { background: transparent url(images/gift_purple.svg) no-repeat top center; width: 20px; height: 24px; }
+
+.landing-interbuh_september2019_1 .package__presents-list .no-active { color: #bdbbbb; cursor: not-allowed; }
+
+.landing-interbuh_september2019_1 .package__presents-list .no-active:before { background: transparent url(images/gift_gray.svg) no-repeat top center; }
+
+.landing-interbuh_september2019_1 .btn-package--six { display: block !important; width: 190px; margin: 0  auto; }
+
+.landing-interbuh_september2019_1 .btn-package--twelve { display: none !important; width: 190px; margin: 0 auto; }
+
+.landing-interbuh_september2019_1 .btn-package--twelve:after { display: none; }
+
+.landing-interbuh_september2019_1 .btn-package { color: #fff; background-color: #33289e; }
+
+.landing-interbuh_september2019_1 .btn-package:hover, .landing-interbuh_september2019_1 .btn-package:active, .landing-interbuh_september2019_1 .btn-package:focus { background-color: #eb8206; }
+
+.landing-interbuh_september2019_1 .package__abilities { color: #040207; text-align: left; }
+
+.landing-interbuh_september2019_1 .package__abilities .package__abilities-item--noactive { color: #bdbbbb; }
+
+.landing-interbuh_september2019_1 .package__abilities .package__abilities-item--noactive:before { color: #bdbbbb; }
+
+.landing-interbuh_september2019_1 .package__abilities li:before { color: #002752; }
+
+.landing-interbuh_september2019_1 .package__abilities-item-platform { margin-top: 50px; position: relative; }
+
+.landing-interbuh_september2019_1 .package__abilities-item-platform:after { position: absolute; content: " "; background: transparent url(images/plus.svg) no-repeat top center; top: -40px; left: 50%; transform: translate(-50%); width: 26px; height: 26px; }
+
+.landing-interbuh_september2019_1 .package__abilities-item-platform a { text-decoration: underline; }
+
+.landing-interbuh_september2019_1 .package__abilities-item-platform a:hover { text-decoration: none; }

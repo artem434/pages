@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="cover">
                     <picture class="cover__img">
-                        <img :src="mix('images/cover.jpg')" class="img-fluid" alt="">
+                        <img :src="mix('images/about_banner.jpg')" class="img-fluid" alt="">
                     </picture>
                 </div>
             </div>
@@ -12,7 +12,7 @@
         <section class="landing-section">
             <div class="container">
                 <h1 class="landing-title"><span>Про нас</span></h1>
-                <p>E-PRESSA.COM – iнтернет-магазин для оформлення передплати електронних бухгалтерських видань. Ми розпочали роботу одними з перших у 2016 році і на сьогодні залишаємось лідером ринку.</p>
+                <p>E-PRESA.COM – iнтернет-магазин для оформлення передплати електронних бухгалтерських видань. Ми розпочали роботу одними з перших у 2016 році і на сьогодні залишаємось лідером ринку.</p>
             </div>
         </section>
         <section class="landing-section">
@@ -28,7 +28,7 @@
                         <br>
                         <u>(044) 507-22-77</u>
                         <br>
-                        <u>info@e-pressa.com</u>
+                        <u>info@e-presa.com</u>
                     </div>
                     <div class="col-lg-6">
                         <u>ТОВ «Е-Передплата»</u>
@@ -39,7 +39,7 @@
                         <br>
                         <u>(044) 507-22-77</u>
                         <br>
-                        <u>info@e-pressa.com</u>
+                        <u>info@e-presa.com</u>
                     </div>
                 </div>
             </div>

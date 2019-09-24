@@ -18,7 +18,7 @@
         </template>
         <template v-slot:price-title>
             <div>
-                <h2 class="landing-title landing-title--columns"><span>Акційна пропозиція діє до 20 вересня</span></h2>
+                <h2 class="landing-title landing-title--columns"><span>Акційна пропозиція діє до 30 вересня</span></h2>
             </div>
         </template>
         <template v-slot:action-due>

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.landing-msfz_october2019_2 .dtkt-promo { background-color: #f8ddaf; }
+
+.landing-msfz_october2019_2 .packages__column { padding-top: 50px; }
+
+.landing-msfz_october2019_2 .landing-title--columns { padding-top: 50px; margin-bottom: 20px; }
+
+.landing-msfz_october2019_2 .landing-title--columns:nth-child(2) { position: relative; }
+
+.landing-msfz_october2019_2 .landing-title--columns span { color: #040207; }
+
+.landing-msfz_october2019_2 .package__header { background-color: #ff6f26; }
+
+.landing-msfz_october2019_2 .package__price-half { color: #5b3214; }
+
+.landing-msfz_october2019_2 .package__presents { display: block !important; text-align: left; }
+
+.landing-msfz_october2019_2 .package-plus { position: relative; }
+
+.landing-msfz_october2019_2 .package-plus .package__header { position: relative; color: #fff; background-color: #881441; }
+
+.landing-msfz_october2019_2 .package-plus .package__header .package__period { color: #fab4a8; }
+
+.landing-msfz_october2019_2 .package-plus .package__header .package__old-price { color: #fab4a8; }
+
+.landing-msfz_october2019_2 .package-plus .package__header .package__price-half { color: #fab4a8; }
+
+.landing-msfz_october2019_2 .package-plus .btn-package { background-color: #780ea4; }
+
+.landing-msfz_october2019_2 .package-plus .btn-package:hover, .landing-msfz_october2019_2 .package-plus .btn-package:active, .landing-msfz_october2019_2 .package-plus .btn-package:focus { background-color: #201973; }
+
+.landing-msfz_october2019_2 .package-plus-top { position: relative; }
+
+.landing-msfz_october2019_2 .package-plus-top:before { position: absolute; content: "топ продажу"; color: #fff; border-radius: 4px; background-color: #780ea4; width: 180px; left: 50%; top: 39px; font-size: 14px; font-weight: 600; line-height: 25px; transform: translate(-50%); text-align: center; text-transform: uppercase; z-index: 1; }
+
+.landing-msfz_october2019_2 .package__presents-list li { color: #040207; }
+
+.landing-msfz_october2019_2 .package__presents-list li:before { background: transparent url(images/gift_purple.svg) no-repeat top center; width: 20px; height: 24px; }
+
+.landing-msfz_october2019_2 .package__presents-list .no-active { color: #bdbbbb; cursor: not-allowed; }
+
+.landing-msfz_october2019_2 .package__presents-list .no-active:before { background: transparent url(images/gift_gray.svg) no-repeat top center; }
+
+.landing-msfz_october2019_2 .btn-package { background-color: #a72816; }
+
+.landing-msfz_october2019_2 .btn-package:hover, .landing-msfz_october2019_2 .btn-package:active, .landing-msfz_october2019_2 .btn-package:focus { background-color: #a20f51; }
+
+.landing-msfz_october2019_2 .package__abilities-item-platform { margin-top: 50px; position: relative; }
+
+.landing-msfz_october2019_2 .package__abilities-item-platform:after { position: absolute; content: " "; background: transparent url(images/plus.svg) no-repeat top center; top: -40px; left: 50%; transform: translate(-50%); width: 26px; height: 26px; }
+
+.landing-msfz_october2019_2 .package__abilities-item-platform a { text-decoration: underline; }
+
+.landing-msfz_october2019_2 .package__abilities-item-platform a:hover { text-decoration: none; }

@@ -1,0 +1,88 @@
+<template>
+    <landing name="buhzakon_november2019_2" advantages="epressa_add_buhzakon" class="landing-buhzakon_november2019_2">
+        <template v-slot:cover>
+            <div class="dtkt-promo">
+                <div class="landing-section">
+                    <div class="container container--august">
+                        <div class="cover">
+                            <picture class="cover__img">
+                                <source :src="mix('images/head_035_webp.webp')" type="image/webp">
+                                <img :src="mix('images/head_035.jpg')" class="img-fluid" alt="coffe">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template v-slot:about>
+            <div>
+            </div>
+        </template>
+        <template v-slot:price-title>
+            <div>
+                <h2 class="landing-title landing-title--columns"><span>АКЦІЙНА ПРОПОЗИЦІЯ ДІЄ ДО 22 ЛИСТОПАДА</span></h2>
+            </div>
+        </template>
+        <template v-slot:action-due>
+
+            <p class="landing-section__action">Передплатити електронне видання «БУХГАЛТЕР&ЗАКОН» – це отримати у подарунок смартфон або планшет та ще й квиток до залу на Великий Кадровий Семінар!</p>
+
+        </template>
+        <template v-slot:tab-radio>
+            <div class="tab-content"> <label class="label" :class="{active: tab ==='6'}" @click="tab = '6'">+ 1 подарунок </label> <label class="label" :class="{active: tab ==='12'}" @click="tab = '12'">+ 2 подарунки </label></div>
+        </template>
+        <template v-slot:packages_list>
+            <landing-package-row v-show="tab ==='6'">
+                <landing-package article="ep-buhzakon_2111">
+                    <template v-slot:title>БУХГАЛТЕР&ЗАКОН <br> та подарунок</template>
+                    <template v-slot:period><div class="period">грудень 2019 – травень 2020</div> </template>
+                    <template v-slot:gifts>
+                        <li>квиток до залу на<br> <a href="https://7eminar.com/26112019" target="_blank">Великий Кадровий Семінар</a></li>
+                        <li class="no-active">сучасний планшет або смартфон</li>
+                    </template>
+                    <template v-slot:abilities>
+                        <li>Щотижневе електронне видання</li>
+                        <li>Аналітичні матеріали з практичними рекомендаціями експертів</li>
+                        <li>Доступ до архівних випусків видання</li>
+                        <li>Функція «Задати питання автору»</li>
+                        <li>Безкоштовний доступ до «Право України» – унікальному рішенню для роботи з базою нормативних документів</li>
+                    </template>
+                    <template v-slot:old-price>
+                        <div class="package__old-price" style="text-decoration: line-through">3074 грн</div>
+                    </template>
+                </landing-package>
+            </landing-package-row>
+            <landing-package-row v-show="tab ==='12'">
+                <landing-package article="ep-buhzakon_2111_gi">
+                    <template v-slot:title>БУХГАЛТЕР&ЗАКОН <br> та подарунки</template>
+                    <template v-slot:period><div class="period">грудень 2019 – травень 2020</div> </template>
+                    <template v-slot:gifts>
+                        <li>квиток до залу на<br> <a href="https://7eminar.com/26112019" target="_blank">Великий Кадровий Семінар</a></li>
+                        <li >сучасний <a href="https://consumer.huawei.com/ua/tablets/mediapad-t3-7/" target="_blank">планшет</a> або <a href="https://consumer.huawei.com/ua/phones/y5-2018/" target="_blank">смартфон</a></li>
+                    </template>
+                    <template v-slot:abilities>
+                        <li>Щотижневе електронне видання</li>
+                        <li>Аналітичні матеріали з практичними рекомендаціями експертів</li>
+                        <li>Доступ до архівних випусків видання</li>
+                        <li>Функція «Задати питання автору»</li>
+                        <li>Безкоштовний доступ до «Право України» – унікальному рішенню для роботи з базою нормативних документів</li>
+                    </template>
+                    <template v-slot:old-price>
+                        <div class="package__old-price" style="text-decoration: line-through">8174 грн</div>
+                    </template>
+                </landing-package>
+            </landing-package-row>
+        </template>
+    </landing>
+</template>
+
+<script>
+import Page from '../../core/Page'
+
+export default {
+    mixins: [Page],
+    data:()=>({
+        tab: '12'
+    })
+}
+</script>

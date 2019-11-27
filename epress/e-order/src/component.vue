@@ -321,6 +321,7 @@ export default {
                 options: this.options,
                 customer: this.customer,
             }).then(({ data: result }) => {
+
                     switch (result.action) {
                         case 'AWAIT':
                             this.done = true
@@ -331,6 +332,7 @@ export default {
                                 shipping: 0,
                                 tax: 0,
                                 'currency': 'UAH',
+
                             })
 
                             ga('ecommerce:addItem', {

@@ -7,7 +7,7 @@
                         <div class="cover">
                              <picture class="cover__img">
                                  <source :srcset="mix('images/head_032_webp.webp')" type="image/webp">
-                                 <img :src="mix('images/head_032.jpg')" class="img-fluid" alt="coffe">
+                                 <img :src="mix('images/head_02.jpg')" class="img-fluid" alt="coffe">
                              </picture>
                         </div>
                     </div>

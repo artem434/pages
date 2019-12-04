@@ -1,5 +1,5 @@
+.landing-msfz_november2019_4{
 
-.landing-dtkt_november2019_3 {
   $main_head: #daecff;
 
   $main_head_plus: #e99e3a;
@@ -23,7 +23,7 @@
   }
 
   .dtkt-promo{
-    background-color: #000320;
+    background-color: #efefef;
   }
 
   .packages__column{
@@ -71,12 +71,6 @@
   }
   .package__price{
     display: none;
-  }
-  .btn-package--six{
-    display: none;
-  }
-  .btn-package--three{
-    display: inline-block!important;
   }
 
 
@@ -244,7 +238,7 @@
     background-color: #dfdfdf;
     max-width: 400px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto 0;
     display: flex;
     border-radius: 16px;
 
@@ -263,12 +257,10 @@
       transition: 0.5s;
       cursor: pointer;
       &.active{
-        background-color: #000088;
+        background-color: #00456c;
         box-shadow: 0 5px 18px rgba(0, 0, 0, 0.48);
         color: #fff;
       }
     }
   }
-
 }
-

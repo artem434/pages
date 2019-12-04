@@ -179,7 +179,7 @@
                         <span v-if="tab =='6'">ПРОФІ + 7eminar.ua<br>та подарунок</span>
                         <span v-else>ПРОФІ + 7eminar.ua<br>та подарунки</span>
                     </template>
-                    <template v-slot:period><div class="period">грудень 2019 – лютий 2020</div> </template>
+                    <template v-slot:period><div class="period">січень 2020 – березень 2020</div> </template>
                     <template v-slot:gifts>
                         <li>відеозапис<br> <a href="https://7eminar.com/06112019" target="_blank">Великого Семінару із Заробітної Плати</a></li>
                         <li :class="{'no-active' : tab =='6' }">сертифікат номіналом <br>
@@ -214,7 +214,7 @@
                         <li>Велика настільна книга</li>
                         <li>Звітність у «СОТА»</li>
                         <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a>:  понад 120 курсів та вебінарів для перегляду
-                            <br> (грудень – лютий 2020 р.)</li>
+                            <br> (січень 2020 – березень 2020 р.)</li>
                     </template>
                     <template v-slot:old-price>
                         <div  v-if="tab =='6'" class="package__old-price" style="text-decoration: line-through">1695 грн</div>

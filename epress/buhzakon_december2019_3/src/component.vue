@@ -29,7 +29,7 @@
 
         <template v-slot:packages_list>
             <landing-package-row>
-                <landing-package article="ep-buhzakon_1312">
+                <landing-package article="ep-buhzakon_1012">
                     <template v-slot:title>
 
                         <span > БУХГАЛТЕР&ЗАКОН<br>та подарунки</span>
@@ -37,7 +37,7 @@
                     <template v-slot:period><div class="period">січень – червень  2020</div> </template>
                     <template v-slot:gifts>
                         <li>квиток до залу на <a href="https://7eminar.com/23012020" target="_blank">Великий Річний Семінар (23.01.2020)</a> </li>
-                        <li><a href="https://www.club-cdma.com.ua/power-bank-remax-lipmax-rpl-12-2400-mah/" target="_blank">powerbank</a> для леді</li>
+
                     </template>
                     <template v-slot:abilities>
                         <li>Щотижневе електронне видання</li>

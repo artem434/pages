@@ -60,6 +60,10 @@
     color: #008ed6;
   }
   .package__presents {
+    display: none !important;
+    text-align: left;
+  }
+  .package__present {
     display: block !important;
     text-align: left;
   }

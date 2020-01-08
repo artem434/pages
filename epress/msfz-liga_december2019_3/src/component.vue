@@ -30,7 +30,7 @@
         </template>
         <template v-slot:packages_list>
             <landing-package-row >
-                <landing-package article="ep-msfz-liga_1312">
+                <landing-package article="ep-msfz-liga_1012">
                     <template v-slot:title>
 
                         <span>Вісник МСФЗ<br>та подарунки</span>
@@ -38,7 +38,6 @@
                     <template v-slot:period><div class="period">січень – червень  2020</div> </template>
                     <template v-slot:gifts>
                         <li>відеокурс <a href="https://7eminar.com/prybutok_msfz2019" target="_blank"> «Податок на прибуток та МСФЗ»</a> </li>
-                        <li><a href="https://www.club-cdma.com.ua/power-bank-remax-lipmax-rpl-12-2400-mah/" target="_blank">powerbank</a> для леді</li>
                     </template>
                     <template v-slot:abilities>
                         <li>Електронне видання</li>

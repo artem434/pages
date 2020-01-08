@@ -31,7 +31,7 @@
 
         <template v-slot:packages_list>
             <landing-package-row >
-                <landing-package article="ep-contr-a_ek_1312">
+                <landing-package article="ep-contr-a_ek_1012">
                     <template v-slot:title>
 
                         <span >ТАРИФ<br>«START» <br>та подарунки</span>
@@ -39,7 +39,7 @@
                         <template v-slot:period><div class="period">січень  – червень  2020</div> </template>
                     <template v-slot:gifts>
                         <li>квиток до залу на <a href="https://7eminar.com/23012020" target="_blank">Великий Річний Семінар (23.01.2020)</a> </li>
-                        <li><a href="https://www.club-cdma.com.ua/power-bank-remax-lipmax-rpl-12-2400-mah/" target="_blank">powerbank</a> для леді</li>
+                        <li class="no-active">powerbank для леді</li>
 
                     </template>
                         <template v-slot:abilities>
@@ -59,7 +59,7 @@
                         </template>
                     </landing-package>
 
-                    <landing-package article="ep-contr-a_cp_1312">
+                    <landing-package article="ep-contr-a_cp_1012">
                         <template v-slot:title>
 
                             <span >ТАРИФ<br>«OPTIMUM»<br>та подарунки</span>
@@ -87,7 +87,7 @@
                         </template>
                     </landing-package>
 
-                    <landing-package article="ep-contr-a_pr_1312" >
+                    <landing-package article="ep-contr-a_pr_1012" >
                         <template v-slot:title>
 
                             <span >ТАРИФ<br>«PREMIUM»<br>та подарунки</span>
@@ -116,7 +116,7 @@
                         </template>
                     </landing-package>
 
-                <landing-package article="ep-contr-a_pp_1312">
+                <landing-package article="ep-contr-a_pp_1012">
 
                         <template v-slot:title>
 

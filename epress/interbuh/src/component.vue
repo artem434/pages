@@ -99,7 +99,7 @@
             </landing-package-row>
             <landing-package-row>
 
-                    <landing-package article="ep-interbuh_7ib">
+                    <landing-package article="ep-api_bandl">
                         <template v-slot:title>ТАРИФ «Інтербух <br>  + 7eminar.com»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>

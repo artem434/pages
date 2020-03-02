@@ -314,12 +314,14 @@ export default {
             this.$v.$touch()
             if (this.$v.$invalid) return
             this.processing = true
+            const utm = JSON.parse(sessionStorage.getItem('utm') || '{}')
             axios.post('/api/shop/order', {
                 article: this.product.article,
                 quantity: this.quantity,
                 processing,
                 options: this.options,
                 customer: this.customer,
+                utm
             }).then(({ data: result }) => {
 
                     switch (result.action) {

@@ -35,7 +35,7 @@
                             <li>Календар бухгалтера</li>
                         </template>
                     </landing-package>-->
-                    <landing-package article="ep-interbuh_st_1111">
+                    <landing-package article="ep-interbuh_st">
                         <template v-slot:title>ТАРИФ<br>«СТАНДАРТ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -53,7 +53,7 @@
                             <li>Вебінари щомісяця</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-interbuh_pr_1111">
+                    <landing-package article="ep-interbuh_pr">
                         <template v-slot:title>ТАРИФ<br>«ПРЕМІУМ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -74,7 +74,7 @@
                             <li>Сервіс онлайн-звітності Liga:REPORT</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-interbuh_pp_1111">
+                    <landing-package article="ep-interbuh_pp">
                         <template v-slot:title>ТАРИФ<br>«ПРЕМІУМ+»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>

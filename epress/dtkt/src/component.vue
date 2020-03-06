@@ -59,7 +59,7 @@
                             <li>Доступ до архівних номерів на сайті</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-dtkt_ek_1311p">
+                    <landing-package article="ep-dtkt_ekp">
                     <template v-slot:title>ПАКЕТ<br>«ЕКСПЕРТ ПЛЮС»</template>
                     <template v-slot:gifts>
                         <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -82,7 +82,7 @@
                 </landing-package>
             </landing-package-row>
             <landing-package-row>
-                    <landing-package article="ep-dtkt_pr_1311" class="dddd">
+                    <landing-package article="ep-dtkt_pr" class="dddd">
                         <template v-slot:title>ПАКЕТ<br>«ПРОФІ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -106,7 +106,7 @@
                             <li>Звітність у «СОТА»</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-dtkt_pp_1311">
+                    <landing-package article="ep-dtkt_pp">
                         <template v-slot:title>ПАКЕТ<br>«ПРОФІ ПЛЮС»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>

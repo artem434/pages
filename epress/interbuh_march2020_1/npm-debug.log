@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\7eminar\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'development',
+1 verbose cli   '--',
+1 verbose cli   '--watch'
+1 verbose cli ]
+2 info using npm@3.10.10
+3 info using node@v12.13.0
+4 verbose run-script [ 'predevelopment', 'development', 'postdevelopment' ]
+5 info lifecycle @~predevelopment: @
+6 silly lifecycle @~predevelopment: no script for predevelopment, continuing
+7 info lifecycle @~development: @
+8 verbose lifecycle @~development: unsafe-perm in lifecycle true
+9 verbose lifecycle @~development: PATH: C:\Users\7eminar\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;C:\Projects\7eminar\storage\app\public\pages\epress\interbuh_march2020_1\node_modules\.bin;C:\Users\7eminar\AppData\Local\Temp\yarn--1583397827097-0.6614136971698001;C:\Projects\7eminar\storage\app\public\pages\epress\interbuh_march2020_1\node_modules\.bin;C:\Users\7eminar\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\7eminar\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Projects\7eminar\node_modules\.bin;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Ruby26-x64\bin;C:\Users\7eminar\AppData\Local\Microsoft\WindowsApps;c:\php;C:\Users\7eminar\AppData\Roaming\Composer\vendor\bin;C:\Users\7eminar\AppData\Roaming\npm
+10 verbose lifecycle @~development: CWD: C:\Projects\7eminar\storage\app\public\pages\epress\interbuh_march2020_1
+11 silly lifecycle @~development: Args: [
+11 silly lifecycle   '/d /s /c',
+11 silly lifecycle   'cross-env NODE_ENV=development ../node_modules/webpack/bin/webpack.js --progress --hide-modules --config=../node_modules/laravel-mix/setup/webpack.config.js "--watch"'
+11 silly lifecycle ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at process.kill (internal/process/per_thread.js:189:13)
+12 verbose stack     at process.listener (C:\Users\7eminar\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at process.emit (events.js:215:7)
+13 verbose cwd C:\Projects\7eminar\storage\app\public\pages\epress\interbuh_march2020_1
+14 error Windows_NT 10.0.18362
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\7eminar\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "development" "--" "--watch"
+16 error node v12.13.0
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

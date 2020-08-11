@@ -1,0 +1,145 @@
+.package {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #004db5;
+  text-align: center;
+  transition: transform 150ms ease-in;
+
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 44px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color:#333232;
+    background-image: linear-gradient(to left, #fff, #fff);
+    text-transform: uppercase;
+    border-radius: 25px 25px 0 0 ;
+    border-bottom: 5px solid #5b4cde;
+  }
+
+  &__main {
+    padding: 40px 40px 35px 45px;
+    @media (max-width: 760px){
+      padding: 30px 20px 25px 15px;
+    }
+  }
+
+  &__list {
+    margin-left: 30px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 18px;
+    line-height: 29px;
+    color: #ffffff;
+    margin-bottom: 40px;
+
+    li {
+      position: relative;
+      padding-left: 26px;
+      text-transform: lowercase;
+
+      &:before {
+        position: absolute;
+        top: 0px;
+        left: -5px;
+        font-family: "FontAwesome";
+        color: #1c92ff;
+        content: "\f00c";
+        font-size: 21px;
+      }
+    }
+  }
+  &__gift{
+    line-height: 60px;
+    font-weight: bold;
+    color: #9bcffd;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    a{
+      color: #9bcffd;
+      text-decoration: underline;
+      text-transform: initial;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    &:before {
+      content: "\f06b";
+      position: absolute;
+      top: 8px;
+      left: 30px;
+      font-family: FontAwesome;
+      color: #fff;
+      font-size: 40px;
+    }
+
+  }
+
+  &__price {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 43px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #ffffff;
+
+    span {
+      font-size: 65px;
+    }
+
+    s {
+      position: absolute;
+      top: -35px;
+      right: -2;
+      font-size: 36px;
+      font-weight: normal;
+      line-height: 44px;
+      color: #ffffff;
+    }
+  }
+
+  &__btn {
+    margin: 0;
+
+    .btn {
+      width: 173px;
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 5px 0.9px 0.1px rgba(0, 0, 0, 0.17);
+      background-color: #df5f1f;
+      transition: .5s ease;
+      @media (max-width: 760px){
+        width: 230px;
+        line-height: 47px;
+        font-size: 22px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #fe0144;
+      }
+    }
+  }
+}

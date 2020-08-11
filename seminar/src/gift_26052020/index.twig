@@ -1,0 +1,120 @@
+{% set link = page.url('/images') %}
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__block">
+                <div class="hero__item">
+                    <p class="hero__title"><span>ПОДАРУНОК</span> <br> чекає на вас!</p>
+                    <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте чек-лист <br>
+                        <b class="hero__bold">«10 прикладів кадрових документів»</b> <br> (накази, заяви, табель обліку робочого часу та інші)</p>
+                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+                </div>
+                <form id="form"  class="free-demo" >
+                    <div class="form__title">Реєстрація діє ще</div>
+                    <div class="timer">
+                        <div class="timer__box">
+                            <div class="timer__mins">00</div><span> хв</span>
+                        </div><span class="timer__separate">:</span>
+                        <div class="timer__box">
+                            <div class="timer__secs">00 </div><span> сек</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input  name="name" type="text" placeholder="Ім’я"  maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input  name="email" type="email" placeholder="E-mail" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                    </div>
+                    <input class="article"  type="hidden" value="онлайн-demo13052020_gift1"/>
+                    <input class="utm" name="options[utm]" type="hidden" value=""/>
+                    <input class="dealer" name="dealer" type="hidden" value="4"/>
+                    <div class="form__btn">
+                        <button type="submit" class=" btn-default">Отримати чек-лист </button>
+                    </div>
+                </form>
+                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+            </div>
+            <div class="hero__description">Також ви отримуєте можливість прослухати <br>
+                <b>бухгалтерську online-конференцію абсолютно безкоштовно
+                </b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
+
+        </div>
+    </div>
+
+    <div id="theme" class="themes">
+        <div class="container theme__container">
+            <p class="themes__title">Оnline-конференція 13 травня</p>
+            <p class="themes__sub-title"> Бухгалтерське життя під час та після карантину: <br> запізнілі документи, ПДВ та ПН, перевірки, зарплата та кадри</p>
+            <p class="themes__sub-title"></p>
+            <div class="themes__item">
+                <div class="themes__header"><p>теми <br> online-конференції</p></div>
+                <div class="themes__body">
+
+                    <ul class="themes__list lector">
+                        <li class="lector__item lector__item--ta">
+                            <div class="lector__body">
+                                <p class="themes__time">11:00–11:30</p>
+                                <p class="lector__title">Післякарантинний поетапний вихід на роботу: з чого почати кадрове документальне оформлення і якими кадровими документами закрити перебування на карантині</p>
+                                <p class="lector__info"> Тимур Алієв, консультант з питань бухгалтерського обліку та оподаткування</p>
+                            </div>
+                        </li>
+                        <li class="lector__item lector__item--iz">
+                            <div class="lector__body">
+                                <p class="themes__time">11:30–12:00</p>
+                                <p class="lector__title"> Запізнілі документи або «самоакт»: як зробити правильно? Документуємо реальність господарської операції. Особливості документування послуг</p>
+                                <p class="lector__info">   Ірина Зубрицька, податковий консультант, судовий експерт-економіст, аудитор, оцінювач</p>
+                            </div>
+                        </li>
+                        <li class="lector__item lector__item--os">
+                            <div class="lector__body">
+                                <p class="themes__time">12:00–12:30</p>
+                                <p class="lector__title">Післякарантинні тотальні перевірки бізнесу. Бенефіціарні оновлення в державному реєстрі. Фінмоніторинг карткових переказів (про 5000 грн і не тільки)</p>
+                                <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
+                            </div>
+                        </li>
+                        <li class="lector__item lector__item--sd">
+                            <div class="lector__body">
+                                <p class="themes__time">12:30–13:00</p>
+                                <p class="lector__title"> Податкові накладні та проблеми з реєстрацією: хто в групі ризику?</p>
+                                <p class="lector__info">  Сергій Дробоття, експерт-консультант із питань оподаткування</p>
+                            </div>
+                        </li>
+
+                        <li class="lector__item lector__item--tm">
+                            <div class="lector__body">
+                                <p class="themes__time">13:00–13:30</p>
+                                <p class="lector__title"> Післякарантинна зарплата працівників: виплати помалу, але часто (про документальне оформлення, нарахування та виплату зароблених грошей після довгого безгрошів'я). Зарплатні податки і звітність травня</p>
+                                <p class="lector__info"> Тетяна Мойсеєнко, шеф-редактор 7eminar.com,              експерт з трудового та кадрового обліку</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#form" class="themes__btn">Хочу дивитися</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+</div>

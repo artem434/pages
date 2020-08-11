@@ -1,0 +1,47 @@
+    <div class="hero"  data-require="{{ page.url('/script.js') }}">
+    <div data-require="@black,auth" class="hero__form hero__content modal__inner modal__inner--no-modal modal_header_auth">
+        <h1>Ой, а ви вже зареєстровані…</h1>
+        <p id="text_logout">{{ page.options['text_auth']|default('') }} <a id="rem" href="/events/1265">для перегляду</a>.
+        </p>
+        <div id="form_logout" class="hero-form__body">
+            <p>{{ page.options['text1']|default('') }}<br/>{{ page.options['text2']|default('') }}</p>
+            <form id="authForm" action="" method="post" data-validate="ajax" class="modal__form form">
+                <div class="form-group">
+                    <label for="email" class="form__label">Логін:</label>
+                    <input id="reg-email" name="email" type="email" value="" aria-invalid="true" data-msg-email="Введіть коректно e-mail" data-msg-required="Введіть коректно e-mail" required="" autocomplete="false" readonly=""/>
+                </div>
+                <div class="form-group">
+                    <label for="login-password-1" class="form__label">Пароль:</label>
+                    <input id="new-pass" name="password" type="password" aria-invalid="true" value="" data-msg="Невірний e-mail або пароль" required="" minlength="6" autocomplete="false"/>
+                </div>
+                <div class="refresh_pass">
+                    <p>Раптом ви забули пароль – отримайте новий <a href="/restore" target="_blank">за посиланням</a>.
+                    </p>
+                </div>
+                <input name="source" type="hidden" value=""/>
+                <div class="hero-form__btn">
+                    <input type="submit" value="Увійти" id="#elem" class="btn btn-default"/>
+                </div>
+            </form>
+            <h4>Приємного перегляду!</h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+</div>
+

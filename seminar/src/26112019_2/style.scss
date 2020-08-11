@@ -1,0 +1,97 @@
+
+
+.branding-page #main{
+  width: 100%;
+}
+
+.branding-page{
+  padding-top: 0px;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+%title {
+  color: #1b1b1b;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0;
+  @media (max-width: 1200px){
+    font-size: 48px;
+  }
+  @media (max-width: 760px){
+    font-size: 26px;
+    line-height: 1;
+  }
+
+
+}
+
+
+
+
+%container {
+  position: relative;
+  margin: 0 auto;
+
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+  .heading{
+    display: none;
+  }
+}
+.seminars-container{
+  .heading{
+    display: block;
+  }
+}
+#bg_popup{
+  display: none!important;
+}
+#bg_popup_two{
+  display: none!important;
+}
+#bg_popup_three{
+  display: none!important;
+}
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "styles/loader-page";
+@import "styles/variables";
+@import "styles/mixins";
+@import "styles/base";
+@import "styles/header";
+@import "styles/menu";
+@import "styles/hero";
+@import "styles/expectation";
+@import "styles/lectors";
+@import "styles/pricing-timer";
+@import "styles/order";
+@import "styles/package";
+@import "styles/bonus";
+@import "styles/video";
+
+@import "styles/theme";
+
+@import "styles/modal-video";
+@import "styles/partners";
+@import "styles/map";
+@import "styles/loader-backdrop";
+@import "styles/footer";

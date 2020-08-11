@@ -1,0 +1,32 @@
+.tour-europe {
+  background: #00a9ca url(images/tour_eu.png)  center center;
+  @media (max-width: 760px){
+    background: #0d88a0;
+  }
+
+  &__container{
+    background:  url(images/euro_2-min.jpg) no-repeat  top center;
+    background-size: contain;
+    @at-root .webp & {
+      background:  url(images/euro_2.webp) no-repeat  top center;
+      background-size: contain;
+    }
+    @media (max-width: 767px){
+      background: none;
+      @at-root .webp & {
+        background: none;
+      }
+    }
+  }
+
+  &__btn{
+    @media (max-width: 760px){
+      margin: 20px auto;
+      background-color: #cdd417;
+      border: none;
+    }
+  }
+}
+
+
+

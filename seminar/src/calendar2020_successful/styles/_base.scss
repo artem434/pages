@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+//-font-family: 'Exo 2', sans-serif;
+body {
+  min-width: 320px;
+}
+
+#main {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+}
+
+.mw {
+  min-width: 320px;
+}
+
+.seminar-landing {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  //-background: url(images/bg-h.png) no-repeat top center, linear-gradient(90deg, #fefefe 0%, #fbfbfb 50%, #ffffff 77%, #ffffff 100%);
+  background-size: cover;
+
+  .container {
+
+  }
+
+
+  .row {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  [class*='col-'] {
+    padding: 0 10px;
+  }
+}
+
+.footer {
+  //display: none;
+}
+
+.fixedtop {
+  display: none!important;
+}
+
+#bg_popup {
+  display: none!important;
+}
+#__telerWdTriggerContent{
+  @media (max-width: 980px){
+  display: none!important;}
+}
+.btn--mob{
+  display: block;
+  @include laptop() {
+    display: none;
+  }
+}
+.btn--desk{
+  display: none;
+  @include laptop() {
+    display: block;
+  }
+}

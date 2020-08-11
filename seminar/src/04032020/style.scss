@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900&display=swap&subset=cyrillic');
+//-font-family: 'Fira Sans', sans-serif;
+//-font-family: 'Open Sans', sans-serif;
+button{
+  &:focus{
+    outline: none!important;
+  }
+}
+
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+}
+
+#bg_popup{
+  display: none!important;
+}
+
+#bg_popup_two{
+  display: none!important;
+}
+
+#__telerWdTriggerContent{
+  display: none!important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  background: #fff;
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+.circle{
+  display: none;
+}
+
+%container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: 1200px){
+    max-width: 767px;
+    width: 100%;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+  }
+}
+
+%title{
+  color: #1e1e1e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 38.32px;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.seminar-landing {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.fixedtop.show {
+  z-index: 10;
+}
+
+.footer {
+  margin-top: 0;
+}
+.order__gift{
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #424342;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  span{
+    font-size: 25px;
+  }
+}
+
+@import "mixins";
+@import "variables";
+@import "hero";
+@import "menu";
+@import "knowledges";
+@import "advantages";
+@import "lectors";
+@import "themes";
+@import "gifts";
+@import "order";
+@import "pricing-timer";
+@import "package";
+@import "video";
+@import "partners";
+@import "map";
+@import "popup";
+@import "modal-video";
+@import "loader-page";
+@import "header";
+@import "footer";
+
+.branding-page #main{
+  width: 100%;
+}
+
+.branding-page{
+  padding-top: 0px;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+  .heading{
+    display: none;
+  }
+}

@@ -1,0 +1,160 @@
+include vars
+- var seminars = 77
+- var lectors = 19
+- var peoples = '38 340'
+
+-var caption='Вартість участі для передплатників агенції «Київська бухгалтерська служба», «Е-Преса», передплатників журналу «Дебет-Кредит» (2017)';
+
+mixin logo(name)
+  if name == 'dtkt'
+    td: a(href="https://dtkt.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/dtkt.png" width=146 height=38 alt="Дебет-Кредит")
+  else if name == '7eminar'
+    td: a(href="https://7eminar.com/", target="_blank" )
+      img(src=base + "/images/logos/7eminar.png" width=184 height=24 alt="7eminar.com")
+  else if name == 'kbs'
+    td: a(href="https://7eminar.com/", target="_blank")
+      img(src=base + "/images/logos/kbs.png" width=145 height=38 alt="Київська Бухгалтерська Служба")
+  else if name == 'softcom'
+    td: a(href="http://www.softcom.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/softcom.png" height=50 alt="Софтком")
+  else if name == 'yt'
+    td: a(href="https://yt.ua/uk", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/you_time.png" height=38 alt="Твій час. ")
+  else if name == 'zp'
+    td: a(href="http://zpl.com.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/zp.png" height=38 alt="Заработная плата")
+  else if name == '1C'
+    td: a(href="http://1c.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/1C.png" height=38 alt="1C")
+  else if name == 'kraft'
+    td: a(href="http://www.kraft.net.ua/", target="_blank" rel="nofollow")
+      img(src="https://7eminar.com/modules/seminars/images/logos/kraft.png" height=38 alt="Крафт")
+  else if name == 'kadrovik'
+    td: a(href="http://www.kadrovik.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/kadr.png" height=38 alt="")
+  else if name == 'kiz'
+    td: a(href="http://www.kadrovik.ua/content/gazeta-kadri-i-zarplata", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/kiz.png" height=38 alt="")
+  else if name == 'balance'
+    td: a(href="http://balance.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/balance.png" height=38 alt="")
+  else if name == 'jurimex'
+    td: a(href="http://jurimex.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/jurimex.png" height=38 alt="Jurimex")
+  else if name == 'ifactor'
+    td: a(href="https://i.factor.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/ifactor.png" height=38 alt="iFactor")
+  else if name == 'leboutique'
+    td: a(href="https://leboutique.com/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/leboutique.svg" height=38 alt="LeBoutique")
+  else if name == 'smart'
+    td: a(href="http://www.smart-it.com/uk/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/smart.png" height=50 alt="Smart IT")
+  else if name == 'smart-2'
+    td: a(href="http://www.smart-it.com/uk/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/smart-2.png" height=50 alt="Smart IT")
+  else if name == 'nibu'
+    td: a(href="https://i.factor.ua/journals/nibu/about.html?utm_source=7eminar&utm_medium=partners&utm_campaign=seminar-kyiv", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/nibu.png" height=50 alt="iFactor" )
+  else if name == 'liga'
+    td: a(href="http://www.ligazakon.ua/ru/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/liga.svg" height=50 alt="ЛИГА:ЗАКОН")
+  else if name == 'vchasno'
+    td: a(href="https://vchasno.com.ua/?utm_source=logopartner_campaign=seminarsite&utm_medium=seminarcom", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/vchasno.svg" height=50 alt="Вчасно")
+  else if name == 'sed'
+    td: a(href="http://1c-sed.com.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/sed.jpg" height=30 alt="1C-СЕД")
+  else if name == 'master-buh'
+    td: a(href="http://masterbuh.com/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/master-buh.png" height=38 alt="Master Бухгалтерія")
+  else if name == 'ufl'
+    td: a(href="https://www.u-f-l.net/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/ufl.png" height=40 alt="UFL - Доставка цветов")
+  else if name == 'zakupki'
+    td: a(href="https://zakupki.prom.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/zakupki.png" height=43 alt="zakupki.prom.ua")
+  else if name == 'prozorro'
+    td: a(href="https://prozorro.gov.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/prozorro.png" height=35 alt="prozorro")
+  else if name == 'rialto'
+    td: a(href="https://rialtotenders.com.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/rialto.png" height=28 alt="RIALTO")
+  else if name == 'e.gov'
+    td: a(href="http://www.e.gov.ua/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/DAPPUU.png" height=65 alt="Державне агентство з питань електронного урядування України.")
+  else if name == 'prozorro_sales'
+    td: a(href="https://prozorro.sale/", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/prozorro_sales.png" height=35 alt="prozorro продажі")
+  else if name == 'buh_ua'
+    td: a(href="https://buh-ua.com.ua", target="_blank" rel="nofollow")
+      img(src=base + "/images/logos/buh_ua.png" height=35 alt="БУХГАЛЕТРІЯUA")
+
+
+mixin timer(date)
+  .timer(data-timer=date)
+    .timer-inner
+      .box
+        span.days 00
+        | дні
+      .box
+        span.separate :
+      .box
+        span.hours 00
+        | год
+      .box
+        span.separate :
+      .box
+        span.minuts 00
+        | хв
+      .box
+        span.separate :
+      .box
+        span.seconds 00
+        | сек
+
+mixin pricingTimer(date)
+  .pricing-timer(data-timer=date)
+    .pricing-timer__inner
+      .pricing-timer__box
+        span.days 00
+        | дні
+      .pricing-timer__box
+        span.separate :
+      .pricing-timer__box
+        span.hours 00
+        | год
+      .pricing-timer__box
+        span.separate :
+      .pricing-timer__box
+        span.minuts 00
+        | хв
+      .pricing-timer__box
+        span.separate :
+      .pricing-timer__box
+        span.seconds 00
+        | сек
+        
+mixin icon(name)
+  if name == 'hall'
+    .ico-hall
+      svg(xmlns='http://www.w3.org/2000/svg', version='1.1', x='0px', y='0px', viewbox='0 0 512 512',  xml:space='preserve', width='40px', height='40px')
+        path(d='M450.787,395.503c10.9-8.537,17.926-21.805,17.926-36.692v-35.038c0-25.695-20.904-46.599-46.599-46.599h-0.981    c-25.694,0-46.599,20.904-46.599,46.599v35.038c0,14.886,7.026,28.156,17.925,36.692c-18.897,6.641-35.143,19.219-46.133,35.198    V256.528h11.995c4.151,0,7.514-3.364,7.514-7.514v-38.707c0-4.15-3.363-7.514-7.514-7.514h-18.711v-17.009    c0-34.235-23.791-64.598-56.074-76.276c9.878-8.079,16.196-20.354,16.196-34.08v-15.71V44.017c0-0.758-0.019-1.513-0.057-2.262    C298.492,18.531,279.228,0,255.714,0h-0.001c-24.271,0-44.017,19.745-44.017,44.017v15.706v15.706    c0,13.726,6.319,26.002,16.196,34.08c-32.283,11.677-56.075,42.041-56.075,76.276v17.009h-18.711    c-4.151,0-7.514,3.364-7.514,7.514v38.707c0,4.15,3.363,7.514,7.514,7.514h12.79v174.497    c-10.993-16.134-27.332-28.836-46.356-35.522c10.9-8.537,17.926-21.805,17.926-36.692v-35.038    c0-25.695-20.904-46.599-46.599-46.599h-0.982c-25.694,0-46.598,20.904-46.598,46.599v35.038c0,14.887,7.025,28.156,17.925,36.692    c-35.16,12.358-61.16,45.267-61.16,82.396v26.588c0,4.15,3.363,7.514,7.514,7.514h36.941c4.15,0,7.514-3.364,7.514-7.514    s-3.364-7.514-7.514-7.514H15.08v-19.074c0-18.832,8.055-36.856,22.682-50.752c13.984-13.286,32.651-21.159,51.406-21.756    c0.24,0.004,0.478,0.018,0.718,0.018h0.982c0.241,0,0.479-0.015,0.718-0.018c18.755,0.597,37.424,8.47,51.407,21.756    c14.627,13.896,22.682,31.92,22.682,50.752v19.074H69.552c-4.151,0-7.514,3.364-7.514,7.514S65.402,512,69.552,512h142.903    c4.151,0,7.514-3.364,7.514-7.514s-3.363-7.514-7.514-7.514h-31.53V472.77c1.324-16.954,9.166-32.995,22.458-45.624    c13.984-13.286,32.651-21.159,51.406-21.756c0.24,0.004,0.478,0.018,0.719,0.018h0.982c0.241,0,0.479-0.015,0.718-0.018    c18.755,0.597,37.424,8.47,51.407,21.756c14.627,13.896,22.682,31.92,22.682,50.752v19.074h-93.797    c-4.151,0-7.514,3.364-7.514,7.514S233.35,512,237.501,512h138.604c4.151,0,7.514-3.364,7.514-7.514s-3.363-7.514-7.514-7.514    h-29.781v-19.074c0-18.832,8.055-36.856,22.682-50.752c13.984-13.286,32.651-21.159,51.406-21.756    c0.24,0.004,0.478,0.018,0.719,0.018h0.981c0.241,0,0.479-0.015,0.718-0.018c18.756,0.597,37.424,8.47,51.407,21.756    c14.627,13.896,22.682,31.92,22.682,50.752v19.074h-95.771c-4.151,0-7.514,3.364-7.514,7.514s3.363,7.514,7.514,7.514h103.286    c4.151,0,7.514-3.364,7.514-7.514v-26.588C511.948,440.769,485.948,407.859,450.787,395.503z M91.967,390.354    c-0.496-0.015-0.991-0.032-1.489-0.039c-0.068-0.001-0.137-0.001-0.205,0c-0.497,0.007-0.993,0.024-1.488,0.039    c-16.9-0.583-30.471-14.505-30.471-31.544v-35.038c0-17.408,14.163-31.572,31.571-31.572h0.982    c17.409,0,31.572,14.163,31.572,31.572v35.038C122.439,375.85,108.868,389.771,91.967,390.354z M226.725,44.017    c0-15.985,13.004-28.989,28.989-28.989c15.984,0,28.989,13.004,28.989,28.989v6.818c-10.338-3.895-14.731-14.791-14.937-15.319    c-1.043-2.751-3.578-4.67-6.513-4.864c-2.935-0.189-5.697,1.312-7.094,3.9c-0.366,0.648-8.377,14.429-29.434,17.18V44.017z     M226.724,75.428v-8.567h0.001c17.169-1.735,28.385-9.223,34.983-15.584c4.571,6.064,11.989,12.922,22.995,15.179v8.971    c0,15.985-13.004,28.989-28.99,28.989C239.729,104.417,226.724,91.413,226.724,75.428z M252.792,145.123h5.844l7.624,30.053    l-10.546,9.653l-10.545-9.653L252.792,145.123z M247.669,120.076c0.485-0.066,0.969-0.145,1.455-0.201    c0.014-0.002,0.029-0.004,0.043-0.005c1.025-0.116,2.052-0.205,3.08-0.276c0.15-0.01,0.3-0.018,0.45-0.027    c1.006-0.061,2.012-0.105,3.018-0.121c1.006,0.015,2.012,0.06,3.018,0.121c0.15,0.009,0.3,0.017,0.45,0.027    c1.029,0.069,2.056,0.159,3.082,0.276c0.012,0.001,0.025,0.003,0.037,0.005c0.488,0.055,0.973,0.135,1.459,0.201l-4.251,10.019    h-7.587L247.669,120.076z M186.846,185.784c0-17.208,7.365-33.682,20.738-46.388c7.301-6.938,16-12.263,25.311-15.664    l6.145,14.482l-9.544,37.621c-0.681,2.682,0.168,5.522,2.21,7.391l18.934,17.33c1.436,1.314,3.254,1.971,5.073,1.971    c1.818,0,3.638-0.657,5.072-1.971l18.935-17.33c2.042-1.868,2.891-4.708,2.21-7.391l-9.544-37.621l6.144-14.482    c9.311,3.4,18.009,8.726,25.311,15.664c13.373,12.706,20.738,29.18,20.738,46.388v17.009H186.846V185.784z M257.591,390.354    c-0.496-0.015-0.991-0.032-1.488-0.039c-0.068-0.001-0.137-0.001-0.205,0c-0.497,0.007-0.992,0.024-1.488,0.039    c-16.902-0.583-30.473-14.505-30.473-31.544v-35.038c0-17.408,14.163-31.572,31.572-31.572h0.982    c17.409,0,31.572,14.163,31.572,31.572v35.038C288.063,375.85,274.492,389.771,257.591,390.354z M231.735,241.5    c-4.151,0-7.514,3.364-7.514,7.514s3.363,7.514,7.514,7.514h99.563V430.7c-10.991-15.979-27.237-28.556-46.133-35.198    c10.9-8.537,17.925-21.805,17.925-36.692v-35.038c0-25.695-20.904-46.599-46.599-46.599h-0.982    c-25.695,0-46.599,20.904-46.599,46.599v35.038c0,14.886,7.025,28.156,17.925,36.692c-18.768,6.596-34.924,19.048-45.91,34.874    V256.528h25.762h0.001c4.151,0,7.514-3.364,7.514-7.514s-3.363-7.514-7.514-7.514h-0.001H160.62v-23.679h190.184V241.5H231.735z     M423.213,390.354c-0.496-0.015-0.991-0.032-1.488-0.039c-0.068-0.001-0.137-0.001-0.205,0c-0.497,0.007-0.992,0.024-1.488,0.039    c-16.901-0.583-30.472-14.505-30.472-31.544v-35.038c0-17.408,14.163-31.572,31.572-31.572h0.981    c17.409,0,31.572,14.163,31.572,31.572v35.038C453.685,375.85,440.114,389.771,423.213,390.354z', fill='#50586d')
+  else if name == 'online'
+    .ico-online
+      svg(xmlns='http://www.w3.org/2000/svg', version='1.1', viewbox='0 0 457.68 457.68', width='40px', height='40px')
+        path(d='m439.48,167.086v-111.249c0-17.81-14.49-32.3-32.3-32.3h-374.88c-17.811,0-32.3,14.49-32.3,32.3v226.63c0,17.81 14.49,32.3 32.3,32.3h106.243l-12.162,13.09h-18.221c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h104.361v72.334c0,10.449 8.501,18.951 18.951,18.951h80.627c10.449,0 18.951-8.501 18.951-18.951v-15.234h100.94c14.166,0 25.69-11.529 25.69-25.7v-182.59c0-11.563-7.674-21.364-18.2-24.581zm3.2,24.581v2.049h-172.49v-2.049c0-5.9 4.8-10.7 10.7-10.7h151.1c5.895,0.001 10.69,4.801 10.69,10.7zm-130.581,63.364h-41.909v-46.315h172.49v148.491h-111.63v-83.226c0-10.449-8.502-18.95-18.951-18.95zm3.951,28.809h-88.528v-9.858c0-2.178 1.772-3.951 3.951-3.951h80.627c2.178,0 3.951,1.772 3.951,3.951v9.858zm108.429-220.503v102.63h-143.59c-14.171,0-25.7,11.529-25.7,25.7v63.364h-23.718c-10.441,0-18.936,8.488-18.949,18.926h-197.523v-210.62h409.48zm-196.959,235.503h88.528v91.495h-88.528v-91.495zm-195.221-260.303h374.88c6.85,2.13163e-14 12.765,4.012 15.565,9.8h-406.011c2.801-5.788 8.716-9.8 15.566-9.8zm-16.025,250.421h196.247v10.81h-180.222c-7.243-0.001-13.452-4.48-16.025-10.81zm130.582,38.899l12.162-13.09h53.503v13.09h-65.665zm165.242,91.286h-80.627c-2.178,0-3.951-1.772-3.951-3.951v-9.857h88.528v9.857c0.001,2.178-1.772,3.951-3.95,3.951zm119.891-34.185h-100.94v-12.75h111.63v2.05c0,5.899-4.795,10.7-10.69,10.7z', fill='#50586d')
+
+mixin helloween(present)
+  .helloween
+    span=present
+
+
+mixin dkPresent(present)
+  .dk-present
+    p=present
+
+
+
+

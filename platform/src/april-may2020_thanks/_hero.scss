@@ -1,0 +1,208 @@
+.hero{
+  background: url(images/bg-min.png) center center no-repeat;
+  font-family: 'Inter', sans-serif;
+  background-size: cover;
+  height: calc(100vh - 171px);
+  height: -moz-calc(100vh - 171px);
+  height: -webkit-calc(100vh - 171px);
+  height: calc(100vh - 171px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1200px){
+    height: auto;
+  }
+  @media (max-height: 800px){
+    height: auto;
+    padding: 30px 0;
+  }
+  &__content{
+    text-align: center;
+    padding: 0px;
+    @media (max-width: 1200px){
+      max-width: 767px;
+      margin: 0 auto;
+      padding: 130px 0;
+
+    }
+    @media (max-width: 767px){
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+  }
+
+  &__header{
+    border-radius: 60px;
+    border: solid 1px #cf5749;
+    padding: 35px 20px;
+    @media (max-width: 1200px){
+      border:none;
+      padding: 0px ;
+    }
+  }
+
+  &__title{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.27;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #cf5749;
+    margin-bottom: 10px;
+    @media (max-width: 1200px){
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.56;
+    }
+  }
+
+  &__subtitle{
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #646464;
+    padding: 0px 0 0px;
+    @media (max-width: 1200px){
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+    }
+  }
+
+  &__block{
+    max-width: 752px;
+    width: 100%;
+    margin: 35px auto 65px;
+    border-radius: 14px;
+
+    background-color: #36559a;
+    padding: 45px 15px 30px;
+    @media (max-width: 1200px){
+      margin: 30px auto 60px;
+      padding: 30px 15px;
+    }
+  }
+
+  &__text{
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #646464;
+    @media (max-width: 1200px){
+      padding: 0 10px;
+      font-size: 16px;
+    }
+    b{
+      color: #d16208;
+    }
+  }
+
+}
+
+
+.block{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: -0.9px;
+  color: #fefefe;
+
+
+  &__title{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+
+    @media (max-width: 1200px){
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__text{
+    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: 600;
+    @media (max-width: 1200px){
+      font-size: 15px;
+    }
+    a{
+      color: #fff;
+      text-decoration: underline;
+      &:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__subtext{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    @media (max-width: 1200px){
+      padding-top: 15px;
+      font-size: 15px;
+    }
+  }
+
+  &__btn{
+    display: inline-block;
+    padding: 0 45px;
+    background-color: #d16208;
+    box-shadow: 0px 8px 20px 0 rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 62px;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 31px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+    span{
+      color: #351800;
+    }
+    @media (max-width: 767px){
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: 1.6px;
+      text-align: center;
+      padding: 10px 25px;
+    }
+    &:focus,
+    &:hover{
+      background-color: #d13c08;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    br{
+      display: none;
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
+  }
+}

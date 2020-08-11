@@ -1,0 +1,278 @@
+.bonus {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  &__container {
+    z-index: 1;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 210px;
+      height: 100%;
+      background-color: #ff002a;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: -1;
+    }
+
+  }
+
+  &__title {
+    @extend %title;
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+
+  &__content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 80px;
+    @media (max-width: 760px){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list{
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 760px){
+      width: 100%;
+    }
+
+
+  }
+
+  &__item{
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    margin: 10px 10px;
+  }
+  &__list--left{
+    align-items: flex-end;
+    @media (max-width: 760px){
+      align-items: center;
+    }
+
+    .bonus__item{
+      position: relative;
+
+      &:first-child{
+        width: 67%;
+        padding: 105px 50px 40px;
+        text-align: right;
+        background: #fff url(images/document_dec.png) no-repeat top right;
+        @media (max-width: 1200px){
+          width: 100%;
+        }
+        @media (max-width: 760px){
+          padding: 90px 25px 60px 0;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          background: url(images/document.png) no-repeat top center;
+          width: 100px;
+          height: 94px;
+          left: 50px;
+          top: 70px;
+          @media (max-width: 760px){
+            left: 40px;
+          }
+        }
+      }
+
+      &:last-child{
+        width: 54%;
+        padding: 50px 50px 45px 0;
+        text-align: right;
+        background: #fff url(images/question_dec.png) no-repeat bottom right;
+        @media (max-width: 1200px){
+          width: 90%;
+        }
+        @media (max-width: 760px){
+          width: 100%;
+          padding: 50px 25px 45px 0;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          background: url(images/question.png) no-repeat top center;
+          width: 70px;
+          height: 70px;
+          left: 40px;
+          top: 40px;
+        }
+      }
+
+    }
+  }
+
+  &__list--right{
+    align-items: flex-start;
+    @media (max-width: 760px){
+      align-items: center;
+      order: -1
+    }
+
+    .bonus__item{
+      position: relative;
+
+      &:first-child{
+        width: 54%;
+        padding: 50px  0px 45px 50px;
+        text-align: left;
+        background: #fff url(images/video_dec.png) no-repeat top left;
+        @media (max-width: 1200px){
+          width: 90%;
+        }
+        @media (max-width: 760px){
+          width: 100%;
+          padding: 50px  0px 55px 25px;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          background: url(images/video.png) no-repeat top center;
+          width: 66px;
+          height: 66px;
+          right: 40px;
+          top: 45px;
+        }
+      }
+
+      &:last-child{
+        width: 67%;
+        padding: 50px 0 110px 55px ;
+        text-align: left;
+        background: #fff url(images/certificate_dec.png) no-repeat bottom left;
+        @media (max-width: 1200px){
+          width: 100%;
+        }
+        @media (max-width: 760px){
+          padding: 65px  0px 80px 25px;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          background: url(images/certificate.png) no-repeat top center;
+          width: 80px;
+          height: 120px;
+          right: 50px;
+          bottom: 40px;
+          @media (max-width: 760px){
+            right: 40px;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__text{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+  }
+  &__text--red{
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 0px;
+  }
+
+  .master{
+    width: 640px;
+    margin: 0 auto;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+    padding: 110px 0 30px 50px;
+    position: relative;
+    background: #fff url(images/masterclass_dec.png) no-repeat top left;
+    position: relative;
+    @media (max-width: 1200px){
+      width: 680px;
+    }
+    @media (max-width: 760px){
+      width: 100%;
+      padding: 150px 0 35px 25px;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: -0px;
+      right: 0px;
+      background: url(images/Group1.png) no-repeat center center;
+      background-size: cover;
+      width: 186px;
+      height: 100%;
+      @media (max-width: 760px){
+        background:none;
+        background-size: cover;
+        width: 110px;
+
+      }
+    }
+
+    &__title{
+      color: #1b1b1b;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 20px;
+      @media (max-width: 760px){
+        padding-right: 20px;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        background: url(images/masterclass.png) no-repeat top center;
+        width: 80px;
+        height: 80px;
+        left: 0px;
+        top: -90px;
+
+      }
+      span{
+        color: #1b1b1b;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+    }
+    &__text{
+      color: #1b1b1b;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.4px;
+      padding-right: 165px;
+      @media (max-width: 760px){
+        padding-right: 15px;
+      }
+    }
+    &__br{
+      display: none;
+      @media (max-width: 760px){
+       display: block;
+      }
+    }
+  }
+
+  .btn{
+    margin-top: 80px;
+  }
+
+}

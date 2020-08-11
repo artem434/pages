@@ -1,0 +1,216 @@
+@charset "utf-8";
+.hero {
+  position: relative;
+
+
+
+
+
+  
+  &__container {
+    @extend %container;
+    padding-top: 325px;
+    color: #36435a;
+    padding-left: 100px;
+    z-index: 0;
+    @media (max-width: 1200px){
+      padding-left: 0;
+    }
+    @media (max-width: 767px){
+      padding-top: 90px;
+      padding-bottom: 255px;
+    }
+    &:before{
+      content: " ";
+      position: absolute;
+      background:  url(images/illustration1.png) center center no-repeat;
+      width: 1210px;
+      height: 782px;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      @media (max-width: 1200px){
+        background:  url(images/illustration_767.png) center center no-repeat;
+        width: 646px;
+        height: 647px;
+        left: 43%;
+        top: 15px;
+        transform: translate(-50%,0);
+      }
+      @media (max-width: 767px){
+        background:  url(images/logo.png) center center no-repeat;
+        width: 136px;
+        height: 131px;
+        left: 50%;
+      }
+    }
+    &:after{
+      @media (max-width: 767px){
+        position: absolute;
+        content: " ";
+        background:  url(images/illustration_320.png) center center no-repeat;
+        width: 315px;
+        height: 306px;
+        left: 50%;
+        transform: translate(-50%,0);
+        top: 350px;
+      }
+
+    }
+  }
+
+  &__content{
+
+  }
+
+  &__title{
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    padding-bottom: 45px;
+    @media (max-width: 1200px){
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 767px){
+      font-size: 36px;
+    }
+  }
+
+
+  &__sub-title{
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    border-left: solid 10px #f0223c;
+    padding-left: 35px;
+    @media (max-width: 1200px){
+      margin-left: 200px;
+    }
+    @media (max-width: 767px){
+      font-size: 16px;
+      line-height: 1.5;
+      margin-left: 45px;
+      padding-left: 15px;
+    }
+  }
+
+  &__btn{
+    margin-top: 75px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.4;
+    letter-spacing: 1px;
+    color: #f0223c;
+    max-width: 235px;
+    width: 100%;
+    border: solid 2px #f0223c;
+    transition: 0.5s;
+    @media (max-width: 1200px){
+      margin: 50px auto 0;
+    }
+    @media (max-width: 1200px){
+      margin: 30px auto 0;
+    }
+    i{
+      margin-left: 10px;
+    }
+    &:active,
+    &:focus,
+    &:hover{
+      background-color: #f0223c;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+
+
+
+}
+.hero__controls-modal-btn {
+  bottom: 175px;
+  right: 385px;
+  position: absolute;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 103px;
+  border: none;
+  outline: none;
+  background: url(images/btn-modal.png) no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: scale 1.5s linear infinite;
+  -o-animation: scale 1.5s linear infinite;
+  animation: scale 1.5s linear infinite;
+  @media (max-width: 1200px){
+    display: none;
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+p.seminar_rec{
+  font-size: 22px;
+  line-height: 50px;
+  padding: 10px 0;
+  color: #000;
+
+
+
+  span {
+    padding-left: 60px;
+    position: relative;
+    display: inline-block;
+
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url(../../parts/pages/online/images/camera.png);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -20px;
+    }
+  }
+}

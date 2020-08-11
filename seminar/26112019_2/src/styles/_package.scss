@@ -1,0 +1,241 @@
+.package {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+
+
+  &__body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+    text-align: center;
+
+
+  }
+
+
+  &__header {
+    text-align: center;
+    margin: 0;
+    background-color: #e3e3e3;
+    color: #1b1b1b;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+  }
+
+  &__head{
+    padding-top: 30px;
+    box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.13);
+    background-color: #ffffff;
+    padding-bottom: 10px;
+  }
+
+  &__format {
+    margin-bottom: 20px;
+
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+    &--gold {
+
+    }
+  }
+
+  &__old-price {
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+
+
+  }
+
+  &__btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &--footer {
+      margin: 0 auto;
+      text-align: center;
+
+      &.is-hidden {
+        display: none;
+      }
+    }
+
+    &--platform {
+      display: none;
+      position: relative;
+      margin: 0;
+      text-align: center;
+      font-size: 15px;
+
+      a {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: underline;
+        letter-spacing: 0.6px;
+        color: #747577;
+
+        &:hover {
+          text-decoration: none;
+          color: #0645ad
+        }
+      }
+    }
+  }
+
+  .btn{
+    width: 95%;
+    color: #ff002a;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1.58px;
+    box-shadow: 0 10px 18px rgba(255, 0, 42, 0.2);
+    border-radius: 33px;
+    border: 1px solid #ff002a;
+    background-color: #ffffff;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    min-height: 66px;
+    transition: all 150ms linear;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #ff002a;
+      color: #fff;
+    }
+  }
+  .btn--platform{
+    font-size: 17px;
+    font-weight: 700;
+    span{
+      font-size: 11px;
+    }
+
+  }
+  &__list {
+    margin: 0 15px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 17px;
+    line-height: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+    li {
+      position: relative;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+      color: #000;
+
+      a {
+        color: #2b63de;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+
+        &.is-inactive {
+          color: #5b4cff;
+          cursor: not-allowed;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background: #000;
+      }
+
+
+      &.is-inactive {
+
+        color: #d4d4d4;
+
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          background: #d4d4d4;
+        }
+
+      }
+    }
+
+    &--footer {
+      margin: 10px 15px 30px;
+      height: 108px;
+
+      @media (max-width: 650px){
+      }
+    }
+  }
+
+  &__footer {
+    padding: 20px 0px 30px;
+
+
+  }
+
+  &__presents {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff002a;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+
+    svg {
+      position: relative;
+      top: 1px;
+      margin-right: 10px;
+      fill: #ff002a;
+    }
+  }
+}

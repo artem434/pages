@@ -1,0 +1,77 @@
+.master {
+  position: relative;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 20px 49px 0 rgba(127, 0, 129, 0.25);
+  box-shadow: 0 20px 49px 0 rgba(127, 0, 129, 0.25);
+  background: #ffffff;
+  text-align: center;
+  padding: 25px 10px 30px 15px;
+  @include clearfix();
+
+  @include mobile() {
+    text-align: left;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+  }
+
+  &__image {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 175px;
+
+    @include mobile() {
+      float: left;
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+  }
+
+  &__regalia {
+    position: relative;
+    margin: 0;
+    font-size: 15px;
+
+    @include mobile() {
+      margin-top: 85px;
+      margin-bottom: -4px;
+      font-size: 20px;
+      letter-spacing: 1px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -44px;
+        left: 221px;
+        width: 38px;
+        height: 40px;
+        background: url(images/mic.png) no-repeat center;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #001621;
+
+    @include mobile() {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0;
+  }
+}

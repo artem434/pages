@@ -1,0 +1,50 @@
+.order {
+
+  &__container {
+    @extend %container;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    @media (max-width: 1200px){
+      padding-top: 0px;
+    }
+    @media (max-width: 767px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 51.84px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    @media (max-width: 1200px){
+      font-size: 30px;
+      line-height: 1.3;
+    }
+    @media (max-width: 767px){
+      font-size: 26px;
+      line-height: 1.3;
+      padding-top: 35px;
+    }
+  }
+
+  &__packages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+  }
+  &__package{
+    max-width: 460px;
+    width: 100%;
+    margin: 15px;
+  }
+
+}

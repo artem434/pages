@@ -1,0 +1,101 @@
+.wrapper__lectors{
+  padding: 70px 0;
+  border-bottom: solid 2px #1a1a1a;
+  .content{
+
+
+  }
+
+  .title{
+    padding-bottom: 60px;
+  }
+  .lectors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+
+
+
+    &__item{
+      margin: 7px;
+      width: 290px;
+      height: 370px;
+      border: solid 1px #272727;
+      background-color: #191919;
+      padding: 0 18px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      &--tm{
+        background:  #191919 url(images/tm.png) top 20px  center no-repeat;
+      }
+      &--mk{
+        background:  #191919 url(images/mk.png) top 20px  center no-repeat;
+      }
+      &--os{
+        background:  #191919 url(images/os.png) top 20px  center no-repeat;
+      }
+      &--vv{
+        background:  #191919 url(images/vv.png) top 20px  center no-repeat;
+      }
+      &--ig{
+        background:  #191919 url(images/ta-min.png) top 20px  center no-repeat;
+      }
+      &--oll{
+        background:  #191919 url(images/oll_ig-min.png) top   center no-repeat;
+      }
+      &:last-child{
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__name{
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.3;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #ff9c00;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
+
+    &__info{
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.57;
+      letter-spacing: 0.7px;
+      text-align: left;
+      color: #585858;
+      margin-bottom: 0;
+    }
+
+    &__oll{
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: 1.4px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      span{
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+    }
+
+
+
+  }
+
+}

@@ -1,0 +1,15 @@
+.order{
+  position: relative;
+  text-align: center;
+
+  &__container{
+    @extend %container;
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+
+
+}

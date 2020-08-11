@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+
+.hero {
+  background: url(images/hero-min.jpg) center top no-repeat, linear-gradient(90deg, #010101, #010101, #040001, #060203);
+  position: relative;
+  @media (max-width: 1200px){
+    background: url(images/hero_767.jpg) center top no-repeat, linear-gradient(90deg, #010101, #010101, #040001, #060203);
+    background-size: cover;
+  }
+
+  @at-root .webp & {
+    background:url(images/hero.webp) center top no-repeat, linear-gradient(90deg, #010101, #010101, #040001, #060203);
+    @media (max-width: 1200px){
+      background:url(images/hero_767.webp) center top no-repeat, linear-gradient(90deg, #010101, #010101, #040001, #060203);
+      background-size: cover;
+    }
+  }
+
+
+
+  @media (max-width: 767px){
+
+  }
+
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: #0a3fa7;
+    @media (max-width: 1200px){
+      content: none;
+    }
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-left: 22px;
+    padding-bottom: 65px;
+    @media (max-width: 1200px){
+      padding-left: 0;
+      align-items: center;
+      padding-top: 70px;
+    }
+
+  }
+
+  &__block{
+    background-color: rgba(1, 63, 132, 0.75);
+    padding: 30px 40px;
+    position: relative;
+    color: #ffffff;
+    text-align: left;
+    @media (max-width: 1200px){
+      padding: 25px 15px;
+    }
+    @media (max-width: 767px){
+      padding:15px;
+    }
+    &:before{
+      position: absolute;
+      content: " ";
+      background: url(images/dec_gero.png) center top no-repeat;
+      width: 64px;
+      height: 59px;
+      top: -5px;
+      right: -5px;
+    }
+    &:after{
+      position: absolute;
+      content: " ";
+      background: url(images/dec_gero.png) center top no-repeat;
+      width: 64px;
+      height: 59px;
+      bottom: -5px;
+      left: -5px;
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__date{
+    padding-left: 70px;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    @media (max-width: 1200px){
+      font-size: 21px;
+      padding-left: 65px;
+    }
+    @media (max-width: 767px){
+      font-size: 14px;
+      padding-left: 45px;
+    }
+
+
+  }
+
+  &__title{
+    font-size: 105px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.78;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    @media (max-width: 1200px){
+      font-size: 73px;
+      padding-left: 15px;
+    }
+    @media (max-width: 767px){
+      font-size: 49px;
+      padding-left: 10px;
+    }
+
+    span{
+      font-size: 44.5px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.84;
+      letter-spacing: normal;
+      padding-left: 50px;
+      text-transform: none;
+      @media (max-width: 1200px){
+        font-size: 31px;
+        padding-left: 35px;
+      }
+      @media (max-width: 767px){
+        font-size: 21px;
+        padding-left: 25px;
+      }
+    }
+  }
+
+  &__subtitle{
+    font-size: 113.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    padding-left: 100px;
+    position: relative;
+    @media (max-width: 1200px){
+      font-size: 79px;
+      padding-left: 90px;
+    }
+    @media (max-width: 767px){
+      font-size: 53px;
+      padding-left: 60px;
+    }
+    &:before{
+      position: absolute;
+      content: " ";
+      background: url(images/tape.png) center top no-repeat;
+      width: 118px;
+      height: 42px;
+      top: 25px;
+      left: -75px;
+      @media (max-width: 767px){
+        content: none;
+      }
+    }
+
+  }
+
+  &__description{
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fac960;
+    padding-left: 30px;
+    @media (max-width: 1200px){
+      font-size: 22px;
+    }
+    @media (max-width: 767px){
+      font-size: 15px;
+      padding-left: 25px;
+    }
+  }
+
+  &__btn{
+    @extend %btn;
+    margin-top: 65px;
+    margin-left: 140px;
+
+    @media (max-width: 1200px){
+      margin: 65px auto 0;
+    }
+  }
+}

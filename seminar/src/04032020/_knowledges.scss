@@ -1,0 +1,189 @@
+.knowledges {
+
+  &__container {
+    @extend %container;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media (max-width: 1200px){
+      max-width: 767px;
+      width: 100%;
+    }
+    @media (max-width: 767px){
+      max-width: 320px;
+    }
+
+  }
+  &__title{
+    @extend %title;
+    @media (max-width: 850px){
+      font-size: 24px;
+    }
+
+
+  }
+  .know{
+    width: 830px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    @media (max-width: 850px){
+      width: 100%;
+      padding-bottom: 0px;
+    }
+    &__item{
+      width: 650px;
+      height: 98px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      @media (max-width: 850px){
+        height:max-content;
+        padding-bottom: 25px;
+        width: 100%;
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+
+      .know__text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-left:145px;
+        margin: 0;
+        position: relative;
+        @media (max-width: 850px){
+          padding-left:70px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          text-transform: none;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 70px;
+          transform: translateY(-50%);
+          @media (max-width: 850px){
+            left: 15px;
+          }
+        }
+      }
+    }
+    &__item--right{
+      margin-left: 164px;
+      background-image: linear-gradient(to top, #151515, #6c6969);
+      box-shadow: inset 0 60px 60px -58px #6c6969, inset 0 -60px 60px -60px #6c6969;
+      @media (max-width: 850px){
+        background-image: none;
+        box-shadow: none;
+        margin-left: 0px;
+      }
+      .know__text{
+        color: #fff;
+        padding-right: 45px;
+        @media (max-width: 850px){
+          color: #000;
+          padding-right: 0px;
+        }
+        &:before {
+          width: 55px;
+          height: 55px;
+          background: url(images/check1.png) no-repeat center;
+          @media (max-width: 850px){
+            width: 40px;
+            height: 40px;
+            background: url(images/know_mob6.png) no-repeat center;
+          }
+        }
+        br{
+          @media (max-width: 850px){
+            display: none;
+          }
+        }
+      }
+      .triangle-left{
+        position: absolute;
+        left: -2px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 49px solid transparent;
+        border-left: 55px solid #ffffff;
+        border-bottom: 49px solid transparent;
+      }
+      .triangle-right{
+        position: absolute;
+        right: -55px;
+        top: -1;
+        border-left: 55px solid transparent;
+        border-top: 49px solid #fff;
+        border-right: 55px solid #fff;
+        border-bottom: 51px solid #fff;
+      }
+    }
+    &__item--left{
+      background-image: linear-gradient(to top, #dd5a09, #ce640d);
+      box-shadow: inset 0 60px 60px -58px #a7580b, inset 0 -60px 60px -60px #a7580b;
+      padding-right: 45px;
+      @media (max-width: 850px){
+        background-image: none;
+        box-shadow: none;
+        padding-right: 0px;
+      }
+
+
+    .know__text{
+      color: #fff;
+      @media (max-width: 850px){
+        color: #000;
+      }
+        &:before {
+          width: 55px;
+          height: 55px;
+          background: url(images/check1.png) no-repeat center;
+          @media (max-width: 850px){
+            width: 40px;
+            height: 40px;
+            background: url(images/know_mob7.png) no-repeat center;
+          }
+        }
+      }
+
+      .triangle-left{
+        position: absolute;
+        left: -55px;
+        top: -1px;
+        border-left: 55px solid transparent;
+        border-top: 50px solid #fff;
+        border-right: 55px solid #fff;
+        border-bottom: 50px solid #fff;
+        transform: rotate(180deg);
+
+
+      }
+      .triangle-right{
+        position: absolute;
+        right: -2px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 49px solid transparent;
+        border-left: 55px solid #ffffff;
+        border-bottom: 49px solid transparent;
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
+}

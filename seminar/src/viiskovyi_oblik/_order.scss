@@ -1,0 +1,90 @@
+.theme{
+  position: relative;
+  text-align: center;
+
+  &__container{
+    @extend %container;
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+  &__content{
+    max-width: 925px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 2px #e1e1e1;
+    background-color: #ffffff;
+    margin: 35px auto 0;
+    padding:50px 0;
+    text-align: left;
+  }
+  &__list {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  &__item {
+    position: relative;
+    counter-increment: my-awesome-counter;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #363636;
+    padding-left: 105px;
+    padding-bottom: 19px;
+
+    &:before {
+      position: absolute;
+      left: -20px;
+      top: -4px;
+      content: "Вебінар "  counter(my-awesome-counter) ;
+      color: #fff;
+      width: auto;
+      height: 40px;
+      background-color: #6439c7;
+      border-radius: 20px;
+      font-size: 18px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+    }
+
+    &:last-child{
+      font-style: italic;
+      color: #3c1690;
+      padding-bottom: 0;
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  &__sub-list{
+    list-style-type: disc;
+    padding-top: 5px;
+    font-size: 16px;
+    li{
+      padding-bottom: 2px;
+    }
+  }
+
+  &__btn{
+    @extend %btn;
+    margin-top: 40px;
+  }
+
+
+
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@charset "utf-8";
+//-font-family: 'Montserrat', sans-serif;
+
+.seminar-landing{
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+#reg-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  background-color: rgb(247, 247, 247);
+}
+button{
+  &:hover,
+  &:focus,
+  &:active {
+   outline: none;
+  }
+}
+
+.mob-show{
+  display: none;
+  @media (max-width: 1200px){
+    display: block;
+    margin: 20px auto;
+
+  }
+}
+.desctop-show{
+  display: block;
+  @media (max-width: 1200px){
+    display: none;
+
+  }
+}
+
+%container{
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  &:before{
+    position: absolute;
+    content: "";
+    background: url(images/decor_bg.png) center center no-repeat;
+    width: 1066px;
+    height: 700px;
+    right: 125px;
+    top: 0;
+    z-index: -1;
+
+  }
+  @media (max-width: 1200px){
+    max-width: 767px;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
+
+%sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #cd2765;
+  text-transform: uppercase;
+  @media (max-width: 767px){
+    font-size: 16px;
+  }
+}
+
+%title {
+  padding-top: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #565656;
+  text-transform: uppercase;
+  @media (max-width: 767px){
+    font-size: 18px;
+    padding-top: 0;
+  }
+}
+
+%btn {
+  background-image: linear-gradient(to top, #ff1167, #ff6810);
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  padding: 18px 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow:0px 20px 32px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:0px 20px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 32px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.7s;
+  border-radius: 30px;
+  @media (max-width: 767px){
+    padding: 18px 20px;
+    font-size: 19px;
+  }
+
+  @media (max-width: 767px){
+    margin-top: 30px;
+  }
+  &:active,
+  &:focus,
+  &:hover{
+    background-image: linear-gradient(to top, #d4115c, #e46110);
+    text-decoration: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff;
+
+  }
+
+}
+
+
+@import "haeding";
+@import "menu";
+@import "hero";
+@import "time";
+@import "profession";
+//-@import "register";
+@import "info";
+@import "theme";
+@import "lectors";
+@import "gift";
+@import "advantages";
+@import "order";
+@import "package";
+@import "register-bottom";
+@import "video";
+@import "partners";
+@import "social";
+@import "footer";
+@import "loader";
+@import "loader-page";
+

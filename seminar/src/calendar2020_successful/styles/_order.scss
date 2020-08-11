@@ -1,0 +1,120 @@
+.order {
+  $height_pseudo: 135px;
+  background: linear-gradient(90deg, #f0f0f0 0%, #f0f0f0 50%, #f0f0f0 77%, #f0f0f0 100%);
+  position: relative;
+  @media (max-width: 1200px){
+    background: linear-gradient(90deg, #f0f0f0 0%, #f8f8f8 50%, #f6f6f6 77%, #f2f2f2 100%);
+  }
+  @media (max-width: 700px){
+    background: linear-gradient(90deg, #f4f4f4 0%, #ffffff 50%, #fefefe 77%, #f2f2f2 100%);
+  }
+
+  &__container {
+    @extend %container;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    @media (max-width: 780px){
+      padding-top: 0px;
+    }
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 20px;
+    @media (max-width: 980px){
+      font-size: 32px!important;
+    }
+    @media (max-width: 680px){
+      font-size: 23px!important;
+    }
+
+  }
+
+  &__packages {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+
+  &__package {
+    width: 236px;
+    margin: 20px 10px 0;
+
+    @media (max-width: 1200px){
+      width: 300px;
+    }
+  }
+  &__package--four{
+
+  }
+
+  &__package--gold{
+    .package__header{
+      background-color: #f99e31;
+      color: #fff;
+    }
+    .package__body{
+      padding: 45px 15px 0px;
+      @media (max-width: 1200px){
+        padding: 25px 15px 0px;
+      }
+    }
+
+  }
+  &__package--two{
+    @media (max-width: 1200px){
+      order: 1;
+    }
+
+  }
+
+  &__package--three{
+    @media (max-width: 1200px){
+      order: 2;
+    }
+  }
+
+  &__package--four{
+    @media (max-width: 1200px){
+      order: 3;
+    }
+  }
+
+  &__package--gold{
+    margin-top: 5px;
+    @media (max-width: 1200px){
+      margin: 20px 10px 0;
+    }
+  }
+
+  &__timer {
+    margin-bottom: 66px;
+    @media (max-width: 780px){
+      margin-bottom: 0px;
+    }
+  }
+
+  &__banner {
+    display: none;
+    margin-top: 50px;
+  }
+}
+.block-orders__title{
+  position: relative;
+  text-align: center;
+  line-height: 143px;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  padding-left: 40px;
+  &:before {
+    content: "\f06b";
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 36px;
+    top: -2px;
+    left: 160px;
+    color: #e30000;
+
+  }
+}

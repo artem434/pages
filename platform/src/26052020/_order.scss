@@ -1,0 +1,188 @@
+.order {
+
+  font-family: 'Ubuntu', sans-serif;
+  &__container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    @media (max-width: 780px){
+      padding-top: 25px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    color: #01040e;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.11px;
+    line-height: 1;
+    padding-bottom: 15px;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    @media (max-width: 770px){
+      font-size: 22px;
+    }
+    &:after{
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(to right, #d12145  0%, #d12145  100%);
+      bottom: 0;
+    }
+  }
+
+  &__packages {
+    padding-top: 25px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__package {
+    width: 263px;
+    margin: 20px 10px 0;
+  }
+
+  &__package--standart{
+    border: 1px solid #ff1f56!important;
+
+    .package{
+
+      &__price{
+        span{
+          color: #000;
+          font-size: 24px;
+          font-weight: 900;
+          letter-spacing: 0.24px;
+          text-transform: none;
+        }
+      }
+    }
+
+    .package__list{
+      padding-bottom: 45px;
+      @media (max-width: 767px) {
+        padding-bottom: 35px;
+      }
+
+    }
+
+    .btn{
+      border-radius: 21px;
+      box-shadow: 0 12px 24px rgba(55, 72, 198, 0.44);
+      border: 1px solid #3748c6;
+      background-color: #3748c6;
+      background-image: linear-gradient(to right, #3748c6 0%, #3748c6 100%);
+      width: 100%;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 38px;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      transition: all 0.5s;
+      &:hover,
+      &:active {
+        background:transparent;
+        color: #3748c6;
+      }
+    }
+
+    .package__footer{
+      padding-bottom: 32px;
+    }
+  }
+
+  &__package--gold{
+    padding-top: 30px!important;
+
+    .btn{
+      border-radius: 21px;
+      border: 1px solid #3748c6;
+      color: #3748c6;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 38px;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      transition: all 0.5s;
+      width: 100%;
+      &:hover,
+      &:active {
+        background-image: linear-gradient(to right, #3748c6 0%, #3748c6 100%);
+        color: #fff;
+      }
+    }
+    .package__list{
+      padding-bottom: 45px;
+      @media (max-width: 767px) {
+        padding-bottom: 35px;
+      }
+
+    }
+  }
+
+  &__package--platform{
+    background-image: linear-gradient(to top, #ffc02a 0%, #ff752a 100%);
+    .package__header{
+      color: #141414;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+    }
+    .package__list{
+      padding-right: 13px;
+      li {
+        line-height: 24px;
+        color: #8a3f00;
+        b{
+          font-weight: 400;
+          color: #141414;
+        }
+
+        &:before {
+          background: url(images/check_platform.png) center center no-repeat;
+        }
+      }
+    }
+    .btn{
+      border-radius: 21px;
+      border: 1px solid #001191;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 38px;
+      text-transform: uppercase;
+      background-image: linear-gradient(to top, #001191 0%, #001191 100%);
+      letter-spacing: 0.9px;
+      transition: all 0.5s;
+      width: 100%;
+      &:hover,
+      &:active {
+        background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+        color: #001191;
+      }
+    }
+    .package__footer{
+      padding-bottom: 47px;
+    }
+    .package__price--platform{
+      color: #000;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 0.24px;
+      text-transform: none;
+      span{
+        font-weight: 900;
+      }
+    }
+  }
+}

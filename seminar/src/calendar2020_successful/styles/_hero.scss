@@ -1,0 +1,119 @@
+.hero {
+  height: calc(100% - 216px);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+
+  @media (max-width: 1000px){
+    height: auto;
+  }
+
+
+  &__background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 55%;
+
+  }
+
+
+
+  &__background-left{
+    background: url(images/bg_dec.png) no-repeat top right -150px, linear-gradient(18deg, #5dd7ff 0%, #788bff 100%);
+    left: 0;
+
+  }
+
+  &__background-right{
+    right: 0;
+    background-color: #ecf0fe;
+    top: 55%;
+    height: 45%;
+
+  }
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  &__title{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2.63px;
+    border-bottom: solid 1px #3c81bb;
+    padding: 0px 25px 25px;
+    @media (max-width: 760px){
+      font-size: 40px;
+
+    }
+  }
+
+  &__sub-title{
+    color: #fefeff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 20px;
+    @media (max-width: 760px){
+      font-size: 20px;
+    }
+  }
+
+}
+.text{
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(58, 103, 236, 0.47);
+  border-radius: 20px;
+  background-color: #f6f4f4;
+  padding: 60px 70px 45px;
+  @media (max-width: 760px){
+    padding: 40px 35px 25px;
+    margin: 25px 10px 0;
+  }
+
+  p{
+    color: #5d5d5d;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    @media (max-width: 760px){
+      font-size: 18px;
+    }
+  }
+
+  &__btn{
+    margin-top: 50px;
+    width: 227px;
+    color: #ffffff;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 37px;
+    box-shadow: 0 1px 2px rgba(3, 7, 8, 0.35);
+    border-radius: 10px;
+    background-color: #164ae4;
+    &:active,
+    &:focus,
+    &:hover{
+      color: #ffffff;
+      background-color: #164493;
+    }
+
+  }
+}
+

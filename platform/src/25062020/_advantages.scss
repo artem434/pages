@@ -1,0 +1,36 @@
+$color: #ffdbdb;
+
+.advantages {
+  padding: 75px 0;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  padding: 75px 0;
+  p{
+    margin-bottom: 0px;
+  }
+
+
+  &__container {
+    @extend %container;
+
+
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+
+
+
+
+  &__sub-title{
+    @extend %sub-title;
+  }
+
+
+
+}

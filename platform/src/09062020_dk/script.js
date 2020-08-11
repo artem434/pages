@@ -1,0 +1,132 @@
+System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
+    "use strict";
+    var jquery_1, loader, loaderPage, form, form_bottom, remain_bv, url, utm;
+    var __moduleName = context_1 && context_1.id;
+    function parseTime_bv(timestamp) {
+        if (timestamp < 0)
+            timestamp = 0;
+        var hour = Math.floor(timestamp / 60 / 60);
+        var mins = Math.floor((timestamp - hour * 60 * 60) / 60);
+        var secs = Math.floor(timestamp - hour * 60 * 60 - mins * 60);
+        if (String(mins).length > 1)
+            jquery_1.default('.timer__mins').text(mins);
+        else
+            jquery_1.default('.timer__mins').text("0" + mins);
+        if (String(secs).length > 1)
+            jquery_1.default('.timer__secs').text(secs);
+        else
+            jquery_1.default('.timer__secs').text("0" + secs);
+    }
+    return {
+        setters: [
+            function (jquery_1_1) {
+                jquery_1 = jquery_1_1;
+            },
+            function (_1) {
+            }
+        ],
+        execute: function () {
+            loader = jquery_1.default('.loader-backdrop');
+            loaderPage = jquery_1.default('#loader-page');
+            form = jquery_1.default('body .free-demo');
+            form_bottom = jquery_1.default('body .free-demo-bottom');
+            remain_bv = 300;
+            jquery_1.default(document).ready(function () {
+                setInterval(function () {
+                    remain_bv = remain_bv - 1;
+                    parseTime_bv(remain_bv);
+                }, 1000);
+            });
+            loaderPage.delay(850).fadeOut('slow');
+            url = document.location.href;
+            utm = jquery_1.default('.utm');
+            jquery_1.default(document).ready(function () {
+                utm.val(url);
+            });
+            SystemJS.import('jquery').then(function ($) {
+                SystemJS.import('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js').then(function ($) {
+                    SystemJS.import('@clients').then(function (clients) {
+                        form.validate({
+                            rules: {
+                                name: "required",
+                                email: {
+                                    required: true,
+                                    email: true
+                                },
+                                phone: {
+                                    required: true,
+                                    minlength: 18
+                                }
+                            },
+                            messages: {
+                                name: "Введіть не менше 2 символів",
+                                email: {
+                                    required: "Це поле необхідно заповнити",
+                                    email: "Будь ласка, введіть коректну адресу електронної пошти"
+                                },
+                                phone: "Введіть правильний номер телефону"
+                            },
+                            submitHandler: function (form) {
+                                var url = ['/subscribe/09062020masterklass', '/invoice2'];
+                                var dataSend = [{
+                                        "firstName": $('.free-demo .name').val(),
+                                        'email': $('.free-demo .mail').val(),
+                                        'phone': $('.free-demo .phone').val()
+                                    }, {
+                                        "customer[name]": $('.free-demo .name').val(),
+                                        'customer[email]': $('.free-demo .mail').val(),
+                                        'customer[phone]': $('.free-demo .phone').val(),
+                                        'article': $('.free-demo .article').val(),
+                                        'options[utm]': $('.free-demo .utm').val(),
+                                        'dealer': $('.free-demo .dealer').val()
+                                    }];
+                                $.each(url, function (i) {
+                                    $.ajax({
+                                        url: url[i],
+                                        async: false,
+                                        type: "POST",
+                                        dataType: "json",
+                                        data: dataSend[i],
+                                        success: function (data, event, payload) {
+                                            loader.addClass('is-active');
+                                            if (i == 1) {
+                                                var email = $('.mail').val();
+                                                clients.Auth.getClient().then(function (client) {
+                                                    if (payload.responseJSON.result === true) {
+                                                        if (client && client.email === email) {
+                                                            location.href = '/free_successful';
+                                                            return;
+                                                        }
+                                                        (client ? clients.Auth.logout() : Promise.resolve())
+                                                            .then(function () {
+                                                            location.href = payload.responseJSON.newClient ? '/free_new' : '/free_auth';
+                                                        });
+                                                        sessionStorage.setItem('userEmail', email);
+                                                    }
+                                                    else if (payload.responseJSON.result === false) {
+                                                        (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
+                                                            .then(function () {
+                                                            sessionStorage.setItem('userEmail', email);
+                                                            location.href = '/free_singup_replay';
+                                                        });
+                                                    }
+                                                });
+                                            }
+                                        },
+                                        error: function (error) {
+                                            console.log("no");
+                                            loader.removeClass('is-active');
+                                            if (error.status == 422 && i == 0) {
+                                                alert("Введіть правильний номер телефону");
+                                            }
+                                        }
+                                    });
+                                });
+                            },
+                        });
+                    });
+                });
+            });
+        }
+    };
+});

@@ -1,0 +1,25 @@
+.social { background: #f3f3f3; }
+
+.social__container { padding-top: 40px; padding-bottom: 40px; }
+
+.social__title { margin-bottom: 25px; font-size: 16px; font-weight: 800; text-align: center; text-transform: uppercase; color: #001621; }
+
+@media (min-width: 768px) { .social__title { font-size: 20px; } }
+
+.social__list { margin: 0; padding: 0; list-style: none; text-align: center; }
+
+.social__list li { display: inline-block; vertical-align: middle; margin-right: 35px; }
+
+@media (min-width: 768px) { .social__list li { margin-right: 55px; } }
+
+.social__list li:last-child { margin-right: 0; }
+
+.social__list li a { display: block; transition: all ease-in 150ms; }
+
+.social__list li a:hover, .social__list li a:active, .social__list li a:focus { opacity: 0.7; }
+
+.social__list li a.yt { width: 50px; height: 36px; background: transparent url(images/youtube.png) 50% 50% no-repeat; }
+
+.social__list li a.fb { width: 50px; height: 50px; background: transparent url(images/facebook.png) 50% 50% no-repeat; }
+
+.social__list li a.in { width: 50px; height: 50px; background: transparent url(images/instagram.png) 50% 50% no-repeat; }

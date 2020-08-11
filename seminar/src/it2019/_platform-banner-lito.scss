@@ -1,0 +1,79 @@
+.platform-banner-lito {
+  background: url(https://7eminar.com/storage/seminars/mails/banners-lito.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 20px 0 ;
+  text-align: center;
+  font-family: Arial,sans-serif;
+
+  &__title-top {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ff9c00;
+    span{
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
+
+  &__sub-title {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  &__date{
+    color: #eaeaea;
+    font-weight: 400;
+    line-height: 13.79px;
+    font-size: 16px;
+    margin: 0;
+  }
+  &__btn {
+    margin: 30px 0;
+    a {
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 295px;
+      height: 49px;
+      margin: 0 auto;
+      border-radius: 4px;
+      background-color: #ff9c00;
+      color: #191919;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 32.33px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #ffb43d;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.order__banner {
+  display: none;
+  margin-top: 50px;
+}

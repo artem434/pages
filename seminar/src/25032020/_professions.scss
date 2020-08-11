@@ -1,0 +1,126 @@
+@charset "utf-8";
+.professions {
+  position: relative;
+  padding-bottom: 150px;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  &__text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 410px;
+    @media (max-width: 1200px){
+      margin: 0 auto 70px;
+    }
+    @media (max-width: 767px){
+      width: auto;
+      margin: 0 auto 10px;
+    }
+  }
+
+  &__title{
+    @extend %title;
+    font-size: 54px;
+    display: inline-block;
+    text-align: center;
+    @media (max-width: 767px){
+      font-size: 36px;
+    }
+  }
+
+  &__sub-title{
+    @extend %sub-title;
+    font-size: 36px;
+    display: inline-block;
+    text-align: center;
+    @media (max-width: 767px){
+      font-size: 24px;
+    }
+  }
+
+  &__item{
+    width: 151px;
+    height: 200px;
+    border: 1px solid #323232;
+    padding: 35px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    @media (max-width: 767px){
+      width: 130px;
+      margin-top: 20px;
+    }
+
+
+    &.active{
+      -webkit-transform: translate(0px,-10px);
+      -ms-transform: translate(0px,-10px);
+      transform: translate(0px,-10px);
+      background-image: -webkit-gradient(linear, left top, right top, from(#ff6622), to(#ff9908));
+      background-image: -o-linear-gradient(left, #ff6622 0%, #ff9908 100%);
+      background-image: linear-gradient(to right, #ff6622 0%, #ff9908 100%);
+      .professions__name {
+        color: #000;
+      }
+      .orang {
+        fill: #000;
+      }
+      .grey{
+        fill: #000;
+      }
+    }
+
+    svg{
+      display: block;
+    }
+  }
+
+  &__name{
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__btn{
+    max-width:400px;
+    margin:80px auto 0 ;
+    display: block;
+  }
+}

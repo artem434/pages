@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic');
+
+//-font-family: 'Roboto', sans-serif;;
+button{
+  &:focus{
+    outline: none!important;
+
+  }
+}
+.branding-page #main {
+  background-color: #efefef;
+}
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+
+}
+
+#bg_popup{
+  display: none!important;
+}
+#bg_popup_two{
+  display: none!important;
+}
+#__telerWdTriggerContent{
+  display: none!important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+}
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  background: #000010;
+
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+.circle{
+  display: none;
+}
+%container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: 1200px){
+    max-width: 767px;
+    width: 100%;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+  }
+}
+
+%title{
+  color: #f2f2f2;
+  font-size: 54px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+
+  @media (max-width: 1200px){
+    font-size: 24px;
+  }
+}
+%sub-title{
+  text-transform: uppercase;
+  color: #000010;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  background:  linear-gradient(to right, #ff6d1e 0%, #ff930c 100%);
+  background-size: cover;
+
+  @media (max-width: 1200px){
+    font-size: 16px;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.seminar-landing {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.fixedtop.show {
+  z-index: 10;
+}
+
+.footer {
+  margin-top: 0;
+}
+.order__gift{
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #424342;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  span{
+    font-size: 25px;
+  }
+}
+.arrow{
+  width: 30px;
+  margin: 0;
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: 1;
+  @media (max-width: 767px){
+    bottom: -60px;
+  }
+  span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-left: 7px;
+    border-bottom: 5px solid #eda43c;
+    border-right: 5px solid #eda43c;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    &:nth-child(2){
+      animation-delay: -0.2s;
+    }
+    &:nth-child(3){
+      animation-delay: -0.4s;
+
+    }
+  }
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+@import "mixins";
+@import "variables";
+@import "hero";
+
+@import "loader-page";
+@import "header";
+@import "footer";
+.branding-page #main{
+  width: 100%;
+}
+
+.branding-page{
+  padding-top: 0px;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #efefef;
+  .heading{
+    display: none;
+  }
+}
+
+
+.btns{
+  background-image: linear-gradient(to right, #d81bfa 0%, #e82626 100%);
+  z-index: 1;
+  border: none;
+  border-radius: 31px;
+  box-shadow: 0 10px 15px rgba(240, 33, 140, 0.3);
+  width: 100%;
+  padding: 3px;
+}
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #01010f;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+
+
+
+a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+
+  &.learn-more {
+    width: 100%;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 46px;
+      height: 46px;
+      background: $black;
+      border-radius: 23px;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          transition: all .45s cubic-bezier(0.65, 0, 0.076, 1);
+          left: 15px;
+          width: 25px;
+          height: 2px;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -6px;
+            right: 0px;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $black;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: -1;
+      letter-spacing: 2.2px;
+      @media (max-width: 767px){
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 31px;
+      }
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: $white;
+          transform: translate(0px, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $white;
+    }
+  }
+}
+.hero__btn{
+  &.active-btn {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: $white;
+          transform: translate(0px, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $white;
+    }
+
+  }
+}

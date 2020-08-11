@@ -1,0 +1,41 @@
+.theme {
+  width: 100%;
+  position: relative;
+
+
+  &__container{
+    @extend %container;
+
+  }
+
+
+
+  &__title{
+    font-size: 34px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #262626;
+  }
+
+  &__sub-title{
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #262626;
+  }
+
+
+
+
+
+}
+
+

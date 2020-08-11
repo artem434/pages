@@ -1,0 +1,165 @@
+.modal-video {
+  @media (max-width: 990px){
+    display: none;
+  }
+  .modal-dialog {
+    width: 87%;
+    height: 74vh;
+    margin: 60px auto;
+    position: relative;
+  }
+
+  .modal-content {
+    background: #000;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 42.22%;
+    overflow: hidden;
+  }
+
+  iframe {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 70px;
+    padding: 9px;
+    height: 70px;
+    z-index: 4;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+
+      position: absolute;
+      left: 35px;
+      top: 18px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #ffffff;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/*.modal-present {
+
+  .modal-dialog {
+    width: 500px;
+    height: 500px;
+    margin-top: 120px;
+  }
+
+
+  .modal-present__content {
+    height: 500px;
+    background: url(images/scarf-min.jpg) no-repeat center;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    padding: 9px;
+    height: 70px;
+    z-index: 4;
+    opacity: 1;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+
+      position: absolute;
+      left: 35px;
+      top: 18px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #000;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}*/
+.hero__controls-modal-btn {
+  bottom: 465px;
+  left: 540px;
+  position: absolute;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 103px;
+  border: none;
+  outline: none;
+  background: url(images/btn-modal.png) no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: scale 1.5s linear infinite;
+  animation: scale 1.5s linear infinite;
+  @media (max-width: 1200px){
+    display: none;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}

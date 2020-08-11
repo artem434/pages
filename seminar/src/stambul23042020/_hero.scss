@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+.hero {
+  background: #0b1b54 url(images/hero_bg-min.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: #dd373e;
+    @media (max-width: 1000px){
+      content: none;
+    }
+  }
+  @at-root .webp & {
+    background:url(images/hero_bg.webp) center center no-repeat;
+    background-size: cover;
+
+
+  }
+
+  &__container {
+    @extend %container;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 381px;
+      height: 549px;
+      left: 0px;
+      bottom: 0px;
+      background: url(images/girl-min.png) center center no-repeat;
+      background-size: contain;
+      @media (max-width: 1200px){
+        width: 319px;
+        height: 458px;
+      }
+      @media (max-width: 767px){
+        width: 165px;
+        height: 238px;
+        z-index: -1;
+      }
+      @at-root .webp & {
+        background: url(images/girl.webp) center center no-repeat;
+        background-size: contain;
+      }
+
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      width: 324px;
+      height: 331px;
+      right: 0px;
+      bottom: -200px;
+      background: url(images/gull-min.png) center center no-repeat;
+      background-size: contain;
+      @media (max-width: 1200px){
+        width: 225px;
+        height: 232px;
+        right: 70px;
+        bottom: -90px;
+      }
+      @media (max-width: 767px){
+        width: 121px;
+        height: 125px;
+        right: 0px;
+        bottom: 90px;
+      }
+
+
+    }
+
+
+  }
+
+  &__content {
+    padding-left: 485px;
+    padding-top: 90px;
+    padding-bottom: 195px;
+    @media (max-width: 1200px){
+      padding-left: 300px;
+      padding-top: 65px;
+      padding-bottom: 205px;
+    }
+    @media (max-width: 767px){
+      padding-left: 0px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+
+
+
+
+
+  }
+
+  &__date{
+    text-shadow: 0 3px 21px rgba(136, 113, 114, 0.44);
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    @media (max-width: 1200px){
+      font-size: 20px;
+    }
+    @media (max-width: 767px){
+      font-size: 18px;
+      padding-left: 50px;
+    }
+  }
+
+
+  &__title{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 120px;
+    text-shadow: 0 1px 22px rgba(136, 113, 114, 0.38);
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 75.69px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 247px;
+      height: 37px;
+      left: 0px;
+      top: 30px;
+      background: url(images/dec_header-min.png) center center no-repeat;
+      background-size: contain;
+      @media (max-width: 1200px){
+        width: 187px;
+        height: 28px;
+        top: 20px;
+      }
+      @media (max-width: 767px){
+        width: 125px;
+        height: 18px;
+        left: 50px;
+        top: 15px;
+      }
+    }
+    @media (max-width: 1200px){
+      font-size: 91px;
+      padding-top: 80px;
+    }
+    @media (max-width: 767px){
+      font-size: 48px;
+      padding-top: 45px;
+      line-height: 1;
+      padding-left: 50px;
+    }
+
+  }
+  &__sub-title{
+    font-family: 'El Messiri', sans-serif;
+    text-shadow: 0 1px 22px rgba(136, 113, 114, 0.38);
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 75.69px;
+    text-transform: uppercase;
+    font-size: 87px;
+    @media (max-width: 1200px){
+      font-size: 66px;
+    }
+    @media (max-width: 767px){
+      font-size: 35px;
+      line-height: 1;
+      padding-bottom: 150px;
+      padding-left: 50px;
+    }
+  }
+
+
+
+  &__btn{
+    @extend %btn;
+    margin-top: 45px;
+    margin-left: 0;
+    max-width: 300px;
+    @media (max-width: 1200px){
+      margin: 25px auto 0;
+      max-width: 220px;
+    }
+    @media (max-width: 767px){
+
+    }
+
+
+    a{
+      z-index: 3;
+      @media (max-width: 1200px){
+        font-size: 18px;
+
+        line-height: 42px;
+      }
+    }
+
+
+  }
+
+
+}

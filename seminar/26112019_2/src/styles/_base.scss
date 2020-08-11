@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,900|Source+Sans+Pro:300,400,600,700,900&display=swap&subset=cyrillic');
+//font-family: 'M PLUS 1p', sans-serif;
+//font-family: 'Source Sans Pro', sans-serif;
+body {
+  min-width: 320px;
+}
+
+#main {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+}
+
+.mw {
+  min-width: 320px;
+}
+.container {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 760px){
+    width: 320px;
+
+
+  }
+
+}
+
+.seminar-landing {
+  font-size: 16px;
+  background-color: #ffffff;
+  background-size: cover;
+  .row {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  [class*='col-'] {
+    padding: 0 10px;
+  }
+
+}
+#action{
+  position: relative;
+}
+.footer {
+  //display: none;
+}
+
+.fixedtop {
+  display: none!important;
+}
+
+#bg_popup {
+  display: none!important;
+}
+#__telerWdTriggerContent{
+  @media (max-width: 980px){
+    display: none!important;}
+}
+
+.arrow{
+  width: 30px;
+  margin: 53px auto;
+  display: block;
+  @media (max-width: 1200px){
+    margin: 15px auto 53px;
+  }
+  span{
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin-left: 7px;
+    border-bottom: 3px solid #ff889b;
+    border-right: 3px solid #ff889b;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    &:nth-child(2){
+      animation-delay: -0.2s;
+    }
+    &:nth-child(3){
+      animation-delay: -0.4s;
+      @media (max-width: 1200px){
+        display: none;
+
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+.button{
+  width: 390px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.35);
+  margin: 39px auto 0;
+  border-radius: 45px;
+  background-color: #ffffff;
+  display: block;
+  text-align: left;
+  position: relative;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  z-index: 1;
+  @media (max-width: 760px){
+    width: 290px;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    background: url(images/arrow.png) no-repeat center;
+    width: 115px;
+    height: 11px;
+    right: 25px;
+    top: 50%;
+    transform: translate(-0%, -50%);
+
+  }
+  &:hover .btn__text{
+    width: 310px;
+    text-decoration: none;
+    @media (max-width: 760px){
+      width: 155px;
+    }
+  }
+  &:active,
+  &:focus{
+    text-decoration: none;
+  }
+  &:hover{
+    width: 410px;
+    text-decoration: none;
+    @media (max-width: 760px){
+      width: 290px;
+    }
+  }
+
+
+  .btn__text{
+    color: #f30028;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.69px;
+    line-height: 76px;
+    text-align: left;
+    overflow: hidden;
+    width: 195px;
+    padding-left: 35px;
+    border-radius: 45px;
+    background-color: #ffffff;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+    position: relative;
+    @media (max-width: 760px){
+      line-height: 55px;
+      font-size: 22px;
+      width: 155px;
+    }
+
+  }
+
+
+}

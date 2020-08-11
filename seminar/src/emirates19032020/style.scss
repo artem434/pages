@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic');
+//-font-family: 'Rubik', sans-serif;
+.branding-page #main{
+  width: 100%;
+}
+
+.branding-page{
+  padding-top: 0px;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+  .heading{
+    display: none;
+  }
+}
+
+
+.circle{
+  display: none;
+}
+#__telerWdTriggerContent{
+  @media (max-width: 760px){
+   display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  background: #fff;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+
+%container {
+  position: relative;
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+  @media (max-width: 1200px){
+    width: 767px;
+  }
+  @media (max-width: 767px){
+    width: 320px;
+
+  }
+}
+
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+%btn{
+  box-shadow: -2px 6px 6px 1px rgba(13, 13, 107, 0.17);
+  border: 1px solid #ffffff;
+  background-color: #f3f54a;
+  background-image: linear-gradient(to right, #dfcd03 0%, #dfcd03 12%, #ffea01 99%, #ffea01 100%);
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: #000;
+
+  &:hover{
+    background-image: linear-gradient(to right, #3903ff 0%, #3903ff 12%, #3903ff 99%, #3903ff 100%);
+    color: #fff;
+  }
+  text-align: center;
+  @media (max-width: 767px){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  a{
+    width: 100%;
+    color: #020711;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    &:hover{
+      color: #fff;
+    }
+    @media (max-width: 767px){
+      line-height: 36px;
+    }
+  }
+}
+
+
+.fixedtop.show {
+  z-index: 10;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+#bg_popup{
+  display: none!important;
+}
+#bg_popup_two{
+  display: none!important;
+}
+#bg_popup_three{
+  display: none!important;
+}
+.slider .slide {
+  outline: none;
+}
+@import "variables";
+@import "mixins";
+@import "header";
+@import "hero";
+@import "menu";
+@import "place";
+@import "travel";
+@import "tour";
+@import "order";
+@import "info";
+@import "pricing-timer";
+@import "package";
+@import "video";
+@import "footer";
+@import "partners";
+@import "modal-video";
+@import "loader-page";
+
+

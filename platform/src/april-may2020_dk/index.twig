@@ -1,0 +1,462 @@
+{% set link = page.url('/images') %}
+
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div class="hero">
+        <div class="hero__container container">
+
+            <div class="hero__content">
+                <div class="hero__item">
+                    <div class="season">
+                        Сезон
+                        <span class="season__number">3</span>
+                    </div>
+                    <div class="hero__title">Великий <span class="visible-md-inline-block visible-sm-inline-block visible-xs-inline-block">Бухгалтерський</span></div>
+                    <div class="hero__sub-title"> <span class="visible-lg">Бухгалтерський</span>
+                        <br>
+                        ONLINE-марафон
+                    </div>
+                    <div class="hero__text visible-lg">
+                        <p class="hero__description"> <span>Безкоштовно</span> у квітні – травні online-семінари, <br>
+                            майстер-класи, конференції та вебінари</p>
+                        <ul class="hero__list">
+                            <li>Найкращі експерти</li>
+                            <li> Відповіді на запитання</li>
+                            <li>  Все про правильні дії бухгалтера, кадровика,<br> керівника і ФОПа, аби підприємство і працівники
+                                <br> «вижили» під час карантину</li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+
+                <p  class="arrow"><span></span><span></span><span></span></p>
+                <div class="hero__item  form-wr ">
+                    <div id="form" class="form">
+                        <div class="form__title">Реєструйтеся зараз</div>
+                        <div class="form__info">Отримаєте лист-нагадування
+                            про відеопроєкти на email</div>
+                        <div class="form__body">
+                            <form  class="free-demo" >
+                                <div class="form-group">
+                                    <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <input  name="email" type="email" placeholder="Email" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                                </div>
+                                <input class="article"  type="hidden" value="онлайн-demo_april-may2020"/>
+                                <input class="utm" name="options[utm]" type="hidden" value=""/>
+                                <input class="dealer" name="dealer" type="hidden" value="4"/>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-default">надіслати </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="gift">
+                            <p>Подарунок за реєстрацію: <br> <span>брошура «Середня зарплата на прикладах»</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__text visible-md visible-sm visible-xs">
+                    <p class="hero__description"> <span>Безкоштовно</span> у квітні – травні online-семінари, <br>
+                        майстер-класи, конференції та вебінари</p>
+                    <ul class="hero__list">
+                        <li>Найкращі експерти</li>
+                        <li> Відповіді на запитання</li>
+                        <li>  Все про правильні дії бухгалтера, кадровика,<br> керівника і ФОПа, аби підприємство і працівники
+                            <br> «вижили» під час карантину</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="themes" class="themes">
+        <p class="themes__title" id="themes "> <span>ТЕМИ ТА ДАТИ</span>   відеоПроєктів</p>
+        <div class="container themes__container">
+
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title">Вебінар</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">28.04.2020 <span>|</span> 11:00–12:30</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/og.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title ">Про що бухгалтери повинні повідомляти Держфінмоніторінгу </p>
+                        <p class="theme__title "> (вже з 28 квітня 2020 року)</p>
+                        {#  <p class="theme__title theme__title--big">Запитання з вебінару від 21.04.20 р.</p>#}
+                       {# <p class="theme__sub-title theme__sub-title--platform">Запитання з вебінару від 21.04.20 р.</p>#}
+                        <ul class="theme__list theme__list--platform">
+                            <li><span>застосування ризик-орієнтованого підходу;</span></li>
+                            <li><span>збільшення порогової суми та зменшення кількості ознак для обов’язкового звітування про фіноперації;</span></li>
+                            <li><span>розширення кола суб’єктів первинного фінмоніторингу (до яких віднесені тепер і бухгалтери, але не всі!);</span></li>
+                            <li><span>штрафні санкції за порушення законодавства з фінмоніторингу зросли від 51 000 до 340 000 грн!</span></li>
+                            <li  ><span class="theme__answers" ><i>відповіді на запитання отримаєте 30 квітня.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Ольга Гонзайк</span></p>
+                        <p class="theme__lector-info">аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
+                    </div>
+
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Вебінар безкоштовний для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--free">
+                    <div class="project__details">
+                        <p class="project__title">Вебінар</p>
+                        <p class="project__info">безкоштовно для всіх</p>
+                        <p class="project__date">29.04.2020 <span>|</span> 11:00–13:00</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/vp.png" alt="ЛЕКТОР: Віталій Правдюк" ></picture>
+                    </div>
+                </div>
+
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title">Оренда в умовах карантину</p>
+                    {#    <p class="theme__sub-title theme__sub-title--free">Про що дізнаєтеся:</p>#}
+                        <ul class="theme__list theme__list--free">
+                            <li><span>пандемія для орендодавця, пандемія для орендаря;</span></li>
+                            <li><span>різновиди платежів за договором оренди;</span></li>
+                            <li><span>форс-мажорні обставини: процедура та підстави підтвердження їх настання;</span></li>
+                            <li><span>новий ЗУ «Про оренду державного та комунального майна» № 157-IX: застосування його норм у 2020 р.;</span></li>
+                            <li><span class="theme__answers" ><i>online-відповіді на запитання.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--free">Лектор: <span>Віталій Правдюк</span></p>
+                        <p class="theme__lector-info">адвокат, к. ю. н., експерт з юридичного супроводу нерухомості, будівництва та земельних питань</p>
+                    </div>
+
+                </div>
+
+                <div class="project__footer">
+                    <div class="project__free">
+                        <div class="project__arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                        <p>Безкоштовно для всіх <br>
+                        <span>треба лише зареєструватися зараз</span></p>
+                        <div class="project__arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                    </div>
+                    <a href="#form"  class="project__btn project__btn--free">зареєструватися</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title"> Відповіді на запитання</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">30.04.2020{# <span>|</span> 11:00–13:00#}</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/og.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title ">Відповіді на запитання з вебінару від 28.04.2020 </p>
+                        <p class="theme__title ">«Про що бухгалтери повинні повідомляти Держфінмоніторінгу <br> (вже з 28 квітня 2020 року)»</p>
+                        {#  <p class="theme__title theme__title--big">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {# <p class="theme__sub-title theme__sub-title--platform">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {#<ul class="theme__list theme__list--platform">
+                            <li><span>застосування ризик-орієнтованого підходу;</span></li>
+                            <li><span>збільшення порогової суми та зменшення кількості ознак для обов’язкового звітування про фіноперації;</span></li>
+                            <li><span>розширення кола суб’єктів первинного фінмоніторингу (до яких віднесені тепер і бухгалтери, але не всі!);</span></li>
+                            <li><span>штрафні санкції за порушення законодавства з фінмоніторингу зросли від 51 000 до 340 000 грн!</span></li>
+                            <li  ><span class="theme__answers" >відповіді на запитання отримаєте 30 квітня.</span></li>
+
+                        </ul>#}
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Ольга Гонзайк</span></p>
+                        <p class="theme__lector-info">аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
+                    </div>
+
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Відповіді на запитання безкоштовні для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title">Online-семінар</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">05.05.2020 <span>|</span> 11:00–14:30</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/tm.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title ">Великий Online-семінар із Заробітної Плати</p>
+                        <ul class="theme__list theme__list--platform">
+
+                            <li  ><span class="theme__answers" ><i>відповіді на запитання отримаєте 7 травня.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Тетяна Мойсеєнко</span></p>
+                        <p class="theme__lector-info">шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
+                    </div>
+
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Online-семінар безкоштовний для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title">Вебінар</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">06.05.2020 <span>|</span> 11:00–12:00</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/mk.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+
+                        <p class="theme__title ">Кредити у кризу: отримання і облік нових, збитки за старими</p>
+                        {#  <p class="theme__title theme__title--big">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {# <p class="theme__sub-title theme__sub-title--platform">Запитання з вебінару від 21.04.20 р.</p>#}
+                        <ul class="theme__list theme__list--platform">
+                            <li><span>оподаткування отриманих кредитів ФОПами та юрособами на різних системах оподаткування;</span></li>
+                            <li><span> бухоблік та проблематика дисконтування «дешевих» кредитів;</span></li>
+                            <li><span>податкові наслідки прострочених та безнадійних кредитів;</span></li>
+                            <li  ><span class="theme__answers" ><i>відповіді на запитання отримаєте 8 травня.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Мар’яна Кавин</span></p>
+                        <p class="theme__lector-info">незалежний податковий консультант і практикуючий бухгалтер</p>
+                    </div>
+
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Вебінар безкоштовний для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title"> Відповіді на запитання</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">07.05.2020 {#<span>|</span> 11:00–12:30#} </p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/tm.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title ">Відповіді на запитання з Великого Online-семінару із Заробітної Плати від 5.05.2020</p>
+                        {#  <p class="theme__title ">«Про що бухгалтери повинні повідомляти Держфінмоніторінгу <br> (вже з 28 квітня 2020 року)»</p>#}
+                        {#  <p class="theme__title theme__title--big">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {# <p class="theme__sub-title theme__sub-title--platform">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {#<ul class="theme__list theme__list--platform">
+                            <li><span>застосування ризик-орієнтованого підходу;</span></li>
+                            <li><span>збільшення порогової суми та зменшення кількості ознак для обов’язкового звітування про фіноперації;</span></li>
+                            <li><span>розширення кола суб’єктів первинного фінмоніторингу (до яких віднесені тепер і бухгалтери, але не всі!);</span></li>
+                            <li><span>штрафні санкції за порушення законодавства з фінмоніторингу зросли від 51 000 до 340 000 грн!</span></li>
+                            <li  ><span class="theme__answers" >відповіді на запитання отримаєте 30 квітня.</span></li>
+
+                        </ul>#}
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Тетяна Мойсеєнко</span></p>
+                        <p class="theme__lector-info">шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
+                    </div>
+
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Відповіді на запитання безкоштовні для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__header project__header--platform">
+                    <div class="project__details">
+                        <p class="project__title">Відповіді на запитання</p>
+                        <p class="project__info">безкоштовно для передплатників відеоплатформи*</p>
+                        <p class="project__date">08.05.2020 {#<span>|</span> 11:00–12:00#}</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/mk.png" alt="vv" ></picture>
+                    </div>
+                </div>
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title ">Відповіді на запитання з вебінару «Кредити у кризу: отримання і облік нових, збитки за старими» від 6.05.2020</p>
+                        {#  <p class="theme__title theme__title--big">Запитання з вебінару від 21.04.20 р.</p>#}
+                        {# <p class="theme__sub-title theme__sub-title--platform">Запитання з вебінару від 21.04.20 р.</p>#}
+                       {# <ul class="theme__list theme__list--platform">
+                            <li  ><span class="theme__answers" >відповіді на запитання отримаєте 8 травня.</span></li>
+
+                        </ul>#}
+                        <p class="theme__lector theme__lector--platform">Лектор: <span>Мар’яна Кавин</span></p>
+                        <p class="theme__lector-info">незалежний податковий консультант і практикуючий бухгалтер</p>
+                    </div>
+                </div>
+                <div class="project__footer">
+                    <div class="project__platform">
+                        <p> *Відповіді на запитання безкоштовні для передплатників Бухгалтерської відеоплатформи №1</p>
+                        <span> На платформі вже 150+ актуальних курсів, вебінарів та ще 50+ нових відеопроєктів очікується у 2020-му </span>
+                    </div>
+                    <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="project__btn project__btn--platform">Передплатити <br> за 99 грн/міс.</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__header project__header--free">
+                    <div class="project__details">
+                        <p class="project__title">Online-конференція</p>
+                        <p class="project__info">безкоштовно для всіх</p>
+                        <p class="project__date">13.05.2020 <span>|</span> 11:00–16:00</p>
+                    </div>
+                    <div class="project__photo">
+                       {# <picture><img src="{{ link }}/vp.png" alt="ЛЕКТОР: Віталій Правдюк" ></picture>#}
+                    </div>
+                </div>
+
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title">Найгарячіше у травні</p>
+                         {#   <p class="theme__sub-title theme__sub-title--free">Про що дізнаєтеся:</p>
+                        <ul class="theme__list theme__list--free">
+                            <li><span>пандемія для орендодавця, пандемія для орендаря;</span></li>
+                            <li><span>різновиди платежів за договором оренди;</span></li>
+                            <li><span>форс-мажорні обставини: процедура та підстави підтвердження їх настання;</span></li>
+                            <li><span>новий ЗУ «Про оренду державного та комунального майна» № 157-IX: застосування його норм у 2020 р.;</span></li>
+                            <li><span class="theme__answers" ><i>online</i>-відповіді на запитання.</span></li>
+
+                        </ul>#}
+                        <p class="theme__lector theme__lector--free">Лектори: <span>затверджуються</span></p>
+                        <p class="theme__lector-info"></p>
+                    </div>
+
+                </div>
+
+                <div class="project__footer">
+                    <div class="project__free">
+                        <div class="project__arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                        <p>Безкоштовно для всіх <br>
+                            <span>треба лише зареєструватися зараз</span></p>
+                        <div class="project__arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                    </div>
+                    <a href="#form"  class="project__btn project__btn--free">зареєструватися</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div  class="info">
+        <div class="container info__container">
+            <p class="info__title" id="info "> <span>Дивитися</span><br>– не надивитися!</p>
+            <p class="info__sub-title">Бухгалтерська відеоплатформа №1 – доступ до 150+ актуальних відеокурсів та вебінарів
+                <br> на всі-всі гарячі бухгалтерські теми.</p>
+            <p class="info__description">  А зараз передплата на відеоплатформу зі знижкою 80%!</p>
+            <div class="info__block get">
+                <p class="get__title">Чому ця пропозиція крута та що ви отримаєте:</p>
+                <ul class="get__list">
+                    <li> Доступ до 150+ актуальних відеокурсів, вебінарів та ще 50+ нових відеопроєктів вже у 2020-му;</li>
+                    <li>  Роз'яснення та поради від найкращих профі фінансової галузі;</li>
+                    <li> Можливість отримати відповіді від топових експертів саме на ваші запитання;</li>
+                    <li> Ексклюзивні додаткові відеоматеріали.</li>
+                </ul>
+                <div class="get__info">
+                    <p class="get__text">Обсяг величезний, але навіть за пів години-годину можна переглянути окремі уроки чи лекції. Концентрат користі та бухгалтерських знань виглядає саме так :)
+                      </p>
+                    <p class="get__text"><span> Не відкладайте на потім те, що можна отримати тут і зараз!</span></p>
+                </div>
+                <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="info__btn ">Передплатити <br> за 99 грн/міс.</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="video__container">
+            <div id="question" class="video__block">
+                <p class="info__title" id="info "> Сама Тетяна Мойсеєнко  <span>рекомендує!</span></p>
+
+                <div class="video__player">
+                    <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <a href="/?utm_campaign=april-may2020_platform&utm_medium=refferal&utm_source=7eminar.ua" target="_blank" class="video__btn">Передплатити за 99 грн/міс.</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-backdrop">
+        <div class="loader-backdrop__btn">Реєстрація
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loader-page" class="loader-page">
+        <div class="dots">
+            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+        </div>
+    </div>
+</div>
+

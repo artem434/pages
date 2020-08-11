@@ -1,0 +1,217 @@
+.package {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 7px 28px 2px rgba(58, 22, 9, 0.15);
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 5px;
+
+
+  &__body {
+    flex: 1 0 auto;
+    align-items: center;
+    padding: 0px 0px 45px;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid #139fdc;
+    @media (max-width: 767px){
+      padding: 0px;
+    }
+  }
+
+  &__body--no-club {
+    border: 3px solid #3903ff;
+    position: relative;
+
+    .package__format{
+      color: #fff;
+      background-image: linear-gradient(to right, #0e3db8 0%, #0e3db8 12%, #6454fa 98%, #6454fa 100%);
+    }
+    .package__old-price{
+      color: #000;
+    }
+    .package__presents{
+      color: #000;
+      &:after {
+        content: " ";
+        background: url(images/gift_club.png) no-repeat center center;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 115px;
+        top: 2px;
+        @media (max-width: 1000px){
+          left: 85px;
+        }
+        @media (max-width: 767px){
+          left: 45px;
+        }
+      }
+    }
+
+  }
+
+  &__body--club {
+
+    .present{
+      a{
+        color: #15c5ad!important;
+      }
+    }
+    .package__btn{
+      &:hover{
+        background-image: linear-gradient(to right, #0e3db8  0%, #0e3db8  12%, #0e3db8  99%, #0e3db8  100%);
+        button{
+          color: #fff;
+        }
+
+      }
+    }
+  }
+
+  &__format {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding:30px 0 ;
+    font-size: 24px;
+    min-height: 85px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: solid 1px #dad0f9 ;
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(to right, #14c6a7 0%, #14c6a7 12%, #1bbde5 99%, #1bbde5 100%);
+    @media (max-width: 1000px){
+      font-size: 17px;
+    }
+    @media (max-width: 767px){
+      padding:20px 0 ;
+      min-height: 75px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__price {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+    position: relative;
+    margin-bottom: 60px;
+    @media (max-width: 1000px){
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px){
+      font-size: 59px;
+    }
+    span{
+      font-size: 24px;
+      padding-left: 8px;
+    }
+  }
+
+  &__old-price {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    padding-left: 80px;
+    @media (max-width: 767px){
+      font-size: 22px;
+    }
+  }
+  &__presents{
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    position: relative;
+    @media (max-width: 1000px){
+      font-size: 17px;
+    }
+
+    &:after {
+      content: " ";
+      background: url(images/gift2.png) no-repeat center center;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 115px;
+      top: 2px;
+      @media (max-width: 1000px){
+        left: 85px;
+      }
+      @media (max-width: 767px){
+        left: 45px;
+      }
+    }
+
+  }
+
+  .present{
+    margin-bottom: 30px;
+    p{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000;
+      margin-bottom: 30px;
+      @media (max-width: 1000px){
+        font-size: 14px;
+      }
+
+    }
+    a{
+      color: #0e3599;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    max-width: 212px;
+    width: 100%;
+    form{
+      width: 100%;
+    }
+    &:hover,
+    &:focus,
+    &:active.btn{
+      outline: none;
+      box-shadow:none;
+      color: #fff;
+    }
+    .btn{
+      background-color: transparent;
+      color: #000000;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 38px;
+      text-transform: uppercase;
+      width: 100%;
+      &:hover,
+      &:focus,
+      &:active{
+        outline: none;
+        box-shadow:none;
+        color: #fff;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,101 @@
+.advantages {
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to left, #576bff, #f7017c);
+
+  &__container {
+    @extend %container;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    text-align: left;
+
+    li {
+      position: relative;
+      width: 420px;
+      padding: 25px 10px 25px 60px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(odd) {
+        border-right: 2px solid rgba(255,255,255, 0.5);;
+      }
+
+      &:nth-child(1n+3) {
+        border-top: 2px solid rgba(255,255,255, 0.5);;
+      }
+
+      &:nth-child(1) {
+        &:before {
+          width: 40px;
+          height: 40px;
+          background: url(images/icon-play.png) no-repeat center;
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          left: 60px;
+          width: 40px;
+          height: 38px;
+          background: url(images/icon-cert.png) no-repeat center;
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          width: 39px;
+          height: 35px;
+          background: url(images/icon-pres.png) no-repeat center;
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          left: 60px;
+          width: 40px;
+          height: 38px;
+          background: url(images/icon-questions.png) no-repeat center;
+        }
+      }
+
+      &:nth-child(even) {
+        padding-left: 100px;
+
+        &:before {
+          left: 50px;
+        }
+      }
+    }
+  }
+}

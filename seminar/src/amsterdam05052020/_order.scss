@@ -1,0 +1,43 @@
+.order {
+
+  &__container {
+    @extend %container;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: 767px){
+      padding-top: 25px;
+      padding-bottom: 30px;
+
+    }
+  }
+
+
+
+
+  &__sub-title {
+    color: #052577;
+    text-align: center;
+    font-size: 46px;
+    padding-bottom: 40px;
+    @media (max-width: 767px){
+      font-size: 26px;
+      padding-bottom: 20px;
+
+    }
+  }
+
+  &__packages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+  }
+  &__package{
+    max-width: 460px;
+    width: 100%;
+    margin: 15px;
+  }
+
+}

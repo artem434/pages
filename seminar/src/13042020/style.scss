@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+
+
+//-font-family: 'Montserrat', sans-serif;
+button{
+  &:focus{
+    outline: none!important;
+  }
+}
+
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+}
+
+#bg_popup{
+  display: none!important;
+}
+
+#bg_popup_two{
+  display: none!important;
+}
+
+#__telerWdTriggerContent{
+  display: none!important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  background: #fff;
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+.circle{
+  display: none;
+}
+%btn {
+  //-background-image: linear-gradient(to top, #fdfe1e, #f0c61a);
+  background-color: #c60f7b;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  padding: 18px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow:0px 7px 8px rgba(0,0,0,0.25);
+  -moz-box-shadow:0px 7px 8px rgba(0,0,0,0.25);
+  box-shadow: 0px 7px 8px rgba(0,0,0,0.25);
+  transition: 0.7s;
+  border-radius: 30px;
+  @media (max-width: 767px){
+    padding: 18px 20px;
+  }
+  i{
+    margin-left: 10px;
+  }
+  @media (max-width: 767px){
+    margin-top: 30px;
+  }
+  &:active,
+  &:focus,
+  &:hover{
+    background-color: #c402f9;
+    text-decoration: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff;
+
+    }
+
+}
+%container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 75px 10px;
+  text-align: center;
+  @media (max-width: 1200px){
+    max-width: 767px;
+    padding: 55px 10px;
+
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+    padding: 45px 10px;
+  }
+}
+
+%title{
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #363636;
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  @media (max-width: 767px){
+    font-size: 18px;
+  }
+ span{
+   display: block;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1;
+   letter-spacing: 1.8px;
+   text-align: center;
+   color: #bb006f;
+   padding-bottom: 15px;
+   @media (max-width: 767px){
+     font-size: 15px;
+   }
+ }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.seminar-landing {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.fixedtop.show {
+  z-index: 10;
+}
+
+.footer {
+  margin-top: 0;
+}
+.order__gift{
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #424342;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  span{
+    font-size: 25px;
+  }
+}
+@import "../../parts/animate";
+@import "mixins";
+@import "variables";
+@import "hero";
+@import "menu";
+@import "knowledges";
+@import "professions";
+@import "advantages";
+@import "lectors";
+@import "themes";
+@import "gifts";
+@import "order";
+@import "certificate";
+@import "pricing-timer";
+@import "package";
+@import "video";
+@import "partners";
+@import "map";
+@import "popup";
+@import "modal-video";
+@import "loader-page";
+@import "header";
+@import "footer";
+
+.branding-page #main{
+  width: 100%;
+}
+
+.branding-page{
+  padding-top: 0px;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+  .heading{
+    display: none;
+  }
+}

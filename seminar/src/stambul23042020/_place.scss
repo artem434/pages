@@ -1,0 +1,201 @@
+.place{
+
+  &__container {
+    @extend %container;
+    padding-bottom: 100px;
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
+  }
+
+  .places{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--last{
+      justify-content: flex-end;
+      padding-right: 65px;
+      @media (max-width: 1200px){
+        padding-top: 0;
+      }
+      @media (max-width: 767px){
+        padding-right: 0px;
+      }
+    }
+    &--first{
+      @media (max-width: 767px){
+      flex-direction: column-reverse;
+        padding-bottom: 80px;
+      }
+    }
+
+    &__item{
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      &--orange{
+        width: 357px;
+        height: 676px;
+        background-color: #ffffff;
+        background-image: linear-gradient(to right, #eb8e43 0%, #eb8e43 12%, #d74725 99%, #d74725 100%);
+        position: relative;
+        @media (max-width: 1200px){
+          width: 246px;
+          height: 456px;
+        }
+        @media (max-width: 767px){
+          width: 100%;
+          height: 263px;
+          margin-top: 40px;
+
+        }
+        &:before{
+          position: absolute;
+          content: '';
+          width: 418px;
+          height: 562px;
+          left: 65px;
+          top: 40px;
+          background: url(images/img1-min.jpg) center center no-repeat;
+          background-size: contain;
+          @media (max-width: 1200px){
+            width: 282px;
+            height: 379px;
+            top: 15px;
+          }
+          @media (max-width: 767px){
+            width: 180px;
+            height: 240px;
+            top: -30px;
+            left: 56px;
+          }
+          @at-root .webp & {
+            background: url(images/img1.webp) center center no-repeat;
+            background-size: contain;
+          }
+
+        }
+      }
+
+      &--yellow{
+        width: 555px;
+        height: 359px;
+        background-color: #ffffff;
+        background-image: linear-gradient(to right, #f7ca44 0%, #f7ca44 12%, #ece340 99%, #ece340 100%);
+        position: relative;
+        @media (max-width: 1200px){
+          width: 321px;
+          height: 231px;
+        }
+        &:before{
+          position: absolute;
+          content: '';
+          width: 552px;
+          height: 301px;
+          right: 35px;
+          top: -25px;
+          background: url(images/img2-min.jpg) center center no-repeat;
+          background-size: contain;
+          @media (max-width: 1200px){
+            width: 310px;
+            height: 169px;
+          }
+          @at-root .webp & {
+            background: url(images/img2.webp) center center no-repeat;
+            background-size: contain;
+          }
+        }
+        .places__title{
+          @media (max-width: 1200px){
+            padding-left: 40px;
+          }
+        }
+      }
+
+      &--purple{
+        width: 619px;
+        height: 359px;
+        background-color: #ffffff;
+        background-image: linear-gradient(to right, #c561cb 0%, #c561cb 12%, #eda75b 99%, #eda75b 100%);
+        position: relative;
+        @media (max-width: 1200px){
+          width: 404px;
+          height: 239px;
+        }
+        &:before{
+          position: absolute;
+          content: '';
+          width: 637px;
+          height: 356px;
+          right: -65px;
+          top: -80px;
+          background: url(images/img3-min.jpg) center center no-repeat;
+          background-size: contain;
+          @media (max-width: 1200px){
+            width: 406px;
+            height: 226px;
+            top: -45px;
+          }
+          @at-root .webp & {
+            background: url(images/img3.webp) center center no-repeat;
+            background-size: contain;
+          }
+
+        }
+        &:after{
+          position: absolute;
+          content: '';
+          width: 401px;
+          height: 299px;
+          left: -350px;
+          bottom: -50px;
+          background: url(images/lampa-min.png) center center no-repeat;
+          background-size: contain;
+          @media (max-width: 1200px){
+            width: 326px;
+            height: 246px;
+            left: -280px;
+            bottom: -25px;
+          }
+          @media (max-width: 1200px){
+            content: none;
+          }
+
+
+        }
+      }
+
+    }
+
+    &__title{
+      color: #000000;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: uppercase;
+      margin-bottom: 33px;
+      @media (max-width: 1200px){
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+
+
+  &__btn{
+    @extend %btn;
+    margin-top: 45px;
+    @media (max-width: 767px){
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+
+}

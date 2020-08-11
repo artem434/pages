@@ -1,0 +1,102 @@
+.hero{
+  background-image: linear-gradient(to top, #0d0028, #2f1467);
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  }
+  &__container{
+    @extend %container;
+    background: url(images/military-hero_1170-min.png) left top no-repeat;
+    background-size: contain;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    &:before{
+      position: absolute;
+      content: " ";
+      background: url(images/lector-min.png) left top no-repeat;
+      width: 207px;
+      height: 354px;
+      bottom: 0;
+      right: 195px;
+    }
+  }
+
+  &__content{
+    text-align: left;
+    padding: 45px 0 0;
+  }
+
+  &__text{
+    padding-left: 25px;
+  }
+
+  &__curses{
+    display: table;
+    border-radius: 4px;
+    background-color: #e7d61b;
+    padding: 6px 9px;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #232323;
+  }
+
+  &__title{
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 0 10px;
+  }
+
+  &__sub-title{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #fefefe;
+    padding-bottom: 55px;
+  }
+
+  &__teacher{
+    padding: 25px 45px 25px 25px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    display: table;
+  }
+
+  &__name{
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    color: #e7d61b;
+    padding-bottom: 15px;
+  }
+
+  &__teacher-info{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+  }
+}

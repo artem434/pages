@@ -1,0 +1,33 @@
+.order {
+
+  &__container {
+    @extend %container;
+
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 0;
+
+
+  }
+
+  &__packages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__package {
+    width: 300px;
+    @media (max-width: 767px){
+      margin-top: 20px;
+      width: 100%;
+    }
+
+  }
+
+
+
+
+}

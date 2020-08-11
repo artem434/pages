@@ -1,0 +1,58 @@
+.hero{
+
+
+  &__title{
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.38;
+    letter-spacing: 4.8px;
+    text-align: center;
+    color: #232323;
+    text-transform: uppercase;
+  }
+
+  &__platform{
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #232323;
+
+    span{
+      color: #ed3434;
+    }
+  }
+
+  &__description{
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #585858;
+  }
+
+  &__btn {
+    margin: 0;
+    text-align: center;
+  }
+
+  .btn{
+    position: relative;
+    min-width: 220px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #ed3434;
+  }
+}

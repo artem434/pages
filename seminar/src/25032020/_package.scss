@@ -1,0 +1,291 @@
+.package {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+
+  &__body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+    text-align: center;
+  }
+
+  &__header {
+    text-align: center;
+    margin: 0;
+    background-color: #e2e2e2;
+    color: #1b1b1b;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  &__head{
+    padding-top: 30px;
+    -webkit-box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.13);
+    background-color: #cdcdcd;
+    padding-bottom: 30px;
+  }
+
+  &__format {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__old-price {
+    color: #999999;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+
+
+  .btn{
+    width: 95%;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1.58px;
+    -webkit-box-shadow: 0 10px 15px rgba(96, 31, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(96, 31, 0, 0.3);
+    border-radius: 33px;
+    border: solid 1px #e82626;
+    background-color: #e82626;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    min-height: 66px;
+    transition: all 150ms linear;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover{
+      background-color: #000010;
+      background-image:none;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+
+
+
+
+      .btn{
+        width: 95%;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 1.58px;
+        -webkit-box-shadow: 0 10px 15px rgba(96, 31, 0, 0.3);
+        box-shadow: 0 10px 15px rgba(96, 31, 0, 0.3);
+        border-radius: 33px;
+        border: solid 1px #e82626;
+        background-color: #e82626;
+        -webkit-transition: all 150ms linear;
+        -o-transition: all 150ms linear;
+        min-height: 66px;
+        transition: all 150ms linear;
+        text-transform: uppercase;
+        color: #fff;
+        &:hover{
+          background-color: #000010;
+          background-image:none;
+          color: #fff;
+        }
+      }
+
+
+
+    &--footer {
+      margin: 0 auto;
+      text-align: center;
+
+
+      /*.btn{
+        background-image: -webkit-gradient(linear, left top, right top, from(#d81bfa), to(#e82626));
+        background-image: -o-linear-gradient(left, #d81bfa 0%, #e82626 100%);
+        background-image: linear-gradient(to right, #d81bfa 0%, #e82626 100%);
+        color: #fff;
+        -webkit-transition: 0.9s;
+        -o-transition: 0.9s;
+        transition: 0.9s;
+        &:active,
+        &:focus,
+        &:hover{
+          background-image: -webkit-gradient(linear, left top, right top, from(#e82626), to(#d81bfa));
+          background-image: -o-linear-gradient(left, #e82626 0%, #d81bfa 100%);
+          background-image: linear-gradient(to right, #e82626 0%, #d81bfa 100%);
+        }
+      }*/
+
+      &.is-hidden {
+        display: none;
+      }
+    }
+
+    &--platform {
+      display: none;
+      position: relative;
+      margin: 0;
+      text-align: center;
+      font-size: 15px;
+
+      /*.btn{
+        background-image: -webkit-gradient(linear, left top, right top, from(#d81bfa), to(#e82626));
+        background-image: -o-linear-gradient(left, #d81bfa 0%, #e82626 100%);
+        background-image: linear-gradient(to right, #d81bfa 0%, #e82626 100%);
+        color: #fff!important;
+        &:active,
+        &:focus,
+        &:hover{
+          background-image: -webkit-gradient(linear, left top, right top, from(#e82626), to(#d81bfa));
+          background-image: -o-linear-gradient(left, #e82626 0%, #d81bfa 100%);
+          background-image: linear-gradient(to right, #e82626 0%, #d81bfa 100%);
+        }
+      }*/
+
+      a {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: underline;
+        letter-spacing: 0.6px;
+        color: #747577;
+
+        &:hover {
+          text-decoration: none;
+          color: #0645ad
+        }
+      }
+    }
+
+  }
+
+  .btn--platform{
+    font-size: 17px;
+    font-weight: 700;
+
+    span{
+      font-size: 11px;
+    }
+
+  }
+
+  &__list {
+    margin: 25px 15px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+
+
+    li {
+      position: relative;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+      color: #000;
+
+      a {
+        color: #2b63de;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+
+        &.is-inactive {
+          color: #5b4cff;
+          cursor: not-allowed;
+        }
+      }
+
+      &:before {
+        content: "\f00c";
+        position: absolute;
+        top: 0px;
+        left: -3px;
+        color: #04c451;
+        font-size: 13px;
+        font-family: "FontAwesome";
+      }
+
+      &.is-inactive {
+        color: #737373;
+
+        &:before {
+          content: "\f00d";
+          position: absolute;
+          top: 0px;
+          left: -3px;
+          color: #737373;
+          font-size: 13px;
+          font-family: "FontAwesome";
+        }
+      }
+    }
+
+    &--footer {
+      margin: 10px 15px 30px;
+      min-height:128px ;
+      @media (max-width: 767px){
+        height: auto;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 20px 0px 45px;
+  }
+
+  &__presents {
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #d36536;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    &:before{
+      content: '';
+      background: url(images/plus1.png) no-repeat center center;
+      display: block;
+      width: 31px;
+      height: 31px;
+      margin: 0 auto 23px;
+    }
+  }
+}

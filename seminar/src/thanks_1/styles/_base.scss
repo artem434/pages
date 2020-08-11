@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic');
+//font-family: 'Rubik', sans-serif;
+body {
+  min-width: 320px;
+}
+
+#main {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+}
+
+.mw {
+  min-width: 320px;
+}
+
+.seminar-landing {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  //-background: url(images/bg-h.png) no-repeat top center, linear-gradient(90deg, #fefefe 0%, #fbfbfb 50%, #ffffff 77%, #ffffff 100%);
+  background-size: cover;
+
+  .container {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    width: 350px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #fefefe;
+    box-shadow: 0 3px 10px 0 rgba(0, 58, 191, 0.5);
+    background-color: #092e8d;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    text-transform: uppercase;
+    @media (max-width: 980px){
+      width: 250px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #2358e3;
+    }
+
+    &--platform {
+      font-family: 'Roboto', sans-serif;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0;
+      text-transform: none;
+
+      background-color: #092e8d;
+
+      span {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background-color: #2358e3;
+        color: #fff;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .row {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  [class*='col-'] {
+    padding: 0 10px;
+  }
+}
+
+.footer {
+  //display: none;
+}
+
+.fixedtop {
+  display: none!important;
+}
+
+#bg_popup {
+  display: none!important;
+}
+#__telerWdTriggerContent{
+  display: none!important;
+}
+.btn--mob{
+  display: block;
+  @include laptop() {
+    display: none;
+  }
+}
+.btn--desk{
+  display: none;
+  @include laptop() {
+    display: block;
+  }
+}

@@ -1,0 +1,266 @@
+.plus {
+
+
+  &__container {
+    @extend %container;
+    height: inherit;
+    margin: 0px auto 0;
+    position: relative;
+    text-align: center;
+    padding-bottom: 150px;
+    background: url(images/02_repeat_bg_low.png) no-repeat 50% 100%, -webkit-gradient(linear, left top, right top, from(#060043), color-stop(27%, #060043), color-stop(77%, #060043), to(#060043));
+    background-size: contain;
+    @media (max-width: 992px){
+      padding-top: 150px;
+      background:  -webkit-gradient(linear, left top, right top, from(#060043), color-stop(27%, #060043), color-stop(77%, #060043), to(#060043));
+    }
+    @media (max-width: 768px){
+      padding-top: 0px;
+    }
+  }
+
+  &__title {
+    @extend %title;
+    display: inline-block;
+    padding-left: 12px;
+    @media (max-width: 760px){
+      margin-bottom: 0px;
+    }
+    &:before{
+      content: none;
+
+    }
+
+  }
+  &__title--wr{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  &__content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    padding: 100px 0 140px;
+    @media (max-width: 992px){
+      padding: 100px 30px 140px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    @media (max-width: 760px){
+      flex-direction: column;
+      padding: 80px 30px 50px;
+
+    }
+    &:before {
+      content: '';
+      background: url(images/06_MS.png) no-repeat 50% 100%;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      width: 242px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      height: 238px;
+      z-index: 0;
+      @media (max-width: 992px){
+        top: 60%;
+      }
+      @media (max-width: 760px){
+        top: 51%;
+
+      }
+    }
+
+  }
+  &__item{
+    max-width: 280px;
+    width: 100%;
+    padding: 35px 45px;
+    text-align: right;
+    position: relative;
+    min-height: 192px;
+    @media (max-width: 760px){
+
+      padding: 35px 20px;
+
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 29, 0)), color-stop(20%, #653a65), color-stop(80%, #653a65), to(rgba(0, 0, 29, 0)));
+      background-image: -o-linear-gradient(left, rgba(0, 0, 29, 0) 0%, #653a65 20%, #653a65 80%, rgba(0, 0, 29, 0) 100%);
+      background-image: linear-gradient(90deg, rgba(0, 0, 29, 0) 0%, #653a65 20%, #653a65 80%, rgba(0, 0, 29, 0) 100%);
+      width: 100%;
+      height: 2px;
+      right: 0px;
+      top: 0px;
+      display: block;
+      z-index: 0;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 29, 0)), color-stop(20%, #8994ef), color-stop(80%, #8994ef), to(rgba(0, 0, 29, 0)));
+      background-image: -o-linear-gradient(left, rgba(0, 0, 29, 0) 0%, #8994ef 20%, #8994ef 80%, rgba(0, 0, 29, 0) 100%);
+      background-image: linear-gradient(90deg, rgba(0, 0, 29, 0) 0%, #8994ef 20%, #8994ef 80%, rgba(0, 0, 29, 0) 100%);
+      width: 100%;
+      height: 2px;
+      right: 0px;
+      bottom: 0px;
+      display: block;
+      z-index: 0;
+    }
+  }
+  &__item--one{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    line-height: 46px;
+    @media (max-width: 760px){
+      text-align: center;
+      margin-bottom: 280px;
+
+    }
+    span{
+      font-size: 24px;
+      letter-spacing: 4.8px;
+      line-height: 38px;
+    }
+  }
+  &__item--two{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 44.39px;
+    text-transform: uppercase;
+    position: relative;
+    span{
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21.21px;
+      text-transform: uppercase;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "7";
+        top: 0;
+        left: -70px;
+        color: #ffffff;
+        font-size: 128px;
+        font-weight: 700;
+
+      }
+    }
+
+  }
+  &__flare{
+    width: 172px;
+    margin: 0 auto;
+
+    @extend %flare
+
+
+  }
+  &__controls{
+    @extend %control
+  }
+
+}
+
+
+
+.pulse{
+  display: inline-block;
+  background: url(images/plus.png) no-repeat 50% 100%;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  z-index: 0;
+  position: relative;
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.pulse::before{
+  content: '';
+  position: absolute;
+  border: 1px solid #c3d1ff;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  -webkit-box-shadow: 0 0 8px 1px #012dac;
+  box-shadow: 0 0 8px 1px #012dac;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+  -webkit-animation: pulse 2.5s linear infinite;
+  opacity: 0;
+}
+.pulse::after {
+  content: '';
+  position: absolute;
+  -webkit-box-shadow: 0 0 8px 1px #012dac;
+  box-shadow: 0 0 8px 1px #012dac;
+  border: 1px solid #c3d1ff;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+  -webkit-animation: pulse 2.5s linear infinite;
+  opacity: 0;
+}
+
+.pulse::after {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}

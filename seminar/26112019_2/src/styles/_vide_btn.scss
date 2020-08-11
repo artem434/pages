@@ -1,0 +1,38 @@
+
+.video_btn {
+  overflow: hidden;
+  outline: none;
+  z-index: 0;
+
+
+
+  @media (max-width: 978px){
+    display: none;
+  }
+
+
+
+  &__container {
+    @extend %container;
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+
+  }
+
+
+  &__flare{
+    width: 172px;
+    margin: 0 auto;
+    @extend %flare
+
+
+  }
+  &__controls{
+    @extend %control
+  }
+
+}
+
+
+

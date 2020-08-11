@@ -1,0 +1,106 @@
+.package {
+  width: 370px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  text-align: center;
+  transition: transform 150ms ease-in;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 44px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to left, #7199ee, #5e69cb);
+    text-transform: uppercase;
+    border-radius: 25px 25px 0 0 ;
+    border-bottom: 5px solid #5b4cde;
+  }
+
+  &__main {
+    padding: 40px 40px 35px 45px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    list-style: none;
+    text-align: left;
+    font-size: 18px;
+    line-height: 29px;
+    color: #1d1d1d;
+
+    li {
+      position: relative;
+      padding-left: 26px;
+      text-transform: lowercase;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 17px;
+        height: 13px;
+        background: url(images/check1.png) no-repeat center;
+      }
+    }
+  }
+
+  &__price {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 43px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #3c3d3c;
+
+    span {
+      font-size: 65px;
+    }
+
+    s {
+      position: absolute;
+      top: -35px;
+      right: -2;
+      font-size: 36px;
+      font-weight: normal;
+      line-height: 44px;
+      color: #c8c8c8;
+    }
+  }
+
+  &__btn {
+    margin: 0;
+
+    .btn {
+      width: 173px;
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 5px 0.9px 0.1px rgba(0, 0, 0, 0.17);
+      background-color: #0641ff;
+      transition: .5s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #fe0144;
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.bonus {
+  background: linear-gradient(90deg, #f0f0f0 0%, #f0f0f0 50%, #f0f0f0 77%, #f0f0f0 100%);
+  padding-top: 0px;
+  @media (max-width: 1200px){
+    background: linear-gradient(90deg, #f0f0f0 0%, #f8f8f8 50%, #f6f6f6 77%, #f2f2f2 100%);
+  }
+  @media (max-width: 700px){
+    background: linear-gradient(90deg, #f4f4f4 0%, #ffffff 50%, #fefefe 77%, #f2f2f2 100%);
+  }
+  &__container {
+    @extend %container;
+    height: inherit;
+    margin: 0px auto 0;
+    position: relative;
+  }
+
+  &__title {
+    @extend %title;
+
+  }
+
+  &__wr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    @media (max-width: 1200px){
+      justify-content: center;
+    }
+    @media (max-width: 780px){
+      padding: 20px 0 30px;
+    }
+  }
+
+  &__content{
+    max-width: 550px;
+    display: inline-block;
+    @media (max-width: 1200px){
+      max-width: 335px;
+      margin: 10px;
+    }
+    @media (max-width: 745px){
+      margin: 10px;
+      max-width: 300px;
+    }
+
+
+    img{
+      width: 100%;
+    }
+  }
+
+
+  &__header{
+    padding: 35px 40px 25px 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 187px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
+    @media (max-width: 1200px){
+      padding: 35px 40px 25px 15px;
+      min-height: 202px;
+    }
+    @media (max-width: 745px){
+      min-height: 150px;
+      padding: 35px 15px 25px 15px;
+    }
+    p{
+      color: #000000;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 26px;
+      margin: 0;
+      @media (max-width: 1200px){
+        font-size: 16px;
+        line-height: 22px;
+      }
+      @media (max-width: 745px){
+        margin: 0;
+      }
+    }
+
+
+    h2{
+      line-height: 1;
+      margin: 0;
+      color: #2459e5;
+      font-size: 80px;
+      font-weight: 500;
+      padding-right: 20px;
+      @media (max-width: 1200px){
+        font-size: 50px;
+      }
+      @media (max-width: 745px){
+        font-size: 30px;
+      }
+
+    }
+
+
+
+  }
+  .bonus__date{
+    font-weight: 300;
+    color: #000000;
+    margin: 0;
+
+  }
+
+
+  &__header--online{
+    position: relative;
+
+    @media (max-width: 745px){
+
+      margin-top: 30px;
+    }
+    &:before{
+      position: absolute;
+      content: "Відтепер і ONLINE ";
+      width: 350px;
+      font-size: 18px;
+      line-height: 40px;
+      top: -20px;
+      left: 50%;
+      transform: translate(-50%);
+      color: #fff;
+      background-color:#2356e0 ;
+      text-align: center;
+      @media (max-width: 1200px){
+        width: 250px;
+      }
+      @media (max-width: 768px){
+        width: 100%;
+        line-height: 25px;
+        background-color: #385fca;
+
+      }
+
+
+
+    }
+  }
+  .btn{
+    margin: 20px auto 60px;
+    @media (max-width: 1200px){
+      margin: 0px auto 60px;
+    }
+    @media (max-width: 745px){
+      margin: 0px auto 70px;
+    }
+  }
+
+
+}
+.bonus__text{
+
+  p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+    @media (max-width: 1200px){
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @media (max-width: 745px){
+      margin: 0;
+    }
+    span{
+      padding: 0;
+      color: #2356e0;
+      font-weight: 500;
+    }
+
+  }
+}

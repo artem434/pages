@@ -12,6 +12,9 @@ $color: #ffdbdb;
   &__container {
     @extend %container;
     padding: 0 10px;
+    @media (max-width: 767px){
+     max-width: 100%;
+    }
   }
 
   &__title{

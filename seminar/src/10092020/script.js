@@ -152,10 +152,10 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/s
                     $('.js-btn-platform').show();
                 }
                 if (document.location.host == "seminar.ibuh.info") {
-                    $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+
                 }
                 if (document.location.host == "seminar.impulsm.com.ua") {
-                    $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+
                 }
                 $(window).scroll(function () {
                     var the_top = jquery_1.default(document).scrollTop();

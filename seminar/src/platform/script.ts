@@ -14,8 +14,9 @@ jQuery(($) => {
         setTimeout(function () {
             $('#video-background').removeClass('is-active');
         }, 13000);
-    }
-    ;
+    };
+    const viewport = $("meta[name=viewport]");
+    viewport.attr('content', 'width=device-width,initial-scale=1');
 });
 YT.ready(()=>{
     let myModal = $('#myModal');

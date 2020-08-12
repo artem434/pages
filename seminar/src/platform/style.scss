@@ -15,7 +15,7 @@
   max-width: 650px;
   max-height: 450px;
   z-index: -100;
-  display: none;
+  display: none!important;
 
 
   @media (max-height: 800px){
@@ -1111,14 +1111,14 @@ body{
 
         h3{
           color: #ffffff;
-          font-size: 24px;
+          font-size: 30px;
           font-weight: 400;
           margin: 0 0 5px 0;
           text-align: center;
           letter-spacing: 1px;
 
           span{
-            font-size: 20px;
+            font-size: 30px;
             color: #ffffff;
           }
         }

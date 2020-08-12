@@ -122,11 +122,11 @@ jQuery(($) => {
     }
 
     if (document.location.host == "seminar.ibuh.info") {
-        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+
     }
 
     if (document.location.host == "seminar.impulsm.com.ua") {
-        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+
     }
     $(window).scroll(function() {
         var the_top = jQuery(document).scrollTop();

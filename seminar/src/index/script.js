@@ -15,7 +15,7 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
         execute: function () {
             if (document.location.host != "7eminar.com") {
                 jquery_1.default('#gift').hide();
-                jquery_1.default('#offline').hide();
+
             }
         }
     };

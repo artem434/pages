@@ -23,8 +23,9 @@ System.register(["jquery", "youtube", "bootstrap"], function (exports_1, context
                     setTimeout(function () {
                         $('#video-background').removeClass('is-active');
                     }, 13000);
-                }
-                ;
+                };
+                var viewport = $("meta[name=viewport]");
+                viewport.attr('content', 'width=device-width,initial-scale=1');
             });
             youtube_1.default.ready(function () {
                 var myModal = jquery_1.default('#myModal');

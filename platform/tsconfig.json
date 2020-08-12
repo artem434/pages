@@ -14,7 +14,7 @@
     "baseUrl": ".",
     "paths": {
       "@clients": [
-        "../../../../modules/users/public/js/clients/clients.ts"
+        "../../../../../../../modules/clients/public/js/clients"
       ],
       "tslib": [
         "node_modules/tslib/tslib.d.ts"

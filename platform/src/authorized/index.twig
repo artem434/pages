@@ -1,4 +1,5 @@
-<div class="hero">
+<div class="hero" data-require="{{ page.url('/script.js') }}">
+
     <div  data-require="@black,auth" class="hero__form   modal__inner modal__inner--no-modal modal_header_auth">
         <h1>ВІТАЄМО!</h1>
         <p>{{ page.options['text_header']|default('') }}</p>
@@ -50,19 +51,5 @@
 
 <script>
 
-    SystemJS.import('jquery').then(function ($) {
-        var loader = $('.loader-backdrop')
-        var loaderPage = $('#loader-page');
-        loaderPage.delay(850).fadeOut('slow');
-        $('#authForm')
-            .on('submit', function (e) {
-                e.preventDefault()
-                SystemJS.import('@clients').then(function (clients) {
-                    clients.Auth.login($('[name="email"]', e.currentTarget).val(), $('[name="password"]', e.currentTarget).val()).then(function (client) {
-                            location.href = '/events/1235'
-                    })
-                })
-            })
-            .find('#reg-email').val(sessionStorage.getItem('userEmail'))
-    })
+
 </script>

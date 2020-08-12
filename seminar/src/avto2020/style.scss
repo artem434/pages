@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900&display=swap&subset=cyrilli');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900&display=swap&subset=cyrillic');
 
 //-font-family: 'Exo 2', sans-serif;
 button{
@@ -156,7 +156,8 @@ body {
     font-size: 25px;
   }
 }
-@import "../../parts/animate";
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import "mixins";
 @import "variables";
 @import "hero";

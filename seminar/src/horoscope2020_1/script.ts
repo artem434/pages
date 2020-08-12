@@ -1,5 +1,20 @@
-import $ from 'jquery'
-import jQuery from "jquery";
-import YT from "youtube";
+import jQuery from 'jquery';
 import 'bootstrap';
-import 'cdnjs/slick-carousel/1.8.1/slick.min.js';
+
+
+jQuery(($) => {
+    const viewport = $("meta[name=viewport]");
+    viewport.attr('content', 'width=device-width,initial-scale=1');
+
+    const loaderPage = $('#loader-page');
+    loaderPage.delay(350).fadeOut('slow');
+
+});
+
+
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+        img.removeAttribute('data-src');
+    };
+});

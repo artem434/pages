@@ -68,19 +68,19 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function(form) {
-                    const url = ['/subscribe/25062020bkadrs', '/invoice2'];
+                    const url = ['/subscribe/25062020bkadrsdk'/*, '/invoice2'*/];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val()
-                    }, {
+                    }/*, {
                         "customer[name]": $('.free-demo .name').val(),
                         'customer[email]': $('.free-demo .mail').val(),
                         'customer[phone]': $('.free-demo .phone').val(),
                         'article': $('.free-demo .article').val(),
                         'options[utm]': $('.free-demo .utm').val(),
                         'dealer': $('.free-demo .dealer').val()
-                    }];
+                    }*/];
 
                     $.each(url, function(i) {
 
@@ -93,7 +93,8 @@ SystemJS.import('jquery').then(function ($) {
                             data: dataSend[i],
                             success: function( data, event, payload) {
                                 loader.addClass('is-active');
-                                if(i == 1){
+                                location.href = '/gifts'
+                           /*     if(i == 1){
 
                                     var email = $('.mail').val();
 
@@ -101,12 +102,12 @@ SystemJS.import('jquery').then(function ($) {
 
                                         if (payload.responseJSON.result === true ) {
                                             if (client && client.email === email) {
-                                                location.href = '/successful'
+                                                location.href = '/2020_successful'
                                                 return
                                             }
                                             (client ? clients.Auth.logout() : Promise.resolve())
                                                 .then(function () {
-                                                    location.href = payload.responseJSON.newClient ? '/new' : '/authorized'
+                                                    location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth'
                                                 })
 
                                             sessionStorage.setItem('userEmail', email)
@@ -114,11 +115,11 @@ SystemJS.import('jquery').then(function ($) {
                                             (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
                                                 .then(function () {
                                                     sessionStorage.setItem('userEmail', email)
-                                                    location.href = '/singup_replay'
+                                                    location.href = '/2020_singup_replay'
                                                 })
                                         }
                                     })
-                                }
+                                }*/
 
 
                             },

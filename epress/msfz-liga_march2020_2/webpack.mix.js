@@ -1,6 +1,6 @@
 const mix = require('laravel-mix')
-const id = 218
-const alias = 'msfz-liga_2Fmarch2020_1'
+const id = 237
+const alias = 'msfz-liga_2Fmarch2020_2'
 
 mix.webpackConfig({
 })

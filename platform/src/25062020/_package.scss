@@ -10,8 +10,8 @@
   flex-direction: column;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 0 38px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  border: 1px solid #bfe2c1;
+  border-radius: 20px;
+  border: 1px solid #fc6299;
   overflow: hidden;
   padding: 25px 0 0 0;
   background-color: #fff;
@@ -108,6 +108,9 @@
       font-weight: 400;
       font-size: 24px;
     }
+  }
+  &__old-price{
+    font-size: 18px;
   }
 
 

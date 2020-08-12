@@ -1,136 +1,251 @@
-import $ from 'jquery';
+import jQuery from 'jquery';
+import YT from 'youtube';
 import 'bootstrap';
-var loader = $('.loader-backdrop')
-var loaderPage = $('#loader-page');
-var form = $('body .free-demo');
-var form_bottom = $('body .free-demo-bottom');
-var remain_bv   = 300;
-function parseTime_bv(timestamp){
-    if (timestamp < 0) timestamp = 0;
-
-    var hour = Math.floor(timestamp/60/60);
-    var mins = Math.floor((timestamp - hour*60*60)/60);
-    var secs = Math.floor(timestamp - hour*60*60 - mins*60);
+import 'cdnjs/slick-carousel/1.8.1/slick.min.js';
+import 'cdnjs/waypoints/4.0.1/jquery.waypoints.min.js';
 
 
+jQuery(function ($) {
+
+    (function($) {
+        $.fn.animated = function(inEffect) {
+            $(this).each(function() {
+                let ths = $(this);
+                ths.waypoint(function(dir) {
+                    if (dir === "down") {
+                        ths.addClass(inEffect).css("opacity", "1");
+                    } else {
+                        ths.removeClass(inEffect);
+                    }
+                }, {
+                    offset: "85%"
+                });
+
+            });
+        };
+    })(jQuery);
+
+    let get = $(".get__item");
+
+    $('.knowledges__number').animated('line-js');
+    get.animated('certificate_line-js');
+
+    get.hover(function (e) {
+        e.preventDefault();
+        get.removeClass('active');
+        $(this).addClass('active');
+
+    });
 
 
-    if(String(mins).length > 1)
-        $('.timer__mins').text(mins);
-    else
-        $('.timer__mins').text("0" + mins);
-    if(String(secs).length > 1)
-        $('.timer__secs').text(secs);
-    else
-        $('.timer__secs').text("0" + secs);
+    function checkWidth() {
 
+        get.hover(function (e) {
+            e.preventDefault();
+            get.removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+
+    }
+
+    $(window).resize(checkWidth);
+
+});
+
+
+jQuery(($) => {
+    const viewport = $("meta[name=viewport]");
+    viewport.attr('content', 'width=device-width,initial-scale=1');
+
+    const loaderPage = $('#loader-page');
+    loaderPage.delay(350).fadeOut('slow');
+
+    YT.ready(() => {
+        let myModal = $('#modal-video');
+        myModal.on('show.bs.modal', (e: JQuery.Event) => {
+            myModal.css('display', 'flex');
+            let
+                target = $(e.target),
+                player = target.data('youtube-player'),
+                id = $(e.relatedTarget).attr('data-vidId');
+            if (!player) {
+                //@ts-ignore
+                player = new YT.Player(target.find('.player')[0], {
+                    height: '100%',
+                    width: '100%',
+                    videoId: id,
+                    events: {
+                        onReady: (event) => {
+                            event.target.playVideo();
+                        }
+                    }
+                });
+                target.data('youtube-player', player);
+                target.data('youtube-player-id', id);
+            } else if (target.data('youtube-player-id') !== id) {
+                target.data('youtube-player-id', id);
+                player.loadVideoById(id);
+            } else {
+                player.playVideo();
+            }
+            $('#main').css('position', 'static');
+        });
+        myModal.on('hide.bs.modal', (e: JQuery.Event) => {
+            let player = $(e.target).data('youtube-player');
+            player && player.stopVideo();
+            $('#main').css('position', 'relative');
+            setTimeout(function () {
+                $('body').css('padding-right', '0');
+            }, 500);
+        });
+
+    });
+
+    if (document.location.host == "7eminar.com") {
+        $('.js-platform-banner').show();
+        $('.header').hide();
+        $('.heading').show();
+    }
+
+    if (document.location.host != "7eminar.com") {
+        $('.js-banner-link').attr('href', '/platform');
+    }
+
+    if (document.location.host == "seminars.dtkt.ua") {
+        $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
+        $('.js-platform-banner').show();
+        $('.js-btn-hidden').show();
+    } else {
+        $('.js-btn-platform').show();
+    }
+
+    if (document.location.host == "seminar.ibuh.info") {
+        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+    }
+
+    if (document.location.host == "seminar.impulsm.com.ua") {
+        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
+    }
+    $(window).scroll(function() {
+        var the_top = jQuery(document).scrollTop();
+        if (the_top > 55) {
+            jQuery('.burger__bg').addClass('burger__bg-js');
+        }
+        else {
+            jQuery('.burger__bg').removeClass('burger__bg-js');
+        }
+    });
+
+    if (document.location.host == "7eminar.com") {
+        $('.js-platform-banner').show();
+    }
+
+    $('.burger__link').on('click', function(){
+        $('#menu-checkbox').prop('checked',false);
+    });
+    $('.burger__element').on('click', function(){
+        $('#menu-checkbox').prop('checked',false);
+    });
+
+    $('.slider').slick({
+        speed: 500,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '<div id="pause_video" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div id="pause_video" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
+        lazyLoad:'ondemand',
+        fade: true
+
+
+
+    });
+
+    $(".slider").on("beforeChange", function(event, slick) {
+        var currentSlide, slideType, player, command;
+        currentSlide = $(slick.$slider).find(".slick-current");
+        slideType = currentSlide.attr("class").split(" ")[1];
+        player = currentSlide.find("iframe").get(0);
+
+        if (slideType ) {
+            command = {
+                "event": "command",
+                "func": "pauseVideo"
+            };
+        }
+
+        if (player != undefined) {
+            player.contentWindow.postMessage(JSON.stringify(command), "*");
+        }
+    });
+
+    if (document.location.host == "seminars.dtkt.ua") {
+        $(window).scroll(function() {
+            var the_top = jQuery(document).scrollTop();
+            if (the_top > 0) {
+                jQuery('.burger__bg').addClass('burger__bg-js-dk');
+            }
+            else {
+                jQuery('.burger__bg').removeClass('burger__bg-js-dk');
+            }
+        })
+    });
+
+function findVideos() {
+    let videos = document.querySelectorAll('.video__player');
+
+    for (let i = 0; i < videos.length; i++) {
+        setupVideo(videos[i]);
+    }
 }
 
-$(document).ready(function(){
-    setInterval(function(){
-        remain_bv = remain_bv - 1;
-        parseTime_bv(remain_bv);
 
-    }, 1000);
-});
+function setupVideo(video) {
+    let link = video.querySelector('.video__link');
+    let media = video.querySelector('.video__media');
+    let button = video.querySelector('.video__button');
+    let id = parseMediaURL(media);
 
+    video.addEventListener('click', () => {
+        let iframe = createIframe(id);
 
-loaderPage.delay(850).fadeOut('slow');
-const url = document.location.href;
-const utm =  $('.utm');
-$(document).ready(function(){
-    utm.val(url);
-});
+        link.remove();
+        button.remove();
+        video.appendChild(iframe);
+    });
 
+    link.removeAttribute('href');
+    video.classList.add('video--enabled');
+}
 
-SystemJS.import('jquery').then(function ($) {
-    SystemJS.import('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js').then(function ($) {
-        SystemJS.import('@clients').then(function (clients) {
+function parseMediaURL(media) {
+    let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+    let url = media.src;
+    let match = url.match(regexp);
 
-            form.validate({
-                rules: {
-                    name: "required",
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    phone:{
-                        required: true,
-                        minlength: 18
-                    }
-                },
-                messages: {
-                    name: "Введіть не менше 2 символів",
-                    email: {
-                        required: "Це поле необхідно заповнити",
-                        email: "Будь ласка, введіть коректну адресу електронної пошти"
-                    },
-                    phone:"Введіть правильний номер телефону"
-                },
-                submitHandler: function(form) {
-                    const url = ['/subscribe/25062020bkadrs', '/invoice2'];
-                    const dataSend = [{
-                        "firstName": $('.free-demo .name').val(),
-                        'email': $('.free-demo .mail').val(),
-                        'phone': $('.free-demo .phone').val()
-                    }, {
-                        "customer[name]": $('.free-demo .name').val(),
-                        'customer[email]': $('.free-demo .mail').val(),
-                        'customer[phone]': $('.free-demo .phone').val(),
-                        'article': $('.free-demo .article').val(),
-                        'options[utm]': $('.free-demo .utm').val(),
-                        'dealer': $('.free-demo .dealer').val()
-                    }];
+    return match[1];
+}
 
-                    $.each(url, function(i) {
+function createIframe(id) {
+    let iframe = document.createElement('iframe');
+
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('allow', 'autoplay');
+    iframe.setAttribute('src', generateURL(id));
+    iframe.classList.add('video__media');
+
+    return iframe;
+}
+
+function generateURL(id) {
+    let query = '?enablejsapi=1&html5=1?rel=0&showinfo=0&autoplay=1';
+
+    return 'https://www.youtube.com/embed/' + id + query;
+}
+
+findVideos();
 
 
-                        $.ajax({
-                            url: url[i],
-                            async: false,
-                            type: "POST",
-                            dataType: "json",
-                            data: dataSend[i],
-                            success: function( data, event, payload) {
-                                loader.addClass('is-active');
-                                if(i == 1){
-
-                                    var email = $('.mail').val();
-
-                                    clients.Auth.getClient().then(function (client) {
-
-                                        if (payload.responseJSON.result === true ) {
-                                            if (client && client.email === email) {
-                                                location.href = '/2020_successful'
-                                                return
-                                            }
-                                            (client ? clients.Auth.logout() : Promise.resolve())
-                                                .then(function () {
-                                                    location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth'
-                                                })
-
-                                            sessionStorage.setItem('userEmail', email)
-                                        } else if (payload.responseJSON.result === false ) {
-                                            (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
-                                                .then(function () {
-                                                    sessionStorage.setItem('userEmail', email)
-                                                    location.href = '/2020_singup_replay'
-                                                })
-                                        }
-                                    })
-                                }
-
-
-                            },
-                            error: function() {
-                                console.log("no");
-                                loader.removeClass('is-active')
-                            }
-                        });
-                    });
-                },
-            });
-
-        })
-    })
-});

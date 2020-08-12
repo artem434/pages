@@ -1,12 +1,13 @@
+
+
 .themes {
   text-align: center;
-  padding: 65px 0 40px;
-  font-family: 'Ubuntu', sans-serif;
+  padding: 115px 0 0px;
   @media (max-width: 1140px){
 
   }
   @media (max-width: 767px){
-    padding: 310px 0 0px;
+    padding: 75px 0 0px;
   }
 
   &__title {
@@ -17,27 +18,26 @@
 
   }
 
-  &__btn{
-    max-width: 300px;
+    &__btn{
+      max-width: 300px;
     width: 100%;
     margin: 30px auto 0;
-    background-color: #c81d89;
+    background-color: #79e975;
     border-radius: 31px;
-    border: 1px solid #c81d89;
-    color: #ffffff;
+    color: #064829;
     text-align: center;
     display: block;
     font-size: 22px;
     font-weight: 700;
     line-height: 62px;
     text-transform: uppercase;
+    transition: 0.5s;
     &:focus,
     &:hover,
     &:active {
       text-decoration: none;
-      color: #ffffff;
-      background-color: #8639d3;
-      border: 1px solid #8639d3;
+      color: #000;
+      background:#ffb52a;
     }
   }
 
@@ -45,14 +45,14 @@
     max-width: 945px;
     width: 100%;
     margin: 0 auto;
-    border: solid 2px #8639d3;
+    border: solid 2px #4ca149;
     box-shadow: 0px 12px 10px 0 rgba(27, 0, 93, 0.11);
     border-radius: 4px;
     background-color: #ffffff;
   }
 
   &__header{
-    background-color: #8639d3;
+    background-color: #4ca149;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -100,6 +100,14 @@
 
   &__body{
     padding: 35px 0;
+    ul{
+      list-style-type: disc;
+      text-align: left;
+      @media (max-width: 767px){
+        padding-left: 15px;
+      }
+
+    }
     br{
       @media (max-width: 767px){
         display: none;
@@ -115,7 +123,7 @@
     line-height: 1;
     letter-spacing: 1px;
     text-align: left;
-    color: #b0007c;
+    color: #61a45f;
     margin-bottom: 20px;
     @media (max-width: 767px){
      text-align: center;
@@ -148,6 +156,25 @@
 
     }
   }
+
+  &__description{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6c6e62;
+    text-transform: uppercase;
+    padding: 50px 80px 30px 140px;
+
+    @media (max-width: 767px){
+      padding: 40px 40px 20px 40px;
+      font-size: 19px;
+    }
+
+  }
 }
 
 
@@ -162,7 +189,7 @@
   }
   &__item{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 55px;
     &:last-child{
       padding-bottom: 0;
@@ -176,9 +203,9 @@
         content: none;
       }
     }
-    &--vv{
+    &--og{
       &:before{
-      background: url(images/vv.png) center center no-repeat;
+      background: url(images/og.png) center center no-repeat;
       }
     }
 
@@ -187,31 +214,27 @@
         background: url(images/ig.png) center center no-repeat;
       }
     }
-    &--sd{
+    &--gm{
       &:before{
-        background: url(images/sd.png) center center no-repeat;
+        background: url(images/gm.png) center center no-repeat;
       }
     }
-    &--iz{
+    /*&--iz{
       &:before{
         background: url(images/iz.png) center center no-repeat;
       }
-    }
+    }*/
     &--os{
       &:before{
         background: url(images/os.png) center center no-repeat;
       }
     }
-    &--mk{
+    &--vv{
       &:before{
-        background: url(images/mk.png) center center no-repeat;
+        background: url(images/006.png) center center no-repeat;
       }
     }
-    &--ta{
-      &:before{
-        background: url(images/ta.png) center center no-repeat;
-      }
-    }
+
     &--tm{
       &:before{
         background: url(images/tm.png) center center no-repeat;
@@ -219,15 +242,23 @@
     }
   }
 
+  &__body{
+   ul{
+     li{
+       padding-bottom: 5px;
+     }
+   }
+  }
+
   &__info{
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.13;
+    line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
-    color: #b0007c;
+    color: #61a55e;
     margin-bottom: 0;
     @media (max-width: 767px){
       text-align: center;
@@ -239,11 +270,11 @@
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.13;
+    line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
     color: #373737;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     @media (max-width: 767px){
       text-align: center;
     }

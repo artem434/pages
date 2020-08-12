@@ -11,7 +11,13 @@
 body{
   background-color:#f7f7f7;
 }
-
+button{
+  &:hover,
+  &:focus,
+  &:active {
+   outline: none;
+  }
+}
 
 .mob-show{
   display: none;

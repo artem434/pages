@@ -6,8 +6,8 @@
                     <div class="container container--august">
                         <div class="cover">
                             <picture class="cover__img">
-                                <source :src="mix('images/head_033.webp.webp')" type="image/webp">
-                                <img :src="mix('images/head_033.jpg')" class="img-fluid" alt="PMSFZ">
+                                <source :src="mix('images/head_pMSFZ.webp')" type="image/webp">
+                                <img :src="mix('images/head_pMSFZ.jpg')" class="img-fluid" alt="PMSFZ">
                             </picture>
                         </div>
                     </div>
@@ -24,26 +24,18 @@
             </div>
         </template>
         <template v-slot:action-due>
-            <p class="landing-section__action">{{ page.options['order_action']}}</p>
+            <p class="landing-section__action">{{ page.options['order_action']}} <br> <b>{{ page.options['order_action--bold']}}</b> </p>
         </template>
-        <template v-slot:tab-radio>
-            <div class="tab-content"> <label class="label" :class="{active: tab ==='6'}" @click="tab = '6'">+ 1 подарунок </label> <label class="label" :class="{active: tab ==='12'}" @click="tab = '12'">+ 2 подарунки </label></div>
-        </template>
+
         <template v-slot:packages_list>
             <landing-package-row>
-                <landing-package :article="tab =='6' ?  'ep-msfz' : 'ep-msfz_action'">
+                <landing-package article="ep-msfz_action"  class="packages__column--one">
                         <template v-slot:title>
-                            <span v-if="tab =='6'">ПРАКТИКА МСФЗ<br>та подарунок</span>
-                            <span v-else>ПРАКТИКА МСФЗ<br>та подарунки</span>
+                            <span>ПРАКТИКА МСФЗ<br>та 2 подарунки</span>
                         </template>
-                    <template v-slot:period>
-                        <div class="period">березень - серпень 2020</div>
-                    </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <a href="https://7eminar.com/zarplata2020" target="_blank">Зарплата-2020</a></li>
-                        <li v-if="tab =='6'"  class="no-active">Електронна <br> подушка-масажер</li>
-                        <li v-else ><a href="https://www.youtube.com/watch?v=-DulVBtynvY" target="_blank">Електронна
-                            <br>подушка-масажер</a></li>
+                        <li >Відеокурс «Виробництво та собівартість в 1С»</li>
+                        <li  ><a href="https://rozetka.com.ua/193208401/p193208401/" target="_blank">Столик для ноутбука</a></li>
                     </template>
                         <template v-slot:abilities>
                             <li>Щомісячне друковане видання</li>
@@ -51,10 +43,27 @@
                             <li>Мінус 50% на всі платні online-семінари Видавничої групи «АС»</li>
                         </template>
                     <template v-slot:old-price>
-                        <div  v-if="tab =='6'" class="package__old-price" style="text-decoration: line-through">5209 грн</div>
-                        <div  v-else class="package__old-price" style="text-decoration: line-through">6609 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">801  грн/міс.</div>
                     </template>
-                    </landing-package>
+                </landing-package>
+
+                <landing-package article="ep-msfz">
+                    <template v-slot:title>
+                        <span>ПРАКТИКА МСФЗ<br>та подарунки</span>
+                    </template>
+                    <template v-slot:gifts>
+                        <li >Відеокурс «Виробництво та собівартість в 1С»</li>
+                        <li class="no-active" >Столик для ноутбука</li>
+                    </template>
+                    <template v-slot:abilities>
+                        <li>Щомісячне друковане видання</li>
+                        <li>Електронна версія журналу</li>
+                        <li>Мінус 50% на всі платні online-семінари Видавничої групи «АС»</li>
+                    </template>
+                    <template v-slot:old-price>
+                        <div class="package__old-price" style="text-decoration: line-through">714 грн/міс.</div>
+                    </template>
+                </landing-package>
             </landing-package-row>
         </template>
     </landing>

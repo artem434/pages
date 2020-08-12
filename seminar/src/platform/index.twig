@@ -1,5 +1,197 @@
 {% set link = page.url('/images') %}
 
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    content
+    <div class="rowall">
+        <div class="wrapper wrapper__head">
+            <div class="wrapper__bg">
+                <div class="content">
+                    <div class="block-titel__wrapp">
+                        <div style="margin: 0 auto;">
+                            <div class="block-titel block-titel--gift">
+                                <video id="video-background" autoplay="" muted="" class="video-background-js">
+                                    <source src="https://7eminar.ua/modules/theme-7eminar.ua/images/short.webm" type="video/webm"/>
+                                </video>
+                                <div class="lector-jpg"></div>
+                                <div class="lector">
+                                    <div class="vidModal">
+                                        <button type="button" data-toggle="modal" data-target="#myModal" data-vidid="LOHtuZD_zP0" class="but"></button>
+                                    </div>
+                                </div>
+                                <div class="wrapp_text">
+                                    <h1>Бухгалтерська відеоплатформа №1</h1>
+                                    <p> Дивіться понад {{ page.options['number']|default('') }} курсів та вебінарів прямо зараз</p>
+                                </div>
+                                <div class="wrapp_btn">
+                                    <div class="head-btn"><a href="#order" class="btn">Дізнатися вартість</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order" class="wrapper wrapper__order">
+            <div class="content">
+                <div class="titel">Акція діє тільки до <span id="timer-title">{{ page.options['date']|default('') }}</span>
+                </div>
+                <div class="block-order">
+                    <div class="block-order__item block-order__item--five">
+                        <div class="block-order--titel">
+                            <h2>3 місяці</h2>
+                        </div>
+                        <div class="block-order--price">
+                            <div class="block-order__prices">
+                                <p>{{shop_price('s-v3_837','site')}}грн
+                                </p>
+                                <p>
+                                    <s>{{shop_price('s-v3_837','line')}} грн
+                                    </s>
+                                </p>
+                            </div>
+                            <h3>{{shop_price('s-v3_837','month')}} <span>грн/міс.</span>
+                            </h3>
+                            <p class="block-order__sale">ЗНИЖКА 38%</p>
+                        </div>
+                        <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                            <div class="field-price">
+                                <input type="hidden" name="product" value="s-v3_837"/>
+                                <button type="button" rel="order" class="btn-order">замовити рахунок</button>
+                            </div>
+                        </form>
+                        <div class="block-order__card">
+                            <p class="block-order__card-titel">ПРИ ОПЛАТІ КАРТОЮ</p>
+                            <div class="block-order--price">
+                                <div class="block-order__prices">
+                                    <p> {{shop_price('s-v3_627','site')}} грн
+                                    </p>
+                                    <p>
+                                        <s>{{shop_price('s-v3_627','line')}}  грн
+                                        </s>
+                                    </p>
+                                </div>
+                                <h3> {{shop_price('s-v3_627','month')}}  <span> грн/міс.</span>
+                                </h3>
+                                <p class="block-order__sale">ЩЕ ВИГІДНІШЕ, -53%</p>
+                            </div>
+                            <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                                <div class="field-price">
+                                    <input type="hidden" name="product" value="s-v3_627"/>
+                                    <button type="button" rel="order" class="btn-order btn-order__card">оплатити картою</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="block-order__item block-order__item--six">
+                        <div class="block-order--titel">
+                            <h2>6 місяців</h2>
+                           {# <div class="package__presents">
+                                <p >подарунок <br>
+                                    <span>1 місяць</span></p>
+                            </div>#}
+                        </div>
+                        <div class="block-order--price">
+                            <div class="block-order__prices">
+                                <p> {{shop_price('s-v6_1374','site')}} грн
+                                </p>
+                                <p>
+                                    <s>{{shop_price('s-v6_1374','line')}} грн
+                                    </s>
+                                </p>
+                            </div>
+                            <h3>{{shop_price('s-v6_1374','month')}} <span>грн/міс.</span>
+                            </h3>
+                            <p class="block-order__sale">ЗНИЖКА 49%</p>
+                        </div>
+                        <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                            <div class="field-price">
+                                <input type="hidden" name="product" value="s-v6_1374"/>
+                                <button type="button" rel="order" class="btn-order">замовити рахунок</button>
+                            </div>
+                        </form>
+                        <div class="block-order__card">
+                            <p class="block-order__card-titel">ПРИ ОПЛАТІ КАРТОЮ</p>
+                            <div class="block-order--price">
+                                <div class="block-order__prices">
+                                    <p>{{shop_price('s-v6_1134','site')}}  грн
+                                    </p>
+                                    <p>
+                                        <s>{{shop_price('s-v6_1134','line')}}  грн
+                                        </s>
+                                    </p>
+                                </div>
+                                <h3>{{shop_price('s-v6_1134','month')}}  <span>грн/міс.</span>
+                                </h3>
+                                <p class="block-order__sale">ЩЕ ВИГІДНІШЕ, -58%</p>
+                            </div>
+                            <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                                <div class="field-price">
+                                    <input type="hidden" name="product" value="s-v6_1134"/>
+                                    <button type="button" rel="order" class="btn-order btn-order__card">оплатити картою</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="block-order__item block-order__item--twelve">
+                        <div class="block-order--titel">
+                            <h2>12 місяців</h2>
+                             {# <div class="package__presents">
+                                  <p >подарунок <br>
+                                      <span>2 місяці</span></p>
+                              </div>#}
+                        </div>
+                        <div class="block-order--price">
+                            <div class="block-order__prices">
+                                <p>{{shop_price('s-v12_2508','site')}} грн
+                                </p>
+                                <p>
+                                    <s>{{shop_price('s-v12_2508','line')}} грн
+                                    </s>
+                                </p>
+                            </div>
+                            <h3>{{shop_price('s-v12_2508','month')}} <span>грн/міс.</span>
+                            </h3>
+                            <p class="block-order__sale">ЗНИЖКА 53%</p>
+                        </div>
+                        <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                            <div class="field-price">
+                                <input type="hidden" name="product" value="s-v12_2508"/>
+                                <button type="button" rel="order" class="btn-order">замовити рахунок</button>
+                            </div>
+                        </form>
+                        <div class="block-order__card">
+                            <p class="block-order__card-titel">ПРИ ОПЛАТІ КАРТОЮ</p>
+                            <div class="block-order--price">
+                                <div class="block-order__prices">
+                                    <p>{{shop_price('s-v12_2148','site')}} грн
+                                    </p>
+                                    <p>
+                                        <s>{{shop_price('s-v12_2148','line')}} грн
+                                        </s>
+                                    </p>
+                                </div>
+                                <h3>{{shop_price('s-v12_2148','month')}} <span>грн/міс.</span>
+                                </h3>
+                                <p class="block-order__sale">ЩЕ ВИГІДНІШЕ, -60%</p>
+                            </div>
+                            <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                                <div class="field-price">
+                                    <input type="hidden" name="product" value="s-v12_2148"/>
+                                    <button type="button" rel="order" class="btn-order btn-order__card">оплатити картою</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tl-call-catcher"></div>
+    </div>
+    <div id="myModal" tabindex="-1" role="dialog" class="modal fade">
+        <div role="document" class="modal-dialog"><span id="closeModal" data-dismiss="modal" class="close-modal"></span>
+            <div class="modal-content">
+                <div class="player"></div>
+            </div>
+        </div>
+    </div>
 </div>

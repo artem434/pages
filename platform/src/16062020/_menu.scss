@@ -8,12 +8,15 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 15px 25px 15px;
    /* border-bottom: solid 1px  #fff;*/
     max-width: 1140px;
     margin: 0 auto;
+    @media (max-width: 1200px){
+     justify-content: center;
+    }
 
   }
   &__list {
@@ -37,13 +40,13 @@
 
     }
     a{
-      color: #3366ed;
-      letter-spacing: 0.7px;
-      font-weight: 300;
-      font-size: 14px;
+      color: #5a4f66;
+      letter-spacing: 0.4px;
+      font-weight: normal;
+      font-size: 16px;
       &:hover{
         text-decoration: none;
-        color: #fdb651;
+        color: #d42f6f;
       }
     }
   }

@@ -1,24 +1,27 @@
+
 .order {
   padding: 75px 0;
   @media (max-width: 767px){
     padding: 50px 0;
   }
+
   &__container {
     @extend %container;
     text-align: center;
-    &:before{
-      top: -150px;
-      right: -300px;
+    @media (max-width: 767px){
+     max-width: 100%;
     }
   }
 
   &__title{
     @extend %title;
+    line-height: 1.4;
+    font-size: 30px;
+    padding-top: 0;
+    @media (max-width: 767px){
+      font-size: 22px;
+    }
   }
-
-
-
-
 
   &__sub-title{
     @extend %sub-title;
@@ -26,9 +29,16 @@
 
   &__packages {
     padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -40,7 +50,7 @@
   }
 
   &__package--standart{
-    border: 1px solid #fc6299 !important;
+    border: 1px solid #596bb6 !important;
 
     .package{
 
@@ -60,15 +70,17 @@
       @media (max-width: 767px) {
         padding-bottom: 35px;
       }
-
     }
 
     .btn{
       border-radius: 21px;
+      -webkit-box-shadow: 0 12px 24px rgba(55, 72, 198, 0.44);
       box-shadow: 0 12px 24px rgba(55, 72, 198, 0.44);
-      border: 1px solid #fc6299;
-      background-color: #fc6299;
-      background-image: linear-gradient(to right, #fc6299 0%, #fc6299 100%);
+      border: 1px solid #596bb6;
+      background-color: #596bb6;
+      background-image: -webkit-gradient(linear, left top, right top, from(#596bb6), to(#596bb6));
+      background-image: -o-linear-gradient(left, #596bb6 0%, #596bb6 100%);
+      background-image: linear-gradient(to right, #596bb6 0%, #596bb6 100%);
       width: 100%;
       color: #fff;
       font-size: 18px;
@@ -76,11 +88,13 @@
       line-height: 38px;
       text-transform: uppercase;
       letter-spacing: 0.9px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
       &:hover,
       &:active {
         background:transparent;
-        color: #fc6299;
+        color: #596bb6;
       }
     }
 
@@ -94,21 +108,26 @@
 
     .btn{
       border-radius: 21px;
-      border: 1px solid #fc6299;
-      color: #fc6299;
+      border: 1px solid #596bb6;
+      color: #596bb6;
       font-size: 18px;
       font-weight: 700;
       line-height: 38px;
       text-transform: uppercase;
       letter-spacing: 0.9px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
       width: 100%;
       &:hover,
       &:active {
-        background-image: linear-gradient(to right, #fc6299 0%, #fc6299 100%);
+        background-image: -webkit-gradient(linear, left top, right top, from(#596bb6), to(#596bb6));
+        background-image: -o-linear-gradient(left, #596bb6 0%, #596bb6 100%);
+        background-image: linear-gradient(to right, #596bb6 0%, #596bb6 100%);
         color: #fff;
       }
     }
+
     .package__list{
       padding-bottom:30px;
       @media (max-width: 767px) {
@@ -119,6 +138,9 @@
   }
 
   &__package--platform{
+    border: none!important;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffc02a), to(#ff752a));
+    background-image: -o-linear-gradient(bottom, #ffc02a 0%, #ff752a 100%);
     background-image: linear-gradient(to top, #ffc02a 0%, #ff752a 100%);
     .package__header{
       color: #141414;
@@ -144,20 +166,26 @@
     }
     .btn{
       border-radius: 21px;
-      border: 1px solid #fc6299;
+      border: 1px solid #596bb6;
       color: #fff;
       font-size: 18px;
       font-weight: 700;
       line-height: 38px;
       text-transform: uppercase;
-      background-image: linear-gradient(to top, #fc6299 0%, #fc6299 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#596bb6), to(#596bb6));
+      background-image: -o-linear-gradient(bottom, #596bb6 0%, #596bb6 100%);
+      background-image: linear-gradient(to top, #596bb6 0%, #596bb6 100%);
       letter-spacing: 0.9px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
       width: 100%;
       &:hover,
       &:active {
+        background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+        background-image: -o-linear-gradient(left, #fff 0%, #fff 100%);
         background-image: linear-gradient(to right, #fff 0%, #fff 100%);
-        color: #fc6299;
+        color: #596bb6;
       }
     }
     .package__footer{

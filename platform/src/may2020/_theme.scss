@@ -1,5 +1,5 @@
 .themes{
-  padding-top: 100px;
+
   @media (max-width: 767px){
     padding-top: 30px;
   }
@@ -22,7 +22,7 @@
     text-transform: uppercase;
     span{
       border-radius: 10px;
-      background-color: #ec831a;
+      background-color: #3762e5;
       padding: 12px;
       margin-right: 5px;
       color: #fff;
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 60px 5px 5px 5px;
+    border-radius: 20px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
     margin-top: 50px;
     &:first-child{
@@ -70,7 +70,7 @@
       display: flex;
       justify-content: space-between;
       padding: 35px 45px 0 70px ;
-      border-radius: 60px 5px 5px 5px;
+      border-radius: 20px 20px 0px 0px;
       position: relative;
       @media (max-width: 1200px){
         flex-direction: column;
@@ -81,62 +81,26 @@
       }
 
       &--platform{
-        background-color: #eb8719;
-        &:before{
-          content: "безкоштовно для передплатників";
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-          font-size: 55px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1;
-          letter-spacing: 0.56px;
-          text-align: left;
-          color: rgba(255, 255, 255, 0.05);
-          text-transform: uppercase;
-          @media (max-width: 767px){
-            content: none;
-          }
-
-        }
+        background: #c54d72 url(./images/bg01.png)  center center no-repeat;
+        background-size: cover;
         .project__title{
-          color: #222222;
+          color: #fefefe;
         }
-        .project__info{
+        /*.project__info{
           background-color: #f0a553;
           color: #222222;
-        }
+        }*/
         .project__date{
-          color: #222222;
+          color: #fefefe;
         }
       }
       &--free{
-        background-color: #4d9c0e;
+        background: #4162c8 url(./images/bg02.png)  center center no-repeat;
         background-size: cover;
-        &:before{
-          content: "безкоштовно для всіх";
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-          font-size: 55px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1;
-          letter-spacing: 0.56px;
-          text-align: left;
-          color: rgba(255, 255, 255, 0.05);
-          text-transform: uppercase;
-          @media (max-width: 767px){
-            content: none;
-          }
 
-        }
-        .project__info{
-          background-color: #3a750a;
-        }
+        /*.project__info{
+          background-color: #ffdc38;
+        }*/
       }
     }
 
@@ -181,9 +145,9 @@
       line-height: 1.63;
       letter-spacing: 0.32px;
       text-align: left;
-      color: #ffffff;
+      color: #222222;
       border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.26);
+      background-color: #ffdc38;
       padding: 10px;
       margin: 15px 0 25px;
       display: inline-block;
@@ -254,7 +218,7 @@
 
     &__platform{
       border-radius: 10px;
-      background-color: #eb8719;
+      background-color: #ffefa2;
       display: inline-block;
       padding: 26px 35px;
       @media (max-width: 1200px){
@@ -309,11 +273,11 @@
       line-height: 1.18;
       letter-spacing: 1.1px;
       text-align: center;
-      color: #4d9c0e;
+      color: #314996;
       text-transform: uppercase;
       padding-top: 20px;
       padding-bottom: 20px;
-     background-color: #dbffc3;
+     background-color: #d2ebff;
       border-radius: 10px;
       max-width: 690px;
       width: 100%;
@@ -324,7 +288,7 @@
         }
       }
       span{
-        color: #4d9c0e;
+        color: #314996;
         font-size: 16px;
         font-weight: 300;
         text-transform: none;
@@ -334,7 +298,7 @@
       }
       @media (max-width: 767px){
         font-size: 15px;
-        border: solid 1px #379c68;
+        border: solid 1px #314996;
         padding: 20px 0;
         border-radius: 10px;
       }
@@ -350,8 +314,8 @@
         display: block;
         width: 15px;
         height: 15px;
-        border-bottom: 3px solid #a1df77;
-        border-right: 3px solid #a1df77;
+        border-bottom: 3px solid #86bfed;
+        border-right: 3px solid #86bfed;
         transform: rotate(45deg);
         margin: 0px;
         animation: animate 2s infinite;
@@ -383,7 +347,7 @@
 
     &__btn{
       border-radius: 31px;
-      background-color: #c111bf;
+      background-color: #ff3875;
       font-size: 16px;
       font-weight: bold;
       font-stretch: normal;
@@ -407,15 +371,15 @@
       &:active,
       &:focus,
       &:hover{
-        background-color: #7411c1;
+        background-color: #ec831a;
         text-decoration: none;
         color: #ffffff;
       }
 
       &--free{
-        background-color: #eb8719;
+        background-color: #314996;
         &:hover{
-          background-color: #eb4f19;
+          background-color: #ec831a;
           text-decoration: none;
         }
       }
@@ -508,10 +472,10 @@
         padding-bottom: 15px;
       }
       &--platform{
-        color: #eb8719;
+        color: #ff3875;
       }
       &--free{
-        color: #4d9c0e;
+        color: #314996;
       }
       span{
         color: #222222;
@@ -564,19 +528,19 @@
 
       &--platform{
         li{
-          color: #eb8719;
+          color: #ff3875;
         }
         .theme__answers{
-          color: #b3630b;
+          color: #ff3875;
         }
 
       }
       &--free{
         li{
-          color: #4d9c0e;
+          color: #314996;
         }
         .theme__answers{
-          color: #4d9c0e;
+          color: #314996;
         }
 
       }

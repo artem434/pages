@@ -6,41 +6,14 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
-  @media (max-width: 1200px){
-    justify-content: center;
-  }
-  @media (max-width: 900px){
 
+  @media (max-width: 900px){
+    flex-direction: row;
     height: auto;
   }
   @media (max-width: 767px){
     padding-top: 0;
     flex-direction: column;
-  }
-  &:before{
-    content: "";
-    position: absolute;
-    bottom: -60px;
-    right: 90px;
-    background:  url(images/AWARD.png) no-repeat top;
-    width: 287px;
-    height: 644px;
-    @media (max-width: 1200px){
-      background:  url(images/aword767-min.png) no-repeat top;
-      width: 287px;
-      height: 644px;
-      right: 50%;
-      top: 0;
-      transform: translate(50%,0%);
-    }
-    @media (max-width: 767px){
-      width: 108px;
-      height: 242px;
-      background:  url(images/aword767-min.png) no-repeat top;
-      background-size: cover;
-      top: 35px;
-    }
-
   }
 
   p{
@@ -49,124 +22,86 @@
   }
   &__block{
     text-align: center;
-    padding: 190px 0 60px;
+    padding: 40px 0 60px;
     @media (max-width: 1200px){
       text-align: center;
-      padding: 380px 0 30px;
+      padding: 70px 0 30px;
     }
     @media (max-width: 767px){
-      padding: 200px 0 30px;
+      padding: 30px 0 0px;
     }
 
   }
 
   &__title{
-    background-image: -webkit-gradient(linear,left top,right top,from(#f0ea75),to(#edb649));
-    background-image: -webkit-linear-gradient(left,#f0ea75,#edb649);
-    background-image: -o-linear-gradient(left,#f0ea75,#edb649);
-    background-image: linear-gradient(90deg,#f0ea75,#edb649);
-    font-size: 42px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    color: #080808;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    @media (max-width: 767px){
-      font-size: 36px;
-      line-height: 1.22;
-    }
+
     p{
+      font-size: 120px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.7;
+      letter-spacing: -3px;
+      color: #ee0a7b;
+      text-transform: uppercase;
       @media (max-width: 767px){
-        line-height: 1.22;
+        font-size: 100px;
       }
+      span{
+        font-size: 60px;
+        letter-spacing: -1.5px;
+        color: #0b6eb5;
+        @media (max-width: 767px){
+          font-size: 50px;
+        }
+      }
+
     }
+
   }
 
   &__sub-title{
-    font-size: 115px;
-    font-weight: 600;
+    font-size: 34px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
-    letter-spacing: -5.75px;
-    text-align: center;
-    color: #ffffff;
-    position: relative;
-    padding-right: 45px;
-    &:before{
-      @media (max-width: 767px){
-        position: absolute;
-        content: " ";
-        left: 50%;
-        top: -100px;
-        -webkit-transform: translate(-50%,0%);
-        -ms-transform: translate(-50%,0%);
-        transform: translate(-50%,0%);
-        background: url(images/Layer.png) bottom  center no-repeat;
-        width: 320px;
-        z-index: -1;
-        height: 359px;
-        background-size: cover;
-      }
-
-    }
+    letter-spacing: -0.34px;
+    text-transform: uppercase;
+    color: #0b6eb5;
+    padding: 10px 0;
     @media (max-width: 767px){
-      font-size: 92px;
-      letter-spacing: -4.6px;
+      font-size: 28px;
     }
-    span{
-      font-size: 38px;
-      letter-spacing: -1.9px;
-      font-weight: 600;
-      text-transform: uppercase;
-      @media (max-width: 767px){
-        font-size: 30px;
-        letter-spacing: -1.5px;
-      }
-    }
+  }
 
-    p{
-      margin-bottom: 0;
+  &__info{
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.23;
+    letter-spacing: 0.75px;
+    color: #06375a;
+    text-transform: uppercase;
+    background:  url(images/text_bg.png) no-repeat center;
+    @media (max-width: 767px){
+      font-size: 14px;
     }
-
   }
 
 
 
 
   &__description{
-    padding: 22px 0 35px;
-    letter-spacing: 1.8px;
-    color: #ffffff;
     font-size: 18px;
-    line-height: 22px;
-    position: relative;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-family: Arial,Arial MT,Tahoma,Helvetica,Liberation Sans,Sans,sans-serif;
-    p{
-      margin-bottom: 0;
-      @media (max-width: 767px){
-        line-height: 1.5;
-      }
-    }
-    @media (max-width: 1200px){
-      padding: 40px 0 25px;
-    }
-    @media (max-width: 767px){
-      padding: 25px 0 45px;
-      font-size: 16px;
-      line-height: 1.63;
-    }
-
-    span{
-      color: #ffaf30;
-    }
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.33;
+    letter-spacing: normal;
+    color: #0b6eb5;
+    padding-bottom: 20px;
 
   }
 
@@ -176,15 +111,16 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.6;
-    letter-spacing: 0.75px;
-    color: #dfd9e8;
-    padding-bottom: 50px;
+    letter-spacing: 0.38px;
+    text-align: center;
+    color: #353535;
+    padding-bottom: 45px;
     @media (max-width: 767px){
-      font-size: 14px;
-      line-height: 1.43;
+      padding-bottom: 25px;
     }
     span{
-      color: #ff9c00;
+      font-weight: bold;
+      color: #ee0a7b;
     }
     br{
       @media (max-width: 767px){
@@ -195,23 +131,23 @@
 
   .hero-btn{
 
-   padding: 0px 0 35px;
+   padding: 45px 0 55px;
     @media (max-width: 1200px){
       padding-bottom: 15px;
       padding-top: 30px;
       margin: 0 auto;
     }
     @media (max-width: 767px){
-      margin: 0px auto 40px;
+      margin: 40px auto 45px;
       padding: 0;
     }
     .btn{
-      max-width: 285px;
+      max-width: 340px;
       width: 100%;
-      -webkit-box-shadow:   0px 9px 9px 0 rgba(0, 0, 0, 0.34);
-      box-shadow:  0px 9px 9px 0 rgba(0, 0, 0, 0.34);
-      border-radius: 28px;
-      background-image: linear-gradient(to top, #db2759, #ae103d);
+      -webkit-box-shadow:  0px 10px 24px 0 rgba(255, 86, 170, 0.75);
+      box-shadow: 0px 10px 24px 0 rgba(255, 86, 170, 0.75);
+      border-radius: 4px;
+      background-color: #ee0a7b;
       margin-top: 0;
       font-size: 20px;
       font-weight: 600;

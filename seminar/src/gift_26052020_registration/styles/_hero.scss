@@ -1,5 +1,5 @@
 .hero {
-  background: url(images/bg.jpg) top 0px center no-repeat;
+  background: url(images/bg-min.jpg) top 0px center no-repeat;
   width: 100%;
   position: relative;
   padding-bottom: 239px;
@@ -119,7 +119,7 @@
     line-height: 1.33;
     letter-spacing: normal;
     text-align: center;
-    color: #6f3400;
+    color: #fff;
     padding-top: 30px;
     margin-bottom: 0;
     padding-bottom: 0px;
@@ -205,8 +205,8 @@
     width: 21px;
     height: 21px;
     margin-left: 7px;
-    border-bottom: 5px solid #a87439;
-    border-right: 5px solid #a87439;
+    border-bottom: 5px solid #01d5d9;
+    border-right: 5px solid #01d5d9;
     transform: rotate(45deg);
     animation: animate 2s infinite;
     @media (max-width: 1200px){

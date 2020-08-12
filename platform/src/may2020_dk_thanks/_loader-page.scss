@@ -9,9 +9,10 @@
   background: linear-gradient(to right, #092e8d 35%, #093ebf);
   z-index: 6;
 
-
   .dots {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,60 +22,41 @@
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 
-    .loading{
-      font:50px/1.5 Arial, Helvetica, sans-serifrial;
-      color:#fff;
-      -webkit-perspective:100px;
-      perspective:100px;
-      @media (max-width: 1200px){
-        font:25px/1.5 Arial, Helvetica, sans-serifrial;
-      }
-      &__dots{
-        color:#fac553;
-      }
-      >span{
-        font-weight: bold;
-        -webkit-animation:flip 2s infinite;
-        animation:flip 2s infinite;
-        display: inline-block;
-        -webkit-transform-origin:50% 50% -10px;
-        -ms-transform-origin:50% 50% -10px;
-        transform-origin:50% 50% -10px;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        padding-right:2px;
-        &:first-child{
-          background-color: #fff;
-          padding: 0px 16px;
-          line-height: 60px;
-          border-radius: 50%;
-          @media (max-width: 1200px){
-            padding: 0px 10px;
-            line-height: 33px;
-          }
-        }
-        @for $i from 1 to 12{
-          &:nth-child(#{$i}){
-            -webkit-animation-delay:$i/11+s;
-            animation-delay:$i/11+s;
-          }
-        }
-      }
+    .spinner > div {
+      width: 18px;
+      height: 18px;
+      background-color: #d9d9d9;
+
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: sk-bouncedelay 2s infinite ease-in-out both;
+      animation: sk-bouncedelay 2s infinite ease-in-out both;
     }
-    span:first-child{
-      color:#fac553;
+
+    .spinner .bounce1 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
     }
-    @-webkit-keyframes flip{
-      to{
-        -webkit-transform: rotateX(1turn);
-        transform: rotateX(1turn);
-      }
+
+    .spinner .bounce2 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
     }
-    @keyframes flip{
-      to{
-        -webkit-transform: rotateX(1turn);
-        transform: rotateX(1turn);
-      }
-    }
+
+
   }
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
 }

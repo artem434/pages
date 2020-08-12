@@ -2,7 +2,7 @@
 .profession {
   padding: 75px 0;
   @media (max-width: 767px){
-    padding: 50px 0;
+    padding: 50px 0 35px;
   }
   &__container {
     @extend %container;
@@ -28,65 +28,163 @@
 
   &__list{
     display: flex;
-    list-style-type: none;
     justify-content: center;
-    padding: 70px 0;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 60px;
+    margin-bottom: 30px;
+
     @media (max-width: 767px){
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 0 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 30px;
+      margin-bottom: 0px;
     }
   }
 
   &__item{
     display: flex;
-    flex-direction: column;
-    padding: 0 40px;
+    position: relative;
+    @media (max-width: 767px){
+     width: 50%;
+      padding-top: 165px;
+    }
+    &:before{
+      position: absolute;
+      content: " ";
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%,0%);
+      width: 189px;
+      height: 378px;
+      @media (max-width: 767px){
+        width: 130px;
+        height: 130px;
+      }
+    }
 
     &:nth-child(1){
-      @media (max-width: 767px){
-        order: 4;
-      }
-    }
+     margin-right: 110px;
 
-    &:nth-child(2){
+
+      @media (max-width: 1200px){
+        margin-right: 80px;
+      }
       @media (max-width: 767px){
+        margin-right: 0px;
         order: 1;
       }
-    }
+      &:before{
+        background:  url(images/fop-min.png) top center no-repeat;
 
+        @media (max-width: 767px){
+          background:  url(images/fop_320-min.png) top center no-repeat;
+        }
+
+        @at-root .webp & {
+          background:  url(images/fop.webp)top  center no-repeat;
+          @media (max-width: 767px){
+            background:  url(images/fop_320.webp)top  center no-repeat;
+          }
+        }
+      }
+
+    }
+    &:nth-child(2){
+      margin-right: 100px;
+      @media (max-width: 1200px){
+        margin-right: 80px;
+      }
+      @media (max-width: 767px){
+        margin-right: 0px;
+      }
+      &:before{
+        background:  url(images/buh_nap-min.png) top center no-repeat;
+        @media (max-width: 767px){
+          background:  url(images/zanap_buh_320-min.png) top center no-repeat;
+        }
+        @at-root .webp & {
+          background:  url(images/buh_nap.webp)top  center no-repeat;
+          @media (max-width: 767px){
+            background:  url(images/zanap_buh_320.webp)top  center no-repeat;
+          }
+        }
+      }
+    }
     &:nth-child(3){
+      margin-right: 110px;
+      @media (max-width: 1200px){
+        margin-right: 80px;
+      }
       @media (max-width: 767px){
-        order: 2;
+        margin-right: 0px;
+      }
+      &:before{
+        background:  url(images/gl_buh-min.png) top center no-repeat;
+        @media (max-width: 767px){
+          background:  url(images/gl_buh_320-min.png) top center no-repeat;
+        }
+        @at-root .webp & {
+          background:  url(images/gl_buh.webp)top  center no-repeat;
+          @media (max-width: 767px){
+            background:  url(images/gl_buh_320.webp)top  center no-repeat;
+          }
+        }
       }
     }
-
     &:nth-child(4){
-      @media (max-width: 767px){
-        order: 3;
+      &:before{
+        background:  url(images/auditir-min.png) top center no-repeat;
+        @media (max-width: 767px){
+          background:  url(images/gl_buh_320-min.png) top center no-repeat;
+        }
+        @at-root .webp & {
+          background:  url(images/auditir.webp)top  center no-repeat;
+          @media (max-width: 767px){
+            background:  url(images/ayditir_320-min.png)top  center no-repeat;
+          }
+        }
+
       }
     }
 
-    @media (max-width: 1200px){
-      padding: 0 10px;
+    &:nth-child(odd){
+      padding-top: 430px;
+      .profession__name{
+        padding-right: 40px;
+        @media (max-width: 767px){
+          padding-right: 0px;
+        }
+      }
+      @media (max-width: 767px){
+        padding-top: 165px;
+      }
+    }
+    &:nth-child(even){
+      &:before{
+        top: 60px;
+        @media (max-width: 767px){
+          top: 20px;
+        }
+      }
+
     }
   }
 
 
   &__name{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.25px;
     text-align: center;
-    color: #565656;
+    color: #fff;
     text-transform: uppercase;
-    padding-top: 20px;
     @media (max-width: 767px){
       margin-bottom: 20px;
+      width: 100%;
     }
   }
 
@@ -95,7 +193,9 @@
 
   &__btn{
     @extend %btn;
-
+    @media (max-width: 767px){
+      margin-top: 0;
+    }
   }
 
 

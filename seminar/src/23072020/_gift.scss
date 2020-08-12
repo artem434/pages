@@ -1,7 +1,8 @@
 $color: #ffdbdb;
 .gifts {
+  text-align: center;
   padding: 75px 0;
-  @media (max-width: 767px){
+  @media (max-width: 1200px){
     padding: 50px 0;
   }
   p {
@@ -10,11 +11,7 @@ $color: #ffdbdb;
 
   &__container {
     @extend %container;
-    &:before{
-      top: 0px;
-      right: 300px;
-    }
-
+    padding: 0 10px;
   }
 
   &__title{
@@ -23,18 +20,13 @@ $color: #ffdbdb;
 
 
 
-
-
-  &__sub-title{
-    @extend %sub-title;
-  }
-
   &__item{
-    margin: 40px auto 0;
-    max-width: 750px;
+    margin: 80px auto 0;
     width: 100%;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #f17d3a, #ed3c7d);
+    @media (max-width: 767px){
+      margin: 30px auto 0;
+    }
+    background-image: linear-gradient(to left, #da3872, #da3888, #1995ff);
     &:first-child{
       margin-top: 0;
     }
@@ -44,7 +36,6 @@ $color: #ffdbdb;
   &__box{
     padding: 35px 45px;
     box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
     position: relative;
     @media (max-width: 767px){
       padding: 15px ;
@@ -83,7 +74,11 @@ $color: #ffdbdb;
 
   &__info{
     display: flex;
-    justify-content: space-between;
+   align-items: center;
+    @media (max-width: 767px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__lector-name{
@@ -93,9 +88,12 @@ $color: #ffdbdb;
     font-style: normal;
     line-height: 1.67;
     letter-spacing: 0.9px;
-    color: #c4c3c3;
+    color: #ffffff;
+    padding-right: 50px;
     @media (max-width: 767px){
-
+      padding-right: 0;
+      text-align: center;
+      padding-bottom: 30px;
     }
   }
 
@@ -142,8 +140,8 @@ $color: #ffdbdb;
 
 
   &__lessons-titel{
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
@@ -151,11 +149,19 @@ $color: #ffdbdb;
     text-align: left;
     color: #ffffff;
     @media (max-width: 767px){
-      font-size: 20px;
+      font-size: 16px;
+      text-align: center;
     }
     br{
+      display: none;
       @media (max-width: 767px){
-       display: none;
+       display: block;
+      }
+    }
+
+    b{
+      @media (max-width: 767px){
+        font-size: 20px;
       }
     }
   }
@@ -178,7 +184,6 @@ $color: #ffdbdb;
     letter-spacing: 0.8px;
     text-align: left;
     color: $color;
-    border-radius: 28px;
     border: solid 1px $color;
     position: relative;
     padding: 9px 45px 9px 25px;
@@ -226,12 +231,12 @@ $color: #ffdbdb;
   }
 
   &__more-body{
-    padding-top: 30px;
+    padding: 30px 240px 0;
     @media (max-width: 1200px){
 
     }
     @media (max-width: 767px){
-
+      padding: 30px 0px 0px;
     }
   }
 
@@ -241,6 +246,10 @@ $color: #ffdbdb;
     text-align: left;
     margin-bottom: 0;
     padding-left: 0;
+    counter-reset: my-awesome-counter;
+    @media (max-width: 767px){
+      padding-left: 20px;
+    }
 
 
 
@@ -254,6 +263,17 @@ $color: #ffdbdb;
     position: relative;
     line-height: 1.5;
     color: #fff;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: -25px;
+      top: 0;
+      content: counter(my-awesome-counter) ". ";
+      font-weight: bold;
+
+    }
+
 
     @media (max-width: 767px){
       flex-direction: column;
@@ -294,18 +314,10 @@ $color: #ffdbdb;
         }
       }
     }
-
+  }
+  &__btn{
+    @extend %btn;
+    margin-top: 60px;
 
   }
-
-
-
-
-
-
-
-
-
-
-
 }

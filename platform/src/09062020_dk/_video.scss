@@ -1,32 +1,28 @@
-.slider .slide {
-  outline: none;
-}
+
 .video {
   overflow: hidden;
   outline: none;
   z-index: 0;
-  height: 630px;
+  height: 670px;
   position: relative;
+  padding-top: 75px;
 
   @media (max-width: 978px){
-    height: 305px;
+    height: 500px;
     margin-bottom: 10px;
 
   }
-
+  @media (max-width: 767px){
+    height: 275px;
+    padding-top: 25px;
+  }
+  .slider .slide {
+    outline: none;
+  }
   .video__content {
-    position: relative;
-    max-width: 1140px;
-    padding: 0 15px;
-    width: 100%;
+    @extend %container;
+    width: 1000px;
     margin: 0 auto;
-    @media (max-width: 1200px){
-      max-width: 767px;
-    }
-    @media (max-width: 767px){
-      max-width: 320px;
-    }
-
     height: 100%;
     visibility: hidden;
     @media (max-width: 978px){
@@ -39,7 +35,7 @@
   }
 
   &__content {
-
+    @extend %container;
     visibility: hidden;
 
     .slick-initialized {
@@ -48,19 +44,9 @@
   }
 
   &__title{
+    @extend %title;
     margin-bottom: 35px;
-    margin-top: 0px;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.6;
-    text-align: center;
-    color: #000;
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-    @media (max-width: 850px){
-      font-size: 14px;
-      margin-bottom: 35px;
-    }
+
 
     span{
       font-size: 34px;
@@ -133,6 +119,9 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
     @media (max-width: 978px){
+      top: 20%;
+    }
+    @media (max-width: 767px){
       top: 27%;
     }
     svg{

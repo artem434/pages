@@ -1,21 +1,11 @@
 
+$knowledges_color:#df4376;
 
 .knowledges {
-  padding-bottom: 75px;
-  padding-top: 190px;
+  padding-top: 30px;
   position: relative;
-  &:before{
-    position: absolute;
-    content: " ";
-    background: url(images/dec.png) center center no-repeat;
-    width: 1705px;
-    height: 733px;
-    left: 50%;
-    top: 220px;
-    -webkit-transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    transform: translate(-50%,0%);
-    z-index: -1;
+  @media (max-width: 1200px){
+    padding-top: 120px;
   }
   @media (max-width: 767px){
     padding-bottom: 45px;
@@ -30,6 +20,7 @@
 
   &__title{
     @extend %title;
+    padding-bottom: 30px;
   }
 
   &__sub-title{
@@ -39,7 +30,7 @@
   &__content{
     max-width: 945px;
     width: 100%;
-    margin: 60px auto 0;
+    margin: 0px auto ;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -48,15 +39,19 @@
     border-radius: 20px;
     -webkit-box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
-    border: solid 2px #5983f6;
-    padding: 130px 30px 50px 110px;
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white),
+    linear-gradient(to top, #d3acff, #df4376);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 130px 100px 50px 110px;
     overflow: hidden;
     background-color: #fff;
     @media (max-width: 1200px){
       padding: 130px 30px 50px 50px;
     }
     @media (max-width: 767px){
-      padding: 115px 15px 15px 15px;
+      padding: 115px 15px 15px 30px;
     }
 
     br{
@@ -68,20 +63,22 @@
 
   &__list{
     list-style-type: none;
+    padding-left: 0;
+
     @media (max-width: 767px){
       padding-left: 0;
     }
-
     li{
-      font-size: 20px;
+      font-size: 18px;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.5;
+      line-height: 1.4;
       letter-spacing: normal;
       text-align: left;
-      font-weight: bold;
-      color: #5983f6;
+      font-weight: normal;
+      color: #303030;
       padding-bottom: 10px;
+
       @media (max-width: 767px){
         font-size: 15px;
       }
@@ -96,6 +93,22 @@
       }
     }
   }
+  ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+  ol li {
+    position: relative;
+    counter-increment: my-awesome-counter;
+  }
+  ol li::before {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    content: counter(my-awesome-counter) ". ";
+    color: $knowledges_color;
+    font-weight: bold;
+  }
 
   &__icon{
     background-color: #fff;
@@ -105,9 +118,9 @@
     -webkit-transform: translate(-50%,0%);
     -ms-transform: translate(-50%,0%);
     transform: translate(-50%,0%);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#3a6cf4), to(#5983f6));
-    background-image: -o-linear-gradient(bottom, #3a6cf4, #5983f6);
-    background-image: linear-gradient(to top, #3a6cf4, #5983f6);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#da3872), to(#ed6182));
+    background-image: -o-linear-gradient(to top, #da3872, #ed6182);
+    background-image: linear-gradient(to bottom, #da3872, #ed6182);
     -webkit-box-shadow: inset 0px -2px 0 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0px -2px 0 0 rgba(0, 0, 0, 0.15);
     height: 111px;

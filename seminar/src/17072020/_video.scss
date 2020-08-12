@@ -6,6 +6,8 @@
   height: max-content;
   position: relative;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(to right, #fffcf4, #f7dda9);
   @media (max-width: 1200px){
     height: 410px;
@@ -177,16 +179,18 @@
   display: block;
   background-size: cover;
   cursor: pointer;
-  top: 310px;
+  top: 400px;
   z-index: 1000;
-  font-size: 32px;
+  font-size: 45px;
   @media (max-width: 978px){
     right: 5px;
-    top: 163px;
+    top: 175px;
+    font-size: 30px;
   }
   @media (max-width: 445px){
     right: 0px;
     top: 135px;
+
   }
 
 }
@@ -194,12 +198,13 @@
   left: 30px;
   position: absolute;
   cursor: pointer;
-  top: 310px;
+  top: 400px;
   z-index: 1000;
-  font-size: 32px;
+  font-size: 45px;
   @media (max-width: 978px){
     left: 5px;
-    top: 163px;
+    top: 175px;
+    font-size: 30px;
   }
   @media (max-width: 445px){
     left: 0px;

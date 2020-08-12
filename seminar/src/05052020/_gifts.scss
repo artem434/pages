@@ -11,13 +11,46 @@ $color: #ff598d;
 
   &__title {
     @extend %title;
-
+    @media (max-width: 767px){
+      padding-bottom: 5px;
+    }
   }
 
   &__item{
     margin-top: 40px;
+    position: relative;
     &:first-child{
       margin-top: 0;
+    }
+    &:last-child{
+      &:before{
+        background-color: #ffc3d8;
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translate(-50%, 0%);
+        width: 95%;
+        height: 100%;
+        z-index: -1;
+        @media (max-width: 767px){
+          content: none;
+        }
+      }
+      &:after{
+        background-color: #eec1d1;
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: -60px;
+        transform: translate(-50%, 0%);
+        width: 90%;
+        height: 100%;
+        z-index: -2;
+        @media (max-width: 767px){
+          content: none;
+        }
+      }
     }
 
   }
@@ -38,7 +71,7 @@ $color: #ff598d;
   }
 
   &__box{
-    background-color: #f4ac0e;
+    background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
     padding: 40px;
     @media (max-width: 767px){
       padding: 20px ;
@@ -56,31 +89,35 @@ $color: #ff598d;
   }
 
   &__theme{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-    color: #3d3d3d;
-
+    color: #fff;
     display: flex;
     align-items: center;
     @media (max-width: 767px){
       flex-direction: column;
       text-align: center;
+      font-size: 18px;
     }
     svg{
-      fill: #98640a;
+      fill: #fff;
+      min-width: 65px;
+      min-height: 65px;
       margin-right: 20px;
       @media (max-width: 767px){
         margin-right: 0;
         margin-bottom: 15px;
+        min-width: 45px;
+        min-height: 45px;
       }
     }
     span{
-      color: #3d3d3d;
+      color: #fff;
 
     }
   }
@@ -104,21 +141,21 @@ $color: #ff598d;
     line-height: 1.5;
     letter-spacing: 0.8px;
     text-align: left;
-    color: #98640a;
-    border: solid 1px #98640a;
+    color: #fff;
+    border: solid 1px #fff;
     position: relative;
     padding: 9px 30px 9px 13px;
     transition: transform 0.7s ease-out;
     &:hover{
       text-decoration: none;
       cursor: pointer;
-      color: #98640a;
+      color: #fff;
     }
     &:before,
     &:after{
       content: "";
       position: absolute;
-      background-color: #98640a;
+      background-color: #fff;
       transition: transform 0.25s ease-out;
     }
     &:before{
@@ -251,14 +288,14 @@ $color: #ff598d;
 }
 .gifts__more-btn[aria-expanded="true"] {
   background-color:transparent;
-  color: #fff;
+  color: #2b4ae1;
   &:before{
     transform: rotate(90deg);
-    background-color:  #fff;
+    background-color:  #2b4ae1;
   }
   &:after{
     transform: rotate(180deg);
-    background-color: #fff;
+    background-color: #2b4ae1;
   }
 
 

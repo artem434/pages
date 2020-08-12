@@ -1,6 +1,5 @@
 .gift{
   padding-bottom: 60px;
-  font-family: 'Ubuntu', sans-serif;
   @media (max-width: 1200px){
     padding-bottom: 70px;
   }
@@ -15,13 +14,13 @@
   }
 
   &__item{
-    border: solid 2px #8639d3;
+    border: solid 2px #4ca149;
     max-width: 970px;
     width: 100%;
     box-shadow: 0 15px 30px rgba(0, 24, 100, 0.2);
     border-radius: 4px;
     background-color: #ffffff;
-    margin: 55px auto 0;
+    margin: 140px auto 0;
     @media (max-width: 767px){
       margin: 60px auto 0;
     }
@@ -29,7 +28,7 @@
 
   &__header{
     padding: 30px 0;
-    background-color: #8639d3;
+    background-color: #4ca149;
     line-height: 1.2;
     color: #ffffff;
     font-size: 26px;
@@ -112,7 +111,7 @@
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.9;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
     color: #373737;
@@ -123,8 +122,8 @@
     span{
       font-size: 16px;
       font-weight: normal;
-      line-height: 2.19;
-      color: #b0007c;
+      line-height: 1.5;
+      color: #4ca149;
     }
   }
 
@@ -135,7 +134,7 @@
     margin-bottom: 0;
     &:before{
       content: '';
-      background: url(images/certificate.png) center center no-repeat;
+     /* background: url(images/certificate.png) center center no-repeat;*/
       width: 40px;
       height: 50px;
       display: block;
@@ -167,8 +166,6 @@
       padding: 0px;
       justify-content: center;
     }
-
-
   }
 
   .certificate__block{
@@ -217,10 +214,9 @@
     max-width: 300px;
     width: 100%;
     margin: 0px auto 30px;
-    background-color: #c81d89;
+    background-color: #79e975;
     border-radius: 31px;
-    border: 1px solid #c81d89;
-    color: #ffffff;
+    color: #064829;
     text-align: center;
     display: block;
     font-size: 22px;
@@ -231,9 +227,8 @@
     &:hover,
     &:active {
       text-decoration: none;
-      color: #ffffff;
-      background-color: #8639d3;
-      border: 1px solid #8639d3;
+      color: #000;
+      background:#ffb52a;
     }
   }
 

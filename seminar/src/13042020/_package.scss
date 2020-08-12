@@ -87,6 +87,8 @@
     margin-bottom: 20px;
     color: #363636;
     height: 53px;
+    display: flex;
+    align-items: center;
 
     span{
       font-size: 16px;
@@ -94,7 +96,7 @@
 
     &--gold-plus{
       font-size: 18px;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
 
   }
@@ -181,7 +183,7 @@
 
     }
     &--Sale{
-      margin-top: 20px;
+      margin-top: 0px;
       &:hover,
       &:active,
       &:focus {

@@ -1,7 +1,7 @@
 .lectors{
   padding: 75px 0;
   @media (max-width: 767px){
-    padding: 50px 0;
+    padding: 35px 0;
   }
 
   p{
@@ -10,133 +10,157 @@
   &__container {
     @extend %container;
     text-align: center;
-    &:before{
-      top: 300px;
-      right: 300px;
+    @media (max-width: 767px){
+      max-width: 100%;
     }
-    &:after{
-      position: absolute;
-      content: "";
-      background: url(images/decor_bg.png) center center no-repeat;
-      width: 1066px;
-      height: 700px;
-      right: 125px;
-      bottom: -250px;
-      z-index: -1;
 
-    }
   }
 
   &__title{
     @extend %title;
   }
-
-
-
-
-
   &__sub-title{
     @extend %sub-title;
   }
-  &__item{
-    position: relative;
-    &:nth-child(odd){
-      text-align: right;
-      padding: 140px 500px 170px 0;
-      @media (max-width: 1200px){
-          padding: 140px 345px 170px 0;
-      }
-      @media (max-width: 767px){
-        text-align: center;
-        padding: 285px 0px 0px 0px;
-      }
-      &:before{
-        position: absolute;
-        content: "";
-        background: url(images/tm.png) center center no-repeat;
-       width: 359px;
-        height: 537px;
-        top: 100px;
-        right: 25px;
-        @media (max-width: 767px){
-          width: 167px;
-          height: 248px;
-          background: url(images/tm.png) center center no-repeat;
-          background-size: cover;
-          top: 40px;
-          right: 50%;
-          transform: translate(50%, 0px);
-        }
-      }
 
-    }
-    &:nth-child(even){
-      text-align: left;
-      padding-left: 500px;
-      @media (max-width: 1200px){
-        padding-left: 385px;
-      }
-      @media (max-width: 767px){
-        padding-left: 0;
-        padding-top: 280px;
-        text-align: center;
-      }
-      &:before{
-        position: absolute;
-        content: "";
-        background: url(images/ta.png) center center no-repeat;
-        width: 359px;
-        height: 573px;
-        top: -125px;
-        left: 25px;
-        @media (max-width: 767px){
-          width: 160px;
-          height: 248px;
-          background: url(images/ta.png) center center no-repeat;
-          background-size: cover;
-          top: 40px;
-          left: 50%;
-          transform: translate(-50%, 0px);
-        }
-      }
-
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    @media (max-width: 1200px){
+     justify-content: center;
     }
   }
 
+  &__item{
+    position: relative;
+    text-align: left;
+    max-width: 555px;
+    width: 100%;
+    min-height: 320px;
+    background-color: #f9f6ff;
+    padding: 25px 15px 0px 190px;
+    margin:  25px 15px;
+    @media (max-width: 767px){
+      padding: 30px 15px;
+      margin:  135px 0px 0px;
+      min-height: auto;
+    }
+
+    &:before{
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      content: " ";
+      width: 139px;
+      height: 320px;
+      @media (max-width: 767px){
+        left: 50%;
+        top: -115px;
+        transform: translate(-50%,0%);
+        height: 130px;
+      }
+    }
+
+    &:nth-child(1){
+      &:before{
+        background:  url(images/moiseenko-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/moiseenko.webp)top  center no-repeat;
+        }
+      }
+
+    }
+    &:nth-child(2){
+      &:before{
+        background:  url(images/kavin-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/kavin.webp)top  center no-repeat;
+        }
+      }
+    }
+    &:nth-child(3){
+      &:before{
+        background:  url(images/velichko-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/velichko.webp)top  center no-repeat;
+        }
+      }
+    }
+
+    &:nth-child(4){
+      &:before{
+        background:  url(images/smirnov-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/smirnov.webp)top  center no-repeat;
+        }
+      }
+    }
+    &:nth-child(5){
+      &:before{
+        background:  url(images/aliev-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/aliev.webp)top  center no-repeat;
+        }
+      }
+    }
+
+    &:nth-child(6){
+      &:before{
+        background:  url(images/droboty-min.jpg) top center no-repeat;
+
+        @at-root .webp & {
+          background:  url(images/droboty.webp)top  center no-repeat;
+        }
+      }
+    }
+
+  }
+
   &__name{
-    font-size: 60px;
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.17;
-    letter-spacing: normal;
-    color: #c4c3c3;
-    padding-bottom: 50px;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    color: #6225d0;
     text-transform: uppercase;
+    padding-bottom: 25px;
+    br{
+      display: none;
+      @media (max-width: 767px){
+      }
+    }
     @media (max-width: 767px){
-      font-size: 36px;
-      line-height: 1.33;
-      padding-bottom: 30px;
+      text-align: center;
     }
   }
 
   &__text{
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    color: #363636;
+    line-height: 1.47;
+    letter-spacing: 0.15px;
     padding-bottom: 10px;
+    color: #202020;
     @media (max-width: 767px){
-      font-size: 15px;
-      line-height: 1.33;
-      text-align: left;
+
     }
     br{
+      display: none;
       @media (max-width: 767px){
-        display: none;
+
       }
     }
   }
@@ -145,15 +169,15 @@
 
   &__btn{
     @extend %btn;
-    margin-top: 100px;
+    margin-top: 20px;
     @media (max-width: 767px){
-      margin-top: 40px;
+      margin-top: 25px;
+      line-height: 1.33;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 29px
     }
 
   }
-
-
-
-
 
 }

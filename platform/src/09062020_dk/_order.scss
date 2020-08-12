@@ -8,10 +8,19 @@
   &__container {
     @extend %container;
     text-align: center;
+    @media (max-width: 767px){
+      max-width: 100%;
+    }
   }
 
   &__title{
     @extend %title;
+    line-height: 1.4;
+    font-size: 30px;
+    padding-top: 0;
+    @media (max-width: 767px){
+      font-size: 22px;
+    }
   }
 
   &__sub-title{

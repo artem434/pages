@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600');
-//-font-family: 'Oswald', sans-serif;
+//-font-family: 'Exo 2', sans-serif;
 //-font-family: 'Inter', sans-serif;
 button{
   &:focus{
@@ -54,7 +54,7 @@ body {
   display: none;
 }
 %btn {
-  background-color: #ec487c;
+  background-color: #fe0b4c;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -91,6 +91,9 @@ body {
     color: #fff;
 
     }
+  i{
+    margin-left: 10px;
+  }
 
 }
 %container {
@@ -122,7 +125,7 @@ svg{
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
-  color: #1c1c1c;
+  color: #320c5d;
   padding-bottom: 45px;
   text-transform: uppercase;
   @media (max-width: 767px){
@@ -137,7 +140,7 @@ svg{
    line-height: 1;
    letter-spacing: 1.8px;
    text-align: center;
-   color: #ff3875;
+   color: #ff467f;
    padding-bottom: 15px;
    @media (max-width: 767px){
      font-size: 15px;

@@ -100,8 +100,8 @@
     max-width: 407px;
     width: 100%;
     border-radius: 30px;
-    border: solid 1px #c46300;
-    background-color: #fff8ea;
+    border: solid 1px #003362;
+    background-color: #ecf5ff;
     @media (max-width: 767px){
       padding: 30px 10px;
     }
@@ -152,13 +152,13 @@
     line-height: 1.33;
     letter-spacing: normal;
     text-align: center;
-    color: #6f3400;
+    color: #003362;
     padding-top: 60px;
     margin-bottom: 0;
     padding-bottom: 220px;
     position: relative;
     @media (max-width: 767px){
-      padding: 30px 0 100px;
+      padding: 30px 0 60px;
       font-size: 14px;
     }
     br{
@@ -256,8 +256,8 @@
     width: 21px;
     height: 21px;
     margin-left: 7px;
-    border-bottom: 5px solid #a87439;
-    border-right: 5px solid #a87439;
+    border-bottom: 5px solid #003362;
+    border-right: 5px solid #003362;
     transform: rotate(45deg);
     animation: animate 2s infinite;
     @media (max-width: 1200px){

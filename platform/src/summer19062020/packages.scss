@@ -32,7 +32,7 @@
     .percent{
       position: absolute;
       right: -10px;
-      top: -10px;
+      top: -35px;
       width: 60px;
       height: 60px;
       background-color: #ff9c00;
@@ -51,12 +51,24 @@
   }
   &__top{
     border-bottom: solid 1px #292929;
-    height: 110px;
+    height: 145px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+  }
+
+  &__month{
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.97;
+    letter-spacing: 0.85px;
+    text-align: center;
+    color: #585858;
+    margin-bottom: 0;
   }
 
   &__period{
@@ -73,7 +85,7 @@
   }
 
   &__presents{
-    padding-top: 10px;
+    padding-top: 0px;
     p{
       margin-bottom: 0;
     }

@@ -24,6 +24,7 @@ $color: #e40789;
 
   &__item{
     margin-top: 40px;
+    background-color: #fff;
     &:first-child{
       margin-top: 0;
     }
@@ -33,7 +34,7 @@ $color: #e40789;
   &__box{
 
     padding: 35px 30px;
-    border: solid 10px #f4ac0e;
+    border: solid 10px #5db2f1;
     @media (max-width: 767px){
       padding: 15px ;
     }
@@ -122,14 +123,14 @@ $color: #e40789;
     }
   }
   &__lessons-titel{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.25;
     letter-spacing: normal;
     text-align: left;
-    color: #181818;
+    color: #3d3d3d;
     padding: 7px 0;
     @media (max-width: 767px){
       font-size: 16px;
@@ -218,11 +219,15 @@ $color: #e40789;
 
 
   }
+  .regular{
+    font-weight: 400;
+  }
   &__more-list-item{
     padding-bottom: 20px;
     font-weight: 600;
     position: relative;
     line-height: 1.5;
+    color: #3d3d3d;
 
     @media (max-width: 767px){
       flex-direction: column;
@@ -245,9 +250,11 @@ $color: #e40789;
       margin-left: 25px;
     }
 
+
     li{
       color: #3d3d3d;
       font-weight: 400;
+      padding-bottom: 10px;
       span{
         color: #3d3d3d;
         font-size: 16px;

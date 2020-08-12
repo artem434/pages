@@ -1,0 +1,228 @@
+.hero {
+  height: calc(100% - 243px);
+  background: url(images/hero__bg-min1.png) no-repeat 50% 100%, linear-gradient(90deg, #000724 0%, #000724 27%, #000724 77%, #000724 100%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #48494e;
+  position: relative;
+  background-color: #c7c7c7;
+  overflow: hidden;
+  text-align: center;
+  @media (max-height: 890px){
+    height: auto;
+
+  }
+  @media (max-width: 1200px){
+    height: auto;
+
+  }
+  &__container{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.45px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  &__subtitle{
+    ont-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.24px;
+    text-align: center;
+    color: #869bff;
+    text-transform: uppercase;
+  }
+
+  &__center{
+    padding: 20px 0 ;
+
+    @media (max-width: 767px){
+      order: 1;
+      padding-top: 15px;
+    }
+  }
+
+  &__list{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #c8d3ff;
+    @media (max-width: 767px){
+      padding-left: 0;
+    }
+    span{
+      color: #fac553;
+      display: contents;
+    }
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px){
+      flex-direction: column;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    br{
+      display: none;
+      @media (max-width: 767px){
+       display: block;
+      }
+    }
+
+    &:before{
+      width: 98px;
+      height: 98px;
+      display: block;
+      content: " ";
+    }
+
+    &:nth-child(1){
+
+      &:before{
+        background: url(images/icon1.png) no-repeat 50% 100%;
+      }
+    }
+
+    &:nth-child(2){
+
+      &:before{
+        background: url(images/icon2.png) no-repeat 50% 100%;
+      }
+    }
+
+    &:nth-child(3){
+
+      &:before{
+        background: url(images/icon3.png) no-repeat 50% 100%;
+      }
+    }
+  }
+
+  &__desccription{
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #c8d3ff;
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+
+  &__bottom{
+    padding-top: 35px;
+    border-top:1px solid #262d4a ;
+    @media (max-width: 767px){
+      border-bottom:1px solid #262d4a ;
+      border-top:none;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__block-btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__btn{
+    width: 225px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 64px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+
+    @media (max-width: 767px){
+      margin: 10px;
+      width: 100%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+      text-decoration: none;
+      color: #ffffff;
+
+    }
+
+    svg{
+      margin-right: 18px;
+      fill: #fff;
+    }
+
+    &--messenger{
+      background-image: linear-gradient(to top, #0088cc, #41c0ff);
+
+      &:hover{
+        background-image: linear-gradient(to top, #00aaff, #41c0ff);
+      }
+      svg{
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    &--viber{
+      background-image: linear-gradient(to top, #59267c, #8f5db7);
+
+      &:hover{
+        background-image: linear-gradient(to top, #8f5db7, #8f5db7);
+      }
+      svg{
+        width: 33px;
+        height: 36px;
+      }
+    }
+
+    &--telegram{
+      background-image: linear-gradient(to top, #0088cc, #41c0ff);
+
+      &:hover{
+        background-image: linear-gradient(to top, #41c0ff, #41c0ff);
+      }
+      svg{
+        width: 36px;
+        height: 30px;
+      }
+    }
+  }
+
+}

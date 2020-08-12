@@ -45,7 +45,10 @@
   margin-right: 7px;
   margin-left: 7px;
   &--gold-plus{
-    background-image: linear-gradient(to right, #ff732a, #ff9628)
+    background-image: linear-gradient(to right, #ff732a, #ff9628);
+    .package__presents{
+      color: #1a3aa7;
+    }
   }
 
 
@@ -94,7 +97,7 @@
 
     &--gold-plus{
       font-size: 18px;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
 
   }
@@ -106,13 +109,24 @@
     justify-content: center;
     flex-direction: column;
 
-
+    .btn--Sale{
+      margin-top: -5px;
+    }
 
     &--standart{
-      background-image: linear-gradient(to right, #cdcdcd, #cdcdcd);
+      background-color: #ffbdd4;
     }
     &--gold{
-      background-image: linear-gradient(to right, #fda100, #e5bf25);
+      background-image: linear-gradient(to bottom, #72ddf7, #2b4ae1);
+      .package__header{
+        color: #fff;
+      }
+      .package__price{
+        color: #fff;
+      }
+      .package__old-price{
+        color: #fff;
+      }
     }
 
 
@@ -167,7 +181,7 @@
     box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
     transition: 0.7s;
     background-image: linear-gradient(to top, #d3d3d3, #f6f6f6);
-    color: #e30889;
+    color: #345ce4;
     border: none;
     border-radius: 22px;
     font-size: 18px;
@@ -181,7 +195,7 @@
 
     }
     &--Sale{
-      margin-top: 20px;
+
       &:hover,
       &:active,
       &:focus {
@@ -197,8 +211,8 @@
     &--footer {
       margin: 0;
       .btn{
-        background-image: linear-gradient(to top, #c60f7b, #ff0097);
-        color: #ffffff;
+        background-image: linear-gradient(to top, #ffe82d, #ffad2d);
+        color: #1d1d1d;
       }
       .btn--Sale{
         width: 190px;
@@ -208,7 +222,7 @@
         box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
         transition: 0.7s;
         background-image: linear-gradient(to top, #d3d3d3, #f6f6f6);
-        color: #e30889;
+        color: #345ce4;
         border: none;
         border-radius: 22px;
         font-size: 18px;
@@ -345,7 +359,7 @@
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
-    color: #e30889;
+    color: #345ce4;
     font-size: 16px;
     text-align: center;
 

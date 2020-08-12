@@ -1,11 +1,10 @@
-@import  '../node_modules/bootstrap/scss/bootstrap' ;
-@import  '../node_modules/bootstrap-vue/src/index.scss' ;
-.landing-dtkt_june2020 {
-  $main_head: #ceedef;
 
+.landing-dtkt_june2020_2 {
+  $main_head: #ceedef;
+  font-family: Arial;
   $main_head--one: #ceedef;
   $main_head--two: #ceedef;
-  $main_head--three: #ffe3cc;
+  $main_head--three: #b0ecf9;
   $main_head--four: #ff4427;
 
   $main_head_plus: #ed5713;
@@ -15,12 +14,54 @@
   .landing-title--columns{
     text-align: center;
 
+
     span{
-      padding-left: 20px;
-      color: #0e3556!important;
+      color: #0a75be;
       background-color: #fff;
+      padding-right: 0px;
       @media (max-width: 700px){
         padding: 0px;
+      }
+    }
+  }
+  .landing-title--columns{
+    padding-top: 0px;
+    margin-bottom: 20px;
+
+    &:nth-child(2){
+      position: relative;
+    }
+
+    &--color{
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      @media (max-width: 767px){
+        line-height: 26px;
+      }
+      span{
+        color: #000000;
+        font-size: 35px;
+        font-weight: bold;
+        @media (max-width: 767px){
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .justify-content-center{
+    &:first-child{
+      padding-bottom: 70px;
+      @media (max-width: 767px){
+        padding-bottom: 50px;
+      }
+      .package__presents {
+        display:block !important;
+        text-align: left;
+      }
+      .package__present {
+        display: none !important;
+        text-align: left;
       }
     }
   }
@@ -45,6 +86,11 @@
     margin-bottom: 0;
     margin-top: 15px;
   }
+  .landing-title{
+    &:after{
+      content: none;
+    }
+  }
 
 
   .package{
@@ -62,11 +108,16 @@
   }
 
   .dtkt-promo{
-    background-color: #003059;
+    background-color: #0878c5;
+    .container{
+      @media (max-width: 767px){
+        padding: 0px;
+      }
+    }
   }
 
   .packages__column{
-    padding-top: 50px;
+    padding-top: 0px;
 
     &--one{
       .package__header{
@@ -93,23 +144,32 @@
     }
 
   }
-  .landing-title--columns{
-    padding-top: 50px;
-    margin-bottom: 20px;
-    &:nth-child(2){
-      position: relative;
 
-    }
-    span{
-      color: #040207;
-    }
 
+  .landing-subtitle{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.45px;
+    text-align: center;
+    color: #0a75be;
+    padding: 0 100px;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+    @media (max-width: 767px){
+      padding: 0px 0px 30px 0px;
+      font-size: 16px;
+    }
   }
   .period{
     color: $main_period;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
+    padding-bottom: 15px;
   }
   .package__header{
     background-color: $main_head;
@@ -124,7 +184,7 @@
     color: $main_period;
   }
   .package__presents {
-    display: none !important;
+    display:none !important;
     text-align: left;
   }
   .package__present {
@@ -242,7 +302,7 @@
       background-color: #ffea00;
       width: 180px;
       left: 50%;
-      top: 39px;
+      top: -12px;
       font-size: 14px;
       font-weight: 600;
       line-height: 25px;
@@ -312,6 +372,10 @@
 
     }
 
+  }
+  .btn-more{
+    color: #0b3a4a;
+    border: 2px solid #0b3a4a;
   }
 
   .btn-package{
@@ -407,13 +471,22 @@
     }
   }
   .btn-package--twelve{
-    display: none!important;
+    display:  inline-block!important;
+  }
+  .btn-package--twelves{
+   margin: 20px 0;
   }
   .btn-package--three{
-    display: inline-block!important;
+    display: none!important;
   }
   .package__btn {
     margin-bottom: 30px;
+  }
+  .package__footer{
+    padding: 0;
+    .btn-package--twelve{
+      display: none!important;
+    }
   }
 }
 

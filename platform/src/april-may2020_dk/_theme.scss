@@ -37,6 +37,21 @@
 
   }
 
+  &__finished{
+    display: table;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    @media (max-width: 767px){
+      margin: 0 auto;
+      font-size: 16px;
+    }
+  }
+
 
   .project{
     display: flex;
@@ -146,7 +161,7 @@
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
+      line-height: 1.2;
       letter-spacing: 0.3px;
       text-align: left;
       color: #ffffff;
@@ -215,7 +230,7 @@
     &__body{
       display: flex;
       justify-content: space-between;
-      padding: 40px 100px 30px 70px;
+      padding: 40px 105px 30px 70px;
       @media (max-width: 1200px){
         padding: 39px 19px 30px 20px;
       }
@@ -298,7 +313,7 @@
       text-transform: uppercase;
       padding-top: 20px;
       padding-bottom: 20px;
-     background-color: #dbffc3;
+      background-color: #dbffc3;
       border-radius: 10px;
       max-width: 690px;
       width: 100%;
@@ -530,7 +545,7 @@
         padding-right: 15px;
       }
       li{
-        padding-bottom: 5px;
+        padding-bottom: 10px;
 
         span{
           font-size: 16px;

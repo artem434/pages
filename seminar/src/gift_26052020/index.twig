@@ -6,7 +6,7 @@
                 <div class="hero__item">
                     <p class="hero__title"><span>ПОДАРУНОК</span> <br> чекає на вас!</p>
                     <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте чек-лист <br>
-                        <b class="hero__bold">«10 прикладів кадрових документів»</b> <br> (накази, заяви, табель обліку робочого часу та інші)</p>
+                        <b class="hero__bold">«10 довідників-таблиць для нарахування зарплати»</b> </p>
                     <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
                 </div>
                 <form id="form"  class="free-demo" >
@@ -31,7 +31,7 @@
                     <div class="form-group">
                         <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
                     </div>
-                    <input class="article"  type="hidden" value="онлайн-demo13052020_gift1"/>
+                    <input class="article"  type="hidden" value="онлайн-demo26052020_gift"/>
                     <input class="utm" name="options[utm]" type="hidden" value=""/>
                     <input class="dealer" name="dealer" type="hidden" value="4"/>
                     <div class="form__btn">
@@ -40,8 +40,8 @@
                 </form>
                 <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
             </div>
-            <div class="hero__description">Також ви отримуєте можливість прослухати <br>
-                <b>бухгалтерську online-конференцію абсолютно безкоштовно
+            <div class="hero__description">Також ви отримуєте можливість дивитися <br>
+                <b>відеозапис бухгалтерської конференції абсолютно безкоштовно
                 </b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
 
         </div>
@@ -49,55 +49,95 @@
 
     <div id="theme" class="themes">
         <div class="container theme__container">
-            <p class="themes__title">Оnline-конференція 13 травня</p>
-            <p class="themes__sub-title"> Бухгалтерське життя під час та після карантину: <br> запізнілі документи, ПДВ та ПН, перевірки, зарплата та кадри</p>
+            <p class="themes__title">Відеозапис бухгалтерської конференції від 26 травня</p>
+            <p class="themes__sub-title"> Бухгалтерське перезавантаження: <br> зарплата, кадри, податки, перевірки, ФОПи <br> та Закон №466 (законопроєкт №1210)</p>
             <p class="themes__sub-title"></p>
             <div class="themes__item">
-                <div class="themes__header"><p>теми <br> online-конференції</p></div>
+                <div class="themes__header"><p>Про що ви дізнаєтеся?</p></div>
                 <div class="themes__body">
 
                     <ul class="themes__list lector">
-                        <li class="lector__item lector__item--ta">
+                        <li class="lector__item lector__item--vv ">
                             <div class="lector__body">
-                                <p class="themes__time">11:00–11:30</p>
-                                <p class="lector__title">Післякарантинний поетапний вихід на роботу: з чого почати кадрове документальне оформлення і якими кадровими документами закрити перебування на карантині</p>
-                                <p class="lector__info"> Тимур Алієв, консультант з питань бухгалтерського обліку та оподаткування</p>
+                                {#  <p class="themes__time">10:15–11:15</p>#}
+                                <p class="lector__title">31 травня - встигнути сплатити усі несплачені податки за час карантину. Кому і які податки? Дата відліку штрафів.
+
+                                </p>
+                                <p class="lector__title">        Податкова звітність, не подана у період карантину: коли подати без штрафів. Термін відліку штрафів.</p>
+
+
+                                <p class="lector__info"> Вікторія Величко, незалежний практикуючий консультант з питань оподаткування та бухгалтерського обліку</p>
                             </div>
                         </li>
-                        <li class="lector__item lector__item--iz">
+                        <li class="lector__item lector__item--os ">
                             <div class="lector__body">
-                                <p class="themes__time">11:30–12:00</p>
-                                <p class="lector__title"> Запізнілі документи або «самоакт»: як зробити правильно? Документуємо реальність господарської операції. Особливості документування послуг</p>
-                                <p class="lector__info">   Ірина Зубрицька, податковий консультант, судовий експерт-економіст, аудитор, оцінювач</p>
-                            </div>
-                        </li>
-                        <li class="lector__item lector__item--os">
-                            <div class="lector__body">
-                                <p class="themes__time">12:00–12:30</p>
-                                <p class="lector__title">Післякарантинні тотальні перевірки бізнесу. Бенефіціарні оновлення в державному реєстрі. Фінмоніторинг карткових переказів (про 5000 грн і не тільки)</p>
+                                {#<p class="themes__time">10:15–11:15</p>#}
+                                <p class="lector__title">Податковий контроль за Законом №466 (№1210)</p>
+                                {# <p class="lector__title">Податкові запити і перевірки: коли почнеться натиск?</p>
+                                 <p class="lector__title">Податкова ТЕРОРеформа №1210. Чого чекати?</p>#}
+                                <ul>
+                                    <li> Наслідки розширення терміну розумної економічної причини (ділової мети).</li>
+                                    <li> Розширення прав податкового інспектора під час проведення перевірки: запити,
+                                        пояснення від роботодавців та працівників, документи.</li>
+                                    <li> Зміни щодо оформлення актів податкових перевірок.</li>
+                                    <li>Збільшення давності проведення перевірок з ПДФО та ВЗ.</li>
+
+                                    <li>Зміни щодо подання скарги на ППР з пропуском термінів.</li>
+                                    <li> Скасування податкових перевірок в рамках КПК.</li>
+                                    <li> Акт перевірки не є заявою про злочин. Чи добре це?</li>
+                                    <li>Обставини, які пом’якшують або взагалі звільняють від фінансової
+                                        відповідальності.</li>
+                                    <li>Легалізація внесення змін до річного плану перевірок.</li>
+                                </ul>
                                 <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
-                            </div>
-                        </li>
-                        <li class="lector__item lector__item--sd">
-                            <div class="lector__body">
-                                <p class="themes__time">12:30–13:00</p>
-                                <p class="lector__title"> Податкові накладні та проблеми з реєстрацією: хто в групі ризику?</p>
-                                <p class="lector__info">  Сергій Дробоття, експерт-консультант із питань оподаткування</p>
                             </div>
                         </li>
 
                         <li class="lector__item lector__item--tm">
                             <div class="lector__body">
-                                <p class="themes__time">13:00–13:30</p>
-                                <p class="lector__title"> Післякарантинна зарплата працівників: виплати помалу, але часто (про документальне оформлення, нарахування та виплату зароблених грошей після довгого безгрошів'я). Зарплатні податки і звітність травня</p>
-                                <p class="lector__info"> Тетяна Мойсеєнко, шеф-редактор 7eminar.com,              експерт з трудового та кадрового обліку</p>
+                                {#<p class="themes__time">11:15–12:00</p>#}
+
+                                <p class="lector__title"> Перевірки ПДФО та ВЗ: збільшено термін проведення перевірки ДПС.</p>
+                                <p class="lector__title"> 1ДФ і помилки не подання, запізніле подання – штрафи збільшено вдвічі!</p> </p>
+                                <p class="lector__title">Кадрові документи для оформлення покрокового виходу працівників із карантину на роботу. Кадровий аудит документів за час карантину: виправляємо помилкові документи.</p> </p>
+                                <p class="lector__info">  Тетяна Мойсеєнко, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
                             </div>
                         </li>
+
+                        <li class="lector__item lector__item--ig">
+                            <div class="lector__body">
+                              {#  <p class="themes__time">12:00–12:40</p>#}
+                                <p class="lector__title">Стартує податкова реформа! Зміни з податку на прибуток, ПДФО, нові штрафи і не тільки.</p>
+                                <p class="lector__title">Аналіз Закону №466 (він же проєкт №1210)</p>
+                                <p class="lector__info"> Ірина Губіна, головний редактор 7eminar.com, експерт з податкового та бухгалтерського обліку</p>
+                            </div>
+                        </li>
+
+
+                        <li class="lector__item lector__item--gm">
+                            <div class="lector__body">
+                               {# <p class="themes__time">12:40–13:30</p>#}
+                                <p class="lector__title"> Зіпсований товар: післякарантинне списання. Податкові наслідки, документальне оформлення.
+                                </p>
+                                <p class="lector__title"> Основні засоби знову працюють! Розконсервування, документальне оформлення, особливості обліку.</p>
+                                <p class="lector__info">  Галина Морозовська, незалежний бухгалтер-експерт, автор публікацій за тематикою податку на прибуток, бухобліку, ЗЕД, ПДВ</p>
+                            </div>
+                        </li>
+
+                        <li class="lector__item lector__item--og">
+                            <div class="lector__body">
+                               {# <p class="themes__time">13:30–14:00</p>#}
+                                <p class="lector__title">ФОП-зміни: ЄСВ, єдиний податок.</p>
+                                <p class="lector__info"> Ольга Гонзайк, аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
+                            </div>
+                        </li>
+
                     </ul>
-                    <a href="#form" class="themes__btn">Хочу дивитися</a>
+
+
                 </div>
             </div>
-
+            <a href="#form" class="themes__btn">Дивитися з подарунком</a>
         </div>
     </div>
 

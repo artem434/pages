@@ -5,9 +5,9 @@
             <div class="hero__block">
                 <div class="hero__item">
                     <p class="hero__title"><span>ПОДАРУНОК</span> <br> чекає на вас!</p>
-                    <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте брошуру <br>
-                        <b class="hero__bold">«Зразок письмової відповіді на запит ДПС»</b> </p>
-                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+                    <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте чек-лист <br>
+                        <b class="hero__bold">«Неоплачувані відпустки: види і тривалість»</b> </p>
+                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book-min.png">
                 </div>
                 <form id="form"  class="free-demo" >
                     <div class="form__title">Реєстрація діє ще</div>
@@ -31,17 +31,17 @@
                     <div class="form-group">
                         <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
                     </div>
-                    <input class="article"  type="hidden" value="онлайн-demo09062020_gift"/>
+                    <input class="article"  type="hidden" value="онлайн-demo25062020_gift"/>
                     <input class="utm" name="options[utm]" type="hidden" value=""/>
                     <input class="dealer" name="dealer" type="hidden" value="4"/>
                     <div class="form__btn">
-                        <button type="submit" class=" btn-default">ОТРИМАТИ БРОШУРУ </button>
+                        <button type="submit" class=" btn-default">ОТРИМАТИ чек-лист</button>
                     </div>
                 </form>
-                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book-min.png">
             </div>
-            <div class="hero__description">Також ви отримуєте можливість прослухати<br>
-                <b>   відеозапис майстер-класу абсолютно безкоштовно
+            <div class="hero__description">Також ви отримуєте можливість дивитися<br>
+                <b>відеозапис Великого Кадрового Online-cемінару абсолютно безкоштовно
                 </b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
 
 
@@ -50,48 +50,83 @@
 
     <div id="theme" class="themes">
         <div class="container theme__container">
-            <p class="themes__title">Відеозапис  майстер-класу від&nbsp;9&nbsp;червня</p>
-            <p class="themes__sub-title">«Податковий контроль та перевірки: як захиститися за новими правилами»</p>
+            <p class="themes__title">Відеозапис Великого Кадрового Online-cемінару від 25 червня</p>
+          {#  <p class="themes__sub-title">Великий Кадровий Online-cемінар</p>#}
             <p class="themes__sub-title"></p>
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
-                            <p class="themes__time">Олександр Смирнов</p>
-                       {#     <p class="themes__lector-name"></p>#}
+                            <div>
+                                <p class="themes__time">Тимур Алієв</p>
+                              {#  <p class="themes__time themes__time--two">19:00–20:00</p>#}
+                            </div>
+
                         </div>
+                        <div class="themes__text">
+                            <p class="themes__lessons-titel">Класифікатор професій: як з ним працювати кадровику</p>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="themes__more-btn">Детальніше</a></div>
                     </div>
-                    <div id="lesson1" class="themes__more collapse in">
+                    <div id="lesson1" class="themes__more collapse">
                         <div class="themes__more-body">
                             <ul class="themes__more-list">
-                                <li class="themes__more-list-item"><p> Наслідки розширення терміну розумної економічної причини (ділової мети)</p></li>
-                                <li class="themes__more-list-item"><p>Розширення прав податкового інспектора під час проведення перевірки: запити, пояснення від роботодавців та працівників, документи</p></li>
-                                <li class="themes__more-list-item"><p>  Зміни щодо оформлення актів податкових перевірок</p></li>
-                                <li class="themes__more-list-item"><p> Збільшення давності проведення перевірок з ПДФО та ВЗ</p></li>
-                                <li class="themes__more-list-item"><p>  Зміни щодо подання скарги на ППР з пропуском термінів</p></li>
-                                <li class="themes__more-list-item"><p>   Скасування податкових перевірок в рамках КПК</p></li>
-                                <li class="themes__more-list-item"><p> Акт перевірки не є заявою про злочин. Чи добре це?</p></li>
-                                <li class="themes__more-list-item"><p>  Обставини, які пом’якшують або взагалі звільняють від фінансової відповідальності</p></li>
-                                <li class="themes__more-list-item"><p>  Легалізація внесення змін до річного плану перевірок</p></li>
+                                <li class="themes__more-list-item"><p><span>1.</span> Структура Класифікатора професій: взаємозв’язок розділів і додатків.</p></li>
+                                <li class="themes__more-list-item"><p><span>2.</span> Обираємо професійну назву роботи: секрет коду КП.</p> </li>
+                                <li class="themes__more-list-item"><p><span>3.</span> Формуємо посади з професійних назв робіт:</p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>заборонена гендерність;</li>
+                                        <li>віддзеркалення слів;</li>
+                                        <li>використання дужок у Класифікаторі професій та на практиці;</li>
+                                        <li>лапки, скорочення, іншомовні слова та абревіатури;</li>
+                                        <li>галузева ознака та вид діяльності;</li>
+                                        <li>похідні та уточнювальні слова до базових назв професій;</li>
+                                        <li>категорії, розряди та класи у назві посади.</li>
+                                    </ul>
+                                </li>
+                                <li class="themes__more-list-item"><p><span>4.</span> Об’єднання двох професійних назв робіт як розповсюджена помилка.</p></li>
+
+                                <li class="themes__more-list-item"><p><span>5.</span> Зміни до Класифікатору професій: про що слід потурбуватися кадровику.</p></li>
+                                <li class="themes__more-list-item"><p><span>6.</span> Назва посади не відповідає Класифікатору професій: виправляємо помилки.</p> </li>
+                                <li class="themes__more-list-item"><p><span>7.</span> Класифікатор професій – основа для побудови системи оплати праці.</p>  </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
+
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
-                            <p class="themes__time">Тетяна Мойсеєнко</p>
-                            {#<p class="themes__lector-name">Олександр Смирнов, <br> Тетяна Мойсеєнко</p>#}
+                            <div>
+                                <p class="themes__time">Тетяна Мойсеєнко</p>
+                             {#   <p class="themes__time themes__time--two">20:30–21:20</p>#}
+                            </div>
+
+                          {#  <p class="themes__lector-name">Тетяна Мойсеєнко</p>#}
                         </div>
                         <div class="themes__text">
-                            <p class="themes__lessons-titel">Кадрові та трудові штрафи</p>
+                            <p class="themes__lessons-titel">Трудові зміни до КЗпП. Сучасні кадрові помилки, які потрібно негайно виправити</p>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson2" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item"><p><span>1.</span> Види трудових договорів: зміни до КЗпП, ризики помилок і можливі штрафи.</p></li>
+                                <li class="themes__more-list-item"><p><span>2.</span> Кадрові процедури переведення: коли вони можливі, а коли прийдеться «звільнити/прийняти».</p> </li>
+                                <li class="themes__more-list-item"><p><span>3.</span> Накази по особовому складу не підписані працівником?! Які ризики виникають і коли.</p></li>
+                                <li class="themes__more-list-item"><p><span>4.</span> Дещо про трудові книжки: помилки заповнення сьогодні і життя без них завтра після їх скасування.</p></li>
+
+                                <li class="themes__more-list-item"><p><span>5.</span> Види документів, з якими працюють кадровики: первинні, облікові, розпорядчі.</p></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <a href="#form" class="themes__btn">Дивитися з подарунком</a>
         </div>
     </div>

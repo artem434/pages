@@ -1,52 +1,11 @@
-System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js"], function (exports_1, context_1) {
+System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js"], function (exports_1, context_1) {
     "use strict";
-    var jquery_1, youtube_1;
+    var jquery_1;
     var __moduleName = context_1 && context_1.id;
-    function findVideos() {
-        var videos = document.querySelectorAll('.video__player');
-        for (var i = 0; i < videos.length; i++) {
-            setupVideo(videos[i]);
-        }
-    }
-    function setupVideo(video) {
-        var link = video.querySelector('.video__link');
-        var media = video.querySelector('.video__media');
-        var button = video.querySelector('.video__button');
-        var id = parseMediaURL(media);
-        video.addEventListener('click', function () {
-            var iframe = createIframe(id);
-            link.remove();
-            button.remove();
-            video.appendChild(iframe);
-        });
-        link.removeAttribute('href');
-        video.classList.add('video--enabled');
-    }
-    function parseMediaURL(media) {
-        var regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-        var url = media.src;
-        var match = url.match(regexp);
-        return match[1];
-    }
-    function createIframe(id) {
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('allow', 'autoplay');
-        iframe.setAttribute('src', generateURL(id));
-        iframe.classList.add('video__media');
-        return iframe;
-    }
-    function generateURL(id) {
-        var query = '?enablejsapi=1&html5=1?rel=0&showinfo=0&autoplay=1';
-        return 'https://www.youtube.com/embed/' + id + query;
-    }
     return {
         setters: [
             function (jquery_1_1) {
                 jquery_1 = jquery_1_1;
-            },
-            function (youtube_1_1) {
-                youtube_1 = youtube_1_1;
             },
             function (_1) {
             },
@@ -55,114 +14,81 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/s
         ],
         execute: function () {
             jquery_1.default(function ($) {
-                youtube_1.default.ready(function () {
-                    var myModal = $('#modal-video');
-                    myModal.on('show.bs.modal', function (e) {
-                        myModal.css('display', 'flex');
-                        var target = $(e.target), player = target.data('youtube-player'), id = $(e.relatedTarget).attr('data-vidId');
-                        if (!player) {
-                            //@ts-ignore
-                            player = new youtube_1.default.Player(target.find('.player')[0], {
-                                height: '100%',
-                                width: '100%',
-                                videoId: id,
-                                events: {
-                                    onReady: function (event) {
-                                        event.target.playVideo();
-                                    }
-                                }
-                            });
-                            target.data('youtube-player', player);
-                            target.data('youtube-player-id', id);
-                        }
-                        else if (target.data('youtube-player-id') !== id) {
-                            target.data('youtube-player-id', id);
-                            player.loadVideoById(id);
-                        }
-                        else {
-                            player.playVideo();
-                        }
-                        $('#main').css('position', 'static');
-                    });
-                    myModal.on('hide.bs.modal', function (e) {
-                        var player = $(e.target).data('youtube-player');
-                        player && player.stopVideo();
-                        $('#main').css('position', 'relative');
-                        setTimeout(function () {
-                            $('body').css('padding-right', '0');
-                        }, 500);
-                    });
+                var remain_bv = 300;
+                function parseTime_bv(timestamp) {
+                    if (timestamp < 0)
+                        timestamp = 0;
+                    var hour = Math.floor(timestamp / 60 / 60);
+                    var mins = Math.floor((timestamp - hour * 60 * 60) / 60);
+                    var secs = Math.floor(timestamp - hour * 60 * 60 - mins * 60);
+                    if (String(mins).length > 1)
+                        $('.timer__mins').text(mins);
+                    else
+                        $('.timer__mins').text("0" + mins);
+                    if (String(secs).length > 1)
+                        $('.timer__secs').text(secs);
+                    else
+                        $('.timer__secs').text("0" + secs);
+                }
+                $(document).ready(function () {
+                    setInterval(function () {
+                        remain_bv = remain_bv - 1;
+                        parseTime_bv(remain_bv);
+                    }, 1000);
                 });
                 var viewport = $("meta[name=viewport]");
                 viewport.attr('content', 'width=device-width,initial-scale=1');
                 var loaderPage = $('#loader-page');
                 loaderPage.delay(350).fadeOut('slow');
                 var loader = $('.loader-backdrop');
-                var form = $('#webinar-form');
-                form.on('submit', function () {
-                    loader.addClass('is-active');
-                    setTimeout(function () {
-                        if ($('.form-group').hasClass('has-error')) {
-                            loader.removeClass('is-active');
+                var form = $('body .free-demo');
+                var url = document.location.href;
+                var utm = $('.utm');
+                $(document).ready(function () {
+                    utm.val(url);
+                });
+                form.validate({
+                    rules: {
+                        name: "required",
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        phone: {
+                            required: true,
+                            minlength: 18
                         }
-                    }, 500);
-                });
-                if (document.location.host == "7eminar.com") {
-                    $('.js-platform-banner').show();
-                    $('.header').hide();
-                    $('.heading').show();
-                }
-                if (document.location.host != "7eminar.com") {
-                    $('.js-btn-platform').find('a').attr('href', '/platform');
-                }
-                if (document.location.host == "seminars.dtkt.ua") {
-                    $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
-                    $('.js-platform-banner').show();
-                    $('.js-btn-hidden').show();
-                }
-                else {
-                    $('.js-btn-platform').show();
-                }
-                $(window).scroll(function () {
-                    var the_top = jquery_1.default(document).scrollTop();
-                    if (the_top > 55) {
-                        jquery_1.default('.burger__bg').addClass('burger__bg-js');
-                    }
-                    else {
-                        jquery_1.default('.burger__bg').removeClass('burger__bg-js');
-                    }
-                });
-                $('.burger__link').on('click', function () {
-                    $('#menu-checkbox').prop('checked', false);
-                });
-                $('.slider').slick({
-                    speed: 500,
-                    cssEase: 'linear',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
-                    prevArrow: '<div id="pause_video" class="prev"></div>',
-                    nextArrow: '<div id="pause_video" class="next"></div>',
-                    lazyLoad: 'ondemand',
-                    fade: true
-                });
-                $(".slider").on("beforeChange", function (event, slick) {
-                    var currentSlide, slideType, player, command;
-                    currentSlide = $(slick.$slider).find(".slick-current");
-                    slideType = currentSlide.attr("class").split(" ")[1];
-                    player = currentSlide.find("iframe").get(0);
-                    if (slideType) {
-                        command = {
-                            "event": "command",
-                            "func": "pauseVideo"
-                        };
-                    }
-                    if (player != undefined) {
-                        player.contentWindow.postMessage(JSON.stringify(command), "*");
-                    }
+                    },
+                    messages: {
+                        name: "Введіть не менше 2 символів",
+                        email: {
+                            required: "Це поле необхідно заповнити",
+                            email: "Будь ласка, введіть коректну адресу електронної пошти"
+                        },
+                        phone: "Введіть правильний номер телефону"
+                    },
+                    submitHandler: function () {
+                        var url = ['/invoice2', '/subscribe/27042020gift'];
+                        var dataSend = [{ "customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(), 'article': $('.free-demo .article').val(), 'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val() }, { "firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val() }];
+                        $.each(url, function (i) {
+                            $.ajax({
+                                url: url[i],
+                                async: false,
+                                type: "POST",
+                                dataType: "json",
+                                data: dataSend[i],
+                                success: function (data, event, payload) {
+                                    loader.addClass('is-active');
+                                    location.href = '/gift_27042020_registration';
+                                },
+                                error: function () {
+                                    loader.removeClass('is-active');
+                                }
+                            });
+                        });
+                    },
                 });
             });
-            findVideos();
         }
     };
 });

@@ -1,4 +1,4 @@
-System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
+System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js"], function (exports_1, context_1) {
     "use strict";
     var jquery_1, loader, loaderPage, form, form_bottom, remain_bv, url, utm;
     var __moduleName = context_1 && context_1.id;
@@ -23,6 +23,8 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                 jquery_1 = jquery_1_1;
             },
             function (_1) {
+            },
+            function (_2) {
             }
         ],
         execute: function () {
@@ -42,6 +44,32 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
             utm = jquery_1.default('.utm');
             jquery_1.default(document).ready(function () {
                 utm.val(url);
+            });
+            jquery_1.default('.slider').slick({
+                speed: 500,
+                cssEase: 'linear',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                prevArrow: '<div id="pause_video" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',
+                nextArrow: '<div id="pause_video" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
+                lazyLoad: 'ondemand',
+                fade: true
+            });
+            jquery_1.default(".slider").on("beforeChange", function (event, slick) {
+                var currentSlide, slideType, player, command;
+                currentSlide = jquery_1.default(slick.$slider).find(".slick-current");
+                slideType = currentSlide.attr("class").split(" ")[1];
+                player = currentSlide.find("iframe").get(0);
+                if (slideType) {
+                    command = {
+                        "event": "command",
+                        "func": "pauseVideo"
+                    };
+                }
+                if (player != undefined) {
+                    player.contentWindow.postMessage(JSON.stringify(command), "*");
+                }
             });
             SystemJS.import('jquery').then(function ($) {
                 SystemJS.import('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js').then(function ($) {
@@ -67,19 +95,19 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                                 phone: "Введіть правильний номер телефону"
                             },
                             submitHandler: function (form) {
-                                var url = ['/subscribe/26052020conference', '/invoice2'];
+                                var url = ['/subscribe/25062020bkadrs'/*, '/invoice2'*/];
                                 var dataSend = [{
                                         "firstName": $('.free-demo .name').val(),
                                         'email': $('.free-demo .mail').val(),
                                         'phone': $('.free-demo .phone').val()
-                                    }, {
+                                    }/*, {
                                         "customer[name]": $('.free-demo .name').val(),
                                         'customer[email]': $('.free-demo .mail').val(),
                                         'customer[phone]': $('.free-demo .phone').val(),
                                         'article': $('.free-demo .article').val(),
                                         'options[utm]': $('.free-demo .utm').val(),
                                         'dealer': $('.free-demo .dealer').val()
-                                    }];
+                                    }*/];
                                 $.each(url, function (i) {
                                     $.ajax({
                                         url: url[i],
@@ -89,103 +117,34 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                                         data: dataSend[i],
                                         success: function (data, event, payload) {
                                             loader.addClass('is-active');
-                                            var email = $('.mail').val();
-                                            clients.Auth.getClient().then(function (client) {
-                                                if (payload.responseJSON.result === true) {
-                                                    if (client && client.email === email) {
-                                                        location.href = '/2020_successful';
-                                                        return;
-                                                    }
-                                                    (client ? clients.Auth.logout() : Promise.resolve())
-                                                        .then(function () {
-                                                        location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth';
-                                                    });
-                                                    sessionStorage.setItem('userEmail', email);
-                                                }
-                                                else if (payload.responseJSON.result === false) {
-                                                    (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
-                                                        .then(function () {
+                                            location.href = '/gifts'
+                                          /*  if (i == 1) {
+                                                var email = $('.mail').val();
+                                                clients.Auth.getClient().then(function (client) {
+                                                    if (payload.responseJSON.result === true) {
+                                                        if (client && client.email === email) {
+                                                            location.href = '/2020_successful';
+                                                            return;
+                                                        }
+                                                        (client ? clients.Auth.logout() : Promise.resolve())
+                                                            .then(function () {
+                                                            location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth';
+                                                        });
                                                         sessionStorage.setItem('userEmail', email);
-                                                        location.href = '/2020_singup_replay';
-                                                    });
-                                                }
-                                            });
+                                                    }
+                                                    else if (payload.responseJSON.result === false) {
+                                                        (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
+                                                            .then(function () {
+                                                            sessionStorage.setItem('userEmail', email);
+                                                            location.href = '/2020_singup_replay';
+                                                        });
+                                                    }
+                                                });
+                                            }*/
                                         },
                                         error: function () {
                                             console.log("no");
                                             loader.removeClass('is-active');
-                                        }
-                                    });
-                                });
-                            },
-                        });
-                        form_bottom.validate({
-                            rules: {
-                                name: "required",
-                                email: {
-                                    required: true,
-                                    email: true
-                                },
-                                phone: {
-                                    required: true,
-                                    minlength: 18
-                                }
-                            },
-                            messages: {
-                                name: "Введіть не менше 2 символів",
-                                email: {
-                                    required: "Це поле необхідно заповнити",
-                                    email: "Будь ласка, введіть коректну адресу електронної пошти"
-                                },
-                                phone: "Введіть правильний номер телефону"
-                            },
-                            submitHandler: function () {
-                                var url_bottom = ['/subscribe/26052020conference', '/invoice2'];
-                                var dataSend_bottom = [{
-                                        "firstName": $('.free-demo-bottom .name').val(),
-                                        'email': $('.free-demo-bottom .mail').val(),
-                                        'phone': $('.free-demo-bottom .phone').val()
-                                    }, {
-                                        "customer[name]": $('.free-demo-bottom .name').val(),
-                                        'customer[email]': $('.free-demo-bottom .mail').val(),
-                                        'customer[phone]': $('.free-demo-bottom .phone').val(),
-                                        'article': $('.free-demo-bottom .article').val(),
-                                        'options[utm]': $('.free-demo-bottom .utm').val(),
-                                        'dealer': $('.free-demo-bottom .dealer').val()
-                                    }];
-                                $.each(url_bottom, function (i) {
-                                    $.ajax({
-                                        url: url_bottom[i],
-                                        async: false,
-                                        type: "POST",
-                                        dataType: "json",
-                                        data: dataSend_bottom[i],
-                                        success: function (data, event, payload) {
-                                            loader.addClass('is-active');
-                                            var email = $('.free-demo-bottom .mail').val();
-                                            clients.Auth.getClient().then(function (client) {
-                                                if (payload.responseJSON.result === true) {
-                                                    if (client && client.email === email) {
-                                                        location.href = '/2020_successful';
-                                                        return;
-                                                    }
-                                                    (client ? clients.Auth.logout() : Promise.resolve())
-                                                        .then(function () {
-                                                        location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth';
-                                                    });
-                                                    sessionStorage.setItem('userEmail', email);
-                                                }
-                                                else if (payload.responseJSON.result === false) {
-                                                    (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
-                                                        .then(function () {
-                                                        sessionStorage.setItem('userEmail', email);
-                                                        location.href = '/2020_singup_replay';
-                                                    });
-                                                }
-                                            });
-                                        },
-                                        error: function () {
-                                            console.log("no");
                                         }
                                     });
                                 });

@@ -1,25 +1,26 @@
+@import  '../node_modules/bootstrap/scss/bootstrap' ;
+@import  '../node_modules/bootstrap-vue/src/index.scss' ;
+.landing-dtkt_june2020 {
+  $main_head: #ceedef;
 
-.landing-dtkt_march2020_1 {
-  $main_head: #fff2f3;
-
-  $main_head--one: #ffe2ec;
-  $main_head--two: #fff2f3;
+  $main_head--one: #ceedef;
+  $main_head--two: #ceedef;
   $main_head--three: #ffe3cc;
   $main_head--four: #ff4427;
 
-  $main_head_plus: #e84451;
-  $main_period: #e84451;
+  $main_head_plus: #ed5713;
+  $main_period: #1b78ba;
   $main_period_plus: #ffcdc4;
-  .landing-section--packages{
-    background: #fbf3ff url(images/BG.png) no-repeat top 0px center;
+  landing-section--packages{
+    background: #fbf3ff url(images/bg-min.png) no-repeat top 0px center;
   }
-
   .landing-title--columns{
     text-align: center;
+
     span{
       padding-left: 20px;
-      color: #8700c7!important;
-      background-color: #fbf3ff;
+      color: #0e3556!important;
+      background-color: #fff;
       @media (max-width: 700px){
         padding: 0px;
       }
@@ -34,11 +35,10 @@
       height: auto;
     }
   }
+
   .list{
     flex: 1 0 auto;
   }
-
-
 
   .packages__list-show{
     color: #0a3fa7;
@@ -47,20 +47,10 @@
     margin-bottom: 0;
     margin-top: 15px;
   }
-  .landing-section__action{
-    text-align: center;
-    color: #000;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    b{
-      color: #8700c7;
-    }
 
-  }
 
   .package{
-    border: solid 1px #ffb6bc;
+    border: solid 1px #9ad6da;
   }
 
   .package__body{
@@ -74,7 +64,7 @@
   }
 
   .dtkt-promo{
-    background-color: #8700c7;
+    background-color: #003059;
   }
 
   .packages__column{
@@ -126,7 +116,7 @@
   .package__header{
     background-color: $main_head;
     color: #262626;
-    border-bottom: solid 1px #ffab79;
+
   }
   .package__price-half{
 
@@ -135,11 +125,11 @@
   .package__old-price{
     color: $main_period;
   }
-  .package__present {
+  .package__presents {
     display: none !important;
     text-align: left;
   }
-  .package__presents {
+  .package__present {
     display: block !important;
     text-align: left;
   }
@@ -205,6 +195,7 @@
 
 
 
+
       .period{
         color: $main_period_plus;
       }
@@ -214,7 +205,7 @@
       color: $main_period_plus;
     }
     .btn-package{
-      background-color: #e84451;
+      background-color: #ed5713;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
@@ -241,6 +232,10 @@
 
   .package-plus-top{
     position: relative;
+    .package{
+      border: solid 1px $main_head_plus;
+    }
+
     &:before{
       position: absolute;
       content: "топ продажу";
@@ -322,15 +317,15 @@
   }
 
   .btn-package{
-    background-color: #ffd2d6;
-    color: #e84451;
+    background-color: #74bef4;
+    color: #fff;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
     border: none;
     &:after{
-      border-bottom: 2px solid #e84451;
-      border-right: 2px solid #e84451;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
@@ -339,7 +334,7 @@
     &:hover,
     &:active,
     &:focus{
-      background-color: #f4bfc4;
+      background-color: #70ade3;
 
     }
   }

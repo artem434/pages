@@ -1,5 +1,5 @@
 .hero {
-  background: url(images/bg-min.jpg) top -90px center no-repeat;
+  background: url(images/bg.jpg) top 0px center no-repeat;
   width: 100%;
   position: relative;
   padding-bottom: 239px;
@@ -105,8 +105,6 @@
   }
 
   &__img{
-    box-shadow: -40px 0 21px -21px #333;
-
     margin-top: 20px;
     @media (max-width: 767px){
       width: 220px;

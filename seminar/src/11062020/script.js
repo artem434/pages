@@ -65,11 +65,15 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/s
                     $('.js-platform-banner').show();
                     $('.header').hide();
                     $('.heading').show();
+                    var loaderPage_1 = $('#loader-page');
+                    loaderPage_1.css("opacity", "1");
+                    loaderPage_1.delay(350).fadeOut('slow');
                 }
                 if (document.location.host != "7eminar.com") {
+                    $('.js-platform-link').attr('href', '/platform');
                 }
                 if (document.location.host == "seminars.dtkt.ua") {
-                    $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
+                    $('.js-platform-link').attr('href', 'https://promo.dtkt.ua/7eminar');
                     $('.js-platform-banner').show();
                     $('.js-btn-hidden').show();
                 }

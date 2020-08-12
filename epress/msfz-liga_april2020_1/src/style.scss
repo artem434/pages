@@ -1,13 +1,13 @@
-.landing-msfz-liga_march2020_2{
-  $main_head: #f6ebff;
+.landing-msfz-liga_april2020_1{
+  $main_head: #ffeee0;
 
-  $main_head--one: #fffde0;
-  $main_head--two: #fffab0;
-  $main_head--three: #faf37e;
-  $main_head--four: #ff2c45;
+  $main_head--one: #ffeee0;
+  $main_head--two: #fddfc6;
+  $main_head--three: #ffe3cc;
+  $main_head--four: #ff4427;
 
-  $main_head_plus: #ff2c45;
-  $main_period: #b28c6d;
+  $main_head_plus: #ff4427;
+  $main_period: #e49443;
   $main_period_plus: #ffcdc4;
 
   .landing-title--columns{
@@ -19,6 +19,21 @@
       }
     }
   }
+
+  .package__abilities-list{
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    @media (max-width: 767px){
+      height: auto;
+    }
+  }
+  .list{
+    flex: 1 0 auto;
+  }
+
+
+
   .packages__list-show{
     color: #0a3fa7;
     text-decoration: underline;
@@ -42,13 +57,15 @@
   .package__body{
     color: #000;
     padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 767px){
       padding-bottom: 20px;
     }
   }
 
   .dtkt-promo{
-    background-color: #eeeeee;
+    background-color: #fff9f3;
   }
 
   .packages__column{
@@ -58,6 +75,7 @@
       .package__header{
         background-color:  $main_head--one;
       }
+
     }
     &--two{
       .package__header{
@@ -118,13 +136,16 @@
   }
 
   .package__total-price{
+    display: none;
+
+  }
+
+
+  .package__price{
     display: block;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 0;
-  }
-  .package__price{
-    display: none;
+    margin-bottom: 20px;
   }
   .btn-package--six{
     display: none
@@ -176,6 +197,7 @@
       background-color: $main_head_plus;
 
 
+
       .period{
         color: $main_period_plus;
       }
@@ -185,7 +207,7 @@
       color: $main_period_plus;
     }
     .btn-package{
-      background-color: #ff2c45;
+      background-color: #ff4427;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
@@ -324,6 +346,7 @@
   }
   .package__abilities{
     padding-top: 0;
+    flex: 1 0 auto;
   }
 
   .package__abilities-item-platform{

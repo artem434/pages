@@ -24,7 +24,7 @@ $color: #ff598d;
     }
     &:last-child{
       &:before{
-        background-color: #ffc3d8;
+        background-color: #c9cff0;
         content: " ";
         position: absolute;
         left: 50%;
@@ -38,7 +38,7 @@ $color: #ff598d;
         }
       }
       &:after{
-        background-color: #eec1d1;
+        background-color: #d8ddfa;
         content: " ";
         position: absolute;
         left: 50%;
@@ -71,7 +71,7 @@ $color: #ff598d;
   }
 
   &__box{
-    background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
+    background-image: linear-gradient(to left, #d71c16, #600799, #152fc7);
     padding: 40px;
     @media (max-width: 767px){
       padding: 20px ;
@@ -278,7 +278,13 @@ $color: #ff598d;
 
 
 
-
+  &__btn{
+    @extend %btn;
+    margin-top: 40px;
+    @media (max-width: 767px){
+      margin-top: 40px;
+    }
+  }
 
 
 

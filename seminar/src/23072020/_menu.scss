@@ -1,5 +1,5 @@
 .menu{
-  font-family: 'IBM Plex Mono', monospace;
+
   @media (max-width: 1200px){
     display: none;
   }
@@ -8,7 +8,7 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 15px 25px 15px;
    /* border-bottom: solid 1px  #fff;*/
@@ -22,10 +22,10 @@
     list-style: none;
     display: flex;
     li{
-      padding: 0 25px;
-      color: #afafaf;
-      font-size: 16px;
-      font-weight: 400;
+      padding: 0 10px;
+      color: #b897a2;
+      font-size: 14px;
+      font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 1.39px;
    /*   border-right:solid 1px  #fff;*/
@@ -39,8 +39,9 @@
 
     }
     a{
-      color: #afafaf;
+      color: #b897a2;
       letter-spacing: 0.7px;
+      font-weight: 300;
       &:hover{
         text-decoration: none;
         color: #ff6a0e;

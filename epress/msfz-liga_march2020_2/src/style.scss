@@ -1,12 +1,12 @@
-.landing-msfz-liga_march2020_1{
-  $main_head: #ffeee0;
+.landing-msfz-liga_march2020_2{
+  $main_head: #f6ebff;
 
-  $main_head--one: #ffeee0;
-  $main_head--two: #fddfc6;
-  $main_head--three: #ffcb9f;
-  $main_head--four: #ff7335;
+  $main_head--one: #fffde0;
+  $main_head--two: #fffab0;
+  $main_head--three: #faf37e;
+  $main_head--four: #ff2c45;
 
-  $main_head_plus: #ff7335;
+  $main_head_plus: #ff2c45;
   $main_period: #b28c6d;
   $main_period_plus: #ffcdc4;
 
@@ -19,14 +19,20 @@
       }
     }
   }
-
+  .packages__list-show{
+    color: #0a3fa7;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
   .landing-section__action{
     text-align: center;
     color: #6f6f6f;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    padding-bottom: 60px;
+
   }
 
   .package{
@@ -35,10 +41,14 @@
 
   .package__body{
     color: #000;
+    padding-bottom: 0;
+    @media (max-width: 767px){
+      padding-bottom: 20px;
+    }
   }
 
   .dtkt-promo{
-    background-color: #ffefe0;
+    background-color: #eeeeee;
   }
 
   .packages__column{
@@ -99,6 +109,10 @@
     color: $main_period;
   }
   .package__presents {
+    display: none !important;
+    text-align: left;
+  }
+  .package__present {
     display: block !important;
     text-align: left;
   }
@@ -113,10 +127,43 @@
     display: none;
   }
   .btn-package--six{
-    display: inline-block;
+    display: none
   }
   .btn-package--three{
-    display: inline-block!important;
+    display: none!important;
+  }
+  .btn-package--order{
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    @media (max-width: 767px){
+      display: none;
+    }
+
+
+  }
+  .btn-package--order-mob{
+    display: none;
+    @media (max-width: 767px){
+      margin-top: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 16px;
+      width: 100%;
+      min-width: 190px;
+    }
+  }
+
+  .btn-package--card{
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    min-width: 190px;
+
   }
 
 
@@ -138,7 +185,7 @@
       color: $main_period_plus;
     }
     .btn-package{
-      background-color: #ff3581;
+      background-color: #ff2c45;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
@@ -250,15 +297,15 @@
   }
 
   .btn-package{
-    background-color: #a8e48f;
-    color: #2a4220;
+    background-color: #8f9de4;
+    color: #1b1f34;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
     border: none;
     &:after{
-      border-bottom: 2px solid #2a4220;
-      border-right: 2px solid #2a4220;
+      border-bottom: 2px solid #1b1f34;
+      border-right: 2px solid #1b1f34;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
@@ -267,13 +314,16 @@
     &:hover,
     &:active,
     &:focus{
-      background-color: #2a4220;
-      color: #a8e48f;
+      background-color: #1b1f34;
+      color: #8f9de4;
       &:after{
-        border-bottom: 2px solid #a8e48f;
-        border-right: 2px solid #a8e48f;
+        border-bottom: 2px solid #8f9de4;
+        border-right: 2px solid #8f9de4;
       }
     }
+  }
+  .package__abilities{
+    padding-top: 0;
   }
 
   .package__abilities-item-platform{
@@ -305,6 +355,8 @@
       color: #bdbbbb!important;
     }
   }
+
+
 
   .tab-content{
     background-color: #dfdfdf;

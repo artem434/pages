@@ -61,7 +61,7 @@
     letter-spacing: 1.8px;
     text-align: center;
     color: #363636;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
     span{
       font-size: 18px;
@@ -114,7 +114,7 @@
     }
 
     &--standart{
-      background-color: #ffbdd4;
+      background-color: #cbd3ff;
     }
     &--gold{
       background-image: linear-gradient(to bottom, #72ddf7, #2b4ae1);
@@ -181,7 +181,7 @@
     box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
     transition: 0.7s;
     background-image: linear-gradient(to top, #d3d3d3, #f6f6f6);
-    color: #345ce4;
+    color: #ff467f;
     border: none;
     border-radius: 22px;
     font-size: 18px;
@@ -211,8 +211,8 @@
     &--footer {
       margin: 0;
       .btn{
-        background-image: linear-gradient(to top, #ffe82d, #ffad2d);
-        color: #1d1d1d;
+        background-image: linear-gradient(to top, #ff467f, #ff467f);
+        color: #ffffff;
       }
       .btn--Sale{
         width: 190px;
@@ -222,7 +222,7 @@
         box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
         transition: 0.7s;
         background-image: linear-gradient(to top, #d3d3d3, #f6f6f6);
-        color: #345ce4;
+        color: #ff467f;
         border: none;
         border-radius: 22px;
         font-size: 18px;

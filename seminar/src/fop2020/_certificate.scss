@@ -42,7 +42,7 @@
           }
         }
         &:nth-child(odd){
-          background-image: linear-gradient(to left, #4f1686, #311b46);
+          background-image: linear-gradient(to left, #820bac, #5d05fe);
         }
 
         &:nth-child(1){
@@ -119,7 +119,7 @@
           }
         }
         &:nth-child(even){
-          background-image: linear-gradient(to left, #4f1686, #311b46);
+          background-image: linear-gradient(to left, #820bac, #5d05fe);
         }
 
         &:nth-child(1){
@@ -240,7 +240,7 @@
       height: 110px;
     }
     svg{
-      fill:  #ff4f73;
+      fill:  #ffdf0b;
       width: 100px;
       height: 100px;
       @media (max-width: 767px) {
@@ -266,7 +266,7 @@
   }
 
   &__footer{
-    background-image: linear-gradient(to left, #4f1686, #311b46);
+    background-image: linear-gradient(to left, #820bac, #5d05fe);
     height: 285px;
     width: 100%;
     display: flex;

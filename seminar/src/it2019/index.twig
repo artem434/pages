@@ -1,3 +1,394 @@
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    content
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__menu">
+                <div class="menu">
+                    <div class="menu__container">
+                        <ul class="menu__list">
+                            <li><a href="#lectors" class="js-scroll-to">Лектор</a></li>
+                            <li><a href="#themes" class="js-scroll-to">Теми</a></li>
+                            <li><a href="#order" class="js-scroll-to">Придбати</a></li>
+                        </ul>
+                        <ul class="menu__list">
+                            <li><a href="/">Iнші семінари</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__content"><img src="https://7eminar.com/storage/seminars/pages/it2019/images/7lessons.png" alt="7eminar" class="hero__lessons"/>
+                <div class="hero__frame">
+                    <p class="hero__title">ІТ-бізнес:</p>
+                    <p class="hero__sub-title">облік і оподаткування</p>
+                </div>
+                <p class="hero__btn"><a href="#order" class="btn js-scroll-to" >Замовити</a></p>
+                <p class="hero__lector"><a href="#lectors" class="js-scroll-to">Лектор</a><br/>Костянтин Єрохін</p>
+                <button type="button" aria-label="Open modal video" data-toggle="modal" data-target="#modal-video" data-vidId="GSmxCWm5uck" class="hero__controls-modal-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div class="knowledges">
+        <div class="knowledges__container">
+            <div class="knowledges__box">
+                <p class="knowledges__box-title">Про що ви дізнаєтесь?</p>
+                <ul class="knowledges__box-list">
+                    <li>•<span> Організація обліку в ІТ-компаніях, бухоблік, податки і звітність ІТ-аутсорсингу</span></li>
+                    <li>•<span> Оподаткування розробки і продажу ІТ-продуктів (сайту, продажу ліцензій, підписки, підтримки тощо)</span></li>
+                    <li>•<span> Облік робочого часу в ІТ, технічні засоби ведення обліку, інтелектуальна власність</span></li>
+                    <li>•<span> Робота з ФОП та облік окремих операцій в ІТ-сфері. Приклади успішних компаній</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="advantages__container">
+            <p class="advantages__title">Ви отримаєте</p>
+            <ul class="advantages__list">
+                <li>Сім відеоуроків</li>
+                <li>Сертифікат учасника</li>
+                <li>Презентацію лектора</li>
+                <li>Відповіді на запитання</li>
+            </ul>
+        </div>
+    </div>
+    <div id="lectors" class="lectors">
+        <div class="lectors__container">
+            <div class="lectors__box lector">
+                <div class="lector__image"><img width="110" height="110" alt="" src="{{ page.url('/images') }}/lector.jpg"/></div>
+                <p class="lector__title">Лектор: <span>Костянтин Єрохін</span>
+                </p>
+                <p class="lector__regalia">Кандидат економічних наук, СІМА, фінансовий директор ІT-компанії, автор статей і книжок про фінанси, облік, оподаткування і економіку.</p>
+            </div>
+        </div>
+    </div>
+    <div id="themes" class="themes">
+        <div class="themes__container">
+            <p class="themes__title">ТЕМИ І ДАТИ ВІДЕОУРОКІВ</p>
+            <div class="lessons">
+                <div id="les1" data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 1. <span> Що таке ІТ-бізнес та види ІТ-компаній</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson1" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Визначення галузі інформаційних технологій, методологічна основа бізнесу, законодавство України.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>  Види ІТ-компаній (аутсорсинг, продукт, стартап) та їх відмінність з точки зору фінансів.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Які особливості ведення ІТ-бізнесу в Україні, порівняно з іншими країнами. Приклади успішних компаній.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les2" data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 2. <span> Організація обліку в ІТ-компаніях</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson2" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Ведемо облік в ІТ: з чого почати?</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>  Облікова політика: моменти, на які варто звернути увагу. Бухгалтерські проведення, приклади, нормативні документи.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Облік робочого часу – організовуємо правильно.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Технічні засоби ведення обліку – які системи потрібні в сучасній компанії.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Інтелектуальна власність – що це таке, чому вона важлива в ІТ та як її обліковувати.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les3" data-toggle="collapse" data-target="#lesson3" aria-expanded="false" aria-controls="#lesson3" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 3. <span>ІТ-аутсорсинг. Організація бухобліку, податки та звітність</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson3" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Надання послуг у сфері комп’ютерного програмування і розробки ПЗ.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Особливості організації бухобліку:
+                                <ul>
+                                    <li>	первинні документи для обліку виконаних робіт;</li>
+                                    <li>	використання електронного підпису;</li>
+                                    <li>	базові проводки у бухгалтерському обліку;</li>
+                                    <li>окремі моменти складання фінансової звітності.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Особливості оподаткування податком на прибуток, ПДВ для операцій ІТ-аутсорсингу.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les4" data-toggle="collapse" data-target="#lesson4" aria-expanded="false" aria-controls="#lesson4" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 4. <span> Розробка і продаж ІТ-продуктів. Облік, податки, підтримка тощо</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson4" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Розробка власного програмного забезпечення – нормативно-правова база.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>  Документальне оформлення та бухгалтерські проведення операцій із розробки сайту, продажу ліцензій, підписки, супроводу, підтримки ПЗ.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Нюанси оподаткування розробки і продажу ІТ-продуктів.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les5" data-toggle="collapse" data-target="#lesson5" aria-expanded="false" aria-controls="#lesson5" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 5. <span> Що таке стартап в IT, з чого почати власний ІТ-бізнес</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson5" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Що таке start-up? Етапи розвитку та фінансування.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Як оформити власну ІТ-компанію, з чого починати та який порядок дій?</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Операції з частками у статутному фонді:
+                                <ul>
+                                    <li>документальне оформлення;</li>
+                                    <li>бухгалтерський облік (проведення);</li>
+                                    <li>нюанси оподаткування.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les6" data-toggle="collapse" data-target="#lesson6" aria-expanded="false" aria-controls="#lesson6" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 6. <span> Робота з ФОП та облік окремих операцій в ІТ</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson6" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Поточний стан співпраці з ФОП для ІТ-компаній, перспективи. Можливі моделі співпраці – переваги і недоліки.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Ознаки незалежних виконавців.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Які нюанси слід передбачити у договорах із ФОП? Зразок тексту та аналіз документу.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Облік операцій із блокчейном і криптовалютами.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість уроку: <b>45 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les7" data-toggle="collapse" data-target="#lesson7" aria-expanded="false" aria-controls="#lesson7" class="lessons__item lesson">
+                    <p class="lesson__title">Урок 7. <span> Відповіді на запитання</span>
+                    </p>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson7" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Змога задати питання лектору завчасно.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Гарантоване отримання відповіді на запитання.</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Можливість дізнатися відповіді на актуальні запитання від ваших колег.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--date">
+                            <div class="program__item--text">
+                                <p>Лектор відповідатиме на питання письмово у чаті.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order" class="order">
+        <div class="order__container">
+            <div id="timer-custom" class="order__timer">
+                <p class="order__title">Ціна діє до <span id="timer-title">{{ page.options['date']|default('') }}</span>
+                </p>
+                <div class="pricing-timer"  data-timer="{{ page.options['timer']|default('') }}">
+                    <div class="pricing-timer__inner">
+                        <div class="pricing-timer__box"><span class="days">00</span>дні</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="hours">00</span>год</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="minuts">00</span>хв</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="seconds">00</span>сек</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__packages">
+                <div class="package">
+                    <p class="package__title">Ви отримаєте</p>
+                    <div class="package__main">
+                        <ul class="package__list">
+                            <li>відеозапис курсу</li>
+                            <li>презентації лектора</li>
+                            <li>Сертифікат учасника</li>
+                            <li>Відповіді на запитання</li>
+                        </ul>
+                        <p class="package__price">{{shop_price('курс-090819IT','site')}} <span>грн</span>
+                            <s>{{shop_price('курс-090819IT','line')}}</s>
+                        </p>
+                        <div class="package__btn">
+                            <form method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-090819IT"/>
+                                <button type="submit" rel="order" class="btn">ЗАМОВИТИ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__banner js-platform-banner">
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <div class="video__container">
+            <p class="video__title">Костянтин Єрохін запрошує
+            </p>
+            <div class="video__player">
+                <iframe src="https://www.youtube.com/embed/GSmxCWm5uck?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="partners">
+        <div class="partners__container">
+            <table>
+                <tr>
+                    <td><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></td>
+                    <td><a href="https://7eminar.com/" target="_blank" class="logonoclik"><img style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" class="img_partners1"/></a></td>
+                    <td><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит"/></a></td>
+                </tr>
+            </table>
+            {#<table>
+                <tr>
+                    <td><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></td>
+                    <td><a href="https://kraft.net.ua" target="_blank" class="logonoclik"><img style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" class="img_partners1"/></a></td>
+                </tr>
+            </table>#}
+
+        </div>
+    </div>
+    <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
+        <div role="document" class="modal-dialog">
+            <div id="closeModal" data-dismiss="modal" class="close-modal close-modal-video"></div>
+            <div class="modal-content">
+                <div class="player"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-page" class="loader-page">
+        <div class="dots">
+            <div class="dots__item"></div>
+            <div class="dots__item"></div>
+            <div class="dots__item"></div>
+            <div class="dots__item"></div>
+        </div>
+    </div>
 </div>

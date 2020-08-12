@@ -1,8 +1,8 @@
 .advantages{
   position: relative;
-  background: url(images/block_bg.png) center top no-repeat,-webkit-gradient(linear, left bottom, left top, from(#0d0028), to(#2f1467));
-  background: url(images/block_bg.png) center top no-repeat,-o-linear-gradient(bottom, #0d0028, #2f1467);
-  background: url(images/block_bg.png) center top no-repeat,linear-gradient(to top, #0d0028, #2f1467);
+  background: url(images/block_bg.png) center top no-repeat,-webkit-gradient(linear, left bottom, left top,  from(#1e316b), to(#284cb7));
+  background: url(images/block_bg.png) center top no-repeat,-o-linear-gradient(bottom, #1e316b, #284cb7);
+  background: url(images/block_bg.png) center top no-repeat,linear-gradient(to top, #1e316b, #284cb7);
   background-size: cover;
   text-align: center;
 
@@ -70,11 +70,11 @@
   &__icon{
     width: 130px;
     height: 130px;
-    -webkit-box-shadow: 0px 17px 10px 0 rgba(60, 22, 144, 0.25);
-    box-shadow: 0px 17px 10px 0 rgba(60, 22, 144, 0.25);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#3c1690), to(#8f5dff));
-    background-image: -o-linear-gradient(bottom, #3c1690, #8f5dff);
-    background-image: linear-gradient(to top, #3c1690, #8f5dff);
+    -webkit-box-shadow: 0px 17px 10px 0 rgba(21, 27, 139, 0.25);
+    box-shadow: 0px 17px 10px 0 rgba(21, 27, 139, 0.25);
+   /* background-image: -webkit-gradient(linear, left bottom, left top, from(#0b0668), to(#2d55c7));
+    background-image: -o-linear-gradient(bottom, #0b0668, #2d55c7);*/
+    background-image: linear-gradient(to right, #0b0668, #2d55c7);
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;

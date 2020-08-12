@@ -96,18 +96,11 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                             },
                             submitHandler: function (form) {
                                 loader.addClass('is-active');
-                                var url = ['/subscribe/16062020conference', '/invoice2'];
+                                var url = ['/subscribe/16062020conferencedk'];
                                 var dataSend = [{
                                         "firstName": $('.free-demo .name').val(),
                                         'email': $('.free-demo .mail').val(),
                                         'phone': $('.free-demo .phone').val()
-                                    }, {
-                                        "customer[name]": $('.free-demo .name').val(),
-                                        'customer[email]': $('.free-demo .mail').val(),
-                                        'customer[phone]': $('.free-demo .phone').val(),
-                                        'article': $('.free-demo .article').val(),
-                                        'options[utm]': $('.free-demo .utm').val(),
-                                        'dealer': $('.free-demo .dealer').val()
                                     }];
                                 $.each(url, function (i) {
                                     $.ajax({
@@ -117,7 +110,8 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                                         dataType: "json",
                                         data: dataSend[i],
                                         success: function (data, event, payload) {
-                                            if (i == 1) {
+                                            location.href = '/gifts';
+                                         /*   if (i == 1) {
                                                 var email = $('.mail').val();
                                                 clients.Auth.getClient().then(function (client) {
                                                     if (payload.responseJSON.result === true) {
@@ -139,7 +133,7 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                                                         });
                                                     }
                                                 });
-                                            }
+                                            }*/
                                         },
                                         error: function (error) {
                                             console.log("no");

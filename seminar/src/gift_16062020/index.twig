@@ -22,9 +22,7 @@
                     <div class="form-group">
                         <input  name="name" type="text" placeholder="Ім’я"  maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
                     </div>
-
                     <div class="form-group">
-
                         <input  name="email" type="email" placeholder="E-mail" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
                     </div>
 
@@ -40,8 +38,8 @@
                 </form>
                 <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book-min.png">
             </div>
-            <div class="hero__description">Також ви отримуєте можливість прослухати ONLINE-конференцію<br>
-                <b> абсолютно безкоштовно
+            <div class="hero__description">Також ви отримуєте можливість дивитися<br>
+                <b>відеозапис бухгалтерської конференції абсолютно безкоштовно
                 </b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
 
         </div>
@@ -49,16 +47,16 @@
 
     <div id="theme" class="themes">
         <div class="container theme__container">
-            <p class="themes__title">Безкоштовна ONLINE-конференція</p>
+            <p class="themes__title">Відеозапис бухгалтерської конференції від 16 червня</p>
             <p class="themes__sub-title">«Податковий вибух: бухгалтерські новації, ПДВ, ФОП, відпускні та штрафи»</p>
             <div class="themes__item">
-                <div class="themes__header"><p>регламент  <br> online-конференції </p></div>
+                <div class="themes__header"><p>ПРО ЩО ВИ ДІЗНАЄТЕСЯ?</p></div>
                 <div class="themes__body">
                     <ul class="themes__list lector">
                         <li class="lector__item lector__item--vv">
                             <div class="lector__body">
-                                <p class="themes__time">11:00–12:00</p>
-                                <p class="themes__time themes__time--color">19:00–20:00</p>
+                              {#  <p class="themes__time">11:00–12:00</p>
+                                <p class="themes__time themes__time--color">19:00–20:00</p>#}
                                 <p class="lector__title">Податкові зміни: <br>
                                     різниці, ділова мета і кого це стосується
                                 </p>
@@ -67,8 +65,8 @@
                         </li>
                         <li class="lector__item lector__item--sd ">
                             <div class="lector__body">
-                                <p class="themes__time">12:00–12:30 </p>
-                                <p class="themes__time themes__time--color">20:00–20:30</p>
+                              {#  <p class="themes__time">12:00–12:30 </p>
+                                <p class="themes__time themes__time--color">20:00–20:30</p>#}
                                 <p class="lector__title">ПДВ-зміни і нові штрафи</p>
                                 {# <ul>
                                      <li> Наслідки розширення терміну розумної економічної причини (ділової мети).</li>
@@ -91,8 +89,8 @@
 
                         <li class="lector__item lector__item--mk">
                             <div class="lector__body">
-                                <p class="themes__time">12:30–13:10 </p>
-                                <p class="themes__time themes__time--color">20:30–21:10</p>
+                               {# <p class="themes__time">12:30–13:10 </p>
+                                <p class="themes__time themes__time--color">20:30–21:10</p>#}
                                 <p class="lector__title">Зміни у ФОПів після карантину: <br>
                                     про єдиний податок, ЄСВ, звітність</p>
                                 <p class="lector__info"> <span>Мар’яна Кавин</span>, податковий консультант CAP/СІРА, АССА DipIFR, IFA</p>
@@ -101,8 +99,8 @@
 
                         <li class="lector__item lector__item--tm">
                             <div class="lector__body">
-                                <p class="themes__time">13:10–13:50 </p>
-                                <p class="themes__time themes__time--color">21:10–21:50</p>
+                               {# <p class="themes__time">13:10–13:50 </p>
+                                <p class="themes__time themes__time--color">21:10–21:50</p>#}
                                 <p class="lector__title">Відпускні після карантину: <br>
                                     розрахунок, виплата, податки, звітність</p>
                                 <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
@@ -110,16 +108,16 @@
                         </li>
 
 
-                        <li class="lector__item lector__item--tm">
+                       {# <li class="lector__item lector__item--tm">
                             <div class="lector__body">
-                                <p class="themes__time">13:50–14:00  </p>
-                                <p class="themes__time themes__time--color">21:50–22:00</p>
+                             #}{#   <p class="themes__time">13:50–14:00  </p>
+                                <p class="themes__time themes__time--color">21:50–22:00</p>#}{#
                                 <p class="lector__title">Про Бухгалтерську відеоплатформу №1: <br>
                                     як стати користувачем</p>
 
                                 <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
                             </div>
-                        </li>
+                        </li>#}
 
                     </ul>
                     {# <div class="themes__description">письмові Відповіді на запитання у чаті надаватимуть висококваліфіковані експерти 7eminar.com

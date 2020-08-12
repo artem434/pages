@@ -1,10 +1,10 @@
 .hero{
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d0028), to(#2f1467));
-  background-image: -o-linear-gradient(bottom, #0d0028, #2f1467);
-  background-image: linear-gradient(to top, #0d0028, #2f1467);
-  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1e316b), to(#284cb7));
+  background-image: -o-linear-gradient(bottom, #1e316b, #284cb7);
+  background-image: linear-gradient(to top, #1e316b, #284cb7);
+    position: relative;
 
-  &:before{
+    &:before{
     position: absolute;
     content: " ";
     width: 100%;
@@ -16,7 +16,7 @@
 
   &__container{
     @extend %container;
-    background: url(images/bg_solgier.png) left top no-repeat;
+    background: url(images/bg_hero-min.png) left top no-repeat;
     background-size: contain;
     position: relative;
     padding-top: 0px;
@@ -29,11 +29,11 @@
     &:before{
       position: absolute;
       content: " ";
-      background: url(images/lector-min.png) left top no-repeat;
-      width: 207px;
-      height: 354px;
+      background: url(images/lector_1200-min.png) left top no-repeat;
+      width: 235px;
+      height: 353px;
       bottom: 0;
-      right: 195px;
+      right: 135px;
 
       @media (max-width: 1200px){
         right: 65px;
@@ -77,14 +77,14 @@
   &__curses{
     display: table;
     border-radius: 4px;
-    background-color: #e7d61b;
+    background-color: #fdfeff;
     padding: 6px 9px;
     font-size: 16px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
     letter-spacing: 0.4px;
-    color: #232323;
+    color: #d63c1c;
 
     @media (max-width: 767px){
       margin: 0 auto;
@@ -110,7 +110,7 @@
 
   &__sub-title{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.25;
@@ -126,9 +126,9 @@
 
   &__teacher{
     padding: 25px 45px 25px 25px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(transparent));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), transparent);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
     display: table;
 
     @media (max-width: 767px){
@@ -146,7 +146,7 @@
     font-style: normal;
     line-height: 1;
     letter-spacing: 0.4px;
-    color: #e7d61b;
+    color: #fff;
     padding-bottom: 15px;
   }
 
@@ -157,7 +157,7 @@
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.35px;
-    color: #ffffff;
+    color: #d2deff;
 
     @media (max-width: 767px){
       text-align: left;

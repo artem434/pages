@@ -25,44 +25,46 @@
             </div>
         </template>
         <template v-slot:action-due>
-            <p class="landing-section__action">{{ page.options['order_action']}}</p>
+            <p class="landing-section__action">{{ page.options['order_action']}} <b>{{ page.options['order_action_bold']}}</b></p>
         </template>
         <!--<template v-slot:tab-radio>
             <div class="tab-content"> <label class="label" :class="{active: tab ==='6'}" @click="tab = '6'">+ 1 подарунок </label> <label class="label" :class="{active: tab ==='12'}" @click="tab = '12'">+ 2 подарунки</label></div>
         </template>-->
         <template v-slot:packages_list>
             <landing-package-row >
-                <landing-package article="ep-dtkt_ek" class="packages__column--one">
+                <landing-package article="ep-dtkt_ek_action" class="packages__column--one">
                     <template v-slot:title>
                         <span>ЕКСПЕРТ<br>та подарунок</span>
 
                     </template>
-                    <template v-slot:period>
+                    <!--<template v-slot:period>
                         <div class="period">квітень - вересень 2020</div>
-                    </template>
+                    </template>-->
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
-
+                        <li >Відеокурс «ЗП в 1С» <br>(9 уроків)</li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
                         <li>«Документи за тиждень»</li>
                         <li>«Запитання і відповіді» за тиждень</li>
-                        <li>Розумний податковий календар</li>
-                        <li>База нормативних документів</li>
-                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                        <li>Сервіс «Мій кабінет»</li>
-                        <li>Пакет «Тематичні розсилки»</li>
-                        <li>Електронний журнал «Дебет-Кредит»</li>
-                        <li>Щомісячні спецвипуски</li>
-                        <li>Доступ до архівних номерів на сайті</li>
-                        <li class="package__abilities-item--noactive">Сервіс «Постав запитання редакції»</li>
-                        <li class="package__abilities-item--noactive">Вебінари редакції</li>
-                        <li class="package__abilities-item--noactive">Велика настільна книга</li>
-                        <li class="package__abilities-item--noactive">Звітність у «СОТА»</li>
+                        <div v-if="show">
+                            <li>Розумний податковий календар</li>
+                            <li>База нормативних документів</li>
+                            <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                            <li>Сервіс «Мій кабінет»</li>
+                            <li>Пакет «Тематичні розсилки»</li>
+                            <li>Електронний журнал «Дебет-Кредит»</li>
+                            <li>Щомісячні спецвипуски</li>
+                            <li>Доступ до архівних номерів на сайті</li>
+                            <li class="package__abilities-item--noactive">Сервіс «Постав запитання редакції»</li>
+                            <li class="package__abilities-item--noactive">Вебінари редакції</li>
+                            <li class="package__abilities-item--noactive">Велика настільна книга</li>
+                            <li class="package__abilities-item--noactive">Звітність у «СОТА»</li>
+                        </div>
+                        <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                     </template>
                     <template v-slot:old-price>
-                        <div class="package__old-price" style="text-decoration: line-through">1915 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">165 грн/міс.</div>
 
                     </template>
                 </landing-package>
@@ -74,32 +76,35 @@
                         <span >ПРОФІ<br>та подарунок</span>
 
                     </template>
-                    <template v-slot:period>
+                  <!--  <template v-slot:period>
                         <div class="period">квітень - вересень 2020</div>
-                    </template>
+                    </template>-->
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br>(9 уроків)</li>
 
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
                         <li>«Документи за тиждень»</li>
                         <li>«Запитання і відповіді» за тиждень</li>
-                        <li>Розумний податковий календар</li>
-                        <li>База нормативних документів</li>
-                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                        <li>Сервіс «Мій кабінет»</li>
-                        <li>Пакет «Тематичні розсилки»</li>
-                        <li>Електронний журнал «Дебет-Кредит»</li>
-                        <li>Щомісячні спецвипуски</li>
-                        <li>Доступ до архівних номерів на сайті</li>
-                        <li>Сервіс «Постав запитання редакції»</li>
-                        <li>Вебінари редакції</li>
-                        <li>Велика настільна книга</li>
-                        <li>Звітність у «СОТА»</li>
+                        <div v-if="show">
+                            <li>Розумний податковий календар</li>
+                            <li>База нормативних документів</li>
+                            <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                            <li>Сервіс «Мій кабінет»</li>
+                            <li>Пакет «Тематичні розсилки»</li>
+                            <li>Електронний журнал «Дебет-Кредит»</li>
+                            <li>Щомісячні спецвипуски</li>
+                            <li>Доступ до архівних номерів на сайті</li>
+                            <li>Сервіс «Постав запитання редакції»</li>
+                            <li>Вебінари редакції</li>
+                            <li>Велика настільна книга</li>
+                            <li>Звітність у «СОТА»</li>
+                        </div>
+                        <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">2593 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">278 грн/міс.</div>
 
                     </template>
                 </landing-package>
@@ -110,34 +115,36 @@
                         <span  >ПРОФІ + 7eminar.ua<br>та подарунок</span>
 
                     </template>
-                    <template v-slot:period>
+                   <!-- <template v-slot:period>
                         <div class="period">квітень - вересень 2020</div>
-                    </template>
+                    </template>-->
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
-
+                        <li >Відеокурс «ЗП в 1С» <br>(9 уроків)</li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
                         <li>«Документи за тиждень»</li>
                         <li>«Запитання і відповіді» за тиждень</li>
-                        <li>Розумний податковий календар</li>
-                        <li>База нормативних документів</li>
-                        <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                        <li>Сервіс «Мій кабінет»</li>
-                        <li>Пакет «Тематичні розсилки»</li>
-                        <li>Електронний журнал «Дебет-Кредит»</li>
-                        <li>Щомісячні спецвипуски</li>
-                        <li>Доступ до архівних номерів на сайті</li>
-                        <li>Сервіс «Постав запитання редакції»</li>
-                        <li>Вебінари редакції</li>
-                        <li>Велика настільна книга</li>
-                        <li>Звітність у «СОТА»</li>
-                        <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a>: понад 140 курсів та вебінарів для перегляду
-                            <br><span  > (квітень - вересень 2020)</span> </li>
+                            <div v-if="show">
+                            <li>Розумний податковий календар</li>
+                            <li>База нормативних документів</li>
+                            <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                            <li>Сервіс «Мій кабінет»</li>
+                            <li>Пакет «Тематичні розсилки»</li>
+                            <li>Електронний журнал «Дебет-Кредит»</li>
+                            <li>Щомісячні спецвипуски</li>
+                            <li>Доступ до архівних номерів на сайті</li>
+                            <li>Сервіс «Постав запитання редакції»</li>
+                            <li>Вебінари редакції</li>
+                            <li>Велика настільна книга</li>
+                            <li>Звітність у «СОТА»</li>
+                            <li class="package__abilities-item-platform">Бухгалтерська відеоплатформа  <a href="https://7eminar.ua" target="_blank">7eminar.ua</a>: понад 140 курсів та вебінарів для перегляду
+                                <br><span  > (квітень - вересень 2020)</span> </li>
+                        </div>
+                        <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">3493 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">428 грн/міс.</div>
 
                     </template>
                 </landing-package>
@@ -152,6 +159,18 @@ import Page from '../../core/Page'
 
 export default {
     mixins: [Page],
+    computed: {
 
+        btnText: function() {
+            if(this.show) {
+                return 'Приховати'
+            }
+
+            return 'А ще входить...'
+        }
+    },
+    data:()=>({
+        show: false,
+    })
 }
 </script>

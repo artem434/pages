@@ -1,15 +1,19 @@
 <template>
-    <landing name="dtkt_july2020" advantages="epressa_add_dtkt" class="landing-dtkt__july2020">
+    <landing name="dtkt_august2020" advantages="epressa_add_dtkt" class="landing-dtkt__august2020">
         <template v-slot:cover>
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container container--august">
                         <div class="cover">
                             <a href="#gift">
-                                <picture class="cover__img">
-                                       <!--<source :srcset="mix('images/head_03.webp')" type="image/webp">-->
-                                    <img :src="mix('images/head_03.jpg')" class="img-fluid" alt="">
+                                <picture class="cover__img show-md">
+                                       <source :srcset="mix('images/-40.webp')" type="image/webp">
+                                    <img :src="mix('images/-40.jpg')" class="img-fluid" alt="">
                                 </picture>
+                              <picture class="cover__img hidden-md">
+                                <source :srcset="mix('images/bg_3201.webp')" type="image/webp">
+                                <img :src="mix('images/bg_3201.jpg')" class="img-fluid" alt="">
+                              </picture>
                             </a>
                         </div>
                     </div>
@@ -22,14 +26,14 @@
         </template>
         <template v-slot:price-title>
             <div>
-                <h2 class="landing-title landing-title--columns">АКЦІЙНА ПРОПОЗИЦІЯ <span>ДІЄ ДО</span>{{ page.options['order_title'] }}</h2>
-                <h3 class="landing-subtitle">{{ page.options ['order_subtitle']}}</h3>
+                <h2 class="landing-title landing-title--columns">{{ page.options['order_title'] }}</h2>
+                <div class="landing-subtitle" v-html="page.options.subtitle"></div>
                 <h2  id="gift" class="landing-title--columns landing-title--columns--color"><span>{{ page.options['order_title-top']}}</span></h2>
             </div>
         </template>
         <template     v-slot:packages_list>
             <landing-package-row >
-                <landing-package article="ep-dtkt_ek_gift" class="packages__column--two">
+                <landing-package article="ep-dtkt_ek_gift1" class="packages__column--two">
                     <template v-slot:title>
                         <span>ЕКСПЕРТ<br>та подарунки</span>
 
@@ -38,8 +42,11 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
-                        <li><a href="https://rozetka.com.ua/samsung_galaxy_a01_2_16gb_blue/p173919068/" target="_blank">Смартфон</a> чи <a href="https://rozetka.com.ua/83721972/p83721972/" target="_blank">планшет</a><br> на вибір</li>
+                      <li><a href="https://epicentrk.ua/shop/multivarka-rotex-rmc503-b-.html" target="_blank">Мультиварка</a></li>
+                        <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
                     Смартфон чи планшет
                     <template v-slot:abilities>
@@ -62,19 +69,19 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_ek_gift&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_ek_gift1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
 
                     <template v-slot:old-price>
-                        <div class="package__old-price" style="text-decoration: line-through">8055 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">4212 грн</div>
 
                     </template>
                 </landing-package>
 
-                <landing-package article="ep-dtkt_pr_gift" class="packages__column--three">
+                <landing-package article="ep-dtkt_pr_gift1" class="packages__column--three">
                     <template v-slot:title>
                         <span >ПРОФІ<br>та подарунки</span>
 
@@ -83,8 +90,11 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
-                        <li><a href="https://rozetka.com.ua/samsung_galaxy_a01_2_16gb_blue/p173919068/" target="_blank">Смартфон</a> чи <a href="https://rozetka.com.ua/83721972/p83721972/" target="_blank">планшет</a><br> на вибір</li>
+                      <li><a href="https://epicentrk.ua/shop/multivarka-rotex-rmc503-b-.html" target="_blank">Мультиварка</a></li>
+                      <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
@@ -106,18 +116,18 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_pr_gift&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_pr_gift1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">9687 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">5844 грн</div>
 
                     </template>
                 </landing-package>
 
-                <landing-package article="ep-dtkt_pp_gift" class="package-plus package-plus-top">
+                <landing-package article="ep-dtkt_pp_gift1" class="package-plus package-plus-top">
                     <template v-slot:title>
 
                         <span  >ПРОФІ + 7eminar.ua<br>та подарунки</span>
@@ -127,8 +137,11 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
-                        <li><a href="https://rozetka.com.ua/samsung_galaxy_a01_2_16gb_blue/p173919068/" target="_blank">Смартфон</a> чи <a href="https://rozetka.com.ua/83721972/p83721972/" target="_blank">планшет</a><br> на вибір</li>
+                      <li><a href="https://epicentrk.ua/shop/multivarka-rotex-rmc503-b-.html" target="_blank">Мультиварка</a></li>
+                      <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
@@ -152,20 +165,20 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_pp_gift&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_pp_gift1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">12087 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">8244 грн</div>
 
                     </template>
                 </landing-package>
             </landing-package-row>
             <h2 class="landing-title--columns landing-title--columns--color"><span>{{ page.options['order_title-bottom']}}</span></h2>
             <landing-package-row >
-                <landing-package article="ep-dtkt_ek_action" class="packages__column--two">
+                <landing-package article="ep-dtkt_ek_action1" class="packages__column--two">
                     <template v-slot:title>
                         <span>ЕКСПЕРТ<br>та подарунок</span>
 
@@ -174,7 +187,10 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
+                      <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
 
                     Смартфон чи планшет
@@ -199,18 +215,18 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_ek_action&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_ek_action1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div class="package__old-price" style="text-decoration: line-through">3055 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">2712 грн</div>
 
                     </template>
                 </landing-package>
 
-                <landing-package article="ep-dtkt_pr_action" class="packages__column--three">
+                <landing-package article="ep-dtkt_pr_action1" class="packages__column--three">
                     <template v-slot:title>
                         <span >ПРОФІ<br>та подарунок</span>
 
@@ -219,7 +235,10 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
+                      <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
@@ -241,18 +260,18 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_pr_action&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_pr_action1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">4687 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">4344 грн</div>
 
                     </template>
                 </landing-package>
 
-                <landing-package article="ep-dtkt_pp_action" class="package-plus package-plus-top">
+                <landing-package article="ep-dtkt_pp_action1" class="package-plus package-plus-top">
                     <template v-slot:title>
 
                         <span  >ПРОФІ + 7eminar.ua<br>та подарунок</span>
@@ -262,7 +281,10 @@
                         <div class="period">12 місяців</div>
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс <br> <a href="https://7eminar.com/automatization2020#course_5" target="_blank">«Зарплата в 1С»</a> </li>
+                      <li >Відеокурс  <a href="https://7eminar.com/automatization2020#course_14" target="_blank">«Excel для
+                        <br>
+                        початківців на <br>
+                        прикладі зарплати»</a> </li>
                     </template>
                     <template v-slot:abilities>
                         <li>Щоденна добірка новин</li>
@@ -286,13 +308,13 @@
                         </div>
                         <p class="packages__list-show" @click="show = !show">{{ btnText }}</p>
                         <div class="package__footer">
-                            <router-link :to="`/order?article=ep-dtkt_pp_action&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
+                            <router-link :to="`/order?article=ep-dtkt_pp_action1&options[periods]=12`" class="btn btn-package  btn-arrow btn-package--twelves"
                                          target="_blank">Беру!
                             </router-link>
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">7087 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">6744 грн</div>
 
                     </template>
                 </landing-package>

@@ -103,18 +103,11 @@ SystemJS.import('jquery').then(function ($) {
                 },
                 submitHandler: function(form) {
                     loader.addClass('is-active');
-                    const url = ['/subscribe/16062020conference', '/invoice2'];
+                    const url = ['/subscribe/16062020conferencedk'];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val()
-                    }, {
-                        "customer[name]": $('.free-demo .name').val(),
-                        'customer[email]': $('.free-demo .mail').val(),
-                        'customer[phone]': $('.free-demo .phone').val(),
-                        'article': $('.free-demo .article').val(),
-                        'options[utm]': $('.free-demo .utm').val(),
-                        'dealer': $('.free-demo .dealer').val()
                     }];
 
                     $.each(url, function(i) {
@@ -127,8 +120,8 @@ SystemJS.import('jquery').then(function ($) {
                             dataType: "json",
                             data: dataSend[i],
                             success: function( data, event, payload) {
-
-                                if(i == 1){
+                                location.href = '/gifts';
+                            /*    if(i == 1){
 
                                     var email = $('.mail').val();
 
@@ -153,7 +146,7 @@ SystemJS.import('jquery').then(function ($) {
                                                 })
                                         }
                                     })
-                                }
+                                }*/
                             },
                             error: function(error) {
                                 console.log("no");

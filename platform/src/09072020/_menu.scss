@@ -1,5 +1,4 @@
 .menu{
-  font-family: 'IBM Plex Mono', monospace;
   @media (max-width: 1200px){
     display: none;
   }
@@ -23,8 +22,8 @@
     display: flex;
     li{
       padding: 0 25px;
-      color: #afafaf;
-      font-size: 16px;
+      color: #a17ce9;
+      font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 1.39px;
@@ -39,11 +38,11 @@
 
     }
     a{
-      color: #afafaf;
+      color: #a17ce9;
       letter-spacing: 0.7px;
       &:hover{
         text-decoration: none;
-        color: #ff6a0e;
+        color: #ce217c;
       }
     }
   }

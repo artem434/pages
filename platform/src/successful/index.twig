@@ -1,8 +1,8 @@
-<div class="hero">
+<div class="hero"  data-require="{{ page.url('/script.js') }}">
     <div class="hero__content">
         <h1>{{ page.options['text_header']|default('') }}</h1>
         <p>{{ page.options['text1']|default('') }}</p>
-        <a class="hero__btn" href="/events/1235">Увійти</a>
+        <a class="hero__btn" href="/events/1265">Увійти</a>
         <h4>{{ page.options['text_bottom']|default('') }}</h4>
     </div>
 </div>
@@ -28,22 +28,4 @@
 
 <script>
 
-    SystemJS.import('jquery').then(function ($) {
-        var loader = $('.loader-backdrop')
-        var loaderPage = $('#loader-page');
-        loaderPage.delay(850).fadeOut('slow');
-        $('#authForm')
-            .on('submit', function (e) {
-                e.preventDefault()
-                SystemJS.import('@clients').then(function (clients) {
-                    clients.Auth.login($('[name="email"]', e.currentTarget).val(), $('[name="password"]', e.currentTarget).val()).then(function (client) {
-                        if (client) {
-                            location.href = '/events/1235'
-                        }
-                    })
-                })
-            })
-            .find('#reg-email').val(sessionStorage.getItem('userEmail'))
-        sessionStorage.setItem('new-pass',"123456");
-    })
 </script>

@@ -64,7 +64,7 @@ $color: #cd2765;
   }
 
   &__box{
-    padding: 35px 45px;
+    padding: 35px 30px;
     box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     @media (max-width: 767px){
@@ -120,6 +120,9 @@ $color: #cd2765;
     color: #cd2765;
     @media (max-width: 767px){
       font-size: 16px;
+    }
+    &--two{
+      color: #f25e00;
     }
   }
 

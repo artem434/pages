@@ -1,6 +1,7 @@
+$color-theme: #16babc;
 .themes {
   text-align: center;
-  padding: 65px 0 40px;
+  padding: 0px 0 40px;
   font-family: 'Inter', sans-serif;
   @media (max-width: 1140px){
 
@@ -19,7 +20,7 @@
     text-align: center;
     color: #262626;
     @media (max-width: 767px){
-      font-size: 29px;
+      font-size: 25px;
       line-height: 1.24;
     }
   }
@@ -46,7 +47,7 @@
     color: #ffffff;
     text-align: center;
     display: block;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 62px;
     text-transform: uppercase;
@@ -60,22 +61,42 @@
     }
   }
 
+  &__description{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6c6e62;
+    text-transform: uppercase;
+    padding: 50px 80px 30px 140px;
+
+    @media (max-width: 767px){
+      padding: 40px 40px 20px 40px;
+      font-size: 19px;
+    }
+
+  }
+
   &__item{
     max-width: 945px;
     width: 100%;
     margin: 40px auto 0;
-    border: solid 2px #d08820;
+    border: solid 2px $color-theme;
     box-shadow: 0px 12px 10px 0 rgba(27, 0, 93, 0.11);
-    border-radius: 4px;
-    background-color: #ffffff;
+    border-radius: 30px;
+    background-color: #efffff;
 
   }
 
   &__header{
-    background-color: #d08820;
+    background-color: $color-theme;
     display: flex;
     align-items: center;
     justify-items: center;
+    border-radius: 27px 27px 0 0;
     p{
       margin-bottom: 0;
       font-size: 26px;
@@ -129,13 +150,13 @@
 
   &__time{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
     letter-spacing: 1px;
     text-align: left;
-    color: #d08820;
+    color: $color-theme;
     margin-bottom: 20px;
     @media (max-width: 767px){
       text-align: center;
@@ -182,7 +203,7 @@
   }
   &__item{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 55px;
     &:last-child{
       padding-bottom: 0;
@@ -196,9 +217,9 @@
         content: none;
       }
     }
-    &--vv{
+    &--gm{
       &:before{
-        background: url(images/vv.png) center center no-repeat;
+        background: url(images/gm.png) center center no-repeat;
       }
     }
 
@@ -207,9 +228,9 @@
         background: url(images/ig.png) center center no-repeat;
       }
     }
-    &--sd{
+    &--og{
       &:before{
-        background: url(images/sd.png) center center no-repeat;
+        background: url(images/og.png) center center no-repeat;
       }
     }
     &--iz{
@@ -237,6 +258,26 @@
         background: url(images/tm.png) center center no-repeat;
       }
     }
+    &--vv{
+      &:before{
+        background: url(images/007.png) center center no-repeat;
+      }
+    }
+  }
+
+  &__body{
+    ul{
+      list-style-type: disc;
+      text-align: left;
+      margin-top: -10px;
+      @media (max-width: 767px){
+        padding-left: 15px;
+      }
+      li{
+        padding-bottom: 5px;
+      }
+
+    }
   }
 
   &__info{
@@ -247,7 +288,7 @@
     line-height: 1.13;
     letter-spacing: normal;
     text-align: left;
-    color: #d08820;
+    color: $color-theme;
     margin-bottom: 0;
     @media (max-width: 767px){
       text-align: center;

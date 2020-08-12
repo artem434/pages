@@ -79,11 +79,11 @@
       position: absolute;
       left: -20px;
       top: -4px;
-      content: "Вебінар "  counter(my-awesome-counter) ;
+      content: "Урок "  counter(my-awesome-counter) ;
       color: #fff;
       width: auto;
       height: 40px;
-      background-color: #6439c7;
+      background-color: #223c8b;
       border-radius: 20px;
       font-size: 18px;
       font-stretch: normal;
@@ -109,12 +109,7 @@
     }
 
     &:last-child{
-      font-style: italic;
-      color: #3c1690;
       padding-bottom: 0;
-      &:before {
-        content: none;
-      }
     }
   }
 

@@ -1,13 +1,13 @@
 <template>
-    <landing name="buhzakon_march2020_2" advantages="epressa_add_buhzakon" class="landing-buhzakon_march2020_2">
+    <landing name="buhzakon_april2020_1" advantages="epressa_add_buhzakon" class="landing-buhzakon_april2020_1">
         <template v-slot:cover>
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container container--august">
                         <div class="cover">
                             <picture class="cover__img">
-                                <source :src="mix('images/head_033.webp')" type="image/webp">
-                                <img :src="mix('images/head_033.jpg')" class="img-fluid" alt="BZ">
+                                <source :src="mix('images/head_03_BiZ.webp')" type="image/webp">
+                                <img :src="mix('images/head_03_BiZ.jpg')" class="img-fluid" alt="BZ">
                             </picture>
                         </div>
                     </div>
@@ -38,10 +38,10 @@
                         <span > БУХГАЛТЕР&ЗАКОН<br>та подарунок</span>
                     </template>
                     <template v-slot:period>
-                        <div class="period">квітень - вересень 2020</div>
+                       <!-- <div class="period">квітень - вересень 2020</div>-->
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                         <p class="package__btn">
                             <router-link :to="`/order?article=ep-buhzakon_action&options[periods]=6`" class="btn btn-package btn-package--card"
                                          target="_blank">оплатити карткою
@@ -69,7 +69,7 @@
                         </router-link>
                     </template>
                     <template v-slot:old-price>
-                        <div   class="package__old-price" style="text-decoration: line-through">3079 грн</div>
+                        <div   class="package__old-price" style="text-decoration: line-through">330 грн/міс.</div>
 
                     </template>
 

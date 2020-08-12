@@ -1,6 +1,9 @@
-
-
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900&display=swap&subset=cyrillic');
+//-font-family: 'Inter', sans-serif;
 .branding-page #main{
+  width: 100%;
+}
+#main{
   width: 100%;
 }
 
@@ -15,33 +18,57 @@
   margin: 0 auto;
 }
 %title {
-  color: #1b1b1b;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 25px 0;
-  @media (max-width: 1200px){
-    font-size: 48px;
-  }
-  @media (max-width: 760px){
-    font-size: 26px;
-    line-height: 1;
-  }
+
 
 
 }
 
-
-
-
 %container {
   position: relative;
   margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 1200px){
+    max-width: 767px;
+    width: 100%;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+    width: 100%;
 
+  }
+}
+
+%btn{
+  margin: 0 auto;
+  border: none;
+  border-radius: 31px;
+  box-shadow: 0px 3px 0 0 #a4006c;
+  background-color: #d4008c;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.7s;
+  display: block;
+  @media (max-width: 767px){
+    font-size: 18px;
+  }
+  &:active,
+  &:focus,
+  &:hover{
+    background-color: #6900b3;
+    box-shadow: 0px 3px 0 0 #530095;
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
 .branding ~ .seminars-container {
   padding-top: 32px;
@@ -71,27 +98,12 @@
 #bg_popup_three{
   display: none!important;
 }
-@import "../../node_modules/slick-carousel/slick/slick.css";
-@import "../../node_modules/slick-carousel/slick/slick-theme.css";
-@import "styles/loader-page";
-@import "styles/variables";
-@import "styles/mixins";
-@import "styles/base";
-@import "styles/header";
-@import "styles/menu";
+
+
+
 @import "styles/hero";
-@import "styles/expectation";
-@import "styles/lectors";
-@import "styles/pricing-timer";
-@import "styles/order";
-@import "styles/package";
-@import "styles/bonus";
+@import "styles/themes";
 @import "styles/video";
+@import "styles/loader";
+@import "styles/loader-page";
 
-@import "styles/theme";
-
-@import "styles/modal-video";
-@import "styles/partners";
-@import "styles/map";
-@import "styles/loader-backdrop";
-@import "styles/footer";

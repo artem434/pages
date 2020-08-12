@@ -1,6 +1,6 @@
 .free-video {
 
-  background-image: linear-gradient(to right, #fda100, #e5bf25);
+  background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
   &__container {
     padding: 0px;
   }
@@ -13,7 +13,7 @@
     line-height: 1.4;
     letter-spacing: normal;
     text-align: center;
-    color: #363636;
+    color: #fff076;
     padding-bottom: 60px;
     text-transform: uppercase;
     @media (max-width: 1200px){
@@ -40,7 +40,7 @@
     line-height: 1;
     letter-spacing: 1.8px;
     text-align: center;
-    color: #bb006f;
+    color: #d1ebff;
     text-transform: uppercase;
     @media (max-width: 767px){
       font-size: 15px;
@@ -84,7 +84,7 @@
       font-style: normal;
       line-height: 1.67;
       letter-spacing: 0.9px;
-      color: #363636;
+      color: #ffffff;
       padding-bottom: 25px;
       @media (max-width: 1200px){
         padding-bottom: 15px;
@@ -96,7 +96,7 @@
       }
     }
     a{
-      color: #363636;
+      color: #ffffff;
       font-weight: 500;
       text-decoration: underline;
       @media (max-width: 767px){
@@ -117,8 +117,8 @@
       height: 355px;
     }
     @media (max-width: 767px){
-      width: 240.9px;
-      height: 135.4px;
+      width: 300px;
+      height: 180px;
       margin: 30px auto 0;
     }
 
@@ -143,7 +143,7 @@
     margin: 60px auto 0;
     text-align: center;
     @media (max-width: 767px){
-      font-size: 16px;
+      font-size: 14px;
       padding: 18px 7px
     }
   }

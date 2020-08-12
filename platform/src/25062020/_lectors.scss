@@ -1,78 +1,157 @@
 .lectors{
-
-  &__container{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    @media (max-width: 1200px){
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  padding: 75px 0;
+  @media (max-width: 767px){
+    padding: 50px 0;
   }
 
-  &__item{
-    @media (max-width: 1200px){
-    width: 100%;
+  p{
+    margin-bottom: 0;
+  }
+  &__container {
+    @extend %container;
+    text-align: center;
+    &:before{
+      top: 300px;
+      right: 300px;
     }
+    &:after{
+      position: absolute;
+      content: "";
+      background: url(images/decor_bg.png) center center no-repeat;
+      width: 1066px;
+      height: 700px;
+      right: 125px;
+      bottom: -250px;
+      z-index: -1;
 
-    img{
-      @media (max-width: 1200px){
-        margin: 0 auto;
-        display: block;
-      }
     }
   }
 
   &__title{
-    display: table;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 1px;
-    color: #fcfdf8;
-    padding: 10px 5px;
-    background-color: #4bbe47;
-    margin-bottom: 40px;
-    @media (max-width: 1200px){
-     margin: -40px auto 15px;
+    @extend %title;
+  }
+
+
+
+
+
+  &__sub-title{
+    @extend %sub-title;
+  }
+  &__item{
+    position: relative;
+    &:nth-child(odd){
+      text-align: right;
+      padding: 140px 500px 170px 0;
+      @media (max-width: 1200px){
+          padding: 140px 345px 170px 0;
+      }
+      @media (max-width: 767px){
+        text-align: center;
+        padding: 285px 0px 0px 0px;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        background: url(images/tm.png) center center no-repeat;
+       width: 359px;
+        height: 537px;
+        top: 100px;
+        right: 25px;
+        @media (max-width: 767px){
+          width: 167px;
+          height: 248px;
+          background: url(images/tm.png) center center no-repeat;
+          background-size: cover;
+          top: 40px;
+          right: 50%;
+          transform: translate(50%, 0px);
+        }
+      }
+
     }
-    @media (max-width: 1200px){
-      margin: 20px auto 15px;
+    &:nth-child(even){
+      text-align: left;
+      padding-left: 500px;
+      @media (max-width: 1200px){
+        padding-left: 385px;
+      }
+      @media (max-width: 767px){
+        padding-left: 0;
+        padding-top: 280px;
+        text-align: center;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        background: url(images/ta.png) center center no-repeat;
+        width: 359px;
+        height: 573px;
+        top: -125px;
+        left: 25px;
+        @media (max-width: 767px){
+          width: 160px;
+          height: 248px;
+          background: url(images/ta.png) center center no-repeat;
+          background-size: cover;
+          top: 40px;
+          left: 50%;
+          transform: translate(-50%, 0px);
+        }
+      }
+
     }
   }
 
   &__name{
-    font-size: 34px;
+    font-size: 60px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.18;
+    line-height: 1.17;
     letter-spacing: normal;
-    text-align: left;
-    color: #6c6e62;
+    color: #c4c3c3;
+    padding-bottom: 50px;
     text-transform: uppercase;
-    @media (max-width: 1200px){
-      font-size: 20px;
-      padding: 0 10px;
+    @media (max-width: 767px){
+      font-size: 36px;
+      line-height: 1.33;
+      padding-bottom: 30px;
     }
   }
 
   &__text{
-    padding-left: 20px;
-    border-left: solid 1px #c8ccb6;
-    @media (max-width: 1200px){
-      padding-left: 0;
-      border-left: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #363636;
+    padding-bottom: 10px;
+    @media (max-width: 767px){
+      font-size: 15px;
+      line-height: 1.33;
+      text-align: left;
+    }
+    br{
+      @media (max-width: 767px){
+        display: none;
+      }
     }
   }
+
+
+
+  &__btn{
+    @extend %btn;
+    margin-top: 100px;
+    @media (max-width: 767px){
+      margin-top: 40px;
+    }
+
+  }
+
 
 
 

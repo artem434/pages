@@ -30,7 +30,7 @@
     position: relative;
     z-index: 2;
     &:before{
-      background-color: #ffc3d8;
+      background-color: #c9cff0;
       content: " ";
       position: absolute;
       left: 50%;
@@ -44,7 +44,7 @@
       }
     }
     &:after{
-      background-color: #eec1d1;
+      background-color: #d8ddfa;
       content: " ";
       position: absolute;
       left: 50%;
@@ -60,14 +60,16 @@
   }
 
   &__block{
-    background-image: linear-gradient(to left, #7b8adc, #2b4ae1);
-    padding: 55px 140px 50px 70px;
+    background-color: #272d52;
+    padding: 55px 86px 50px 70px;
+    display: flex;
+    align-items: center;
+
     @media (max-width: 1200px){
       padding: 55px 40px 50px 70px;
     }
     @media (max-width: 767px){
       padding: 30px 20px;
-      background-image: linear-gradient(to left, #2b4ae1, #2b4ae1);
     }
   }
 

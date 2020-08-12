@@ -60,13 +60,13 @@
   }
 
   &__block{
-    background-color: #311b46;
+    background-image: linear-gradient(to left, #820bac, #5d05fe);
     padding: 55px 140px 50px 70px;
     @media (max-width: 1200px){
       padding: 55px 40px 50px 70px;
     }
     @media (max-width: 767px){
-      padding: 30px 20px;
+      padding: 30px 20px 30px 30px;
     }
   }
   &__list{
@@ -89,6 +89,24 @@
     }
     }
   }
+
+  ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+  ol li {
+    position: relative;
+    counter-increment: my-awesome-counter;
+  }
+  ol li::before {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    content: counter(my-awesome-counter) ". ";
+    color: #fff;
+
+  }
+
   &__icon{
     background-color: #fff;
     padding: 90px 70px;

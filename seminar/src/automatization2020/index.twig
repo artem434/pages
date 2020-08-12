@@ -1,5 +1,1141 @@
 {% set link = page.url('/images') %}
-
+{% set number = 14 %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    content
+
+    <div class="seminar-landing">
+        <div class="heading mw">
+            <div class="inner"><a href="/" class="logo"></a><a href="https://7eminar.ua/events/access" target="_blank" class="entry"><span>М</span>ій кабінет</a>
+                <p></p><a href="/7min" class="video_news"><span>В</span>ідеоновини</a><a href="https://7eminar.ua/" class="video_news"><span>П</span>ередплата</a><a href="/" class="main"><span>Г</span>оловна</a>
+            </div>
+            {#<div class="menu-mob">
+                <input id="menu-checkbox" type="checkbox"/><span class="burger__bg"></span><span class="burger__element"></span>
+                <ul class="menu">
+                    <li><a href="#courses" class="burger__link">ЛЕКТОРИ</a></li>
+                    <li><a href="#courses" class="burger__link">ТЕМИ</a></li>
+                    <li><a href="#order" class="burger__link">ВАРТІСТЬ</a></li>
+                    <li><a href="#order" class="burger__link">ЗАМОВИТИ</a></li>
+                </ul>
+            </div>#}
+        </div>
+        <div class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <p class="hero__title">Автоматизація обліку</p>
+                    <p class="hero__sub-title"><span>{{ number }}</span> навчальних відеокурсів<br/> про роботу в 1С, ЕКПП та Excel
+                    </p><a href="#courses"  class="hero__btn js-scroll-to">ДЕТАЛЬНІШЕ<i class="fa fa-chevron-right"></i></a>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="profession" class="profession">
+            <div class="profession__container">
+            <div class="profession__container">
+                <div class="profession__title"><span>Кому</span> будуть корисними відеокурси?
+                </div>
+                <div class="profession__content">
+                    <ul class="profession__list">
+                        <li><span>•</span> Головному бухгалтеру
+                        </li>
+                        <li><span>•</span> Аудитору
+                        </li>
+                    </ul>
+                    <ul class="profession__list">
+                        <li><span>•</span> Бухгалтеру напрямку
+                        </li>
+                        <li><span>•</span> ФОПу/директору
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       {# <div class="timer">
+            <div class="timer__container">
+                <div id="timer-custom" class="timer__timer">
+                    <p class="timer__title">Обрати відеокурс<br/>за <span>спецціною</span> до <span id="timer-title">{{ page.options['date']|default('') }}</span>
+                    </p>
+                    <div class="pricing-timer"  data-timer="{{ page.options['timer']|default('') }}">
+                        <div class="pricing-timer__inner">
+                            <div class="pricing-timer__box"><span class="days">00</span>дні</div>
+                            <div class="pricing-timer__box"><span class="separate">:</span></div>
+                            <div class="pricing-timer__box"><span class="hours">00</span>год</div>
+                            <div class="pricing-timer__box"><span class="separate">:</span></div>
+                            <div class="pricing-timer__box"><span class="minuts">00</span>хв</div>
+                            <div class="pricing-timer__box"><span class="separate">:</span></div>
+                            <div class="pricing-timer__box"><span class="seconds">00</span>сек</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>#}
+        <div id="courses" class="courses">
+            <div class="courses__container">
+                <div class="courses__tab-content">
+                    <button data-options="all-js" id="all" class="courses__tab active-tab">Всі курси</button>
+                    <button data-options="oneC" class="courses__tab">1С</button>
+                    <button data-options="ekpp" class="courses__tab">ЕКПП</button>
+                    <button data-options="excel" class="courses__tab">Excel</button>
+                </div>
+                <div class="courses__content">
+                    <div class="course excel" id="course_14">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 1 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Excel для початківців на прикладі зарплати</p>
+                                <p class="course__description">6 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-26082020Excel_зп_756','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-26082020Excel_зп_756','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course14" aria-expanded="false" aria-controls="#course14" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-26082020Excel_зп_756"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course14" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Вихід курсу:
+                                        <b>
+                                            26 серпня 2020 року
+                                        </b>
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Функція сумування даних</p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Функція округлення числових даних</p>
+                                <p class="theme__lesson"><b>Урок №3.</b> Функція «Список даних»</p>
+                                <p class="theme__lesson"><b>Урок №4.</b> Форматування комірок</p>
+                                <p class="theme__lesson"><b>Урок №5.</b> Функції «Сортування і Фільтр»</p>
+                                <p class="theme__lesson"><b>Урок №6.</b>  Функції, пов’язані з переглядом готового документу та його друком</p>
+                                <a href=" https://7eminar.com/files/program_excel_zp.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-26082020Excel_зп_756','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-26082020Excel_зп_756','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-26082020Excel_зп_756"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_13">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 2 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Взаєморозрахунки з дебіторами та кредиторами в 1С</p>
+                                <p class="course__description">7 модулів (37 уроків) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-09072020Дебітори_1c_1598','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-09072020Дебітори_1c_1598','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course13" aria-expanded="false" aria-controls="#course13" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-09072020Дебітори_1c_1598"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course13" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        {# <b>
+                                        9 липня 2020 року
+                                    </b>#}
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b>  Аналітичний облік взаєморозрахунків із контрагентами. Загальні параметри</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Довідник «Контрагенти»</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b> Довідник «Договори»</p>
+                                <p class="theme__lesson"><b>Модуль  №4.</b>  Дебітори</p>
+                                <p class="theme__lesson"><b>Модуль  №5.</b> Кредитори</p>
+                                <p class="theme__lesson"><b>Модуль  №6.</b>  Підзвітні операції</p>
+                                <p class="theme__lesson"><b>Модуль  №7.</b> Інші операції з контрагентами. Внутрішні звіти</p>
+                                <a href="https://7eminar.com/files/program__1c_dk.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-09072020Дебітори_1c_1598','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-09072020Дебітори_1c_1598','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-09072020Дебітори_1c_1598"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_12">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 3 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Валютні операції в 1С</p>
+                                <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-11062020Валюта_1c_1599','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-11062020Валюта_1c_1599','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course12" aria-expanded="false" aria-controls="#course12" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-11062020Валюта_1c_1599"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course12" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        {#
+                                        <b>
+                                            16 червня 2020 року
+                                        </b>#}
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b>  Аналітичний облік валютних операцій. Довідники та регістри відомостей: складова при налаштуванні параметрів обліку</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Покупка та продаж іноземної валюти</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b> Придбання запасів за іноземну валюту платником ПДВ</p>
+                                <p class="theme__lesson"><b>Модуль  №4.</b> Експорт товарів платником ПДВ</p>
+                                <p class="theme__lesson"><b>Модуль  №5.</b> Інші валютні операції</p>
+                                <a href="https://7eminar.com/files/program__1c_valiuta.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-11062020Валюта_1c_1599','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-11062020Валюта_1c_1599','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-11062020Валюта_1c_1599"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_11">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 4 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Облік витрат в 1С</p>
+                                <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-26052020_Витрати_1с_1288','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-26052020_Витрати_1с_1288','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course11" aria-expanded="false" aria-controls="#course11" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-26052020_Витрати_1с_1288"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course11" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+
+                                        {# <b>
+                                         1 червня 2020 року
+                                     </b>#}
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b> Аналітичний облік витрат та нормативно-довідникова інформація</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Собівартість реалізації – субрахунки 90 рахунку</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b> Операційні витрати</p>
+                                <p class="theme__lesson"><b>Модуль  №4.</b> Неопераційні витрати</p>
+                                <p class="theme__lesson"><b>Модуль  №5.</b> Відображення витрат майбутніх періодів</p>
+                                <a href="https://7eminar.com/files/program_1c_vytraty.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-26052020_Витрати_1с_1288','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-26052020_Витрати_1с_1288','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-26052020_Витрати_1с_1288"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_10">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 5 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Облік доходів в 1С</p>
+                                <p class="course__description">4 модулі (19 уроків) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-13052020Доходи_1c_1277','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-13052020Доходи_1c_1277','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course10" aria-expanded="false" aria-controls="#course10" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-13052020Доходи_1c_1277"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course10" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+
+                                        {# <b>
+                                      14 травня 2020 року
+                                  </b>#}
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b> Параметри аналітичного обліку доходів та нормативно-довідникова інформація</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Відображення доходів від операційної діяльності – субрахунки 70 рахунку</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b> Відображення інших операційних доходів – субрахунки 71 рахунку</p>
+                                <p class="theme__lesson"><b>Модуль  №4.</b> Фінансові доходи</p>
+                                <a href="https://7eminar.com/files/program_1c_dokhody.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-13052020Доходи_1c_1277','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-13052020Доходи_1c_1277','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-13052020Доходи_1c_1277"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_9">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 6 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Виробництво та собівартість в 1С</p>
+                                <p class="course__description">7 модулів (33 уроки) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-23052020Виробн_1c_1297','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-23052020Виробн_1c_1297','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course9" aria-expanded="false" aria-controls="#course9" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-23052020Виробн_1c_1297"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course9" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль №1.</b> Попередні налаштування системи для обліку виробництва
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №2.</b> Випуск продукції
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №3.</b>  Надання послуг
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №4.</b>  Непрямі виробничі витрати як складова собівартості
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №5.</b> Незавершене виробництво. Типові помилки на 231 рахунку
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №6.</b> Виробництво з давальницької сировини
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №7.</b> Результат виробничої діяльності: прибуток/збиток
+                                </p><a href="https://7eminar.com/files/program__1c_vyrobnytstvo.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-23052020Виробн_1c_1297','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-23052020Виробн_1c_1297','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-23052020Виробн_1c_1297"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course ekpp" id="course_8">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 7 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Електронний кабінет страхувальника на сайті ПФУ</p>
+                                <p class="course__description">6 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-eks_pfu_757','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-eks_pfu_757','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course8" aria-expanded="false" aria-controls="#course8" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-eks_pfu_757"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course8" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b 13.04.2020 р.-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Вхід на Веб-портал ПФУ та огляд структури особистого кабінету страхувальника. Перегляд контактних даних юридичної особи
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Контроль ЄСВ – перевірка сплати, заборгованості
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Перевірка відомостей щодо звітності з ЄСВ
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b>  Отримання Довідки ОК-7 для розрахунку суми виплати за час тимчасової непрацездатності найманим працівникам
+                                </p>
+                                <p class="theme__lesson"><b>Урок №5.</b> Додаток 9 – «Довідка про трудовий та страховий стаж» для розрахунку суми виплати за час тимчасової непрацездатності найманим працівникам
+                                </p>
+                                <p class="theme__lesson"><b>Урок №6.</b> Функція «Надання скан-копій трудової книжки працівника» до ПФУ
+                                </p><a href="https://7eminar.com/files/program_eks_pfu.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-eks_pfu_757','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-eks_pfu_757','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-eks_pfu_757"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_7">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 8 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Кадри в 1С</p>
+                                <p class="course__description">11 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_kadry_1299','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-1c_kadry_1299','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course6" aria-expanded="false" aria-controls="#course6" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_kadry_1299"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course6" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b 13.04.2020 р.-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Попередні кадрові налаштування
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Штатний розпис
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Довідник «Фізична особа»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b>  Довідник «Співробітник організації». Призначення на основне місце роботи (у т.ч. інваліда, з використанням заповненого довідника «Фізична особа»)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №5.</b> Призначення на основне місце роботи (квотного співробітника та по направленню з Центру зайнятості)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №6.</b> Призначення внутрішнього та зовнішнього сумісників по договору цивільно-правового характеру
+                                </p>
+                                <p class="theme__lesson"><b>Урок №7.</b> Кадрові зміни: підвищення посадового окладу, переведення на іншу посаду та в інший підрозділ, звільнення працівника
+                                </p>
+                                <p class="theme__lesson"><b>Урок №8.</b> Особова картка працівника №П-2
+                                </p>
+                                <p class="theme__lesson"><b>Урок №9.</b>  Табель обліку використання робочого часу
+                                </p>
+                                <p class="theme__lesson"><b>Урок №10.</b>  Внутрішні звіти по кадрах
+                                </p>
+                                <p class="theme__lesson"><b>Урок №11.</b> Кадрові дані у зовнішніх звітах
+                                </p><a href="https://7eminar.com/files/program__1c_kadry.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_kadry_1299','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-1c_kadry_1299','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_kadry_1299"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_6">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 9 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">ПДВ в 1С</p>
+                                <p class="course__description">12 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_pdv_1499','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-1c_pdv_1499','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course1" aria-expanded="false" aria-controls="#course1" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_pdv_1499"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course1" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b 13.04.2020 р.-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Попередні ПДВ налаштування
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Облік податкового зобов’язання (очікуваний ПДВ – перша подія реалізація товарів)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Облік податкового зобов’язання (очікуваний ПДВ – перші події оплата авансом та повернення товару від покупця)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b>  Облік податкового зобов’язання, коли оплата за товари/послуги надходить бюджетними коштами
+                                </p>
+                                <p class="theme__lesson"><b>Урок №5.</b> Податкова накладна: створення 3-ма способами, заповнення, вивантаження, друк (підтверджений ПДВ)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №6.</b> Розрахунок коригування до помилкової податкової накладної та РК при поверненні товарів від покупця
+                                </p>
+                                <p class="theme__lesson"><b>Урок №7.</b> Облік податкового кредиту: очікуваний ПДВ (операції з надходження товарів та при оплаті авансом постачальнику), підтверджений ПДВ (вхідна ПН)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №8.</b> Облікові механізми ПДВ: бухгалтерські рахунки обліку 6412, 6431, 6432, 6441, 6442, 315 (оборотно-сальдові відомості, картки рахунків)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №9.</b>  Засоби контролю облікових даних із ПДВ – регістри накопичення
+                                </p>
+                                <p class="theme__lesson"><b>Урок №10.</b>  Реєстр виданих та отриманих податкових накладних як механізм внутрішнього контролю
+                                </p>
+                                <p class="theme__lesson"><b>Урок №11.</b> Податкова декларація з ПДВ: формування, заповнення, вивантаження, друк. Перерахування суми ПДВ до бюджету. Закриття оборотів по рах. 6412
+                                </p>
+                                <p class="theme__lesson"><b>Урок №12.</b> ЄДРПН та Податкова декларація з ПДВ в Електронному кабінеті платника податків
+                                </p><a href="https://7eminar.com/files/program__1c_pdv.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_pdv_1499','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-1c_pdv_1499','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_pdv_1499"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_5">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 10 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Зарплата в 1С</p>
+                                <p class="course__description">9 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_zp_1099','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-1c_zp_1099','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course7" aria-expanded="false" aria-controls="#course7" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_zp_1099"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course7" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b 08.04.2020 р.-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Попередні зарплатні налаштування
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Прийняття працівника на роботу
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Нарахування авансу за відпрацьований період у першій половині місяця
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b> Базовий варіант нарахування заробітної плати за відпрацьований місяць
+                                </p>
+                                <p class="theme__lesson"><b>Урок №5.</b> Утримання аліментів. Підвищення посадових окладів
+                                </p>
+                                <p class="theme__lesson"><b>Урок №6.</b> Резерв відпусток та нарахування відпустки
+                                </p>
+                                <p class="theme__lesson"><b>Урок №7.</b> Нарахування лікарняних за рахунок коштів роботодавця та Фонду соціального страхування
+                                </p>
+                                <p class="theme__lesson"><b>Урок №8.</b> Розширений варіант нарахування заробітної плати (у місяці підвищення посадових окладів, нарахування лікарняних, відпускних та утримання аліментів)
+                                </p>
+                                <p class="theme__lesson"><b>Урок №9.</b> Зарплатна звітність
+                                </p><a href="https://7eminar.com/files/program__1c_zp.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_zp_1099','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-1c_zp_1099','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_zp_1099"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_4">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 11 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Каса та банк в 1С</p>
+                                <p class="course__description">2 модулі (24 уроки) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_kasa_1399','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-1c_kasa_1399','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course5" aria-expanded="false" aria-controls="#course5" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_kasa_1399"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course5" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b> Касові операції
+                                </p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Банківські операції
+                                </p><a href="https://7eminar.com/files/program_1c_kasa.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_kasa_1399','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-1c_kasa_1399','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_kasa_1399"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course ekpp" id="course_3">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 12 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Електронний кабінет платника податків для юросіб</p>
+                                <p class="course__description">6 уроків та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-ekpp_jur_758','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-ekpp_jur_758','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course4" aria-expanded="false" aria-controls="#course4" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-ekpp_jur_758"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="course4" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b 25.03.2020 р.-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Вхід до приватної частини ЕК. Перегляд облікових даних юридичної особи
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Меню «Перегляд звітності» та «Введення звітності»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Меню «Реєстрація ПН/РК»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b>  Меню «Єдиний реєстр податкових накладних»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №5.</b>  Меню «Система електронного адміністрування ПДВ»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №6.</b>  Меню «Стан розрахунків із бюджетом»
+                                </p><a href="https://7eminar.com/files/program__ekpp_jur.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-ekpp_jur_758','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-ekpp_jur_758','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-ekpp_jur_758"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course ekpp" id="course_2">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 13 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Електронний кабінет платника податків для ФОП</p>
+                                <p class="course__description">4 уроки та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total"> {{shop_price('курс-ekpp_fop_759','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-ekpp_fop_759','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course3" aria-expanded="false" aria-controls="#course3" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-ekpp_fop_759"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course3" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Урок №1.</b> Вхід до приватної частини ЕК. Перегляд облікових даних фізичної особи – підприємця
+                                </p>
+                                <p class="theme__lesson"><b>Урок №2.</b> Меню «Перегляд звітності»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №3.</b>  Меню «Введення звітності»
+                                </p>
+                                <p class="theme__lesson"><b>Урок №4.</b>  Меню «Стан розрахунків з бюджетом»
+                                </p><a href="https://7eminar.com/files/program__ekpp_fop.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-ekpp_fop_759','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-ekpp_fop_759','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-ekpp_fop_759"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_1">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 14 із  <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">ФОП в 1С</p>
+                                <p class="course__description">8 модулів (28 уроків) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_fop_1199','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-1c_fop_1199','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course2" aria-expanded="false" aria-controls="#course2" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_fop_1199"/>
+                                            <button type="submit" rel="order" class="btn">Замовити</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course2" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Курс доступний для перегляду
+                                        <!--=" "-->
+                                        <!--b-->
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль №1.</b> Попередні налаштування системи для роботи фізичної особи – підприємця
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №2.</b> Довідники: номенклатура, контрагенти
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №3.</b>  Реалізація товару. Продаж послуги
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №4.</b>  Придбання товарів, послуг. Купівля МШП, НМНА, ОЗ. Взаєморозрахунки з контрагентами
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №5.</b> Управлінський облік готівкових та банківських операцій у ФОПа
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №6.</b> ПДВ у ФОПа
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №7.</b> Наймані працівники, заробітна плата, звітність із зарплати
+                                </p>
+                                <p class="theme__lesson"><b>Модуль №8.</b> Звітність на спрощеній та загальній системі оподаткування
+                                </p><a href="https://7eminar.com/files/program_1c_fop.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-1c_fop_1199','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-1c_fop_1199','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_fop_1199"/>
+                                                <button type="submit" rel="order" class="btn">Замовити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="certificate" class="certificate">
+            <div class="certificate__container">
+                <div class="certificate__title">Що ви <span>отримаєте</span>?
+                </div>
+                <div class="certificate__content">
+                    <ul class="certificate__list">
+                        <li><span>•</span> Записи відеокурсів
+                        </li>
+                        <li><span>•</span> Сертифікат
+                        </li>
+                        <li><span>•</span> Відповіді на запитання
+                        </li>
+                    </ul>
+                    <picture class="certificate__img"><img src="{{ link }}/diplom.jpg" alt="certificate"/>
+                    </picture>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="free-video" class="free-video">
+            <div class="free-video__container">
+                <div class="free-video__content">
+                    <p class="free-video__title">Разом ще дешевше!</p>
+                    <div class="free-video__block">
+                        <div class="free-video__text">
+                            <p>Хочете зекономити свої кошти та отримати доступ до всіх відеокурсів з автоматизації обліку та інших важливих бухгалтерських тем?</p>
+                            <p>Передплатіть Бухгалтерську Відеоплатформу №1.</p><a href="https://7eminar.ua" target="_blank" class="js-banner-link">Детальніше про відеоплатформу</a>
+                        </div>
+                        <div class="free-video__video">
+                            <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div><a href="https://7eminar.ua" target="_blank" class="free-video__btn js-banner-link">Передплатити зі знижкою</a>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="container partners__container">
+                <ul class="partners__list">
+                    <li><a href="https://www.otpbank.com.ua/smb/products-financing/" target="_blank" rel="nofollow"><img src="{{ link }}/logo_otp.svg"  width="170" alt="otpbank" /></a></li>
+                    <li><a class="logonoclik" href="https://7eminar.com/" target="_blank"><img class="img_partners1" style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" /></a></li>
+                    <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит" /></a></li>
+                </ul>
+              {#  <ul class="partners__list">
+                    <li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></li>
+                    <li><a href="https://kraft.net.ua" target="_blank" class="logonoclik"><img style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" class="img_partners1"/></a></li>
+                </ul>#}
+            </div>
+        </div>
+        <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
+            <div role="document" class="modal-dialog">
+                <div id="closeModal" data-dismiss="modal" class="close-modal close-modal-video"></div>
+                <div class="modal-content">
+                    <div class="player"></div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-present" tabindex="-1" role="dialog" class="modal-present modal fade">
+            <div role="document" class="modal-dialog">
+                <div data-dismiss="modal" class="close-modal"></div>
+                <div class="modal-content">
+                    <div class="modal-present__content"></div>
+                </div>
+            </div>
+        </div>
+        <div id="loader-page" class="loader-page">
+            <div class="dots">
+                <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>

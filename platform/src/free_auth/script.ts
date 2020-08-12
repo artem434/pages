@@ -7,7 +7,7 @@ SystemJS.import('jquery').then(function ($) {
             e.preventDefault()
             SystemJS.import('@clients').then(function (clients) {
                 clients.Auth.login($('[name="email"]', e.currentTarget).val(), $('[name="password"]', e.currentTarget).val()).then(function (client) {
-                    location.href = '/events/1265'
+                    location.href = '/events/1447'
                 })
             })
         })

@@ -96,28 +96,21 @@
     left: 0;
     right: 0;
     height: 100%;
-    background: #0c0a0b url(images/bg-min.jpg) no-repeat top;
-    -webkit-animation: fade 8s;
-    animation: fade 8s;
+    background: #000 url(images/posters-min-min.jpg) no-repeat top;
+    @media (max-width: 1200px){
+      background: #000 url(images/bg_hero_767-min.png) no-repeat top;
+    }
+    @media (max-width: 767px){
+      background: #000 url(images/bg_hero_767-min.png) no-repeat top;
+      background-size: contain;
+      top: 56px;
+    }
+
   }
-  @-webkit-keyframes fade{0%{opacity:0}25%{opacity:.1}to{opacity:1}};
-  @keyframes fade{0%{opacity:0}25%{opacity:.1}to{opacity:1}};
   @media (max-width: 767px){
     background: none;
     position: relative;
-    @at-root .webp & {
-      background:linear-gradient(0deg, #000 , #000 );
-    }
-    /*&:before{
-      position: absolute;
-      content: " ";
-      left: 50%;
-      bottom: 0;
-      transform: translate(-50%,0%);
-      background: url(images/bg_320.png) bottom  center no-repeat;
-      width: 320px;
-      height: 314px;
-    }*/
+
 
   }
   .wrapper__bg{
@@ -164,6 +157,30 @@
   }
 
 }
+
+/*.wrapper__profits{
+  .profits__block{
+    .profits__item{
+
+      @media (max-width: 760px){
+        &:hover{
+          box-shadow: none;
+          outline: none!important;
+
+        }
+        &:hover .profits__icon {
+          color: #333333;
+
+        }
+        &:hover .profits__text{
+          color: #585858;
+
+        }
+      }
+
+    }
+  }
+}*/
 
 .wrapper__order .block-order .block-order__item--twelve .block-order--titel:before{
   content: none;
@@ -459,16 +476,9 @@
 }
 
 
-.wrapper__profits{
-  border-top: solid 2px #1a1a1a;
 
-}
 
 @import "reviews.scss";
-
-
-
-
 
 .wrapper__waiting{
 
@@ -590,7 +600,8 @@
 
 @import "normal.scss";
 @import "themes.scss";
-@import "animate";
+@import "packages.scss";
+
 .is-active{
   display: block;
 }

@@ -1,5 +1,5 @@
-{% set link_platform_order = "/?utm_campaign=perevirky_0906_platform&utm_content=knopka_tabl_tsin&utm_medium=refferal&utm_source=7eminar.ua" %}
-{% set link_platform_info = "/0?utm_campaign=perevirky_0906_platform&utm_content=link_shapka&utm_medium=refferal&utm_source=7eminar.ua#order" %}
+{% set link_platform_order = "https://promo.dtkt.ua/7eminar" %}
+{% set link_platform_info = "https://promo.dtkt.ua/7eminar" %}
 {% set link = page.url('/images') %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
     <div class="hero">
@@ -12,6 +12,14 @@
             </div>
         </div>
         <div class="hero__container container">
+            <div class="hero__top-container">
+                <a class="hero__logo-dk" href="https://dtkt.ua/about" target="_blank">
+                    <img src="{{ link }}/logo-dk-blue1.png" width="200" height="52" alt="«Дебет-Кредит» | Бухгалтерський сервіс №1 в Україні">
+                </a>
+                <a class="hero__logo-seminar" href="https://7eminar.com/" target="_blank">
+                    <img src="{{ link }}/7minar_logo_color.png" width="186" height="42" alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+                </a>
+            </div>
             <div class="menu ">
                 <div class="menu__container">
                     <ul class="menu__list">
@@ -26,15 +34,16 @@
             </div>
             <div class="hero__content">
                 <div class="hero__item">
-                    <div class="hero__info"><p><span>Безкоштовний ONLINE </span> майстер-клас</p>
-                           <p><span>9 червня</span> 2020 року | 11:00–12:30</p> </div>
+                    <div class="hero__rec">
+                        <p>Відеозапис МАЙСТЕР-КЛАСУ</p>
+                    </div>
                     <p class="hero__title">Податковий контроль <br>
                         <span>та перевірки:</span></p>
                     <p class="hero__sub-title">як захиститися за новими правилами</p>
                           <div  class="hero__item  form-wr">
                              <div class="form" id="form">
                                  <div class="form__body">
-                                     <div class="form__title">Реєстрація</div>
+                                     <div class="form__title">ВВЕДІТЬ СВОЇ ДАНІ ТА ОТРИМАЙТЕ ПОДАРУНОК</div>
                                      <form  class="free-demo" >
                                          <div class="form-group">
                                              <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
@@ -49,7 +58,7 @@
                                          </div>
                                          <input class="article"  type="hidden" value="онлайн-demo_09062020Перевірки"/>
                                          <input class="utm" name="options[utm]" type="hidden" value=""/>
-                                         <input class="dealer" name="dealer" type="hidden" value="4"/>
+                                         <input class="dealer" name="dealer" type="hidden" value="3"/>
                                          <div class="form__btn">
                                              <button type="submit" class="btn btn-default">зареєструватися </button>
                                          </div>
@@ -104,7 +113,7 @@
         </div>
     </div>
 
-    <div class="info"  id="info">
+   {# <div class="info"  id="info">
         <div class="info__container container">
             <div class="info__content">
                 <div class="info__item">
@@ -126,7 +135,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>#}
 
     <div id="profession" class="profession">
        <div class="profession__container">
@@ -150,7 +159,7 @@
                    <p class="profession__name"><span>юристу</span></p>
                </li>
            </ul>
-           <a href="#order" class="profession__btn js-scroll-to">зареєструватися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+           <a href="#order" class="profession__btn js-scroll-to">зареєструватися безкоштовно<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
        </div>
     </div>
 
@@ -180,14 +189,14 @@
 
     <div id="themes" class="themes">
         <div class="themes__container">
-            <p class="themes__sub-title">Регламент та</p>
+            <p class="themes__sub-title">програма</p>
             <p class="themes__title">Теми  МАЙСТЕР-КЛАСУ</p>
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
-                            <p class="themes__time">11:00–12:00</p>
-                            <p class="themes__lector-name">Олександр Смирнов</p>
+                            <p class="themes__time">Олександр Смирнов</p>
+                            {# <p class="themes__lector-name">Олександр Смирнов</p>#}
                         </div>
                     </div>
                     <div id="lesson1" class="themes__more collapse in">
@@ -212,11 +221,11 @@
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
-                            <p class="themes__time">12:00–12:30</p>
-                            <p class="themes__lector-name">Олександр Смирнов, <br> Тетяна Мойсеєнко</p>
+                            <p class="themes__time">Тетяна Мойсеєнко</p>
+                            {#<p class="themes__lector-name">Олександр Смирнов, <br> Тетяна Мойсеєнко</p>#}
                         </div>
                         <div class="themes__text">
-                            <p class="themes__lessons-titel">Відповіді на запитання у форматі інтерв’ю</p>
+                            <p class="themes__lessons-titel">Кадрові та трудові штрафи</p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +236,7 @@
 
     <div id="gifts" class="gifts">
         <div class="gifts__container">
-            <p class="gifts__sub-title">брошура</p>
+            <p class="gifts__sub-title">БОНУСИ</p>
             <p class="gifts__title">У подарунок</p>
             <div class="gifts__item">
                 <div class="gifts__box">
@@ -237,6 +246,18 @@
                         </svg>
                         <div class="gifts__text">
                             <p class="gifts__lessons-titel">Зразок письмової відповіді <br> на запит ДПС</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gifts__item">
+                <div class="gifts__box">
+                    <div class="gifts__header">
+                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
+                        </svg>
+                        <div class="gifts__text">
+                            <p class="gifts__lessons-titel">Універсальна таблиця  <br> нових штрафів</p>
                         </div>
                     </div>
                 </div>
@@ -300,10 +321,10 @@
 
     <div id="order" class="order">
         <div class="order__container container">
-            <p class="order__sub-title">зручність</p>
-            <p class="order__title">оберіть тип перегляду</p>
+            <p class="order__title">ЯК ОТРИМАТИ ВІДЕОЗАПИС МАЙСТЕР-КЛАСУ? </p>
+            <p class="order__title"> ПРИЄДНАЙТЕСЯ ДО БУХГАЛТЕРСЬКОЇ ВІДЕОПЛАТФОРМИ №1</p>
             <div class="order__packages">
-                <div class="order__package package order__package--gold">
+              {#  <div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -318,7 +339,7 @@
                             <a href="#form"  class="btn">реєстрація</a>
                         </div>
                     </div>
-                </div>
+                </div>#}
                 {# <div class="order__package package order__package--standart ">
                      <div class="package__head">
                          <p class="package__header  "> online + запис</p>
@@ -337,22 +358,14 @@
                  </div>#}
                 <div class="order__package package order__package--platform ">
                     <div class="package__head">
-                        <p class="package__header  "> online + запис
-                            {#<br>
-                            відеоплатформа №1#}</p>
+
                     </div>
                     <div class="package__body">
                         <p class="package__format"></p>
                         <ul class="package__list">
-                            <li>Online-трансляція</li>
-                            <li>Відповіді на запитання</li>
-                            <li >Сертифікат учасника</li>
+                            <li > <b>Доступ до цього відеопроєкту</b>, а також ще до <b>{{ shop_price('онлайн-platform_price','courses') }}+</b> відеокурсів, вебінарів та трансляцій на усі найважливіші бухгалтерські теми <b>за супервигідною ціною</b></li>
                             <li >Подарунки від лекторів</li>
-                            <li >Відеозапис</li>
-                            <li >Доступ до {{ shop_price('онлайн-platform_price','courses') }}+
-                                відеокурсів, вебінарів
-                                та трансляцій
-                                7eminar.com</li>
+                            <li >Сертифікат учасника</li>
                         </ul>
                         {#<ul class="package__list"><li > <b>Доступ до цього
                                 відеопроєкту</b>, а також
@@ -362,6 +375,7 @@
                             бухгалтерські теми
                             <b> за супервигідною ціною</b></li></ul>#}
                         <p class="package__price  package__price--platform "><span>{{ shop_price('онлайн-platform_price','month') }} грн/міс.</span></p>
+                        <p class="package__old-price  "><s>{{ shop_price('онлайн-platform_price','line') }} грн/міс.</s></p>
                     </div>
                     <div class="package__footer">
                         <div class="package__presents--wr"></div>
@@ -373,6 +387,8 @@
             </div>
         </div>
     </div>
+
+
 
 
     <div class="partners">
@@ -406,7 +422,11 @@
 
     <div id="loader-page" class="loader-page">
         <div class="dots">
-            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
         </div>
     </div>
 </div>

@@ -18,8 +18,8 @@
 
   }
 
-    &__btn{
-      max-width: 300px;
+  &__btn{
+    max-width: 300px;
     width: 100%;
     margin: 30px auto 0;
     background-color: #79e975;
@@ -100,6 +100,14 @@
 
   &__body{
     padding: 35px 0;
+    ul{
+      list-style-type: disc;
+      text-align: left;
+      @media (max-width: 767px){
+        padding-left: 15px;
+      }
+
+    }
     br{
       @media (max-width: 767px){
         display: none;
@@ -118,7 +126,7 @@
     color: #61a45f;
     margin-bottom: 20px;
     @media (max-width: 767px){
-     text-align: center;
+      text-align: center;
     }
   }
 
@@ -197,7 +205,7 @@
     }
     &--og{
       &:before{
-      background: url(images/og.png) center center no-repeat;
+        background: url(images/og.png) center center no-repeat;
       }
     }
 
@@ -221,15 +229,23 @@
         background: url(images/os.png) center center no-repeat;
       }
     }
-   /* &--mk{
+    &--vv{
       &:before{
-        background: url(images/mk.png) center center no-repeat;
+        background: url(images/006.png) center center no-repeat;
       }
-    }*/
+    }
 
     &--tm{
       &:before{
         background: url(images/tm.png) center center no-repeat;
+      }
+    }
+  }
+
+  &__body{
+    ul{
+      li{
+        padding-bottom: 5px;
       }
     }
   }
@@ -258,7 +274,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #373737;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     @media (max-width: 767px){
       text-align: center;
     }

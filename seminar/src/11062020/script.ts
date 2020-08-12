@@ -7,9 +7,9 @@ import 'cdnjs/waypoints/4.0.1/jquery.waypoints.min.js';
 
 
 
-
 jQuery(($) => {
     const viewport = $("meta[name=viewport]");
+
     viewport.attr('content', 'width=device-width,initial-scale=1');
 
     const loaderPage = $('#loader-page');
@@ -60,14 +60,18 @@ jQuery(($) => {
         $('.js-platform-banner').show();
         $('.header').hide();
         $('.heading').show();
+        const loaderPage = $('#loader-page');
+        loaderPage.css("opacity", "1");
+        loaderPage.delay(350).fadeOut('slow');
     }
 
     if (document.location.host != "7eminar.com") {
+        $('.js-platform-link').attr('href', '/platform');
 
     }
 
     if (document.location.host == "seminars.dtkt.ua") {
-        $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
+        $('.js-platform-link').attr('href', 'https://promo.dtkt.ua/7eminar');
         $('.js-platform-banner').show();
         $('.js-btn-hidden').show();
     } else {

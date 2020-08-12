@@ -68,7 +68,9 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/s
                 }
                 if (document.location.host != "7eminar.com") {
                     $('.js-platform-link').attr('href', '/platform');
+
                 }
+
                 if (document.location.host == "seminars.dtkt.ua") {
                     $('.js-platform-link').attr('href', 'https://promo.dtkt.ua/7eminar');
                     $('.js-platform-banner').show();

@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 $color: #ffdbdb;
 
 .advantages {
@@ -48,7 +48,7 @@ $color: #ffdbdb;
       line-height: 0.54;
       letter-spacing: normal;
       text-align: center;
-      color: #e3e2e2;
+      color: #e2daed;
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%,-50%);
@@ -112,7 +112,7 @@ $color: #ffdbdb;
 
   &__text{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
@@ -133,9 +133,9 @@ $color: #ffdbdb;
   }
 
   &__icon{
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#1845bc), to(#0a1763));
-    background-image: -o-linear-gradient(bottom, #1845bc, #0a1763);
-    background-image: linear-gradient(to top, #1845bc, #0a1763);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#df4376), to(#ea5c80));
+    background-image: -o-linear-gradient(bottom,  #df4376, #ea5c80);
+    background-image: linear-gradient(to top, #df4376, #ea5c80);
     -webkit-box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0px 15px 35px 0 rgba(0, 0, 0, 0.15);
     width: 165px;
@@ -151,9 +151,6 @@ $color: #ffdbdb;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     &:hover{
       .color-svg{
         fill: rgba(255, 255, 255, 0.62);
@@ -168,11 +165,7 @@ $color: #ffdbdb;
       fill:  #fff;
     }
 
-    svg{
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
+
   }
 
   &__btn{

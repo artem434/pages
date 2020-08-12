@@ -1,133 +1,136 @@
+{% set link_platform_order = "/?utm_campaign=conference1305_platform&utm_content=knopka_tabl_tsin&utm_medium=refferal&utm_source=7eminar.ua" %}
+{% set link_platform_info = "/?utm_campaign=conference1305_platform&utm_content=link_shapka&utm_medium=refferal&utm_source=7eminar.ua" %}
+{% set link = page.url('/images') %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-<div class="hero">
-    <div class="hero__container container">
-        {#<div class="menu ">
-            <div class="menu__container">
-                <ul class="menu__list">
-                    <li><a href="#lector">Лектори</a></li>
-                    <li><a href="#lector"> вебінар 1</a></li>
-                    <li><a href="#lector2"> вебінар 2</a></li>
-                    <li><a href="#lector3">вебінар 3</a></li>
-                    <li><a href="#theme">Теми</a></li>
-                    <li><a href="#order">Замовити</a></li>
-                </ul>
-                <ul class="menu__list">
-                    <li><a href="https://7eminar.com/">IНШІ СЕМІНАРИ</a></li>
-                </ul>
-            </div>
-        </div>#}
-        <div class="hero__content">
-            <div class="hero__item">
-                {#<div class="hero__info">
-                    <div class="information">
-                        <p class="information__title">27 <span class="month"> квітня </span> <span class="gray">|</span> <span class="time">11:00–16:00</span></p>
-                        <p class="information__date">Безкоштовна <span>ONLINE-конференція</span></p>
+    <div class="hero">
+        <div class="hero__container container">
+            {#<div class="menu ">
+                <div class="menu__container">
+                    <ul class="menu__list">
+                        <li><a href="#lector">Лектори</a></li>
+                        <li><a href="#lector"> вебінар 1</a></li>
+                        <li><a href="#lector2"> вебінар 2</a></li>
+                        <li><a href="#lector3">вебінар 3</a></li>
+                        <li><a href="#theme">Теми</a></li>
+                        <li><a href="#order">Замовити</a></li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li><a href="https://7eminar.com/">IНШІ СЕМІНАРИ</a></li>
+                    </ul>
+                </div>
+            </div>#}
+            <div class="hero__content">
+                <div class="hero__item">
+                    {#<div class="hero__info">
+                        <div class="information">
+                            <p class="information__title">13 <span class="month"> травня </span> <span class="gray">|</span> <span class="time">11:00–13:30</span></p>
+                            <p class="information__date">Безкоштовна <span>ONLINE-конференція</span></p>
+                        </div>
+                    </div>#}
+                    <div class="hero__date">
+                        <p>Відеозапис ONLINE-КОНФЕРЕНЦІЇ</p>
                     </div>
-                </div>#}
-                <div class="hero__date">
-                    <p>Відеозапис ONLINE-КОНФЕРЕНЦІЇ</p>
-                </div>
-                <div class="hero__title">
-                    <p>Що (не)можна робити у травні</p>
-                </div>
-                <div class="hero__sub-title">
-                    зарплата, ФОП, податки, оренда, Інтернет-торгівля
-                </div>
-                <div class="gift">
-                    <p>Подарунок за реєстрацію: <br> <span>брошура  «Зразки заповнення ПН та РК»</span></p>
+                    <div class="hero__sub-title">
+                        Бухгалтерське життя під час та після карантину:
+                    </div>
+                    <div class="hero__title">
+                        <p>ЗАПІЗНІЛІ ДОКУМЕНТИ, ПДВ та ПН, <br>
+                            ПЕРЕВІРКИ, ЗАРПЛАТА та КАДРИ</p>
+                    </div>
 
+                    <div class="gift">
+                        <p>Подарунок за реєстрацію: <br> <span>10 прикладів кадрових документів</span></p>
+
+                    </div>
+                    <p  class="arrow"><span></span><span></span><span></span></p>
                 </div>
-                <p  class="arrow"><span></span><span></span><span></span></p>
-            </div>
-            <div class="hero__item  form-wr">
-                    <div class="form" id="form">
-                        <div class="form__title">Реєстрація діє ще</div>
-                        <div class="timer">
-                            <div class="timer__box">
-                                <div class="timer__mins">00</div><span> хв</span>
-                            </div><span class="timer__separate">:</span>
-                            <div class="timer__box">
-                                <div class="timer__secs">00 </div><span> сек</span>
+                <div class="hero__item  form-wr">
+                        <div class="form" id="form">
+                            <div class="form__title">Реєстрація діє ще</div>
+                            <div class="timer">
+                                <div class="timer__box">
+                                    <div class="timer__mins">00</div><span> хв</span>
+                                </div><span class="timer__separate">:</span>
+                                <div class="timer__box">
+                                    <div class="timer__secs">00 </div><span> сек</span>
+                                </div>
+                            </div>
+                            <div class="form__body">
+                                <form  class="free-demo" >
+                                    <div class="form-group">
+                                        <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input  name="email" type="email" placeholder="Email" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                                    </div>
+                                    <input class="article"  type="hidden" value="онлайн-demo13052020"/>
+                                    <input class="utm" name="options[utm]" type="hidden" value=""/>
+                                    <input class="dealer" name="dealer" type="hidden" value="4"/>
+                                    <div class="form__btn">
+                                        <button type="submit" class="btn btn-default">зареєструватися </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="form__body">
-                            <form  class="free-demo" >
-                                <div class="form-group">
-                                    <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
-                                </div>
 
-                                <div class="form-group">
-                                    <input  name="email" type="email" placeholder="Email" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
-                                </div>
-
-                                <div class="form-group">
-                                    <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
-                                </div>
-                                <input class="article"  type="hidden" value="онлайн-demo27042020"/>
-                                <input class="utm" name="options[utm]" type="hidden" value=""/>
-                                <input class="dealer" name="dealer" type="hidden" value="4"/>
-                                <div class="form__btn">
-                                    <button type="submit" class="btn btn-default">зареєструватися </button>
-                                </div>
-                            </form>
-                        </div>
+                </div>
+                <div class="lectors hidden-md hidden-sm hidden-lg">
+                    <div class="lectors__name ">
+                        <p>Ірина <br> <span>Зубрицька</span></p>
+                        <p>Олександр<br> <span>Смирнов</span> </p>
+                        <p>Тетяна <br> <span> Мойсеєнко</span></p>
+                        <p>Тимур<br> <span>Алієв</span>  </p>
+                        <p>Сергій <br> <span>Дробоття</span>  </p>
                     </div>
-
-            </div>
-            <div class="lectors hidden-md hidden-sm hidden-lg">
-                <div class="lectors__name ">
-                    <p>Тетяна <br> Мойсеєнко</p>
-                    <p>Мар’яна <br> Кавин</p>
-                    <p>Вікторія <br> Величко</p>
-                    <p>Олександр<br> Смирнов</p>
-                    <p>Ірина <br>  Губіна</p>
-                    <p>Тимур<br>  Алієв</p>
                 </div>
-            </div>
-            <div class="lectors hidden-xs">
-                <div class="lectors__name ">
-                    <p>Олександр<br> Смирнов</p>
-                    <p>Вікторія <br> Величко</p>
-                    <p>Мар’яна <br> Кавин</p>
-                    <p>Тетяна <br> Мойсеєнко</p>
-                    <p>Ірина <br>  Губіна</p>
-                    <p>Тимур<br>  Алієв</p>
+                <div class="lectors hidden-xs">
+                    <div class="lectors__name ">
+                        <p>Ірина <br> <span>Зубрицька</span></p>
+                        <p>Олександр<br> <span>Смирнов</span> </p>
+                        <p>Тетяна <br> <span> Мойсеєнко</span></p>
+                        <p>Тимур<br> <span>Алієв</span>  </p>
+                        <p>Сергій <br> <span>Дробоття</span>  </p>
 
-
+                    </div>
                 </div>
+                <p class="lectors__title">лектори</p>
             </div>
         </div>
     </div>
-</div>
 
-{#<div class="info"  id="info">
-    <div class="info__container container">
-        <div class="info__content">
-            <div class="info__item">
-                <div class="info__title info__title--online">Online-трансляція <br> <span>безкоштовно <br> 27 квітня, <br> 11:00–16:00</span></div>
-                <a class="info__link" href="#form">Реєстрація обов’язкова</a>
-            </div>
-            <div class="info__item">
-                <div class="info__title info__title--rec">Відеозапис online-конференції<br> <span>199 грн</span></div>
-                <a class="info__link" href="#order">Хочу дивитися</a>
-            </div>
-            <div class="info__item info__item--questions">
-                <div class="info__title info__title--questions">У чаті трансляції <br> <span>Відповіді на <br> ваші запитання</span></div>
-                <a class="info__link" href="#form">Зареєструватися</a>
+   {# <div class="info"  id="info">
+        <div class="info__container container">
+            <div class="info__content">
+                <div class="info__item">
+                    <div class="info__title info__title--online">Online-трансляція <br> <span>безкоштовно <br> 13 травня, 11:00</span></div>
+                    <a class="info__link" href="#form">Реєстрація обов’язкова</a>
+                </div>
+                <div class="info__item">
+                    <div class="info__title info__title--rec">Відеозапис конференції<br> <span>199 грн</span></div>
+                    <a class="info__link" href="#order">Хочу дивитися</a>
+                </div>
+                <div class="info__item info__item--questions">
+                    <div class="info__title info__title--questions">У чаті трансляції <br> <span>Відповіді на <br> ваші запитання</span></div>
+                    <a class="info__link" href="#form">Зареєструватися</a>
 
+                </div>
+                <div class="info__item info__item--platform">
+                    <div class="info__title info__title--platform"> <span class="text-platform">Бухгалтерська  <br> відеоплатформа №1 </span> <span>Доступ до <br>160+ курсів </span>
+                        <br><span class="price-platform"> 99 грн</span> </div>
+                    <a class="info__link" href="{{ link_platform_info }}" target="_blank">Детальніше</a>
+
+                </div>
             </div>
-            <div class="info__item info__item--platform">
-                <div class="info__title info__title--platform"> <span class="text-platform">Бухгалтерська  <br> відеоплатформа №1 </span> <span>Доступ до <br>150+ курсів </span>
-                    <br><span class="price-platform"> 99 грн</span> </div>
-                <a class="info__link" href="/" target="_blank">Детальніше</a>
+            <div class="info__content">
 
             </div>
         </div>
-        <div class="info__content">
-
-        </div>
-    </div>
-</div>#}
+    </div>#}
 
     <div id="theme" class="themes">
         <div class="container theme__container">
@@ -135,169 +138,106 @@
             <div class="themes__item">
                 <div class="themes__header"><p>теми <br> online-конференції</p></div>
                 <div class="themes__body">
-                    {#<p class="themes__time">11:00–13:00</p>#}
 
                     <ul class="themes__list lector">
-                        <li class="lector__item lector__item--vv">
-                            <div class="lector__body">
-                                <p class="lector__title">ПДВ: податкові капкани весняного карантину</p>
-                                <p class="lector__info">  Вікторія Величко, сертифікований тренер, практикуючий <br> консультант з питань оподаткування</p>
-                            </div>
-                        </li>
                         <li class="lector__item lector__item--ta">
                             <div class="lector__body">
-                                <p class="lector__title">     Працювати (не)можливо звільнити</p>
-                                <p class="lector__info">     Тимур Алієв, консультант з питань бухгалтерського обліку     <br>       та оподаткування</p>
+                              {#  <p class="themes__time">11:00–11:30</p>#}
+                                <p class="lector__title">Післякарантинний поетапний вихід на роботу: з чого почати кадрове документальне оформлення і якими кадровими документами закрити перебування на карантині</p>
+                                <p class="lector__info"> Тимур Алієв, консультант з питань бухгалтерського обліку та оподаткування</p>
                             </div>
                         </li>
-                        <li class="lector__item lector__item--ig">
+                        <li class="lector__item lector__item--iz">
                             <div class="lector__body">
-                                <p class="lector__title">Інтернет-торгівля як працюючий бізнес: розрахунки, <br> доставка, РРО і не тільки</p>
-                                <p class="lector__info">   Ірина Губіна, головний редактор 7eminar.com, експерт з податкового  <br> та бухгалтерського обліку</p>
+                              {#  <p class="themes__time">11:30–12:00</p>#}
+                                <p class="lector__title"> Запізнілі документи або «самоакт»: як зробити правильно? Документуємо реальність господарської операції. Особливості документування послуг</p>
+                                <p class="lector__info">   Ірина Зубрицька, податковий консультант, судовий експерт-економіст, аудитор, оцінювач</p>
                             </div>
                         </li>
-                        <li class="lector__item lector__item--mk">
-                            <div class="lector__body">
-                                <p class="lector__title"> ФОПівські ЄСВ і ЄП: порахувати та сплатити вчасно</p>
-                                <p class="lector__info">   Мар’яна Кавин, податковий консультант CAP/СІРА, АССА DipIFR, IFA</p>
-                            </div>
-                        </li>
-
                         <li class="lector__item lector__item--os">
                             <div class="lector__body">
-                                <p class="lector__title">  Платити / не платити орендну плату і податки. <br>  Ризики та відповідальність</p>
+                                {#<p class="themes__time">12:00–12:30</p>#}
+                                <p class="lector__title">Післякарантинні тотальні перевірки бізнесу. Бенефіціарні оновлення в державному реєстрі. Фінмоніторинг карткових переказів (про 5000 грн і не тільки)</p>
                                 <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
+                            </div>
+                        </li>
+                        <li class="lector__item lector__item--sd">
+                            <div class="lector__body">
+                               {# <p class="themes__time">12:30–13:00</p>#}
+                                <p class="lector__title"> Податкові накладні та проблеми з реєстрацією: хто в групі ризику?</p>
+                                <p class="lector__info">  Сергій Дробоття, експерт-консультант із питань оподаткування</p>
                             </div>
                         </li>
 
                         <li class="lector__item lector__item--tm">
                             <div class="lector__body">
-                                <p class="lector__title">  Зарплата, відпускні, допомоги: всі варіанти можливі</p>
-                                <p class="lector__info">       Тетяна Мойсеєнко, шеф-редактор 7eminar.com, експерт з трудового
-                                    <br>та кадрового обліку</p>
+                               {# <p class="themes__time">13:00–13:30</p>#}
+                                <p class="lector__title"> Післякарантинна зарплата працівників: виплати помалу, але часто (про документальне оформлення, нарахування та виплату зароблених грошей після довгого безгрошів'я). Зарплатні податки і звітність травня</p>
+                                <p class="lector__info"> Тетяна Мойсеєнко, шеф-редактор 7eminar.com,              експерт з трудового та кадрового обліку</p>
                             </div>
                         </li>
                     </ul>
+                    <a href="#order" class="themes__btn">Хочу дивитися</a>
                 </div>
-                {#<div class="themes__break">
-                    <p class="themes__time">13:00–14:00</p>
-                    <p class="themes__pause">Перерва</p>
-                </div>#}
-
-               {# <div class="themes__body">
-                  #}{#  <p class="themes__time">14:00–16:00</p>#}{#
-
-                    <ul class="themes__list lector">
-                        <li class="lector__item lector__item--mk">
-                            <div class="lector__body">
-                                <p class="lector__title"> ФОПівські ЄСВ і ЄП: порахувати та сплатити вчасно</p>
-                                <p class="lector__info">   Мар’яна Кавин, податковий консультант CAP/СІРА, АССА DipIFR, IFA</p>
-                            </div>
-                        </li>
-
-                        <li class="lector__item lector__item--os">
-                            <div class="lector__body">
-                                <p class="lector__title">  Платити / не платити орендну плату і податки. <br>  Ризики та відповідальність</p>
-                                <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
-                            </div>
-                        </li>
-
-                        <li class="lector__item lector__item--tm">
-                            <div class="lector__body">
-                                <p class="lector__title">  Зарплата, відпускні, допомоги: всі варіанти можливі</p>
-                                <p class="lector__info">       Тетяна Мойсеєнко, шеф-редактор 7eminar.com, експерт з трудового
-                                    <br>та кадрового обліку</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>#}
             </div>
-            <a href="#order" class="themes__btn">Хочу дивитися</a>
+
         </div>
     </div>
 
 
-    {#<div id="lector" class="lector">
-        <div class="container lector__container">
-            <p class="lector__title">Лектори</p>
-            <div class="lector__item">
-                <ul class="lector__list">
-                    <li>
-                        <p class="lector__name lector__name--vv">Вікторія
-                            <br>
-                            <span>Величко</span>  </p>
-                        <p class="lector__text">Незалежний практикуючий консультант з питань оподаткування                          та бухгалтерського обліку, сертифікований тренер бізнес-програм, фахівець   з питань податкового та фінансового планування. Має понад 18000 годин публічних виступів, з них 12000 годин семінарів-практикумів і тренінгів.</p>
-
-                    </li>
-
-                    <li>
-                        <p class="lector__name lector__name--mk ">Мар’яна
-                            <br>
-                            <span>Кавин</span>  </p>
-                        <p class="lector__text">Незалежний податковий консультант і практикуючий бухгалтер. Лекторська робота за спеціалізацією «Податки та бухоблік» з 2010 року.
-                          </p>
-                        <p class="lector__text">  Публікації у професійних бухгалтерських виданнях. Здобула сертифікати: САР, СІРА, АССА DipIFR, IFA-внутрішній аудит.</p>
-                    </li>
-
-                    <li>
-                        <p class="lector__name lector__name--tm">Тетяна
-                            <br>
-                            <span>Мойсеєнко</span>  </p>
-                        <p class="lector__text">Шеф-редактор 7eminar.com, експерт з трудового права та кадрового обліку. Щоденно професійно консультує ТОП-10 компаній України.
-                        </p>
-                        <p class="lector__text"> Досвід лекторської роботи більше 15000 годин, в тому числі в online-семінарах, вебінарах, уроках для бухгалтерів і кадровиків.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <a href="#order" class="lector__btn">зареєструватися</a>
-        </div>
-    </div>#}
 
     <div id="gift" class="gift">
         <div class="container gift__container">
             <div class="gift__item">
                 <div class="gift__header">
-                    <p class="gift__title">ПОДАРУНКИ, ЯКІ ВИ ОТРИМАЄТЕ З ВІДЕОЗАПИСОМ</p></div>
+                    <p class="gift__title">ПОДАРУНКИ, ЯКІ ВИ <br>ОТРИМАЄТЕ З ВІДЕОЗАПИСОМ</p></div>
                 <div class="gift__body">
                     <ul class="gift__list">
+                        {#<li>
+                            <div class="gift__block">
+                                <div class="gift__text"><span>Відеокурс</span> <br>   «Облік доходів в 1С» <br class="gift__br" > (4 модулі: 19 уроків)</div>
+                            </div>
+                        </li>#}
                         <li>
                             <div class="gift__block">
-                                <div class="gift__text"><span>Брошура</span> <br>  «Зразки заповнення ПН та РК»</div>
+                                <div class="gift__text"><span>Чек-лист</span> <br>«10 прикладів кадрових документів»</div>
                             </div>
                         </li>
                         <li>
                             <div class="gift__block">
-                                <div class="gift__text"><span>Брошура</span> <br>   «50 актуальних листів-роз’яснень з ПДВ»</div>
+                                <div class="gift__text"><span>Чек-лист</span> <br> «5 кроків заповнення Декларації з ПДВ»</div>
                             </div>
                         </li>
                         <li>
                             <div class="gift__block">
-                                <div class="gift__text"><span>Таблиця</span> <br> сучасних штрафів по РРО у 2020 році</div>
+                                <div class="gift__text"><span>Чек-лист</span> <br>«10 зразків посадових інструкцій»</div>
                             </div>
                         </li>
                         <li>
                             <div class="gift__block">
-                                <div class="gift__text"><span>Брошура</span> <br>    «30 сучасних роз’яснень держорганів про трудове законодавство»</div>
+                                <div class="gift__text"><span>Чек-лист</span> <br> «50 актуальних роз'яснень держорганів з оплати праці»</div>
                             </div>
                         </li>
                     </ul>
                 </div>
+                <a href="#order" class="gift__btn">Отримати подарунки</a>
             </div>
-            <a href="#order" class="gift__btn">Отримати подарунки</a>
+
             <div class="gift__item">
                 <div class="gift__header">
                     <p class="certificate__title">Сертифікат учасника <br> online-конференції</p></div>
                 <div class="certificate__body">
                     <div class="certificate__img">
-                        <picture><img src="/storage/pages/257_27042020/images/certificate_min.jpg" alt="certificate" ></picture>
+                        <picture><img src="{{ link }}/certificate_on_page.jpg" alt="certificate" ></picture>
                     </div>
 
                     <div class="certificate__block"><p>Відповіді на ваші запитання, отримані на online-конференції, допоможуть в практичному житті, а сертифікат про здобутий рівень фахівця стане приємним закріпленням отриманих знань і навичок!
+
                         </p></div>
                 </div>
+                <a href="#order" class="gift__btn">Стати учасником</a>
             </div>
-            <a href="#order" class="gift__btn">Стати учасником</a>
+
         </div>
     </div>
 
@@ -305,7 +245,7 @@
         <div class="order__container container">
             <div class="order__title">{{ page.options['order_title']|default('') }}</div>
             <div class="order__packages">
-             {#   <div class="order__package package order__package--gold">
+              {#  <div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -328,15 +268,17 @@
                     <div class="package__body">
                         <p class="package__format"></p>
                         <ul class="package__list"><li>Презентації лекторів</li><li>Подарунки від лекторів</li><li >Відеозапис</li></ul>
-                        <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-demo27042020_199') }} грн</span></p>
+                        <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-demo13052020_199')}} грн</span></p>
                     </div>
                     <div class="package__footer">
                         <div class="package__presents--wr"></div>
                         <div class="package__btn--footer">
-                                <a href="shop/invoice?article=онлайн-demo27042020_199" target="_blank" class="btn">ЗАМОВИТИ</a>
+                                <a href="shop/invoice?article=онлайн-demo13052020_199" target="_blank" class="btn">ЗАМОВИТИ</a>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="order__package package order__package--platform ">
                     <div class="package__head">
                         <p class="package__header  "> Бухгалтерська
@@ -347,17 +289,18 @@
                         <p class="package__format"></p>
                         <ul class="package__list"><li > <b>Доступ до цього
                                     відеопроєкту</b>, а також
-                                ще до <b>160+</b>  відеокурсів,
+                                ще до <b>{{ shop_price('онлайн-platform_price','courses') }}+</b>  відеокурсів,
                                 вебінарів та трансляцій
                                 на усі найважливіші
                                 бухгалтерські теми
                                 <b> за супервигідною ціною</b></li></ul>
-                        <p class="package__price  package__price--platform "><span>99 грн/міс.</span></p>
+                        <p class="package__price  package__price--platform "><span>{{ shop_price('онлайн-platform_price','month') }} грн/міс.</span></p>
+                        <p class="package__old-price"><s>{{ shop_price('онлайн-platform_price','line') }} грн/міс.</s></p>
                     </div>
                     <div class="package__footer">
                         <div class="package__presents--wr"></div>
                         <div class="package__btn--footer">
-                            <a href="/" target="_blank" class="btn">Передплатити</a>
+                            <a href="{{ link_platform_order }}" target="_blank" class="btn">Передплатити</a>
                         </div>
                     </div>
                 </div>
@@ -368,7 +311,15 @@
         <div id="reg-bottom" class="container">
             <div class="form-wr">
                 <div class="form ">
-                    <div class="form__title">введіть свої дані та отримайте подарунок</div>
+                    <div class="form__title">ВВЕДІТЬ СВОЇ ДАНІ ТА ОТРИМАЙТЕ ПОДАРУНОК</div>
+                   {# <div class="timer">
+                        <div class="timer__box">
+                            <div class="timer__mins">00</div><span> хв</span>
+                        </div><span class="timer__separate">:</span>
+                        <div class="timer__box">
+                            <div class="timer__secs">00 </div><span> сек</span>
+                        </div>
+                    </div>#}
                     <div class="form__body">
                         <form  class="free-demo-bottom" >
                             <div class="form-group">
@@ -382,7 +333,7 @@
                             <div class="form-group">
                                 <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
                             </div>
-                            <input class="article"  type="hidden" value="онлайн-demo27042020"/>
+                            <input class="article"  type="hidden" value="онлайн-demo13052020"/>
                             <input class="utm" name="options[utm]" type="hidden" value=""/>
                             <input class="dealer" name="dealer" type="hidden" value="4"/>
                             <div class="form__btn">
@@ -419,18 +370,17 @@
     <div class="partners">
         <div class="container partners__container">
             <ul class="partners__list">
-
-
                 {#   <li><a href="https://7eminar.com/" target="_blank"><img src="/modules/seminars/images/logos/kbs.png" width="145" height="38" alt="Київська Бухгалтерська Служба" /></a></li>#}
                 <li><a class="logonoclik" href="https://7eminar.com/" target="_blank"><img class="img_partners1" style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" /></a></li>
                 <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит" /></a></li>
 
+
             </ul>
-           {# <ul class="partners__list">
-                 <li><a href=" http://medoc.ua/?utm_source=7eminar&utm_medium=referral&utm_campaign=seminar" target="_blank" rel="nofollow"><img src="/storage/pages/241_14042020/images/logo-medoc@4x.png" height="110" alt="medoc" /></a></li>
-                #}{#<li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком" /></a></li>
-                <li><a class="logonoclik" href="https://kraft.net.ua" target="_blank"><img class="img_partners1" style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" /></a></li>#}{#
-            </ul>#}
+            <ul class="partners__list">
+                 <li><a href=" https://medoc.ua/?utm_source=7eminar&utm_medium=referral&utm_campaign=seminar" target="_blank" rel="nofollow"><img src="/storage/pages/241_14042020/images/logo-medoc@4x.png" height="110" alt="medoc" /></a></li>
+                {#<li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком" /></a></li>
+                <li><a class="logonoclik" href="https://kraft.net.ua" target="_blank"><img class="img_partners1" style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" /></a></li>#}
+            </ul>
         </div>
     </div>
     <div class="social">
@@ -459,163 +409,4 @@
         </div>
     </div>
 </div>
-<script>
 
-    SystemJS.import('jquery').then(function ($) {
-        SystemJS.import('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js').then(function ($) {
-            SystemJS.import('@clients').then(function (clients) {
-                var loader = $('.loader-backdrop')
-                var loaderPage = $('#loader-page');
-                var form = $('body .free-demo');
-                var form_bottom = $('body .free-demo-bottom');
-                var remain_bv   = 300;
-                function parseTime_bv(timestamp){
-                    if (timestamp < 0) timestamp = 0;
-
-                    var hour = Math.floor(timestamp/60/60);
-                    var mins = Math.floor((timestamp - hour*60*60)/60);
-                    var secs = Math.floor(timestamp - hour*60*60 - mins*60);
-
-
-
-
-                    if(String(mins).length > 1)
-                        $('.timer__mins').text(mins);
-                    else
-                        $('.timer__mins').text("0" + mins);
-                    if(String(secs).length > 1)
-                        $('.timer__secs').text(secs);
-                    else
-                        $('.timer__secs').text("0" + secs);
-
-                }
-
-                $(document).ready(function(){
-                    setInterval(function(){
-                        remain_bv = remain_bv - 1;
-                        parseTime_bv(remain_bv);
-
-                    }, 1000);
-                });
-
-
-                loaderPage.delay(850).fadeOut('slow');
-                const url = document.location.href;
-                const utm =  $('.utm');
-                $(document).ready(function(){
-                    utm.val(url);
-                });
-
-                form.validate({
-                    rules: {
-                        name: "required",
-                        email: {
-                            required: true,
-                            email: true
-                        },
-                        phone:{
-                            required: true,
-                            minlength: 18
-                        }
-                    },
-                    messages: {
-                        name: "Введіть не менше 2 символів",
-                        email: {
-                            required: "Це поле необхідно заповнити",
-                            email: "Будь ласка, введіть коректну адресу електронної пошти"
-                        },
-                        phone:"Введіть правильний номер телефону"
-                    },
-                    submitHandler: function(form) {
-                        var url = [   '/subscribe/27042020'];
-                        var dataSend = [      {"firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val()} ];
-
-                        $.each(url, function(i) {
-
-
-                            $.ajax({
-                                url: url[i],
-                                async: false,
-                                type: "POST",
-                                dataType: "json",
-                                data: dataSend[i],
-                                success: function( data, event, payload) {
-
-                                    loader.addClass('is-active')
-                                    var email = $('.mail').val();
-
-                                    clients.Auth.getClient().then(function (client) {
-
-                                        location.href = '/gifts'
-                                    })
-
-                                },
-                                error: function() {
-                                    console.log("no");
-                                    loader.removeClass('is-active')
-                                }
-                            });
-                        });
-                    },
-                });
-
-
-                form_bottom.validate({
-                    rules: {
-                        name: "required",
-                        email: {
-                            required: true,
-                            email: true
-                        },
-                        phone:{
-                            required: true,
-                            minlength: 18
-                        }
-                    },
-                    messages: {
-                        name: "Введіть не менше 2 символів",
-                        email: {
-                            required: "Це поле необхідно заповнити",
-                            email: "Будь ласка, введіть коректну адресу електронної пошти"
-                        },
-                        phone:"Введіть правильний номер телефону"
-                    },
-                    submitHandler: function() {
-                        var url_bottom =  [ '/subscribe/27042020'];
-                        var dataSend_bottom = [  {"firstName": $('.free-demo-bottom .name').val(), 'email': $('.free-demo-bottom .mail').val(), 'phone': $('.free-demo-bottom .phone').val()} ];
-
-
-
-
-                        $.each(url_bottom, function(i) {
-                            $.ajax({
-                                url: url_bottom[i],
-                                async: false,
-                                type: "POST",
-                                dataType: "json",
-                                data: dataSend_bottom[i],
-                                success: function( data, event, payload) {
-
-                                    loader.addClass('is-active')
-                                    var email = $('.mail').val();
-
-                                    clients.Auth.getClient().then(function (client) {
-
-                                        location.href = '/gifts'
-                                    })
-
-                                },
-                                error: function() {
-                                    console.log("no");
-                                }
-                            });
-                        });
-                    },
-                });
-
-
-
-            })
-        })
-    })
-</script>

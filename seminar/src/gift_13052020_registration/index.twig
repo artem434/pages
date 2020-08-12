@@ -6,18 +6,17 @@
             <div class="hero__item">
                 <p class="hero__title"><span>Ви уcпішно</span> <br>зареєструвалися!</p>
                 <p class="hero__sub-title"> Як і обіцяли – ваш подарунок вже готовий для скачування. <br>
-                Щоб завантажити брошуру у PDF та зразки у XLS-форматі <b>тисніть на кнопки</b> </p>
+                Щоб завантажити чек-лист  <b>тисніть на кнопку</b> </p>
                 <div class="hero__block">
-                <img class="hero__img "  alt="book" src="{{ page.url('/images') }}/book__gift.png">
+                <img class="hero__img "  alt="book" src="{{ page.url('/images') }}/book.png">
                     <div class="hero__btns">
-                        <a href="https://7eminar.com/files/27042020zrazky_PN_RK.pdf" target="_blank" class="hero__btn hero__btn--pdf">СКАЧАТИ БРОШУРУ в PDF</a>
-                        <a href="https://7eminar.com/files/27042020zrazky_PN.xls" target="_blank" class="hero__btn hero__btn--xls">СКАЧАТИ ЗРАЗКИ в XLS</a>
+                        <a href="https://7eminar.com/files/10_prykladiv_Kadr_Dokumentiv.pdf" target="_blank" class="hero__btn hero__btn--xls">Скачати чек-лист</a>
                     </div>
                 </div>
             </div>
             <div class="hero__description"> <b>Також ви можете дивитися відеозапис бухгалтерської конференції <br>
-                    «Що (не)можна робити у травні» (від 27 квітня).</b>  </div>
-            <div class="hero__description">  Посилання для перегляду – в листі з подарунком на email.
+                    «Бухгалтерське життя під час та після карантину: запізнілі документи, <br> ПДВ та ПН, перевірки, зарплата та кадри» (від 13 травня)</b>  </div>
+            <div class="hero__description"> Посилання для перегляду – в листі з подарунком на email.
                 <p  class="arrow"><span></span><span></span><span></span></p></div>
         </div>
     </div>
@@ -26,17 +25,17 @@
         <div class="free-video__container container">
             <div class="free-video__content">
                 <p class="free-video__title"> <span>Всі корисні відеоматеріали в одному місці</span><br>
-                    Передплачуйте зараз за 99 грн/міс.</p>
+                    Передплачуйте зараз за {{ shop_price('онлайн-platform_price','month') }} грн/міс.</p>
                 <div class="free-video__block">
                     <div class="free-video__text">
-                        <p>Хочете зекономити свої кошти та отримати доступ до цієї конференції, а також 160+ актуальних відеокурсів, вебінарів та ще 50+ нових відеопроєктів вже у 2020-му на всі найважливіші бухгалтерські теми?</p>
+                        <p>Хочете зекономити свої кошти та отримати доступ до цієї конференції, а також {{ shop_price('онлайн-platform_price','courses') }}+ актуальних відеокурсів, вебінарів та ще 50+ нових відеопроєктів вже у 2020-му на всі найважливіші бухгалтерські теми?</p>
                         <p>Передплатіть Бухгалтерську відеоплатформу №1.</p>
 
                     </div>
                     <div class="free-video__video">
                         <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
-                </div><a href="https://7eminar.ua/?utm_source=7eminar.com&utm_medium=refferal&utm_campaign=gift_27042020_registration_platform" target="_blank" class="free-video__btn">Передплатити <br> за 99 грн/міс.</a>
+                </div><a href="https://7eminar.ua/?utm_campaign=gift_13052020_registration_platform&utm_medium=refferal&utm_source=7eminar.com" target="_blank" class="free-video__btn">Передплатити <br> за {{ shop_price('онлайн-platform_price','month') }} грн/міс.</a>
             </div>
         </div>
     </div>

@@ -2,10 +2,10 @@
   display: block;
   width: 100%;
   z-index: 1;
-  background: url(./images/bg_1200.png)  center center no-repeat;
-  padding: 40px 0 95px;
+  background: url(./images/bg_1200.png)  top 75px center no-repeat;
+  padding: 0px 0 145px;
   @media (max-width: 1200px){
-    background-image: linear-gradient(-280deg,#3660e5,#5198ed,#67c6f3);
+    background: linear-gradient(-280deg,#3660e5,#5198ed,#67c6f3);
     padding: 0px;
   }
 
@@ -25,7 +25,7 @@
 
   &__container{
     position: relative;
-    padding: 59px 0;
+    padding: 0px 0;
     @media (max-width: 1200px){
       max-width: 767px;
 
@@ -36,18 +36,49 @@
     }
   }
 
+  &__top-container{
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @media (max-width: 767px){
+      display: none;
+    }
+    img{
+      width: 170px;
+      height: auto;
+    }
+  }
+
+  &__logo-dk{
+    background-color: #4bbe47;
+    border-radius: 4px;
+  }
+
   &__content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 75px;
     @media (max-width: 1200px){
       flex-direction: column;
+    }
+    @media (max-width: 767px){
+      padding-top: 0px;
     }
 
   }
 
   .season{
-    width: 135px;
+    width: 320px;
     height: 42px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -63,6 +94,10 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 13px;
+    @media (max-width: 1200px){
+      font-size: 20px;
+      width: 300px;
+    }
     @media (max-width: 1200px){
       margin: 0 auto;
     }

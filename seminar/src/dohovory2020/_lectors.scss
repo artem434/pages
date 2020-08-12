@@ -1,100 +1,138 @@
 .lectors {
-  background-image: linear-gradient(to right, #72ddf7, #2b4ae1);
+  background: #18012b  url(images/lectors_bg_1200-min.jpg) no-repeat bottom center;
+  @media (max-width: 1200px){
+    background: #18012b  url(images/lectors_bg_767-min.jpg) no-repeat bottom center;
+  }
+  @media (max-width: 767px){
+    background: #18012b  url(images/lectors_bg_767-min.jpg) no-repeat top center;
+  }
   &__container {
     @extend %container;
-
+    padding: 150px 0px;
+    @media (max-width: 1200px){
+      padding: 125px 0px 70px;
+    }
+    @media (max-width: 767px){
+      padding: 200px 0px 30px;
+    }
 
 
   }
   &__title{
-    @extend %title;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5;
+    letter-spacing: 1.8px;
+    text-align: center;
+    color: #e9d2ff;
+    text-transform: uppercase;
 
   }
 
-  &__container{
-    text-align: right;
-    padding: 70px 0;
-    position: relative;
+  &__block{
+    display: flex;
+    justify-content: space-between;
     @media (max-width: 1200px){
-      text-align: center;
+
     }
     @media (max-width: 767px){
-      padding: 55px 10px;
+        flex-direction: column;
+        padding: 0 15px;
     }
-    &:before{
-      position: absolute;
-      content: " ";
-      background: url(images/lectors1200-min.png) no-repeat top center;
-      width: 492px;
-      height: 669px;
-      bottom: 0;
-      left: -210px;
-      @media (max-width: 1200px){
-        content: none;
+
+  }
+  &__controls-modal-btn{
+    bottom: 45px;
+    right: 50%;
+    position: absolute;
+    z-index: 4;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 103px;
+    border: none;
+    outline: none;
+    background: url(images/btn-modal.png) no-repeat center;
+    -webkit-animation: scale 1.5s linear infinite;
+    -o-animation: scale 1.5s linear infinite;
+    animation: scale 1.5s linear infinite;
+    @media (max-width: 1200px){
+      display: none;
+    }
+  }
+  &__item{
+    width: 330px;
+    position: relative;
+
+    &:first-child{
+      .lectors__controls-modal-btn{
+        bottom: -115px;
+        right: 100px;
       }
+    }
+    &:last-child{
+      .lectors__controls-modal-btn{
+        bottom: -115px;
+        right: 120px;
+      }
+    }
+    @media (max-width: 767px){
+      width: 100%;
+    }
+    &:nth-child(odd){
+      text-align: right;
+      @media (max-width: 767px){
+        text-align: left;
+        padding-bottom: 40px;
+      }
+    }
+    &:nth-child(even){
+      text-align: left;
     }
   }
 
   &__name{
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
     letter-spacing: normal;
-    color: #fff076;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    color: #ffffff;
     text-transform: uppercase;
+    padding-bottom: 25px;
     @media (max-width: 767px){
-      font-size: 18px;
-      line-height: 1.2;
-      padding-bottom: 20px;
+      text-align: center;
+      font-size: 20px;
     }
   }
 
-  &__info{
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 1.8px;
-    color: #d1ebff;
-    text-transform: uppercase;
-    @media (max-width: 767px){
-      font-size: 15px;
-      letter-spacing: 1.2px;
-    }
-  }
+
 
   &__text{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.38;
     letter-spacing: normal;
-    color: #ffffff;
-    padding-top: 40px;
-    @media (max-width: 767px){
-      font-size: 16px;
-      padding-top: 20px;
-    }
-
-    br{
-      @media (max-width: 767px){
-        display: none;
-      }
-    }
-
+    color: #e0e2f1;
+    padding-bottom: 10px;
   }
 
 
 
   &__btn{
     @extend %btn;
-    margin-top: 27px;
+   margin: 0px auto 0;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    @media (max-width: 767px){
+      margin-top: 30px;
+    }
   }
 }
 

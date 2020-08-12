@@ -15,10 +15,10 @@ const webPackConfig = {
     }
 };
 
-const page = 'platform';
-const id = 287;
+const page = '18082020';
+const id = 404;
 
-const proxy = `https://7eminar.local/${page}`;
+const proxy = `https://ua7eminar.local/${page}`;
 
 /*
  |--------------------------------------------------------------------------

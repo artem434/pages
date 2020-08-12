@@ -1,13 +1,13 @@
 <template>
-    <landing name="msfz-liga_march2020_2" advantages="epressa_add_msfz-liga" class="landing-msfz-liga_march2020_2">
+    <landing name="msfz-liga_april2020_1" advantages="epressa_add_msfz-liga" class="landing-msfz-liga_april2020_1">
         <template v-slot:cover>
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container container--august">
                         <div class="cover">
                             <picture class="cover__img">
-                                <source :src="mix('images/head_034.webp')" type="image/webp">
-                                <img :src="mix('images/head_034.jpg')" class="img-fluid" alt="MSFZ">
+                                <source :src="mix('images/head_03_vMSFZ.webp')" type="image/webp">
+                                <img :src="mix('images/head_03_vMSFZ.jpg')" class="img-fluid" alt="MSFZ">
                             </picture>
                         </div>
                     </div>
@@ -39,10 +39,10 @@
 
                     </template>
                     <template v-slot:period>
-                        <div class="period">квітень - вересень 2020</div>
+                     <!--   <div class="period">квітень - вересень 2020</div>-->
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                         <p class="package__btn">
                             <router-link :to="`/order?article=ep-msfz-liga_action&options[periods]=6`" class="btn btn-package btn-package--card"
                                          target="_blank">оплатити карткою
@@ -69,7 +69,7 @@
                         </router-link>
                     </template>
                     <template v-slot:old-price>
-                        <div   class="package__old-price" style="text-decoration: line-through">3859 грн</div>
+                        <div   class="package__old-price" style="text-decoration: line-through">460 грн/міс.</div>
                     </template>
                 </landing-package>
             </landing-package-row>

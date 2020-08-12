@@ -1,5 +1,6 @@
 .order {
-  padding: 75px 0;
+  padding: 75px 0 125px;
+  font-family: 'Montserrat', sans-serif;
   @media (max-width: 767px){
     padding: 50px 0;
   }
@@ -36,39 +37,22 @@
     max-width: 315px;
     width: 100%;
     margin: 20px 10px 0;
-    border-radius: 20px;
   }
 
   &__package--standart{
-    border: 1px solid #fc6299 !important;
-
+    padding-top: 40px!important;
     .package{
 
+
       &__price{
-        span{
-          color: #000;
-          font-size: 24px;
-          font-weight: 900;
-          letter-spacing: 0.24px;
-          text-transform: none;
-        }
       }
-    }
-
-    .package__list{
-      padding-bottom: 5px;
-      @media (max-width: 767px) {
-        padding-bottom: 35px;
-      }
-
     }
 
     .btn{
       border-radius: 21px;
       box-shadow: 0 12px 24px rgba(55, 72, 198, 0.44);
-      border: 1px solid #fc6299;
-      background-color: #fc6299;
-      background-image: linear-gradient(to right, #fc6299 0%, #fc6299 100%);
+      border: 1px solid #6a568e;
+      background-color: #6a568e;
       width: 100%;
       color: #fff;
       font-size: 18px;
@@ -80,7 +64,7 @@
       &:hover,
       &:active {
         background:transparent;
-        color: #fc6299;
+        color: #6a568e;
       }
     }
 
@@ -94,8 +78,8 @@
 
     .btn{
       border-radius: 21px;
-      border: 1px solid #fc6299;
-      color: #fc6299;
+      border: 1px solid #6a568e;
+      color: #6a568e;
       font-size: 18px;
       font-weight: 700;
       line-height: 38px;
@@ -105,7 +89,7 @@
       width: 100%;
       &:hover,
       &:active {
-        background-image: linear-gradient(to right, #fc6299 0%, #fc6299 100%);
+        background-color: #6a568e;
         color: #fff;
       }
     }
@@ -131,9 +115,9 @@
     .package__list{
       padding-right: 13px;
       li {
-
+        color: #8a3f00;
+        line-height: 1.6;
         b{
-          font-weight: 400;
           color: #141414;
         }
 
@@ -142,22 +126,26 @@
         }
       }
     }
+
+    .package__old-price{
+      color: #ae6f0f;
+    }
     .btn{
       border-radius: 21px;
-      border: 1px solid #fc6299;
+      border: 1px solid #442284;
       color: #fff;
       font-size: 18px;
       font-weight: 700;
       line-height: 38px;
       text-transform: uppercase;
-      background-image: linear-gradient(to top, #fc6299 0%, #fc6299 100%);
+      background-color: #442284;
       letter-spacing: 0.9px;
       transition: all 0.5s;
       width: 100%;
       &:hover,
       &:active {
         background-image: linear-gradient(to right, #fff 0%, #fff 100%);
-        color: #fc6299;
+        color: #442284;
       }
     }
     .package__footer{

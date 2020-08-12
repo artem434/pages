@@ -68,18 +68,11 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function(form) {
-                    const url = ['/subscribe/13052020conference', '/invoice2'];
+                    const url = ['/subscribe/26052020conference'];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val()
-                    }, {
-                        "customer[name]": $('.free-demo .name').val(),
-                        'customer[email]': $('.free-demo .mail').val(),
-                        'customer[phone]': $('.free-demo .phone').val(),
-                        'article': $('.free-demo .article').val(),
-                        'options[utm]': $('.free-demo .utm').val(),
-                        'dealer': $('.free-demo .dealer').val()
                     }];
 
                     $.each(url, function(i) {
@@ -98,7 +91,9 @@ SystemJS.import('jquery').then(function ($) {
 
                                 clients.Auth.getClient().then(function (client) {
 
-                                    if (payload.responseJSON.result === true ) {
+
+                                    location.href = '/gifts'
+                                   /* if (payload.responseJSON.result === true ) {
                                         if (client && client.email === email) {
                                             location.href = '/2020_successful'
                                             return
@@ -115,7 +110,7 @@ SystemJS.import('jquery').then(function ($) {
                                                 sessionStorage.setItem('userEmail', email)
                                                 location.href = '/2020_singup_replay'
                                             })
-                                    }
+                                    }*/
                                 })
 
                             },
@@ -150,18 +145,11 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function() {
-                    const url_bottom = ['/subscribe/13052020conference', '/invoice2'];
+                    const url_bottom = ['/subscribe/26052020conference'];
                     const dataSend_bottom = [{
                         "firstName": $('.free-demo-bottom .name').val(),
                         'email': $('.free-demo-bottom .mail').val(),
                         'phone': $('.free-demo-bottom .phone').val()
-                    }, {
-                        "customer[name]": $('.free-demo-bottom .name').val(),
-                        'customer[email]': $('.free-demo-bottom .mail').val(),
-                        'customer[phone]': $('.free-demo-bottom .phone').val(),
-                        'article': $('.free-demo-bottom .article').val(),
-                        'options[utm]': $('.free-demo-bottom .utm').val(),
-                        'dealer': $('.free-demo-bottom .dealer').val()
                     }];
 
 
@@ -179,24 +167,7 @@ SystemJS.import('jquery').then(function ($) {
 
                                 clients.Auth.getClient().then(function (client) {
 
-                                    if (payload.responseJSON.result === true ) {
-                                        if (client && client.email === email) {
-                                            location.href = '/2020_successful'
-                                            return
-                                        }
-                                        (client ? clients.Auth.logout() : Promise.resolve())
-                                            .then(function () {
-                                                location.href = payload.responseJSON.newClient ? '/2020_new' : '/2020_auth'
-                                            })
-
-                                        sessionStorage.setItem('userEmail', email)
-                                    } else if (payload.responseJSON.result === false ) {
-                                        (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
-                                            .then(function () {
-                                                sessionStorage.setItem('userEmail', email)
-                                                location.href = '/2020_singup_replay'
-                                            })
-                                    }
+                                    location.href = '/gifts'
                                 })
 
                             },
@@ -212,4 +183,4 @@ SystemJS.import('jquery').then(function ($) {
 
         })
     })
-})
+});

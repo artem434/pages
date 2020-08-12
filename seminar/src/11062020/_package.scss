@@ -47,7 +47,7 @@
   &--gold-plus{
     background-image: linear-gradient(to right, #ff732a, #ff9628);
     .package__presents{
-      color: #1a3aa7;
+      color: #163394;
     }
   }
 
@@ -97,7 +97,7 @@
 
     &--gold-plus{
       font-size: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
 
   }
@@ -110,14 +110,16 @@
     flex-direction: column;
 
     .btn--Sale{
-      margin-top: -5px;
+      margin-top: 0px;
+
+
     }
 
     &--standart{
-      background-color: #ffbdd4;
+      background-color: #cbd3ff;
     }
     &--gold{
-      background-image: linear-gradient(to bottom, #72ddf7, #2b4ae1);
+      background-image: linear-gradient(-145deg, #d71c16, #600799, #152fc7);
       .package__header{
         color: #fff;
       }
@@ -211,8 +213,8 @@
     &--footer {
       margin: 0;
       .btn{
-        background-image: linear-gradient(to top, #ffe82d, #ffad2d);
-        color: #1d1d1d;
+        background-image: linear-gradient(to top, #ae332f, #ae332f);
+        color: #fff;
       }
       .btn--Sale{
         width: 190px;

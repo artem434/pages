@@ -3,33 +3,67 @@ import 'bootstrap';
 import YT from "youtube";
 jQuery(($) => {
 
-    $('[data-timer-2]').each((index: number, elem: Element) => {
-        var units = [86400, 3600, 60, 1];
-        var a = $(elem).data('timer-2').split(/[^0-9]/);
+    $(window).on('resize', function() {
 
-        var due = new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);
+        if ( $(window).width() <820 ) {
+
+            var isScrolling = false;
+
+            window.addEventListener("scroll", throttleScroll, false);
+
+            function throttleScroll(e) {
+                if (isScrolling == false) {
+                    window.requestAnimationFrame(function() {
+                        scrolling(e);
+                        isScrolling = false;
+                    });
+                }
+                isScrolling = true;
+            }
+
+            document.addEventListener("DOMContentLoaded", scrolling, false);
+
+            var listItems = document.querySelectorAll(".package");
+            console.log(listItems);
 
 
-        function pad(a) {
-            a = Math.floor(a);
-            if (a <= 0) return '00';
-            return a < 10 ? '0' + a : a;
+            function scrolling(e) {
+
+                for (var i = 0; i < listItems.length; i++) {
+                    var listItem = listItems[i];
+
+                    if (isPartiallyVisible(listItem)) {
+                        listItem.classList.add("active3");
+                    } else {
+                        listItem.classList.remove("active3");
+
+                    }
+                }
+            }
+
+            function isPartiallyVisible(el) {
+                var elementBoundary = el.getBoundingClientRect();
+
+                var top = elementBoundary.top;
+                var bottom = elementBoundary.bottom;
+                var height = elementBoundary.height;
+                return ((top + height >= 300) && (height + 300 >= bottom));
+            }
         }
+        return;
 
-        function update() {
-            var timeLeft = Math.floor((due.getTime() - new Date().getTime()) / 1000);
-            var u = units.map(function (s) {
-                var unit = (timeLeft < 0) ? 0 : Math.floor(timeLeft / s);
-                timeLeft -= unit * s;
-                return pad(unit);
+    });
+
+    jQuery(document).ready(function($){
+        if($('ul.package__list').find('li').length > 5){
+            $('.js-show_hide').click(function(){
+                $(this).prev().children('li:nth-child(n+5)').slideToggle('');
+                $(this).toggleClass('opnd_g');
+                if($(this).hasClass('opnd_g')){
+                    $(this).html('приховати');}
+                else {$(this).html('а ще входить...');}
             });
-            $('.seconds', elem).text(pad(u[3]));
-            $('.minuts', elem).text(pad(u[2]));
-            $('.hours', elem).text(pad(u[1]));
-            $('.days', elem).text(pad(u[0]));
-        }
-
-        setInterval(update, 1000);
+        }else{$('.show_hide_list').hide();}
     });
 });
 

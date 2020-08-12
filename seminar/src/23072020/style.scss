@@ -1,59 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
-@charset "utf-8";
-//-font-family: 'Montserrat', sans-serif;
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic');
+
+
+
+
+
+
+button{
+  &:focus{
+    outline: none!important;
+
+  }
+}
 
 .seminar-landing{
-  font-family: 'Montserrat', sans-serif;
+  background: url(images/main_bg-min.jpg) center top -327px repeat-y;
+  @media (max-width: 1200px){
+    background:#fff7f9;
+  }
+}
+
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+}
+
+#bg_popup{
+  display: none!important;
+}
+
+#bg_popup_two{
+  display: none!important;
+}
+
+#__telerWdTriggerContent{
+  display: none!important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+html * {
+  max-height: 1000000px;
+
+  //-font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#main {
+  width: 100%;
   overflow: hidden;
+  background: #fff!important;
 }
-#reg-bottom{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body{
-  background-color: rgb(247, 247, 247);
-}
-button{
-  &:hover,
-  &:focus,
-  &:active {
-   outline: none;
-  }
-}
-
-.mob-show{
+.circle{
   display: none;
-  @media (max-width: 1200px){
-    display: block;
-    margin: 20px auto;
-
-  }
-}
-.desctop-show{
-  display: block;
-  @media (max-width: 1200px){
-    display: none;
-
-  }
 }
 
 %container{
   position: relative;
-  max-width: 1200px;
+  max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  &:before{
-    position: absolute;
-    content: "";
-    background: url(images/decor_bg.png) center center no-repeat;
-    width: 1066px;
-    height: 700px;
-    right: 125px;
-    top: 0;
-    z-index: -1;
-
-  }
+  font-family: 'Montserrat', sans-serif;
   @media (max-width: 1200px){
     max-width: 767px;
   }
@@ -79,52 +102,70 @@ button{
 }
 
 %title {
-  padding-top: 15px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #565656;
+  line-height: 1.13;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #000000;
   text-transform: uppercase;
-  @media (max-width: 767px){
-    font-size: 18px;
-    padding-top: 0;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media (max-width: 1200px){
+   text-align: center;
+    padding: 20px;
+    font-size: 31px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 7px;
+    right: 0;
+    width: 75%;
+    height: 4px;
+    background-image: linear-gradient(to left, #ffaecc, #c1d2ff);
+    @media (max-width: 1200px){
+      width: 250px;
+      right: 50%;
+      transform: translate(50%,0%);
+      bottom: 0px;
+    }
   }
 }
 
 %btn {
-  background-image: linear-gradient(to top, #ff1167, #ff6810);
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 21px 40px 0 rgba(212, 13, 84, 0.55);
+  background-color: #da3872;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height:1;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #fff;
-  padding: 18px 40px;
-  display: inline-block;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  display: block;
   text-transform: uppercase;
-  -webkit-box-shadow:0px 20px 32px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow:0px 20px 32px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 20px 32px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.7s;
-  border-radius: 30px;
+  transition: all 0.4s;
+  span{
+    margin-left: 10px;
+  }
   @media (max-width: 767px){
-    padding: 18px 20px;
-    font-size: 19px;
+    line-height: 65px;
   }
 
-  @media (max-width: 767px){
-    margin-top: 30px;
-  }
+
   &:active,
   &:focus,
   &:hover{
-    background-image: linear-gradient(to top, #d4115c, #e46110);
+    background-color: #1995ff;
     text-decoration: none;
     box-shadow: none;
     -moz-box-shadow: none;
@@ -134,26 +175,57 @@ button{
   }
 
 }
-
-
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "mixins";
+@import "variables";
 @import "haeding";
 @import "menu";
 @import "hero";
-@import "time";
-@import "profession";
-//-@import "register";
 @import "info";
-@import "theme";
+@import "profession";
 @import "lectors";
+@import "theme";
 @import "gift";
 @import "advantages";
 @import "order";
 @import "package";
-@import "register-bottom";
-@import "video";
+@import "pricing-timer";
 @import "partners";
-@import "social";
-@import "footer";
-@import "loader";
 @import "loader-page";
+@import "video";
+@import "free-video";
+@import "modal-video";
 
+
+.branding-page #main{
+  width: 100%;
+  background: #ffe2ec;
+}
+
+.branding-page{
+  padding-top: 0px;
+  background: #ffe2ec;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+
+  .heading{
+    display: none;
+  }
+}

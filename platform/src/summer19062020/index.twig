@@ -1,33 +1,33 @@
-{% set price_month_3 = shop_price('s-v3_747','month') %}
-{% set price_link_3 = 'shop/invoice?article=s-v3_747' %}
-{% set price_site_3 = shop_price('s-v3_747','site') %}
-{% set price_line_3 = shop_price('s-v3_747','line') %}
+{% set price_month_3 = shop_price('s-v3_399','month') %}
+{% set price_link_3 = 'shop/invoice?article=s-v3_399' %}
+{% set price_site_3 = shop_price('s-v3_399','site') %}
+{% set price_line_3 = shop_price('s-v3_399','line') %}
 
 {% set price_site_6 = shop_price('s-v6_1254','site') %}
 {% set price_month_6 = shop_price('s-v6_1254','month') %}
 {% set price_line_6 = shop_price('s-v6_1254','line') %}
 {% set price_link_6 = 'shop/invoice?article=s-v6_1254' %}
 
-{% set price_site_12 = shop_price('s-v12_2268','site') %}
-{% set price_month_12 = shop_price('s-v12_2268','month') %}
-{% set price_line_12 = shop_price('s-v12_2268','line') %}
-{% set price_link_12 = 'shop/invoice?article=s-v12_2268' %}
+{% set price_site_12 = shop_price('s-v3_699','site') %}
+{% set price_month_12 = shop_price('s-v3_699','month') %}
+{% set price_line_12 = shop_price('s-v3_699','line') %}
+{% set price_link_12 = 'shop/invoice?article=s-v3_699' %}
 
 
-{% set price_month_3_card = shop_price('s-v3_567','month') %}
-{% set price_link_3_card = 'shop/invoice?article=s-v3_567' %}
-{% set price_site_3_card = shop_price('s-v3_567','site') %}
-{% set price_line_3_card = shop_price('s-v3_567','line') %}
+{% set price_month_3_card = shop_price('s-v3_369','month') %}
+{% set price_link_3_card = 'shop/invoice?article=s-v3_369' %}
+{% set price_site_3_card = shop_price('s-v3_369','site') %}
+{% set price_line_3_card = shop_price('s-v3_369','line') %}
 
 {% set price_site_6_card = shop_price('s-v6_1014','site') %}
 {% set price_month_6_card = shop_price('s-v6_1014','month') %}
 {% set price_line_6_card = shop_price('s-v6_1014','line') %}
 {% set price_link_6_card = 'shop/invoice?article=s-v6_1014' %}
 
-{% set price_site_12_card = shop_price('s-v12_1908','site') %}
-{% set price_month_12_card = shop_price('s-v12_1908','month') %}
-{% set price_line_12_card = shop_price('s-v12_1908','line') %}
-{% set price_link_12_card = 'shop/invoice?article=s-v12_1908' %}
+{% set price_site_12_card = shop_price('s-v3_669','site') %}
+{% set price_month_12_card = shop_price('s-v3_669','month') %}
+{% set price_line_12_card = shop_price('s-v3_669','line') %}
+{% set price_link_12_card = 'shop/invoice?article=s-v3_669' %}
 
 
 
@@ -58,19 +58,27 @@
                         <div class="hero__block">
                             <div class="hero__title">
                                 <p>
-                                    Будьте серед найкращих!
+                                    369 <span>грн</span>
                                 </p>
                             </div>
-                            <div class="hero__description">
-                                <p> <span>Передплачуйте</span> БУХгалтерську відеоплатформу <span>№1</span> </p>
+                            <div class="hero__sub-title">
+                                і море по коліно
+                            </div>
+                            <div class="hero__info">
+                                освіжаючий відеотур на все літо
                             </div>
                             <div class="hero-btn">
-                                <a href="#order" class="btn">хочу знижку 65% <i class="fas fa-chevron-right"></i>
+                                <a href="#order" class="btn">Хочу літо за 369 грн <i class="fas fa-chevron-right"></i>
                                 </a>
                             </div>
+                            <div class="hero__description">
+                                <p>  Бухгалтерська відеоплатформа №1</p>
+                            </div>
+
                             <div class="hero__sub-description">
-                                Найкращий онлайн-сервіс для бухгалтерів, на якому вже представлено  <span>понад {{ page.options['number']|default('') }} курсів</span>,<br>
-                                 вебінарів та онлайн-трансляцій на всі актуальні теми  <span>та ще 50+</span> <br> очікується впродовж 2020 року
+                                Найкращий відеосервіс, на якому вже представлено <br> <span> понад {{ shop_price('онлайн-platform_price','courses') }} курсів </span> на всі актуальні теми  <br>                        <span>  та ще 50+ </span>очікується впродовж 2020 року
+
+
                             </div>
                             <p class="hero__date"> {{ page.options['hero__date']|default('') }}</p>
                         </div>
@@ -116,20 +124,21 @@
 
     <div class="wrapper wrapper__profits">
         <div class="content">
-            <div class="title">Переваги Бухгалтерської відеоплатформи <span> №1</span></div>
+            <div class="title">Що ви отримаєте <span>протягом літа</span></div>
             <div class="profits__block--wrap">
                 <div class="profits__block">
                     <div {#id="block"#} class="profits__item  ">
                         <div class="profits__icon">
                             <svg class="icon-page  icon-page--advantage" width="45" height="40" aria-hidden="true"
-                                 focusable="false" data-prefix="fas" data-icon="star" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                 focusable="false" data-prefix="fas" data-icon="film" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="currentColor"
-                                      d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                      d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"></path>
                             </svg>
                         </div>
                         <div class="profits__text">
-                            Роз’яснення від найкращих <br> лекторів України
+                           <span>5</span>  відеокурсів
+                             <br> з актуальних питань
                         </div>
                         <div class="border"></div>
                     </div>
@@ -143,7 +152,8 @@
                             </svg>
                         </div>
                         <div class="profits__text">
-                            Понад {{ page.options['number']|default('') }} курсів вже доступні <br> для перегляду
+                           <span>10</span>  онлайн-семінарів,
+                           <br>   конференцій, вебінарів
                         </div>
                         <div class="border"></div>
                     </div>
@@ -153,8 +163,8 @@
 
                         </div>
                         <div class="profits__text">
-                            Відповіді на ваші запитання
-                            <br> від топових експертів
+                            Сервіс «Online-відповіді <br>
+                            на запитання» (<span>5</span> раз/<span>3</span> міс.)
                         </div>
                         <div class="border"></div>
                     </div>
@@ -163,7 +173,25 @@
                 <div class="profits__block">
                     <div {#id="block"#} class="profits__item profits__item--border">
                         <div class="profits__icon">
+                            <svg class="icon-page  icon-page--advantage" width="45" height="40" aria-hidden="true"
+                                 focusable="false" data-prefix="fas" data-icon="star" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                      d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                            </svg>
 
+
+                        </div>
+                        <div class="profits__text">
+                            Роз’яснення від найкращих <br>
+                            лекторів України
+
+
+                        </div>
+                        <div class="border"></div>
+                    </div>
+                    <div {#id="block"#} class="profits__item profits__item--border">
+                        <div class="profits__icon">
                             <svg class="icon-page  icon-page--advantage" width="45" height="40" aria-hidden="true"
                                  focusable="false" data-prefix="fas" data-icon="star" role="img"
                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -172,9 +200,9 @@
 
                         </div>
                         <div class="profits__text">
-                            Простий і зручний  <br>  в користуванні <br>  особистий кабінет
-
-
+                            Доступ до архіву, <br>
+                            що налічує вже понад <br>
+                            <span>180</span> відеокурсів та вебінарів
                         </div>
                         <div class="border"></div>
                     </div>
@@ -188,21 +216,8 @@
                             </svg>
                         </div>
                         <div class="profits__text">
-                            Цілодобовий доступ <br> до перегляду
-                        </div>
-                        <div class="border"></div>
-                    </div>
-                    <div {#id="block"#} class="profits__item profits__item--border">
-                        <div class="profits__icon">
-                            <svg class="icon-page  icon-page--advantage" width="45" height="40" aria-hidden="true"
-                                 focusable="false" data-prefix="fas" data-icon="film" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"></path>
-                            </svg>
-                        </div>
-                        <div class="profits__text">
-                            Ексклюзивні додаткові <br> відеоматеріали
+                            Цілодобовий доступ <br>
+                            до перегляду
                         </div>
                         <div class="border"></div>
                     </div>
@@ -214,24 +229,25 @@
 
     <div id="order" class="wrapper wrapper__order">
         <div class="content">
-            <div class="title"> <span>{{ page.options['order_sale']|default('') }} </span>{{ page.options['order_title']|default('') }}</div>
+            <div class="title">Спекотна пропозиція діє <span>{{ page.options['order_title']|default('') }}</span></div>
             <div class="packages">
                 <div class="package">
                     <div class="package__header">
                         <div class="package__top">
                             <p class="package__period">3 місяці</p>
+                            <p class="package__month">червень-серпень 2020</p>
                         </div>
                         <div class="package__block-price">
                             <p class="package__sub-title">При оплаті картою</p>
-                            <p class="package__price-month">{{ price_month_3_card }} грн/міс.</p>
-                            <p class="package__price-old"> <s>{{ price_line_3_card }} грн/міс.</s></p>
+                            <p class="package__price-month">{{ price_site_3_card }} грн</p>
+                            <p class="package__price-old"> <s>{{ price_line_3_card }} грн</s></p>
                             <a class="package__btn-card" target="_blank" href="{{ price_link_3_card }}">оплатити картою</a>
                         </div>
-                        <div class="percent">-58%</div>
+                        <div class="percent">-73%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
                             <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 раз/міс.)</span></li>
                             <li><span>Відеокурси з актуальних <br> питань (2-3 раз/міс.)</span></li>
                             <li><span>Сервіс «Online-відповіді <br> на запитання» (2 раз/міс.)</span></li>
@@ -242,52 +258,21 @@
                         <div class="js-show_hide package__show-hide">а ще входить...</div>
                     </div>
                     <div class="package__footer">
-                        <p class="package__price-month">{{ price_month_3 }} грн/міс.</p>
-                        <p class="package__price-old"> <s>{{ price_line_3 }} грн/міс.</s></p>
+                        <p class="package__price-month">{{ price_site_3 }} грн</p>
+                        <p class="package__price-old"> <s>{{ price_line_3 }} грн</s></p>
                         <a class="package__btn"  target="_blank"
                            href="{{ price_link_3 }}">замовити рахунок</a>
-                        <div class="percent">-45%</div>
+                        <div class="percent">-70%</div>
                     </div>
 
                 </div>
-                <div class="package">
-                    <div class="package__header">
-                        <div class="package__top">
-                            <p class="package__period">6 місяців</p>
-                        </div>
-                        <div class="package__block-price">
-                            <p class="package__sub-title">При оплаті картою</p>
-                            <p class="package__price-month">{{ price_month_6_card }} грн/міс.</p>
-                            <p class="package__price-old"> <s>{{ price_line_6_card }} грн/міс.</s></p>
-                            <a class="package__btn-card" target="_blank" href="{{ price_link_6_card }}">оплатити картою</a>
-                        </div>
-                        <div class="percent">-62%</div>
-                    </div>
-                    <div class="package__body">
-                        <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
-                            <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 раз/міс.)</span></li>
-                            <li><span>Відеокурси з актуальних <br> питань (2-3 раз/міс.)</span></li>
-                            <li><span>Сервіс «Online-відповіді <br> на запитання» (2 раз/міс.)</span></li>
-                            <li><span>Роздатковий матеріал</span></li>
-                            <li><span>Сертифікати після <br> проходження курсів</span></li>
-                            <li><span>Ексклюзивні додаткові <br> відеоматеріали</span></li>
-                        </ul>
-                        <div class="js-show_hide package__show-hide">а ще входить...</div>
-                    </div>
-                    <div class="package__footer">
-                        <p class="package__price-month">{{ price_month_6 }} грн/міс.</p>
-                        <p class="package__price-old"> <s>{{ price_line_6 }} грн/міс.</s></p>
-                        <a class="package__btn"  target="_blank"
-                           href="{{ price_link_6 }}">замовити рахунок</a>
-                        <div class="percent">-54%</div>
-                    </div>
-                </div>
+
                 <div class="package">
                     <div class="package__header">
 
                         <div class="package__top">
-                            <p class="package__period">12 місяців</p>
+                            <p class="package__period">3 місяці + ПКУ</p>
+                            <p class="package__month">червень-серпень 2020</p>
                             <div class="package__presents">
                                 <p >подарунок <br>
                                    <span>Податковий кодекс України </span> <br> <span class="package__presents--gray">(дата виходу 13.07.2020 р.)</span></p>
@@ -295,15 +280,15 @@
                         </div>
                         <div class="package__block-price">
                             <p class="package__sub-title">При оплаті картою</p>
-                            <p class="package__price-month">{{ price_month_12_card }} грн/міс.</p>
-                            <p class="package__price-old"> <s>{{ price_line_12_card }} грн/міс.</s></p>
+                            <p class="package__price-month">{{ price_site_12_card }} грн</p>
+                            <p class="package__price-old"> <s>{{ price_line_12_card }} грн</s></p>
                             <a class="package__btn-card" target="_blank" href="{{ price_link_12_card }}">оплатити картою</a>
                         </div>
-                        <div class="percent">-65%</div>
+                        <div class="percent">-61%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
                             <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 раз/міс.)</span></li>
                             <li><span>Відеокурси з актуальних <br> питань (2-3 раз/міс.)</span></li>
                             <li><span>Сервіс «Online-відповіді <br> на запитання» (2 раз/міс.)</span></li>
@@ -314,11 +299,11 @@
                         <div class="js-show_hide package__show-hide">а ще входить...</div>
                     </div>
                     <div class="package__footer">
-                        <p class="package__price-month">{{ price_month_12 }} грн/міс.</p>
-                        <p class="package__price-old"> <s>{{ price_line_12 }} грн/міс.</s></p>
+                        <p class="package__price-month">{{ price_site_12 }} грн</p>
+                        <p class="package__price-old"> <s>{{ price_line_12 }} грн</s></p>
                         <a class="package__btn"  target="_blank"
                            href="{{ price_link_12 }}">замовити рахунок</a>
-                        <div class="percent">-58%</div>
+                        <div class="percent">-59%</div>
                     </div>
 
                 </div>
@@ -419,6 +404,9 @@
 
 
 
+
+
+</div>
     <div id="video" class="wrapper wrapper__video ">
         <div class="content">
             <div class="title">Дивіться зараз</div>
@@ -486,10 +474,10 @@
                         та бухгалтерського обліку</p>
                 </div>
                 <div class="lectors__item lectors__item--ig">
-                    <p class="lectors__name">Ірина Губіна</p>
-                    <p class="lectors__info">Експерт з податкового <br>
-                        та бухгалтерського обліку <br>
-                        (сертифікати CAP, DipIFR)</p>
+                    <p class="lectors__name">Тимур Алієв</p>
+                    <p class="lectors__info">   Консультант з питань<br>
+                        бухгалтерського обліку <br>
+                        та оподаткування.</p>
                 </div>
                 <div class="lectors__item lectors__item--oll">
                     <p class="lectors__oll"><span>та ще</span> <br> 20+ спікерів </p>
@@ -1364,7 +1352,7 @@
                 <div id="lesson1" class="themes__more collapse in">
                     <div class="themes__more-body">
                         <ul class="themes__more-list">
-                            <li class="themes__more-list-item">Бухгалтерська відеоплатформа <span class="themes__text--orange">№1</span> – це навчальний онлайн-сервіс для бухгалтерів, на якому вже представлено понад {{ page.options['number']|default('') }} курсів, вебінарів та онлайн-трансляцій семінарів на всі актуальні бухгалтерські теми.</li>
+                            <li class="themes__more-list-item">Бухгалтерська відеоплатформа <span class="themes__text--orange">№1</span> – це навчальний онлайн-сервіс для бухгалтерів, на якому вже представлено понад {{ shop_price('онлайн-platform_price','courses') }} курсів, вебінарів та онлайн-трансляцій семінарів на всі актуальні бухгалтерські теми.</li>
                         </ul>
                     </div>
                 </div>
@@ -1405,7 +1393,7 @@
                         <ul class="themes__more-list">
                             <li class="themes__more-list-item">На Бухгалтерській відеоплатформі <span class="themes__text--orange">№1</span> зібрана вся необхідна для сучасного бухгалтера інформація на найактуальніші бухгалтерські теми. Серед найпопулярніших тем, які вже доступні для перегляду на Бухгалтерській відеоплатформі <span class="themes__text--orange">№1</span>, можемо виділити наступні:
                                 <ul class="themes__more-sub-list">
-                                    <li><span>Великий бухгалтерський онлайн-марафон, на якому щодня найкращі експерти розповідають, що робити бухгалтеру, кадровику, керівнику і ФОПу, аби підприємство і працівники «вижили» під час карантину;</span></li>
+                                    <li><span>Великий Бухгалтерський Семінар;</span></li>
                                     <li><span>Все про ПДВ;</span></li>
                                     <li><span>П(с)БО від А до Я;</span></li>
                                     <li><span>Зарплата-2020. Нарахування, податки та звітність;</span></li>

@@ -4,10 +4,10 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px 0 0;
-
+  font-family: 'Montserrat', sans-serif;
   &__title{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.56;
@@ -67,7 +67,7 @@
     line-height: 1.2;
     letter-spacing: 0.3px;
     text-align: center;
-    color: #fff;
+    color: #f7bacb;
     padding-bottom: 20px;
     @media (max-width: 750px){
       font-size: 32px;

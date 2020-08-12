@@ -1,4 +1,4 @@
-System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js"], function (exports_1, context_1) {
+System.register(["jquery"], function (exports_1, context_1) {
     "use strict";
     var jquery_1;
     var __moduleName = context_1 && context_1.id;
@@ -6,10 +6,6 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
         setters: [
             function (jquery_1_1) {
                 jquery_1 = jquery_1_1;
-            },
-            function (_1) {
-            },
-            function (_2) {
             }
         ],
         execute: function () {
@@ -68,7 +64,7 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                         phone: "Введіть правильний номер телефону"
                     },
                     submitHandler: function () {
-                        var url = ['/invoice2', '/subscribe/27042020gift2'];
+                        var url = ['/invoice2', '/subscribe/13052020gift'];
                         var dataSend = [{ "customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(), 'article': $('.free-demo .article').val(), 'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val() }, { "firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val() }];
                         $.each(url, function (i) {
                             $.ajax({
@@ -79,7 +75,7 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                                 data: dataSend[i],
                                 success: function (data, event, payload) {
                                     loader.addClass('is-active');
-                                    location.href = '/gift2_27042020_registration';
+                                    location.href = '/gift_13052020_registration';
                                 },
                                 error: function () {
                                     loader.removeClass('is-active');

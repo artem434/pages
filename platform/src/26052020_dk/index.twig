@@ -1,8 +1,9 @@
-{% set link_platform_order = "/?utm_campaign=conference2605_platform&utm_content=knopka_tabl_tsin&utm_medium=refferal&utm_source=7eminar.ua" %}
-{% set link_platform_info = "/?utm_campaign=conference2605_platform&utm_content=link_shapka&utm_medium=refferal&utm_source=7eminar.ua" %}
+{% set link_platform_order = "https://promo.dtkt.ua/7eminar" %}
+{% set link_platform_info = "https://promo.dtkt.ua/7eminar" %}
 {% set link = page.url('/images') %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
     <div class="hero">
+
        {# <canvas>
 
         </canvas>#}
@@ -18,28 +19,36 @@
 
         </div>
         <div class="hero__container container">
+            <div class="hero__top-container">
+                <a class="hero__logo-dk" href="https://dtkt.ua/about" target="_blank">
+                    <img src="{{ link }}/logo-dk.png" width="200" height="52" alt="«Дебет-Кредит» | Бухгалтерський сервіс №1 в Україні">
+                </a>
+                <a class="hero__logo-seminar" href="https://7eminar.com/?utm_source=7eminar.ua&utm_medium=refferal&utm_campaign=conference2605_7eminar.com&utm_content=logo_shapka" target="_blank">
+                    <img src="{{ link }}/7minar_logo_color.png" width="186" height="42" alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+                </a>
+            </div>
             <div class="menu ">
                 <div class="menu__container">
                     <ul class="menu__list">
                         <li><a href="#lectors">Лектори</a></li>
                         <li><a href="#theme">теми</a></li>
                         <li><a href="#gift">Подарунки</a></li>
-                        <li><a href="#form">Зареєструватися</a></li>
+                        <li><a href="#order">Придбати</a></li>
                     </ul>
 
                 </div>
             </div>
             <div class="hero__content">
                 <div class="hero__item">
-                    <div class="hero__info">
+                    {#<div class="hero__info">
                         <div class="information">
                             <p class="information__title">26 <span class="month"> травня </span> <span class="gray">|</span> <span class="time">10:15–14:00</span></p>
                             <p class="information__date">Безкоштовна ONLINE-конференція</p>
                         </div>
-                    </div>
-                   {# <div class="hero__date">
-                        <p>Відеозапис ONLINE-КОНФЕРЕНЦІЇ</p>
                     </div>#}
+                     <div class="hero__date">
+                         <p>Відеозапис ONLINE-КОНФЕРЕНЦІЇ</p>
+                     </div>
                     <div class="hero__sub-title">
                         Бухгалтерське <span>перезавантаження</span>
                     </div>
@@ -50,8 +59,13 @@
                         зарплата, кадри, податки,
                     </div>
                     <div class="hero__title">
-
                         перевірки, ФОПи
+                    </div>
+                    <div class="hero__description">
+                        та Закон №466<span> (законопроєкт №1210)</span>
+                    </div>
+                    <div class="hero__description--mob">
+                        (законопроєкт №1210)
                     </div>
 
                     <div class="gift">
@@ -88,7 +102,7 @@
                                     </div>
                                     <input class="article"  type="hidden" value="онлайн-demo26052020"/>
                                     <input class="utm" name="options[utm]" type="hidden" value=""/>
-                                    <input class="dealer" name="dealer" type="hidden" value="4"/>
+                                    <input class="dealer" name="dealer" type="hidden" value="3"/>
                                     <div class="form__btn">
                                         <button type="submit" class="btn btn-default">зареєструватися </button>
                                     </div>
@@ -130,6 +144,7 @@
             <div class="lectors__item">
                 <div class="lectors__title">ЛЕКТОРИ:</div>
                 <div class="lectors__text">
+                    <p class="lectors__name"> Вікторія Величко</p>
                     <p class="lectors__name"> Олександр&nbsp;Смирнов</p>
                     <p class="lectors__name"> Тетяна&nbsp;Мойсеєнко</p>
 
@@ -142,7 +157,7 @@
         </div>
     </div>
 
-    <div class="info"  id="info">
+  {#  <div class="info"  id="info">
         <div class="info__container container">
             <div class="info__content">
                 <div class="info__item">
@@ -160,8 +175,8 @@
 
                 </div>
                 <div class="info__item info__item--platform">
-                    <div class="info__title info__title--platform"> <span class="text-platform">Бухгалтерська  <br> відеоплатформа №1 </span> <span class="text-platform-two">Доступ до <br>160+ курсів </span>
-                        <br><span class="price-platform"> 99 грн</span> </div>
+                    <div class="info__title info__title--platform"> <span class="text-platform">Бухгалтерська  <br> відеоплатформа №1 </span> <span class="text-platform-two">Доступ до <br>{{ shop_price('онлайн-platform_price','courses') }}+ курсів </span>
+                        <br><span class="price-platform"> {{ shop_price('онлайн-platform_price','month') }} грн</span> </div>
                     <a class="info__link" href="{{ link_platform_info }}" target="_blank">Детальніше</a>
 
                 </div>
@@ -170,60 +185,94 @@
 
             </div>
         </div>
-    </div>
+    </div>#}
 
     <div id="theme" class="themes">
         <div class="container theme__container">
-          {#  <p class="themes__title" id="themes ">теми майстер-класу</p>#}
+            {#  <p class="themes__title" id="themes ">теми майстер-класу</p>#}
             <div class="themes__item">
-                <div class="themes__header"><p>регламент <br> online-конференції</p></div>
+                <div class="themes__header"><p>ТЕМИ  <br> online-конференції</p></div>
                 <div class="themes__body">
 
                     <ul class="themes__list lector">
+                        <li class="lector__item lector__item--vv ">
+                            <div class="lector__body">
+                                {#  <p class="themes__time">10:15–11:15</p>#}
+                                <p class="lector__title">31 травня - встигнути сплатити усі несплачені податки за час карантину. Кому і які податки? Дата відліку штрафів.
+
+                                </p>
+                                <p class="lector__title">        Податкова звітність, не подана у період карантину: коли подати без штрафів. Термін відліку штрафів.</p>
+
+
+                                <p class="lector__info"> Вікторія Величко, незалежний практикуючий консультант з питань оподаткування та бухгалтерського обліку</p>
+                            </div>
+                        </li>
                         <li class="lector__item lector__item--os ">
                             <div class="lector__body">
-                                <p class="themes__time">10:15–11:15</p>
-                                <p class="lector__title">Форс-мажор: невже кінець? Як визначити термін дії форс-мажору в умовах поетапного виходу з карантину.</p>
-                                <p class="lector__title">Податкові запити і перевірки: коли почнеться натиск?</p>
+                                {#  <p class="themes__time">10:15–11:15</p>#}
+                                <p class="lector__title">Податковий контроль за Законом №466 (№1210)</p>
+                                {# <p class="lector__title">Податкові запити і перевірки: коли почнеться натиск?</p>
+                                 <p class="lector__title">Податкова ТЕРОРеформа №1210. Чого чекати?</p>#}
+                                <ul>
+                                    <li> Наслідки розширення терміну розумної економічної причини (ділової мети).</li>
+                                    <li> Розширення прав податкового інспектора під час проведення перевірки: запити,
+                                        пояснення від роботодавців та працівників, документи.</li>
+                                    <li> Зміни щодо оформлення актів податкових перевірок.</li>
+                                    <li>Збільшення давності проведення перевірок з ПДФО та ВЗ.</li>
+
+                                    <li>Зміни щодо подання скарги на ППР з пропуском термінів.</li>
+                                    <li> Скасування податкових перевірок в рамках КПК.</li>
+                                    <li> Акт перевірки не є заявою про злочин. Чи добре це?</li>
+                                    <li>Обставини, які пом’якшують або взагалі звільняють від фінансової
+                                        відповідальності.</li>
+                                    <li>Легалізація внесення змін до річного плану перевірок.</li>
+                                </ul>
                                 <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
                             </div>
                         </li>
-                        <li class="lector__item lector__item--gm">
-                            <div class="lector__body">
-                                <p class="themes__time">11:15–12:00</p>
-                                <p class="lector__title"> Зіпсований товар: післякарантинне списання. Податкові наслідки, документальне оформлення.
-                                    </p>
-                                <p class="lector__title"> Основні засоби знову працюють! Розконсервування, документальне оформлення, особливості обліку.</p>
-                                <p class="lector__info">  Галина Морозовська, незалежний бухгалтер-експерт, автор публікацій за тематикою податку на прибуток, бухобліку, ЗЕД, ПДВ</p>
-                            </div>
-                        </li>
-                        <li class="lector__item lector__item--og">
-                            <div class="lector__body">
-                                <p class="themes__time">12:00–12:40</p>
-                                <p class="lector__title">ФОП-зміни: ЄСВ, єдиний податок.</p>
-                                <p class="lector__info"> Ольга Гонзайк, аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
-                            </div>
-                        </li>
+
                         <li class="lector__item lector__item--tm">
                             <div class="lector__body">
-                                <p class="themes__time">12:40–13:30</p>
-                                <p class="lector__title">Кадрові документи для оформлення покрокового виходу працівників із карантину на роботу. Кадровий аудит документів за час карантину: виправляємо помилкові документи.
-                                <p class="lector__title">  Облік робочого часу після карантинного виходу працівників: первинні документи.</p>
-                                <p class="lector__title">  Оплата праці робочого часу: погодинна, поденна – як нараховувати зарплату.</p> </p>
+                                {#<p class="themes__time">11:15–12:00</p>#}
+
+                                <p class="lector__title"> Перевірки ПДФО та ВЗ: збільшено термін проведення перевірки ДПС.</p>
+                                <p class="lector__title"> 1ДФ і помилки не подання, запізніле подання – штрафи збільшено вдвічі!</p> </p>
+                                <p class="lector__title">Кадрові документи для оформлення покрокового виходу працівників із карантину на роботу. Кадровий аудит документів за час карантину: виправляємо помилкові документи.</p> </p>
                                 <p class="lector__info">  Тетяна Мойсеєнко, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
                             </div>
                         </li>
 
                         <li class="lector__item lector__item--ig">
                             <div class="lector__body">
-                                <p class="themes__time">13:30–14:00</p>
-                                <p class="lector__title">ТОП-10 важливих новацій для бухгалтера.</p>
+                                {#   <p class="themes__time">12:00–12:40</p>#}
+                                <p class="lector__title">Стартує податкова реформа! Зміни з податку на прибуток, ПДФО, нові штрафи і не тільки.</p>
+                                <p class="lector__title">Аналіз Закону №466 (він же проєкт №1210)</p>
                                 <p class="lector__info"> Ірина Губіна, головний редактор 7eminar.com, експерт з податкового та бухгалтерського обліку</p>
                             </div>
                         </li>
+
+
+                        <li class="lector__item lector__item--gm">
+                            <div class="lector__body">
+                                {#<p class="themes__time">12:40–13:30</p>#}
+                                <p class="lector__title"> Зіпсований товар: післякарантинне списання. Податкові наслідки, документальне оформлення.
+                                </p>
+                                <p class="lector__title"> Основні засоби знову працюють! Розконсервування, документальне оформлення, особливості обліку.</p>
+                                <p class="lector__info">  Галина Морозовська, незалежний бухгалтер-експерт, автор публікацій за тематикою податку на прибуток, бухобліку, ЗЕД, ПДВ</p>
+                            </div>
+                        </li>
+
+                        <li class="lector__item lector__item--og">
+                            <div class="lector__body">
+                                {#<p class="themes__time">13:30–14:00</p>#}
+                                <p class="lector__title">ФОП-зміни: ЄСВ, єдиний податок.</p>
+                                <p class="lector__info"> Ольга Гонзайк, аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
+                            </div>
+                        </li>
+
                     </ul>
-                    <div class="themes__description">письмові Відповіді на запитання у чаті надаватимуть висококваліфіковані експерти 7eminar.com
-                    </div>
+                    {# <div class="themes__description">письмові Відповіді на запитання у чаті надаватимуть висококваліфіковані експерти 7eminar.com
+                     </div>#}
                     <a href="#order" class="themes__btn">Хочу дивитися</a>
                 </div>
             </div>
@@ -237,24 +286,24 @@
         <div class="container gift__container">
             <div class="gift__item">
                 <div class="gift__header">
-                    <p class="gift__title">Подарунки під час <br> online-конференції</p></div>
+                    <p class="gift__title">ПОДАРУНКИ, ЯКІ ВИ  <br> ОТРИМАЄТЕ З ВІДЕОЗАПИСОМ</p></div>
                 <div class="gift__body">
                     <ul class="gift__list">
-                        <li>
+                       {# <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Відеокурс</span> <br>   «Облік витрат в 1С»</div>
                             </div>
-                        </li>
+                        </li>#}
                         <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Чек-лист</span> <br>«10 довідників-таблиць для нарахування зарплати»</div>
                             </div>
                         </li>
-                        <li>
+                       {# <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Авторська брошура від Тетяни Мойсеєнко</span> <br>«Лікарняні/декретні: нарахування допомоги у 2020 році»</div>
                             </div>
-                        </li>
+                        </li>#}
                         <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Авторська брошура від Тетяни Мойсеєнко</span> <br>«Кадровий аудит»</div>
@@ -286,9 +335,9 @@
 
     <div id="order" class="order">
         <div class="order__container container">
-            <div class="order__title">{{ page.options['order_title']|default('оберіть тип перегляду') }}</div>
+            <div class="order__title">Як отримати відеозапис online-конференції? <br>Приєднайтеся до Бухгалтерської відеоплатформи №1</div>
             <div class="order__packages">
-                <div class="order__package package order__package--gold">
+         {#       <div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -303,7 +352,7 @@
                                 <a href="#reg-bottom"  class="btn">реєстрація</a>
                         </div>
                     </div>
-                </div>
+                </div>#}
                {# <div class="order__package package order__package--standart ">
                     <div class="package__head">
                         <p class="package__header  "> online + запис</p>
@@ -322,22 +371,16 @@
                 </div>#}
                 <div class="order__package package order__package--platform ">
                     <div class="package__head">
-                        <p class="package__header  "> online + запис
+                        <p class="package__header  "> відеозапис
                             {#<br>
                             відеоплатформа №1#}</p>
                     </div>
                     <div class="package__body">
                         <p class="package__format"></p>
                         <ul class="package__list">
-                            <li>Online-трансляція</li>
-                            <li>Відповіді на запитання</li>
-                            <li >Сертифікат учасника</li>
+                            <li > <b>Доступ до цього відеопроєкту</b>, а також ще до <b>{{ shop_price('онлайн-platform_price','courses') }}+</b> відеокурсів, вебінарів та трансляцій на усі найважливіші бухгалтерські теми <b>за супервигідною ціною</b></li>
                             <li >Подарунки від лекторів</li>
-                            <li >Відеозапис</li>
-                            <li >Доступ до 160+
-                                відеокурсів, вебінарів
-                                та трансляцій
-                                7eminar.com</li>
+                            <li >Сертифікат учасника</li>
                         </ul>
                             {#<ul class="package__list"><li > <b>Доступ до цього
                                     відеопроєкту</b>, а також
@@ -346,7 +389,8 @@
                                 на усі найважливіші
                                 бухгалтерські теми
                                 <b> за супервигідною ціною</b></li></ul>#}
-                        <p class="package__price  package__price--platform "><span>99 грн/міс.</span></p>
+                        <p class="package__price  package__price--platform "><span>{{ shop_price('онлайн-platform_price','month') }} грн/міс.</span></p>
+                        <p class="package__old-price"><s>{{ shop_price('онлайн-platform_price','line') }} грн/міс.</s></p>
                     </div>
                     <div class="package__footer">
                         <div class="package__presents--wr"></div>
@@ -362,7 +406,7 @@
         <div id="reg-bottom" class="container">
             <div class="form-wr">
                 <div class="form ">
-                    <div class="form__title">Реєстрація діє ще</div>
+                    <div class="form__title">ВВЕДІТЬ СВОЇ ДАНІ ТА ОТРИМАЙТЕ ПОДАРУНОК</div>
                     <div class="timer">
                         <div class="timer__box">
                             <div class="timer__mins">00</div><span> хв</span>
@@ -386,7 +430,7 @@
                             </div>
                             <input class="article"  type="hidden" value="онлайн-demo26052020"/>
                             <input class="utm" name="options[utm]" type="hidden" value=""/>
-                            <input class="dealer" name="dealer" type="hidden" value="4"/>
+                            <input class="dealer" name="dealer" type="hidden" value="3"/>
                             <div class="form__btn">
                                 <button type="submit" class="btn btn-default">надіслати </button>
                             </div>
@@ -421,7 +465,7 @@
     <div class="partners">
         <div class="container partners__container">
             <ul class="partners__list">
-                {#   <li><a href="https://7eminar.com/" target="_blank"><img src="/modules/seminars/images/logos/kbs.png" width="145" height="38" alt="Київська Бухгалтерська Служба" /></a></li>#}
+                <li><a href="https://www.1cbit.ua/services/vnedrenie-1c/?utm_source=7eminar&utm_medium=banner&utm_campaign=buhgalterskaya_perezagruzka" target="_blank"><img src="{{ link }}/logo_onebit.png" width="145" height="auto" alt="Київська Бухгалтерська Служба" /></a></li>
                 <li><a class="logonoclik" href="https://7eminar.com/" target="_blank"><img class="img_partners1" style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" /></a></li>
                 <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит" /></a></li>
 
@@ -456,7 +500,11 @@
 
     <div id="loader-page" class="loader-page">
         <div class="dots">
-            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
         </div>
     </div>
 </div>

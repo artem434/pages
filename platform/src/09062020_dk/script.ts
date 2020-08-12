@@ -1,9 +1,10 @@
 import $ from 'jquery';
 import 'bootstrap';
+import 'cdnjs/slick-carousel/1.8.1/slick.min.js';
 var loader = $('.loader-backdrop')
 var loaderPage = $('#loader-page');
 var form = $('body .free-demo');
-var form_bottom = $('body .free-demo-bottom');
+var form_bottom = $('body .free-demo-bottommmmmmmm');
 var remain_bv   = 300;
 function parseTime_bv(timestamp){
     if (timestamp < 0) timestamp = 0;
@@ -32,6 +33,39 @@ $(document).ready(function(){
         parseTime_bv(remain_bv);
 
     }, 1000);
+});
+
+$('.slider').slick({
+    speed: 500,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: '<div id="pause_video" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',
+    nextArrow: '<div id="pause_video" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
+    lazyLoad:'ondemand',
+    fade: true
+
+
+
+});
+
+$(".slider").on("beforeChange", function(event, slick) {
+    var currentSlide, slideType, player, command;
+    currentSlide = $(slick.$slider).find(".slick-current");
+    slideType = currentSlide.attr("class").split(" ")[1];
+    player = currentSlide.find("iframe").get(0);
+
+    if (slideType ) {
+        command = {
+            "event": "command",
+            "func": "pauseVideo"
+        };
+    }
+
+    if (player != undefined) {
+        player.contentWindow.postMessage(JSON.stringify(command), "*");
+    }
 });
 
 
@@ -68,23 +102,16 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function(form) {
-                    const url = ['/subscribe/09062020masterklass', '/invoice2'];
+                    const url = ['/subscribe/09062020masterklassdk'];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val()
-                    }, {
-                        "customer[name]": $('.free-demo .name').val(),
-                        'customer[email]': $('.free-demo .mail').val(),
-                        'customer[phone]': $('.free-demo .phone').val(),
-                        'article': $('.free-demo .article').val(),
-                        'options[utm]': $('.free-demo .utm').val(),
-                        'dealer': $('.free-demo .dealer').val()
                     }];
 
                     $.each(url, function(i) {
 
-
+                        loader.addClass('is-active');
                         $.ajax({
                             url: url[i],
                             async: false,
@@ -92,8 +119,9 @@ SystemJS.import('jquery').then(function ($) {
                             dataType: "json",
                             data: dataSend[i],
                             success: function( data, event, payload) {
-                                loader.addClass('is-active');
-                                if(i == 1){
+
+                                location.href = '/gifts'
+                               /* if(i == 1){
 
                                     var email = $('.mail').val();
 
@@ -118,7 +146,7 @@ SystemJS.import('jquery').then(function ($) {
                                                 })
                                         }
                                     })
-                                }
+                                }*/
                             },
                             error: function(error) {
                                 console.log("no");

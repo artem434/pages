@@ -1,6 +1,6 @@
 .free-video {
 
-  background-image: linear-gradient(to left, #311b46, #311b46);
+  background-image: linear-gradient(to left, #820bac, #5d05fe);
   &__container {
     padding: 0px;
   }
@@ -137,7 +137,7 @@
   &__btn{
 
     @extend %btn;
-    max-width: 450px;
+    max-width: 470px;
     width: 100%;
     display: block;
     margin: 60px auto 0;

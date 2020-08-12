@@ -35,7 +35,7 @@ SystemJS.import('@clients').then(function (clients) {
                phone:"Введіть правильний номер телефону"
            },
            submitHandler: function(form) {
-               var url = [ '/subscribe/28042020marathon', '/invoice2' ];
+               var url = [ '/subscribe/12052020marathon', '/invoice2' ];
                var dataSend = [    {"firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val()}, {"customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(),'article': $('.free-demo .article').val(),'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val()} ];
 
                $.each(url, function(i) {
@@ -55,10 +55,10 @@ SystemJS.import('@clients').then(function (clients) {
                            clients.Auth.getClient().then(function (client) {
 
                                if (payload.responseJSON.result === true ) {
-                                   location.href = '/april-may2020_thanks'
+                                   location.href = '/may2020_thanks'
 
                                } else if (payload.responseJSON.result === false ) {
-                                   location.href = '/april-may2020_again'
+                                   location.href = '/may2020_again'
                                }
                            })
 
@@ -68,6 +68,11 @@ SystemJS.import('@clients').then(function (clients) {
                            loader.removeClass('is-active')
                        }
                    });
+
+
+
+
+
                });
            },
        });

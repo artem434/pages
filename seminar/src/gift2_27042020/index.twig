@@ -1,3 +1,4 @@
+{% set link = page.url('/images') %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
     <div class="hero">
         <div class="hero__container">
@@ -5,9 +6,8 @@
                 <div class="hero__item">
                     <p class="hero__title"><span>ПОДАРУНОК</span> <br> чекає на вас!</p>
                     <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте брошуру <br>
-                        «Зразки заповнення податкових накладних <br>
-                        та розрахунків коригувань»</p>
-                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+                        «Середня зарплата на прикладах»</p>
+                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book2.png">
                 </div>
                 <form id="form"  class="free-demo" >
                     <div class="form__title">Реєстрація діє ще</div>
@@ -31,103 +31,131 @@
                     <div class="form-group">
                         <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
                     </div>
-                    <input class="article"  type="hidden" value="онлайн-demo27042020_gift1"/>
+                    <input class="article"  type="hidden" value="онлайн-demo27042020_gift2"/>
                     <input class="utm" name="options[utm]" type="hidden" value=""/>
                     <input class="dealer" name="dealer" type="hidden" value="4"/>
                     <div class="form__btn">
-                        <button type="submit" class=" btn-default">зареєструватися </button>
+                        <button type="submit" class=" btn-default">Отримати брошуру </button>
                     </div>
                 </form>
-                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book.png">
+                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book2.png">
             </div>
-            <div class="hero__description">Також ви отримуєте можливість прослухати <br>
-                бухгалтерську online-конференцію <b>абсолютно безкоштовно</b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
+            <div class="hero__description">Також ви отримуєте можливість дивитися відеозаписи вебінарів  <br>
+                <b>абсолютно безкоштовно</b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
 
         </div>
     </div>
 
-    <div class="themes">
-        <div class="themes__container">
-            <p class="themes__title"> Бухгалтерська online-конференція 27 квітня</p>
-            <p class="themes__sub-title"> «Що (не)можна робити у травні: зарплата, ФОП, податки, оренда, інтернет-торгівля»</p>
-            <div class="themes__item">
-                <div class="themes__header"><p>Про що ви дізнаєтеся?</p></div>
-                <div class="themes__body">
-                    <p class="themes__time">11:00–13:00</p>
 
-                    <ul class="themes__list lector">
-                        <li class="lector__item lector__item--vv">
-                            <div class="lector__body">
-                                <p class="lector__title">ПДВ: податкові капкани весняного карантину</p>
-                                <p class="lector__info">  Вікторія Величко, сертифікований тренер, практикуючий <br> консультант з питань оподаткування</p>
-                            </div>
-                        </li>
-                        <li class="lector__item lector__item--ta">
-                            <div class="lector__body">
-                                <p class="lector__title">     Працювати (не)можливо звільнити</p>
-                                <p class="lector__info">     Тимур Алієв, консультант з питань бухгалтерського обліку     <br>       та оподаткування</p>
-                            </div>
-                        </li>
-                        <li class="lector__item lector__item--ig">
-                            <div class="lector__body">
-                                <p class="lector__title">Інтернет-торгівля як працюючий бізнес: розрахунки, <br> доставка, РРО і не тільки</p>
-                                <p class="lector__info">   Ірина Губіна, головний редактор 7eminar.com, експерт з податкового  <br> та бухгалтерського обліку</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="themes__break">
-                    <p class="themes__time">13:00–14:00</p>
-                    <p class="themes__pause">Перерва</p>
-                </div>
+    {#<div id="themes" class="themes">
+        <p class="themes__title" id="themes ">  Великий Бухгалтерський Online-марафон (сезон №3)</p>
+        <div class="container themes__container">
 
-                <div class="themes__body">
-                    <p class="themes__time">14:00–16:00</p>
 
-                    <ul class="themes__list lector">
-                        <li class="lector__item lector__item--mk">
-                            <div class="lector__body">
-                                <p class="lector__title"> ФОПівські ЄСВ і ЄП: порахувати та сплатити вчасно</p>
-                                <p class="lector__info">   Мар’яна Кавин, податковий консультант CAP/СІРА, АССА DipIFR, IFA</p>
-                            </div>
-                        </li>
 
-                        <li class="lector__item lector__item--os">
-                            <div class="lector__body">
-                                <p class="lector__title">  Платити / не платити орендну плату і податки. <br>  Ризики та відповідальність</p>
-                                <p class="lector__info"> Олександр Смирнов, адвокат, податковий консультант</p>
-                            </div>
-                        </li>
-
-                        <li class="lector__item lector__item--tm">
-                            <div class="lector__body">
-                                <p class="lector__title">  Зарплата, відпускні, допомоги: всі варіанти можливі</p>
-                                <p class="lector__info">       Тетяна Мойсеєнко, шеф-редактор 7eminar.com, експерт з трудового
-                                    <br>та кадрового обліку</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="#form" target="_blank" class="themes__btn">стати учасником</a>
-        </div>
-    </div>
-
-    <div class="video">
-        <div class="video__container">
-            <div id="question" class="video__block">
-                    <p class="video__title">Відеозапрошення</p>
-                    <p class="video__sub-title">на online-конференцію</p>
-                    <div class="video__player">
-                        <iframe src="https://www.youtube.com/embed/ULt5v3TnVQU?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <div class="project">
+                <div class="project__header project__header--free">
+                    <div class="project__details">
+                        <p class="project__title">ВІДЕОЗАПИС ВЕБІНАРУ ВІД 29 КВІТНЯ</p>
+                        <p class="project__info">безкоштовно для вас</p>
+                        <p class="project__finished">Доступно для перегляду</p>
                     </div>
-              <a href="#form" target="_blank" class="video__btn">Приєднатися</a>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/vp.png" alt="ЛЕКТОР: Віталій Правдюк" ></picture>
+                    </div>
+                </div>
 
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title">Оренда в умовах карантину</p>
+                        #}{#    <p class="theme__sub-title theme__sub-title--free">Про що дізнаєтеся:</p>#}{#
+                        <ul class="theme__list theme__list--free">
+                            <li><span>пандемія для орендодавця, пандемія для орендаря;</span></li>
+                            <li><span>різновиди платежів за договором оренди;</span></li>
+                            <li><span>форс-мажорні обставини: процедура та підстави підтвердження їх настання;</span></li>
+                            <li><span>новий ЗУ «Про оренду державного та комунального майна» № 157-IX: застосування його норм у 2020 р.;</span></li>
+                            <li><span class="theme__answers" ><i>online-відповіді на запитання.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--free">Лектор: <span>Віталій Правдюк</span></p>
+                        <p class="theme__lector-info">адвокат, к. ю. н., експерт з юридичного супроводу нерухомості, будівництва та земельних питань</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project">
+            <div class="project__header project__header--free">
+                <div class="project__details">
+                    <p class="project__title">ВІДЕОЗАПИС МАЙСТЕР-КЛАСУ ВІД 8 травня</p>
+                    <p class="project__info">безкоштовно для вас</p>
+                    <p class="project__finished">Доступно для перегляду</p>
+                </div>
+                <div class="project__photo">
+                    <picture><img src="{{ link }}/OS_VN.png" alt="" ></picture>
+                </div>
+            </div>
+
+            <div class="project__body">
+                <div class="theme">
+                    <p class="theme__title">Фінмоніторинг по-новому: перша практика і поради (і про 5000 грн на картку – теж)</p>
+                    #}{# <p class="theme__sub-title theme__sub-title--free">Про що дізнаєтеся:</p>#}{#
+                    <ul class="theme__list theme__list--free">
+                        <li><span>готівково-безготівковий картковий безлад з 28.04.2020 р.: види банківських карток (ФОП, фізособи, корпоративні). Відмінності і вплив фінмоніторингу на рух коштів за цими картками. Перекази родичам і не родичам, поповнення картки готівкою та інші новації, про які треба знати;</span></li>
+                        <li><span>нова база даних в банках про всіх осіб, які "не пройшли фінмоніторинг" (і ФОПи, і юрособи, і навіть прості фізичні особи): хто і як буде обмінюватися даними;</span></li>
+                        <li><span>"підозрілі" суми на/з картки: дії банку, захист фізосіб і ФОПів. Про злощасні 5000 грн та практику, яка вже існує в Україні після набрання чинності Закону № 361;</span></li>
+                        <li><span>як банки здійснюють блокування? Знати, щоби діяти вчасно. Як зникнути з "чорного списку"?</span></li>
+                        <li><span>дії та юридичні поради провідних експертів щодо подальшої роботи з готівково-безготівковими картковими переказами;</span></li>
+                        <li><span class="theme__answers" ><i>відповіді на запитання отримаєте 12 травня.</i></span></li>
+
+                    </ul>
+                    <p class="theme__lector theme__lector--free">Лектори: </p>
+                    <p class="theme__lector-info"> <b>Василь Невмержицький</b>, експерт з банківської та фінансової справи, член Української спілки фінансових аналітиків</p>
+                    <p class="theme__lector-info"><b>Олександр Смирнов</b>, адвокат, податковий консультант</p>
+                </div>
 
             </div>
+
         </div>
-    </div>
+
+            <div class="project">
+                <div class="project__header project__header--free">
+                    <div class="project__details">
+                        <p class="project__title">ВІДЕОЗАПИС конференції <br> ВІД 13 травня</p>
+                        <p class="project__info">безкоштовно для вас</p>
+                        <p class="project__finished">Доступно для перегляду</p>
+                    </div>
+                    <div class="project__photo">
+                        <picture><img src="{{ link }}/online_may.png" alt="online_may" ></picture>
+                    </div>
+                </div>
+
+                <div class="project__body">
+                    <div class="theme">
+                        <p class="theme__title">Бухгалтерське життя під час та після карантину: запізнілі документи, ПДВ та ПН, перевірки, зарплата та кадри</p>
+                        <ul class="theme__list theme__list--free">
+                            <li><span>на роботу після карантину: якими документами оформити;</span></li>
+                            <li><span>чим підтвердити господарську операцію, якщо первинки ще немає;</span></li>
+                            <li><span>перевірки, бенефіціари та фінмоніторинг: що нового?</span></li>
+                            <li><span>у кого та які саме проблеми виникають при реєстрації ПН?</span></li>
+                            <li><span> нараховуємо зарплату після завершення карантину: які особливості при її оподаткуванні та як показати у звітності?</span></li>
+
+                            <li><span class="theme__answers" ><i>відповіді на запитання у чаті.</i></span></li>
+
+                        </ul>
+                        <p class="theme__lector theme__lector--free">Лектори: <span>Тетяна Мойсеєнко, Олександр Смирнов, Тимур Алієв, Сергій Дробоття, Ірина Зубрицька</span></p>
+                        <p class="theme__lector-info"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#form" target="_blank" class="themes__btn">Приєднатися з подарунком</a>
+        </div>
+    </div>#}
+
+
 </div>
 <div class="loader-backdrop">
     <div class="loader-backdrop__btn">Реєстрація

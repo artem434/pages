@@ -3,20 +3,13 @@
 <div class="landing-content" data-require="{{ page.url('/script.js') }}">
     <div class="wrapper wrapper__head">
             <div class="content">
-                <div class="top-block">
-                    <div class="top-block__item">
-                        <div class="top-block__logo">
-
-                        </div>
-                    </div>
-                    <div class="top-block__item">
-                        <a href="/register" class="top-block__btn btn_login hidden">
-                            <span class="desktop">ВХІД / РЕЄСТРАЦІЯ</span><span class="mob">ВХІД</span>
-                        </a>
-                        <a href="/events/access" class="top-block__btn btn_profile hidden">
-                            <span class="cabinet">В кабінет</span>
-                        </a>
-                    </div>
+                <div class="hero__top-container">
+                    <a class="hero__logo-dk" href="https://dtkt.ua/about" target="_blank">
+                        <img src="{{ link }}/logo-dk.png" width="200" height="52" alt="«Дебет-Кредит» | Бухгалтерський сервіс №1 в Україні">
+                    </a>
+                    <a class="hero__logo-seminar" href="https://7eminar.com/?utm_source=7eminar.ua&utm_medium=refferal&utm_campaign=demo10_7eminar.com&utm_content=logo_shapka" target="_blank">
+                        <img src="{{ link }}/logo-seminar.png" width="186" height="42" alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+                    </a>
                 </div>
             </div>
             <div class="content">
@@ -61,7 +54,7 @@
 
                     </div>
                     <div class="project__footer"></div>
-                    <a href="/" id="psbo" class="project__btn"  data-article="онлайн-demo18052020_psbo" data-toggle="modal" data-target="#exampleModalCenter">обираю ></a>
+                    <button type="button" id="psbo" class="project__btn"  data-article="free-demo18052020_psbo" data-toggle="modal" >обираю ></button>
                 </div>
             </div>
 
@@ -74,7 +67,7 @@
                 <div class="project__block">
                     <div class="project__header">
                         <p class="project__name">Великий Online-Семінар
-                           <br>
+                            <br>
                             із Заробітної Плати (відеозапис) </p>
                         <p class="project__lector"><b>Лектор: </b>Тетяна Мойсеєнко</p>
                     </div>
@@ -88,7 +81,7 @@
                         </ol>
                     </div>
                     <div class="project__footer"></div>
-                    <a href="/" id="bszp" class="project__btn" data-article="онлайн-demo18052020_bszp"  data-toggle="modal" data-target="#exampleModalCenter">беру ></a>
+                    <button type="button" id="bszp" class="project__btn" data-article="free-demo18052020_bszp"  data-toggle="modal" >беру ></button>
                 </div>
             </div>
 
@@ -114,7 +107,7 @@
 
                     </div>
                     <div class="project__footer"></div>
-                    <a href="/" id="avto" class="project__btn"   data-article="онлайн-demo18052020_avto" data-toggle="modal" data-target="#exampleModalCenter">ДИВИТИСЯ ></a>
+                    <button type="button" id="avto" class="project__btn"   data-article="free-demo18052020_avto" data-toggle="modal" >ДИВИТИСЯ ></button>
                 </div>
             </div>
 
@@ -141,7 +134,7 @@
 
                     </div>
                     <div class="project__footer"></div>
-                    <a href="/" id="zp1c" class="project__btn"  data-article="онлайн-demo18052020_zp1c" data-toggle="modal" data-target="#exampleModalCenter">замовляю ></a>
+                    <button type="button" id="zp1c" class="project__btn"  data-article="free-demo18052020_zp1c" data-toggle="modal" >замовляю ></button>
                 </div>
             </div>
 
@@ -165,7 +158,7 @@
                         </ol>
                     </div>
                     <div class="project__footer"></div>
-                    <a href="/" id="bkadr" class="project__btn" data-article="онлайн-demo18052020_bkadr"  data-toggle="modal" data-target="#exampleModalCenter">хочу ></a>
+                    <button type="button" id="bkadr" class="project__btn" data-article="free-demo18052020_bkadr"  data-toggle="modal" >хочу ></button>
 
                 </div>
             </div>
@@ -233,7 +226,11 @@
 </div>
 <div id="loader-page" class="loader-page">
     <div class="dots">
-        <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
     </div>
 </div>
 
@@ -268,7 +265,7 @@
                             </div>
                             <input class="article"  type="hidden" value=""/>
                             <input class="utm" name="options[utm]" type="hidden" value=""/>
-                            <input class="dealer" name="dealer" type="hidden" value="4"/>
+                            <input class="dealer" name="dealer" type="hidden" value="3"/>
                             <div class="form__footer">
                                 <button type="submit" class="form__btn btn btn-default">Замовляю безкоштовно </button>
                             </div>

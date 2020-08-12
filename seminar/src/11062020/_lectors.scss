@@ -1,5 +1,6 @@
 .lectors {
-  background-image: linear-gradient(to right, #72ddf7, #2b4ae1);
+  background: #171c3a url(images/bg_lector.png) no-repeat top 0px center;
+  margin-top: 80px;
   &__container {
     @extend %container;
 
@@ -24,11 +25,11 @@
     &:before{
       position: absolute;
       content: " ";
-      background: url(images/lectors1200-min.png) no-repeat top center;
+      background: url(images/tm-min.png) no-repeat top center;
       width: 492px;
-      height: 669px;
+      height: 550px;
       bottom: 0;
-      left: -210px;
+      left: -60px;
       @media (max-width: 1200px){
         content: none;
       }
@@ -42,7 +43,7 @@
     font-style: normal;
     line-height: 1;
     letter-spacing: normal;
-    color: #fff076;
+    color: #ffffff;
     padding-top: 10px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -94,7 +95,7 @@
 
   &__btn{
     @extend %btn;
-    margin-top: 27px;
+    margin-top: 67px;
   }
 }
 

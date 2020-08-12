@@ -2,8 +2,8 @@
 
   &__container {
     @extend %container;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 95px;
+    padding-bottom: 35px;
     @media (max-width: 767px){
       padding-top: 25px;
       padding-bottom: 30px;
@@ -13,7 +13,7 @@
 
 
   &__title{
-    font-size: 48px;
+    font-size: 46px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -22,17 +22,25 @@
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
+    @media (max-width: 767px){
+      font-size: 27px;
+    }
+    span{
+      color: #e95927;
+    }
   }
 
   &__sub-title {
     color: #052577;
     text-align: center;
-    font-size: 46px;
-    padding-bottom: 40px;
+    font-size: 40px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
     @media (max-width: 767px){
       font-size: 26px;
-      padding-bottom: 20px;
+      padding-bottom: 0px;
+      line-height: 1.2;
 
     }
   }

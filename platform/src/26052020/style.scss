@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 @charset "utf-8";
-//-font-family: 'Ubuntu', sans-serif;
+//-font-family: 'IBM Plex Mono', monospace;
 
-
+.seminar-landing{
+  font-family: 'IBM Plex Mono', monospace;
+}
 #reg-bottom{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body{
-  background-color:#f7f7f7;
+  background-color:rgb(255, 255, 244);
 }
 button{
   &:hover,
@@ -42,7 +44,7 @@ button{
 //-@import "register";
 @import "info";
 @import "theme";
-//-@import "lectors";
+@import "lectors";
 @import "gift";
 @import "order";
 @import "package";

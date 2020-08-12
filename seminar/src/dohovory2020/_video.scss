@@ -1,6 +1,6 @@
 .free-video {
 
-  background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
+  background-image: linear-gradient(to left, #311b46, #311b46);
   &__container {
     padding: 0px;
   }
@@ -13,7 +13,7 @@
     line-height: 1.4;
     letter-spacing: normal;
     text-align: center;
-    color: #fff076;
+    color: #ffffff;
     padding-bottom: 60px;
     text-transform: uppercase;
     @media (max-width: 1200px){
@@ -28,7 +28,7 @@
       line-height: 1.38;
       letter-spacing: normal;
       text-align: center;
-      color: #363636;
+      color: #ffffff;
     }
   }
 
@@ -84,7 +84,7 @@
       font-style: normal;
       line-height: 1.67;
       letter-spacing: 0.9px;
-      color: #ffffff;
+      color: #e0e2f1;
       padding-bottom: 25px;
       @media (max-width: 1200px){
         padding-bottom: 15px;
@@ -137,7 +137,7 @@
   &__btn{
 
     @extend %btn;
-    max-width: 420px;
+    max-width: 450px;
     width: 100%;
     display: block;
     margin: 60px auto 0;

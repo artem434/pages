@@ -1,4 +1,4 @@
-$color: #e40789;
+ $color: #ff467f;
 .themes {
 
 
@@ -34,10 +34,13 @@ $color: #e40789;
   &__box{
 
     padding: 35px 30px;
-    border: solid 10px #5db2f1;
+    border: solid 10px #d9c8ed;
     @media (max-width: 767px){
       padding: 15px ;
+      border: solid 5px #d9c8ed;
     }
+
+
   }
 
   &__header{
@@ -122,6 +125,42 @@ $color: #e40789;
       padding-right: 0px;
     }
   }
+  &__lessons{
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #828181;
+    @media (max-width: 767px){
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    span{
+      text-transform: uppercase;
+      color: #ff467f;
+    }
+  }
+
+  &__lector-name{
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #828181;
+    @media (max-width: 767px){
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    &--bottom{
+      margin-bottom: 15px;
+    }
+  }
   &__lessons-titel{
     font-size: 24px;
     font-weight: bold;
@@ -201,7 +240,7 @@ $color: #e40789;
   }
 
   &__more-body{
-    padding: 40px 20px 0px 105px;
+    padding: 40px 20px 0px 90px;
     @media (max-width: 1200px){
 
     }
@@ -273,7 +312,19 @@ $color: #e40789;
 
 
 
-
+  &__btn{
+    @extend %btn;
+    margin: 20px auto 0;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    @media (max-width: 767px){
+      margin-top: 30px;
+    }
+    i{
+      margin-left: 10px;
+    }
+  }
 
 
 

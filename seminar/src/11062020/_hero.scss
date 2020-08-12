@@ -3,57 +3,63 @@
   font-family: 'Inter', sans-serif;
   color: #fff;
   position: relative;
-  background: url(images/bg_1200.png) no-repeat top 85px center;
-  @media (max-width: 1200px){
-    background: linear-gradient(to left, #72ddf7, #2b4ae1)  top  center;
+  background: #171c3a url(images/bg1200-min.png) no-repeat top 0px center;
+  @media (max-width: 767px){
+    background: #171c3a url(images/bg_lector.png) no-repeat top 0px center;
   }
   &__container {
     @extend %container;
     position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 175px 0 80px;
     z-index: 0;
     text-align: left;
+    @media (max-width: 1200px){
+      padding: 0px 130px 0 0px;
+    }
+
     @media (max-width: 767px){
-      padding: 0;
+      padding: 0 15px;
     }
   }
 
 
   &__content{
-    padding: 50px 0 50px;
+    padding: 10px 0 50px;
     @media (max-width: 1200px){
       padding-bottom: 150px;
+      padding-top: 60px;
     }
     @media (max-width: 767px){
-      padding: 35px 0 50px;
+      padding: 35px 0 ;
     }
   }
 
   &__title{
-    padding-top: 110px;
+    padding-top: 50px;
     @media (max-width: 1200px){
-      padding-top: 40px;
+
     }
     @media (max-width: 767px){
-      padding-top: 10px;
+      padding-top: 20px;
     }
     p{
+      text-transform: uppercase;
       margin-bottom: 0;
-      font-size: 118px;
-      font-weight: normal;
+      font-size: 60px;
+      font-weight: 700;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.3;
+      line-height: 1;
       letter-spacing: normal;
-      color: #ffffff;
       text-align: left;
+      color: #ffffff;
+      padding-left: 45px;
+
       @media (max-width: 1200px){
-        text-align: center;
+        padding-left: 0px;
       }
       @media (max-width: 767px){
-        font-size: 58px;
-        line-height: 1.2;
+        font-size: 32px;
       }
     }
 
@@ -61,135 +67,136 @@
 
   }
 
+
   &__date{
-    font-size: 24px;
-    letter-spacing: 1.2px;
-    color: #ff3875;
-    font-weight: 600;
-    line-height: 1.67;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
     @media (max-width: 1200px){
-      text-align:center;
-      color: #fff;
+
     }
     @media (max-width: 767px){
-      font-size: 16px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 25px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 700;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 2.4px;
+      color: #ffffff;
+      text-transform: uppercase;
+      @media (max-width: 767px){
+        font-size: 16px;
+        letter-spacing: 1.6px;
+      }
+    }
+
+    .hero__time{
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: 0.18px;
+      @media (max-width: 767px){
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        padding-bottom: 7px;
+      }
+    }
+
+  }
+
+
+  &__sub-title{
+    font-size: 60px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 345px;
+    position: relative;
+
+    @media (max-width: 1200px){
+      padding-left: 300px;
+    }
+    @media (max-width: 767px){
+      font-size: 32px;
+      padding-left:157px;
     }
     span{
-      letter-spacing: 0.9px;
-      color: #ff92b4;
-      font-size: 18px;
+        position: absolute;
+        left: 480px;
+        top: -32px;
+        font-size: 30px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.33;
+        letter-spacing: normal;
       text-transform: uppercase;
       @media (max-width: 1200px){
-        color: #abcfff;
+        left: 435px;
       }
       @media (max-width: 767px){
         font-size: 16px;
+        left: 230px;
+        top: -18px;
       }
-    }
-    br{
-      @media (max-width: 767px){
-        display: none;
-      }
+
     }
   }
 
-  &__sub-title{
-    font-size: 61.5px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.98;
-    letter-spacing: 4px;
-    text-align: left;
-    color: #ffffff;
-    text-transform: uppercase;
-    @media (max-width: 1200px){
-      text-align: center;
-    }
+  &__block{
     @media (max-width: 767px){
-      font-size: 30px;
-      letter-spacing: 2.1px;
-      line-height: 1.2;
-    }
-    span{
-      font-size: 52.5px;
-      line-height: 1.14;
-      letter-spacing: 0.53px;
-      color: #fff076;
-      @media (max-width: 767px){
-        font-size: 26px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.13;
-        letter-spacing: 0.13px;
+      border-radius: 4px;
+      background-color: #ae332f;
+      padding: 0 15px 205px;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: " ";
+        bottom: -147px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background: url(images/lt_mpb-min.png) ;
+        width: 253px;
+        height: 345px;
       }
+
     }
   }
 
   &__name{
-    font-size: 18px;
-    letter-spacing: 0.9px;
-    color: #d1ebff;
+    font-size: 24px;
+    font-weight: normal;
     font-stretch: normal;
-    font-weight: 600;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.67;
+    letter-spacing: 0.18px;
     text-align: right;
+    color: #ffffff;
     text-transform: uppercase;
-      @media (max-width: 1200px){
-        display: block;
-        text-align: center;
-        padding-top: 430px;
-        position: relative;
-        &:before{
-          position: absolute;
-          content: " ";
-          background: url(images/LECTOR_767.png) no-repeat center center;
-          width: 290px;
-          height: 430px;
-          left: 50%;
-          top: 0;
-          transform: translate(-50%, 0%);
-        }
-      }
-
-
+    margin-top: 30px;
     @media (max-width: 767px){
-      padding-top: 260px;
-      &:before{
-        background: url(images/lector_320.png) no-repeat center center;
-        width: 320px;
-        height: 265px;
-      }
+      margin-top: 45px;
+      font-size: 16px;
+      letter-spacing: 0.16px;
+      text-align: center;
     }
-    &--tab{
-      display: none;
-      @media (max-width: 1200px){
-        display: block;
-      }
-      @media (max-width: 767px){
-        display: none;
-      }
-
-    }
-    &--desc{
-      display: block;
-      @media (max-width: 1200px){
-        display: none;
-      }
-      @media (max-width: 767px){
-        display: block;
-      }
-    }
-
 
     span{
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      color: #fff076;
+      font-size: 18px;
+      color: #ffffff;
+      @media (max-width: 767px){
+        font-size: 14px;
+      }
 
 
     }
@@ -206,14 +213,44 @@
 
   &__btn{
     @extend %btn;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 0px;
     @media (max-width: 1200px){
       margin: 25px auto 0px ;
       display: table;
     }
     @media (max-width: 767px){
-      margin: 30px auto 45px ;
+      margin: 30px auto 0;
+    }
+  }
+
+  &__description{
+    font-family: 'Inter', sans-serif;
+    padding: 33px;
+    font-size: 26px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #1a1d3a;
+    text-transform: uppercase;
+    background-color: #e0a62b;
+    border-radius: 5px;
+    display: table;
+    margin-left: -40px;
+    margin-top: -35px;
+    @media (max-width: 767px){
+      padding: 9px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.35px;
+      position: absolute;
+      margin-left: -0px;
+      margin-top: 0px;
+      top: 200px;
+      left: 30px;
     }
   }
 
@@ -272,10 +309,13 @@
 p.seminar_rec{
   font-size: 22px;
   line-height: 50px;
-  padding: 10px 0;
-  color: #000;
+  padding: 0px 0 30px 20px;
+  color: #fff;
   @media (max-width: 1200px){
     text-align: center;
+  }
+  @media (max-width: 767px){
+    padding: 0px 0 0px 20px;
   }
 
 

@@ -95,7 +95,8 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                                 phone: "Введіть правильний номер телефону"
                             },
                             submitHandler: function (form) {
-                                var url = ['/subscribe/09062020masterklass', '/invoice2'];
+                                loader.addClass('is-active');
+                                var url = ['/subscribe/16062020conference', '/invoice2'];
                                 var dataSend = [{
                                         "firstName": $('.free-demo .name').val(),
                                         'email': $('.free-demo .mail').val(),
@@ -116,7 +117,6 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                                         dataType: "json",
                                         data: dataSend[i],
                                         success: function (data, event, payload) {
-                                            loader.addClass('is-active');
                                             if (i == 1) {
                                                 var email = $('.mail').val();
                                                 clients.Auth.getClient().then(function (client) {

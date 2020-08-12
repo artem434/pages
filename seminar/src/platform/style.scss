@@ -416,7 +416,7 @@ body{
       @media (max-width: 900px){
         justify-content: start;
       }
-      &:before{
+      /*&:before{
         position: absolute;
         content: " ";
         background: url(images/many.png) center center  no-repeat;
@@ -443,7 +443,7 @@ body{
           top: 460px;
         }
 
-      }
+      }*/
 
 
 
@@ -959,6 +959,12 @@ body{
     padding-top: 60px;
     line-height: 40px;
   }
+
+  .package__presents{
+    p{
+      padding-top: 0;
+    }
+  }
   .block-order{
     display: flex;
     display: -webkit-box;
@@ -1063,12 +1069,15 @@ body{
 
         }
         p{
-          color: #4c4c4c;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 32px;
-          letter-spacing: 0.8px;
           padding-top: 10px;
+          font-size: 14px;
+          line-height: 1.29;
+          letter-spacing: .7px;
+          color: #ffb43d;
+          margin-bottom: 0;
+          span{
+            color: #fff;
+          }
         }
       }
       .block-order--price{

@@ -1,71 +1,210 @@
-.hero-nav{
-  border: 2px solid #c8c8c8;
-  border-bottom: 1px solid #c8c8c8; ;
-  background-color: #f0f0f0;
-
-  &__list{
+.package{
     display: flex;
-    list-style-type: none;
-    align-items: center;
-    align-content: stretch;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__item{
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    font-size: 20px;
-    text-align: center;
-    color: #585858;
-    position: relative;
-    border-right: 2px solid #c8c8c8;
-
-
-    &:first-child{
-      border-left: 2px solid #c8c8c8;
-    }
-  }
-
-  &__link{
-    color: #585858;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 22.8px 1.2px rgba(0, 0, 0, 0.1);
     width: 100%;
-    line-height: 100px;
-    height: 100%;
-    font-size: 20px;
-    text-decoration: none;
-    transition: 0.5s;
-
-
-
-    &:active,
-    &:focus,
+    height: auto;
+    max-width: 265px;
+    border-radius: 4px;
+    outline: solid 1px #ffcccc;
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 10px;
+    transition: all .4s;
     &:hover{
-      color: $color-orange;
-      box-shadow: 0px 3px 50px 0 rgba(0, 0, 0, 0.2);
-      background-color: #ffffff;
-      text-decoration: none;
+        outline: solid 1px $color-orange;
     }
-  }
+    @media (max-width: 767px){
+        margin: 0 10px 40px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 
-  svg{
+    &_container{
+        text-align: center;
+    }
 
-    margin-right: 15px;
-  }
+    &__title{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 120px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #ffcccc;
+        font-size: 20px;
+        color: #232323;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
 
+    &__gift{
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.29;
+        letter-spacing: 0.7px;
+        text-transform: none;
+        text-align: center;
+        color: #fff;
+
+        p {
+            color: #585858;
+            margin-bottom: 0;
+            text-transform: none;
+        }
+
+        span{
+            display: block;
+            &:first-child {
+                    text-transform: uppercase;
+                color: $color-orange;
+            }
+            &:last-child {
+                text-transform: none;
+                color: #b5b5b5;
+            }
+        }
+    }
+
+    &__sale{
+        position: absolute;
+        right: -10px;
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        font-weight: normal;
+        letter-spacing: -.5px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 50%;
+        background-color: $color-orange;
+
+        &--card{
+            top: -20px;
+        }
+        &--bill {
+            top: -62px;
+
+        }
+    }
+
+    &__main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 150px;
+        position: relative;
+    }
+
+    &__card{
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        color: #585858;
+        margin-bottom: 0;
+    }
+
+    &__price{
+        font-size: 30px;
+        color: #232323;
+        margin-bottom: 0;
+    }
+
+    &__price-old{
+        font-size: 16px;
+        color: #b5b5b5;
+        line-height: 32px;
+        letter-spacing: .8px;
+    }
+
+    &__btn--card{
+        .btn{
+            border: solid 2px $color-orange;
+            background-color: #fff;
+            color: $color-orange;
+            &:active,
+            &:focus,
+            &:hover{
+                border: solid 2px #a11313;
+                background-color: #a11313;
+                color: #fff;
+            }
+        }
+    }
+
+    &__advantages{
+        margin-bottom: 40px;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid #ffcccc;
+        border-bottom: 1px solid #ffcccc;
+
+        span{
+            color: #232323;
+            margin-bottom: 5px;
+            padding-left: 28px;
+            display: block;
+        }
+
+    }
+
+    &__list{
+        margin: 0;
+        padding-left: 28px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .75px;
+        list-style: none;
+        color: #585858;
+
+        li{
+            margin-bottom: 5px;
+            position: relative;
+            &:before {
+                position: absolute;
+                top: 6px;
+                left: -10px;
+                content: "";
+                background-color: #ed3434;
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    &__list-show{
+        color: $color-orange;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
 }

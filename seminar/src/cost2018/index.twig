@@ -1,15 +1,15 @@
-
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
 <div class="hero">
     <div class="hero__container">
         <div class="hero__menu">
             <div class="b-menu">
                 <ul class="b-menu__list b-menu__list--left">
-                    <li class="b-menu__item"><a href="#lector" class="b-menu__link">Лектор</a></li>
-                    <li class="b-menu__item"><a href="#les1" class="b-menu__link">Урок 1</a></li>
-                    <li class="b-menu__item"><a href="#les2" class="b-menu__link">Урок 2</a></li>
-                    <li class="b-menu__item"><a href="#les3" class="b-menu__link">Урок 3</a></li>
-                    <li class="b-menu__item"><a href="#les4" class="b-menu__link">Урок 4</a></li>
-                    <li class="b-menu__item"><a href="#order" class="b-menu__link">Придбати</a></li>
+                    <li class="b-menu__item"><a href="#lector" class="b-menu__link js-scroll-to">Лектор</a></li>
+                    <li class="b-menu__item"><a href="#les1" class="b-menu__link js-scroll-to">Урок 1</a></li>
+                    <li class="b-menu__item"><a href="#les2" class="b-menu__link js-scroll-to">Урок 2</a></li>
+                    <li class="b-menu__item"><a href="#les3" class="b-menu__link js-scroll-to">Урок 3</a></li>
+                    <li class="b-menu__item"><a href="#les4" class="b-menu__link js-scroll-to">Урок 4</a></li>
+                    <li class="b-menu__item"><a href="#order" class="b-menu__link js-scroll-to">Придбати</a></li>
                 </ul>
                 <ul class="b-menu__list b-menu__list--right">
                     <li class="b-menu__item"><a href="/" class="b-menu__link">Iнші семінари</a></li>
@@ -21,7 +21,7 @@
                 <p class="hero-info__lessons">Чотири відеоуроки з Вікторією Величко</p>
                 <p class="hero-info__title">Собівартість</p><span class="hero-info__sub-title">продукції, робіт, послуг</span>
                 <p class="hero-info__descr"><span>все, що потрібно знати</span></p>
-                <div class="hero-info__order"><a id="mybutton" href="#order" class="hero-info__btn">Замовити</a>
+                <div class="hero-info__order"><a id="mybutton" href="#order" class="hero-info__btn js-scroll-to">Замовити</a>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
                                 b 6 вересня 2018 року
                                 -->
                                 <p>Тривалість уроку: <b>90 хвилин</b>
-                                </p><a href="#order" class="program__btn">Замовити</a>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                             b 6 вересня 2018 року
                             -->
                             <p>Тривалість уроку: <b>90 хвилин</b>
-                            </p><a href="#order" class="program__btn">Замовити</a>
+                            </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                                 b 6 вересня 2018 року
                                 -->
                                 <p>Тривалість уроку: <b>90 хвилин</b>
-                                </p><a href="#order" class="program__btn">Замовити</a>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                         <div class="program__item program__item--centered program__item--date">
                             <div class="program__item__text">
                                 <p>Тривалість уроку: <b>80 хвилин</b>
-                                </p><a href="#order" class="program__btn">Замовити</a>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
                             </div>
                         </div>
                     </div>
@@ -216,11 +216,9 @@
         </div>
     </div>
 </div>
-<div class="wrapper">
-    <div id="order" class="content"></div>
-</div>
+
 <div id="timer-custom" class="wrapper wrapper_timer">
-    <div class="content">
+    <div >
         <div class="block-timer">
             <div class="timer-custom">
                 <h3>АКЦІЯ ДІЄ ДО <span id="timer-title">{{ page.options['date']|default('') }}</span>
@@ -240,8 +238,8 @@
         </div>
     </div>
 </div>
-<div class="wrapper wrapper_orders">
-    <div class="block-orders content">
+<div  class="wrapper wrapper_orders" id="order" >
+    <div class="block-orders ">
         <div class="block-orders__wrap">
             <div class="tarif online">
                 <div class="tarif__head">
@@ -276,17 +274,19 @@
     <div class="partners__container">
         <table>
             <tr>
-                <td><a href="https://7eminar.com/" target="_blank"><img src="/modules/seminars/images/logos/kbs.png" width="145" height="38" alt="Київська Бухгалтерська Служба"/></a></td>
+                <td><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></td>
                 <td><a href="https://7eminar.com/" target="_blank" class="logonoclik"><img style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" class="img_partners1"/></a></td>
                 <td><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит"/></a></td>
             </tr>
         </table>
-        <table>
+       {# <table>
             <tr>
                 <td><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></td>
                 <td><a href="https://kraft.net.ua" target="_blank" class="logonoclik"><img style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" class="img_partners1"/></a></td>
             </tr>
-        </table>
+        </table>#}
+
+
     </div>
 </div>
 <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
@@ -296,4 +296,5 @@
             <div class="player"></div>
         </div>
     </div>
+</div>
 </div>

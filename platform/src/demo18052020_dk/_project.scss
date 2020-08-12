@@ -187,16 +187,16 @@
       &:last-child{
         padding-bottom: 0;
       }
-        span{
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.38;
-          letter-spacing: normal;
-          text-align: left;
-          color: #414141;
+      span{
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #414141;
 
-        }
+      }
 
     }
   }
@@ -218,6 +218,7 @@
     border-radius: 4px;
     text-transform: uppercase;
     transition: 0.5s;
+    border: none;
     &:hover,
     &:active,
     &:focus{
@@ -226,7 +227,7 @@
       color: #f6f6f6;
     }
     @media (max-width: 1200px){
-       margin: 0 auto;
+      margin: 0 auto;
     }
   }
 
@@ -253,8 +254,8 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-   /* -webkit-animation: animate 2s infinite;
-    animation: animate 2s infinite;*/
+    /* -webkit-animation: animate 2s infinite;
+     animation: animate 2s infinite;*/
     /*@media (max-width: 1200px){
       width: 12px;
       height: 12px;
@@ -267,14 +268,14 @@
     &:nth-child(2){
       border-bottom: 2px solid #878483;
       border-right: 2px solid #878483;
-     /* -webkit-animation-delay: -0.2s;
-      animation-delay: -0.2s;*/
+      /* -webkit-animation-delay: -0.2s;
+       animation-delay: -0.2s;*/
     }
     &:nth-child(3){
       border-bottom: 2px solid #bcb7b6;
       border-right: 2px solid #bcb7b6;
-     /* -webkit-animation-delay: -0.4s;
-      animation-delay: -0.4s;*/
+      /* -webkit-animation-delay: -0.4s;
+       animation-delay: -0.4s;*/
 
     }
   }

@@ -53,7 +53,7 @@
                             <li>Вебінари щомісяця</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-interbuh_pr">
+                <!--    <landing-package article="ep-interbuh_pr">
                         <template v-slot:title>ТАРИФ<br>«ПРЕМІУМ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -73,8 +73,8 @@
                             <li>1 додатковий доступ до матеріалів «Інтерактивної бухгалтерії»</li>
                             <li>Сервіс онлайн-звітності Liga:REPORT</li>
                         </template>
-                    </landing-package>
-                    <landing-package article="ep-interbuh_pp">
+                    </landing-package>-->
+                 <!--   <landing-package article="ep-interbuh_pp">
                         <template v-slot:title>ТАРИФ<br>«ПРЕМІУМ+»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -95,33 +95,31 @@
                             <li>Сервіс онлайн-звітності Liga:REPORT</li>
                             <li>CONTRAGENT – система перевірки та моніторингу контрагентів</li>
                         </template>
-                    </landing-package>
+                    </landing-package>-->
+                <landing-package article="ep-api_liga">
+                    <template v-slot:title>ТАРИФ «Інтербух <br>  + 7eminar.com»</template>
+                    <template v-slot:gifts>
+                        <li>Відеозапис Великого бухгалтерського семінару</li>
+                        <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                    </template>
+                    <template v-slot:abilities>
+                        <li>Щоденна електронна газета – аналітика та новини</li>
+                        <li>Вбудована база нормативних документів від ЛІГА:ЗАКОН</li>
+                        <li>Довідники, бланки та форми від ЛІГА:ЗАКОН (понад 7000 документів)</li>
+                        <li>Тематичні спецвипуски</li>
+                        <li>Календар бухгалтера</li>
+                        <li>Онлайн-сервіс «Мої документи»</li>
+                        <li>Послуга «Особистий асистент»</li>
+                        <li>Електронний архів номерів з 2012 року</li>
+                        <li>Вебінари щомісяця</li>
+                        <li>Сервіс швидких відповідей на бухгалтерські запитання «Особистий експерт»</li>
+                        <li>1 додатковий доступ до матеріалів «Інтерактивної бухгалтерії»</li>
+                        <li>Сервіс онлайн-звітності Liga:REPORT</li>
+                        <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
+                    </template>
+                </landing-package>
             </landing-package-row>
-            <landing-package-row>
 
-                    <landing-package article="ep-api_liga">
-                        <template v-slot:title>ТАРИФ «Інтербух <br>  + 7eminar.com»</template>
-                        <template v-slot:gifts>
-                            <li>Відеозапис Великого бухгалтерського семінару</li>
-                            <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                        </template>
-                        <template v-slot:abilities>
-                            <li>Щоденна електронна газета – аналітика та новини</li>
-                            <li>Вбудована база нормативних документів від ЛІГА:ЗАКОН</li>
-                            <li>Довідники, бланки та форми від ЛІГА:ЗАКОН (понад 7000 документів)</li>
-                            <li>Тематичні спецвипуски</li>
-                            <li>Календар бухгалтера</li>
-                            <li>Онлайн-сервіс «Мої документи»</li>
-                            <li>Послуга «Особистий асистент»</li>
-                            <li>Електронний архів номерів з 2012 року</li>
-                            <li>Вебінари щомісяця</li>
-                            <li>Сервіс швидких відповідей на бухгалтерські запитання «Особистий експерт»</li>
-                            <li>1 додатковий доступ до матеріалів «Інтерактивної бухгалтерії»</li>
-                            <li>Сервіс онлайн-звітності Liga:REPORT</li>
-                            <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
-                        </template>
-                    </landing-package>
-            </landing-package-row>
         </template>
     </landing>
 </template>

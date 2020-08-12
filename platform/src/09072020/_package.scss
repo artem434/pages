@@ -10,8 +10,6 @@
   flex-direction: column;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 0 38px rgba(0, 0, 0, 0.16);
-  border-radius: 20px;
-  border: 1px solid #fc6299;
   overflow: hidden;
   padding: 25px 0 0 0;
   background-color: #fff;
@@ -25,17 +23,19 @@
 
   &__header {
     text-align: center;
-    color: #01040e;
+    color: #4b4b4b;
     font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.06px;
+    font-family: 'Oswald', sans-serif;
   }
 
   &__list {
     margin: 0;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 25px;
     list-style: none;
     text-align: left;
     font-size: 15px;
@@ -45,10 +45,11 @@
     li {
       position: relative;
       padding-left: 35px;
-      line-height: 24px;
-      padding-bottom: 15px;color: #01040e;
+      padding-bottom: 15px;
+      color: #000;
       font-size: 18px;
-      font-weight: 600;
+      line-height: 22px;
+
       @media (max-width: 767px){
         font-weight: 600;
         font-size: 17px;
@@ -97,20 +98,28 @@
   }
 
   &__price {
-    color: #141414;
+    font-family: 'Oswald', sans-serif;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #141414;
     text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 0.06px;
 
-    span{
-      font-weight: 400;
-      font-size: 24px;
-    }
   }
   &__old-price{
-    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.96;
+    letter-spacing: normal;
+    text-align: center;
+    color: #757575;
   }
 
 

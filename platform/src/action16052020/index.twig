@@ -73,22 +73,38 @@
                         <div class="hero__block">
                             <div class="hero__title">
                                 <p>
-                                    Дивитися – не надивитися
+                                    <span>ОСТАННІЙ ШАНС ОТРИМАТИ</span>
+                                    <br>
+                                    Вибухову знижку
                                 </p>
                             </div>
-                            <div class="hero__sub-title">
-                                <p> Знижка до 80%</p>
+                            <div class="hero__sub-title animated  zoomIn delay-2s" >
+                                <p>  <span>до</span> 80 <span class="hero__percent">%</span> </p>
                             </div>
-                            <div class="hero__description">
-                                <p>Доступ до <span>{{ page.options['number']|default('') }}+ </span>курсів, вебінарів та трансляцій<br>та ще <span>50+</span> нових відео вже у 2020 році
-                                    <br> на всі актуальні бухгалтерські теми</p>
+                            <div class="pricing-timer"  data-timer-2="{{ page.options['timer']|default('') }}">
+                                <p class="pricing-timer__title">До кінця акції залишилось</p>
+                                <div class="pricing-timer__inner">
+                                    <div class="pricing-timer__box"><span class="days">00</span>дні</div>
+                                    <div class="pricing-timer__box"><span class="separate">:</span></div>
+                                    <div class="pricing-timer__box"><span class="hours">00</span>год</div>
+                                    <div class="pricing-timer__box"><span class="separate">:</span></div>
+                                    <div class="pricing-timer__box"><span class="minuts">00</span>хв</div>
+                                    <div class="pricing-timer__box"><span class="separate">:</span></div>
+                                    <div class="pricing-timer__box"><span class="seconds">00</span>сек</div>
+                                </div>
                             </div>
                             <div class="hero-btn">
-                                <a href="#order" class="btn">Передплата від {{ price_month_12_card }}  <span> грн/міс.</span> <i class="fas fa-arrow-right"></i>
+                                <a href="#order" class="btn">встигнути за знижкою <i class="fas fa-chevron-right"></i>
                                 </a>
                             </div>
+                            <div class="hero__description">
+                                <p>БУХгалтерська відеоплатформа <span> №1</span></p>
+                            </div>
+                            <div class="hero__sub-description">
+                                Навчальний онлайн-сервіс для бухгалтерів, на якому вже представлено <span>понад {{ page.options['number']|default('') }} курсів</span>,
+                                <br> вебінарів та онлайн-трансляцій семінарів на всі актуальні бухгалтерські теми
+                            </div>
 
-                            <p class="hero__date"> {{ page.options['hero__date']|default('') }}</p>
                         </div>
                     </div>
                 </div>
@@ -296,7 +312,7 @@
                     </div>
                 </div>
 
-                <div id="block" class="block-order__item block-order__active block-order__item--default active3 ">
+                <div id="block" class="block-order__item block-order__active block-order__item--default  ">
                     <div class="block-order--titel">
                         <h2>12 місяців</h2>
 
@@ -317,24 +333,7 @@
                            href="{{ price_link_12_card }}">оплатити картою</a>
                     </div>
                 </div>
-                {#   <div id="block" class="block-order__item block-order__active   ">
-                       <div class="block-order--titel">
-                           <h2>10 місяців <br> <span>+ подарунок</span></h2>
-                       </div>
-                       <div class="block-order--price">
-                           <div class="block-order__two-prise"><p class="block-order__site">{{ price_site_10_gift  }} грн</p> <p class="block-order__line"><s>{{ price_line_10_gift  }} грн</s></p> </div>
-                           <div class="block-order__price-month">{{  price_month_10_gift }}  <span>грн/міс.</span> </div>
-                           <div class="block-order__gift">
-                               <p class="block-order__gift--title">Подарунок:</p>
-                               <ul>
-                                   <li><a href="https://www.youtube.com/watch?v=NM7c4KP-KLg" target="_blank">фен ROWENTA для подорожей</a> </li>
 
-                               </ul>
-                           </div>
-                       </div>
-                       <a class="btn-order" id="order_btn" target="_blank"
-                          href="{{ price_link_10_gift }}">Передплатити</a>
-                   </div>#}
 
             </div>
         </div>
@@ -384,9 +383,9 @@
         <div class="content">
             <div class="titel">Очікується у 2020 році</div>
             <ul class="tabs">
-                {% set month = ['січ','лют','бер','кві','тра','чер','лип',] %}
-                {% set tab = ['tab1','tab2','tab3','tab4','tab5','tab6','tab7',] %}
-                {% for i in 0..6 %}
+                {% set month = ['січ','лют','бер','кві','тра','чер','лип','сер', 'вер','жов', 'лис', 'гру' ] %}
+                {% set tab = ['tab1','tab2','tab3','tab4','tab5','tab6','tab7','tab8','tab9','tab10','tab11','tab12',] %}
+                {% for i in 0..11 %}
                     <li rel="{{ tab[i]|raw }}">{{ month[i]|raw }}</li>
                 {% endfor %}
             </ul>
@@ -750,14 +749,43 @@
                             </div>
                             <p class="waiting__text">ПДВ, податок на прибуток, акциз, податок на землю, бухгалтерський облік, податкова звітність</p>
                         </div>
-                        {#<div class="waiting__item">
+                        <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">27 квітня</p>
+                                <p class="date">16 квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
+                            </div>
+                            <p class="waiting__text">Фінансові та матеріальні допомоги: вчасно та правильно видати (отримати) в умовах карантину</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">21 квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
+                            </div>
+                            <p class="waiting__text">ФОПівське життя в умовах карантину</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">22 квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
+                            </div>
+                            <p class="waiting__text">Перевірки і мораторій: Держпраці на старті нагляду. Охорона праці при надомній праці</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">23 квітня</p>
                                 <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ</p>
                             </div>
-                            <p class="waiting__text">Витрати, податкова звітність, ПДВ, основні засоби, валютні розрахунки, ПСБО</p>
-                        </div>#}
-
+                            <p class="waiting__text">ФОПівське життя в умовах карантину</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">27  квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Підсумки та висновки: що (не)можна робити у травні
+                            </p>
+                        </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">27  квітня</p>
@@ -776,6 +804,33 @@
                             <p class="waiting__text">Що (не)можна робити у травні
                             </p>
                         </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">28  квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Про що бухгалтери повинні повідомляти Держфінмоніторінг
+                            </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">29  квітня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Оренда в умовах карантину
+                            </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">30  квітня</p>
+                                <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">"Про що бухгалтери повинні повідомляти Держфінмоніторінг
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -785,11 +840,75 @@
 
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">22  травня</p>
-                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                <p class="date">5  травня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
                                 </p>
                             </div>
-                            <p class="waiting__text">Собівартість і виробництво</p>
+                            <p class="waiting__text">Великий ONLINE Семінар із Зарплати</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">6  травня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Кредити у кризу: отримання і облік нових, збитки за старими</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">7  травня</p>
+                                <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Великий ONLINE Семінар із Зарплати</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">8  травня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Фінмоніторинг по-новому: перша практика і поради</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">11  травня</p>
+                                <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Кредити у кризу: отримання і облік нових, збитки за старими</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">12  травня</p>
+                                <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Фінмоніторинг по-новому: перша практика і поради</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">13  травня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Бухгалтерське життя під час та після карантину: запізнілі документи, ПДВ та ПН</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">13  травня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Облік доходів в 1С</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">25  травня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Облік витрат в 1С</p>
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
@@ -799,20 +918,20 @@
                             </div>
                             <p class="waiting__text">ПДВ, витрати, податкова звітність, собівартість, РРО-розрахунки, касові операції</p>
                         </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">26  травня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Стоп-карантин</p>
+                        </div>
                     </div>
                 </div>
 
                 <h3 class="tab_drawer_heading" rel="tab6">Tab 6</h3>
                 <div id="tab6" class="tab_content">
                     <div class="your-class">
-                        {#<div class="waiting__item">
-                            <div class="waiting__wrapp">
-                                <p class="date">4 червня</p>
-                                <p class="type">ВІДЕОКУРС</p>
-                            </div>
-                            <p class="waiting__text">Фізособи-підприємці (загальна та спрощена системи)</p>
-                        </div>#}
-
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">11 червня</p>
@@ -829,20 +948,33 @@
                             </div>
                             <p class="waiting__text">Валютні операції в 1С</p>
                         </div>
-                        {#  <div class="waiting__item">
-                              <div class="waiting__wrapp">
-                                  <p class="date">20 червня</p>
-                                  <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
-                              </div>
-                              <p class="waiting__text">Фізособи-підприємці (загальна та спрощена системи). Відповіді на запитання</p>
-                          </div>#}
-
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">22 червня</p>
                                 <p class="type">ВІДПОВІДІ НА ЗАПИТАННЯ</p>
                             </div>
                             <p class="waiting__text">Податкова звітність, ЄП, основні засоби, витрати, МСФЗ, ФОП</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">23 червня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
+                            </div>
+                            <p class="waiting__text">Договори у роботі юросіб та ФОПів</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">25 червня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ</p>
+                            </div>
+                            <p class="waiting__text">Великий Кадровий Семінар</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">30 червня</p>
+                                <p class="type">ВІДЕОКУРС</p>
+                            </div>
+                            <p class="waiting__text">Дебетори-Кредитори в 1С</p>
                         </div>
                     </div>
                 </div>
@@ -860,22 +992,20 @@
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">9 липня</p>
+                                <p class="date">16 липня</p>
                                 <p class="type">ВІДЕОКУРС
                                 </p>
                             </div>
-                            <p class="waiting__text">Собівартість в 1С</p>
+                            <p class="waiting__text">Фізособи-підприємці (загальна та спрощена системи)</p>
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">9 липня</p>
-                                <p class="type">ВІДЕОКУРС
+                                <p class="date">23 липня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
                                 </p>
                             </div>
-                            <p class="waiting__text">Доходи та витрати в 1С
-                            </p>
+                            <p class="waiting__text">Великий Семінар з РРО</p>
                         </div>
-
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date"> липень</p>
@@ -884,6 +1014,179 @@
                             </div>
                             <p class="waiting__text">Слідкуйте за анонсами...</p>
                         </div>
+
+                    </div>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab8">Tab 8</h3>
+                <div id="tab8" class="tab_content">
+                    <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">26  серпня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">П(С)БО</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">27  серпня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Собівартість і виробництво: від розрахунку до податків</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date"> серпень</p>
+                                <p class="type">далі буде
+                                </p>
+                            </div>
+                            <p class="waiting__text">Слідкуйте за анонсами...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab9">Tab 9</h3>
+                <div id="tab9" class="tab_content">
+                    <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">10 вересня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Все про ПДВ</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">16 вересня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Оптимізація та перевірки. День 1. Оптимізація</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">17 вересня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Оптимізація та перевірки. День 2. Перевірки</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">30 вересня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Основні засоби і МНМА</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab10">Tab 10</h3>
+                <div id="tab10" class="tab_content">
+                    <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">8 жовтня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Великий Квартальний Семінар</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date"> жовтень</p>
+                                <p class="type">далі буде
+                                </p>
+                            </div>
+                            <p class="waiting__text">Слідкуйте за анонсами...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab11">Tab 11</h3>
+                <div id="tab11" class="tab_content">
+                    <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">6 листопада</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Великий Кадровий Семінар</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">10 листопада</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Дисконтування</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">12 листопада</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Неприбуткові</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">23 листопада</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Великий Семінар із Заробітної Плати</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <h3 class="tab_drawer_heading" rel="tab12">Tab 12</h3>
+                <div id="tab12" class="tab_content">
+                    <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">4 грудня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Податок на прибуток. Фінансова звітність</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">10 грудня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Великий Бухгалтерський Семінар</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">17 грудня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Валюта та ЗЕД</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">22 грудня</p>
+                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ
+                                </p>
+                            </div>
+                            <p class="waiting__text">Дисконтування</p>
+                        </div>
+
 
                     </div>
                 </div>
@@ -1049,3 +1352,4 @@
     </div>
 </div>
 </div>
+

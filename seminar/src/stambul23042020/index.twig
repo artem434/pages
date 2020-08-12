@@ -1,5 +1,259 @@
 {% set link = page.url('/images') %}
 
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    content
+
+    <div >
+        <div class="heading mw">
+            <div class="inner"><a href="/" class="logo"></a><a href="https://7eminar.ua/events/access" target="_blank" class="entry"><span>М</span>ій кабінет</a>
+                <p></p><a href="/7min" class="video_news"><span>Н</span>овини</a><a href="https://7eminar.ua/" class="video_news"><span>П</span>ередплата</a><a href="/" class="main"><span>Г</span>оловна</a>
+            </div>
+            <div class="menu-mob">
+                <input id="menu-checkbox" type="checkbox"/><span class="burger__bg burger__bg-js"></span><span class="burger__element"></span>
+                <ul class="menu">
+                    <li><a href="#travel" class="burger__link">ПРОГРАМА ТУРУ</a></li>
+                    <li><a href="#hero__btn--foto" class="burger__link">ФОТО</a></li>
+                    <li><a href="#order" class="burger__link">ВАРТІСТЬ</a></li>
+                    <li><a href="#order" class="burger__link">ЗАМОВИТИ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero__container">
+                <div class="hero__menu">
+                    <div class="menu">
+                        <div class="menu__container">
+                            <ul class="menu__list">
+                                <li><a href="#place">Фото</a></li>
+                                <li><a href="#travel">Програма туру</a></li>
+                                <li><a href="#order">Придбати</a></li>
+                            </ul>
+                            <ul class="menu__list">
+                                <li><a href="/">Iнші семінари</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__content">
+                    <p class="hero__date">23-26 квітня 2020 р.</p>
+                    <div class="hero__text">
+                        <p class="hero__title">Стамбул</p>
+                        <p class="hero__sub-title"> зірка сходу</p>
+                    </div>
+                    <div id="hero__btn--foto" class="hero__btn"><a href="#order" class="btn">Замовити</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="place" class="place">
+            <div class="place__container">
+                <div class="places places--first">
+                    <div class="places__item places__item--orange">
+                        <p class="places__title">місто контрастів</p>
+                    </div>
+                    <div class="places__item places__item--yellow">
+                        <p class="places__title">Стамбул - Найвеличніше місто Туреччини</p>
+                    </div>
+                </div>
+                <div class="places places--last">
+                    <div class="places__item places__item--purple">
+                        <p class="places__title">Міст між Європою та Азією</p>
+                    </div>
+                </div>
+                <div class="place__btn"><a href="#tour" class="btn">подробиці</a></div>
+            </div>
+        </div>
+        <div id="travel" class="travel travel--one">
+            <div class="travel__container">
+                <p class="travel__titel">Екскурсії та шопінг</p>
+                <div class="travel__item travel__item--one">
+                    <p class="travel__sub-titel">Місто з тритисячолітньою історією</p>
+                    <p class="travel__text"> Стамбул (раніше називався Візантій і Константинополь) – найбільше місто Туреччини, головний порт і торговельно-економічний центр, столиця всіх імперій, на території яких він опинявся.</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel travel--two">
+            <div class="travel__container">
+                <div class="travel__item travel__item--two">
+                    <p class="travel__sub-titel">Мегаполіс на перетині континентів</p>
+                    <p class="travel__text"> Серед міст світу тільки він розташовується на території відразу двох континентів. На узбережжі, розрізаному протокою Босфором, мирно співіснують шматочки Європи і Азії.</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel travel--four">
+            <div class="travel__container">
+                <div class="travel__item travel__item--four">
+                    <p class="travel__sub-titel">Фестиваль квітів</p>
+                    <p class="travel__text"> Щовесни з 15 по 30 квітня в Стамбулі проходить унікальний за красою фестиваль тюльпанів, що приваблює туристів з усього світу.</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel travel--three">
+            <div class="travel__container">
+                <div class="travel__item travel__item--three">
+                    <p class="travel__sub-titel">Проживання в історичному центрі</p>
+                    <p class="travel__text"> Розміщення в готелі з видом на Босфор – Innova Sultanahmet Istanbul, який знаходиться в центрі міста, за 500 метрів від церкви святої Софії та Блакитної мечеті.</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel__container">
+                <div class="travel__btn"><a href="https://7eminar.com/files/presentation_stambul23042020.pdf" target="_blank" class="btn">Деталі туру</a></div>
+            </div>
+        </div>
+        <div id="tour" class="tour">
+            <div class="tour__container">
+                <div class="tour__title">У вартість туру входить</div>
+                <div class="include">
+                    <div class="include__item">
+                        <ul class="include__list">
+                            <li class="include__avia">
+                                <p class="include__title">Авіапереліт: <span>Київ – Стамбул – Київ</span>
+                                </p>
+                            </li>
+                            <li class="include__bus">
+                                <p class="include__title">Трансфер: <span>аеропорт – готель – аеропорт</span>
+                                </p>
+                            </li>
+                            <li class="include__duplex">
+                                <p class="include__title">Проживання: <span>двомісне поселення <br/>в номерах Superior Delux, 4 дні / 3 ночі</span>
+                                </p>
+                            </li>
+                            <li class="include__coffee">
+                                <p class="include__title">Харчування: <span>сніданки в готелі</span>
+                                </p>
+                            </li>
+                            <li class="include__home">
+                                <p class="include__title">Програма: <span>оглядова екскурсія Стамбулом</span>
+                                </p>
+                            </li>
+                            <li class="include__lock">
+                                <p class="include__title">Безпека: <span>страховий поліс на час подорожі</span>
+                                </p>
+                            </li>
+                            <li class="include__woman">
+                                <p class="include__title">Супровід: <span>протягом всього туру – <br/>гід та керівник групи від 7eminar.com</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accompaniment">
+                    <p class="accompaniment__text accompaniment__text--bg">Безмежна турбота під час подорожі <br/>від івент-директора компанії – <br/><span>Марини Нікуліної.</span>
+                    </p>
+                    <p class="accompaniment__text">Пізнавайте світ з 7eminar.com!</p>
+                </div>
+            </div>
+        </div>
+        <div id="order" class="order">
+            <div class="order__container">
+                <div id="timer-custom" class="order__timer">
+                    <p class="order__title">тільки до  <span id="timer-title">{{ page.options['date']|default('') }}</span>
+                    </p>
+                </div>
+                <div class="order__packages">
+                    <div class="order__package  package package--club">
+                        <div class="package__body  package__body--club">
+                            <p class="package__format">Вартість туру для учасників 7eminar.club</p>
+                            <p class="package__old-price">
+                                <s>{{shop_price('тур-26042020_Стамбул_ЧК_2','line')}}</s>
+                            </p>
+                            <p class="package__price  package__price--club">{{shop_price('тур-26042020_Стамбул_ЧК_2','site')}}<span>грн</span>
+                            </p>
+                            <p class="package__presents">Подарунок</p>
+                            <ul class="package__list package__list--footer">
+                                <div class="present">
+                                    <p>Доступ до <a href="https://7eminar.ua/" target="_blank" class="js-banner-link">Бухгалтерської відеоплатформи №1</a><br/>протягом трьох місяців
+                                    </p>
+                                </div>
+                            </ul>
+                            <div class="package__btn">
+                                <form method="post" action="?new=1" data-validate="ajax">
+                                    <input type="hidden" name="product" value="тур-26042020_Стамбул_ЧК_2"/>
+                                    <button type="submit" rel="order" class="btn">Хочу в тур</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__package  package package--no-club">
+                        <div class="package__body  package__body--no-club">
+                            <p class="package__format">Вартість туру за одного <br>  учасника </p>
+                            <p class="package__old-price">
+                                <s>{{shop_price('тур-26042020_Стамбул_2','line')}}</s>
+                            </p>
+                            <p class="package__price  package__price--no-club">{{shop_price('тур-26042020_Стамбул_2','site')}}<span>грн</span>
+                            </p>
+                            <p class="package__presents">Подарунок</p>
+                            <ul class="package__list package__list--footer">
+                                <div class="present">
+                                    <p>Доступ до <a href="https://7eminar.ua/" target="_blank" class="js-banner-link">Бухгалтерської відеоплатформи №1</a><br/>протягом трьох місяців
+                                    </p>
+                                </div>
+                            </ul>
+                            <div class="package__btn">
+                                <form method="post" action="?new=1" data-validate="ajax">
+                                    <input type="hidden" name="product" value="тур-26042020_Стамбул_2"/>
+                                    <button type="submit" rel="order" class="btn">Хочу в тур</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info__container">
+                <div class="info__frame">
+                    <div class="info__title">Важлива інформація</div>
+                    <ul>
+                        <li>Сплачувати виїзні заходи можна частинами. 100% оплати повинні надійти не пізніше ніж за 7 днів до початку туру.</li>
+                        <li>У разі відмови від туру: за 14 днів – утримується 60% оплати, менш ніж за 13 днів – утримується 100% оплати.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="video" class="video">
+            <div id="bar-1" class="video__content">
+                <div class="slider">
+                    <div class="slide">
+                        <p class="video__title">Відкривайте світ з нами</p>
+                        <div class="video__player"><a href="https://youtu.be/wd5RWz9WVN4" class="video__link">
+                                <picture><img src="https://i.ytimg.com/vi/wd5RWz9WVN4/maxresdefault.jpg" alt="Тетяна Мойсеєнко" class="video__media"/></picture></a>
+                            <button aria-label="play" class="video__button">
+                                <svg>
+                                    <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" class="video__button-shape"></path>
+                                    <path d="M 45,24 27,14 27,34" class="video__button-icon"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="travel__btn"><a href="#order" target="_blank" class="btn">Замовити</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="container partners__container">
+                <ul class="partners__list">
+                    <li><a href="https://7eminar.com/" target="_blank"><img src="/modules/seminars/images/logos/kbs.png" width="145" height="38" alt="Київська Бухгалтерська Служба"/></a></li>
+                    <li><a href="https://7eminar.com/" target="_blank" class="logonoclik"><img style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" class="img_partners1"/></a></li>
+                    <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит"/></a></li>
+                </ul>
+                <ul class="partners__list">
+                    <li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></li>
+                    <li><a href="https://kraft.net.ua" target="_blank" class="logonoclik"><img style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" class="img_partners1"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
+            <div role="document" class="modal-dialog">
+                <div id="closeModal" data-dismiss="modal" class="close-modal close-modal-video"></div>
+                <div class="modal-content">
+                    <div class="player"></div>
+                </div>
+            </div>
+        </div>
+        <div id="loader-page" class="loader-page">
+            <div class="dots">
+                <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+            </div>
+        </div>
+    </div>
 </div>

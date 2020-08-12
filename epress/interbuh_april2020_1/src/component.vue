@@ -1,13 +1,13 @@
 <template>
-    <landing name="interbuh_march2020_2" advantages="epressa_add_interbuh" class="landing-interbuh_march2020_2">
+    <landing name="interbuh_april2020_1" advantages="epressa_add_interbuh" class="landing-interbuh_april2020_1">
         <template v-slot:cover>
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container container--august">
                         <div class="cover">
                             <picture class="cover__img">
-                                <source :src="mix('images/head_031.webp')" type="image/webp">
-                                <img :src="mix('images/head_031.jpg')" class="img-fluid" alt="IB">
+                                <source :src="mix('images/head_03_IB.webp')" type="image/webp">
+                                <img :src="mix('images/head_03_IB.jpg')" class="img-fluid" alt="IB">
                             </picture>
                         </div>
                     </div>
@@ -37,10 +37,10 @@
 
                     </template>
                     <template v-slot:period>
-                        <div class="period"> квітень - вересень 2020</div>
+                      <!--  <div class="period"> квітень - вересень 2020</div>-->
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                         <p class="package__btn">
                             <router-link :to="`/order?article=ep-interbuh_st_action&options[periods]=6`" class="btn btn-package btn-package--card"
                                          target="_blank">оплатити карткою
@@ -72,7 +72,7 @@
                     </template>
                     <template v-slot:old-price>
 
-                        <div class="package__old-price" style="text-decoration: line-through">2539 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">240 грн/міс.</div>
                     </template>
                 </landing-package>
 
@@ -82,10 +82,10 @@
 
                     </template>
                     <template v-slot:period>
-                        <div class="period"> квітень - вересень 2020</div>
+                       <!-- <div class="period"> квітень - вересень 2020</div>-->
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                         <p class="package__btn">
                             <router-link :to="`/order?article=ep-interbuh_pr_action&options[periods]=6`" class="btn btn-package btn-package--card"
                                          target="_blank">оплатити карткою
@@ -119,8 +119,8 @@
                         </router-link>
                     </template>
                     <template v-slot:old-price>
-                        <div  v-if="tab =='6'" class="package__old-price" style="text-decoration: line-through">3979 грн</div>
-                        <div  v-else class="package__old-price" style="text-decoration: line-through">5379 грн</div>
+                        <div class="package__old-price" style="text-decoration: line-through">480 грн/міс.</div>
+
                     </template>
                 </landing-package>
                 <landing-package article="ep-interbuh_pp" class="packages__column--three">
@@ -129,10 +129,10 @@
 
                     </template>
                     <template v-slot:period>
-                        <div class="period"> квітень - вересень 2020</div>
+                       <!-- <div class="period"> квітень - вересень 2020</div>-->
                     </template>
                     <template v-slot:gifts>
-                        <li >Відеокурс «ЗП в 1С»</li>
+                        <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                         <p class="package__btn">
                             <router-link :to="`/order?article=ep-interbuh_pp&options[periods]=6`" class="btn btn-package btn-package--card"
                                          target="_blank">оплатити карткою
@@ -168,7 +168,7 @@
                         </router-link>
                     </template>
                     <template v-slot:old-price>
-                        <div   class="package__old-price" style="text-decoration: line-through">5899 грн</div>
+                      <!--  <div   class="package__old-price" style="text-decoration: line-through">5899 грн</div>-->
 
                     </template>
                 </landing-package>
@@ -179,10 +179,10 @@
 
                         </template>
                             <template v-slot:period>
-                                <div class="period"> квітень - вересень 2020</div>
+                             <!--   <div class="period"> квітень - вересень 2020</div>-->
                             </template>
                             <template v-slot:gifts>
-                                <li >Відеокурс «ЗП в 1С»</li>
+                                <li >Відеокурс «ЗП в 1С» <br> (9 уроків)</li>
                                 <p class="package__btn">
                                     <router-link :to="`/order?article=ep-api_liga&options[periods]=6`" class="btn btn-package btn-package--card"
                                                  target="_blank">оплатити карткою
@@ -222,8 +222,8 @@
 
 
                         <template v-slot:old-price>
-                            <div  v-if="tab =='6'" class="package__old-price" style="text-decoration: line-through">4093 грн</div>
-                            <div  v-else class="package__old-price" style="text-decoration: line-through">5493 грн</div>
+                           <!-- <div  v-if="tab =='6'" class="package__old-price" style="text-decoration: line-through">4093 грн</div>
+                            <div  v-else class="package__old-price" style="text-decoration: line-through">5493 грн</div>-->
                         </template>
                     </landing-package>
             </landing-package-row>

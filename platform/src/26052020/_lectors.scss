@@ -1,169 +1,80 @@
-.lector {
-  text-align: center;
-  padding: 70px 0 40px;
-  font-family: 'Ubuntu', sans-serif;
-  @media (max-width: 1140px) {
+.lectors{
 
-  }
-  @media (max-width: 767px) {
-    padding: 0px 0 40px;
-  }
-
-  &__title {
-    display: inline-block;
-    color: #01040e;
-    font-size: 42px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.11px;
-    line-height: 1;
-    padding-bottom: 15px;
-    margin: 0;
-    position: relative;
-    @media (max-width: 760px) {
-      font-size: 22px;
-    }
-
-    &:after {
-      content: " ";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-image: linear-gradient(to right, #8400ff 0%, #8400ff 100%);
-      bottom: 0;
+  &__container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media (max-width: 1200px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
-  &__container {
-    padding-top: 50px;
-    padding-bottom: 70px;
-    @media (max-width: 760px) {
-      padding-top: 40px;
-      padding-bottom: 35px;
-    }
-  }
-
-  &__btn {
-    max-width: 300px;
+  &__item{
+    @media (max-width: 1200px){
     width: 100%;
-    margin: 0px auto 0;
-    background-image: linear-gradient(to right, #fe074d 0%, #f934b4 100%);
-    border-radius: 31px;
-    border: 1px solid #ff0066;
-    color: #ffffff;
-    text-align: center;
-    display: block;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 62px;
-    text-transform: uppercase;
-
-    &:focus,
-    &:hover,
-    &:active {
-      background: transparent;
-      text-decoration: none;
-      color: #fe074d;
     }
-  }
 
-
-  &__item {
-    width: 100%;
-    max-width: 950px;
-    border: 2px solid #8931ff;
-    padding: 0 30px;
-    margin: 50px auto;
-    background-color: #fff;
-    @media (max-width: 767px) {
-      padding: 0 22px;
-      margin: 35px auto 50px;
-    }
-  }
-
-  &__list {
-    list-style-type: none;
-    padding-left: 0;
-
-    li{
-      border-bottom: 1px solid #d1c7e8;
-      text-align: left;
-      padding: 70px 0 25px 150px;
-      @media (max-width: 767px) {
-        padding: 30px 0 10px;
-      }
-
-      &:last-child{
-        border-bottom: none;
+    img{
+      @media (max-width: 1200px){
+        margin: 0 auto;
+        display: block;
       }
     }
   }
 
-  &__name {
-    color: #fd0d5c;
+  &__title{
+    display: table;
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
-    line-height: 26px;
-    margin-bottom: 0;
-    padding-bottom: 25px;
-    position: relative;
-    @media (max-width: 767px) {
-      text-align: center;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fcfdf8;
+    padding: 10px 5px;
+    background-color: #4bbe47;
+    margin-bottom: 40px;
+    @media (max-width: 1200px){
+     margin: -40px auto 15px;
     }
-    br{
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    &:before{
-      position: absolute;
-      content: " ";
-      width: 120px;
-      height: 120px;
-      left: -150px;
-      top: -35px;
-      @media (max-width: 767px) {
-        content:none;
-      }
-    }
-
-    &--mk{
-      &:before {
-        background: url(images/mk.png) center center no-repeat;
-      }
-    }
-    &--tm{
-      &:before {
-      background: url(images/tm.png)  center center no-repeat;
-      }
-    }
-
-    &--vv{
-      &:before {
-
-      background: url(images/vv.png)  center center no-repeat;
-      }
-    }
-
-
-    span {
-      text-transform: uppercase;
+    @media (max-width: 1200px){
+      margin: 20px auto 15px;
     }
   }
 
-  &__text {
-    color: #11003a;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    @media (max-width: 767px) {
-      font-size: 16px;
+  &__name{
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6c6e62;
+    text-transform: uppercase;
+    @media (max-width: 1200px){
+      font-size: 20px;
+      padding: 0 10px;
     }
-
   }
+
+  &__text{
+    padding-left: 20px;
+    border-left: solid 1px #c8ccb6;
+    @media (max-width: 1200px){
+      padding-left: 0;
+      border-left: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
 
 
 }

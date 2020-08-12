@@ -2,9 +2,11 @@
   display: block;
   width: 100%;
   z-index: 1;
-  background: url(./images/bg_head.png) 50% top no-repeat, linear-gradient(90deg, #f2f2f2 0%, #f2f2f2 50%, #f2f2f2 60%, #00c400 70%);
+  background: url(./images/bg_1200.png)  center center no-repeat;
+  padding: 40px 0 95px;
   @media (max-width: 1200px){
-    background: url(./images/bg_1.png) top 240px center no-repeat;
+    background-image: linear-gradient(-280deg,#3660e5,#5198ed,#67c6f3);
+    padding: 0px;
   }
 
   @media (max-width: 1200px){
@@ -16,7 +18,7 @@
   }
   @media (max-width: 767px){
     position: relative;
-    background: url(./images/bg_1.png) top 150px center no-repeat;
+
 
   }
 
@@ -45,10 +47,10 @@
   }
 
   .season{
-    width: 135px;
+    width: 320px;
     height: 42px;
     border-radius: 10px;
-    background-color: #444444;
+    background-color: #ffffff;
     font-size: 22px;
     font-weight: bold;
     font-stretch: normal;
@@ -56,11 +58,15 @@
     line-height: 1;
     letter-spacing: 0.44px;
     text-align: left;
-    color: #ffffff;
+    color: #3864e5;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 13px;
+    @media (max-width: 1200px){
+      font-size: 20px;
+      width: 300px;
+    }
     @media (max-width: 1200px){
       margin: 0 auto;
     }
@@ -77,8 +83,8 @@
       height: 42px;
       line-height: 42px;
       border-radius: 10px;
-      box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.53);
-      background-color: #5fc111;
+      box-shadow: 0 0 18px 0 rgba(255, 56, 117, 0.53);
+      background-color: #ff3875;
       width: 42px;
     }
   }
@@ -90,7 +96,7 @@
     font-style: normal;
     line-height: 0.75;
     letter-spacing: 1.88px;
-    color: #4d9c0e;
+    color: #fff;
     text-transform: uppercase;
     padding-bottom: 20px;
     padding-top: 25px;
@@ -115,7 +121,7 @@
     letter-spacing: 0.47px;
     padding-bottom: 55px;
     padding-top: 10px;
-    color: #444444;
+    color: #cbddff;
     text-transform: uppercase;
     @media (max-width: 1200px){
       font-size: 65px;
@@ -134,10 +140,10 @@
     font-weight: normal;
     line-height: 1.57;
     letter-spacing: 0.44px;
-    color: #222222;
+    color: #ffffff;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: solid 1px #dadada;
+    border-bottom: solid 1px #6ba2f6;
     @media (max-width: 1200px){
       padding-top: 50px;
     }
@@ -153,13 +159,13 @@
     span{
      position: relative;
       z-index: 0;
-      color: #ffffff;
+      color: #2c51b4;
       margin-right: 10px;
       &:before{
         position: absolute;
         content: " ";
         border-radius: 10px;
-        background-color: #ec831a;
+        background-color: #ffdc38;
         width: 170px;
         height: 32px;
         z-index: -1;
@@ -185,7 +191,7 @@
       line-height: 1.56;
       letter-spacing: 0.36px;
       text-align: left;
-      color: #222222;
+      color: #ebf2ff;
       position: relative;
       padding-bottom: 13px;
       @media (max-width: 767px){
@@ -264,9 +270,10 @@
 .form{
   padding: 30px 35px 30px;
   position: relative;
-  -webkit-box-shadow: -10px 10px 1px 3px rgb(215, 215, 215);
+ /* -webkit-box-shadow: -10px 10px 1px 3px rgb(215, 215, 215);
   -moz-box-shadow: -10px 10px 1px 3px rgb(215, 215, 215);
-  box-shadow: -10px 10px 1px 3px rgb(215, 215, 215);
+  box-shadow: -10px 10px 1px 3px rgb(215, 215, 215);*/
+  box-shadow: -17.7px 17.7px 40px 0 rgba(0, 0, 0, 0.14);
   background: #fff url(images/bg_form.png) center center no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -392,7 +399,8 @@
       padding: 15px 0;
       text-transform: uppercase;
       border-radius: 31px;
-      background-color: #5fc111;
+      background-color: #ff3875;
+      transform: 0.5s;
       @media (max-width: 767px){
         font-size: 20px;
       }
@@ -419,7 +427,7 @@
   margin: 0;
   display: block;
   position: absolute;
-  bottom: -45px;
+  bottom: 15px;
   left: 50%;
   transform: translate(-50%, 0px);
   @media (max-width: 1200px){
@@ -440,7 +448,7 @@
     border-bottom: 5px solid #f0c808;
     border-right: 5px solid #f0c808;
     transform: rotate(45deg);
-    animation: animate 2s infinite;
+    animation: animate 3s infinite;
     @media (max-width: 1200px){
       width: 12px;
       height: 12px;
@@ -451,15 +459,16 @@
       margin-left: 0px;
     }
     &:nth-child(2){
-      animation-delay: -0.2s;
+      animation-delay: 0.2s;
     }
     &:nth-child(3){
-      animation-delay: -0.4s;
+      animation-delay: 0.4s;
 
     }
   }
 }
 
+/*
 @keyframes animate {
   0%{
     opacity: 0;
@@ -472,4 +481,4 @@
     opacity: 0;
     transform: rotate(45deg) translate(20px,20px);
   }
-}
+}*/

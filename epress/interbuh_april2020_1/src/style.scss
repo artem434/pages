@@ -1,13 +1,13 @@
-.landing-interbuh_march2020_2{
+.landing-interbuh_april2020_1{
   $main_head: #f6ebff;
 
-  $main_head--one: #fffde0;
-  $main_head--two: #fffab0;
-  $main_head--three: #faf37e;
-  $main_head--four: #ff2c45;
+  $main_head--one: #ffeee0;
+  $main_head--two: #fddfc6;
+  $main_head--three: #ffe3cc;
+  $main_head--four: #ff4427;
 
-  $main_head_plus: #ff2c45;
-  $main_period: #b28c6d;
+  $main_head_plus: #ff4427;
+  $main_period: #e49443;
   $main_period_plus: #ffcdc4;
 
   .landing-title--columns{
@@ -65,7 +65,7 @@
   }
 
   .dtkt-promo{
-    background-color: #eeeeee;
+    background-color: #fff9f3;
   }
 
   .packages__column{
@@ -118,6 +118,10 @@
     background-color: $main_head;
     color: #262626;
     border-bottom: solid 1px #ffab79;
+    height: 234px;
+    @media (max-width: 767px){
+      height: auto;
+    }
   }
   .package__price-half{
 
@@ -136,13 +140,16 @@
   }
 
   .package__total-price{
+    display: none;
+
+  }
+
+
+  .package__price{
     display: block;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 0;
-  }
-  .package__price{
-    display: none;
+    margin-bottom: 20px;
   }
   .btn-package--six{
     display: none
@@ -194,6 +201,7 @@
       background-color: $main_head_plus;
 
 
+
       .period{
         color: $main_period_plus;
       }
@@ -203,7 +211,7 @@
       color: $main_period_plus;
     }
     .btn-package{
-      background-color: #ff2c45;
+      background-color: #ff4427;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;

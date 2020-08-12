@@ -1,2 +1,33 @@
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "hero";
+@import "project.scss";
+@import "loader-page";
+@import "loader";
+.landing-content{
+  overflow: hidden;
+}
+body{
+  background-color: #f2ecea;
+  font-family: Arial,Helvetica,sans-serif;
+}
+.wrapper__head{
+  height: auto!important;
+  min-height: auto!important;
+  background: url(./images/hero__bg-min.jpg?7128967…) center center no-repeat, linear-gradient(to right, #e22d8a 0% ,#e22d8a 50%, #fe8661 50% , #fe8661 100%);
+
+}
+.top-block__logo{
+  width: 186px;
+  height: 42px;
+  background: url("https://7eminar.ua/modules/theme-7eminar.ua/images/7minar_logo_blue_circle_white_text.svg") center center no-repeat;
+
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.top-block{
+  padding-top: 7px;
+}

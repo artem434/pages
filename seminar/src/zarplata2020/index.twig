@@ -1,5 +1,521 @@
 {% set link = page.url('/images') %}
 
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    content
+    <div class="heading mw">
+        <div class="inner"><a href="/" class="logo"></a><a href="https://7eminar.ua/events/access" target="_blank" class="entry"><span>М</span>ій кабінет</a>
+            <p></p><a href="/7min" class="video_news"><span>Н</span>овини</a><a href="https://7eminar.ua/" class="video_news"><span>П</span>ередплата</a><a href="/" class="main"><span>Г</span>оловна</a>
+        </div>
+        <div class="menu-mob">
+            <input id="menu-checkbox" type="checkbox"/><span class="burger__bg burger__bg-js"></span><span class="burger__element"></span>
+            <ul class="menu">
+                <li><a href="#lectors" class="burger__link">Лектор</a></li>
+                <li><a href="#les1" class="burger__link">Вебінар 1</a></li>
+                <li><a href="#les2" class="burger__link">Вебінар 2</a></li>
+                <li><a href="#les3" class="burger__link">Вебінар 3</a></li>
+                <li><a href="#gift" class="burger__link">Подарунок</a></li>
+                <li><a href="#order" class="burger__link">Придбати</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__menu">
+                <div class="menu">
+                    <div class="menu__container">
+                        <ul class="menu__list">
+                            <li><a href="#lectors" class="js-scroll-to">Лектор</a></li>
+                            <li><a href="#les1" class="js-scroll-to">Вебінар 1</a></li>
+                            <li><a href="#les2" class="js-scroll-to">Вебінар 2</a></li>
+                            <li><a href="#les3" class="js-scroll-to">Вебінар 3</a></li>
+                            <li><a href="#gift" class="js-scroll-to">Подарунок</a></li>
+                            <li><a href="#order" class="js-scroll-to">Придбати</a></li>
+                        </ul>
+                        <ul class="menu__list">
+                            <li><a href="/">Iнші семінари</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__content"><a href="#themes" class="hero__vebinar js-scroll-to">
+                    <p>Три <span>вебінари</span>
+                    </p></a>
+                <div class="hero__block">
+                    <p class="hero__title">зарплата-2020 <span class="hero__sub-title">нарахування, податки, звітність</span>
+                    </p>
+                    <p class="hero__list"><strong>І про зміни:</strong> понаднормові, відпускні, відрядження,<br/>накопичувальна система і не тільки…
+                    </p><a href="#knowledges" class="hero__btn js-scroll-to">Детальніше<i aria-hidden="true" class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="hero__lector"><a href="#lectors" class="js-scroll-to">Лектор:<br/><span>Тетяна Мойсеєнко</span></a></div>
+            </div>
+            <button type="button" aria-label="Open modal video" data-toggle="modal" data-target="#modal-video" data-vidId="bOOMznROZ0Q" class="hero__controls-modal-btn"></button>
+        </div>
+    </div>
+    <div class="webinar">
+        <div class="webinar__container">
+            <div class="webinar__content">
+                <div class="webinar__item">
+                    <p class="webinar__titel">вебінар 1</p>
+                    <p class="webinar__text">Нарахування та оподаткування<br/>зарплати. Середня зарплата.<br/>Резерв відпусток</p><a href="#les1" class="webinar__link js-scroll-to">Детальніше<i aria-hidden="true" class="fa fa-chevron-down"></i></a>
+                </div>
+                <div class="webinar__item">
+                    <p class="webinar__titel">вебінар 2</p>
+                    <p class="webinar__text">ПДФО та військовий збір.<br/>Аліменти.<br/>Звітність 1ДФ</p><a href="#les2" class="webinar__link js-scroll-to">Детальніше<i aria-hidden="true" class="fa fa-chevron-down"></i></a>
+                </div>
+                <div class="webinar__item">
+                    <p class="webinar__titel">вебінар 3</p>
+                    <p class="webinar__text">ЄСВ-2020. Доплата ЄСВ<br/>до мінімальної зарплати.<br/>Звітність з ЄСВ</p><a href="#les3" class="webinar__link js-scroll-to">Детальніше<i aria-hidden="true" class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="knowledges" class="knowledges">
+        <div class="knowledges__container">
+            <div class="knowledges__box">
+                <p class="knowledges__box-title">Про що ви дізнаєтесь?</p>
+                <ul class="knowledges__box-list">
+                    <li>•<span> Як нарахувати та оподаткувати зарплату у 2020 році з урахуванням поточних і нових правил</span></li>
+                    <li>•<span> Зміни у звітності з ЄСВ, заповнення 1ДФ, виправлення помилок і відповідальність</span></li>
+                    <li>•<span> Обчислення середньої зарплати за поточними правилами, зміни у порядку їх розрахунку</span></li>
+                    <li>•<span> Перезавантаження накопичувальної системи пенсійного страхування</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="helpful">
+        <div class="helpful__container">
+            <p class="helpful__title"> Для кого буде корисний курс вебінарів?</p>
+            <div class="helpful__content">
+                <div class="helpful__item">
+                    <picture class="theatre__img"><img src="{{ link }}/accountant.jpg" alt="winter"/></picture>
+                    <div class="helpful__body">
+                        <p class="helpful__titel">Головний<br/>бухгалтер</p>
+                    </div>
+                </div>
+                <div class="helpful__item">
+                    <picture class="theatre__img"><img src="{{ link }}/business.jpg" alt="winter"/></picture>
+                    <div class="helpful__body">
+                        <p class="helpful__titel">Бухгалтер<br/></p><span>із заробітної плати</span>
+                    </div>
+                </div>
+                <div class="helpful__item">
+                    <picture class="theatre__img"><img src="{{ link }}/tax.jpg" alt="winter"/></picture>
+                    <div class="helpful__body">
+                        <p class="helpful__titel">Аудитор</p>
+                    </div>
+                </div>
+                <div class="helpful__item">
+                    <picture class="theatre__img"><img src="{{ link }}/businessman.png" alt="winter"/></picture>
+                    <div class="helpful__body">
+                        <p class="helpful__titel">ФОП<br/></p><span>із найманими</span><br/><span>працівниками</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="advantages__container">
+            <p class="advantages__title">Що ви отримаєте?</p>
+            <ul class="advantages__list">
+                <li>Три вебінари (загальна<br/> тривалість – 6 год.)</li>
+                <li>Сертифікат учасника</li>
+                <li>Презентації лектора</li>
+                <li>Відповіді на запитання</li>
+            </ul>
+            <div class="advantages__gift">Книга від Тетяни Мойсеєнко <br/>«Середня заробітна плата»
+            </div>
+        </div>
+    </div>
+    <div id="lectors" class="lectors">
+        <div class="lectors__container">
+            <div class="lectors__box lector">
+                <div class="lector__image"><img width="110" height="110" alt="" src="{{ link }}/tm_min.png"/></div>
+                <p class="lector__title">Лектор: <br/><span>Тетяна Мойсеєнко</span>
+                </p>
+                <p class="lector__regalia">Шеф-редактор 7eminar.com, експерт з трудового права та кадрового обліку. Щоденно професійно консультує ТОП-10 компаній України.</p>
+                <p class="lector__regalia">Досвід лекторської роботи більше 15000 годин, в тому числі в online-семінарах, вебінарах, уроках для бухгалтерів і кадровиків.</p>
+            </div>
+        </div>
+    </div>
+    <div id="themes" class="themes">
+        <div class="themes__container">
+            <p class="themes__title">ТЕМИ І ДАТИ вебінарів:</p>
+            <div class="lessons">
+                <div id="les1" data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="lessons__item lesson">
+                    <div class="lesson__title">Вебінар  1. <span> Розрахункові показники для нарахування та оподаткування зарплати у 2020 р. Середня заробітна плата: старі/нові правила і розрахунки. Кому і скільки? Нарахування зарплати у проекті закону «Про працю»: готуємося до нових видів нарахувань та розрахунків вже у 2020 році! Резерв відпусток: інвентаризація-2019, нарахування-2020. Оподаткування перехідних виплат грудень-19/січень-20.</span><br/>
+                    </div>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson1" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Нарахування зарплати та нова середня зарплата у проекті закону «Про працю»: готуємося до нових видів нарахувань та розрахунків вже у 2020 році!
+                                <ul>
+                                    <li>Скасовують Закон про оплату праці, Закон про відпустки – чи готові ви? Як будемо нараховувати зарплату вже у 2020 році?</li>
+                                    <li>Чи встановлені у вас норми робочого часу на 2020 рік для нарахування зарплати по-новому?</li>
+                                    <li>По-новому система оплати праці, норми праці, елементи оплати праці самостійно! Як і на що спиратися?</li>
+                                    <li>Понаднормові: знімають обмеження, зменшують розмір нарахувань!</li>
+                                    <li>Затримали виплату зарплати працюючому – платитимемо пеню! Скільки і як вона буде нараховуватися? Оподаткування пені.</li>
+                                    <li>Затримали виплату зарплати звільненому працівнику – платитимемо ще більшу пеню! Як нарахувати та оподаткувати таку виплату?</li>
+                                    <li>Час відрядження – бухгалтер, лікуй! Усе буде по-новому.</li>
+                                    <li>Компенсації та вихідні виплати, відпускні – час змін прийшов! Постанова 100, прощавай вже у 2020 році!</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Розрахункові показники для нарахування та оподаткування зарплати:
+                                <ul>
+                                    <li>Мінімальна зарплата у 2020 р. – її вплив на розрахункові показники для нарахування заробітної плати</li>
+                                    <li>Прожитковий мінімум у 2020 р. та його вплив на розрахунок зарплати і податків</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Середня зарплата для лікарняних, декретних виплат:
+                                <ul>
+                                    <li>Розрахунковий період у різних випадках (новоприйняті, з декретної відпустки, з невеликим відпрацьованим періодом)</li>
+                                    <li>Сукупний дохід для розрахунку середньої зарплати: різні види доходів, які оподатковувались ЄСВ</li>
+                                    <li>Кількість календарних днів у розрахунковому періоді: види поважних причин, які виключаються з розрахункового періоду</li>
+                                    <li>Середні та денні порівняння, середні та мінімальні порівняння</li>
+                                    <li>Страховий стаж за дод. 9, ОК-5, ОК-7, трудовою книжкою</li>
+                                    <li>Протокол комісії соціального страхування: форма, заповнення</li>
+                                    <li>Строки виплати лікарняних і декретних. Подання повідомлення про виплати застрахованим особам</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Середня зарплата для відпускних, відрядження, служба в армії – до запровадження змін:
+                                <ul>
+                                    <li>Види розрахункового періоду для розрахунку середньої зарплати різних виплат</li>
+                                    <li>Розрахунковий період у різних випадках (новоприйняті, з декретної відпустки, з невеликим відпрацьованим періодом)</li>
+                                    <li>Сукупний дохід для розрахунку середньої зарплати: виплати, які включаються і не включаються. Виплати, що включаються пропорційним розрахунком</li>
+                                    <li>Кількість календарних днів у розрахунковому періоді: випадки виключення днів із розрахунку</li>
+                                    <li>Денна заробітна плата для порівняння нарахувань: особливості її розрахунку</li>
+                                    <li>Коригування середнього заробітку у зв’язку з підвищенням зарплат</li>
+                                    <li>Коли і як виплатити відпускні, якщо виникла потреба надати відпустку працівнику «завтра»? Виплати відпускних за 3 дні: особливості розрахунку суми відпускних. Відповідальність за порушення строку виплати і чи можна її уникнути?</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Резерв відпусток – інвентаризація-2019, нарахування-2020:
+                                <ul>
+                                    <li>Нарахування та інвентаризація резерву 2019 – 2020. Види відпусток, які включаються в резерв</li>
+                                    <li>Результати інвентаризації: документальне оформлення, бухгалтерські проведення</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Оподаткування перехідних виплат грудень-19/січень-20:
+                                <ul>
+                                    <li>Перехідні відпускні грудень-19/січень-20 – правильне застосування обмеження для ЄСВ, заповнення таблиці 6 персоніфікації на прикладах. Відпускні «січня, виплачені в грудні» та «грудня, виплачені в січні» – особливості та незручності законодавства</li>
+                                    <li>Перехідна допомога по вагітності та пологам 2019 – 2020: контроль мінімальних обмежень та ЄСВ</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered">
+                            <div class="program__item--text">
+                                <p>Відповіді на запитання.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість вебінару: <b>150 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les2" data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="lessons__item lesson">
+                    <div class="lesson__title">Вебінар 2. <span>ПДФО та військовий збір: оподаткування у 2020 році додаткового блага, допомоги, подарунків, інші види оподатковуваних і неоподатковуваних доходів. Аліменти. Звітність 1ДФ: заповнення, подання, відповідальність.</span><br/>
+                    </div>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson2" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>ПДФО та військовий збір у 2020 році: ставки, податкові соціальні пільги на прикладах</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Допомоги працівникам і непрацівникам, їх оподаткування та неоподаткування:
+                                <ul>
+                                    <li>Матеріальні допомоги-2020 і можливі готівкові оподатковувані та неоподатковувані виплати, звітність</li>
+                                    <li>Цільова допомога на лікування: документальне оформлення, розрахунки та оподаткування, звітність</li>
+                                    <li>Допомога на лікування і медичне обслуговування працівникам та членам їхніх сімей: умови неоподаткування суми, документальне оформлення, звітність</li>
+                                    <li>Допомога на поховання у 2020 р.: джерела виплати, неоподатковувані розміри, грошові та негрошові способи надання допомоги, звітність.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Подарунки працівникам і непрацівникам у 2020 р.:
+                                <ul>
+                                    <li>Неоподатковуваний розмір вартості подарунка у 2020 р.</li>
+                                    <li>	Оподаткування ПДФО вартості подарунків, які перевищують неоподатковуваний розмір, звітність</li>
+                                    <li>Оподаткування ЄСВ вартості подарунків, звітність</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Додаткові блага працівникам і непрацівникам:
+                                <ul>
+                                    <li>Грошові та негрошові виплати: перелік видів доходів (проїзд та перевезення працівників, харчування, білети на інші види блага)</li>
+                                    <li>Розрахунок ПДФО, ВЗ, ЄСВ для суми грошового і негрошового виду додаткового блага</li>
+                                    <li>Порядок сплати ПДФО, ВЗ, ЄСВ у разі надання додаткового блага</li>
+                                    <li>Бухгалтерський облік нарахування наданого додаткового блага та утриманих з нього податків</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>	Інші види оподатковуваних і неоподатковуваних доходів працівникам у зручній таблиці: документальне оформлення, податки та звітність</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Аліменти у 2020 р.: нарахування, виплата та звітність:
+                                <ul>
+                                    <li>Види і документальні підтвердження</li>
+                                    <li>Як проводити відрахування із зарплати та в якому розмірі</li>
+                                    <li>Види доходів, з яких аліменти утримуються і не утримуються</li>
+                                    <li>Звіт щодо аліментів щомісяця</li>
+                                    <li>	Аліменти перераховуємо виконавчій службі: коли це можна і треба робити підприємству? На які виконавчі листи поширюються зміни?</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Заповнення звітності за формою 1ДФ: строки подання, ознаки доходів у таблиці 1 для ПДФО
+                                <ul>
+                                    <li>Заповнення таблиці 2 з військового збору</li>
+                                    <li>Відповідальність за помилки та способи їх виправлення</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered">
+                            <div class="program__item--text">
+                                <p>   Відповіді на запитання.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість вебінару: <b>120 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="les3" data-toggle="collapse" data-target="#lesson3" aria-expanded="false" aria-controls="#lesson3" class="lessons__item lesson">
+                    <div class="lesson__title">Вебінар 3. <span>ЄСВ-2020: нарахування і сплата. Доплата ЄСВ до мінімальної зарплати. Звітність з ЄСВ: заповнення, виправлення помилок, відповідальність. Зарплата за 0,5 ставки. Розрахунок зі звільненим (або померлим) працівником. Накопичувальна пенсійна система: перезавантаження. Готуйте гроші та як це буде?</span><br/>
+                    </div>
+                    <button type="button" class="lesson__btn">Детальніше</button>
+                </div>
+                <div id="lesson3" class="lessons__themes collapse">
+                    <div class="program">
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>ЄСВ у 2020 р.: ставки, максимальне обмеження, строки сплати</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Перелік видів доходів, на які нараховується і не нараховується ЄСВ:
+                                <ul>
+                                    <li>Правила нарахування і ненарахування ЄСВ на різні види доходів</li>
+                                    <li>Особливості нарахування ЄСВ на окремі видів доходів:
+                                        <ul>
+                                            <li>винагороди за договорами ЦПХ</li>
+                                            <li>лікарняні після звільнення</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Доплата ЄСВ до мінімальної зарплати: випадки донарахування і недонарахування. Приклади розрахунку</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Звітність з ЄСВ – заповнення, виправлення помилок, відповідальність:
+                                <ul>
+                                    <li>Таблиця 5 – випадки заповнення і подання (початкова, додаткова, скасовуюча). Пояснення щодо заповнення колонок таблиці. Переведення працівників з посади на посаду на прикладах. Відпустки по догляду за дитиною та вагітності і пологам</li>
+                                    <li>Таблиця 6 – пояснення щодо заповнення колонок. Приклади заповнення у різних випадках нарахувань (зарплата, відпускні та компенсація відпускних, лікарняні, декретні, винагороди за договорами ЦПХ, доплата ЄСВ до мінімальної зарплати)</li>
+                                    <li>Помилилися у звіті з ЄСВ: випадки помилок, способи виправлення і строки</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p>Зарплата за 0,5 ставки: як правильно нараховувати:
+                                <ul>
+                                    <li>Випадки застосування, різновиди і варіанти «неповних ставок» – документальне оформлення</li>
+                                    <li>Правильне і помилкове нарахування заробітної плати для працівників із «неповною ставкою». Приклади розрахунків</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Накопичувальна пенсійна система: перезавантаження. Готуйте гроші та як це буде?</p>
+                            </div>
+                        </div>
+                        <div class="program__item">
+                            <div class="program__item--text">
+                                <p> Розрахунок зі звільненим (або померлим) працівником:
+                                <ul>
+                                    <li>	Строки розрахунку з працівником у разі звільнення та відповідальність за затримку виплат</li>
+                                    <li>	Виплати після звільнення – недопустимо, але є винятки… Які виплати можна здійснювати після звільнення працівника</li>
+                                    <li> Виплати померлого працівника родичам: заробітна плата і компенсація відпускних. Як документально оформити виплати родичам?</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered">
+                            <div class="program__item--text">
+                                <p> Відповіді на запитання.</p>
+                            </div>
+                        </div>
+                        <div class="program__item program__item--centered program__item--clock">
+                            <div class="program__item--text">
+                                <p>Тривалість вебінару: <b>120 хвилин</b>
+                                </p><a href="#order" class="program__btn js-scroll-to">Замовити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gift"  class="gift">
+        <div class="gift__container">
+            <div class="gift__block">
+                <p class="gift__title">Подарунок від лектора</p>
+                <p class="gift__text"><span>Книга «Середня заробітна плата: розрахунки і приклади»</span><br/>від Тетяни Мойсеєнко в електронному вигляді.</p>
+                <p class="gift__text">За допомогою цієї книги ви навчитеся та закріпите головні правила розрахунку лікарняних та декретних, виплат за час відпустки, відрядження, вихідної допомоги, донорських днів, переведення працівника на нижчеоплачувану роботу, оплату часу виклику працівника до суду.</p>
+            </div>
+        </div>
+    </div>
+    <div id="order" class="order">
+        <div class="order__container">
+            <div id="timer-custom" class="order__timer">
+                <p class="order__title">Ціна діє до <span id="timer-title">{{ page.options['date']|default('') }}</span>
+                </p>
+                <div class="pricing-timer"  data-timer="{{ page.options['timer']|default('') }}">
+                    <div class="pricing-timer__inner">
+                        <div class="pricing-timer__box"><span class="days">00</span>дні</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="hours">00</span>год</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="minuts">00</span>хв</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="seconds">00</span>сек</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__packages">
+                <div class="order__package  order__package--set">
+                    <p class="package__header ">Курс <br>   із 3-х вебінарів</p>
+                    <div class="package__list  package__list--set"><p>Книга «Середня <br> заробітна плата» <br> у подарунок</p></div>
+                    <div class="package__body  ">
+                        <p class="package__old-price">
+                            <s>{{shop_price('курс-zarplata2020_585','line')}}</s>
+                        </p>
+                        <p class="package__price"> {{shop_price('курс-zarplata2020_585','site')}}<span>грн</span>
+                        </p>
+                    </div>
+                    <div class="package__footer package__footer--set ">
+                        <div class="package__btn">
+                            <form method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-zarplata2020_585"/>
+                                <button type="submit" rel="order" class="btn">ЗАМОВИТИ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="certificate">
+        <div class="certificate__container">
+            <div class="certificate__block">
+                <p class="certificate__title">ПІСЛЯ ПРОХОДЖЕННЯ КУРСУ ВЕБІНАРІВ ВИ ЗМОЖЕТЕ:</p>
+                <ul class="certificate__list">
+                    <li><span>Без помилок нараховувати та оподатковувати зарплату в 2020 році</span></li>
+                    <li><span>Правильно звітувати до податкової служби про ЄСВ, ПДФО та військовий збір</span></li>
+                    <li><span>Обчислювати середню зарплату та виправляти помилки у розрахунках</span></li>
+                </ul>
+                <div class="certificate__content">
+                    <div class="certificate__item">
+                        <picture class="certificate__img"><img src="{{ link }}/certificate1.jpg" alt="winter"/></picture>
+                    </div>
+                    <div class="certificate__item">
+                        <p class="certificate__text">Відповіді на ваші запитання,<br/>отримані на вебінарах, допоможуть<br/>в практичному житті, а сертифікат<br/>про здобутий рівень фахівця<br/>стане приємним закріпленням<br/>отриманих знань і навичок!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="video" class="video">
+        <div id="bar-1" class="video__content">
+            <div class="slider">
+                <div class="slide">
+                    <p class="video__title">Тетяна Мойсеєнко ЗАПРОШУЄ</p>
+                    <div class="video__player"><a href="https://youtu.be/bOOMznROZ0Q" class="video__link">
+                            <picture><img src="https://i.ytimg.com/vi/bOOMznROZ0Q/maxresdefault.jpg" alt="Тетяна Мойсеєнко" class="video__media"/></picture></a>
+                        <button aria-label="play" class="video__button">
+                            <svg>
+                                <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" class="video__button-shape"></path>
+                                <path d="M 45,24 27,14 27,34" class="video__button-icon"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners">
+        <div class="container partners__container">
+            <ul class="partners__list">
+                <li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></li>
+                <li><a href="https://7eminar.com/" target="_blank" class="logonoclik"><img style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" class="img_partners1"/></a></li>
+                <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит"/></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
+        <div role="document" class="modal-dialog">
+            <div id="closeModal" data-dismiss="modal" class="close-modal close-modal-video"></div>
+            <div class="modal-content">
+                <div class="player"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-page" class="loader-page">
+        <div class="dots">
+            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+        </div>
+    </div>
 </div>

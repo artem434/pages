@@ -16,13 +16,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
   }
 
   &__package {
-    width: 300px;
-    @media (max-width: 767px){
+    width: 236px;
+    @media (max-width: 1200px){
       margin-top: 20px;
-      width: 100%;
+    }
+    @media (max-width: 767px){
+      &:last-child{
+        order: -1;
+      }
     }
 
   }

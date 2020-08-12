@@ -68,7 +68,7 @@ jQuery(($) => {
             phone:"Введіть правильний номер телефону"
         },
         submitHandler: function() {
-            var url = ['/invoice2', '/subscribe/26052020gift'];
+            var url = ['/invoice2', '/subscribe/09062020gift'];
             var dataSend = [ {"customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(),'article': $('.free-demo .article').val(),'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val()}, {"firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val()}];
 
             $.each(url, function(i) {
@@ -80,7 +80,7 @@ jQuery(($) => {
                     data: dataSend[i],
                     success: function( data, event, payload) {
                         loader.addClass('is-active');
-                        location.href = '/gift_26052020_registration'
+                        location.href = '/gift_09062020_registration'
                     },
 
                     error: function() {

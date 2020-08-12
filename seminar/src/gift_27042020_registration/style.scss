@@ -23,6 +23,14 @@
 
 }
 
+.seminar-landing{
+  background: url(images/bg-min.jpg) top -90px center no-repeat;
+  @media (max-width: 767px){
+    background: url(images/bg_320.jpg) top -680px center no-repeat;
+    background-size: cover;
+  }
+}
+
 %container {
   position: relative;
   margin: 0 auto;
@@ -102,8 +110,8 @@
 
 
 @import "styles/hero";
-@import "styles/themes";
+
 @import "styles/video";
-@import "styles/loader";
+
 @import "styles/loader-page";
 

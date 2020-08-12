@@ -1,5 +1,5 @@
 .hero {
-  background: url(images/bg-min.jpg) top -30px center no-repeat;
+
   width: 100%;
   position: relative;
 
@@ -39,7 +39,7 @@
     line-height: 0.67;
     letter-spacing: normal;
     text-align: center;
-    color: #262626;
+    color: #fff;
     text-transform: uppercase;
     @media (max-width: 767px){
       font-size: 37px;
@@ -69,7 +69,7 @@
     line-height: 1.56;
     letter-spacing: normal;
     text-align: center;
-    color: #262626;
+    color: #fff;
     padding-top: 35px;
     @media (max-width: 1200px){
       padding-bottom: 15px;
@@ -107,8 +107,8 @@
     max-width: 407px;
     width: 100%;
     border-radius: 30px;
-    border: solid 1px #c46300;
-    background-color: #fff8ea;
+    border: solid 1px #1987b9;
+    background-color: #fff;
     @media (max-width: 767px){
       padding: 30px 10px;
     }
@@ -159,10 +159,10 @@
     line-height: 1.33;
     letter-spacing: normal;
     text-align: center;
-    color: #6f3400;
+    color: #fff;
     padding-top: 10px;
     margin-bottom: 0;
-    padding-bottom: 291px;
+    padding-bottom: 100px;
     position: relative;
     @media (max-width: 767px){
       padding: 30px 0 60px;
@@ -264,8 +264,8 @@
     width: 21px;
     height: 21px;
     margin-left: 7px;
-    border-bottom: 5px solid #a87439;
-    border-right: 5px solid #a87439;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
     transform: rotate(45deg);
     animation: animate 2s infinite;
     @media (max-width: 1200px){

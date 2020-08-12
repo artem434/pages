@@ -42,7 +42,7 @@
           }
         }
         &:nth-child(odd){
-          background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
+          background-image: linear-gradient(-145deg, #d71c16, #600799, #152fc7);
         }
 
         &:nth-child(1){
@@ -119,7 +119,7 @@
           }
         }
         &:nth-child(even){
-          background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
+          background-image: linear-gradient(-145deg, #d71c16, #600799, #152fc7);
         }
 
         &:nth-child(1){
@@ -266,7 +266,7 @@
   }
 
   &__footer{
-    background-image: linear-gradient(to left, #72ddf7, #2b4ae1);
+    background-image: linear-gradient(to left, #d71c16, #600799, #152fc7);
     height: 285px;
     width: 100%;
     display: flex;

@@ -5,56 +5,7 @@ import 'cdnjs/slick-carousel/1.8.1/slick.min.js';
 import 'cdnjs/waypoints/4.0.1/jquery.waypoints.min.js';
 
 
-jQuery(function ($) {
 
-    (function($) {
-        $.fn.animated = function(inEffect) {
-            $(this).each(function() {
-                let ths = $(this);
-                ths.waypoint(function(dir) {
-                    if (dir === "down") {
-                        ths.addClass(inEffect).css("opacity", "1");
-                    } else {
-                        ths.removeClass(inEffect);
-                    }
-                }, {
-                    offset: "85%"
-                });
-
-            });
-        };
-    })(jQuery);
-
-    let get = $(".get__item");
-
-    $('.knowledges__number').animated('line-js');
-    /*$(".package__head").animated('package_line-js');*/
-    // $(".package").animated('package_line-js');
-    get.animated('certificate_line-js');
-
-    get.hover(function (e) {
-        e.preventDefault();
-        get.removeClass('active');
-        $(this).addClass('active');
-
-    });
-
-
-    function checkWidth() {
-
-        get.hover(function (e) {
-            e.preventDefault();
-            get.removeClass('active');
-            $(this).addClass('active');
-
-        });
-
-
-    }
-
-    $(window).resize(checkWidth);
-
-});
 
 
 jQuery(($) => {
@@ -106,32 +57,17 @@ jQuery(($) => {
     });
 
     if (document.location.host == "7eminar.com") {
-        $('.js-banner-link').attr('href', 'https://7eminar.ua/');
+        $('.js-platform-banner').show();
         $('.header').hide();
         $('.heading').show();
     }
-    if (document.location.host == "seminar.ibuh.info") {
-        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
-
-
-    }
-
-    if (document.location.host == "seminar.impulsm.com.ua") {
-        $('.price-platform-js').html('149 <br> <span>грн/міс.<span>');
-
-
-    }
-
-
 
     if (document.location.host != "7eminar.com") {
-
-        $('.js-banner-link').attr('href', '/platform');
-
+        $('.js-platform-link').attr('href', '/platform');
     }
 
     if (document.location.host == "seminars.dtkt.ua") {
-        $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
+        $('.js-platform-link').attr('href', 'https://promo.dtkt.ua/7eminar');
         $('.js-platform-banner').show();
         $('.js-btn-hidden').show();
     } else {
@@ -158,38 +94,7 @@ jQuery(($) => {
         $('#menu-checkbox').prop('checked',false);
     });
 
-    $('.slider').slick({
-        speed: 500,
-        cssEase: 'linear',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        prevArrow: '<div id="pause_video" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',
-        nextArrow: '<div id="pause_video" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',
-        lazyLoad:'ondemand',
-        fade: true
 
-
-
-    });
-
-    $(".slider").on("beforeChange", function(event, slick) {
-        var currentSlide, slideType, player, command;
-        currentSlide = $(slick.$slider).find(".slick-current");
-        slideType = currentSlide.attr("class").split(" ")[1];
-        player = currentSlide.find("iframe").get(0);
-
-        if (slideType ) {
-            command = {
-                "event": "command",
-                "func": "pauseVideo"
-            };
-        }
-
-        if (player != undefined) {
-            player.contentWindow.postMessage(JSON.stringify(command), "*");
-        }
-    });
 
     if (document.location.host == "seminars.dtkt.ua") {
         $(window).scroll(function() {
@@ -201,60 +106,35 @@ jQuery(($) => {
                 jQuery('.burger__bg').removeClass('burger__bg-js-dk');
             }
         })
-    });
-
-function findVideos() {
-    let videos = document.querySelectorAll('.video__player');
-
-    for (let i = 0; i < videos.length; i++) {
-        setupVideo(videos[i]);
     }
-}
+
+});
 
 
-function setupVideo(video) {
-    let link = video.querySelector('.video__link');
-    let media = video.querySelector('.video__media');
-    let button = video.querySelector('.video__button');
-    let id = parseMediaURL(media);
-
-    video.addEventListener('click', () => {
-        let iframe = createIframe(id);
-
-        link.remove();
-        button.remove();
-        video.appendChild(iframe);
-    });
-
-    link.removeAttribute('href');
-    video.classList.add('video--enabled');
-}
-
-function parseMediaURL(media) {
-    let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-    let url = media.src;
-    let match = url.match(regexp);
-
-    return match[1];
-}
-
-function createIframe(id) {
-    let iframe = document.createElement('iframe');
-
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.setAttribute('allow', 'autoplay');
-    iframe.setAttribute('src', generateURL(id));
-    iframe.classList.add('video__media');
-
-    return iframe;
-}
-
-function generateURL(id) {
-    let query = '?enablejsapi=1&html5=1?rel=0&showinfo=0&autoplay=1';
-
-    return 'https://www.youtube.com/embed/' + id + query;
-}
-
-findVideos();
+$('[data-timer-2]').each((index: number, elem: Element) => {
+    var units = [86400, 3600, 60, 1];
+    var a = $(elem).data('timer-2').split(/[^0-9]/);
+    var due = new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);
 
 
+    function pad(a) {
+        a = Math.floor(a);
+        if (a <= 0) return '00';
+        return a < 10 ? '0' + a : a;
+    }
+
+    function update() {
+        var timeLeft = Math.floor((due.getTime() - new Date().getTime()) / 1000);
+        var u = units.map(function (s) {
+            var unit = (timeLeft < 0) ? 0 : Math.floor(timeLeft / s);
+            timeLeft -= unit * s;
+            return pad(unit);
+        });
+        $('.seconds', elem).text(pad(u[3]));
+        $('.minuts', elem).text(pad(u[2]));
+        $('.hours', elem).text(pad(u[1]));
+        $('.days', elem).text(pad(u[0]));
+    }
+
+    setInterval(update, 1000);
+});

@@ -43,7 +43,7 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                             phone: "Введіть правильний номер телефону"
                         },
                         submitHandler: function (form) {
-                            var url = ['/subscribe/12052020marathon', '/invoice2'];
+                            var url = ['/subscribe/12052020marathondk', '/invoice2'];
                             var dataSend = [{ "firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val() }, { "customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(), 'article': $('.free-demo .article').val(), 'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val() }];
                             $.each(url, function (i) {
                                 $.ajax({
@@ -57,10 +57,10 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                                         var email = $('.mail').val();
                                         clients.Auth.getClient().then(function (client) {
                                             if (payload.responseJSON.result === true) {
-                                                location.href = '/may2020_thanks';
+                                                location.href = '/may2020_dk_thanks';
                                             }
                                             else if (payload.responseJSON.result === false) {
-                                                location.href = '/may2020_again';
+                                                location.href = '/may2020_dk_again';
                                             }
                                         });
                                     },

@@ -25,9 +25,11 @@
     line-height: 1.14;
     letter-spacing: normal;
     text-align: center;
-    color: #0c0c0c;
+    color: #fff;
     padding: 60px 0;
     text-transform: uppercase;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+
     @media (max-width: 1200px){
       font-size: 48px;
       padding: 35px 0;

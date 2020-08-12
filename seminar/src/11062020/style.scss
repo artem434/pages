@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 
 //-font-family: 'Inter', sans-serif;
@@ -41,7 +41,7 @@ html * {
 }
 
 body {
-  background: #ffe2ec;
+  background: #ecefff;
 }
 
 #main {
@@ -52,7 +52,8 @@ body {
   display: none;
 }
 %btn {
-  background-image: linear-gradient(to top, #ffad2d, #ffe82d);
+  background-color: #ae332f;
+  border: solid 2px #ae332f;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -60,7 +61,7 @@ body {
   line-height:1;
   letter-spacing: 1px;
   text-align: center;
-  color: #1d1d1d;
+  color: #fff;
   padding: 18px 30px;
   display: inline-block;
   text-transform: uppercase;
@@ -82,16 +83,13 @@ body {
   &:active,
   &:focus,
   &:hover{
-    background-image: linear-gradient(to top, #dc3200, #dc6e00);
     text-decoration: none;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    color: #fff;
+    background-color: #fff;
+  }
 
-    }
 
 }
+
 %container {
   position: relative;
   max-width: 1170px;
@@ -136,7 +134,7 @@ svg{
    line-height: 1;
    letter-spacing: 1.8px;
    text-align: center;
-   color: #ff3875;
+   color: #d43c37;
    padding-bottom: 15px;
    @media (max-width: 767px){
      font-size: 15px;
@@ -206,7 +204,7 @@ svg{
 
 .branding-page #main{
   width: 100%;
-  background: #ffe2ec;
+  background: #ecefff;
 }
 
 .branding-page{

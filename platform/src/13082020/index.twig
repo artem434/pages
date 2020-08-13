@@ -1,33 +1,33 @@
-{% set price_month_3 = shop_price('s-v3_717r','month') %}
-{% set price_link_3 = 'shop/invoice?article=s-v3_717r' %}
-{% set price_site_3 = shop_price('s-v3_717r','site') %}
-{% set price_line_3 = shop_price('s-v3_717r','line') %}
+{% set price_month_3 = shop_price('s-v3_837','month') %}
+{% set price_link_3 = 'shop/invoice?article=s-v3_837' %}
+{% set price_site_3 = shop_price('s-v3_837','site') %}
+{% set price_line_3 = shop_price('s-v3_837','line') %}
 
-{% set price_site_6 = shop_price('s-v6_1134r','site') %}
-{% set price_month_6 = shop_price('s-v6_1134r','month') %}
-{% set price_line_6 = shop_price('s-v6_1134r','line') %}
-{% set price_link_6 = 'shop/invoice?article=s-v6_1134r' %}
+{% set price_site_6 = shop_price('s-v6_1554r','site') %}
+{% set price_month_6 = shop_price('s-v6_1554r','month') %}
+{% set price_line_6 = shop_price('s-v6_1554r','line') %}
+{% set price_link_6 = 'shop/invoice?article=s-v6_1554r' %}
 
-{% set price_site_12 = shop_price('s-v12_2028','site') %}
-{% set price_month_12 = shop_price('s-v12_2028','month') %}
-{% set price_line_12 = shop_price('s-v12_2028','line') %}
-{% set price_link_12 = 'shop/invoice?article=s-v12_2028' %}
+{% set price_site_12 = shop_price('s-v12_2988r','site') %}
+{% set price_month_12 = shop_price('s-v12_2988r','month') %}
+{% set price_line_12 = shop_price('s-v12_2988r','line') %}
+{% set price_link_12 = 'shop/invoice?article=s-v12_2988r' %}
 
 
-{% set price_month_3_card = shop_price('s-v3_537с','month') %}
-{% set price_link_3_card = 'shop/invoice?article=s-v3_537с' %}
-{% set price_site_3_card = shop_price('s-v3_537с','site') %}
-{% set price_line_3_card = shop_price('s-v3_537с','line') %}
+{% set price_month_3_card = shop_price('s-v3_717c','month') %}
+{% set price_link_3_card = 'shop/invoice?article=s-v3_717c' %}
+{% set price_site_3_card = shop_price('s-v3_717c','site') %}
+{% set price_line_3_card = shop_price('s-v3_717c','line') %}
 
-{% set price_site_6_card = shop_price('s-v6_954c','site') %}
-{% set price_month_6_card = shop_price('s-v6_954c','month') %}
-{% set price_line_6_card = shop_price('s-v6_954c','line') %}
-{% set price_link_6_card = 'shop/invoice?article=s-v6_954c' %}
+{% set price_site_6_card = shop_price('s-v6_1374r','site') %}
+{% set price_month_6_card = shop_price('s-v6_1374r','month') %}
+{% set price_line_6_card = shop_price('s-v6_1374r','line') %}
+{% set price_link_6_card = 'shop/invoice?article=s-v6_1374r' %}
 
-{% set price_site_12_card = shop_price('s-v12_1788c','site') %}
-{% set price_month_12_card = shop_price('s-v12_1788c','month') %}
-{% set price_line_12_card = shop_price('s-v12_1788c','line') %}
-{% set price_link_12_card = 'shop/invoice?article=s-v12_1788c' %}
+{% set price_site_12_card = shop_price('s-v12_2628c','site') %}
+{% set price_month_12_card = shop_price('s-v12_2628c','month') %}
+{% set price_line_12_card = shop_price('s-v12_2628c','line') %}
+{% set price_link_12_card = 'shop/invoice?article=s-v12_2628c' %}
 
 
 
@@ -59,24 +59,26 @@
                     <div class="hero">
                         <div class="hero__block">
                             <div class="hero__title">
-                                <p>
-                                    Навчайтесь у найкращих!
-                                </p>
+                                    Подарунки та знижки
                             </div>
                             <div class="hero__sub-title">
-                                СПЕЦІАЛЬНА ЦІНА ТІЛЬКИ ДЛЯ УЧАСНИКІВ БЕЗКОШТОВНОЇ ONLINE-КОНФЕРЕНЦІЇ <br> «<span>СЕРПНЕВИЙ БУХГАЛТЕРСЬКИЙ МІКС</span>»
-                            </div>
-                            <div class="hero-btn">
-                                <a href="#order" class="btn">хочу знижку 67%<i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                            <div class="hero__description">
-                                <p> БУХгалтерська Відеоплатформа <span>№1</span> </p>
+                                у будь-яку погоду
                             </div>
 
+                            <div class="hero__description">
+                                <p> Отримайте яскраву парасольку у подарунок <br>
+                                    при передплаті Бухгалтерської Відеоплатформи <span>№1</span> </p>
+                            </div>
+                            <div class="hero-btn">
+                                <a href="#order" class="btn">ХОЧУ ПОДАРУНОК<i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
                             <div class="hero__sub-description">
-                                Найкращий відеосервіс для бухгалтерів, на якому вже представлено <br>  <span>понад {{ page.options['number']|default('') }} курсів</span>,
-                                 вебінарів та онлайн-трансляцій на всі актуальні теми  <span>та ще 50+</span>  очікується впродовж 2020 року
+                                Найкращий відеосервіс, на якому вже представлено <br>
+                                <span>понад {{ page.options['number']|default('') }} курсів</span> на всі актуальні бухгалтерські теми
+
+
+
                             </div>
                             <p class="hero__date"> {{ page.options['hero__date']|default('') }}</p>
                         </div>
@@ -233,7 +235,7 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_3 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-47%</div>
+                        <div class="percent">-38%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
@@ -252,7 +254,7 @@
                         <p class="package__price-month">{{ price_month_3_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_3_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_3_card }}">оплатити картою</a>
-                        <div class="percent">-60%</div>
+                        <div class="percent">-47%</div>
                     </div>
 
                 </div>
@@ -267,7 +269,7 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_6 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-58%</div>
+                        <div class="percent">-42%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
@@ -286,7 +288,7 @@
                         <p class="package__price-month">{{ price_month_6_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_6_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_6_card }}">оплатити картою</a>
-                        <div class="percent">-65%</div>
+                        <div class="percent">-49%</div>
                     </div>
                 </div>
                 <div class="package">
@@ -305,7 +307,7 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_12 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-62%</div>
+                        <div class="percent">-45%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
@@ -319,14 +321,12 @@
                         </ul>
                         <div class="js-show_hide package__show-hide">а ще входить...</div>
                     </div>
-
-
                     <div class="package__footer">
                         <p class="package__sub-title">При оплаті картою</p>
                         <p class="package__price-month">{{ price_month_12_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_12_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_12_card }}">оплатити картою</a>
-                        <div class="percent">-67%</div>
+                        <div class="percent">-51%</div>
                     </div>
 
                 </div>
@@ -1080,7 +1080,7 @@
 
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">16 червня</p>
+                                <p class="date">11 червня</p>
                                 <p class="type">ВІДЕОКУРС
                                 </p>
                             </div>
@@ -1161,14 +1161,6 @@
                             </div>
                             <p class="waiting__text">Великий Семінар з РРО</p>
                         </div>
-                        <div class="waiting__item">
-                            <div class="waiting__wrapp">
-                                <p class="date"> липень</p>
-                                <p class="type">далі буде
-                                </p>
-                            </div>
-                            <p class="waiting__text">Слідкуйте за анонсами...</p>
-                        </div>
 
                     </div>
                 </div>
@@ -1178,27 +1170,52 @@
                     <div class="your-class">
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
+                                <p class="date">4  серпня</p>
+                                <p class="type">Відеокурс
+                                </p>
+                            </div>
+                            <p class="waiting__text">Все про ФОП у 2020 році. Відповіді на запитання </p>
+                        </div>
+
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">17  серпня</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Ольги Гонзайк </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">18  серпня</p>
+                                <p class="type">Online-трансляція
+                                </p>
+                            </div>
+                            <p class="waiting__text">Серпневий бухгалтерський мікс </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
                                 <p class="date">26  серпня</p>
                                 <p class="type">ВІДЕОКУРС
                                 </p>
                             </div>
-                            <p class="waiting__text">П(С)БО</p>
+                            <p class="waiting__text">П(С)БО: легкий старт </p>
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">27  серпня</p>
-                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                <p class="type">Все про ФОП у 2020 році. Відповіді на запитання
                                 </p>
                             </div>
                             <p class="waiting__text">Собівартість і виробництво: від розрахунку до податків</p>
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date"> серпень</p>
-                                <p class="type">далі буде
+                                <p class="date"> 31  серпня</p>
+                                <p class="type">Відповіді на запитання
                                 </p>
                             </div>
-                            <p class="waiting__text">Слідкуйте за анонсами...</p>
+                            <p class="waiting__text">Online-відповіді від Олександра Смирнова</p>
                         </div>
 
                     </div>
@@ -1233,6 +1250,14 @@
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
+                                <p class="date">29 вересня</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Тетяни Мойсеєнко</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
                                 <p class="date">30 вересня</p>
                                 <p class="type">ВІДЕОКУРС
                                 </p>
@@ -1256,11 +1281,35 @@
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date"> жовтень</p>
-                                <p class="type">далі буде
+                                <p class="date">12 жовтня</p>
+                                <p class="type">Відеокурс
                                 </p>
                             </div>
-                            <p class="waiting__text">Слідкуйте за анонсами...</p>
+                            <p class="waiting__text">Все про ПДВ </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">15 жовтня</p>
+                                <p class="type">Відеокурс
+                                </p>
+                            </div>
+                            <p class="waiting__text">Основні засоби та МНМА. Відповіді на запитання </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">15 жовтня</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Ольги Гонзайк </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">29 жовтня</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Мар’яни Кавин </p>
                         </div>
 
                     </div>
@@ -1269,6 +1318,15 @@
                 <h3 class="tab_drawer_heading" rel="tab11">Tab 11</h3>
                 <div id="tab11" class="tab_content">
                     <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">4 листопада</p>
+                                <p class="type">Відеокурс
+                                </p>
+                            </div>
+                            <p class="waiting__text">Все про ПДВ. Відповіді на запитання
+                            </p>
+                        </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">6 листопада</p>
@@ -1283,7 +1341,7 @@
                                 <p class="type">ВІДЕОКУРС
                                 </p>
                             </div>
-                            <p class="waiting__text">Дисконтування</p>
+                            <p class="waiting__text">Все про дисконтування</p>
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
@@ -1295,13 +1353,20 @@
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
-                                <p class="date">23 листопада</p>
-                                <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
+                                <p class="date">26 листопада</p>
+                                <p class="type">Online-трансляція
                                 </p>
                             </div>
                             <p class="waiting__text">Великий Семінар із Заробітної Плати</p>
                         </div>
-
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">30 листопада</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Людмили Тимофеєвої </p>
+                        </div>
 
                     </div>
                 </div>
@@ -1309,6 +1374,14 @@
                 <h3 class="tab_drawer_heading" rel="tab12">Tab 12</h3>
                 <div id="tab12" class="tab_content">
                     <div class="your-class">
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">2 грудня</p>
+                                <p class="type">ВІДЕОКУРС
+                                </p>
+                            </div>
+                            <p class="waiting__text">Все про дисконтування. Відповіді на запитання </p>
+                        </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
                                 <p class="date">4 грудня</p>
@@ -1327,6 +1400,14 @@
                         </div>
                         <div class="waiting__item">
                             <div class="waiting__wrapp">
+                                <p class="date">10 грудня</p>
+                                <p class="type">Відеокурс
+                                </p>
+                            </div>
+                            <p class="waiting__text">Квота 4%: алгоритм розрахунку в Excel:2010 </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
                                 <p class="date">17 грудня</p>
                                 <p class="type">ONLINE-ТРАНСЛЯЦІЯ СЕМІНАРУ
                                 </p>
@@ -1340,6 +1421,22 @@
                                 </p>
                             </div>
                             <p class="waiting__text">Дисконтування</p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">23 грудня</p>
+                                <p class="type">Відеокурс
+                                </p>
+                            </div>
+                            <p class="waiting__text">Податок на прибуток. Фінансова звітність. Відповіді на запитання </p>
+                        </div>
+                        <div class="waiting__item">
+                            <div class="waiting__wrapp">
+                                <p class="date">28 грудня</p>
+                                <p class="type">Відповіді на запитання
+                                </p>
+                            </div>
+                            <p class="waiting__text">Online-відповіді від Вікторії Величко</p>
                         </div>
 
 

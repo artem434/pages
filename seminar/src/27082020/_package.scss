@@ -163,6 +163,21 @@ $package-color: #c000ae;
 
       }
     }
+
+    &--sold{
+      line-height: 60px;
+      background-image: linear-gradient(to top, #d3d3d3, #f6f6f6)!important;
+      color: #363636!important;
+      &:hover,
+      &:active,
+      &:focus {
+        -webkit-box-shadow: 0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        cursor: no-drop;
+
+      }
+    }
   }
 
   &__btn {

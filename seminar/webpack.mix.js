@@ -15,8 +15,8 @@ const webPackConfig = {
     }
 };
 
-const page = 'psbo2020';
-const id = 396;
+const page = '27082020';
+const id = 402;
 
 const proxy = `https://7eminar.local/${page}`;
 

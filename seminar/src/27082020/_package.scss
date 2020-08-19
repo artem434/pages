@@ -132,7 +132,6 @@ $package-color: #c000ae;
   }
   .btn{
     width: 190px;
-    height: 44px;
     -webkit-box-shadow: 0px 10px 32px 0 rgba(0, 0, 0, 0.4);
     -moz-box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
     box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
@@ -145,6 +144,10 @@ $package-color: #c000ae;
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
+
+    span{
+      font-size: 14px;
+    }
     &:hover,
     &:active,
     &:focus {
@@ -157,6 +160,21 @@ $package-color: #c000ae;
       &:active,
       &:focus {
 
+
+      }
+    }
+
+    &--sold{
+      line-height: 60px;
+      background-image: linear-gradient(to top, #d3d3d3, #f6f6f6)!important;
+      color: #363636!important;
+      &:hover,
+      &:active,
+      &:focus {
+        -webkit-box-shadow: 0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
+        cursor: no-drop;
 
       }
     }
@@ -173,7 +191,6 @@ $package-color: #c000ae;
       }
       .btn--Sale{
         width: 190px;
-        height: 44px;
         -webkit-box-shadow: 0px 10px 32px 0 rgba(0, 0, 0, 0.4);
         -moz-box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);
         box-shadow:0px 10px 32px 0 rgba(0, 0, 0, 0.4);

@@ -102,20 +102,20 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function(form) {
-                    const url = ['/subscribe/18082020conference', '/invoice2'];
+                    const url = ['/subscribe/18082020conference'/*, '/invoice2'*/];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val(),
                         'source': $('.free-demo .utm').val()
-                    }, {
+                    }/*, {
                         "customer[name]": $('.free-demo .name').val(),
                         'customer[email]': $('.free-demo .mail').val(),
                         'customer[phone]': $('.free-demo .phone').val(),
                         'article': $('.free-demo .article').val(),
                         'options[utm]': $('.free-demo .utm').val(),
                         'dealer': $('.free-demo .dealer').val()
-                    }];
+                    }*/];
 
                     $.each(url, function(i) {
                         loader.addClass('is-active');
@@ -126,7 +126,8 @@ SystemJS.import('jquery').then(function ($) {
                             dataType: "json",
                             data: dataSend[i],
                             success: function( data, event, payload) {
-                                if(i == 1){
+                                location.href = '/gifts'
+                               /* if(i == 1){
 
                                     var email = $('.mail').val();
 
@@ -151,7 +152,7 @@ SystemJS.import('jquery').then(function ($) {
                                                 })
                                         }
                                     })
-                                }
+                                }*/
                             },
                             error: function(error) {
                                 console.log("no");

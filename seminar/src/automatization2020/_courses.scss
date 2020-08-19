@@ -414,11 +414,13 @@
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
-      line-height: 2.7;
+      line-height: 1.7;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #f0223c;
-
+      span{
+        font-size: 14px;
+      }
     }
   }
 }

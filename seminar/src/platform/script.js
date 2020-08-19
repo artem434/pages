@@ -66,8 +66,25 @@ System.register(["jquery", "youtube", "bootstrap"], function (exports_1, context
                 });
             });
             if (document.location.host != "seminars.proseminar.com.ua") {
-                jquery_1.default('.block-order__card').css("display", "none");
+                jquery_1.default('.package__card').css("display", "none");
             }
+            jQuery(document).ready(function ($) {
+                if ($('ul.package__list').find('li').length > 5) {
+                    $('.js-show_hide').click(function () {
+                        $(this).prev().children('li:nth-child(n+5)').slideToggle('');
+                        $(this).toggleClass('opnd_g');
+                        if ($(this).hasClass('opnd_g')) {
+                            $(this).html('приховати');
+                        }
+                        else {
+                            $(this).html('а ще входить...');
+                        }
+                    });
+                }
+                else {
+                    $('.show_hide_list').hide();
+                }
+            });
         }
     };
 });

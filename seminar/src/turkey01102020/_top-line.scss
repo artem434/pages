@@ -1,0 +1,35 @@
+$top-line-bg-color: #f6d000;
+
+.top-line {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background: $top-line-bg-color;
+
+  @include laptop-l() {
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  &__logo,
+  &__burger {
+    @include laptop-l() {
+      display: none;
+    }
+  }
+
+
+}

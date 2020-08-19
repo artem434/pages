@@ -1,0 +1,44 @@
+.page-title {
+  margin: 0 0 20px;
+  font-size: 27px;
+  font-weight: normal;
+  letter-spacing: 1.35px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include laptop-l() {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  span {
+    display: inline-block;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: linear-gradient(to right, transparent 0%, #f78a00 40%, #f78a00 60%, transparent 100%);
+    }
+
+    &:before {
+      margin-bottom: 10px;
+
+      @include laptop-l() {
+        height: 2px;
+        margin-bottom: 26px;
+      }
+    }
+
+    &:after {
+      margin-top: 10px;
+
+      @include laptop-l() {
+        height: 2px;
+        margin-top: 25px;
+      }
+    }
+  }
+}

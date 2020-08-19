@@ -52,7 +52,7 @@ $package-color: #c000ae;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     color: red;
     height: 53px;
     padding-top: 15px;
@@ -74,7 +74,12 @@ $package-color: #c000ae;
       margin-bottom: 55px;
       padding-top: 40px;
     }
+  }
 
+  &__subheader{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   &__head{
@@ -124,9 +129,7 @@ $package-color: #c000ae;
     text-align: center;
     color: #363636;
     padding-bottom: 10px;
-    &-platform{
 
-    }
     span{
       font-size: 18px;
     }
@@ -142,10 +145,8 @@ $package-color: #c000ae;
     letter-spacing: 0.9px;
     text-align: center;
     color: #363636;
-
-
-
   }
+
   .btn{
     width: 210px;
     height: auto;
@@ -161,23 +162,15 @@ $package-color: #c000ae;
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
+
     span{
       font-size: 14px;
     }
+
     &:hover,
     &:active,
     &:focus {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-
-    }
-    &--Sale{
-
-      &:hover,
-      &:active,
-      &:focus {
-
-
-      }
     }
   }
 
@@ -186,10 +179,12 @@ $package-color: #c000ae;
 
     &--footer {
       margin: 0;
+
       .btn{
         background-image: linear-gradient(to top, $package-color, $package-color);
         color: #ffffff;
       }
+
       .btn--Sale{
         width: 210px;
         height: auto;
@@ -205,9 +200,11 @@ $package-color: #c000ae;
         font-weight: bold;
         line-height: 30px;
         text-transform: uppercase;
+
         span{
           font-size: 14px;
         }
+
         &:hover,
         &:active,
         &:focus {
@@ -220,9 +217,6 @@ $package-color: #c000ae;
         display: none;
       }
     }
-
-
-
 
     &--platform {
       display: none;
@@ -372,8 +366,5 @@ $package-color: #c000ae;
       font-size: 14px;
       line-height: 23px;
     }
-
   }
-
-
 }

@@ -1,12 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-//font-family: 'Oswald', sans-serif;
-
-.top-block__btn{
-  span{
-    background-color: rgba(8, 8, 8, 0.6);
+/**/@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700,800,900&display=swap&subset=cyrillic');
+//font-family: 'Exo 2', sans-serif;
+.desktop{
+  color: #433d18;
+  border-color: #433d18;
+  &:hover{
+    border-color: #433d18;
   }
 }
 
+.mob{
+  color: #433d18;
+  border-color: #433d18;
+  &:hover{
+    border-color: #433d18;
+  }
+}
+
+.cabinet{
+  color: #433d18;
+  border-color: #433d18;
+  &:hover{
+    border-color: #433d18;
+  }
+}
 .categories{
   @media (max-width: 1000px){
     display: none;
@@ -85,22 +101,23 @@
 
 
 .wrapper__head{
-  background: #0c0c0c url(images/bg-min.jpg) center center no-repeat;
-  background-size: cover;
+  background-color: #fde55d;
   height: auto;
   min-height: auto;
   position: relative;
+ /* @at-root .webp & {
+    background: url(images/bg.webp)top  center no-repeat, linear-gradient(0deg, #000 , #000 );
+    background-size: cover;
+  }*/
 
   @media (max-width: 767px){
     position: relative;
-    background: #000;
-
 
 
   }
   .wrapper__bg{
     position: relative;
-   background-color: transparent;
+    background-color: #fde55d;
     width: 100%;
     background-size: cover;
     height: auto;

@@ -1,15 +1,12 @@
 .hero {
-  background: url(images/bg-min.jpg) top 0px center no-repeat;
+
   width: 100%;
   position: relative;
-  padding-bottom: 239px;
+  padding-bottom: 195px;
   @media (max-width: 1200px){
-    padding-bottom: 85px;
+    padding-bottom: 45px;
   }
-  @media (max-width: 767px){
-    background: url(images/bg-min.jpg) top -35px center no-repeat;
-    background-size: cover;
-  }
+
 
 
   &__container{
@@ -194,7 +191,7 @@
   margin: 0;
   display: block;
   position: absolute;
-  top: 140px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%, 0px);
   @media (max-width: 1200px){
@@ -213,8 +210,8 @@
     width: 21px;
     height: 21px;
     margin-left: 7px;
-    border-bottom: 5px solid #a53177;
-    border-right: 5px solid #a53177;
+    border-bottom: 5px solid #8c2cd4;
+    border-right: 5px solid #8c2cd4;
     transform: rotate(45deg);
     animation: animate 2s infinite;
     @media (max-width: 1200px){

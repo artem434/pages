@@ -43,7 +43,7 @@
                     {# <div class="hero__rec">
                         <p>Відеозапис КОНФЕРЕНЦІЇ</p>
                     </div>#}
-                    <div class="hero__info"><p> <span>БезкоштовнА ONLINE-Конференція</span></p></div>
+                    <div class="hero__info"><p> <span>Відеозапис Конференції</span></p></div>
                     <div class="hero__block">
                         <p class="hero__smolltitle"><span>СЕРПНЕВИЙ </span><br><small>БУХГАЛТЕРСЬКИЙ</small>  </p>
                         <p class="hero__title">МІКС</p>
@@ -86,7 +86,7 @@
                     <div  class="hero__item  form-wr">
                         <div class="form" id="form">
                             <div class="form__body">
-                                <div class="form__title">Реєстрація</div>
+                                <div class="form__title">ВВЕДІТЬ СВОЇ ДАНІ ТА ОТРИМАЙТЕ ПОДАРУНОК</div>
                                 <form  class="free-demo" >
                                     <div class="form-group">
                                         <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
@@ -129,14 +129,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__date">
+                   {# <div class="hero__date">
                         <p class="hero__day">18</p>
                         <div class="hero__time-info">
                             <p class="hero__month">серпня</p>
                             <p class="hero__time">11:00</p>
                             <p class="hero__time hero__time--orang">19:00</p>
                         </div>
-                    </div>
+                    </div>#}
                 </div>
                 <div class="hero__lectors-block {#hidden-md hidden-sm hidden-xs#} hidden-lg">
                     <div class="hero__lector">
@@ -192,7 +192,7 @@
         </div>
     </div>
 
-     <div class="info"  id="info">
+    {# <div class="info"  id="info">
          <div class="info__container container">
              <div class="info__content">
                  <div class="info__item">
@@ -214,44 +214,44 @@
                  </div>
              </div>
          </div>
-     </div>
+     </div>#}
 
     <div id="profession" class="profession">
-       <div class="profession__container">
-          {# <p class="profession__sub-title">Основні посади</p>#}
-           <p class="profession__title">КОМУ ЦЕ БУДЕ ЦІКАВО?</p>
-           <ul class="profession__list">
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/fop.webp" type="image/webp"/>
-                       <img src="{{ link }}/fop.jpg" alt="Фоп" >
-                   </picture>
-                   <p class="profession__name"><span>Фопу</span></p>
-               </li>
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/buh.webp" type="image/webp"/>
-                       <img src="{{ link }}/buh.jpg" alt="Бухгалтер" >
-                   </picture>
-                   <p class="profession__name"><span>Бухгалтеру</span></p>
-               </li>
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/auditor.webp" type="image/webp"/>
-                       <img src="{{ link }}/auditor.jpg" alt="Аудитор" >
-                   </picture>
-                   <p class="profession__name"><span>Аудитору</span></p>
-               </li>
+        <div class="profession__container">
+            {# <p class="profession__sub-title">Основні посади</p>#}
+            <p class="profession__title">КОМУ ЦЕ БУДЕ ЦІКАВО?</p>
+            <ul class="profession__list">
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/fop.webp" type="image/webp"/>
+                        <img src="{{ link }}/fop.jpg" alt="Фоп" >
+                    </picture>
+                    <p class="profession__name"><span>Фопу</span></p>
+                </li>
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/buh.webp" type="image/webp"/>
+                        <img src="{{ link }}/buh.jpg" alt="Бухгалтер" >
+                    </picture>
+                    <p class="profession__name"><span>Бухгалтеру</span></p>
+                </li>
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/auditor.webp" type="image/webp"/>
+                        <img src="{{ link }}/auditor.jpg" alt="Аудитор" >
+                    </picture>
+                    <p class="profession__name"><span>Аудитору</span></p>
+                </li>
 
-           </ul>
-           <a href="#order" class="profession__btn js-scroll-to">зареєструватися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
-       </div>
+            </ul>
+            <a href="#order" class="profession__btn js-scroll-to">ЗАМОВИТИ<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+        </div>
     </div>
 
     <div id="lectors" class="lectors">
         <div class="lectors__container">
             {#  <p class="lectors__sub-title">справжні профі</p>#}
-            <p class="lectors__title">лектори ONLINE-КОНФЕРЕНЦІЇ</p>
+            <p class="lectors__title">лектори КОНФЕРЕНЦІЇ</p>
             <div class="lectors__item">
                 <div class="lectors__block">
                     <p class="lectors__name">Тетяна<br>
@@ -318,14 +318,14 @@
 
     <div id="themes" class="themes">
         <div class="themes__container">
-            <div class="themes__title">Теми ONLINE-КонференціЇ</div>
+            <div class="themes__title">Теми КонференціЇ</div>
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Тетяна Мойсеєнко</p>
-                            <p class="themes__time">11:00–11:50</p>
-                            <p class="themes__time themes__time--two">19:00–19:50 </p>
+                            {# <p class="themes__time">11:00–11:50</p>
+                            <p class="themes__time themes__time--two">19:00–19:50 </p>#}
 
                         </div>
                         <div class="themes__text">
@@ -352,14 +352,13 @@
                     </div>
                 </div>
             </div>
-
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Олександр Смирнов</p>
-                            <p class="themes__time">11:50–12:25</p>
-                            <p class="themes__time themes__time--two">19:50–20:25 </p>
+                            {#  <p class="themes__time">11:50–12:25</p>
+                            <p class="themes__time themes__time--two">19:50–20:25 </p>#}
 
                         </div>
                         <div class="themes__text">
@@ -384,9 +383,9 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Ольга Гонзайк </p>
-                            <p class="themes__time">12:25–12:50</p>
+                            {# <p class="themes__time">12:25–12:50</p>
                             <p class="themes__time themes__time--two">20:25–20:50 </p>
-
+                            #}
                         </div>
                         <div class="themes__text">
                             <p class="themes__lessons-titel">Облік доходів і витрат ФОП по-новому. До чого готуватися, як правильно вести облік (з книгами чи без них) та які штрафи очікують ФОПів за порушення</p>
@@ -412,8 +411,8 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Вікторія Величко</p>
-                            <p class="themes__time">12:50–13:30</p>
-                            <p class="themes__time themes__time--two">20:50–21:30 </p>
+                            {#   <p class="themes__time">12:50–13:30</p>
+                            <p class="themes__time themes__time--two">20:50–21:30 </p>#}
 
                         </div>
                         <div class="themes__text">
@@ -454,7 +453,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gifts__item">
+            {# <div class="gifts__item">
                 <div class="gifts__box">
                     <div class="gifts__header">
                         <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -465,7 +464,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>#}
 
             <div class="gifts__item">
                 <div class="gifts__box">
@@ -480,13 +479,13 @@
                 </div>
             </div>
 
-            <a href="#order" class="gifts__btn js-scroll-to">Стати учасником<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+            <a href="#order" class="gifts__btn js-scroll-to">ПРИДБАТИ<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
         </div>
     </div>
 
     <div id="advantages" class="advantages">
         <div class="advantages__container">
-           {# <p class="advantages__sub-title">переваги</p>#}
+            {# <p class="advantages__sub-title">переваги</p>#}
             <p class="advantages__title">що ви отримаєте?</p>
             <div class="certificate">
                 <picture><img src="{{ link }}/certificate.jpg" alt="certificate" ></picture>
@@ -499,9 +498,9 @@
                             <path d="M256.065 0C114.43 0 0 114.298 0 256.065S114.298 512.13 256.065 512.13 512.13 397.832 512.13 256.065 397.702 0 256.065 0zm0 477.892c-122.891 0-221.828-98.937-221.828-221.828S133.175 34.236 256.065 34.236s221.828 98.937 221.828 221.828-98.937 221.828-221.828 221.828z" fill="#98640a" class="color-svg"></path>
                         </svg>
                     </div>
-                    <div class="advantages__text">Online-трансляція</div>
+                    <div class="advantages__text"> Відеозапис <br> конференції</div>
                 </div>
-                <div class="advantages__item">
+                {#  <div class="advantages__item">
                     <div class="advantages__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.352 338.352" style="width: 65px;height: 65px;">
                             <path d="M169.176 0C75.601 0 0 75.514 0 169.176s75.514 169.176 169.176 169.176 169.176-75.514 169.176-169.176S262.752 0 169.176 0zm0 315.731c-81.191 0-146.556-65.365-146.556-146.556S87.986 22.619 169.176 22.619s146.556 65.365 146.556 146.556-65.365 146.556-146.556 146.556z" class="color-svg"></path>
@@ -513,7 +512,7 @@
                         на запитання
 
                     </div>
-                </div>
+                </div>#}
                 <div class="advantages__item">
                     <div class="advantages__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.182 346.182" style="width: 65px;height: 65px;">
@@ -544,7 +543,7 @@
              <p class="order__title">оберіть тип перегляду</p>
 
             <div class="order__packages">
-                <div class="order__package package order__package--gold">
+              {#  <div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -558,14 +557,14 @@
                             <a href="#form"  class="btn">реєстрація</a>
                         </div>
                     </div>
-                </div>
+                </div>#}
                 <div class="order__package package order__package--standart ">
                     <div class="package__head">
-                        <p class="package__header  "> online + запис</p>
+                        <p class="package__header  "> запис</p>
                     </div>
                     <div class="package__body">
 
-                        <ul class="package__list"><li>Online-трансляція</li><li>Відповіді на запитання</li><li >Сертифікат учасника</li><li >Подарунки від лекторів</li><li >Відеозапис</li></ul>
+                        <ul class="package__list">{#<li>Online-трансляція</li><li>Відповіді на запитання</li>#}<li >Сертифікат учасника</li><li >Подарунки від лекторів</li><li >Відеозапис</li></ul>
                         <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-demo18082020_599') }} грн</span></p>
                         <p class="package__old-price  "><s>{{ shop_price('онлайн-demo18082020_599','line') }} грн</s></p>
                     </div>

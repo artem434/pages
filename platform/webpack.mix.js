@@ -15,8 +15,8 @@ const webPackConfig = {
     }
 };
 
-const page = '13082020';
-const id = 413;
+const page = '31082020new';
+const id = 418;
 
 const proxy = `https://ua7eminar.local/${page}`;
 

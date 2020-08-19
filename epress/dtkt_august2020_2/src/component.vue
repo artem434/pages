@@ -171,7 +171,7 @@
                         </div>
                     </template>
                     <template v-slot:old-price>
-                        <div  class="package__old-price" style="text-decoration: line-through">5344 грн</div>
+                        <div  class="package__old-price" style="text-decoration: line-through">7744 грн</div>
 
                     </template>
                 </landing-package>

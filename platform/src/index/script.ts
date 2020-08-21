@@ -4,6 +4,7 @@ import YT from "youtube";
 jQuery(($) => {
 
 
+
     $(window).on('resize', function() {
 
         if ( $(window).width() <820 ) {

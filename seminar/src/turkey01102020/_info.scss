@@ -1,0 +1,127 @@
+.info {
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    @include laptop-l() {
+      padding-top: 90px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include laptop-l() {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to top, transparent 0%, #f78a00 40%, #f78a00 60%, transparent 100%);
+      }
+    }
+
+    li {
+      text-align: center;
+      margin-bottom: 45px;
+      font-size: 18px;
+
+      @include laptop-l() {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 115px;
+        width: 50%;
+        margin: 0;
+        text-align: left;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 66px;
+        height: 66px;
+        margin: 0 auto 30px;
+
+        @include laptop-l() {
+          margin: -30px 0 0;
+          position: absolute;
+          top: 50%;
+          right: 50px;
+        }
+      }
+
+      b {
+        display: block;
+      }
+
+      @mixin align-icon {
+        padding-left: 150px;
+
+        &:before {
+          left: 50px;
+        }
+      }
+
+      @mixin border {
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(to right, transparent 0%, #f78a00 40%, #f78a00 60%, transparent 100%);
+        }
+      }
+
+      $includes: (1: plane, 2: bus, 3: hotel, 4: meal, 5: safety, 6: guide);
+      @each $include, $bg in $includes {
+        &:nth-child(#{$include}) {
+          &:before {
+            background: url('images/icon/icon-#{$bg}.png') no-repeat center;
+          }
+
+          @include laptop-l() {
+            @if $include == 4 {
+              order: 2;
+              @include align-icon();
+              @include border();
+            } @else if $include == 2 {
+              order: 3;
+              @include border();
+            } @else if $include == 5 {
+              order: 4;
+              @include align-icon();
+              @include border();
+            } @else if $include == 3 {
+              order: 5;
+            } @else if $include == 6 {
+              @include align-icon();
+              order: 6;
+            } @else {
+              @include border();
+            }
+          }
+        }
+      }
+    }
+  }
+}

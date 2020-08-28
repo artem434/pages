@@ -150,6 +150,7 @@
     background-image: linear-gradient(90deg,#fff,#fff,transparent);
     padding: 35px 0 30px 30px;
     @media (max-width: 767px){
+      z-index: -1;
       background-image: none;
       text-align: center;
       left: 50%;

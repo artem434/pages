@@ -1,0 +1,47 @@
+{% set link = page.url('/images') %}
+<div class="hero" data-require="{{ page.url('/script.js') }}">
+    <div  data-require="@black,auth" class="hero__form   modal__inner modal__inner--no-modal modal_header_auth">
+        <h1>Вітаємо! 😊 </h1>
+
+        <p>Ви успішно зареєструвалися на online-конференцію. </p>
+        <p>На вашу електронну пошту відправлено лист з подарунком: перевірте вхідні повідомлення та спам.</p>
+        <p>Трансляція відбудеться 9 вересня на <a href="https://www.youtube.com/channel/UCctwZMxIcNTDrcHx597kwbg?sub_confirmation=1&feature=iv&src_vid=hw1bDtxtZs8">YouTube-каналі 7eminar.com</a> – найбільшому бухгалтерському каналі світу. А поки можете дивитися сотні інших найкращих бухгалтерських відеоновин та вебінарів безкоштовно!</p>
+        <p>Для перегляду натисніть на кнопку нижче, підпишіться та клікніть на дзвіночок :)</p>
+        <a class="hero__btn" href="https://www.youtube.com/channel/UCctwZMxIcNTDrcHx597kwbg?sub_confirmation=1&feature=iv&src_vid=hw1bDtxtZs8">Перейти на YouTube</a>
+        <img src="{{ link }}/gif.gif" alt="">
+        <div class="hero__info">
+            {{ page.options['text2']|default('') }}
+        </div>
+
+        <h4>Приємного перегляду!</h4>
+    </div>
+</div>
+
+
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+</script>

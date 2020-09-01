@@ -1,0 +1,114 @@
+.package {
+  width: 290px;
+  margin: 0 auto 30px;
+  text-align: center;
+  box-shadow: 2px 3.5px 4.7px 0.3px rgba(0, 0, 0, 0.11);
+  background-image: linear-gradient(to top, #35138f, #542be0);
+
+  @include mobile() {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  @include laptop-l() {
+    width: 460px;
+  }
+
+  &--standart {
+    background-image: linear-gradient(to top, #700685, #9b45ac);
+  }
+
+  &__header {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    border-bottom: solid 2px #dad0f9;
+
+    @include laptop-l() {
+      font-size: 24px;
+    }
+
+
+  }
+
+  &__body {
+    padding: 30px 35px 35px;
+    border-radius: 0 0 5px 5px;
+
+    @include laptop-l() {
+      padding: 55px 10px 40px;
+    }
+  }
+
+  &__price-regular {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #9eacf4;
+
+    @include laptop-l() {
+      margin-left: 100px;
+      font-size: 24px;
+    }
+
+    &--standart{
+      color: #f7c39a;
+    }
+  }
+
+  &__price {
+    margin-bottom: 20px;
+    color: #fff;
+
+    span {
+      font-size: 48.5px;
+
+      @include laptop-l() {
+        font-size: 72px;
+      }
+    }
+  }
+
+  &__present {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fae12c;
+
+    @include laptop-l() {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background: url(images/gift.png) no-repeat center;
+    }
+  }
+
+  &__present-name {
+    margin-bottom: 25px;
+    color: #fff;
+
+    @include laptop-l() {
+      font-size: 18px;
+    }
+
+    a {
+      color: #fae12c;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

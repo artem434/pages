@@ -1,0 +1,49 @@
+.safety {
+
+  .container {
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+    @include laptop-l() {
+      padding-top: 0px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    line-height: 1.38;
+    text-align: center;
+
+    span{
+      font-weight: 500;
+      color: #700685;
+    }
+
+    @include laptop-l() {
+      position: relative;
+      padding: 45px 35px 50px 105px;
+      margin-left: 40%;
+      margin-right: 15%;
+      text-align: left;
+      border: solid 3px #d0bfb2;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 257px;
+      height: 165px;
+      margin: 0 auto 20px;
+      background: url(images/manager.jpg) no-repeat top center;
+
+      @include laptop-l() {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -220px;
+        z-index: -1;
+      }
+    }
+  }
+}

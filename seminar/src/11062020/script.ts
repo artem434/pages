@@ -77,15 +77,7 @@ jQuery(($) => {
     } else {
         $('.js-btn-platform').show();
     }
-    $(window).scroll(function() {
-        var the_top = jQuery(document).scrollTop();
-        if (the_top > 55) {
-            jQuery('.burger__bg').addClass('burger__bg-js');
-        }
-        else {
-            jQuery('.burger__bg').removeClass('burger__bg-js');
-        }
-    });
+
 
     if (document.location.host == "7eminar.com") {
         $('.js-platform-banner').show();

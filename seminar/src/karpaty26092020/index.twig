@@ -1,0 +1,252 @@
+{% set link = page.url('/images') %}
+
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+  <div class="top-line">
+    <div class="container">
+      <div class="top-line__logo logo">
+        <a href="#">
+          <img src="{{ page.url('/images/logo.svg') }}" width="186" height="42"
+               alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+        </a>
+      </div>
+      <div id="menu-toggler" class="top-line__burger burger"><span></span></div>
+      <div class="menu">
+        <div class="menu__container">
+          <ul class="menu__list">
+            <li><a href="#tour">Фото</a></li>
+            <li><a href="#places">Програма туру</a></li>
+            <li><a href="#order">Придбати квитки</a></li>
+          </ul>
+          <ul class="menu__list">
+            <li><a href="/">Iнші семінари</a></li>
+          </ul>
+          <a href="#order" class="menu__btn btn js-scroll-to">ПРИДБАТИ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__main">
+        <h2 class="hero__title"><span>Здоров’я </span><br><span>Краса</span></h2>
+        <p class="hero__subtitle">щорічний <br> оздоровчий тур</p>
+        <span class="hero__dates">26-29 вересня</span>
+      </div>
+      <p class="hero__btn">
+        <a href="#order" class="btn js-scroll-to">Хочу в тур</a>
+      </p>
+    </div>
+  </section>
+  <section id="tour" class="tour">
+    <div class="container">
+      <h3 class="page-title"><span>Оздоровлення та SPA-процедури в самому серці Карпат</span></h3>
+      <ul>
+        <li>
+          <div class="tour__text">Оздоровчі процедури<br />та харчування<br />за системою<br />«Все включено»</div>
+        </li>
+        <li>
+          <div class="tour__text">Щодня басейни, сауни,<br />бані, чани, масажі та<br />лікувальні джерела</div>
+        </li>
+        <li>
+          <div class="tour__text">Релакс вдень<br />та душевна<br />компанія ввечері</div>
+        </li>
+        <li>
+          <div class="tour__text">Прогулянка<br />мальовничим<br />Мукачевом</div>
+        </li>
+      </ul>
+      <p class="tour__btn">
+        <a href="#places" class="btn js-scroll-to">ПРО подорож</a>
+      </p>
+    </div>
+  </section>
+  <section id="places" class="places">
+    <div class="container">
+      <h3 class="page-title"><span>Тут втомлені душа та тіло знайдуть все необхідне</span></h3>
+      <div class="places__block">
+        <div class="places__content">
+          <img class="places__img" alt="" src="{{ link }}/img1-min.jpg" />
+          <div class="places__text">
+            <h2> Проживання</h2>
+            <p>
+              Туристично-оздоровчий
+              комплекс «Belle Royalle» затишно розташувався на березі гірської річки, у тихому лісі, між Карпатських гір в Мукачівському районі (с. Лісарня). Комплекс поєднує природну красу та лікувальні можливості Закарпаття з європейськими стандартами
+              в галузі обслуговування та гостинності.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="places__block">
+          <div class="places__content"><img class="places__img" alt="" src="{{ link }}/img2-min.jpg" />
+          <div class="places__text">
+            <h2> Процедури</h2>
+            <p>
+              До складу комплексу входять: критий басейн, сауна, сінна
+              парна, римська парна, хамам,
+              душ вражень, соляна кімната, фітнес-зал, лікувально-діагностичний центр, екоресторація із закарпатською кухнею, великий парк з кам'яними доріжками та бруківкою.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="places__block">
+        <div class="places__content"><img class="places__img" alt="" src="{{ link }}/img3-min.jpg" />
+          <div class="places__text">
+            <h2> Дозвілля</h2>
+            <p>Вечір знайомств з розважальною програмою, запальним ведучим, танцями та співами. Прогулянки територією, неймовірні карпатські краєвиди, найчистіше повітря, всі барви осені. Нові знайомства, атмосфера оздоровлення та релаксації, фізичне та духовне відновлення.</p>
+          </div>
+        </div>
+      </div>
+      <div class="places__block">
+      <div class="places__content"><img class="places__img" alt="" src="{{ link }}/img4-min.jpg" />
+        <div class="places__text">
+          <h2>Екскурсії</h2>
+          <p>
+            Історія міста Мукачева – одна
+            з найяскравіших сторінок Закарпаття. Місто на річці Латориця, якому нещодавно виповнилося 1100 років, завжди було у вирі політичного та культурного життя краю. Вся багатогранність життєвого шляху міста закарбована в історичних пам’ятках.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <p class="places__btn">
+    <a href="https://7eminar.com/files/presentation_karpaty26092020.pdf" target="_blank" class="btn js-scroll-to">Подробиці</a>
+    </p>
+  </section>
+  <section id="info" class="info">
+    <div class="container">
+      <h3 class="page-title"><span>У вартість туру входить</span></h3>
+      <div class="info__frame">
+        <div class="info__wrap">
+          <ul class="info__item info__item--one">
+            <li class="info__list">
+              <div class="info__text">
+                <p>Проживання в двомісних<br />комфортних номерах</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Користування послугами<br />SPA-комплексу</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Консультація лікаря та три<br />оздоровчі процедури щодня</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Вечір знайомств з веселою<br />програмою та банкетом</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="info__item info__item--two">
+            <li class="info__list">
+              <div class="info__text">
+                <p>Харчування в ресторані<br />комплексу, триразове</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Басейн з мінеральною водою<br />та лікувальні джерела</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Користування<br />тренажерною залою</p>
+              </div>
+            </li>
+            <li class="info__list">
+              <div class="info__text">
+                <p>Супровід: протягом всього туру –<br />керівник групи від 7eminar.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="safety">
+    <div class="container">
+      <p class="safety__info">
+        Безмежна турбота під час подорожі <br>
+        від івент-директора компанії – <br>
+        <span>Марини Нікуліної.</span>
+        <br>
+        <br>
+        Пізнавайте світ з 7eminar.com!
+      </p>
+    </div>
+  </div>
+  <section id="order" class="order">
+    <div class="container">
+      <h3 class="page-title"><span>{{ page.options['order__title']|default('') }}</span></h3>
+      <div class="order__packages">
+        {% set packages = [
+          {
+            name: 'club',
+            title: 'Вартість туру для учасників 7eminar.club',
+            price: 'тур-26092020БельРояль_чк_1',
+            link: 'https://7eminar.ua/',
+          },
+          {
+            name: 'standart',
+            title: 'Вартість туру за одного учасника',
+            price: 'тур-26092020БельРояль_1',
+            link: 'https://7eminar.ua/',
+          }
+        ] %}
+        {% for package in packages %}
+          <article class="package package--{{ package.name }}">
+            <div class="package__header package__header--{{ package.name }}">
+              {{ package.title }}
+            </div>
+            <div class="package__body">
+              <p class="package__price-regular package__price-regular--{{ package.name }}"><s>{{ shop_price(package.price,'line') }}</s></p>
+              <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>
+              <p class="package__present package__present--{{ package.name }}">Подарунок:</p>
+              <p class="package__present-name package__present-name--{{ package.name }}">Доступ до
+                <a href="{{ package.link }}" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
+                місяців
+              </p>
+              <div class="package__btn">
+                <form method="post" action="?new=1" data-validate="ajax">
+                  <input type="hidden" name="product" value="{{ package.price }}"/>
+                  <button type="submit" rel="order" class="btn btn--package">Хочу в тур</button>
+                </form>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      <div class="order__info">
+        <span>Важлива інформація:</span>
+        <ul>
+          <li>Оплачувати виїзні заходи можна частинами. 100% оплати повинні надійти не пізніше ніж за 7 днів до початку
+            туру.
+          </li>
+          <li>У разі відмови від туру: за 14 днів – утримується 60% оплати, менш ніж за 13 днів – утримується 100%
+            оплати.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  {#<div class="video">
+    <div class="container">
+      <h3 class="page-title"><span>Оздоровлення в SPA-готелі у Мукачево </span></h3>
+      <div class="video__block">
+        <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+      <p class="video__btn">
+        <a href="#order" class="btn js-scroll-to">замовити квитки</a>
+      </p>
+    </div>
+  </div>#}
+
+  <div id="loader-page" class="loader-page">
+    <div class="dots">
+      <div class="loading">
+        <span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span
+            class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+  </div>
+</div>

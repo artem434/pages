@@ -59,7 +59,6 @@ body {
 
   &.wrapper_hero {
     padding-top: 0;
-    height: 507px;
     background: url(images/head/bg.png) 50% no-repeat, linear-gradient(90deg, #55a5e4 0%, #57a0e8 50%, #4ac8ca 50%, #4bc5cc 100%);
   }
 
@@ -83,6 +82,8 @@ body {
 .content {
   width: 960px;
   margin: 0 auto;
+  float: none;
+  left: 0;
 }
 
 .b-title {
@@ -228,7 +229,7 @@ body {
 }
 
 .block-hero {
-  height: 100%;
+  height: auto;
   position: relative;
   font-family: "Open+Sans", sans-serif;
 
@@ -245,6 +246,7 @@ body {
 
   &__wrap {
     padding-left: 17px;
+    padding-bottom: 40px;
   }
 
   &__info {

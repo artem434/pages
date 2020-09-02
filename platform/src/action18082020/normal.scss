@@ -36,14 +36,13 @@
   }
 
   &__title{
-    text-shadow: 0px 6px 27px rgba(0, 0, 0, 0.71);
-    font-size: 70px;
+    font-size: 76px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #ff9c00;
+    color: #191919;
     padding-bottom: 20px;
     @media (max-width: 767px){
       font-size: 38px;
@@ -55,15 +54,15 @@
   }
 
   &__sub-title{
-    text-shadow: 0px 6px 27px rgba(0, 0, 0, 0.95);
-    font-size: 24px;
+
+    font-size: 26px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.6px;
     text-align: center;
-    color: #ffffff;
+    color: #191919;
     text-transform: uppercase;
     @media (max-width: 767px){
       font-size: 19px;
@@ -81,16 +80,16 @@
 
 
   &__description{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.33;
     letter-spacing: 0.9px;
     text-align: center;
-    color: #ffffff;
+    color: #191919;
     text-transform: uppercase;
-    font-family: Arial,Arial MT,Tahoma,Helvetica,Liberation Sans,Sans,sans-serif;
+
     p{
       margin-bottom: 0;
       @media (max-width: 767px){
@@ -100,11 +99,6 @@
       }
     }
 
-
-
-    span{
-      color: #ffaf30;
-    }
 
   }
 
@@ -116,14 +110,14 @@
     line-height: 1.6;
     letter-spacing: 0.75px;
     text-align: center;
-    color: #b5b5b5;
+    color: #191919;
     padding: 25px 0px 50px;
     @media (max-width: 767px){
       font-size: 14px;
       line-height: 1.4;
     }
     span{
-      color: #ff9c00;
+      font-weight: bold;
     }
     br{
       @media (max-width: 767px){
@@ -148,7 +142,9 @@
       max-width: 285px;
       width: 100%;
       border-radius: 4px;
-      background-color: #ff9c00;
+      box-shadow: 0px 12px 50px 0 rgba(127, 84, 0, 0.85);
+      border: solid 1px #191919;
+      background-color: #e4e4e4;
       margin-top: 0;
       font-size: 20px;
       font-weight: bold;
@@ -165,7 +161,7 @@
         padding: 5px 0;
       }
       &:hover{
-        background-color: #ffb43d;
+        box-shadow:none;
       }
       i{
         margin-left: 10px;
@@ -174,13 +170,13 @@
   }
 
   &__date{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
-    color: #bbbbbb;
+    color: #191919;
   }
 }
 

@@ -206,3 +206,51 @@
 
 
 }
+.hero__controls-modal-btn {
+  bottom: 7px;
+  right: 655px;
+  position: absolute;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 103px;
+  border: none;
+  outline: none;
+  background: url(images/btn-modal.png) no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: scale 1.5s linear infinite;
+  -o-animation: scale 1.5s linear infinite;
+  animation: scale 1.5s linear infinite;
+  @media (max-width: 1200px){
+    display: none;
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}

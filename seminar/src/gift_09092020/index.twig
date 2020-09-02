@@ -1,0 +1,204 @@
+{% set link = page.url('/images') %}
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__block">
+                <div class="hero__item">
+                    <p class="hero__title"><span>ПОДАРУНОК</span> <br> чекає на вас!</p>
+                    <p class="hero__sub-title">Зареєструйтеся зараз і  <b>безкоштовно</b> отримайте брошуру<br>
+                        <b class="hero__bold">«ФОП-2020: сплачуйте ЄСВ без штрафів»</b> </p>
+                    <img class="hero__img hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/book-min.png">
+                </div>
+                <form id="form"  class="free-demo" >
+                    <div class="form__title">Реєстрація діє ще</div>
+                    <div class="timer">
+                        <div class="timer__box">
+                            <div class="timer__mins">00</div><span> хв</span>
+                        </div><span class="timer__separate">:</span>
+                        <div class="timer__box">
+                            <div class="timer__secs">00 </div><span> сек</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input  name="name" type="text" placeholder="Ім’я"  maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input  name="email" type="email" placeholder="E-mail" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                    </div>
+                    <input class="article"  type="hidden" value="онлайн-demo09092020_gift"/>
+                    <input class="utm" name="options[utm]" type="hidden" value=""/>
+                    <input class="dealer" name="dealer" type="hidden" value="4"/>
+                    <div class="form__btn">
+                        <button type="submit" class=" btn-default">ОТРИМАТИ брошуру</button>
+                    </div>
+                </form>
+                <img class="hero__img visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/book-min.png">
+            </div>
+            <div class="hero__description">Також ви отримуєте можливість прослухати<br>
+                <b>ONLINE-конференцію абсолютно безкоштовно
+                </b>   <p  class="arrow"><span></span><span></span><span></span></p> </div>
+
+
+        </div>
+    </div>
+
+    <div id="theme" class="themes">
+        <div class="container theme__container">
+            <p class="themes__title">Безкоштовна ONLINE-конференція 9 вересня</p>
+            <p class="themes__sub-title"> «ФОПи по-новому: РРО/ПРРО, облік, кадри... і тисячі штрафів»</p>
+            <p class="themes__sub-title"></p>
+            <div class="themes__item">
+                <div class="themes__header"><p>регламент online-конференції</p></div>
+                <div class="themes__body">
+                    <ul class="themes__list lector">
+                        <li class="lector__item lector__item--ta">
+                            <div class="">
+                            </div>
+                            <div class="lector__body">
+                                <p class="themes__time">11:00–11:40 <span>|</span> 19:00–19:40</p>
+                                <p class="lector__title ">ФОП і РРО/ПРРО: коли, кому та як перейти на РРО/ПРРО</p>
+                                <div id="lesson1" class="themes__more collapse">
+                                    <div class="themes__more-body">
+                                        <ul class="themes__more-list">
+                                            <li class="themes__more-list-item"><p><span>1.</span>Розрахункова операція → РРО/ПРРО. </p></li>
+                                            <li class="themes__more-list-item"><p><span>2.</span>Етапи переходу ФОП на ЕП (гр. 2–4) на РРО/ПРРО: </p>
+                                                <ul>
+                                                    <li>до кінця 2020 року; </li>
+                                                    <li>з 1 січня 2021 року; </li>
+                                                    <li>з 1 квітня 2021 року.</li>
+                                                </ul></li>
+                                            <li class="themes__more-list-item"><p><span>3.</span>РРО-мільйон: наслідки перевищення. </p></li>
+                                            <li class="themes__more-list-item"><p><span>4.</span>ТСПТ, лікарські засоби та медвироби: на які переліки/реєстри орієнтуватися. </p></li>
+                                            <li class="themes__more-list-item"><p> <span>5.</span>Додаткові види діяльності: як не заплутатися у майбутньому колі РРО-зобов’язаних. </p></li>
+
+                                            <li class="themes__more-list-item"><p><span>6.</span>РРО або ПРРО: що вигідніше ФОП з найманими працівниками та без?  </p></li>
+                                            <li class="themes__more-list-item"><p><span>7.</span>РРО/ПРРО → POS-термінал. </p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="lector__info"><span> Тимур Алієв</span>, консультант із питань бухгалтерського обліку та оподаткування, експерт із трудового права та оплати праці</p>
+                            </div>
+                            <div class="themes__button"><a data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="themes__more-btn">Детальніше</a></div>
+                        </li>
+
+                        <li class="lector__item lector__item--og ">
+                            <div class="lector__body">
+                                <p class="themes__time">11:40–12:10 <span>|</span> 19:40–20:10</p>
+                                <p class="lector__title">ФОП-облік: кому (не)потрібно вести книги (єдиний податок)</p>
+                                <div id="lesson2" class="themes__more collapse">
+                                    <div class="themes__more-body">
+                                        <ul class="themes__more-list">
+                                            <li class="themes__more-list-item"><p><span>1.</span>Книга доходів ФОП: що робити зі старою і як вести нову? </p></li>
+                                            <li class="themes__more-list-item"><p><span>2.</span>Штрафи за незбереження первинних документів ФОПами – платниками єдиного податку.   </p></li>
+                                            <li class="themes__more-list-item"><p><span>3.</span>У якому випадку ФОПи подають декларацію з податку на прибуток. </p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="lector__info"><span>Ольга Гонзайк</span>, аудитор, податковий консультант, сертифікат IAB, автор статей в юридичних та бухгалтерських виданнях</p>
+                            </div>
+                            <div class="themes__button"><a data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="themes__more-btn">Детальніше</a></div>
+                        </li>
+
+                        <li class="lector__item lector__item--os">
+                            <div class="lector__body">
+                                <p class="themes__time">12:10–12:45 <span>|</span> 20:10–20:45</p>
+                                <p class="lector__title">ФОП і походження товару</p>
+                                <div id="lesson3" class="themes__more collapse">
+                                    <div class="themes__more-body">
+                                        <ul class="themes__more-list">
+                                            <li class="themes__more-list-item"><p><span>1.</span>Ризики оприбуткування товару від ФОП без підтверджуючих документів. Зворотний бік необов'язковості ведення обліку у ФОП.  </p></li>
+                                            <li class="themes__more-list-item"><p><span>2.</span>Реалізація товару через ФОП. Вплив РРО на оформлення приходу товарів у ФОП.   </p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="lector__info"> <span> Олександр Смирнов</span>, адвокат. Спеціалізація – податкові конфлікти, легальна оптимізація оподаткування, захист бізнесу і посадових осіб від неправомірних дій контролюючих органів</p>
+
+                            </div>
+                            <div class="themes__button"><a data-toggle="collapse" data-target="#lesson3" aria-expanded="false" aria-controls="#lesson3" class="themes__more-btn">Детальніше</a></div>
+                        </li>
+
+                        <li class="lector__item lector__item--tm">
+
+                            <div class="lector__body">
+                                <p class="themes__time">12:45–13:10 <span>|</span> 20:45–21:10</p>
+                                <p class="lector__title">Кадри ФОПа: яскраві помилки кадрового обліку та як їх виправити без штрафів</p>
+                                <div id="lesson4" class="themes__more collapse">
+                                    <div class="themes__more-body">
+                                        <ul class="themes__more-list">
+                                            <li class="themes__more-list-item"><p><span>1.</span>(Не)оформлення працівника: можливі безпомилкові рішення, або як не потрапити на штрафи за неоформлених працівників.    </p></li>
+                                            <li class="themes__more-list-item"><p><span>2.</span>Трудовий договір, наказ, повідомлення про прийняття: на чому зосередити увагу та як оформити/подати. Помилкові рішення, яких не можна приймати.    </p></li>
+                                            <li class="themes__more-list-item"><p><span>3.</span>Трудова книжка працівника ФОПа: новели «кадрового» досвіду. Як не припуститися поширених помилок та виправити сьогодні без штрафів.  </p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
+                            </div>
+                            <div class="themes__button"><a data-toggle="collapse" data-target="#lesson4" aria-expanded="false" aria-controls="#lesson4" class="themes__more-btn">Детальніше</a></div>
+                        </li>
+
+                        <li class="lector__item lector__item--ig">
+
+                            <div class="lector__body">
+                                <p class="themes__time">13:10–13:40 <span>|</span> 21:10–21:40</p>
+                                <p class="lector__title">ФОП на загальній системі. Облік доходів та витрат.    Увага на первинні документи</p>
+                                <div id="lesson5" class="themes__more collapse">
+                                    <div class="themes__more-body">
+                                        <ul class="themes__more-list">
+                                            <li class="themes__more-list-item"><p><span>1.</span>В який спосіб вести документальний облік? Що зміниться для загальносистемника після 1 січня 2021 року завдяки Закону № 786.   </p></li>
+                                            <li class="themes__more-list-item"><p><span>2.</span>В який спосіб вести документальний облік? Що зміниться для загальносистемника після 1 січня 2021 року завдяки Закону № 786.   </p></li>
+                                            <li class="themes__more-list-item"><p><span>3.</span>«Особливі» документи для підтвердження витрат: калькуляція собівартості, розрахунки щодо амортизації, ремонтні витрати, накази, розпорядження. На що орієнтуватися підприємцю при складанні таких документів.   </p></li>
+                                            <li class="themes__more-list-item"><p><span>4.</span>Відповідальність за документальні порушення та ведення обліку.   </p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="lector__info"><span>Ірина  Губіна</span>, експерт з податкового та бухгалтерського обліку</p>
+
+                            </div>
+                            <div class="themes__button"><a data-toggle="collapse" data-target="#lesson5" aria-expanded="false" aria-controls="#lesson5" class="themes__more-btn">Детальніше</a></div>
+                        </li>
+
+                        <li class="lector__item lector__item--tm">
+
+                            <div class="lector__body">
+                                <p class="themes__time">13:40–13:50 <span>|</span> 21:40–21:50</p>
+                                <p class="lector__title">Про Бухгалтерську Відеоплатформу №1: як стати користувачем </p>
+
+                                <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    {# <div class="themes__description">письмові Відповіді на запитання у чаті надаватимуть висококваліфіковані експерти 7eminar.com
+                     </div>#}
+                    <a href="#form" class="themes__btn">Хочу дивитися</a>
+                </div>
+            </div>
+
+            {#<a href="#form" class="themes__btn">Дивитися з подарунком</a>#}
+        </div>
+    </div>
+
+
+</div>
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+.progress {
+  margin: 20px auto;
+  background: #cdc9d0;
+  justify-content: flex-start;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 21px;
+  max-width: 500px;
+  width: 100%;
+  overflow: inherit;
+  @media (max-width: 767px){
+    margin-top: 25px;
+  }
+  &__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    @media (max-width: 767px){
+      font-size: 14px;
+    }
+  }
+
+  &__circle{
+    animation: move 3s normal forwards;
+    border: solid 1px #c02551;
+    background-image: linear-gradient(to top, #d7184b, #f1104c);
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: 50%;
+    @media (max-width: 767px){
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &__value {
+    animation: load 2.8s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 5px;
+    background: #d7184b;
+    height: 100%;
+    width: 0;
+  }
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+
+
+@keyframes move {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 86%;
+
+  }
+}
+
+

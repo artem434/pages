@@ -1,6 +1,12 @@
 /**/@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700,800,900&display=swap&subset=cyrillic');
 //font-family: 'Exo 2', sans-serif;
 
+.top-block__btn{
+  span{
+    background-color: rgba(8, 8, 8, 0.6);
+  }
+}
+
 .categories{
   @media (max-width: 1000px){
     display: none;
@@ -79,15 +85,12 @@
 
 
 .wrapper__head{
-  background: #0c0c0c url(images/hero_bg-min.jpg) center center no-repeat;
+  background: #0c0c0c url(images/bg_hero-min1.jpg) center center no-repeat;
   background-size: cover;
   height: auto;
   min-height: auto;
   position: relative;
-  @at-root .webp & {
-    background: url(images/hero_bg.webp)center  center no-repeat, linear-gradient(0deg, #000 , #000 );
-    background-size: cover;
-  }
+
 
   @media (max-width: 767px){
     position: relative;

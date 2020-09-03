@@ -10,139 +10,116 @@
     }
   }
 
-  &__frame{
-    border: 14px solid #f3eae3;
-    margin: 0 40px;
-    padding: 70px 0 90px;
-    position: relative;
-    &:after{
-      position: absolute;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-      right: -730px;
-      bottom: -145px;
-      color: #f2e9f4;
-      font-family: 'Pattaya', sans-serif;
-      font-size: 215px;
-      font-weight: 400;
+    @include laptop-l() {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
 
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to top, transparent 0%, #f78a00 40%, #f78a00 60%, transparent 100%);
+      }
     }
-    &:before{
-      position: absolute;
 
-      left: -730px;
-      bottom: 245px;
-      color: #f2e9f4;
-      font-family: 'Pattaya', sans-serif;
-      font-size: 215px;
-      font-weight: 400;
-
-    }
-  }
-  &__wrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-    ul{
-      list-style-type: none;
-      width: 50%;
-      padding-left: 33px;
-    }
-  }
-  &__list{
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
-    &:before{
-      background: url(images/01.png) no-repeat center center;
-      content: " ";
-      width: 52px;
-      height: 39px;
-      display: block;
-    }
-  }
-
-  &__text{
-    color: #000000;
-    padding-left: 30px;
-
-    p{
-      margin: 0;
+    li {
+      text-align: center;
+      margin-bottom: 45px;
       font-size: 18px;
-      font-weight: 400;
-      line-height: 22px
-    }
-  }
-  &__item--one{
 
-    .info__list{
+      @include laptop-l() {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 115px;
+        width: 50%;
+        margin: 0;
+        text-align: left;
+      }
 
-      &:nth-child(2) {
+      &:last-child {
+        margin-bottom: 0;
+      }
 
-        &:before {
-          background: url(images/02.png) no-repeat center center;
-          width: 54px;
-          height: 52px;
+      &:before {
+        content: '';
+        display: block;
+        width: 66px;
+        height: 66px;
+        margin: 0 auto 30px;
+
+        @include laptop-l() {
+          margin: -30px 0 0;
+          position: absolute;
+          top: 50%;
+          right: 50px;
         }
       }
 
-      &:nth-child(3) {
-
-        &:before {
-          background: url(images/03.png) no-repeat center center;
-          width: 46px;
-          height: 53px;
-        }
+      b {
+        display: block;
       }
-      &:nth-child(4) {
+
+      @mixin align-icon {
+        padding-left: 150px;
 
         &:before {
-          background: url(images/04.png) no-repeat center center;
-          width: 53px;
-          height: 53px;
-        }
-      }
-    }
-
-  }
-
-  &__item--two{
-
-    .info__list{
-
-      &:nth-child(1) {
-
-        &:before {
-          background: url(images/05.png) no-repeat center center;
-          width: 54px;
-          height: 44px;
+          left: 50px;
         }
       }
 
-      &:nth-child(2) {
-
-        &:before {
-          background: url(images/06.png) no-repeat center center;
-          width: 51px;
-          height: 52px;
+      @mixin border {
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(to right, transparent 0%, #f78a00 40%, #f78a00 60%, transparent 100%);
         }
       }
 
-      &:nth-child(3) {
+      $includes: (1: plane, 2: bus, 3: hotel, 4: meal, 5: safety, 6: guide);
+      @each $include, $bg in $includes {
+        &:nth-child(#{$include}) {
+          &:before {
+            background: url('images/icon/icon-#{$bg}.png') no-repeat center;
+          }
 
-        &:before {
-          background: url(images/07.png) no-repeat center center;
-          width: 64px;
-          height: 55px;
-        }
-      }
-      &:nth-child(4) {
-
-        &:before {
-          background: url(images/08.png) no-repeat center center;
-          width: 58px;
-          height: 43px;
+          @include laptop-l() {
+            @if $include == 4 {
+              order: 2;
+              @include align-icon();
+              @include border();
+            } @else if $include == 2 {
+              order: 3;
+              @include border();
+            } @else if $include == 5 {
+              order: 4;
+              @include align-icon();
+              @include border();
+            } @else if $include == 3 {
+              order: 5;
+            } @else if $include == 6 {
+              @include align-icon();
+              order: 6;
+            } @else {
+              @include border();
+            }
+          }
         }
       }
     }

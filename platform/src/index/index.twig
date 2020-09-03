@@ -1,33 +1,43 @@
-{% set price_month_3 = shop_price('s-v3_837','month') %}
-{% set price_link_3 = 'shop/invoice?article=s-v3_837' %}
-{% set price_site_3 = shop_price('s-v3_837','site') %}
-{% set price_line_3 = shop_price('s-v3_837','line') %}
+{% set price_month_1 = shop_price('s-v1_209r','month') %}
+{% set price_link_1 = 'shop/invoice?article=s-v1_209r' %}
+{% set price_site_1 = shop_price('s-v1_209r','site') %}
+{% set price_line_1 = shop_price('s-v1_209r','line') %}
 
-{% set price_site_6 = shop_price('s-v6_1554r','site') %}
-{% set price_month_6 = shop_price('s-v6_1554r','month') %}
-{% set price_line_6 = shop_price('s-v6_1554r','line') %}
-{% set price_link_6 = 'shop/invoice?article=s-v6_1554r' %}
+{% set price_month_3 = shop_price('s-v3_597r','month') %}
+{% set price_link_3 = 'shop/invoice?article=s-v3_597r' %}
+{% set price_site_3 = shop_price('s-v3_597r','site') %}
+{% set price_line_3 = shop_price('s-v3_597r','line') %}
 
-{% set price_site_12 = shop_price('s-v12_2988r','site') %}
-{% set price_month_12 = shop_price('s-v12_2988r','month') %}
-{% set price_line_12 = shop_price('s-v12_2988r','line') %}
-{% set price_link_12 = 'shop/invoice?article=s-v12_2988r' %}
+{% set price_site_6 = shop_price('s-v6_1134r','site') %}
+{% set price_month_6 = shop_price('s-v6_1134r','month') %}
+{% set price_line_6 = shop_price('s-v6_1134r','line') %}
+{% set price_link_6 = 'shop/invoice?article=s-v6_1134r' %}
+
+{% set price_site_12 = shop_price('s-v12_2148r','site') %}
+{% set price_month_12 = shop_price('s-v12_2148r','month') %}
+{% set price_line_12 = shop_price('s-v12_2148r','line') %}
+{% set price_link_12 = 'shop/invoice?article=s-v12_2148r' %}
 
 
-{% set price_month_3_card = shop_price('s-v3_717c','month') %}
-{% set price_link_3_card = 'shop/invoice?article=s-v3_717c' %}
-{% set price_site_3_card = shop_price('s-v3_717c','site') %}
-{% set price_line_3_card = shop_price('s-v3_717c','line') %}
+{% set price_month_1_card = shop_price('s-v1_199c','month') %}
+{% set price_link_1_card = 'shop/invoice?article=s-v1_199c' %}
+{% set price_site_1_card = shop_price('s-v1_199c','site') %}
+{% set price_line_1_card = shop_price('s-v1_199c','line') %}
 
-{% set price_site_6_card = shop_price('s-v6_1374r','site') %}
-{% set price_month_6_card = shop_price('s-v6_1374r','month') %}
-{% set price_line_6_card = shop_price('s-v6_1374r','line') %}
-{% set price_link_6_card = 'shop/invoice?article=s-v6_1374r' %}
+{% set price_month_3_card = shop_price('s-v3_537с','month') %}
+{% set price_link_3_card = 'shop/invoice?article=s-v3_537с' %}
+{% set price_site_3_card = shop_price('s-v3_537с','site') %}
+{% set price_line_3_card = shop_price('s-v3_537с','line') %}
 
-{% set price_site_12_card = shop_price('s-v12_2628c','site') %}
-{% set price_month_12_card = shop_price('s-v12_2628c','month') %}
-{% set price_line_12_card = shop_price('s-v12_2628c','line') %}
-{% set price_link_12_card = 'shop/invoice?article=s-v12_2628c' %}
+{% set price_site_6_card = shop_price('s-v6_1014c','site') %}
+{% set price_month_6_card = shop_price('s-v6_1014c','month') %}
+{% set price_line_6_card = shop_price('s-v6_1014c','line') %}
+{% set price_link_6_card = 'shop/invoice?article=s-v6_1014c' %}
+
+{% set price_site_12_card = shop_price('s-v12_1908c','site') %}
+{% set price_month_12_card = shop_price('s-v12_1908c','month') %}
+{% set price_line_12_card = shop_price('s-v12_1908c','line') %}
+{% set price_link_12_card = 'shop/invoice?article=s-v12_1908c' %}
 
 
 
@@ -59,28 +69,25 @@
                     <div class="hero">
                         <div class="hero__block">
                             <div class="hero__title">
-                                    Подарунки та знижки
+                                <p>
+                                    Навчайтесь у найкращих!
+                                </p>
                             </div>
                             <div class="hero__sub-title">
-                                у будь-яку погоду
-                            </div>
-
-                            <div class="hero__description">
-                                <p> Отримайте яскраву парасольку у подарунок <br>
-                                    при передплаті Бухгалтерської Відеоплатформи <span>№1</span> </p>
+                                В новий сезон з новим вигідним форматом передплати
                             </div>
                             <div class="hero-btn">
-                                <a href="#order" class="btn">ХОЧУ ПОДАРУНОК<i class="fas fa-chevron-right"></i>
+                                <a href="#order" class="btn">ЩО ВИ ОТРИМАЄТЕ<i class="fas fa-chevron-right"></i>
                                 </a>
                             </div>
-                            <div class="hero__sub-description">
-                                Найкращий відеосервіс, на якому вже представлено <br>
-                                <span>понад {{ page.options['number']|default('') }} курсів</span> на всі актуальні бухгалтерські теми
-
-
-
+                            <div class="hero__description">
+                                <p> БУХгалтерська Відеоплатформа <span>№1</span> </p>
                             </div>
-                            <p class="hero__date"> {{ page.options['hero__date']|default('') }}</p>
+
+                            <div class="hero__sub-description">
+                                Найкращий відеосервіс, на якому вже представлено <br>  <span>понад {{ shop_price('онлайн-platform_price','courses') }} курсів</span>, на всі актуальні бухгалтерські теми
+                            </div>
+                            <p class="hero__date">Акція діє тільки до <b>{{ page.options['hero__date']|default('') }}</b> </p>
                         </div>
                     </div>
                 </div>
@@ -151,13 +158,14 @@
                             </svg>
                         </div>
                         <div class="profits__text">
-                            Понад {{ page.options['number']|default('') }} курсів вже доступні <br> для перегляду
+                            Понад {{ shop_price('онлайн-platform_price','courses') }} курсів вже доступні <br> для перегляду
                         </div>
                         <div class="border"></div>
                     </div>
                     <div {#id="block"#} class="profits__item">
                         <div class="profits__icon">
-                            <svg height="40" viewBox="0 0 512 512" width="45" xmlns="http://www.w3.org/2000/svg"><path  fill="currentColor" d="M512 346.5c0-63.535-36.45-120.238-91.04-147.82-1.694 121.82-100.46 220.586-222.28 222.28C226.262 475.55 282.965 512 346.5 512c29.79 0 58.758-7.934 84.21-23.008l80.567 22.285-22.285-80.566C504.066 405.258 512 376.289 512 346.5zm0 0"></path><path  fill="currentColor" d="M391 195.5C391 87.7 303.3 0 195.5 0S0 87.7 0 195.5c0 35.133 9.352 69.34 27.11 99.371L.718 390.277l95.41-26.386C126.16 381.648 160.367 391 195.5 391 303.3 391 391 303.3 391 195.5zM165.5 150h-30c0-33.086 26.914-60 60-60s60 26.914 60 60c0 16.793-7.11 32.934-19.512 44.277L210.5 217.605V241h-30v-36.605l35.234-32.25c6.297-5.762 9.766-13.625 9.766-22.145 0-16.543-13.457-30-30-30s-30 13.457-30 30zm15 121h30v30h-30zm0 0"></path></svg>
+                            <svg height="40" viewBox="0 0 512 512" width="45" xmlns="http://www.w3.org/2000/svg"><path  fill="currentColor" d="M512 346.5c0-63.535-36.45-120.238-91.04-147.82-1.694 121.82-100.46 220.586-222.28 222.28C226.262 475.55 282.965 512 346.5 512c29.79 0 58.758-7.934 84.21-23.008l80.567 22.285-22.285-80.566C504.066 405.258 512 376.289 512 346.5zm0 0"/><path  fill="currentColor" d="M391 195.5C391 87.7 303.3 0 195.5 0S0 87.7 0 195.5c0 35.133 9.352 69.34 27.11 99.371L.718 390.277l95.41-26.386C126.16 381.648 160.367 391 195.5 391 303.3 391 391 303.3 391 195.5zM165.5 150h-30c0-33.086 26.914-60 60-60s60 26.914 60 60c0 16.793-7.11 32.934-19.512 44.277L210.5 217.605V241h-30v-36.605l35.234-32.25c6.297-5.762 9.766-13.625 9.766-22.145 0-16.543-13.457-30-30-30s-30 13.457-30 30zm15 121h30v30h-30zm0 0"/></svg>
+
                         </div>
                         <div class="profits__text">
                             Відповіді на ваші запитання
@@ -226,6 +234,40 @@
                 <div class="package">
                     <div class="package__header">
                         <div class="package__top">
+                            <p class="package__period">1 місяць</p>
+                        </div>
+                        <div class="package__block-price">
+                            <p class="package__price-month">{{ price_month_1 }} грн/міс.</p>
+                            <p class="package__price-old"> <s>{{ price_line_1 }} грн/міс.</s></p>
+                            <a class="package__btn"  target="_blank"
+                               href="{{ price_link_1 }}">замовити рахунок</a>
+                        </div>
+                        <div class="percent">-53%</div>
+                    </div>
+                    <div class="package__body">
+                        <ul class="package__list">
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 р./міс.)</span></li>
+                            <li><span>Відеокурси з актуальних <br> питань (2-3 р./міс.)</span></li>
+                            <li><span>Сервіс «Online-відповіді <br> на запитання» (2 р./міс.)</span></li>
+                            <li><span>Роздатковий матеріал</span></li>
+                            <li><span>Сертифікати після <br> проходження курсів</span></li>
+                            <li><span>Ексклюзивні додаткові <br> відеоматеріали</span></li>
+                        </ul>
+                        <div class="js-show_hide package__show-hide">а ще входить...</div>
+                    </div>
+                    <div class="package__footer">
+                        <p class="package__sub-title">При оплаті картою</p>
+                        <p class="package__price-month">{{ price_month_1_card }} грн/міс.</p>
+                        <p class="package__price-old"> <s>{{ price_line_1_card }} грн/міс.</s></p>
+                        <a class="package__btn-card" target="_blank" href="{{ price_link_1_card }}">оплатити картою</a>
+                        <div class="percent">-56%</div>
+                    </div>
+
+                </div>
+                <div class="package">
+                    <div class="package__header">
+                        <div class="package__top">
                             <p class="package__period">3 місяці</p>
                         </div>
                         <div class="package__block-price">
@@ -234,11 +276,11 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_3 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-38%</div>
+                        <div class="percent">-56%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
                             <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 р./міс.)</span></li>
                             <li><span>Відеокурси з актуальних <br> питань (2-3 р./міс.)</span></li>
                             <li><span>Сервіс «Online-відповіді <br> на запитання» (2 р./міс.)</span></li>
@@ -253,7 +295,7 @@
                         <p class="package__price-month">{{ price_month_3_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_3_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_3_card }}">оплатити картою</a>
-                        <div class="percent">-47%</div>
+                        <div class="percent">-60%</div>
                     </div>
 
                 </div>
@@ -268,11 +310,11 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_6 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-42%</div>
+                        <div class="percent">-58%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
                             <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 р./міс.)</span></li>
                             <li><span>Відеокурси з актуальних <br> питань (2-3 р./міс.)</span></li>
                             <li><span>Сервіс «Online-відповіді <br> на запитання» (2 р./міс.)</span></li>
@@ -287,7 +329,7 @@
                         <p class="package__price-month">{{ price_month_6_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_6_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_6_card }}">оплатити картою</a>
-                        <div class="percent">-49%</div>
+                        <div class="percent">-62%</div>
                     </div>
                 </div>
                 <div class="package">
@@ -295,10 +337,10 @@
 
                         <div class="package__top">
                             <p class="package__period">12 місяців</p>
-                            <div class="package__presents">
+                            {#<div class="package__presents">
                                 <p >подарунок <br>
-                                   <span>ПАРАСОЛЬКА</span></p>
-                            </div>
+                                   <span>Податковий кодекс України </span> <br> <span class="package__presents--gray">(дата виходу 13.07.2020 р.)</span></p>
+                            </div>#}
                         </div>
                         <div class="package__block-price">
                             <p class="package__price-month">{{ price_month_12 }} грн/міс.</p>
@@ -306,11 +348,11 @@
                             <a class="package__btn"  target="_blank"
                                href="{{ price_link_12 }}">замовити рахунок</a>
                         </div>
-                        <div class="percent">-45%</div>
+                        <div class="percent">-60%</div>
                     </div>
                     <div class="package__body">
                         <ul class="package__list">
-                            <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                            <li><span>{{ shop_price('онлайн-platform_price','courses') }} відеокурсів вже <br> доступні до перегляду</span></li>
                             <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 р./міс.)</span></li>
                             <li><span>Відеокурси з актуальних <br> питань (2-3 р./міс.)</span></li>
                             <li><span>Сервіс «Online-відповіді <br> на запитання» (2 р./міс.)</span></li>
@@ -320,104 +362,20 @@
                         </ul>
                         <div class="js-show_hide package__show-hide">а ще входить...</div>
                     </div>
+
+
                     <div class="package__footer">
                         <p class="package__sub-title">При оплаті картою</p>
                         <p class="package__price-month">{{ price_month_12_card }} грн/міс.</p>
                         <p class="package__price-old"> <s>{{ price_line_12_card }} грн/міс.</s></p>
                         <a class="package__btn-card" target="_blank" href="{{ price_link_12_card }}">оплатити картою</a>
-                        <div class="percent">-51%</div>
+                        <div class="percent">-65%</div>
                     </div>
 
                 </div>
             </div>
             <div class="block-order">
 
-
-               {# <div id="block" class="block-order__item  block-order__active ">
-                    <div class="block-order--titel">
-                        <h2>3 місяці</h2>
-                    </div>
-                    <div class="block-order--price">
-                        <div class="block-order__two-prise"><p class="block-order__site">{{ price_site_3  }} грн</p>    <p class="block-order__line"><s>{{ price_line_3  }} грн</s></p> </div>
-                        <div class="block-order__price-month">{{ price_month_3 }}  <span>грн/міс.</span></div>
-                        <div class="block-order__sale">ЗНИЖКА 56%</div>
-                    </div>
-                    <a class="btn-order" id="order_btn" target="_blank"
-                       href="{{ price_link_3 }}">замовити рахунок</a>
-                    <div class="block-order--card card">
-                        <p class="card__title">При оплаті картою </p>
-                        <div class="card__two-prise"><p class="card__site">{{ price_site_3_card  }} грн</p>  <p class="card__line"><s>{{ price_line_3_card  }} грн</s></p> </div>
-                        <div class="card__price-month">{{ price_month_3_card }}  <span>грн/міс.</span></div>
-                        <p class="card__sale">ЩЕ ВИГІДНІШЕ, -71%</p>
-                        <a class="card__btn" target="_blank"
-                           href="{{ price_link_3_card }}">оплатити картою</a>
-                    </div>
-                </div>
-
-                <div id="block" class="block-order__item block-order__active  ">
-                    <div class="block-order--titel">
-                        <h2>6 місяців</h2>
-                    </div>
-                    <div class="block-order--price">
-                        <div class="block-order__two-prise"><p class="block-order__site">{{ price_site_6  }} грн</p> <p class="block-order__line"><s>{{ price_line_6  }} грн</s></p> </div>
-                        <div class="block-order__price-month">{{ price_month_6 }}  <span>грн/міс.</span></div>
-                        <div class="block-order__sale">ЗНИЖКА 63%</div>
-                    </div>
-                    <a class="btn-order" id="order_btn" target="_blank"
-                       href="{{ price_link_6 }}">замовити рахунок</a>
-                    <div class="block-order--card card">
-                        <p class="card__title">При оплаті картою </p>
-                        <div class="card__two-prise"><p class="card__site">{{ price_site_6_card  }} грн</p>  <p class="card__line"><s>{{ price_line_6_card  }} грн</s></p> </div>
-                        <div class="card__price-month">{{ price_month_6_card }}  <span>грн/міс.</span></div>
-                        <p class="card__sale">ЩЕ ВИГІДНІШЕ, -76%</p>
-                        <a class="card__btn" target="_blank"
-                           href="{{ price_link_6_card }}">оплатити картою</a>
-                    </div>
-                </div>
-
-                <div id="block" class="block-order__item block-order__active  ">
-                    <div class="block-order--titel">
-                        <h2>8 місяців</h2>
-
-                    </div>
-                    <div class="block-order--price">
-                        <div class="block-order__two-prise"><p class="block-order__site">{{ price_site_8  }} грн</p>   <p class="block-order__line"><s>{{ price_line_8  }} грн</s></p></div>
-                        <div class="block-order__price-month">{{  price_month_8 }}  <span>грн/міс.</span> </div>
-                        <div class="block-order__sale">ЗНИЖКА 64%</div>
-                    </div>
-                    <a class="btn-order" id="order_btn" target="_blank"
-                       href="{{ price_link_8 }}">замовити рахунок</a>
-                    <div class="block-order--card card">
-                        <p class="card__title">При оплаті картою </p>
-                        <div class="card__two-prise"><p class="card__site">{{ price_site_8_card  }} грн</p>  <p class="card__line"><s>{{ price_line_8_card  }} грн</s></p> </div>
-                        <div class="card__price-month">{{ price_month_8_card }}  <span>грн/міс.</span></div>
-                        <p class="card__sale">ЩЕ ВИГІДНІШЕ, -76%</p>
-                        <a class="card__btn" target="_blank"
-                           href="{{ price_link_8_card }}">оплатити картою</a>
-                    </div>
-                </div>
-
-                <div id="block" class="block-order__item block-order__active block-order__item--default  ">
-                    <div class="block-order--titel">
-                        <h2>12 місяців</h2>
-
-                    </div>
-                    <div class="block-order--price">
-                        <div class="block-order__two-prise"><p class="block-order__site">{{ price_site_12  }} грн</p>   <p class="block-order__line"><s>{{ price_line_12  }} грн</s></p></div>
-                        <div class="block-order__price-month">{{  price_month_12 }}  <span>грн/міс.</span> </div>
-                        <div class="block-order__sale">ЗНИЖКА 67%</div>
-                    </div>
-                    <a class="btn-order" id="order_btn" target="_blank"
-                       href="{{ price_link_12 }}">замовити рахунок</a>
-                    <div class="block-order--card card">
-                        <p class="card__title">При оплаті картою </p>
-                        <div class="card__two-prise"><p class="card__site">{{ price_site_12_card  }} грн</p>  <p class="card__line"><s>{{ price_line_12_card  }} грн</s></p> </div>
-                        <div class="card__price-month">{{ price_month_12_card }}  <span>грн/міс.</span></div>
-                        <p class="card__sale">ЩЕ ВИГІДНІШЕ, -78%</p>
-                        <a class="card__btn" target="_blank"
-                           href="{{ price_link_12_card }}">оплатити картою</a>
-                    </div>
-                </div>#}
 
 
             </div>
@@ -492,11 +450,9 @@
                         з питань оподаткування <br>
                         та бухгалтерського обліку</p>
                 </div>
-                <div class="lectors__item lectors__item--ig">
-                    <p class="lectors__name">Ірина Губіна</p>
-                    <p class="lectors__info">Експерт з податкового <br>
-                        та бухгалтерського обліку <br>
-                        (сертифікати CAP, DipIFR)</p>
+                <div class="lectors__item lectors__item--ta">
+                    <p class="lectors__name">Тимур Алієв</p>
+                    <p class="lectors__info">Консультант з питань <br> бухгалтерського обліку <br> та оподаткування</p>
                 </div>
                 <div class="lectors__item lectors__item--oll">
                     <p class="lectors__oll"><span>та ще</span> <br> 20+ спікерів </p>
@@ -1504,7 +1460,7 @@
                 <div id="lesson1" class="themes__more collapse in">
                     <div class="themes__more-body">
                         <ul class="themes__more-list">
-                            <li class="themes__more-list-item">Бухгалтерська Відеоплатформа <span class="themes__text--orange">№1</span> – це навчальний онлайн-сервіс для бухгалтерів, на якому вже представлено понад {{ page.options['number']|default('') }} курсів, вебінарів та онлайн-трансляцій семінарів на всі актуальні бухгалтерські теми.</li>
+                            <li class="themes__more-list-item">Бухгалтерська Відеоплатформа <span class="themes__text--orange">№1</span> – це навчальний онлайн-сервіс для бухгалтерів, на якому вже представлено понад {{ shop_price('онлайн-platform_price','courses') }} курсів, вебінарів та онлайн-трансляцій семінарів на всі актуальні бухгалтерські теми.</li>
                         </ul>
                     </div>
                 </div>

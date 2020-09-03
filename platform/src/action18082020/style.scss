@@ -1,5 +1,5 @@
-/**/@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700,800,900&display=swap&subset=cyrillic');
-//font-family: 'Exo 2', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+//font-family: 'Oswald', sans-serif;
 
 .top-block__btn{
   span{
@@ -85,15 +85,16 @@
 
 
 .wrapper__head{
-  background: #0c0c0c url(images/bg_hero-min1.jpg) center center no-repeat;
+  background: #0c0c0c url(images/bg-min.jpg) center center no-repeat;
   background-size: cover;
   height: auto;
   min-height: auto;
   position: relative;
 
-
   @media (max-width: 767px){
     position: relative;
+    background: #000;
+
 
 
   }

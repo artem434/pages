@@ -1,34 +1,48 @@
 {% set link = page.url('/images') %}
+
+{% set price_site_1 = shop_price('s-v1_209r','site') %}
+{% set price_month_1 = shop_price('s-v1_209r','month') %}
+{% set price_line_1 = shop_price('s-v1_209r','line') %}
+{% set price_link_1 = 's-v1_209r' %}
+
 {% set price_month_3 = shop_price('s-v3_597r','month') %}
 {% set price_link_3 = 's-v3_597r' %}
 {% set price_site_3 = shop_price('s-v3_597r','site') %}
 {% set price_line_3 = shop_price('s-v3_597r','line') %}
 
-{% set price_site_6 = shop_price('s-v6_1074r','site') %}
-{% set price_month_6 = shop_price('s-v6_1074r','month') %}
-{% set price_line_6 = shop_price('s-v6_1074r','line') %}
-{% set price_link_6 = 's-v6_1074r' %}
+{% set price_site_6 = shop_price('s-v6_1134r','site') %}
+{% set price_month_6 = shop_price('s-v6_1134r','month') %}
+{% set price_line_6 = shop_price('s-v6_1134r','line') %}
+{% set price_link_6 = 's-v6_1134r' %}
 
-{% set price_site_12 = shop_price('s-v16_1908r','site') %}
-{% set price_month_12 = shop_price('s-v16_1908r','month') %}
-{% set price_line_12 = shop_price('s-v16_1908r','line') %}
-{% set price_link_12 = 's-v16_1908r' %}
+{% set price_site_12 = shop_price('s-v12_2148r','site') %}
+{% set price_month_12 = shop_price('s-v12_2148r','month') %}
+{% set price_line_12 = shop_price('s-v12_2148r','line') %}
+{% set price_link_12 = 's-v12_2148r' %}
 
 
-{% set price_month_3_card = shop_price('s-v3_507c','month') %}
-{% set price_link_3_card = 's-v3_507c' %}
-{% set price_site_3_card = shop_price('s-v3_507c','site') %}
-{% set price_line_3_card = shop_price('s-v3_507c','line') %}
 
-{% set price_site_6_card = shop_price('s-v6_894с','site') %}
-{% set price_month_6_card = shop_price('s-v6_894с','month') %}
-{% set price_line_6_card = shop_price('s-v6_894с','line') %}
-{% set price_link_6_card = 's-v6_894с' %}
+{% set price_site_1_card = shop_price('s-v1_199c','site') %}
+{% set price_month_1_card = shop_price('s-v1_199c','month') %}
+{% set price_line_1_card = shop_price('s-v1_199c','line') %}
+{% set price_link_1_card = 's-v1_199c' %}
 
-{% set price_site_12_card = shop_price('s-v16_1668c','site') %}
-{% set price_month_12_card = shop_price('s-v16_1668c','month') %}
-{% set price_line_12_card = shop_price('s-v16_1668c','line') %}
-{% set price_link_12_card = 's-v16_1668c' %}
+{% set price_month_3_card = shop_price('s-v3_537с','month') %}
+{% set price_link_3_card = 's-v3_537с' %}
+{% set price_site_3_card = shop_price('s-v3_537с','site') %}
+{% set price_line_3_card = shop_price('s-v3_537с','line') %}
+
+{% set price_site_6_card = shop_price('s-v6_1014c','site') %}
+{% set price_month_6_card = shop_price('s-v6_1014c','month') %}
+{% set price_line_6_card = shop_price('s-v6_1014c','line') %}
+{% set price_link_6_card = 's-v6_1014c' %}
+
+{% set price_site_12_card = shop_price('s-v12_1908c','site') %}
+{% set price_month_12_card = shop_price('s-v12_1908c','month') %}
+{% set price_line_12_card = shop_price('s-v12_1908c','line') %}
+{% set price_link_12_card = 's-v12_1908c' %}
+
+
 
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
     <div class="rowall">
@@ -65,6 +79,51 @@
                 <div class="titel">Акція діє тільки до <span id="timer-title">{{ page.options['date']|default('') }}</span>
                 </div>
                 <div class="packages">
+                    <div class="package">
+                        <div class="package__header">
+                            <div class="package__top">
+                                <p class="package__period">1 місяць</p>
+                            </div>
+                            <div class="package__block-price">
+                                <p class="package__price-month">{{ price_month_1 }} грн/міс.</p>
+                                <p class="package__price-old"> <s>{{ price_line_1 }} грн/міс.</s></p>
+                                <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                                    <div class="package__btn">
+                                        <input type="hidden" name="product" value="{{ price_link_1 }}"/>
+                                        <button type="button" rel="order" class="btn-order btn-order__card">замовити рахунок</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="percent">-53%</div>
+                        </div>
+                        <div class="package__body">
+                            <ul class="package__list">
+                                <li><span>{{ page.options['number']|default('') }} відеокурсів вже <br> доступні до перегляду</span></li>
+                                <li><span>Вебінари <br> та онлайн-трансляції <br> семінарів (4-6 р./міс.)</span></li>
+                                <li><span>Відеокурси з актуальних <br> питань (2-3 р./міс.)</span></li>
+                                <li><span>Сервіс «Online-відповіді <br> на запитання» (2 р./міс.)</span></li>
+                                <li><span>Роздатковий матеріал</span></li>
+                                <li><span>Сертифікати після <br> проходження курсів</span></li>
+                                <li><span>Ексклюзивні додаткові <br> відеоматеріали</span></li>
+                            </ul>
+                            <div class="js-show_hide package__show-hide">а ще входить...</div>
+                        </div>
+                        <div class="package__footer package__card">
+                            <p class="package__sub-title">При оплаті картою</p>
+                            <p class="package__price-month">{{ price_month_1_card }} грн/міс.</p>
+                            <p class="package__price-old"> <s>{{ price_line_1_card }} грн/міс.</s></p>
+                            <form method="post" action="?new=1" data-validate="ajax" class="pricing-form">
+                                <div class="">
+                                    <input type="hidden" name="product" value="{{ price_link_1_card }}"/>
+                                    <button type="button" rel="order" class=" package__btn-card">оплатити картою</button>
+                                </div>
+                            </form>
+                            <div class="percent">-56%</div>
+                        </div>
+
+                    </div>
+
                     <div class="package">
                         <div class="package__header">
                             <div class="package__top">
@@ -105,7 +164,7 @@
                                     <button type="button" rel="order" class=" package__btn-card">оплатити картою</button>
                                 </div>
                             </form>
-                            <div class="percent">-62%</div>
+                            <div class="percent">-60%</div>
                         </div>
 
                     </div>
@@ -124,7 +183,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="percent">-60%</div>
+                            <div class="percent">-58%</div>
                         </div>
                         <div class="package__body">
                             <ul class="package__list">
@@ -148,7 +207,7 @@
                                     <button type="button" rel="order" class=" package__btn-card">оплатити картою</button>
                                 </div>
                             </form>
-                            <div class="percent">-67%</div>
+                            <div class="percent">-62%</div>
                         </div>
                     </div>
                     <div class="package">
@@ -156,9 +215,9 @@
 
                             <div class="package__top">
                                 <p class="package__period">12 місяців</p>
-                                <div class="package__presents">
-                                <p >2020 РІК У ПОДАРУНОК</p>
-                            </div>
+                               {# <div class="package__presents">
+                                    <p >2020 РІК У ПОДАРУНОК</p>
+                                </div>#}
                             </div>
                             <div class="package__block-price">
                                 <p class="package__price-month">{{ price_month_12 }} грн/міс.</p>
@@ -171,7 +230,7 @@
                                 </form>
 
                             </div>
-                            <div class="percent">-65%</div>
+                            <div class="percent">-60%</div>
                         </div>
                         <div class="package__body">
                             <ul class="package__list">
@@ -196,7 +255,7 @@
                                 </div>
                             </form>
 
-                            <div class="percent">-69%</div>
+                            <div class="percent">-65%</div>
                         </div>
 
                     </div>

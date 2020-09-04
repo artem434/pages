@@ -337,7 +337,7 @@
                 <div class="gifts">
                     <p class="gifts__title">ПОДАРУНКИ</p>
                     <p class="gifts__name">витончений срібний кулон</p>
-                    <p class="gifts__name gifts__name--sertificat">Сертифікат Rozetka/Aлло на 1000 грн</p>
+                    <p class="gifts__name gifts__name--sertificat">Сертифікат Rozetka/Aлло на 500 грн</p>
                     <p class="gifts__name gifts__name--play">ВІДЕОКУРС <br> «Зарплата в 1С»  </p>
                     <p class="gifts__info">(складається з 9 уроків та відповіді на запитання</p>
                     <div class="gifts__button"><a data-toggle="collapse" data-target="#gifts1" aria-expanded="false" aria-controls="#gifts1" class="gifts__more-btn">Детальніше</a></div>
@@ -405,16 +405,17 @@
                     <div class="package__platform"></div>
                     <ul class="package__list">
                         <li>online-трансляція</li>
-                        <li class="is-inactive" >відеозапис семінару</li>
+                        <li>відеозапис семінару</li>
                         <li>відповіді на запитання</li>
                         <li>презентації лекторів</li>
-                        <li>сертифікат учасника</li></ul>
+
                 </div>
                 <div class="package__footer  package__footer--gold">
                        <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#de4319"></path> </svg>Подарунки: </p>
                        <ul class="package__list package__list--footer">
                            <li >Відеокурс <br>  «Зарплата в 1С»</li>
                            <li class="is-inactive">Витончений срібний кулон</li>
+                           <li  class="is-inactive" >Сертифікат Rozetka/Aлло на 500 грн</li>
                        </ul>
                     <div class="package__btn--footer">
                         <form method="post" action="?new=1" data-validate="ajax">
@@ -458,6 +459,7 @@
                     <ul class="package__list package__list--footer">
                         <li>Відеокурс <br>  «Зарплата в 1С»</li>
                         <li >Витончений срібний кулон</li>
+                        <li  class="is-inactive" >Сертифікат Rozetka/Aлло на 500 грн</li>
                     </ul>
                     <div class="package__btn--footer">
                         <form method="post" action="?new=1" data-validate="ajax">
@@ -473,14 +475,14 @@
                     <div class="package__head  package__head--premium">
                         <p class="package__header  package__header--gold">Premium</p>
                         <p class="package__price package__price-platform "></p>
-                        <p class="package__price  package__price--gold">{{shop_price('онлайн-08102020БКС_пр_1997','site')}} <br> <span>грн</span>
+                        <p class="package__price  package__price--gold">{{shop_price('онлайн-08102020БКС_пр_1697','site')}} <br> <span>грн</span>
                         <p class="package__old-price">
-                            <s>{{shop_price('онлайн-08102020БКС_пр_1997','line')}}грн</s>
+                            <s>{{shop_price('онлайн-08102020БКС_пр_1697','line')}}грн</s>
                         </p>
                         </p>
                         <div class="package__btn">
                             <form method="post" action="?new=1" data-validate="ajax">
-                                <input type="hidden" name="product" value="онлайн-08102020БКС_пр_1997"/>
+                                <input type="hidden" name="product" value="онлайн-08102020БКС_пр_1697"/>
                                 <button type="submit" rel="order" class="btn">оплатити <br>
                                     <span>рахунок/картою</span></button>
                             </form>
@@ -500,11 +502,12 @@
                         <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#de4319"></path> </svg>Подарунки: </p>
                         <ul class="package__list package__list--footer">
                             <li>Відеокурс <br>  «Зарплата в 1С»</li>
-                            <li >Сертифікат Rozetka/Aлло на 1000 грн</li>
+                            <li class="is-inactive">Витончений срібний кулон</li>
+                            <li >Сертифікат Rozetka/Aлло на 500 грн</li>
                         </ul>
                         <div class="package__btn--footer">
                             <form method="post" action="?new=1" data-validate="ajax">
-                                <input type="hidden" name="product" value="онлайн-08102020БКС_пр_1997"/>
+                                <input type="hidden" name="product" value="онлайн-08102020БКС_пр_1697"/>
                                 <button type="submit" rel="order" class="btn">оплатити <br>
                                     <span>рахунок/картою</span></button>
                             </form>
@@ -528,10 +531,12 @@
                 <ul class="package__list"><li class="is-platform">  <b>Доступ до цього відеопроєкту</b>, а також ще до <b>{{ shop_price('онлайн-platform_price','courses') }}+</b> відеокурсів, вебінарів та трансляцій на усі найважливіші бухгалтерські теми <b>за супервигідною ціною</b>  </li></ul>
             </div>
             <div class="package__footer  package__footer--gold-plus">
-               {# <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#d9384c"></path> </svg>Подарунок: </p>
-                <ul class="package__list package__list--footer">
-                    <li >Відеокурс <br>  «ПДВ в 1С»</li>
-                </ul>#}
+                <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#0a33dc"></path> </svg>Подарунок: </p>
+                <ul class="package__list package__list--footer   package__list--gold-plus">
+                    <li>Відеокурс <br>  «Зарплата в 1С»</li>
+                    <li class="is-inactive">Витончений срібний кулон</li>
+                    <li class="is-inactive">Сертифікат Rozetka/Aлло на 500 грн</li>
+                </ul>
                 <div class="package__btn--footer"><a href="{{ link_platform }}" target="_blank" class="btn btn--Sale js-platform-link js-banner-link">оплатити <br>
                         <span>рахунок/картою</span></a></div>
             </div>
@@ -559,7 +564,7 @@
                 </div>
 
                 <p class="free-video__btn">
-                    <a href="{{ link_platform_video }}" target="_blank"   class="btn js-scroll-to">Передплатити зі знижкою ></a>
+                    <a href="{{ link_platform_video }}" target="_blank"   class="btn js-scroll-to js-banner-link">Передплатити зі знижкою ></a>
                 </p>
 
             </div>

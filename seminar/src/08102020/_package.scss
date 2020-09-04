@@ -12,8 +12,12 @@ $package-color: #d9384c;
   &--gold-plus{
     background-image: linear-gradient(to right, #ff732a, #ff9628);
     .package__presents{
-      color: $package-color;
+      color:#0a33dc;
     }
+
+
+
+
   }
 
 
@@ -310,6 +314,14 @@ $package-color: #d9384c;
     &--footer {
       margin-bottom: 30px;
       color: #fff;
+    }
+
+    &--gold-plus{
+
+
+          .is-inactive{
+            color: #494545!important;
+        }
 
     }
   }
@@ -323,6 +335,8 @@ $package-color: #d9384c;
 
   &__footer {
     padding: 0 5px 50px;
+
+
   }
 
   &__presents {

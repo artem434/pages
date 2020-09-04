@@ -39,7 +39,7 @@
   </section>
   <section id="tour" class="tour">
     <div class="container">
-      <h3 class="page-title"><span>Оздоровлення та SPA-процедури в самому серці Карпат</span></h3>
+      <h3 class="page-titles"><span>Оздоровлення та SPA-процедури в самому серці Карпат</span></h3>
       <ul>
         <li>
           <div class="tour__text">Оздоровчі процедури<br />та харчування<br />за системою<br />«Все включено»</div>
@@ -61,7 +61,7 @@
   </section>
   <section id="places" class="places">
     <div class="container">
-      <h3 class="page-title"><span>Тут втомлені душа та тіло знайдуть все необхідне</span></h3>
+      <h3 class="page-titles"><span>Тут втомлені душа та тіло знайдуть все необхідне</span></h3>
       <div class="places__block">
         <div class="places__content">
           <img class="places__img" alt="" src="{{ link }}/img1-min.jpg" />
@@ -113,7 +113,7 @@
   </section>
   <section id="info" class="info">
     <div class="container">
-      <h3 class="page-title"><span>У вартість туру входить</span></h3>
+      <h3 class="page-titles"><span>У вартість туру входить</span></h3>
       <div class="info__frame">
         <div class="info__wrap">
           <ul class="info__item info__item--one">
@@ -178,19 +178,14 @@
   </div>
   <section id="order" class="order">
     <div class="container">
-      <h3 class="page-title"><span>{{ page.options['order__title']|default('') }}</span></h3>
+      <h3 class="page-titles"><span>{{ page.options['order__title']|default('') }}</span></h3>
       <div class="order__packages">
         {% set packages = [
-          {
-            name: 'club',
-            title: 'Вартість туру для учасників 7eminar.club',
-            price: 'тур-26092020БельРояль_чк_1',
-            link: 'https://7eminar.ua/',
-          },
+
           {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
-            price: 'тур-26092020БельРояль_1',
+            price: 'тур-26092020БельРояль_2',
             link: 'https://7eminar.ua/',
           }
         ] %}
@@ -232,7 +227,7 @@
   </section>
   {#<div class="video">
     <div class="container">
-      <h3 class="page-title"><span>Оздоровлення в SPA-готелі у Мукачево </span></h3>
+      <h3 class="page-titles"><span>Оздоровлення в SPA-готелі у Мукачево </span></h3>
       <div class="video__block">
         <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
       </div>

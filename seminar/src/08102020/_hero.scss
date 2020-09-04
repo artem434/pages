@@ -1,0 +1,156 @@
+.hero{
+  display: block;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background: #fcfcfc  url(images/hero/lectors-min.jpg) center top  no-repeat;
+  color: #fff;
+  background-size: cover;
+  @media (max-width: 767px){
+    background: linear-gradient(to top,  #081c69 ,#081c6a );
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, transparent, #b5bffe ,#b5bffe, transparent);
+
+    @media (max-width: 767px){
+      content: none;
+    }
+  }
+
+
+  &__content{
+    text-align: center;
+    padding: 40px 0 25px;
+    @media (max-width: 767px){
+      padding: 20px 0;
+    }
+  }
+
+  &__date{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #fefeff;
+    text-transform: uppercase;
+    padding-bottom: 285px;
+    @media (max-width: 767px){
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    span{
+      color: #6c89ff;
+    }
+  }
+
+  &__title{
+    text-shadow: 0px 15px 30px rgba(11, 16, 36, 0.85);
+    font-size: 88px;
+    font-weight: bold;
+    line-height: 1.02;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    @media (max-width: 767px){
+      font-size: 55px;
+    }
+    &:nth-child(2){
+      font-size: 56px;
+      @media (max-width: 767px){
+        font-size: 35px;
+      }
+    }
+    &:nth-child(3){
+      font-size: 49px;
+      @media (max-width: 767px){
+        font-size: 30px;
+      }
+    }
+  }
+
+
+
+
+  &__logo{
+    position: absolute;
+    bottom: 50px;
+    display: none;
+
+    @media (max-width: 767px){
+      position: relative;
+      bottom: 0px;
+      width: 150px;
+      margin: 0 auto;
+    }
+
+    img{
+      width: 170px;
+      height: auto;
+      @media (max-width: 767px){
+        width: 120px;
+        margin:  15px 10px 0;
+      }
+    }
+  }
+
+  &__logo-dk{
+    left: 50%;
+    transform: translate(-350%,0);
+    @media (max-width: 767px){
+      left: 0;
+      transform: translate(0%,0);
+    }
+  }
+
+  &__logo-seminar{
+    right: 50%;
+    transform: translate(350%,0);
+    @media (max-width: 767px){
+      right: 0;
+      transform: translate(0%,0);
+    }
+  }
+
+
+  &__btn{
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  &__name{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.35px;
+    color: #6c89ff;
+    text-transform: uppercase;
+
+    @media (max-width: 767px){
+      font-size: 13px;
+    }
+
+    br{
+      display: none;
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
+  }
+
+}
+
+
+
+
+

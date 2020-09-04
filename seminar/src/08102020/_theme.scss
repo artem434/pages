@@ -1,0 +1,32 @@
+
+.themes {
+    background-color: #e4e4e4;
+
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+  &__content{
+    padding-top: 60px;
+    @media (max-width: 767px){
+      padding-top: 45px;
+    }
+
+    p{
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #5d5d5d;
+      @media (max-width: 767px){
+        font-size: 19px;
+      }
+    }
+  }
+}

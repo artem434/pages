@@ -15,8 +15,8 @@ const webPackConfig = {
     }
 };
 
-const page = 'karpaty26092020';
-const id = 426;
+const page = '08102020';
+const id = 430;
 
 const proxy = `https://7eminar.local/${page}`;
 

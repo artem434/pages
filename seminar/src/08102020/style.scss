@@ -1,0 +1,215 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic');
+
+
+button {
+  outline: none !important;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none !important;
+  }
+}
+
+.seminar-landing{
+    background-color: #f5f5f5;
+}
+
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+}
+
+#bg_popup{
+  display: none!important;
+}
+
+#bg_popup_two{
+  display: none!important;
+}
+
+#__telerWdTriggerContent {
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.circle{
+  display: none;
+}
+
+%container{
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 100px 0;
+  @media (max-width: 1200px){
+    max-width: 767px;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+    padding: 30px 10px;
+  }
+}
+
+
+
+%title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    font-size: 54px;
+    color: #232323;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media (max-width: 767px){
+      font-size: 30px;
+    }
+  }
+   span{
+     color: #ffffff;
+     font-size: 36px;
+     padding: 0 3px;
+     background-image: linear-gradient(to left, #0a33dd, #02124e);
+     display: table;
+     margin: 0 auto;
+     @media (max-width: 767px){
+       font-size: 30px;
+       background-image:none;
+       color: #232323;
+     }
+   }
+
+}
+
+
+
+.btn {
+  max-width: 270px;
+  width: 100%;
+  box-shadow: 0px 15px 30px 0 rgba(11, 16, 36, 0.3);
+  background-color: #de4319;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 0px;
+  text-transform: uppercase;
+  padding: 0;
+  transition: all .3s;
+
+
+  &:hover {
+    color: #ffffff;
+    box-shadow: none;
+    background-color: #b02803;
+  }
+
+  &:active,
+  &:focus{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+}
+
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "mixins";
+@import "variables";
+@import "haeding";
+@import "menu";
+@import "hero";
+@import "info";
+@import "profession";
+@import "lectors";
+@import "cards";
+@import "theme";
+@import "advantages";
+@import "gift";
+@import "order";
+@import "package";
+@import "pricing-timer";
+@import "free-video";
+/*@import "info";
+@import "profession";
+@import "lectors";
+@import "theme";
+@import "gift";
+@import "advantages";
+@import "order";
+@import "package";
+@import "pricing-timer";*/
+@import "partners";
+@import "loader-page";
+/*
+@import "video";
+@import "free-video";
+@import "map";
+@import "modal-video";
+*/
+
+
+.branding-page #main{
+  width: 100%;
+  background: #ffe2ec;
+}
+
+.branding-page{
+  padding-top: 0px;
+  background: #ffe2ec;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+
+  .heading{
+    display: none;
+  }
+}

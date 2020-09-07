@@ -1,5 +1,5 @@
 {% set link = page.url('/images') %}
-{% set number = 14 %}
+{% set number = 15 %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
 
     <div class="seminar-landing">
@@ -75,10 +75,78 @@
                     <button data-options="excel" class="courses__tab">Excel</button>
                 </div>
                 <div class="courses__content">
-                    <div class="course excel" id="course_14">
+                    <div class="course oneC" id="course_15">
                         <div class="course__header">
                             <div class="course__titel">
                                 <p class="course__number"><b>•</b> Відеокурс 1 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Облік МШП, МНМА, ОЗ, НА в 1С</p>
+                                <p class="course__description">5 модулів (32 уроки) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-21092020Облік_1с_1699','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-21092020Облік_1с_1699','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course15" aria-expanded="false" aria-controls="#course15" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <form method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-21092020Облік_1с_1699"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course15" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Вихід курсу:
+                                        <b>
+                                            21 вересня 2020 року
+                                        </b>
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b>Загальні параметри та аналітичний облік оборотних, необоротнихта нематеріальних активів</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Облік малоцінних швидкозношуваних предметів (МШП)</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b> Облік малоцінних необоротних матеріальних активів (МНМА)</p>
+                                <p class="theme__lesson"><b>Модуль  №4.</b>  Облік основних засобів (ОЗ)</p>
+                                <p class="theme__lesson"><b>Модуль  №5.</b> Облік нематеріальних активів (НА)</p>
+
+                                <a href="https://7eminar.com/files/program_1c_oblik.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-21092020Облік_1с_1699','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-21092020Облік_1с_1699','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <form method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-21092020Облік_1с_1699"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course excel" id="course_14">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 2 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Excel для початківців на прикладі зарплати</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -145,7 +213,7 @@
                     <div class="course oneC" id="course_13">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 2 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 3 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Взаєморозрахунки з дебіторами та кредиторами в 1С</p>
                                 <p class="course__description">7 модулів (37 уроків) та відповіді на запитання</p>
@@ -213,7 +281,7 @@
                     <div class="course oneC" id="course_12">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 3 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 4 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Валютні операції в 1С</p>
                                 <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
@@ -280,7 +348,7 @@
                     <div class="course oneC" id="course_11">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 4 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 5 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Облік витрат в 1С</p>
                                 <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
@@ -347,7 +415,7 @@
                     <div class="course oneC" id="course_10">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 5 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 6 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Облік доходів в 1С</p>
                                 <p class="course__description">4 модулі (19 уроків) та відповіді на запитання</p>
@@ -413,7 +481,7 @@
                     <div class="course oneC" id="course_9">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 6 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 7 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Виробництво та собівартість в 1С</p>
                                 <p class="course__description">7 модулів (33 уроки) та відповіді на запитання</p>
@@ -484,7 +552,7 @@
                     <div class="course ekpp" id="course_8">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 7 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 8 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет страхувальника на сайті ПФУ</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -555,7 +623,7 @@
                     <div class="course oneC" id="course_7">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 8 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 9 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Кадри в 1С</p>
                                 <p class="course__description">11 уроків та відповіді на запитання</p>
@@ -636,7 +704,7 @@
                     <div class="course oneC" id="course_6">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 9 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 10 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">ПДВ в 1С</p>
                                 <p class="course__description">12 уроків та відповіді на запитання</p>
@@ -719,7 +787,7 @@
                     <div class="course oneC" id="course_5">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 10 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 11 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Зарплата в 1С</p>
                                 <p class="course__description">9 уроків та відповіді на запитання</p>
@@ -796,7 +864,7 @@
                     <div class="course oneC" id="course_4">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 11 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 12 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Каса та банк в 1С</p>
                                 <p class="course__description">2 модулі (24 уроки) та відповіді на запитання</p>
@@ -857,7 +925,7 @@
                     <div class="course ekpp" id="course_3">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 12 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 13 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет платника податків для юросіб</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -929,7 +997,7 @@
                     <div class="course ekpp" id="course_2">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 13 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 14 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет платника податків для ФОП</p>
                                 <p class="course__description">4 уроки та відповіді на запитання</p>
@@ -996,7 +1064,7 @@
                     <div class="course oneC" id="course_1">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 14 із  <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 15 із  <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">ФОП в 1С</p>
                                 <p class="course__description">8 модулів (28 уроків) та відповіді на запитання</p>

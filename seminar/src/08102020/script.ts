@@ -121,13 +121,9 @@ jQuery(($) => {
         $('.js-btn-platform').show();
     }
 
-    if (document.location.host == "seminar.ibuh.info") {
-
-    }
-
-    if (document.location.host == "seminar.impulsm.com.ua") {
-
-    }
+    $('.cards').on('click',function () {
+        $(this).find('.cards__content').toggleClass('js-rotate');
+    });
     $(window).scroll(function() {
         var the_top = jQuery(document).scrollTop();
         if (the_top > 55) {

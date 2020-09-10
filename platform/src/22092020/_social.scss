@@ -1,3 +1,4 @@
+
 .social { background: #f3f3f3; }
 
 .social__container { padding-top: 40px; padding-bottom: 40px; }
@@ -14,7 +15,7 @@
 
 .social__list li:last-child { margin-right: 0; }
 
-.social__list li a { display: block; transition: all ease-in 150ms; }
+.social__list li a { display: block; -webkit-transition: all ease-in 150ms; -o-transition: all ease-in 150ms; transition: all ease-in 150ms; }
 
 .social__list li a:hover, .social__list li a:active, .social__list li a:focus { opacity: 0.7; }
 

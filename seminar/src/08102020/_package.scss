@@ -314,6 +314,10 @@ $package-color: #d9384c;
     &--footer {
       margin-bottom: 30px;
       color: #fff;
+      min-height: 159px;
+      @media (max-width: 767px){
+       height: auto;
+      }
     }
 
     &--gold-plus{

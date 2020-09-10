@@ -10,7 +10,7 @@
                 <li><a href="#lectors" class="burger__link js-scroll-to">Лектори</a></li>
                 <li><a href="#theme" class="burger__link js-scroll-to">теми</a></li>
                 <li><a href="#gift" class="burger__link js-scroll-to">Подарунки</a></li>
-                <li><a href="#form" class="burger__link js-scroll-to">Зареєструватися</a></li>
+                <li><a href="#order" class="burger__link js-scroll-to">придбати</a></li>
 
             </ul>
         </div>
@@ -22,7 +22,7 @@
                         <li><a href="#lectors">Лектори</a></li>
                         <li><a href="#theme">теми</a></li>
                         <li><a href="#gift">Подарунки</a></li>
-                        <li><a href="#form">Зареєструватися </a></li>
+                        <li><a href="#order">придбати </a></li>
                     </ul>
 
                 </div>
@@ -37,13 +37,13 @@
             </div>
             <div class="hero__content">
                 <div class="hero__item">
-
-                    <div class="hero__date">
+                    <p class="hero__rec"><span>Відеозапис</span></p>
+                   {# <div class="hero__date">
                         <span> 9 вересня</span> 2020 року | 11:00, 19:00
                     </div>
                     <div class="hero__online">
                         Безкоштовна ONLINE-конференція
-                    </div>
+                    </div>#}
                     <div class="hero__title">
                        <span>ФОП</span>и по-новому
                     </div>
@@ -76,7 +76,7 @@
                                     <button type="submit" class="btn btn-default">зареєструватися </button>
                                 </div>
                             </form>
-                            <div class="timer">
+                            {#<div class="timer">
                                     <p class="timer__title">Приєднайтеся безкоштовно</p>
                                     <div class="timer__block">
                                         <div class="timer__box">
@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
 
-                                </div>
+                                </div>#}
                         </div>
                         <div class="form__footer">
                             <div class="gift">
@@ -123,7 +123,7 @@
     <div id="knowledges" class="knowledges">
         <div class="knowledges__container">
             <p class="knowledges__title">Про що дізнаєтеся?</p>
-           {# <p class="knowledges__sub-title">Основні тезиси</p>
+            {# <p class="knowledges__sub-title">Основні тезиси</p>
             <p class="knowledges__title">Про що дізнаєтеся?</p>#}
             <div class="knowledges__content">
                 <div class="knowledges__icon">
@@ -145,7 +145,7 @@
         </div>
     </div>
 
-    <div class="info"  id="info">
+    {#<div class="info"  id="info">
         <div class="info__container container">
             <div class="info__content">
                 <div class="info__item">
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>#}
 
     <div id="profession" class="profession">
         <div class="profession__container">
@@ -192,9 +192,9 @@
                             підприємцю</p>
                     </div>
                 </div>
+            </div>
+            <a href="#order" class="profession__btn">придбати</a>
         </div>
-            <a href="#order" class="profession__btn">зареєструватися</a>
-    </div>
     </div>
 
 
@@ -202,14 +202,14 @@
         <div class="container theme__container">
             {#  <p class="themes__title" id="themes ">теми майстер-класу</p>#}
             <div class="themes__item">
-                <div class="themes__header"><p>ТЕМИ  <br> online-конференції </p></div>
+                <div class="themes__header"><p>ТЕМИ  <br> КОНФЕРЕНЦІЇ</p></div>
                 <div class="themes__body">
                     <ul class="themes__list lector">
                         <li class="lector__item lector__item--ta">
                             <div class="">
                             </div>
                             <div class="lector__body">
-                                <p class="themes__time">11:00–11:40 <span>|</span> 19:00–19:40</p>
+                                {#  <p class="themes__time">11:00–11:40 <span>|</span> 19:00–19:40</p>#}
                                 <p class="lector__title ">ФОП і РРО/ПРРО: коли, кому та як перейти на РРО/ПРРО</p>
                                 <div id="lesson1" class="themes__more collapse">
                                     <div class="themes__more-body">
@@ -237,7 +237,7 @@
 
                         <li class="lector__item lector__item--og ">
                             <div class="lector__body">
-                                <p class="themes__time">11:40–12:10 <span>|</span> 19:40–20:10</p>
+                                {#  <p class="themes__time">11:40–12:10 <span>|</span> 19:40–20:10</p>#}
                                 <p class="lector__title">ФОП-облік: кому (не)потрібно вести книги (єдиний податок)</p>
                                 <div id="lesson2" class="themes__more collapse">
                                     <div class="themes__more-body">
@@ -255,7 +255,7 @@
 
                         <li class="lector__item lector__item--os">
                             <div class="lector__body">
-                                <p class="themes__time">12:10–12:45 <span>|</span> 20:10–20:45</p>
+                                {# <p class="themes__time">12:10–12:45 <span>|</span> 20:10–20:45</p>#}
                                 <p class="lector__title">ФОП і походження товару</p>
                                 <div id="lesson3" class="themes__more collapse">
                                     <div class="themes__more-body">
@@ -274,7 +274,7 @@
                         <li class="lector__item lector__item--tm">
 
                             <div class="lector__body">
-                                <p class="themes__time">12:45–13:10 <span>|</span> 20:45–21:10</p>
+                                {#<p class="themes__time">12:45–13:10 <span>|</span> 20:45–21:10</p>#}
                                 <p class="lector__title">Кадри ФОПа: яскраві помилки кадрового обліку та як їх виправити без штрафів</p>
                                 <div id="lesson4" class="themes__more collapse">
                                     <div class="themes__more-body">
@@ -293,7 +293,7 @@
                         <li class="lector__item lector__item--ig">
 
                             <div class="lector__body">
-                                <p class="themes__time">13:10–13:40 <span>|</span> 21:10–21:40</p>
+                                {# <p class="themes__time">13:10–13:40 <span>|</span> 21:10–21:40</p>#}
                                 <p class="lector__title">ФОП на загальній системі. Облік доходів та витрат.    Увага на первинні документи</p>
                                 <div id="lesson5" class="themes__more collapse">
                                     <div class="themes__more-body">
@@ -311,15 +311,15 @@
                             <div class="themes__button"><a data-toggle="collapse" data-target="#lesson5" aria-expanded="false" aria-controls="#lesson5" class="themes__more-btn">Детальніше</a></div>
                         </li>
 
-                        <li class="lector__item lector__item--tm">
+                        {#  <li class="lector__item lector__item--tm">
 
                             <div class="lector__body">
-                                <p class="themes__time">13:40–13:50 <span>|</span> 21:40–21:50</p>
-                                <p class="lector__title">Про Бухгалтерську Відеоплатформу №1: як стати користувачем </p>
+                        #}{# <p class="themes__time">13:40–13:50 <span>|</span> 21:40–21:50</p>#}{#
+                        <p class="lector__title">Про Бухгалтерську Відеоплатформу №1: як стати користувачем </p>
 
-                                <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
-                            </div>
-                        </li>
+                        <p class="lector__info"><span>Тетяна Мойсеєнко</span>, шеф-редактор 7eminar.com, експерт із трудового права та кадрового обліку</p>
+                    </div>
+                </li>#}
 
 
                     </ul>
@@ -337,28 +337,28 @@
         <div class="container gift__container">
             <div class="gift__item">
                 <div class="gift__header">
-                    <p class="gift__title">Подарунки <br>під час online-трансляції</p></div>
+                    <p class="gift__title">У ПОДАРУНОК</p></div>
                 <div class="gift__body">
                     <ul class="gift__list">
                         <li>
                             <div class="gift__block"><div class="gift__text"><span>Брошура</span> <br>  «ФОП-2020: сплачуйте ЄСВ без штрафів»</div>
                             </div>
                         </li>
-                        <li>
+                        {# <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Брошура</span> <br>«ТОП-10 кадрових документів ФОПа та їх зразки»</div>
                             </div>
-                        </li>
+                        </li>#}
                         <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span>Брошура</span> <br>  «РРО для ФОП: умови, строки, штрафи»</div>
                             </div>
                         </li>
-                        <li>
+                        {# <li>
                             <div class="gift__block">
                                 <div class="gift__text"><span> Відеокурс</span> <br>  «Електронний кабінет платника податків для ФОП»</div>
                             </div>
-                        </li>
+                        </li>#}
                     </ul>
                 </div>
                 <a href="#order" class="gift__btn">Замовити</a>
@@ -368,7 +368,7 @@
 
     <div id="advantages" class="advantages">
         <div class="advantages__container">
-          {#  <p class="advantages__sub-title">переваги</p>#}
+            {#  <p class="advantages__sub-title">переваги</p>#}
             <p class="advantages__title">що ви отримаєте?</p>
             <div class="certificate">
                 <picture><img src="{{ link }}/certificate_low.png" alt="certificate" ></picture>
@@ -381,10 +381,10 @@
                             <path d="M256.065 0C114.43 0 0 114.298 0 256.065S114.298 512.13 256.065 512.13 512.13 397.832 512.13 256.065 397.702 0 256.065 0zm0 477.892c-122.891 0-221.828-98.937-221.828-221.828S133.175 34.236 256.065 34.236s221.828 98.937 221.828 221.828-98.937 221.828-221.828 221.828z" fill="#98640a" class="color-svg"></path>
                         </svg>
                     </div>
-                    <div class="advantages__text">Трансляцію та запис
-                       <br/>  конференції</div>
+                    <div class="advantages__text">Відеозапис
+                        <br/>  конференції</div>
                 </div>
-                <div class="advantages__item">
+                {#  <div class="advantages__item">
                     <div class="advantages__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.352 338.352" style="width: 65px;height: 65px;">
                             <path d="M169.176 0C75.601 0 0 75.514 0 169.176s75.514 169.176 169.176 169.176 169.176-75.514 169.176-169.176S262.752 0 169.176 0zm0 315.731c-81.191 0-146.556-65.365-146.556-146.556S87.986 22.619 169.176 22.619s146.556 65.365 146.556 146.556-65.365 146.556-146.556 146.556z" class="color-svg"></path>
@@ -395,7 +395,7 @@
                         на запитання у чаті
 
                     </div>
-                </div>
+                </div>#}
                 <div class="advantages__item">
                     <div class="advantages__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.182 346.182" style="width: 65px;height: 65px;">
@@ -425,7 +425,7 @@
             <p class="order__title"> оберіть тип перегляду </p>
             {#<p class="order__title"> ПРИЄДНАЙТЕСЯ ДО БУХГАЛТЕРСЬКОЇ ВІДЕОПЛАТФОРМИ №1</p>#}
             <div class="order__packages">
-                <div class="order__package package order__package--gold">
+                {#<div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -444,16 +444,17 @@
                             <a href="#form"  class="btn">реєстрація</a>
                         </div>
                     </div>
-                </div>
+                </div>#}
                  <div class="order__package package order__package--standart ">
                      <div class="package__head">
-                         <p class="package__header  "> online + запис</p>
+                         <p class="package__header  "> запис</p>
                      </div>
                      <div class="package__body">
                          <p class="package__format"></p>
                          <ul class="package__list">
-                             <li>Online-трансляція</li>
-                             <li>Відповіді на запитання</li>
+                             <li>Сертифікат учасника</li>
+                             {#   <li>Online-трансляція</li>
+                             <li>Відповіді на запитання</li>#}
                              <li >Подарунки від лекторів</li>
                              <li >Відеозапис</li></ul>
                          <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-09092020ФОП_577') }} грн</span></p>

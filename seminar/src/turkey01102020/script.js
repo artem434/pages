@@ -16,7 +16,7 @@ System.register(["jquery", "bootstrap"], function (exports_1, context_1) {
                 loaderPage.delay(350).fadeOut('slow');
                 var viewport = $("meta[name=viewport]");
                 viewport.attr('content', 'width=device-width,initial-scale=1');
-                var burger = $('#menu-toggler');
+                var burger = $('#burger-page');
                 var body = $('body');
                 burger.on('click', function () {
                     $(this).toggleClass('is-active');

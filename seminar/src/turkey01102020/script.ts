@@ -8,7 +8,7 @@ jQuery(($) => {
     const viewport = $("meta[name=viewport]");
     viewport.attr('content', 'width=device-width,initial-scale=1');
 
-    const burger = $('#menu-toggler');
+    const burger = $('#burger-page');
     const body = $('body');
 
     burger.on('click', function () {

@@ -9,7 +9,7 @@
                alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
         </a>
       </div>
-      <div id="menu-toggler" class="top-line__burger burger"><span></span></div>
+      <div id="burger-page" class="top-line__burger burger-page"><span></span></div>
       <div class="menu">
         <div class="menu__container">
           <ul class="menu__list">
@@ -39,7 +39,7 @@
   </section>
   <section id="tour" class="tour">
     <div class="container">
-      <h3 class="page-title"><span>Що на вас чекає під час туру</span></h3>
+      <h3 class="page-titles"><span>Що на вас чекає під час туру</span></h3>
       <ul class="tour__list">
         <li>
           <span>Мальовнича бухта в <br> басейні Середземного моря</span>
@@ -58,7 +58,7 @@
   </section>
   <section id="places" class="places">
     <div class="container">
-      <h3 class="page-title"><span>Неймовірне повернення в літо</span></h3>
+      <h3 class="page-titles"><span>Неймовірне повернення в літо</span></h3>
       <ul class="places__list">
         <li>
           <p>
@@ -99,7 +99,7 @@
   </section>
   <section id="info" class="info">
     <div class="container">
-      <h3 class="page-title"><span>У вартість туру входить</span></h3>
+      <h3 class="page-titles"><span>У вартість туру входить</span></h3>
       <ul class="info__list">
         <li>
           <b>Авіапереліт:</b>
@@ -142,19 +142,14 @@
   </div>
   <section id="order" class="order">
     <div class="container">
-      <h3 class="page-title"><span>{{ page.options['order__title']|default('') }}</span></h3>
+      <h3 class="page-titles"><span>{{ page.options['order__title']|default('') }}</span></h3>
       <div class="order__packages">
         {% set packages = [
-          {
-            name: 'club',
-            title: 'Вартість туру для учасників 7eminar.club',
-            price: 'тур-01102020Турция_чк_1',
-            link: 'https://7eminar.ua/',
-          },
+
           {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
-            price: 'тур-01102020Турция_1',
+            price: 'тур-01102020Турция_2',
             link: 'https://7eminar.ua/',
           }
         ] %}

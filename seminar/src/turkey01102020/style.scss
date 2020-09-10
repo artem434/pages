@@ -141,5 +141,16 @@ p {
   }
 }
 
+.dk-seminar{
 
+  @media (max-width: 1200px){
+    .top-line{
+      display: none;
+    }
+
+    .seminar-landing{
+      padding-top: 0;
+    }
+  }
+}
 

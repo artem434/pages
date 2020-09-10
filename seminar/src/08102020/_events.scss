@@ -1,0 +1,57 @@
+.events{
+  background: #041b75  url(images/profession/bg-min.png) center center  no-repeat;
+  &__container {
+    @extend %container;
+    text-align: center;
+  }
+
+  &__title{
+    @extend %title;
+
+    p{
+      color: #fff;
+      font-size: 36px;
+      @media (max-width: 767px){
+        font-size: 22px;
+      }
+    }
+
+    span{
+      background-image: linear-gradient(to left, #fff, #fff);
+      color: #041b75;
+      font-size: 36px;
+      @media (max-width: 767px){
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__content{
+    padding-top: 45px;
+
+    p{
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: 0.6px;
+      text-align: left;
+      color: #fff;
+      max-width: 760px;
+      width: 100%;
+      margin: 0 auto;
+      @media (max-width: 767px){
+        font-size: 16px;
+      }
+      span{
+        color: #f4ae17;
+      }
+    }
+
+  }
+
+
+
+
+}

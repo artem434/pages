@@ -3,10 +3,9 @@
   font-family: 'Inter', sans-serif;
   color: #fff;
   position: relative;
-  background: url(images/bg_1200.png) no-repeat top 85px center;
-  @media (max-width: 1200px){
-    background: linear-gradient(to left, #72ddf7, #2b4ae1)  top  center;
-  }
+  background: url(images/bg-min.png) no-repeat top 85px center;
+
+
   &__container {
     @extend %container;
     position: relative;

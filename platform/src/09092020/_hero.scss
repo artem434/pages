@@ -405,6 +405,38 @@
     }
 
   }
+  &__rec{
+    font-size: 22px;
+    line-height: 50px;
+    padding: 0px 0 30px 20px;
+    color: #fff;
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+    @media (max-width: 767px){
+      padding: 0px 0 0px 20px;
+    }
+
+
+
+    span {
+      padding-left: 60px;
+      position: relative;
+      display: inline-block;
+
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-image: url(../../parts/pages/online/images/camera.png);
+        top: 50%;
+        transform: translateY(-50%);
+        left: -20px;
+      }
+    }
+  }
 
 
 

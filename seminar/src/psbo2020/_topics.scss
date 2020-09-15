@@ -29,6 +29,14 @@
 
 
     }
+
+    br{
+      display: none;
+
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
     h2{
       font-size: 18px;
       font-weight: 700;
@@ -70,13 +78,14 @@
     padding: 28px 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #e72780;
     font-size: 18px;
     margin: 0;
     text-transform: uppercase;
     background-image: linear-gradient(to right, #ffe3f3, #ffe7cf);
     @media (max-width: 767px){
-      padding: 70px 40px 28px;
+      padding: 28px 40px;
      flex-direction: column;
     }
     span{

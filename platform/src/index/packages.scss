@@ -74,10 +74,7 @@
 
   &__presents{
     padding-top: 10px;
-    p{
-      margin-bottom: 0;
-    }
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -86,6 +83,10 @@
     text-align: center;
     color: #ffb43d;
     text-transform: uppercase;
+
+    p{
+      margin-bottom: 0;
+    }
     &--gray{
       color: #585858!important;
     }

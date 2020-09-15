@@ -102,20 +102,20 @@ SystemJS.import('jquery').then(function ($) {
                     phone:"Введіть правильний номер телефону"
                 },
                 submitHandler: function(form) {
-                    const url = ['/subscribe/18082020conference'/*, '/invoice2'*/];
+                    const url = ['/subscribe/22092020conference', '/invoice2'];
                     const dataSend = [{
                         "firstName": $('.free-demo .name').val(),
                         'email': $('.free-demo .mail').val(),
                         'phone': $('.free-demo .phone').val(),
                         'source': $('.free-demo .utm').val()
-                    }/*, {
+                    }, {
                         "customer[name]": $('.free-demo .name').val(),
                         'customer[email]': $('.free-demo .mail').val(),
                         'customer[phone]': $('.free-demo .phone').val(),
                         'article': $('.free-demo .article').val(),
                         'options[utm]': $('.free-demo .utm').val(),
                         'dealer': $('.free-demo .dealer').val()
-                    }*/];
+                    }];
 
                     $.each(url, function(i) {
                         loader.addClass('is-active');
@@ -126,33 +126,21 @@ SystemJS.import('jquery').then(function ($) {
                             dataType: "json",
                             data: dataSend[i],
                             success: function( data, event, payload) {
-                                location.href = '/gifts'
-                               /* if(i == 1){
+                                if(i == 1){
 
                                     var email = $('.mail').val();
 
                                     clients.Auth.getClient().then(function (client) {
 
                                         if (payload.responseJSON.result === true ) {
-                                            if (client && client.email === email) {
-                                                location.href = '/free_successful'
-                                                return
-                                            }
-                                            (client ? clients.Auth.logout() : Promise.resolve())
-                                                .then(function () {
-                                                    location.href = payload.responseJSON.newClient ? '/free_new' : '/free_auth'
-                                                })
-
-                                                sessionStorage.setItem('userEmail', email)
+                                            location.href = '/bot_new'
                                         } else if (payload.responseJSON.result === false ) {
-                                            (client && client.email !== email ? clients.Auth.logout() : Promise.resolve())
-                                                .then(function () {
-                                                    sessionStorage.setItem('userEmail', email)
-                                                    location.href = '/free_singup_replay'
-                                                })
+
+                                            location.href = '/bot_singup_replay'
+
                                         }
                                     })
-                                }*/
+                                }
                             },
                             error: function(error) {
                                 console.log("no");

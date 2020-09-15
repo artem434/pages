@@ -85,7 +85,7 @@
 
 
 .wrapper__head{
-  background: #0c0c0c url(images/bg_hero-min1.jpg) center center no-repeat;
+
   background-size: cover;
   height: auto;
   min-height: auto;
@@ -99,8 +99,8 @@
   }
   .wrapper__bg{
     position: relative;
-   background-color: transparent;
     width: 100%;
+    background-color: #fed3d3;
     background-size: cover;
     height: auto;
     display: flex;

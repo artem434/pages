@@ -2,7 +2,7 @@
 {% set link_platform_info = "/?utm_source=7eminarua&utm_campaign=conference_22092020&utm_medium=referral&utm_content=bvp_link_shapka" %}
 {% set link = page.url('/images') %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="menu ">
                 <div class="menu__container">
                     <ul class="menu__list">
@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                         <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
                                     </div>
-                                    <input class="article"  type="hidden" value="онлайн-demo18082020"/>
+                                    <input class="article"  type="hidden" value="онлайн-demo22092020ББШ"/>
                                     <input class="utm" name="options[utm]" type="hidden" value=""/>
                                     <input class="utm" name="source" type="hidden" value=""/>
                                     <input class="dealer" name="dealer" type="hidden" value="4"/>
@@ -108,6 +108,7 @@
                     </ul>
                 </div>
             </div>
+            <a href="#order" class="knowledges__btn js-scroll-to">Хочу дивитися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
         </div>
     </div>
 
@@ -331,7 +332,7 @@
                     <div id="lesson4" class="themes__more collapse">
                         <div class="themes__more-body">
                             <ul class="themes__more-list">
-                                <li class="themes__more-list-item"><p>Про які ОС повідомляти у формі № 20-ОПП. Карантинні особливості несвоєчасного подання цієї форми.</p></li>
+                                <li class="themes__more-list-item"><p>Про які ОЗ повідомляти у формі № 20-ОПП. Карантинні особливості несвоєчасного подання цієї форми.</p></li>
                                 <li class="themes__more-list-item"><p>Як відрізнити операційну оренду від фінансової?</p></li>
                                 <li class="themes__more-list-item"><p>Безоплатне користування майном чи оренда за 1 гривню ― вибір оптимального варіанту.</p></li>
                             </ul>
@@ -360,6 +361,18 @@
     <div id="gifts" class="gifts">
         <div class="gifts__container">
             <p class="gifts__title">У подарунок</p>
+            <div class="gifts__item">
+                <div class="gifts__box">
+                    <div class="gifts__header">
+                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
+                        </svg>
+                        <div class="gifts__text">
+                            <p class="gifts__lessons-titel"> Брошура «Універсальний навігатор податкових перевірок у 2020 році»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="gifts__item">
                 <div class="gifts__box">
                     <div class="gifts__header">
@@ -484,13 +497,13 @@
                     <div class="package__body">
 
                         <ul class="package__list"><li>Online-трансляція</li><li>Відповіді на запитання</li><li >Сертифікат учасника</li><li >Подарунки від лекторів</li><li >Відеозапис</li></ul>
-                        <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-demo18082020_599') }} грн</span></p>
-                        <p class="package__old-price  "><s>{{ shop_price('онлайн-demo18082020_599','line') }} грн</s></p>
+                        <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-22092020ББШ_578') }} грн</span></p>
+                        <p class="package__old-price  "><s>{{ shop_price('онлайн-22092020ББШ_578','line') }} грн</s></p>
                     </div>
                     <div class="package__footer">
                         <div class="package__presents--wr"></div>
                         <div class="package__btn--footer">
-                            <a href="shop/invoice?article=онлайн-demo18082020_599" target="_blank" class="btn">ЗАМОВИТИ</a>
+                            <a href="shop/invoice?article=онлайн-22092020ББШ_578" target="_blank" class="btn">ЗАМОВИТИ</a>
                         </div>
                     </div>
                 </div>

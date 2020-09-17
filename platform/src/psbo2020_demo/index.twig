@@ -1,0 +1,224 @@
+{% set link = page.url('/images') %}
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__menu">
+                <div class="menu">
+                    <div class="menu__container">
+                        <ul class="menu__list">
+                            <li><a class="js-scroll-to" href="#knowledges">Про що дізнаєтесь</a></li>
+                            <li><a class="js-scroll-to" href="#profession">Для кого</a></li>
+                            <li><a class="js-scroll-to" href="#lectors">ЛЕКТОР</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__content">
+                <div class="hero__item">
+                    <p class="hero__description">безкоштовний відеоурок <br> <span>+ тести-питання</span></p>
+
+                    <p class="hero__title">
+                        П(С)БО 7
+                    </p>
+                    <p class="hero__sub-title">«Основні засоби»</p>
+
+                    <div class="hero__lector hidden-md hidden-sm hidden-xs">
+                        <picture>
+                            <source srcset="{{ link }}/hero_lector.webp" type="image/webp"/>
+                            <img src="{{ link }}/hero_lector.png" alt="лектор"/>
+                        </picture>
+                    </div>
+                    <div class="hero__lector hidden-lg ">
+                        <picture>
+                            <source srcset="{{ link }}/hero_lector_320.webp" type="image/webp"/>
+                            <img src="{{ link }}/hero_lector_320.png" alt="лектор"/>
+                        </picture>
+                    </div>
+                </div>
+
+                <div  class="hero__item  form-wr">
+                        <div class="form" id="form">
+                            <div class="form__body">
+                                <div class="form__title">Реєстрація</div>
+                                <form  class="free-demo" >
+                                    <div class="form-group">
+                                        <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input  name="email" type="email" placeholder="Email" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Моб. телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                                    </div>
+                                    <input class="article"  type="hidden" value="free-demo_psbo2020"/>
+                                    <input class="utm" name="options[utm]" type="hidden" value=""/>
+                                    <input class="utm" name="source" type="hidden" value=""/>
+                                    <input class="dealer" name="dealer" type="hidden" value="4"/>
+                                    <div class="form__btn">
+                                        <button type="submit" class="btn btn-default">зареєструватися </button>
+                                    </div>
+                                </form>
+                                <div class="timer">
+                                    <p class="timer__title">Реєстрація діє ще</p>
+                                    <div class="timer__block">
+                                        <div class="timer__box">
+                                            <div class="timer__mins">00</div><span> хв</span>
+                                        </div><span class="timer__separate">:</span>
+                                        <div class="timer__box">
+                                            <div class="timer__secs">00 </div><span> сек</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form__footer">
+                                    <p >Дивіться <br><b> безкоштовно 7 днів</b> <br>після реєстрації</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="knowledges" class="knowledges">
+        <div class="knowledges__container">
+            <div class="knowledges__content">
+                <div class="knowledges__titel">Про що <br> дізнаєтеся</div>
+                <ul class="knowledges__list">
+                    <li class="knowledges__item">   Нормативні акти, що регулюють операції з основними засобами та МНМА. Облікова політика. Зміна вартісної оцінки в податковому обліку і вплив на бухгалтерський облік.</li>
+                    <li class="knowledges__item">Придбання. Компонентний облік. Формування первісної вартості. Кваліфікаційні активи. Безоплатно отримані ОЗ.</li>
+                    <li class="knowledges__item">Амортизація та строк корисного використання. Призупинення нарахування амортизації.</li>
+                    <li class="knowledges__item">Переоцінка основних засобів та зміна корисності. Відображення в бухгалтерському обліку.</li>
+                </ul>
+                <div class="knowledges__titel">Бонус</div>
+                <p>тести-питання після перегляду відеоуроку для закріплення знань</p>
+            </div>
+            <p class="knowledges__btn">
+                <a href="#hero" class="btn js-scroll-to">Хочу дивитися ></a>
+            </p>
+        </div>
+  </div>
+
+    <div id="profession" class="profession">
+        <div class="profession__container">
+            <div class="profession__title">Для кого ця школа</div>
+            <div class="profession__content">
+                <div class="profession__item">
+                    <p class="profession__name">Бухгалтер-новачок <i aria-hidden="true" class="fa fa-chevron-right"></i></p>
+                    <picture>
+                        <source srcset="{{ link }}/01.webp" type="image/webp"/>
+                        <img src="{{ link }}/01.jpg" alt="Бухгалтер-новачок"/>
+                    </picture>
+
+                </div>
+                <div class="profession__item">
+                    <picture>
+                        <source srcset="{{ link }}/02.webp" type="image/webp"/>
+                        <img src="{{ link }}/02.jpg" alt="Особи"/>
+                    </picture>
+                    <p class="profession__name"><i aria-hidden="true" class="fa fa-chevron-left"></i>Особи, які хочуть стати
+                        <br>
+                        бухгалтерами </p>
+                </div>
+            </div>
+            <div class="profession__content">
+                <div class="profession__item">
+                    <p class="profession__name">Аудитор<i aria-hidden="true" class="fa fa-chevron-right"></i></p>
+                    <picture>
+                        <source srcset="{{ link }}/03.webp" type="image/webp"/>
+                        <img src="{{ link }}/03.jpg" alt="Аудитор"/>
+                    </picture>
+                </div>
+                <div class="profession__item">
+                    <picture>
+                        <source srcset="{{ link }}/04.webp" type="image/webp"/>
+                        <img src="{{ link }}/04.jpg" alt="лектор"/>
+                    </picture>
+                    <p class="profession__name"><i aria-hidden="true" class="fa fa-chevron-left"></i>Головний бухгалтер </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lectors" class="lectors">
+        <div class="lectors__container">
+            <div class="lectors__content">
+                <div class="lectors__img">
+                    <picture>
+                        <source srcset="{{ link }}/lectors_lt.webp" type="image/webp"/>
+                        <img src="{{ link }}/lectors_lt.png" alt="ЛЮДМИЛА ТИМОФЕЄВА"/>
+                    </picture>
+                </div>
+                <div class="lectors__block">
+                    <p class="lectors__info">Лектор</p>
+                    <p class="lectors__name">ЛЮДМИЛА <br> ТИМОФЕЄВА</p>
+                    <p class="lectors__text">Головний спеціаліст АФ «Контракти-Аудит», аудитор,
+                        податковий консультант, фахівець з оподаткування
+                        прибутку підприємств
+                    </p>
+                </div>
+
+            </div>
+            <p class="lectors__btn">
+                <a href="#hero" class="btn js-scroll-to">Реєстрація <br> на перегляд ></a>
+            </p>
+        </div>
+    </div>
+
+    <div id="info" class="info">
+        <div class="info__container">
+            <div class="info__titel">Після перегляду відеоуроку ви зможете </div>
+            <div class="info__content">
+                <ul class="info__list">
+                    <li class="info__item">Бути більш впевненими при прийнятті бухгалтерських рішень</li>
+                    <li class="info__item">Скористатись інструментами бухгалтерського обліку для оптимізації</li>
+                    <li class="info__item">Правильно обирати і змінювати облікову політику та облікову оцінку</li>
+                    <li class="info__item"> Проаналізувати стан бухгалтерського обліку вашого підприємства</li>
+                </ul>
+            </div>
+            <p class="info__btn">
+                <a href="#hero" class="btn js-scroll-to">Приєднатися <br> безкоштовно ></a>
+            </p>
+        </div>
+    </div>
+
+    <div id="video" class="video">
+        <div class="video__container">
+            <div class="video__titel">людмила тимофеєва запрошує</div>
+            <div class="video__content">
+                <iframe src="https://www.youtube.com/embed/S2zBXP-ohh0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+            <p class="video__btn">
+                <a href="#hero" class="btn js-scroll-to">Зареєструватися ></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="partners">
+        <div class="container partners__container">
+            <ul class="partners__list">
+                <li><a href="https://www.otpbank.com.ua/smb/products-financing/" target="_blank" rel="nofollow"><img src="{{ link }}/logo_otp.svg"  width="170" alt="otpbank" /></a></li>
+                <li><a href="https://7eminar.com/" target="_blank" class="logonoclik"><img style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" class="img_partners1"/></a></li>
+                <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит"/></a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="loader-backdrop">
+        <div class="loader-backdrop__btn">Реєстрація
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-page" class="loader-page">
+        <div class="dots">
+            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+        </div>
+    </div>
+</div>

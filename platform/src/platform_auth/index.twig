@@ -1,0 +1,87 @@
+<div class="hero">
+    <div  data-require="@black,auth" class="hero__form   modal__inner modal__inner--no-modal modal_header_auth">
+        <h1>ВІТАЄМО!</h1>
+        <p>{{ page.options['text_header']|default('') }}</p>
+        <p>{{ page.options['text1']|default('Ви отримуєте безкоштовний доступ до відеоуроку «П(С)БО 7 "Основні засоби"» на 7 днів 😊') }}</p>
+        <p>{{ page.options['text2']|default('') }}</p>
+        <div class="hero-form__body">
+            <form id="authForm" action="" method="post" class="modal__form form" data-validate="ajax" >
+                <div class="form-group">
+                    <label for="email" class="form__label">Логін</label>
+                    <input name="email" type="email" value="" id="reg-email" aria-invalid="true" class="" data-msg-email="Введіть коректно e-mail" data-msg-required="Введіть коректно e-mail" required autocomplete="off" readonly >
+
+                </div>
+                <div class="form-group">
+                    <label for="login-password-1" class="form__label">Пароль:</label>
+                    <input name="password" type="password" id="login-password-1" class="" aria-invalid="true" value="" data-msg="Невірний e-mail або пароль" required minlength="6" autocomplete="false">
+                </div>
+                <div class="refresh_pass">
+                    <p>Раптом ви його забули – отримайте новий <a href="/restore" target="_blank">за посиланням</a>.</p>
+
+                </div>
+                <input name="source" type="hidden" value=""/>
+                <div class="hero-form__btn">
+                    <input type="submit" value="Увійти" class="btn btn-default">
+                </div>
+            </form>
+        </div>
+        <h4>Приємного перегляду!</h4>
+    </div>
+</div>
+
+
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    SystemJS.import('jquery').then(function ($) {
+        var loader = $('.loader-backdrop');
+        var loaderPage = $('#loader-page');
+        loaderPage.delay(850).fadeOut('slow');
+
+        $('#authForm')
+            .on('submit', function (e) {
+                e.preventDefault()
+                SystemJS.import('@clients').then(function (clients) {
+                    clients.Auth.login($('[name="email"]', e.currentTarget).val(), $('[name="password"]', e.currentTarget).val()).then(function (client) {
+                        var project = localStorage.getItem('project');
+                        location.href = '/events/1502'
+                       /* if (project == "psbo"){
+                            location.href = '/events/669'
+                        }else if(project == "zp1c"){
+                            location.href = '/events/1116'
+                        }else if(project == "avto"){
+                            location.href = '/events/981'
+                        }else if(project == "bszp"){
+                            location.href = '/events/1213'
+                        }else if(project == "bkadr"){
+                            location.href = '/events/1087'
+                        }else{
+                            location.href = '/events/access'
+                        }*/
+                    })
+                })
+            })
+            .find('#reg-email').val(sessionStorage.getItem('userEmail'))
+    })
+</script>

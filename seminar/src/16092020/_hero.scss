@@ -15,7 +15,7 @@
     margin-bottom: 0;
   }
   &__top-container{
-    padding: 0px 0px 0px 75px;
+    padding: 0px 0px 0px 40px;
     position: relative;
     z-index: 1;
     display: -webkit-box;
@@ -98,7 +98,7 @@
      text-align: center;
     }
     &:nth-child(1){
-      padding-top: 70px;
+      padding-top: 0px;
       padding-bottom: 50px;
       @media (max-width: 767px){
         padding-top: 75px;
@@ -278,9 +278,10 @@
 
   p.seminar_rec{
     font-size: 22px;
-    line-height: 50px;
-    padding: 0px 0 30px 20px;
+    line-height: 35px;
+    padding: 0 0 0px 0px;
     color: #000;
+    text-transform: uppercase;
     @media (max-width: 1200px){
       text-align: center;
     }
@@ -291,12 +292,12 @@
 
 
     span {
-      padding-left: 60px;
+    /*  padding-left: 60px;*/
       position: relative;
       display: inline-block;
 
 
-      &:before {
+    /*  &:before {
         position: absolute;
         content: "";
         width: 60px;
@@ -307,12 +308,16 @@
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         left: -20px;
-      }
+      }*/
     }
   }
 
   &__button{
     text-align: center;
+    padding-top: 100px;
+    @media (max-width: 767px){
+      padding-top: 60px;
+    }
   }
 
   &__btn{

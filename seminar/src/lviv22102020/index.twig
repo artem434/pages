@@ -1,0 +1,312 @@
+{% set link = page.url('/images') %}
+
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+  <div class="top-line">
+    <div class="container">
+      <div class="top-line__logo logo">
+        <a href="#">
+          <img src="{{ page.url('/images/logo.svg') }}" width="186" height="42"
+               alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+        </a>
+      </div>
+      <div id="burger-page" class="top-line__burger burger-page"><span></span></div>
+      <div class="menu">
+        <div class="menu__container">
+          <ul class="menu__list">
+            <li><a href="#tour">Фото</a></li>
+            <li><a href="#places">Програма туру</a></li>
+            <li><a href="#order">Придбати квитки</a></li>
+          </ul>
+          <ul class="menu__list">
+            <li><a href="/">Iнші семінари</a></li>
+          </ul>
+          <a href="#order" class="menu__btn btn js-scroll-to">ПРИДБАТИ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__main">
+        <span class="hero__dates">22–25 жовтня</span>
+        <h2 class="hero__title">Гастрономічна <br>подорож <br> до Львова
+        </h2>
+        <p class="hero__subtitle"> <span>БОНУС — Індивідуальна консультація</span> <br><span>від зіркового лектора</span> </p>
+
+      </div>
+      <p class="hero__btn">
+        <a href="#order" class="btn js-scroll-to"> ХОЧУ В ТУР</a>
+      </p>
+    </div>
+  </section>
+  <section id="tour" class="tour">
+    <div class="container">
+      <h3 class="page-titles"><span>Що на вас чекає <br> під час туру</span></h3>
+      <ul class="tour__list">
+        <li>
+          <span>Занурення в історію міста Лева</span>
+        </li>
+        <li>
+          <span>Гастрономічні дефіляди Львовом</span>
+        </li>
+        <li>
+          <span>Кавовий бранч з Мар'яною Кавин</span>
+        </li>
+      </ul>
+      <p class="tour__btn">
+        <a href="#info" class="btn js-scroll-to">Детальніше</a>
+      </p>
+    </div>
+  </section>
+  <section id="places" class="places">
+    <div class="container">
+      <h3 class="page-titles"><span>Осінній львівський <br> калейдоскоп </span></h3>
+      <ul class="places__list">
+        <li>
+          <p>
+            <span>Гастрономічні <br> задоволення <br> у відомих рестораціях</span>
+              Щоденні тематичні дегустації в <br> славетних кнайпах міста. <b>Рибний день</b>  – <br> безлімітний  сет, <b>грильований день</b> – м'ясне
+            <br>  асорті, <b>пивний день</b>  – льодяні <br> напої та <b>кавовий день</b>  - запашна кава <br> з лікерами та цукерками.
+          </p>
+          <div class="places__imgs">
+            <div class="places__img-big">
+              <picture>
+                <source srcset="{{ link }}/place_1_big.webp" type="image/webp"/>
+                <img src="{{ link }}/place_1_big-min.jpg" alt="business"/>
+              </picture>
+            </div>
+            <div class="places__img-small">
+              <picture>
+                <source srcset="{{ link }}/place_1_min.webp" type="image/webp"/>
+                <img src="{{ link }}/place_1_min-min.jpg" alt="business"/>
+              </picture>
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <p>
+            <span>  Екскурсійна програма<br> «Сім чудес Львова»</span>
+            Піднятися до небес на оглядовий <br> майданчик Високого замку та <br> спуститися до склепів Личаківського
+            <br> некрополя. Запалити свічки в соборі <br> святого Юра та прогулятися <br> старовинними вечірніми вуличками міста.
+          </p>
+          <div class="places__imgs">
+            <div class="places__img-big">
+              <picture>
+                <source srcset="{{ link }}/place_2_big.webp" type="image/webp"/>
+                <img src="{{ link }}/place_2_big-min.jpg" alt="business"/>
+              </picture>
+            </div>
+            <div class="places__img-small">
+              <picture>
+                <source srcset="{{ link }}/place_2_min.webp" type="image/webp"/>
+                <img src="{{ link }}/place_2_min-min.jpg" alt="business"/>
+              </picture>
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <p>
+            <span>Проживання в центрі <br> міста у готелі з дуже <br> високими рейтингами <br> (8,8 ІЗ 10 ЗА ДАНИМИ <br> BOOKING.COM)</span>
+            Розміщення в Premier Hotel Dnister у <br> двомісних номерах напівлюкс. Гарні <br> рейтинги та схвальні відгуки за
+            <br> відмінний сервіс і розташування.
+          </p>
+          <div class="places__imgs">
+            <div class="places__img-big">
+              <picture>
+                <source srcset="{{ link }}/place_3_big.webp" type="image/webp"/>
+                <img src="{{ link }}/place_3_big-min.jpg" alt="business"/>
+              </picture>
+            </div>
+            <div class="places__img-small">
+              <picture>
+                <source srcset="{{ link }}/place_3_min.webp" type="image/webp"/>
+                <img src="{{ link }}/place_3_min-min.jpg" alt="business"/>
+              </picture>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+          <p>
+            <span>Зустріч із зірковою <br> лекторкою та <br> безмежне спілкування</span>
+            У старовинній кав'ярні на площі <br> Ринок ми зустрінемося з вашою <br> улюбленою Мар'яною Кавин. <br> Поп’ємо кави з лікерами та трішки
+            <br> попліткуємо про ПДВ та ЄСВ, <br> а також Мар’яна проведе <br> індивідуальні консультації.
+          </p>
+          <div class="places__imgs">
+            <div class="places__img-big">
+              <picture>
+                <source srcset="{{ link }}/place_4_big.webp" type="image/webp"/>
+                <img src="{{ link }}/place_4_big-min.jpg" alt="business"/>
+              </picture>
+            </div>
+            <div class="places__img-small">
+              <picture>
+                <source srcset="{{ link }}/place_4_min.webp" type="image/webp"/>
+                <img src="{{ link }}/place_4_min-min.jpg" alt="business"/>
+              </picture>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+      <p class="tour__btn">
+      <a href="https://7eminar.com/files/presentation_lviv22102020.pdf" target="_blank" class="btn js-scroll-to"> Всі деталі подорожі</a>
+      </p>
+    </div>
+  </section>
+  <section id="info" class="info">
+    <div class="container">
+      <h3 class="page-titles"><span>У вартість туру <br> входить</span></h3>
+      <ul class="info__list">
+        <li>
+          <div class="info__icon">
+            <picture>
+              <img src="{{ link }}/icon_1.png" alt="business"/>
+            </picture>
+          </div>
+          <div class="info__text">
+            <b>Проживання:</b>
+            двомісне розселення у номерах
+          </div>
+
+        </li>
+        <li>
+          <div class="info__icon">
+            <picture>
+              <img src="{{ link }}/icon_2.png" alt="business"/>
+            </picture>
+          </div>
+          <div class="info__text">
+            <b>Харчування:</b>
+            сніданки у готелі, щоденні дегустації
+          </div>
+        </li>
+        <li>
+          <div class="info__icon">
+            <picture>
+              <img src="{{ link }}/icon_3.png" alt="business"/>
+            </picture>
+          </div>
+          <div class="info__text">
+            <b>Програма:</b>
+            автобусні та пішохідні екскурсії
+          </div>
+        </li>
+        <li>
+          <div class="info__icon">
+            <picture>
+              <img src="{{ link }}/icon_4.png" alt="business"/>
+            </picture>
+          </div>
+          <div class="info__text">
+            <b>Індивідуальні консультації:</b>
+            неформальна зустріч <br> з Мар'яною Кавин <br> (лекція та відповіді на запитання)
+          </div>
+        </li>
+        <li>
+          <div class="info__icon">
+            <picture>
+              <img src="{{ link }}/icon_5.png" alt="business"/>
+            </picture>
+          </div>
+          <div class="info__text">
+            <b>Супровід:</b>
+            гід і керівник групи від 7eminar.com <br> протягом всього туру
+          </div>
+        </li>
+        <li>
+
+          <div class="info__text">
+            <span>Безмежна турбота під час подорожі <br>
+            від івент-директора компанії <br>
+            Марини Нікуліної</span>
+
+            <p>Пізнавайте світ з 7eminar.com!</p>
+          </div>
+
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  {#<div class="safety">
+    <div class="container">
+      <p class="safety__info">
+        Безмежна турбота під час подорожі <br>
+        від івент-директора компанії – <br>
+        Марини Нікуліної.
+        <br>
+        <br>
+        Пізнавайте світ з 7eminar.com!
+      </p>
+    </div>
+  </div>#}
+  <section id="order" class="order">
+    <div class="container">
+      <h3 class="page-titles"><span>АКЦІЯ ДІЄ <br> {{ page.options['order__title']|default('') }}</span></h3>
+      <div class="order__packages">
+        {% set packages = [
+          {
+            name: 'standart',
+            title: 'Вартість туру для учасників 7eminar.club',
+            price: 'тур-22102020Львів_чк_1',
+            link: 'https://7eminar.ua/',
+          },
+          {
+            name: 'standart',
+            title: 'Вартість туру за одного учасника',
+            price: 'тур-22102020Львів_1',
+            link: 'https://7eminar.ua/',
+          }
+        ] %}
+        {% for package in packages %}
+          <article class="package">
+            <div class="package__header package__header--{{ package.name }}">
+              {{ package.title }}
+            </div>
+            <div class="package__body">
+              <p class="package__price-regular"><s>{{ shop_price(package.price,'line') }}</s></p>
+              <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>
+              <p class="package__present package__present--{{ package.name }}">Подарунок:</p>
+              <p class="package__present-name package__present-name--{{ package.name }}">Доступ до
+                <a href="{{ package.link }}" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
+                місяців
+              </p>
+              <div class="package__btn">
+                <form method="post" action="?new=1" data-validate="ajax">
+                  <input type="hidden" name="product" value="{{ package.price }}"/>
+                  <button type="submit" rel="order" class="btn btn--package">Хочу в тур</button>
+                </form>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      <div class="order__info">
+        <span>Важлива інформація:</span>
+        <ul>
+          <li>Оплачувати виїзні заходи можна частинами. 100% оплати повинні надійти не пізніше ніж за 7 днів до початку
+            туру.
+          </li>
+          <li>У разі відмови від туру: за 14 днів&nbsp;– утримується 60% оплати, менш ніж за 13 днів – утримується 100%
+            оплати.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div id="loader-page" class="loader-page">
+    <div class="dots">
+      <div class="loading">
+        <span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span
+            class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+  </div>
+</div>

@@ -15,8 +15,8 @@ const webPackConfig = {
     }
 };
 
-const page = 'karpaty26092020';
-const id = 426;
+const page = 'answers7eminar';
+const id = 268;
 
 const proxy = `https://7eminar.local/${page}`;
 

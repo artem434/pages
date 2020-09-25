@@ -27,8 +27,7 @@
                             <img src="{{ link }}/7minar_logo_color.png" width="186" height="42" alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
                         </a>
                     </div>
-                    <p class="hero__online">БезкоштовнА ONLINE-Конференція</p>
-                    <p class="hero__date">22 вересня 2020 року об 11:00</p>
+                    <p class="hero__online">видеозапис Конференції</p>
                     <p class="hero__title">Бухгалтерія без штрафів</p>
                     <p class="hero__subtitle">важливі осінні новації</p>
                     <p class="hero__description">ПДВ, середня ЗП, КОРО і Z-звіти, ОЗ <br>...а ще Держпраці з перевірками!
@@ -38,7 +37,7 @@
                     <div  class="hero__item  form-wr">
                         <div class="form" id="form">
                             <div class="form__body">
-                                <div class="form__title">Реєстрація</div>
+                                <div class="form__title">ВВЕДІТЬ СВОЇ ДАНІ ТА ОТРИМАЙТЕ ПОДАРУНОК</div>
                                 <form  class="free-demo" >
                                     <div class="form-group">
                                         <input  name="name" type="text" placeholder="Ім’я" maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
@@ -59,18 +58,6 @@
                                         <button type="submit" class="btn btn-default">зареєструватися </button>
                                     </div>
                                 </form>
-                                <div class="timer">
-                                    <p class="timer__title">Реєстрація діє ще</p>
-                                    <div class="timer__block">
-                                        <div class="timer__box">
-                                            <div class="timer__mins">00</div><span> хв</span>
-                                        </div><span class="timer__separate">:</span>
-                                        <div class="timer__box">
-                                            <div class="timer__secs">00 </div><span> сек</span>
-                                        </div>
-                                    </div>
-
-                                </div>
                             </div>
                             <div class="form__footer">
                                 <div class="gift">
@@ -95,6 +82,7 @@
             </div>
         </div>
     </div>
+
     <div id="knowledges" class="knowledges">
         <div class="knowledges__container">
             {#  <p class="knowledges__sub-title">Основні тезиси</p>#}
@@ -120,7 +108,7 @@
         </div>
     </div>
 
-     <div class="info"  id="info">
+    {#<div class="info"  id="info">
          <div class="info__container container">
              <div class="info__content">
                  <div class="info__item">
@@ -142,44 +130,44 @@
                  </div>
              </div>
          </div>
-     </div>
+     </div>#}
 
     <div id="profession" class="profession">
-       <div class="profession__container">
-          {# <p class="profession__sub-title">Основні посади</p>#}
-           <p class="profession__title">КОМУ ЦЕ БУДЕ ЦІКАВО?</p>
-           <ul class="profession__list">
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/fop1.webp" type="image/webp"/>
-                       <img src="{{ link }}/fop.png" alt="Фоп" >
-                   </picture>
-                   <p class="profession__name"><span>Фопу</span></p>
-               </li>
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/buhgalter.webp" type="image/webp"/>
-                       <img src="{{ link }}/buhgalter.png" alt="Бухгалтер" >
-                   </picture>
-                   <p class="profession__name"><span>Бухгалтеру</span></p>
-               </li>
-               <li class="profession__item">
-                   <picture>
-                       <source srcset="{{ page.url('/images') }}/auditor1.webp" type="image/webp"/>
-                       <img src="{{ link }}/auditor.png" alt="Аудитор" >
-                   </picture>
-                   <p class="profession__name"><span>Аудитору</span></p>
-               </li>
+        <div class="profession__container">
+            {# <p class="profession__sub-title">Основні посади</p>#}
+            <p class="profession__title">КОМУ ЦЕ БУДЕ ЦІКАВО?</p>
+            <ul class="profession__list">
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/fop1.webp" type="image/webp"/>
+                        <img src="{{ link }}/fop.png" alt="Фоп" >
+                    </picture>
+                    <p class="profession__name"><span>Фопу</span></p>
+                </li>
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/buhgalter.webp" type="image/webp"/>
+                        <img src="{{ link }}/buhgalter.png" alt="Бухгалтер" >
+                    </picture>
+                    <p class="profession__name"><span>Бухгалтеру</span></p>
+                </li>
+                <li class="profession__item">
+                    <picture>
+                        <source srcset="{{ page.url('/images') }}/auditor1.webp" type="image/webp"/>
+                        <img src="{{ link }}/auditor.png" alt="Аудитор" >
+                    </picture>
+                    <p class="profession__name"><span>Аудитору</span></p>
+                </li>
 
-           </ul>
-           <a href="#hero" class="profession__btn js-scroll-to">зареєструватися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
-       </div>
+            </ul>
+            <a href="#hero" class="profession__btn js-scroll-to">зареєструватися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+        </div>
     </div>
 
     <div id="lectors" class="lectors">
         <div class="lectors__container">
-          {#  <p class="lectors__sub-title">справжні профі</p>#}
-            <p class="lectors__title">лектори ONLINE-КонференціЇ</p>
+            {#  <p class="lectors__sub-title">справжні профі</p>#}
+            <p class="lectors__title">лектори КонференціЇ</p>
             {% set packages = [
                 {
                     name: 'Тимур',
@@ -217,19 +205,19 @@
             ] %}
 
             {% for package in packages %}
-            <div class="lectors__item">
-                <div class="lectors__block">
-                    <p class="lectors__name">{{ package.name }} <br> {{ package.surname }} </p>
-                    <p class="lectors__text">{{ package.text1 }}</p>
-                    <p class="lectors__text">{{ package.text2 }}</p>
-                    <p class="lectors__text"> {{ package.text3 }}</p>
+                <div class="lectors__item">
+                    <div class="lectors__block">
+                        <p class="lectors__name">{{ package.name }} <br> {{ package.surname }} </p>
+                        <p class="lectors__text">{{ package.text1 }}</p>
+                        <p class="lectors__text">{{ package.text2 }}</p>
+                        <p class="lectors__text"> {{ package.text3 }}</p>
+                    </div>
+                    <div class="lectors__img">
+                        <picture>
+                            <img src="{{ link }}/{{ package.img }}" alt="{{ package.name }} {{ package.surname }} " >
+                        </picture>
+                    </div>
                 </div>
-                <div class="lectors__img">
-                    <picture>
-                        <img src="{{ link }}/{{ package.img }}" alt="{{ package.name }} {{ package.surname }} " >
-                    </picture>
-                </div>
-            </div>
             {% endfor %}
             <a href="#order" class="lectors__btn js-scroll-to">Приєднатися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
         </div>
@@ -244,7 +232,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Ірина Губіна</p>
-                            <p class="themes__time">11:00–11:10</p>
+                            {# <p class="themes__time">11:00–11:10</p>#}
                             {#<p class="themes__time themes__time--two">19:00–19:50 </p>#}
                         </div>
                         <div class="themes__text">
@@ -269,7 +257,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Тимур Алієв</p>
-                            <p class="themes__time">11:10–12:00</p>
+                            {#  <p class="themes__time">11:10–12:00</p>#}
                             {#<p class="themes__time themes__time--two">19:00–19:50 </p>#}
                         </div>
                         <div class="themes__text">
@@ -293,7 +281,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Тетяна Мойсеєнко</p>
-                            <p class="themes__time">12:00–13:00</p>
+                            {#<p class="themes__time">12:00–13:00</p>#}
                         </div>
                         <div class="themes__text">
                             <p class="themes__lessons-titel">1 вересня стартували перевірки Держпраці та нові штрафи. Карантинні виплати.</p>
@@ -328,7 +316,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Мар’яна Кавин</p>
-                            <p class="themes__time">15:00–16:00</p>
+                            {#<p class="themes__time">15:00–16:00</p>#}
                         </div>
                         <div class="themes__text">
                             <p class="themes__lessons-titel">Операції з основними засобами: облік без помилок</p>
@@ -352,7 +340,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <p class="themes__lector-name">Сергій Дробоття</p>
-                            <p class="themes__time">16:00–16:45</p>
+                            {# <p class="themes__time">16:00–16:45</p>#}
                         </div>
                         <div class="themes__text">
                             <p class="themes__lessons-titel">Нові декларація з ПДВ та ПН. Проблемний ПДВ: податкові накладні та переплати</p>
@@ -377,19 +365,6 @@
                 </div>
             </div>
 
-            <div class="themes__item">
-                <div class="themes__box">
-                    <div class="themes__header">
-                        <div class="themes__info">
-                            <p class="themes__lector-name">Тетяна Мойсеєнко</p>
-                            <p class="themes__time">16:45–17:15</p>
-                        </div>
-                        <div class="themes__text">
-                            <p class="themes__lessons-titel">Про Бухгалтерську Відеоплатформу №1: як стати користувачем</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -409,18 +384,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gifts__item">
-                <div class="gifts__box">
-                    <div class="gifts__header">
-                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
-                        </svg>
-                        <div class="gifts__text">
-                            <p class="gifts__lessons-titel">Бліц-довідник «Податкові ризики орендних операцій»</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="gifts__item">
                 <div class="gifts__box">
                     <div class="gifts__header">
@@ -434,31 +398,7 @@
                 </div>
             </div>
 
-            <div class="gifts__item">
-                <div class="gifts__box">
-                    <div class="gifts__header">
-                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
-                        </svg>
-                        <div class="gifts__text">
-                            <p class="gifts__lessons-titel">Серія відео «Бухгалтер в 1С» (10 курсів)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="gifts__item">
-                <div class="gifts__box">
-                    <div class="gifts__header">
-                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
-                        </svg>
-                        <div class="gifts__text">
-                            <p class="gifts__lessons-titel">Відеовипуск «20-ОПП: ТОП-7 запитань і відповідей»</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <a href="#order" class="gifts__btn js-scroll-to">Стати учасником<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
         </div>
@@ -466,7 +406,7 @@
 
     <div id="advantages" class="advantages">
         <div class="advantages__container">
-           {# <p class="advantages__sub-title">переваги</p>#}
+            {# <p class="advantages__sub-title">переваги</p>#}
             <p class="advantages__title">що ви отримаєте?</p>
             <div class="certificate">
                 <picture><img src="{{ link }}/certificat.jpg" alt="certificate" ></picture>
@@ -479,20 +419,7 @@
                             <path d="M256.065 0C114.43 0 0 114.298 0 256.065S114.298 512.13 256.065 512.13 512.13 397.832 512.13 256.065 397.702 0 256.065 0zm0 477.892c-122.891 0-221.828-98.937-221.828-221.828S133.175 34.236 256.065 34.236s221.828 98.937 221.828 221.828-98.937 221.828-221.828 221.828z" fill="#98640a" class="color-svg"></path>
                         </svg>
                     </div>
-                    <div class="advantages__text"> Online-трансляція</div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.352 338.352" style="width: 65px;height: 65px;">
-                            <path d="M169.176 0C75.601 0 0 75.514 0 169.176s75.514 169.176 169.176 169.176 169.176-75.514 169.176-169.176S262.752 0 169.176 0zm0 315.731c-81.191 0-146.556-65.365-146.556-146.556S87.986 22.619 169.176 22.619s146.556 65.365 146.556 146.556-65.365 146.556-146.556 146.556z" class="color-svg"></path>
-                            <path d="M169.176 83.512c-34.919 0-64.248 29.328-64.248 65.365 0 6.795 4.472 11.267 11.267 11.267 6.794 0 11.267-4.472 11.267-11.267 0-23.652 19.179-42.831 41.713-42.831s41.713 19.179 41.713 41.713c0 23.652-18.062 41.713-41.713 41.713-6.794 0-11.267 4.472-11.267 11.267v21.416c0 6.795 4.472 11.267 11.267 11.267 5.677 0 11.267-5.676 11.267-11.267V210.89c30.447-4.472 52.98-30.447 52.98-63.129.002-36.124-28.123-64.249-64.246-64.249zM177.089 244.69c-4.558-4.472-11.267-4.472-15.825 0-2.236 2.236-3.354 4.472-3.354 7.913 0 3.354 1.118 5.676 3.354 7.913 2.236 2.236 4.472 3.354 7.913 3.354s5.677-1.118 7.913-3.354c2.236-2.236 3.354-4.472 3.354-7.913-.001-3.355-1.119-5.676-3.355-7.913z" class="color-svg"></path>
-                        </svg>
-                    </div>
-                    <div class="advantages__text">
-                        Відповіді <br>
-                        на запитання
-
-                    </div>
+                    <div class="advantages__text">Відеозапис <br> конференції</div>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
@@ -524,7 +451,7 @@
              <p class="order__title">оберіть тип перегляду</p>
 
             <div class="order__packages">
-                <div class="order__package package order__package--gold">
+            {#    <div class="order__package package order__package--gold">
                     <div class="package__head">
                         <p class="package__header  ">ONLINE</p>
                     </div>
@@ -538,14 +465,18 @@
                             <a href="#form"  class="btn">реєстрація</a>
                         </div>
                     </div>
-                </div>
+                </div>#}
                 <div class="order__package package order__package--standart ">
                     <div class="package__head">
-                        <p class="package__header  ">  online + запис</p>
+                        <p class="package__header  "> запис</p>
                     </div>
                     <div class="package__body">
 
-                        <ul class="package__list"><li>Online-трансляція</li><li>Відповіді на запитання</li><li >Сертифікат учасника</li><li >Подарунки від лекторів</li><li >Відеозапис</li></ul>
+                        <ul class="package__list">
+                            <li >Сертифікат учасника</li>
+                            <li >Подарунки від лекторів</li>
+                            <li >Відеозапис</li>
+                        </ul>
                         <p class="package__price  package__price--standart "><span>{{ shop_price('онлайн-22092020ББШ_578') }} грн</span></p>
                         <p class="package__old-price  "><s>{{ shop_price('онлайн-22092020ББШ_578','line') }} грн</s></p>
                     </div>

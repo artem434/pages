@@ -144,7 +144,7 @@
   &__btn{
     margin: 45px 0 -43px;
 
-    button{
+    a{
       display: block;
       width: 305px;
       line-height: 75px;
@@ -171,7 +171,7 @@
       }
     }
 
-    button p{
+    a p{
       position: relative;
       z-index: 2;
       line-height: 1.8;
@@ -189,7 +189,7 @@
       color: #e6872a;
     }
 
-    button:after{
+    a:after{
       position: absolute;
       content: "";
       top: 0;
@@ -200,11 +200,11 @@
       transition: all .35s;
     }
 
-    button:hover i{
+    a:hover i{
       color: #fff;
     }
 
-    button:hover:after{
+    a:hover:after{
       width: 100%;
     }
   }

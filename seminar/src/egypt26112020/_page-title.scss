@@ -1,0 +1,30 @@
+.page-titles {
+  font-family: 'Pacifico', cursive;
+  margin: 0 0 30px;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 4.5px;
+  line-height: 1.25;
+  text-align: center;
+  color: #096994;
+
+  &:before{
+    content: "";
+    background: url(images/waves.png) center center no-repeat;
+    width: 93px;
+    height: 19px;
+    display: block;
+    background-size: cover;
+    margin: 0px auto 10px;
+
+    @include laptop-l() {
+      width: 195px;
+      height: 41px;
+    }
+  }
+
+  @include laptop-l() {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+}

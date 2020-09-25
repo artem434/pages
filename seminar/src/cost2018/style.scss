@@ -5,6 +5,7 @@ $font_0: Tahoma;
 $font_1: sans-serif;
 $font_2: Roboto;
 $font_3: FontAwesome;
+$font_3: FontAwesome;
 
 //urls
 $url_1: url(images/bg-hero2.jpg);
@@ -984,7 +985,7 @@ body {
       //  }
       //}
       &__btn {
-        button {
+        a {
           font-family: "Tahoma", sans-serif;
           letter-spacing: 1.5px;
           font-weight: 400;
@@ -993,7 +994,7 @@ body {
           margin-bottom: 20px;
           display: block;
           height: 43px;
-          line-height: 30px;
+          line-height: 25px;
           font-size: 15px;
           color: #000;
           -webkit-border-radius: 5px;

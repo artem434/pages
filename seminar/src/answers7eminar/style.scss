@@ -204,13 +204,24 @@ body {
     padding-left: 50px;
     padding-top: 50px;
 
+    .block-hero__info{
+      background-color: #2d24a9;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 4px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
     .block-hero__title{
       color: #ffffff;
       font-size: 54px;
       margin: 0;
       font-weight: 700;
-      line-height: 80px;
+      line-height: 60px;
       text-transform: uppercase;
+      margin-top: 25px;
     }
     .block-hero__text{
       padding: 40px 0;
@@ -218,6 +229,7 @@ body {
       font-size: 22px;
       font-weight: 400;
       line-height: 36px;
+
 
     }
   }

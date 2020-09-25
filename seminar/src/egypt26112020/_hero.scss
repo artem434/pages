@@ -1,0 +1,114 @@
+.hero {
+  background: url(images/hero_bg_mob2.jpg) center center no-repeat, linear-gradient(to right, #fdf7e5 0, #fdf7e5 50%, #fcf7df 50%, #fcf7df 100%);
+  background-size: cover;
+
+  @at-root .webp & {
+    background: url(images/hero_bg_mob.webp) center center no-repeat, linear-gradient(to right, #fdf7e5 0, #fdf7e5 50%, #fcf7df 50%, #fcf7df 100%);
+    background-size: cover;
+  }
+
+  @include mobile() {
+    background: url(images/hero_bg-min.jpg) center center no-repeat, linear-gradient(to right, #f8e9de 0, #f9ebdf 50%, #c7e3ec 50%, #c7e3ec 100%);
+
+    @at-root .webp & {
+      background: url(./images/hero_bg.webp?ec1f991…) center center no-repeat, linear-gradient(to right, #f8e9de 0, #f9ebdf 50%, #c7e3ec 50%, #c7e3ec 100%);
+    }
+  }
+
+  .container {
+      padding: 25px 10px 290px;
+      text-align: center;
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+
+    @include mobile() {
+      padding-top: 110px;
+      padding-bottom: 150px;
+      max-width: 1170px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+    }
+  }
+
+  &__main {
+    color: #096994;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.63;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin: 0;
+
+    @include mobile() {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 43.5px;
+    line-height: 0.9;
+    letter-spacing: 3.26px;
+    margin: 0;
+    padding: 15px 0 0px;
+
+    &:after{
+      content: "";
+      background: url(images/waves.png) center center no-repeat;
+      width: 93px;
+      height: 19px;
+      display: block;
+      background-size: cover;
+      margin: 25px auto;
+
+      @include mobile() {
+        width: 172px;
+        height: 36px;
+        margin: 50px auto;
+      }
+    }
+
+    @include mobile() {
+      font-size: 80px;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 1.39;
+    text-transform: uppercase;
+    color: #04364c;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+
+  &__description{
+    font-size: 18px;
+    line-height: 1.08;
+    color: #04364c;
+
+    @include mobile() {
+      font-size: 34px;
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+    text-align: center;
+
+    @include laptop-l() {
+      text-align: left;
+      margin-top: 65px;
+      margin-left: 65px;
+    }
+  }
+}

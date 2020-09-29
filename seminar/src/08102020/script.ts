@@ -117,6 +117,7 @@ jQuery(($) => {
         $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
         $('.js-platform-banner').show();
         $('.js-btn-hidden').show();
+        $('.dk-hide').hide();
     } else {
         $('.js-btn-platform').show();
     }

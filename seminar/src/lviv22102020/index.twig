@@ -226,7 +226,6 @@
             <span>Безмежна турбота під час подорожі <br>
             від івент-директора компанії <br>
             Марини Нікуліної</span>
-
             <p>Пізнавайте світ з 7eminar.com!</p>
           </div>
 
@@ -252,11 +251,16 @@
       <h3 class="page-titles"><span>АКЦІЯ ДІЄ <br> {{ page.options['order__title']|default('') }}</span></h3>
       <div class="order__packages">
         {% set packages = [
-
+          {
+            name: 'club',
+            title: 'Вартість туру для учасників 7eminar.club',
+            price: 'тур-22102020Львів_чк_1',
+            link: 'https://7eminar.ua/',
+          },
           {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
-            price: 'тур-22102020Львів_2',
+            price: 'тур-22102020Львів_1',
             link: 'https://7eminar.ua/',
           }
         ] %}

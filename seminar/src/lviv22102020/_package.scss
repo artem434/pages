@@ -25,6 +25,7 @@
 
     @include laptop-l() {
       font-size: 24px;
+      padding: 20px 35px;
     }
 
     &--standart {

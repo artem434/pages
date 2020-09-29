@@ -201,11 +201,16 @@
       <h3 class="page-titles"><span>{{ page.options['order__title']|default('Тількі до 30 вересня') }}</span></h3>
       <div class="order__packages">
         {% set packages = [
-
+          {
+            name: 'club',
+            title: 'Вартість туру для учасників 7eminar.club',
+            price: 'тур-26112020Єгипет_чк_2',
+            link: 'https://7eminar.ua/',
+          },
           {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
-            price: 'тур-26112020Єгипет_1',
+            price: 'тур-26112020Єгипет_2',
             link: 'https://7eminar.ua/',
           }
         ] %}
@@ -215,8 +220,8 @@
               {{ package.title }}
             </div>
             <div class="package__body package__body--{{ package.name }}">
-             {# <p class="package__price-regular"><s>{{ shop_price(package.price,'line') }}</s></p>
-              <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>#}
+              <p class="package__price-regular"><s>{{ shop_price(package.price,'line') }}</s></p>
+              <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>
               <p class="package__present package__present--{{ package.name }}">Подарунок:</p>
               <p class="package__present-name package__present-name--{{ package.name }}">Доступ до
                 <a href="{{ package.link }}" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох

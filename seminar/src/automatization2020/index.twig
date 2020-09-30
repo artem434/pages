@@ -1,5 +1,5 @@
 {% set link = page.url('/images') %}
-{% set number = 15 %}
+{% set number = 16 %}
 <div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
 
     <div class="seminar-landing">
@@ -47,10 +47,79 @@
                     <button data-options="excel" class="courses__tab">Excel</button>
                 </div>
                 <div class="courses__content">
-                    <div class="course oneC" id="course_15">
+                    <div class="course oneC" id="course_16">
                         <div class="course__header">
                             <div class="course__titel">
                                 <p class="course__number"><b>•</b> Відеокурс 1 із <span>{{ number }}</span>
+                                </p>
+                                <p class="course__caption">Податок на прибуток. Фінансова звітність в 1С</p>
+                                <p class="course__description">3 модулі (20 уроків) та відповіді на запитання</p>
+                            </div>
+                            <div class="course-footer">
+                                <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-09102020Фінзвітність_1с_977','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                    <s class="course-footer__old-price">{{shop_price('курс-09102020Фінзвітність_1с_977','line')}}</s>
+                                </p>
+                                <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course16" aria-expanded="false" aria-controls="#course16" class="course-footer__button-more">Детальніше про курс</a>
+                                    <div class="course-footer__button-shop">
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-pnpfz1c" target="_blank" >оплатити <br>
+                                            <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-09102020Фінзвітність_1с_977"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="course16" class="course__body collapse">
+                            <div class="course__lector-info">
+                                <div class="course__lector-img">
+                                    <picture><img src="{{ link }}/OH.png" alt="Ольга Хільчук"/></picture>
+                                </div>
+                                <div class="course__lector-text">
+                                    <p>Вихід курсу:
+                                        <b>
+                                            9 жовтня 2020 року
+                                        </b>
+                                    </p>
+                                    <p>Лектор: <b>Ольга Хільчук,</b> <span>бухгалтер-експерт, провідний консультант по роботі з 1С</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="theme">
+                                <p class="theme__title">Програма курсу:</p>
+                                <p class="theme__lesson"><b>Модуль  №1.</b> Закриття періоду та перевірки</p>
+                                <p class="theme__lesson"><b>Модуль  №2.</b> Податок на прибуток</p>
+                                <p class="theme__lesson"><b>Модуль  №3.</b>  Фінансова звітність</p>
+
+                                <a href="https://7eminar.com/files/program_1c_finzvitnist.pdf" target="_blank" class="theme__all-lessons">Повна програма</a>
+                                <div class="theme__answers">
+                                    <p>Лектор відповідатиме на ваші запитання письмово у чаті</p>
+                                </div>
+                                <div class="course-footer">
+                                    <p class="course-footer__price">Вартість: <span class="course-footer__price-total">{{shop_price('курс-09102020Фінзвітність_1с_977','site')}}</span> <span class="course-footer__price-currency">грн</span>
+                                        <s class="course-footer__old-price">{{shop_price('курс-09102020Фінзвітність_1с_977','line')}}</s>
+                                    </p>
+                                    <div class="course-footer__buttons">
+                                        <div class="course-footer__button-shop">
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-pnpfz1c" target="_blank" >оплатити <br>
+                                                <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-09102020Фінзвітність_1с_977"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course oneC" id="course_15">
+                        <div class="course__header">
+                            <div class="course__titel">
+                                <p class="course__number"><b>•</b> Відеокурс 2 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Облік МШП, МНМА, ОЗ, НА в 1С</p>
                                 <p class="course__description">5 модулів (32 уроки) та відповіді на запитання</p>
@@ -61,8 +130,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course15" aria-expanded="false" aria-controls="#course15" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-210920Oblik" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-210920Oblik" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-21092020Облік_1с_1699"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -100,19 +174,23 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-210920Oblik" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-210920Oblik" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-21092020Облік_1с_1699"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="course excel" id="course_14">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 2 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 3 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Excel для початківців на прикладі зарплати</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -123,8 +201,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course14" aria-expanded="false" aria-controls="#course14" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-260820Excel" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-260820Excel" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-26082020Excel_зп_756"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -162,8 +245,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-260820Excel" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-260820Excel" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-26082020Excel_зп_756"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +261,7 @@
                     <div class="course oneC" id="course_13">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 3 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 4 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Взаєморозрахунки з дебіторами та кредиторами в 1С</p>
                                 <p class="course__description">7 модулів (37 уроків) та відповіді на запитання</p>
@@ -184,8 +272,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course13" aria-expanded="false" aria-controls="#course13" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-090720Debitori" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-090720Debitori" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-09072020Дебітори_1c_1598"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -224,8 +317,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-090720Debitori" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-090720Debitori" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-09072020Дебітори_1c_1598"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +333,7 @@
                     <div class="course oneC" id="course_12">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 4 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 5 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Валютні операції в 1С</p>
                                 <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
@@ -246,8 +344,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course12" aria-expanded="false" aria-controls="#course12" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-110620Valiuta" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-110620Valiuta" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-11062020Валюта_1c_1599"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -285,8 +388,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-110620Valiuta" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-110620Valiuta" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-11062020Валюта_1c_1599"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -296,7 +404,7 @@
                     <div class="course oneC" id="course_11">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 5 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 6 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Облік витрат в 1С</p>
                                 <p class="course__description">5 модулів (21 урок) та відповіді на запитання</p>
@@ -307,8 +415,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course11" aria-expanded="false" aria-controls="#course11" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-260520" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-260520" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-26052020_Витрати_1с_1288"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -346,8 +459,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-260520" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-260520" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-26052020_Витрати_1с_1288"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +475,7 @@
                     <div class="course oneC" id="course_10">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 6 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 7 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Облік доходів в 1С</p>
                                 <p class="course__description">4 модулі (19 уроків) та відповіді на запитання</p>
@@ -368,8 +486,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course10" aria-expanded="false" aria-controls="#course10" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-130520Dokhodi" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-130520Dokhodi" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-13052020Доходи_1c_1277"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -406,8 +529,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-130520Dokhodi" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-130520Dokhodi" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-13052020Доходи_1c_1277"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -417,7 +545,7 @@
                     <div class="course oneC" id="course_9">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 7 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 8 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Виробництво та собівартість в 1С</p>
                                 <p class="course__description">7 модулів (33 уроки) та відповіді на запитання</p>
@@ -428,8 +556,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course9" aria-expanded="false" aria-controls="#course9" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-230520Virobn" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-230520Virobn" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-23052020Виробн_1c_1297"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -471,8 +604,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-230520Virobn" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-230520Virobn" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-23052020Виробн_1c_1297"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -482,7 +620,7 @@
                     <div class="course ekpp" id="course_8">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 8 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 9 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет страхувальника на сайті ПФУ</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -493,8 +631,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course8" aria-expanded="false" aria-controls="#course8" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-eks" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-eks" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-eks_pfu_757"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -536,8 +679,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-eks" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-eks" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-eks_pfu_757"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -547,7 +695,7 @@
                     <div class="course oneC" id="course_7">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 9 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 10 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Кадри в 1С</p>
                                 <p class="course__description">11 уроків та відповіді на запитання</p>
@@ -558,8 +706,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course6" aria-expanded="false" aria-controls="#course6" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-k1c" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-k1c" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_kadry_1299"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -611,8 +764,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-k1c" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-k1c" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_kadry_1299"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -622,7 +780,7 @@
                     <div class="course oneC" id="course_6">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 10 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 11 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">ПДВ в 1С</p>
                                 <p class="course__description">12 уроків та відповіді на запитання</p>
@@ -633,8 +791,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course1" aria-expanded="false" aria-controls="#course1" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-pdv1c" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-pdv1c" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_pdv_1499"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -688,8 +851,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-pdv1c" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-pdv1c" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_pdv_1499"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -699,7 +867,7 @@
                     <div class="course oneC" id="course_5">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 11 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 12 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Зарплата в 1С</p>
                                 <p class="course__description">9 уроків та відповіді на запитання</p>
@@ -710,8 +878,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course7" aria-expanded="false" aria-controls="#course7" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-zp1c" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-zp1c" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_zp_1099"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -759,8 +932,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-zp1c" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-zp1c" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_zp_1099"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -770,7 +948,7 @@
                     <div class="course oneC" id="course_4">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 12 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 13 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Каса та банк в 1С</p>
                                 <p class="course__description">2 модулі (24 уроки) та відповіді на запитання</p>
@@ -781,8 +959,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course5" aria-expanded="false" aria-controls="#course5" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-kasa1c" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-kasa1c" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_kasa_1399"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -814,8 +997,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-kasa1c" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-kasa1c" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_kasa_1399"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -825,7 +1013,7 @@
                     <div class="course ekpp" id="course_3">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 13 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 14 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет платника податків для юросіб</p>
                                 <p class="course__description">6 уроків та відповіді на запитання</p>
@@ -836,8 +1024,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course4" aria-expanded="false" aria-controls="#course4" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-ekpp" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-ekpp" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-ekpp_jur_758"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -880,8 +1073,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-ekpp" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-ekpp" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-ekpp_jur_758"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -891,7 +1089,7 @@
                     <div class="course ekpp" id="course_2">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 14 із <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 15 із <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">Електронний кабінет платника податків для ФОП</p>
                                 <p class="course__description">4 уроки та відповіді на запитання</p>
@@ -902,8 +1100,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course3" aria-expanded="false" aria-controls="#course3" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-ekppfop" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-ekppfop" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-ekpp_fop_759"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -941,8 +1144,13 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-ekppfop" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-ekppfop" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-ekpp_fop_759"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -952,7 +1160,7 @@
                     <div class="course oneC" id="course_1">
                         <div class="course__header">
                             <div class="course__titel">
-                                <p class="course__number"><b>•</b> Відеокурс 15 із  <span>{{ number }}</span>
+                                <p class="course__number"><b>•</b> Відеокурс 16 із  <span>{{ number }}</span>
                                 </p>
                                 <p class="course__caption">ФОП в 1С</p>
                                 <p class="course__description">8 модулів (28 уроків) та відповіді на запитання</p>
@@ -963,8 +1171,13 @@
                                 </p>
                                 <div class="course-footer__buttons"><a data-toggle="collapse" data-target="#course2" aria-expanded="false" aria-controls="#course2" class="course-footer__button-more">Детальніше про курс</a>
                                     <div class="course-footer__button-shop">
-                                        <a class="btn" btn href="https://7eminar.ua/checkout/k-fop1c" target="_blank" >оплатити <br>
+                                        <a class="btn dk-hide"  href="https://7eminar.ua/checkout/k-fop1c" target="_blank" >оплатити <br>
                                             <span>рахунок/картою</span></a>
+                                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                            <input type="hidden" name="product" value="курс-1c_fop_1199"/>
+                                            <button type="submit" rel="order" class="btn">оплатити <br>
+                                                <span>рахунок/картою</span></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -1010,37 +1223,21 @@
                                     </p>
                                     <div class="course-footer__buttons">
                                         <div class="course-footer__button-shop">
-                                            <a class="btn" btn href="https://7eminar.ua/checkout/k-fop1c" target="_blank" >оплатити <br>
+                                            <a class="btn dk-hide" href="https://7eminar.ua/checkout/k-fop1c" target="_blank" >оплатити <br>
                                                 <span>рахунок/картою</span></a>
+                                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                                <input type="hidden" name="product" value="курс-1c_fop_1199"/>
+                                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                                    <span>рахунок/картою</span></button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
-
             </div>
-
         </div>
         <div id="certificate" class="certificate">
             <div class="certificate__container">

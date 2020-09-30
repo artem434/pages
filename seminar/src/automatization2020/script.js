@@ -134,6 +134,7 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/slick-carousel/1.8.1/s
                     $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
                     $('.js-platform-banner').show();
                     $('.js-btn-hidden').show();
+                    $('.dk-hide').hide();
                 }
                 else {
                     $('.js-btn-platform').show();

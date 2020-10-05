@@ -5,6 +5,13 @@ const loaderPage = $('#loader-page');
 loaderPage.delay(350).fadeOut('slow');
 jQuery(($) => {
 
+    var utm = window.location.search
+    var link
+
+    $.each($('a.js-btn-utm'),function(data,value){
+        link = $(value).attr('href' ) + utm;
+        $(this).attr('href', link)
+    });
 
     YT.ready(() => {
         let myModal = $('#modal-video');

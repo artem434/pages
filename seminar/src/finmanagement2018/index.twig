@@ -354,7 +354,11 @@
                     <p class="tarif__price">{{shop_price('курс-231018Фінмен','site')}}  грн</p>
                     <div class="tarif__btn">
                         <div id="form1" class="pricing-form">
-                            <a class="butn tarif_butn"  href="https://7eminar.ua/checkout/k-231018fin" target="_blank" >Замовити</a>
+                            <a class="butn tarif_butn dk-hide js-btn-utm"  href="https://7eminar.ua/checkout/k-231018fin" target="_blank" >Замовити</a>
+                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-231018Фінмен"/>
+                                <button type="submit" rel="order" class="butn tarif_butn">Замовити</button>
+                            </form>
                         </div>
                     </div>
                 </div>

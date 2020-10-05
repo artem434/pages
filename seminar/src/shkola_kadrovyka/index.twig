@@ -478,7 +478,11 @@
                     </ul>
                     <p class="tarif__price">{{shop_price('курс-Школа2019','site')}} грн</p>
                     <div class="tarif__bill">
-                        <a class="butn tarif_butn"  href="https://7eminar.ua/checkout/k-shkola2020" target="_blank" >Замовити</a>
+                        <a class="butn tarif_butn dk-hide js-btn-utm"  href="https://7eminar.ua/checkout/k-shkola2020" target="_blank" >Замовити</a>
+                        <form class="butn tarif_butn kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                            <input type="hidden" name="product" value="курс-Школа2019"/>
+                            <button type="submit" rel="order" class="btn">Замовити</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -15,6 +15,13 @@ System.register(["jquery", "youtube", "bootstrap"], function (exports_1, context
         ],
         execute: function () {
             jquery_1.default(function ($) {
+                var utm = window.location.search
+                var link
+
+                $.each($('a.js-btn-utm'),function(data,value){
+                    link = $(value).attr('href' ) + utm;
+                    $(this).attr('href', link)
+                });
                 youtube_1.default.ready(function () {
                     var myModal = $('#modal-video');
                     myModal.on('show.bs.modal', function (e) {

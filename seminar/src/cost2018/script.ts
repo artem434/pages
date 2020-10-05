@@ -5,6 +5,13 @@ import 'bootstrap';
 
 
 jQuery(($) => {
+    var utm = window.location.search
+    var link
+
+    $.each($('a.js-btn-utm'),function(data,value){
+        link = $(value).attr('href' ) + utm;
+        $(this).attr('href', link)
+    });
     YT.ready(() => {
         let myModal = $('#modal-video');
         myModal.on('show.bs.modal', (e: JQuery.Event) => {

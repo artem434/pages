@@ -16,6 +16,13 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/waypoints/4.0.1/jquery
             }
         ],
         execute: function () {
+            var utm = window.location.search
+            var link
+
+            $.each($('a.js-btn-utm'),function(data,value){
+                link = $(value).attr('href' ) + utm;
+                $(this).attr('href', link)
+            });
             jquery_1.default(function ($) {
                 if (document.location.host == "7eminar.com") {
                     $('.dk-present').show();

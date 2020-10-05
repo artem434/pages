@@ -9,6 +9,8 @@
   box-sizing: border-box;
 }
 
+
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=News+Cycle');
 @import url('https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic');
@@ -1353,8 +1355,21 @@ body {
         }
       }
 
-      form {
-        margin: 0;
+      .btn{
+        font-size: 24px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        letter-spacing: 2.11px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding-left: 30px;
+        cursor: pointer;
+        background-color: transparent;
+
+        &:hover{
+          color: #f3861e;
+        }
       }
 
       //&__gift {
@@ -1650,4 +1665,7 @@ body {
     transform: rotate(-45deg);
   }
 
+}
+.kbs-hide{
+  display: none;
 }

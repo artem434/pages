@@ -934,6 +934,38 @@ body {
             color: #fff;
             text-decoration: none;
           }
+
+        }
+
+        button {
+          font-family: "Tahoma", sans-serif;
+          letter-spacing: 1.5px;
+          font-weight: 400;
+          width: 175px;
+          margin: 15px auto;
+          margin-bottom: 20px;
+          display: block;
+          height: 43px;
+          line-height: 35px;
+          font-size: 15px;
+          color: #000;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          border: 2px solid #774aa3;
+          background-color: transparent;
+          box-shadow: 1px 2px 5px #000;
+          cursor: pointer;
+          -webkit-transition: background-color .5s ease, color .5s ease;
+          -moz-transition: background-color .5s ease, color .5s ease;
+          -ms-transition: background-color .5s ease, color .5s ease;
+          -o-transition: background-color .5s ease, color .5s ease;
+          transition: background-color .5s ease, color .5s ease;
+          &:hover {
+            background-color: #774aa3;
+            color: #fff;
+            text-decoration: none;
+          }
+
         }
       }
     }
@@ -1140,4 +1172,8 @@ body {
     font-size: 30px;
   }
 
+}
+
+.kbs-hide{
+  display: none;
 }

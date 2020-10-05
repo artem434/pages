@@ -1,0 +1,116 @@
+.lectors {
+  background-color: #151720;
+  margin-top: 80px;
+
+  &__title{
+    @extend %title;
+
+  }
+
+  &__container{
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @extend %container;
+    height: 616px;
+    align-items: center;
+
+    @media (max-width: 767px){
+      text-align: center;
+      padding-top: 35px;
+      height: auto;
+    }
+
+    &:before{
+      position: absolute;
+      content: " ";
+      background: url(./images/lectors_lector-min.png) no-repeat top center;
+       width: 275px;
+      height: 585px;
+      bottom: 0px;
+      left: 180px;
+      z-index: 1;
+
+      @media (max-width: 1200px){
+        content: none;
+      }
+    }
+
+    &:after{
+      content: " ";
+      position: absolute;
+      left: -178px;
+      bottom: 230px;
+      width: 678px;
+      height: 210px;
+      background-color: #ebbe35;
+    }
+  }
+
+  &__block{
+    padding-right: 200px;
+    @media (max-width: 1200px){
+      padding-right: 0px;
+    }
+  }
+
+  &__info{
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    color: #5f71c3;
+    text-transform: uppercase;
+    @media (max-width: 767px){
+      font-size: 15px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__name{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    @media (max-width: 767px){
+      font-size: 18px;
+      line-height: 1.2;
+      padding-bottom: 20px;
+    }
+  }
+
+
+
+  &__text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    padding-bottom: 10px;
+    @media (max-width: 767px){
+      font-size: 16px;
+      padding-top: 20px;
+    }
+
+    br{
+      @media (max-width: 767px){
+        display: none;
+      }
+    }
+
+  }
+
+  &__btn{
+    @extend %btn;
+    margin-top: 150px;
+    box-shadow: 0px 8px 15px 0 rgba(235, 190, 53, 0.3);
+  }
+}
+

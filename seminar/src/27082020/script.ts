@@ -6,7 +6,13 @@ import 'cdnjs/waypoints/4.0.1/jquery.waypoints.min.js';
 
 
 jQuery(function ($) {
+    var utm = window.location.search
+    var link
 
+    $.each($('a.js-btn-utm'),function(data,value){
+        link = $(value).attr('href' ) + utm;
+        $(this).attr('href', link)
+    });
     (function($) {
         $.fn.animated = function(inEffect) {
             $(this).each(function() {

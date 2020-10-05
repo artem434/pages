@@ -591,8 +591,13 @@
                         <p class="package__price">{{shop_price('курс-26082020ПСБО_2499','site')}} <span>грн</span></p>
                         <p class="package__old-price"><s>{{shop_price('курс-26082020ПСБО_2499','line')}} грн</s></p>
                         <div class="package__btn">
-                            <a class="btn" href="https://7eminar.ua/checkout/k-260820PSBO" target="_blank" > <p>оплатити <br>
+                            <a class="btn js-btn-utm dk-hide" href="https://7eminar.ua/checkout/k-260820PSBO" target="_blank" > <p>оплатити <br>
                                     <span>рахунок/картою</span></p><i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-26082020ПСБО_2499"/>
+                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                    <span>рахунок/картою</span></button>
+                            </form>
                         </div>
                     </div>
 
@@ -615,9 +620,11 @@
                         </ul>
                         <p class="package__price">{{ shop_price('онлайн-platform_price','month') }} <span>грн/міс.</span></p>
                         <p class="package__old-price"><s>{{shop_price('онлайн-platform_price','line')}} грн</s></p>
-                        <div class="package__btn-platform package__btn"">
-                            <a class="js-platform-link" href="https://7eminar.ua/?utm_source=7eminar.com&utm_medium=refferal&utm_campaign=psbo2020_platform" target="_blank"><p>оплатити <br>
+                        <div class="package__btn-platform package__btn">
+                            <a class="js-platform-link " href="https://7eminar.ua/?utm_source=7eminar.com&utm_medium=refferal&utm_campaign=psbo2020_platform" target="_blank"><p>оплатити <br>
                                     <span>рахунок/картою</span></p><i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+
+
                         </div>
                     </div>
 

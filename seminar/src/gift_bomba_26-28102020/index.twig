@@ -1,0 +1,352 @@
+{% set link = page.url('/images') %}
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div id="hero" class="hero">
+        <div class="hero__container">
+            <div class="hero__block">
+                <div class="hero__item">
+                    <p class="hero__title"><span>ПОДАРУНОК</span> чекає на вас! </p>
+                    <p class="hero__sub-title">Зареєструйтеся зараз і <b>безкоштовно</b> <br>
+                        отримайте відеокурс</p>
+                    <div class="hero__img">
+                        <img class=" hidden-md hidden-sm hidden-xs"  alt="book" src="{{ page.url('/images') }}/Mockup-min.png">
+                    </div>
+
+                </div>
+                <div class="hero__item">
+                    <form id="form"  class="free-demo" >
+                        <div class="form__title">Реєстрація діє ще</div>
+                        <div class="timer">
+                            <div class="timer__box">
+                                <div class="timer__mins">00</div><span> хв</span>
+                            </div><span class="timer__separate">:</span>
+                            <div class="timer__box">
+                                <div class="timer__secs">00 </div><span> сек</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input  name="name" type="text" placeholder="Ім’я"  maxlength="90" minlength="2" data-msg-minlength="Введіть не менше 2 символів" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control name"/>
+                        </div>
+
+                        <div class="form-group">
+
+                            <input  name="email" type="email" placeholder="E-mail" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control mail"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input  name="phone" type="text" data-rule-phoneUA="true" placeholder="Телефон" data-require="@phones,mask" required="required" data-msg-required="Це поле необхідно заповнити" class="form-control phone"/>
+                        </div>
+                        <input class="article"  type="hidden" value="онлайн-demo09092020_gift"/>
+                        <input class="utm" name="options[utm]" type="hidden" value=""/>
+                        <input class="dealer" name="dealer" type="hidden" value="4"/>
+                        <div class="form__btn">
+                            <button type="submit" class=" btn-default">зареєструватися</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="hero__img hero__img-bottom">
+                    <img class="visible-md visible-sm visible-xs"  alt="book" src="{{ page.url('/images') }}/Mockup-min.png">
+                </div>
+
+            </div>
+            <p class="hero__description">Також ви отримуєте можливість прослухати <br>
+                бухгалтерський online-марафон  26, 27 та 28 жовтня  <b>абсолютно безкоштовно</b> </p>
+            <p  class="arrow"><span></span><span></span><span></span></p>
+        </div>
+    </div>
+
+    <div class="themes">
+        <div class="themes__container">
+           {# <div class="themes__title">вперше <br class="d-block d-md-none"> на бухгалтерській арені<div class="bomb"># бомб<span>а</span></div></div>
+                <p class="themes__sub-title"><b>9</b>  експрес-вебінарів на вибухові теми, <b>8</b> запальних лекторів, <br>
+            і все це за <b>3</b> дні – справжній концентрат знань</p>#}
+            <div class="themes__title">лише практичні теми у короткому форматі <br>
+                з консультаціями від експертів <br>
+                це справжня <div class="bomb"># бомб<span>а</span></div></div>
+            <div class="themes__content">
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_tm.webp?id=27d93d5001f09397da77" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_tm.png?id=d22815fdfe0b6cc761c0" alt="Тетяна Мойсеєнко">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>26 жовтня</span> <br> <b>|</b> 11:00 – 12:30</p> <p class="themes__info--name">Тетяна Мойсеєнко</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Єдиний рахунок для податків/ЄСВ. <br>
+                            Лікарняні та тести на COVID-19</p>
+                        <div id="lesson1" class="themes__more collapse">
+                                <ul class="themes__more-list">
+                                    <li>Єдиний рахунок для сплати податків та ЄСВ вже з 1 січня 2021 року. До чого готуватись і чи варто обирати?
+                                        {# <ul class="themes__more-sub-list">
+                                           <li>платники ПДВ за наявності об’єкту оподаткування;  </li>
+                                           <li>платники ПДВ за окремими операціями, зокрема фізичні особи-підприємці на спрощеній системі оподаткування 1, 2, 3 груп (за ставкою 5%).</li>
+                                       </ul>#}
+                                    </li>
+                                    <li>Лікарняні з COVID-19: як нарахувати та оплатити.</li>
+                                    <li>Тестування працівників на COVID-19: порядок оподаткування. Коли можна уникнути оподаткування вартості тестування.</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_sd.webp?id=3a3428ce77df76ad2b80" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_sd-min.png?id=27dd2b3b6061e5f67a4d" alt="Сергій Дробоття">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>26 жовтня</span> <br> <b>|</b> 15:00 – 16:30</p> <p class="themes__info--name">Сергій Дробоття</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Зміни з ПДВ: ставки, звітність.
+                            <br>Податковий кредит, уточнюючі розрахунки</p>
+                        <div id="lesson2" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Зміни до форм податкової звітності з ПДВ не за горами: що зміниться.</li>
+                                <li>Від'ємне значення податку в декларації & бюджетне відшкодування ПДВ: підстава документальної перевірки?</li>
+                                <li>Уточнюючий розрахунок до декларації: причини та строки подання, порядок заповнення, наслідки.</li>
+                                <li>Чи мають право податківці не визнавати податковий кредит у покупця, якщо податкова накладна з помилками зареєстрована в ЄРПН? Порядок виправлення помилок у податкових накладних.</li>
+                                <li>Зміни, що вносяться до ПКУ: про ще одну ставку 14 %, можливість оскаржити рішення про ризиковість платника, електронне підтвердження надання послуг тощо.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_ig.webp?id=70178b37b47df1f21376" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_ig-min.png?id=aef5e32cca4e60017dd9" alt="Ірина Губіна">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>26 жовтня</span> <br> <b>|</b> 19:00 – 20:30</p> <p class="themes__info--name">Ірина Губіна</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Облік у ФОПа! ФОП-загальник: облік, звітність, ЄСВ</p>
+                        <div id="lesson3" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Доходи ФОПа: визнання, облік, документальне підтвердження.</li>
+                                <li>Як підтвердити витрати ФОПа, які документи перевіряє податкова.</li>
+                                <li>Амортизаційні витрати ФОПа: дозволи та заборони.</li>
+                                <li>Доходи й витрати: дата визнання, умови відображення в декларації про майновий стан.</li>
+                                <li>ФОП – найманий працівник: що з ЄСВ сьогодні та що може змінитися з 01.01.2021.</li>
+                                <li>Як перейти на єдиний податок: подання заяви, врахування обмежень.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson3" aria-expanded="false" aria-controls="#lesson3" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_ta.webp?id=b0e7053fac2359c8f487" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_ta-min.png?id=82745ce3f995245d6f51" alt="Тимур Алієв">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>27 жовтня</span> <br> <b>|</b> 11:00 – 12:30</p> <p class="themes__info--name">Тимур Алієв</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">РРО, чеки, документи, ПРРО: усі зміни</p>
+                        <div id="lesson4" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>РРО-зміни: хто «на старті» з 1 січня 2021 року та як підготуватися.</li>
+                                <li>РРО і ПРРО: чи можна застосовувати одночасно?</li>
+                                <li>Коди УКТ ЗЕД у чеку: відображення, помилки, штрафи.</li>
+                                <li>Які документи зберігати у місці торгівлі.</li>
+                                <li>Хто має право на РРО-пільги при реалізації власної продукції.</li>
+                                <li>Як зрозуміти, що покупець заплатив через банківський рахунок.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson4" aria-expanded="false" aria-controls="#lesson4" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_tm.webp?id=27d93d5001f09397da77" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_tm.png?id=d22815fdfe0b6cc761c0" alt="Тетяна Мойсеєнко">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>27 жовтня</span> <br> <b>|</b> 15:00 – 16:30</p> <p class="themes__info--name">Тетяна Мойсеєнко</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Про нові е-трудові книжки та оформлення
+                            на «0,5 ставки»</p>
+                        <div id="lesson5" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Електронна та паперова трудові книжки: вже готуємося до змін.</li>
+                                <li>Скан-копії трудових книжок: вже подавати! Порядок передачі сканованих даних до Пенсійного фонду.</li>
+                                <li>Працівник на 0,5 ставки або про правильне оформлення роботи в неповний час. Як оформити кадрові документи для працівників за основним місцем роботи та за сумісництвом.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson5" aria-expanded="false" aria-controls="#lesson5" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_mk.webp?id=85e9eaa3ee49f02ff28d" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_mk-min.png?id=798fe1b7ae2dd7d97273" alt="Мар’яна Кавин">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>27 жовтня</span> <br> <b>|</b> 19:00 – 20:30</p> <p class="themes__info--name">Мар’яна Кавин</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">ФОП-єдинник: облік, 20-ОПП, ПДФО</p>
+                        <div id="lesson6" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Первинні документи ФОП-платника ЄП: які йскільки часу зберігати.</li>
+                                <li>Облік доходів і витрат з 1 січня 2021 року: до чого готуватися. Ліміти обсягу доходів: як безпечно закінчити 2020 рік.</li>
+                                <li>Як перейти на загальну систему: звітність, розрахунки з бюджетом.</li>
+                                <li>Форма № 20-ОПП для ФОПа: чи захищає карантинний мораторій від відповідальності й за які періоди? ФОП працює вдома: чи подавати форму № 20-ОПП?</li>
+                                <li>Виплата доходу нерезиденту: податок, звітність. Як не утримувати податок з доходів нерезидентів.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson6" aria-expanded="false" aria-controls="#lesson6" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_og.webp?id=737610597096ea1a5111" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_og-min.png?id=22d94047fe60d403afa8" alt="Ольга Гонзайк">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>28 жовтня</span> <br> <b>|</b> 11:00 – 12:30</p> <p class="themes__info--name">Ольга Гонзайк</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Основні засоби: операції, різниці, інвентаризація ОЗ і МНМА</p>
+                        <div id="lesson7" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Ліквідація ОЗ: як уникнути податкових ризиків.</li>
+                                <li>Дарування необоротних активів: які податки сплачувати.</li>
+                                <li>Невиробничі основні засоби: критерії та ризики.</li>
+                                <li>Прискорена амортизація: чи варто скористатися?</li>
+                                <li>Податкові різниці за основними засобами: що врахувати.</li>
+                                <li>Інвентаризація основних засобів: наслідки для обліку.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson7" aria-expanded="false" aria-controls="#lesson7" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_os.webp?id=399e33f200deb0698cb6" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_os-min.png?id=1631e9a883f3d409ad3d" alt="Олександр Смирнов">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>28 жовтня</span> <br> <b>|</b> 15:00 – 16:30</p> <p class="themes__info--name">Олександр Смирнов</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Перевірки Держпраці/ДПС: ФОП і юросіб</p>
+                        <div id="lesson8" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Скасування мораторію на перевірки: чи можливе та чого очікувати?</li>
+                                <li>Зміни в планових перевірках: кого можуть торкнутися.</li>
+                                <li>Списання штрафів і пені: як і хто зможе скористатися.</li>
+                                <li>Банківська таємниця не для ДПС: які зміни очікуємо.</li>
+                                <li>Чи можливо стягнення податкового боргу без рішення суду?</li>
+                                <li>Перевірка Держпраці: інспектор викликав поліцію за недопуск. Процедура застосування штрафу та як оскаржити штраф Держпраці. Алгоритм дій.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson8" aria-expanded="false" aria-controls="#lesson8" class="themes__more-btn">Детальніше</a></div>
+                </div>
+
+                <div class="themes__item">
+                    <div class="themes__header">
+                        <div class="themes__lector-img">
+                            <picture>
+                                <source srcset="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_vv.webp?id=fa09f4caa31d00c511b1" type="image/webp">
+                                <img src="https://storage.7eminar.ua/pages/34_bomba_26-28102020/images/theme_vv-min.png?id=c58a8fec4447d81a2d12" alt="Вікторія Величко">
+                            </picture>
+                        </div>
+                        <div class="themes__info">
+                            <p><span>28 жовтня</span> <br> <b>|</b> 19:00 – 20:30</p> <p class="themes__info--name">Вікторія Величко</p>
+                        </div>
+                    </div>
+                    <div class="themes__body">
+                        <p class="themes__caption">Собівартість: облік, помилки, податки</p>
+                        <div id="lesson9" class="themes__more collapse">
+                            <ul class="themes__more-list">
+                                <li>Як відображати собівартість в обліковій політиці. Зміна собівартості: підтвердження й облікові наслідки.</li>
+                                <li>Як обрати об’єкт та одиниці калькулювання собівартості.</li>
+                                <li>Документальне підтвердження собівартості.</li>
+                                <li>Помилки в обліку собівартості: наслідки для податку на прибуток.</li>
+                                <li>ПДВ-наслідки помилок в обліку собівартості.</li>
+                                <li>Реалізація нижче собівартості: що з податковими наслідками.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="themes__button"><a data-toggle="collapse" data-target="#lesson9" aria-expanded="false" aria-controls="#lesson9" class="themes__more-btn">Детальніше</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="info" >
+        <div class="container">
+            <div class="title">вперше <br class="d-block d-md-none"> на бухгалтерській арені<div class="bomb"># бомб<span>а</span></div></div>
+            <p class="sub-title"><b>9</b>  експрес-вебінарів на вибухові теми, <b>8</b> запальних лекторів, <br>
+                і все це за <b>3</b> дні – справжній концентрат знань</p>
+            <div class="title">прокачайтеся з нами</div>
+            <p class="info__btn">
+                <a class="btn" href="#hero">реєстрація з подарунком</a>
+            </p>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="loader-backdrop">
+    <div class="loader-backdrop__btn">Реєстрація
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div id="loader-page" class="loader-page">
+    <div class="dots">
+        <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+</div>

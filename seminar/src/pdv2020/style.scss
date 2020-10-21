@@ -7,6 +7,14 @@
 .kbs-hide{
   display: none;
 }
+
+.branding-page{
+
+  .branding-fixed{
+    height: auto;
+  }
+}
+
 button{
   &:focus{
     outline: none!important;

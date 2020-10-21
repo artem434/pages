@@ -43,10 +43,28 @@
     letter-spacing: 0.5px;
     color: #fefeff;
     text-transform: uppercase;
-    padding-bottom: 285px;
+    margin-bottom: 285px;
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url(../../parts/pages/online/images/camera.png);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -75px;
+      @media (max-width: 767px){
+        left: -45px;
+        top: 63%;
+      }
+    }
     @media (max-width: 767px){
-      padding-bottom: 40px;
+      margin-bottom: 40px;
       padding-top: 20px;
+      padding-left: 35px;
     }
 
     span{

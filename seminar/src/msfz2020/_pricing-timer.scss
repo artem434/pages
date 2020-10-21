@@ -1,0 +1,94 @@
+.pricing-timer {
+  padding: 40px 0px 55px;
+
+  @media (max-width: 1200px){
+    padding: 75px 0px;
+  }
+  @media (max-width: 767px){
+    padding: 30px 0px;
+
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box {
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(45deg, #212e84,  #9b2da8);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    margin-right: 20px;
+    @media (max-width: 767px){
+      margin-right: 5px;
+      font-size: 15px;
+      width: 70px;
+      height: 70px;
+
+    }
+
+    &:last-child{
+      margin-right: 0;
+      border-top-right-radius:20px ;
+    }
+    &:first-child{
+
+      border-bottom-left-radius:20px ;
+    }
+
+    > span {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1;
+      color: #fff;
+
+      @media (max-width: 767px){
+        font-size: 25px;
+
+      }
+
+      &.separate {
+        display: none;
+      }
+    }
+
+    &:nth-child(3){
+      transform: scale(0.94);
+    }
+    &:nth-child(5){
+      transform: scale(0.88);
+    }
+    &:nth-child(7){
+      transform: scale(0.82);
+    }
+
+    &:nth-child(odd) {
+
+
+
+      @media (max-width: 980px){
+
+      }
+      @media (max-width: 600px){
+
+      }
+    }
+
+    &:nth-child(even ) {
+      display: none;
+
+    }
+  }
+}

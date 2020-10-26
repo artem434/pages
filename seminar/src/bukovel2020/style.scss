@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  background: #fffcff;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fixedtop.show {
+  z-index: 10;
+}
+
+.hide-mob{
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+.show-mob{
+  @media (max-width: 760px) {
+    display: block!important;
+  }
+}
+
+#bg_popup {
+  display: none !important;
+}
+
+#bg_popup_two {
+  display: none !important;
+}
+
+#bg_popup_three {
+  display: none !important;
+}
+
+button {
+  outline: none !important;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none !important;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.branding-page .branding-fixed {
+  background: none;
+}
+
+.branding-page #main {
+  width: 100%;
+  background: none;
+}
+
+.branding-page {
+  padding-top: 0;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: none;
+
+  .heading {
+    display: none;
+  }
+}
+
+
+.circle {
+  display: none;
+}
+
+#__telerWdTriggerContent {
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+@import "variables";
+@import "mixins";
+@import "burger";
+@import "btn";
+@import "page-title";
+@import "top-line";
+@import "menu";
+@import "hero";
+@import "tour";
+@import "details";
+@import "info";
+@import "order";
+@import "package";
+@import "loader-page";
+
+
+
+
+.seminar-landing {
+  padding-top: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  background: url(./images/lending_bg-min.png?492d15d…) repeat-y bottom -300px center;
+
+
+
+
+  @include laptop-l() {
+    padding-top: 0;
+    font-size: 20px;
+  }
+}
+
+.header {
+  display: none;
+
+  @include laptop-l() {
+    display: block;
+  }
+}
+
+.dk-seminar{
+
+  @media (max-width: 1200px){
+    .top-line{
+      display: none;
+    }
+
+    .seminar-landing{
+      padding-top: 0;
+    }
+  }
+}
+
+.arrow{
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #fef782;
+  position: relative;
+  padding: 6px;
+
+  @include laptop-l() {
+    width: 52px;
+    height: 52px;
+    padding: 9px;
+  }
+  // background: url(../images/left.svg) no-repeat top center;
+  .arrow-left{
+    width: 14px;
+    height: 14px;
+    transform: rotate(-135deg);
+    @include laptop-l() {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .arrow-right{
+    width: 14px;
+    height: 14px;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+
+    @include laptop-l() {
+      width: 20px;
+      height: 20px;
+      margin-left: 13px;
+    }
+  }
+}
+

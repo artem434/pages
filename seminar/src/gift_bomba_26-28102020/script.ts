@@ -68,8 +68,8 @@ jQuery(($) => {
             phone:"Введіть правильний номер телефону"
         },
         submitHandler: function() {
-            var url = [ '/subscribe/bomba26102020gift'];
-            var dataSend = [{"firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val()}];
+            var url = ['/invoice2', '/subscribe/bomba26102020gift'];
+            var dataSend = [ {"customer[name]": $('.free-demo .name').val(), 'customer[email]': $('.free-demo .mail').val(), 'customer[phone]': $('.free-demo .phone').val(),'article': $('.free-demo .article').val(),'options[utm]': $('.free-demo .utm').val(), 'dealer': $('.free-demo .dealer').val()}, {"firstName": $('.free-demo .name').val(), 'email': $('.free-demo .mail').val(), 'phone': $('.free-demo .phone').val()}];
 
             $.each(url, function(i) {
                 $.ajax({

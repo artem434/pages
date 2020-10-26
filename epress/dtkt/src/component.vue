@@ -12,7 +12,7 @@
         </template>
         <template v-slot:packages_list>
             <landing-package-row>
-                    <landing-package article="ep-dtkt_tr">
+                    <!--<landing-package article="ep-dtkt_tr">
                         <template v-slot:title>ПАКЕТ<br>«ТЕМАТИЧНІ РОЗСИЛКИ»</template>
                         <template v-slot:gifts>
                             <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -38,7 +38,7 @@
                             <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
                             <li>Сервіс «Мій кабінет»</li>
                         </template>
-                    </landing-package>
+                    </landing-package>-->
                     <landing-package article="ep-dtkt_ek">
                         <template v-slot:title>ПАКЕТ<br>«ЕКСПЕРТ»</template>
                         <template v-slot:gifts>
@@ -59,7 +59,7 @@
                             <li>Доступ до архівних номерів на сайті</li>
                         </template>
                     </landing-package>
-                    <landing-package article="ep-dtkt_ekp">
+                  <!--  <landing-package article="ep-dtkt_ekp">
                     <template v-slot:title>ПАКЕТ<br>«ЕКСПЕРТ ПЛЮС»</template>
                     <template v-slot:gifts>
                         <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -79,58 +79,58 @@
                         <li>Доступ до архівних номерів на сайті</li>
                         <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
                     </template>
-                </landing-package>
-            </landing-package-row>
-            <landing-package-row>
-                    <landing-package article="ep-dtkt_pr" class="dddd">
-                        <template v-slot:title>ПАКЕТ<br>«ПРОФІ»</template>
-                        <template v-slot:gifts>
-                            <li>Відеозапис Великого бухгалтерського семінару</li>
-                            <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                        </template>
-                        <template v-slot:abilities>
-                            <li>Щоденна добірка новин</li>
-                            <li>«Документи за тиждень»</li>
-                            <li>«Запитання і відповіді» за тиждень</li>
-                            <li>Розумний податковий календар</li>
-                            <li>База нормативних документів</li>
-                            <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                            <li>Сервіс «Мій кабінет»</li>
-                            <li>Пакет «Тематичні розсилки»</li>
-                            <li>Електронний журнал «Дебет-Кредит»</li>
-                            <li>Щомісячні спецвипуски</li>
-                            <li>Доступ до архівних номерів на сайті</li>
-                            <li>Сервіс «Постав запитання редакції»</li>
-                            <li>Вебінари редакції</li>
-                            <li>Велика настільна книга</li>
-                            <li>Звітність у «СОТА»</li>
-                        </template>
-                    </landing-package>
-                    <landing-package article="ep-dtkt_pp">
-                        <template v-slot:title>ПАКЕТ<br>«ПРОФІ ПЛЮС»</template>
-                        <template v-slot:gifts>
-                            <li>Відеозапис Великого бухгалтерського семінару</li>
-                            <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
-                        </template>
-                        <template v-slot:abilities>
-                            <li>Щоденна добірка новин</li>
-                            <li>«Документи за тиждень»</li>
-                            <li>«Запитання і відповіді» за тиждень</li>
-                            <li>Розумний податковий календар</li>
-                            <li>База нормативних документів</li>
-                            <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
-                            <li>Сервіс «Мій кабінет»</li>
-                            <li>Пакет «Тематичні розсилки»</li>
-                            <li>Електронний журнал «Дебет-Кредит»</li>
-                            <li>Щомісячні спецвипуски</li>
-                            <li>Доступ до архівних номерів на сайті</li>
-                            <li>Сервіс «Постав запитання редакції»</li>
-                            <li>Вебінари редакції</li>
-                            <li>Велика настільна книга</li>
-                            <li>Звітність у «СОТА»</li>
-                            <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
-                        </template>
-                    </landing-package>
+                </landing-package>-->
+
+
+                  <landing-package article="ep-dtkt_pr" class="dddd">
+                    <template v-slot:title>ПАКЕТ<br>«ПРОФІ»</template>
+                    <template v-slot:gifts>
+                      <li>Відеозапис Великого бухгалтерського семінару</li>
+                      <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                    </template>
+                    <template v-slot:abilities>
+                      <li>Щоденна добірка новин</li>
+                      <li>«Документи за тиждень»</li>
+                      <li>«Запитання і відповіді» за тиждень</li>
+                      <li>Розумний податковий календар</li>
+                      <li>База нормативних документів</li>
+                      <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                      <li>Сервіс «Мій кабінет»</li>
+                      <li>Пакет «Тематичні розсилки»</li>
+                      <li>Електронний журнал «Дебет-Кредит»</li>
+                      <li>Щомісячні спецвипуски</li>
+                      <li>Доступ до архівних номерів на сайті</li>
+                      <li>Сервіс «Постав запитання редакції»</li>
+                      <li>Вебінари редакції</li>
+                      <li>Велика настільна книга</li>
+                      <li>Звітність у «СОТА»</li>
+                    </template>
+                  </landing-package>
+                  <landing-package article="ep-dtkt_pp">
+                    <template v-slot:title>ПАКЕТ<br>«ПРОФІ ПЛЮС»</template>
+                    <template v-slot:gifts>
+                      <li>Відеозапис Великого бухгалтерського семінару</li>
+                      <li>Смартфон <a href="/" target="_blank">Meizu M5C</a></li>
+                    </template>
+                    <template v-slot:abilities>
+                      <li>Щоденна добірка новин</li>
+                      <li>«Документи за тиждень»</li>
+                      <li>«Запитання і відповіді» за тиждень</li>
+                      <li>Розумний податковий календар</li>
+                      <li>База нормативних документів</li>
+                      <li>Підсумковий випуск «Дебет-Кредит» за тиждень</li>
+                      <li>Сервіс «Мій кабінет»</li>
+                      <li>Пакет «Тематичні розсилки»</li>
+                      <li>Електронний журнал «Дебет-Кредит»</li>
+                      <li>Щомісячні спецвипуски</li>
+                      <li>Доступ до архівних номерів на сайті</li>
+                      <li>Сервіс «Постав запитання редакції»</li>
+                      <li>Вебінари редакції</li>
+                      <li>Велика настільна книга</li>
+                      <li>Звітність у «СОТА»</li>
+                      <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
+                    </template>
+                  </landing-package>
             </landing-package-row>
         </template>
     </landing>

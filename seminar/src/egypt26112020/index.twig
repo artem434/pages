@@ -202,16 +202,11 @@
       <div class="order__packages">
         {% set packages = [
           {
-            name: 'club',
-            title: 'Вартість туру для учасників 7eminar.club',
-            price: 'тур-26112020Єгипет_чк_2',
-            link: 'https://7eminar.ua/',
-          },
-          {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
             price: 'тур-26112020Єгипет_2',
             link: 'https://7eminar.ua/',
+            newprice: 'https://7eminar.ua/checkout/t-Egypt2020',
           }
         ] %}
         {% for package in packages %}
@@ -227,11 +222,12 @@
                 <a href="{{ package.link }}" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
                 місяців
               </p>
-              <div class="package__btn">
-                <form method="post" action="?new=1" data-validate="ajax">
+              <div class="package__btn ">
+                <form method="post" action="?new=1" data-validate="ajax" class="hide-kbs dk-show">
                   <input type="hidden" name="product" value="{{ package.price }}"/>
-                  <button type="submit" rel="order" class="btn btn--package">Хочу в тур</button>
+                  <button type="submit" rel="order" class="btn btn--package ">Хочу в тур</button>
                 </form>
+                <a class="btn btn--package dk-hide" href="{{ package.newprice }}" target="_blank">Хочу в тур</a>
               </div>
             </div>
           </article>

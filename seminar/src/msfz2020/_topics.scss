@@ -59,20 +59,60 @@
   &__item{
     max-width: 950px;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     box-shadow: 0px 21px 40px 0 rgba(0, 0, 0, 0.15);
     border-radius: 0 30px 0 30px;
     background-color: #fff;
   }
 
   &__content{
+    padding: 32px 40px 0px;
 
-
-    padding: 32px 40px 20px;
+    &:last-child{
+      padding-bottom: 25px;
+    }
     @media (max-width: 767px){
       padding: 15px 15px;
     }
   }
+
+  &__btn-more{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 0 30px 0 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 767px){
+      right:inherit;
+      transform: translate(0%,0%) rotate(90deg);
+      position: relative;
+    }
+
+    &:before{
+      content: "\F054";
+      display: block;
+      font-size: 21px;
+      font-family: FontAwesome;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+     text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+
 
 
 
@@ -82,7 +122,7 @@
   }
 
   &__head{
-    padding: 28px 40px;
+    padding: 20px 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,14 +133,15 @@
     text-transform: uppercase;
     background-image: linear-gradient(to right, #9f32e4, #5d56e1);
     border-radius: 0 30px 0 0px;
+    position: relative;
 
     @media (max-width: 767px){
-      padding: 28px 40px;
+      padding: 28px 40px 10px;
      flex-direction: column;
     }
     b{
       span{
-
+        text-align: center;
         font-size: 14px;
         font-weight: 600;
 
@@ -110,9 +151,7 @@
     span{
       padding-left: 5px;
       text-transform: none;
-      @media (max-width: 767px){
-        text-align: center;
-      }
+      text-align: center;
 
       br{
         display: none;
@@ -121,7 +160,6 @@
         }
       }
     }
-
 
     p{
       color: #383737;
@@ -158,16 +196,19 @@
         .slider-thems__title{
           font-size: 18px;
           font-weight: 600;
-          font-stretch: normal;
-          font-style: normal;
           line-height: 1.78;
-          letter-spacing: normal;
           text-align: left;
           color: #484848;
 
           @media (max-width: 767px){
             font-size: 15px;
             line-height: 1.6;
+          }
+
+          span{
+            font-style: italic;
+            font-size: 16px;
+            color: #5f5f5f;
           }
         }
           ul{
@@ -223,4 +264,13 @@
   }
 
 
+}
+.topics__btn-more[aria-expanded="true"] {
+    transform: rotate(90deg);
+    top: 25px;
+
+  @media (max-width: 767px){
+    transform: rotate(270deg);
+    top: 0;
+  }
 }

@@ -1,0 +1,700 @@
+ {% set link_platform = "https://7eminar.ua/?utm_source=7eminarcom&utm_campaign=bvp&utm_medium=referral&utm_content=pnp_finzvitnist_button" %}
+{% set link_platform_video = "https://7eminar.ua/?utm_source=7eminarcom&utm_campaign=bvp&utm_medium=referral&utm_content=pnp_finzvitnist_button_video" %}
+
+{% set link = page.url('/images') %}
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+    <div class="heading mw">
+        <div class="inner"><a href="/" class="logo"></a><a href="https://7eminar.ua/events/access" target="_blank" class="entry"><span>М</span>ій кабінет</a>
+            <p></p><a href="/7min" class="video_news"><span>В</span>ідеоновини</a><a href="https://7eminar.ua/" class="video_news"><span>П</span>ередплата</a><a href="/" class="main"><span>Г</span>оловна</a>
+        </div>
+        <div class="menu-mob">
+            <input id="menu-checkbox" type="checkbox"/><span class="burger__bg"></span><span class="burger__element"></span>
+            <ul class="menu">
+                <li><a href="#lectors" class="burger__link js-scroll-to">ЛЕКТОР</a></li>
+                <li><a href="#themes" class="burger__link js-scroll-to">ТЕМИ</a></li>
+                <li><a href="#order" class="burger__link js-scroll-to">ВАРТІСТЬ</a></li>
+                <li><a href="#order" class="burger__link js-scroll-to">ЗАМОВИТИ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero__menu">
+            <div class="hero__container">
+                <div class="menu">
+                    <div class="menu__container">
+                        <ul class="menu__list">
+                            <li><a class="js-scroll-to" href="#lectors">Лектор</a></li>
+                            <li><a class="js-scroll-to" href="#themes">Теми</a></li>
+                            <li><a class="js-scroll-to" href="#order">Придбати</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__container">
+            <div class="hero__top-container dk-show-flex">
+                <a class="hero__logo-dk" href="https://dtkt.ua/about" target="_blank">
+                    <img src="{{ link }}/logo-dk.png" width="200" height="52" alt="«Дебет-Кредит» | Бухгалтерський сервіс №1 в Україні">
+                </a>
+                <a class="hero__logo-seminar" href="https://7eminar.com/" target="_blank">
+                    <img src="{{ link }}/7minar_logo_color.png" width="186" height="42" alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+                </a>
+            </div>
+            <div class="hero__content">
+                <div class="hero__lessons">
+                    <picture>
+                        <img src="{{ page.url('/images') }}/v3.png" alt="7 уроків від 7eminar.com"/>
+                    </picture>
+                </div>
+                {#<p class="seminar_rec"><span>Відеозапис</span> </p>#}
+                <p class="hero__title">Податок <br>
+                   <span> на прибуток</span></p>
+                <p class="hero__sub-title">податкова та фінансова звітність</p>
+                <a href="#knowledges" class="hero__btn js-scroll-to">Детальніше ></a>
+                <p class="hero__lector-name">Лектор <br><span>Людмила Тимофеєва</span></p>
+               {# <button type="button" aria-label="Open modal video" data-toggle="modal" data-target="#modal-video" data-vidId="WDz4zrUWpQg" class="hero__controls-modal-btn"></button>#}
+            </div>
+        </div>
+    </div>
+    <div id="knowledges" class="knowledges">
+        <div class="knowledges__container">
+            <div class="knowledges__title"><span>Основні тезиси</span>ПРО ЩО ДІЗНАЄТЕСЬ?</div>
+            <div class="knowledges__content">
+                <div class="knowledges__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" style="width: 149px;height: 149px;">
+                        <lineargradient id="a" gradientUnits="userSpaceOnUse" x1="6.5" y1="130" x2="90.5" y2="30">
+                            <stop offset="0" stop-color="#fff"></stop>
+                            <stop offset="1" stop-color="#fff"></stop>
+                        </lineargradient>
+                        <path d="M139.327 118.114L96.901 75.688c-5.857-5.858-15.355-5.858-21.213 0-5.858 5.858-5.858 15.355 0 21.213l42.426 42.426c5.857 5.858 15.356 5.858 21.213 0 5.858-5.858 5.858-15.355 0-21.213zM76 241H15c-8.284 0-15 6.716-15 15s6.716 15 15 15h61c8.284 0 15-6.716 15-15s-6.716-15-15-15zM497 241h-61c-8.284 0-15 6.716-15 15s6.716 15 15 15h61c8.284 0 15-6.716 15-15s-6.716-15-15-15zM436.312 75.688c-5.857-5.858-15.355-5.858-21.213 0l-42.426 42.426c-5.858 5.858-5.858 15.355 0 21.213 5.857 5.858 15.356 5.858 21.213 0l42.426-42.426c5.858-5.858 5.858-15.355 0-21.213zM256 0c-8.284 0-15 6.716-15 15v61c0 8.284 6.716 15 15 15s15-6.716 15-15V15c0-8.284-6.716-15-15-15zM339.867 150.205c-32.508-25.801-74.844-35.074-116.148-25.445-48.028 11.198-86.69 49.285-98.495 97.031-11.843 47.898 1.711 96.721 36.258 130.601C173.886 364.556 181 382.921 181 402.777V406c0 13.296 5.801 25.26 15 33.505V467c0 24.813 20.187 45 45 45h30c24.813 0 45-20.187 45-45v-27.495c9.199-8.245 15-20.208 15-33.505v-3.282c0-19.545 7.495-38.266 20.563-51.361C376.994 325.87 391 292.005 391 256c0-41.443-18.637-80.004-51.133-105.795zM286 467c0 8.271-6.729 15-15 15h-30c-8.271 0-15-6.729-15-15v-16h60v16zm44.326-136.834C311.689 348.843 301 375.288 301 402.718V406c0 8.271-6.729 15-15 15h-15v-91.898c25.849-6.678 45-30.195 45-58.102 0-8.284-6.716-15-15-15s-15 6.716-15 15c0 16.542-13.458 30-30 30s-30-13.458-30-30c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 27.906 19.151 51.424 45 58.102V421h-15c-8.271 0-15-6.729-15-15v-3.223c0-27.863-10.393-54.035-28.513-71.805-26.889-26.371-37.409-64.494-28.14-101.981 9.125-36.908 39.029-66.353 76.184-75.015a111.083 111.083 0 0125.235-2.926c23.774 0 46.738 7.801 65.451 22.653C346.5 193.77 361 223.766 361 256c0 28.004-10.894 54.343-30.674 74.166z"/>
+                    </svg>
+                </div>
+                <div class="knowledges__block">
+                    <ol class="knowledges__list">
+                        <li class="knowledges__item">Декларація з податку на прибуток: хто та як заповнює, новації-2020</li>
+                        <li class="knowledges__item">Податкові різниці: коли виникають та як врахувати при заповненні декларації</li>
+                        <li class="knowledges__item">Пільги та збитки минулих років: заповнення додатків до податкової декларації</li>
+                        <li class="knowledges__item">Фінзвітність: база для визначення податку на прибуток</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profession" class="profession">
+        <div class="profession__container">
+            <div class="profession__title"><span>Основні посади</span>Кому це буде цікаво?</div>
+            <div class="profession__content profession__content--firs">
+                <div class="profession__item">
+                    <picture><img class="profession__img profession__img--desc" src="{{ page.url('/images') }}/beautiful-female-min.jpg" alt="бухгалтеру"/></picture>
+                    <picture><img  class="profession__img profession__img--mob" src="{{ page.url('/images') }}/001-min.jpg" alt="бухгалтеру"/></picture>
+                </div>
+                <div class="profession__item">
+                    <p>головному  <br>
+                        бухгалтеру</p>
+                </div>
+                <div class="profession__item">
+                    <picture><img  class="profession__img profession__img--desc" src="{{ page.url('/images') }}/business-woman-min.jpg" alt="бухгалтеру-новачку"/></picture>
+                    <picture><img  class="profession__img profession__img--mob" src="{{ page.url('/images') }}/002-min.jpg" alt="бухгалтеру-новачку"/></picture>
+                </div>
+                <div class="profession__item">
+                    <p>бухгалтеру <br>за напрямом</p>
+                </div>
+            </div>
+            <div class="profession__content profession__content--last">
+                <div class="profession__item">
+                    <p>директору</p>
+                </div>
+                <div class="profession__item">
+                    <picture><img class="profession__img profession__img--desc" src="{{ page.url('/images') }}/image-of-serious-min.jpg" alt="директору"/></picture>
+                    <picture><img  class="profession__img profession__img--mob" src="{{ page.url('/images') }}/auditor.jpg" alt="директору"/></picture>
+                </div>
+                <div class="profession__item">
+                    <p>Аудитору</p>
+                </div>
+                <div class="profession__item">
+                    <picture><img class="profession__img profession__img--desc"  src="{{ page.url('/images') }}/01.jpg" alt="Аудитору"/></picture>
+                    <picture><img  class="profession__img profession__img--mob" src="{{ page.url('/images') }}/02.jpg" alt="Аудитору"/></picture>
+                </div>
+                {#<div class="profession__item">
+                    <div class="profession__img">
+                        <picture><img src="{{ page.url('/images') }}/dir-min.png" alt="tax"/></picture>
+                    </div>
+                    <p class="profession__name">Директору</p>
+                </div>#}
+            </div>
+            <a href="#order" class="profession__btn js-scroll-to">Дізнатися вартість<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <div id="lectors" class="lectors">
+        <div class="lectors__container">
+            <div class="lectors__block">
+                <p class="lectors__info">справжній профі</p>
+                <p class="lectors__name">ЛЮДМИЛА ТИМОФЕЄВА</p>
+                <p class="lectors__text">Головний спеціаліст АФ «Контракти-Аудит», <br> аудитор, податковий консультант,
+                    <br> фахівець з оподаткування прибутку підприємств</p>
+                </p><a href="#order" class="lectors__btn js-scroll-to">Приєднатися<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="themes" class="themes">
+        <div class="themes__container">
+            <p class="themes__title">{#<span>Регламент та </span>#}Теми</p>
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                           {# <div class="themes__time">
+                                <p>11:00 <span> –</span> <br/>12:30
+                                </p>
+                            </div>#}
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 01. </span> Вихід уроку: 4 грудня. Тривалість: 45 хвилин  </p>
+                                <p class="themes__lessons-titel">Декларація з податку на прибуток: періодичність подання, структура, показники  </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson1" aria-expanded="false" aria-controls="#lesson1" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson1" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Платники податку на прибуток. Податкові періоди. Зміни з 1 січня 2020 року </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>2. Випадки, коли декларація з податку на прибуток подається неплатниками податку </p>
+                                </li>
+
+                                <li class="themes__more-list-item">
+                                    <p>3. Аналіз декларації з податку на прибуток </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>4. Прибуток, звільнений від оподаткування, або збиток від діяльності, прибуток від якої звільнений від оподаткування (додаток ПЗ) </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>5. Зменшення нарахованої суми податку (додаток ЗП) </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 02. </span>Вихід уроку: 4 грудня. Тривалість: 45 хвилин </p>
+                                <p class="themes__lessons-titel">Податкові різниці: загальні правила. Різниці за ОЗ та НА </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson2" aria-expanded="false" aria-controls="#lesson2" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson2" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Податкові різниці</p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>податкові різниці, які стосуються всіх платників податку на прибуток; </li>
+                                        <li>нові показники для застосування податкових різниць з 01.01.2020; </li>
+                                        <li>як відмовитися від податкових різниць; </li>
+                                        <li>структура податкових різниць.  </li>
+                                    </ul>
+                                </li>
+
+                                <li class="themes__more-list-item">
+                                    <p>2. Різниці, які виникають при здійсненні операцій з основними засобами і нематеріальними активами</p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>причини виникнення різниць; </li>
+                                        <li>прискорена амортизація; </li>
+                                        <li>МНМА та основні засоби;  </li>
+                                        <li>операції з невиробничими основними засобами; </li>
+                                        <li>різниці при ліквідації, зокрема при поверненні «поліпшеного» об’єкта оренди орендодавцю та ін. </li>
+                                    </ul>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>3. Правильне заповнення додатку АМ </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 03. </span> Вихід уроку: 4 грудня. Тривалість: 45 хвилин </p>
+                                <p class="themes__lessons-titel">Податкові різниці за забезпеченнями (резервами). Операції з нерезидентами </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson3" aria-expanded="false" aria-controls="#lesson3" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson3" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Різниці, що виникають при формуванні забезпечень (резервів) </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>формування резервів у бухгалтерському обліку за П(С)БО. Вплив облікової політики;  </li>
+                                        <li>резерви, за якими не виникають податкові різниці;  </li>
+                                        <li>створення резерву сумнівних боргів; </li>
+                                        <li>списання безнадійної дебіторської заборгованості в межах і понад суму резерву.  </li>
+                                    </ul>
+                                </li>
+
+                                <li class="themes__more-list-item">
+                                    <p>2. Різниці, які виникають при здійсненні операцій з нерезидентами  </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>придбання та продаж з «особливими» нерезидентами;  </li>
+                                        <li>проценти за запозиченнями;  </li>
+                                        <li>відсутність ділової мети; </li>
+                                        <li>роялті.  </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 04. </span>Вихід уроку: 4 грудня. Тривалість: 45 хвилин </p>
+                                <p class="themes__lessons-titel"> Податкові різниці: безкоштовні передачі, штрафи, зміна системи оподаткування, цінні папери </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson4" aria-expanded="false" aria-controls="#lesson4" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson4" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Інші різниці, які виникають при здійсненні фінансових операцій  </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>безкоштовно передані кошти, товари, роботи, послуги іншим платникам;  </li>
+                                        <li>передача коштів, товарів, робіт, послуг неприбутковим організаціям;  </li>
+                                        <li>різниці за перехідними операціями при зміні системи оподаткування; </li>
+                                        <li>різниці за штрафними санкціями; </li>
+                                        <li>різниці за фінансовими інвестиціями тощо. </li>
+                                    </ul>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>2. Різниці щодо операцій з продажу або іншого відчуження цінних паперів. Додаток ЦП   </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 05. </span>Вихід уроку: 4 грудня. Тривалість: 45 хвилин </p>
+                                <p class="themes__lessons-titel">Збитки та пільги в декларації. Авансовий внесок. Доходи нерезидентів </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson5" aria-expanded="false" aria-controls="#lesson5" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson5" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Різниці, передбачені підрозділом 4 розділу XX ПКУ на прикладах </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>2. Збитки минулих років </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>як правильно перенести збитки; </li>
+                                        <li>дії платника, якщо збитки не показані; </li>
+                                        <li>як «приховати» збитки. </li>
+                                    </ul>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>3. Податкові пільги з податку на прибуток: заповнення додатку ПП </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>4. Розрахунок авансового внеску з податку на прибуток підприємств на суму виплачених дивідендів. Нюанси заповнення додатку АВ  </p>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>5. Податок з доходів нерезидентів. Додаток ПН </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>особливості заповнення;   </li>
+                                        <li>ризики для отримувачів доходів;  </li>
+                                        <li>вплив бенефіціарності;  </li>
+                                        <li>підтверджуючі документи.   </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 06. </span>Вихід уроку: 4 грудня. Тривалість: 45 хвилин </p>
+                                <p class="themes__lessons-titel">Фінзвітність: доходи, витрати, заборгованість, фінрезультат. Виправлення помилок у декларації </p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson6" aria-expanded="false" aria-controls="#lesson6" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson6" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item">
+                                    <p>1. Фінансова звітність як основа визначення об’єкта оподаткування податком на прибуток </p>
+                                    <ul class="themes__more-sub-list">
+                                        <li>роль облікової політики у формуванні фінансового результату до оподаткування; </li>
+                                        <li>первинні документи як підстава відображення господарської операції; </li>
+                                        <li>відповідність доходів і витрат;  </li>
+
+                                        <li>особливості відображення в бухгалтерському обліку та фінансовій звітності довгострокових зобов’язань та довгострокової дебіторської заборгованості; </li>
+                                        <li>звіт про фінансові результати: доходи і втрати від участі в капіталі та   курсових різниць; </li>
+                                        <li>що об’єднує бухгалтерський та податковий облік амортизації основних засобів. </li>
+                                    </ul>
+                                </li>
+                                <li class="themes__more-list-item">
+                                    <p>2. Виправлення помилок в декларації з податку на прибуток: вибір оптимального варіанту. Додаток ВП </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="themes__item">
+                <div class="themes__box">
+                    <div class="themes__header">
+                        <div class="themes__text">
+                            <div class="themes__info">
+                                <p class="themes__lessons"><span>УРОК 07. </span>Вихід уроку: 23 грудня, 11:00 – 13:00. Тривалість: 120 хвилин </p>
+                                <p class="themes__lessons-titel">Відповіді на запитання</p>
+                            </div>
+                        </div>
+                        <div class="themes__button"><a data-toggle="collapse" data-target="#lesson7" aria-expanded="false" aria-controls="#lesson7" class="themes__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="lesson7" class="themes__more collapse">
+                        <div class="themes__more-body">
+                            <ul class="themes__more-list">
+                                <li class="themes__more-list-item"><p>1. Змога задати питання лектору.  </p></li>
+                                <li class="themes__more-list-item"><p>2. Гарантоване отримання відповіді на запитання. </p></li>
+                                <li class="themes__more-list-item"><p>3. Можливість почути відповіді на актуальні запитання від ваших колег. </p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gifts" class="gifts">
+        <div class="gifts__container">
+            <p class="gifts__title"><span> Відеокурс</span> у подарунок</p>
+            <div class="gifts__item">
+                <div class="gifts__box">
+                    <div class="gifts__header">
+                        <div class="gifts__info">
+                            <p class="gifts__lector-name">Відеокурс</p>
+                            <p class="gifts__lessons-titel"> <b>Податок на прибуток. Фінансова звітність в 1С </b> <br>(складається з 20 уроків та відповідей на питання )</p>
+                        </div>
+                        <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z"></path>
+                        </svg>
+                        <div class="gifts__button"><a data-toggle="collapse" data-target="#gifts1" aria-expanded="false" aria-controls="#gifts1" class="gifts__more-btn">Детальніше</a></div>
+                    </div>
+                    <div id="gifts1" class="gifts__more collapse">
+                        <div class="gifts__more-body">
+                            <ul class="gifts__more-list">
+                                <li class="gifts__more-list-item"><p>Групове перепроведення документів </li>
+                                <li class="gifts__more-list-item"><p>Робота з обробкою «Універсальний журнал документів» </p> </li>
+                                <li class="gifts__more-list-item"><p>Перепроведення документів по партіях </p></li>
+                                <li class="gifts__more-list-item"><p>Закриття періоду </p></li>
+                                <li class="gifts__more-list-item"><p>Визначення фінансових результатів </p></li>
+                                <li class="gifts__more-list-item"><p>Аналіз стану бухгалтерського обліку </p></li>
+                                <li class="gifts__more-list-item"><p>Встановлення дати заборони редагування періоду </p></li>
+
+                                <li class="gifts__more-list-item"><p> Декларація з податку на прибуток: автоматичне заповнення, друк, вивантаження для подачі в податкову (ситуація 1 ― результат із прибутком) </li>
+                                <li class="gifts__more-list-item"><p>Декларація з податку на прибуток: автоматичне заповнення, друк, вивантаження для подачі в податкову (ситуація 1 ― результат зі збитком) </p> </li>
+
+                                <li class="gifts__more-list-item"><p>Відображення податку на прибуток у бухобліку. Аналіз оборотів на субрахунках 6413, 981 </li>
+                                <li class="gifts__more-list-item"><p> Закриття оборотів по субрахунку 918</p> </li>
+                                <li class="gifts__more-list-item"><p>Перерахування податку до бюджету, аналіз бухгалтерських записів по субрахунку 6413 </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Форма «Регламентована та фінансова звітність»: детальний огляд і налаштування. Докладна інформація про звіт </p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Фінансова звітність малого підприємства в складі Балансу (форма № 1-м) і Звіту про фінансові результати (форма № 2-м) </p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Фінансова звітність мікропідприємства в складі Балансу (форма № 1-мс) і Звіту про фінансові результати (форма № 2-мс) </p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Форма №1. Баланс (Звіт про фінансовий стан)</p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Форма №2. Звіт про фінансові результати (Звіт про сукупний дохід) </p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p> Форма №3. Звіт про рух грошових коштів (за прямим методом) </p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Форма №4. Звіт про власний капітал</p>
+                                </li>
+                                <li class="gifts__more-list-item">
+                                    <p>Форма №5. Примітки до річної фінансової звітності</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificate" class="certificate">
+        <div class="certificate__container">
+            <div class="certificate__title"><span>переваги</span>Що ви отримаєте?</div>
+            <div class="certificate__content certificate__content--firs">
+                <div class="certificate__item">
+                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <g><path d="m353.442 242.977-140-80c-4.642-2.653-10.346-2.634-14.971.05-4.625 2.683-7.471 7.626-7.471 12.973v160c0 5.347 2.846 10.29 7.471 12.974 2.328 1.351 4.928 2.026 7.529 2.026 2.567 0 5.136-.659 7.442-1.977l140-80c4.674-2.67 7.558-7.641 7.558-13.023s-2.884-10.353-7.558-13.023zm-132.442 67.175v-108.304l94.767 54.152z"/><path d="m496 0h-480c-8.284 0-15 6.716-15 15v482c0 8.284 6.716 15 15 15h480c8.284 0 15-6.716 15-15v-482c0-8.284-6.716-15-15-15zm-465 402v-292h450v292zm450-322h-50v-50h50zm-80 0h-50v-50h50zm-80 0h-50v-50h50zm-80 0h-50v-50h50zm-80 0h-50v-50h50zm-130-50h50v50h-50zm0 402h50v50h-50zm80 0h50v50h-50zm80 0h50v50h-50zm80 0h50v50h-50zm80 0h50v50h-50zm130 50h-50v-50h50z"/></g></svg>
+                </div>
+                <div class="certificate__item">
+                    <p>СІМ
+                        <br>
+                        ВІДЕОУРОКІВ</p>
+                </div>
+                <div class="certificate__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" width="512" height="512"><path d="M481.33 412.242c20.107-27.376 30.67-59.188 30.67-92.717 0-53.672-27.834-103.502-74.792-134.598-4.331-47.819-26.659-92.166-63.991-126.335C331.936 20.809 277.167 0 219 0S106.065 20.809 64.783 58.593C23.007 96.828 0 147.806 0 202.136c0 41.788 13.471 81.406 39.079 115.304L1.458 410.504a19.997 19.997 0 004.621 21.855 19.995 19.995 0 0021.989 3.942l107.301-47.3a230.189 230.189 0 0041.547 11.551c14.543 23.918 35.287 44.173 60.505 58.917 28.154 16.459 60.661 25.254 94.098 25.507.491.036.981.075 1.482.075 23.117 0 45.515-3.993 66.703-11.88l84.229 37.13a19.991 19.991 0 0021.989-3.942 19.998 19.998 0 004.621-21.855l-29.213-72.262zm-41.441 4.215l15.109 37.375-46.837-20.646a20 20 0 00-15.916-.095c-18.357 7.832-38.014 11.846-58.435 11.95-.27-.011-.536-.041-.81-.041-39.414 0-76.65-15.402-102.664-41.023 32.983-1.58 65.313-10.003 94.137-24.641 9.849-5.002 13.777-17.04 8.775-26.889-5.001-9.848-17.04-13.775-26.889-8.775-26.534 13.477-56.743 20.6-87.359 20.6-26.604 0-52.217-5.172-76.124-15.373a19.991 19.991 0 00-15.916.095l-69.958 30.839 23.554-58.266a19.999 19.999 0 00-3.321-20.47C52.876 272.519 40 238.299 40 202.136 40 112.733 120.299 40 219 40s179 72.733 179 162.136c0 28.876-8.489 57.224-24.552 81.979-6.012 9.266-3.374 21.651 5.893 27.663 9.264 6.014 21.65 3.374 27.664-5.892 14.254-21.969 23.777-46.225 28.181-71.417C458.615 257.413 472 287.634 472 319.525c0 27.926-9.955 54.366-28.79 76.461a20.001 20.001 0 00-3.321 20.471zM238 305c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20zm55.983-149.848c.012.278.018.556.018.837a74.928 74.928 0 01-45.573 69.022c-5.73 2.447-9.434 8.218-9.434 14.701V241c0 11.046-8.954 20-20 20s-20-8.954-20-20v-1.287c0-22.531 13.239-42.741 33.729-51.488a34.982 34.982 0 0021.273-31.653 22.218 22.218 0 01-.008-.578c0-19.295-15.698-34.993-34.994-34.993C199.699 121 184 136.698 184 155.993c0 11.046-8.954 20-20 20s-20-8.954-20-20C144 114.642 177.642 81 218.994 81c41.071 0 74.538 33.187 74.989 74.152z"/></svg>
+                </div>
+                <div class="certificate__item">
+                    <p> Відповіді <br>
+                        НА ЗАПИТАННЯ</p>
+                </div>
+            </div>
+            <div class="certificate__content certificate__content--last">
+                <div class="certificate__item">
+                    <p> ПРЕЗЕНТАЦІї  <br>
+                        ЛЕКТОРА</p>
+                </div>
+                <div class="certificate__item">
+                    <svg height="512pt" viewBox="0 -32 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="M464.867 0H239.934C213.945 0 192.8 21.145 192.8 47.133v144.293l-41.766-20.77a90.857 90.857 0 00-4.289-1.996c12.262-12.8 19.82-30.144 19.82-49.226 0-39.278-31.953-71.235-71.23-71.235-39.281 0-71.234 31.957-71.234 71.235 0 21.343 9.449 40.515 24.37 53.582C20.993 188.476 0 218.636 0 256v48.2c0 20.75 13.473 38.41 32.133 44.687v83.847c0 8.282 6.715 15 15 15h96.398c8.285 0 15-6.718 15-15V264.2l48.024 24.008c18.379 9.188 43.308 3.711 54.582-17.207h53.781l-56.95 156.605c-2.831 7.786 1.188 16.395 8.973 19.223 8.899 3.238 16.813-2.344 19.223-8.969L346.84 271h10.515l61.297 166.906c2.328 6.332 10.184 12.239 19.254 8.906 7.774-2.855 11.766-11.472 8.907-19.25L389.313 271h75.554C490.352 271 512 250.441 512 223.867V47.133C512 20.555 490.352 0 464.867 0zM54.102 119.434c0-22.739 18.496-41.235 41.23-41.235 22.738 0 41.234 18.496 41.234 41.235 0 22.734-18.496 41.23-41.234 41.23-22.734 0-41.23-18.496-41.23-41.23zM235.5 254.96c-.04.11-.078.223-.113.336-1.024 2.855-3.336 5.262-6.168 6.426a11.232 11.232 0 01-9.246-.348c-28.524-14.27-69.739-34.86-69.739-34.86-9.953-4.976-21.703 2.274-21.703 13.419v177.8H62.133v-81.402c0-8.281-6.719-15-15-15-9.45 0-17.133-7.684-17.133-17.133V256c0-36.652 29.844-65.332 65.332-65.332h13.254c10.055 0 20.098 2.36 29.07 6.84 0 0 74.403 37 93.352 46.437 4.058 2.016 5.988 6.75 4.492 11.016zM482 223.867c0 4.582-1.777 8.883-5.012 12.117-3.183 3.188-7.601 5.016-12.12 5.016h-200.47c-.027-.082-.046-.164-.074-.242l37.227-74.45c3.703-7.41.703-16.417-6.707-20.124-7.406-3.704-16.418-.704-20.125 6.707l-31.75 63.496c-5.918-2.95-12.797-6.375-20.168-10.04V47.134c0-9.446 7.683-17.133 17.133-17.133h224.933c4.52 0 8.938 1.828 12.125 5.023 3.23 3.227 5.008 7.528 5.008 12.11zm0 0"/><path d="M432.734 64.266H272.066c-8.285 0-15 6.714-15 15s6.715 15 15 15h160.668c8.282 0 15-6.715 15-15s-6.714-15-15-15zm0 0M432.734 120.5h-80.336c-8.28 0-15 6.715-15 15s6.72 15 15 15h80.336c8.282 0 15-6.715 15-15s-6.714-15-15-15zm0 0M432.734 176.734h-80.336c-8.28 0-15 6.715-15 15 0 8.282 6.72 15 15 15h80.336c8.282 0 15-6.718 15-15 0-8.285-6.714-15-15-15zm0 0"/></svg>
+                </div>
+                <div class="certificate__item">
+                    <p>КОРИСНИЙ
+                        <br>
+                        ПОДАРУНОК  </p>
+                </div>
+                <div class="certificate__item">
+                    <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M467 120h-61.041C415.397 107.456 421 91.871 421 75c0-41.355-33.645-75-75-75-24.911 0-43.28 8.925-57.809 28.087C276.036 44.119 267.148 66.503 256 94.785c-11.148-28.283-20.036-50.666-32.191-66.698C209.28 8.925 190.911 0 166 0c-41.355 0-75 33.645-75 75 0 16.871 5.603 32.456 15.041 45H45c-24.813 0-45 20.187-45 45v30c0 19.555 12.541 36.228 30 42.42V467c0 24.813 20.187 45 45 45h362c24.813 0 45-20.187 45-45V237.42c17.459-6.192 30-22.865 30-42.42v-30c0-24.813-20.187-45-45-45zm-183.466-13.26C306.513 48.442 315.249 30 346 30c24.813 0 45 20.187 45 45s-20.187 45-45 45h-67.713c1.838-4.615 3.591-9.058 5.247-13.26zM166 30c30.751 0 39.487 18.442 62.466 76.74 1.656 4.202 3.409 8.645 5.247 13.26H166c-24.813 0-45-20.187-45-45s20.187-45 45-45zm30 452H75c-8.271 0-15-6.729-15-15V240h136v242zm0-272H45c-8.271 0-15-6.729-15-15v-30c0-8.271 6.729-15 15-15h151v60zm90 272h-60V150h60v332zm166-15c0 8.271-6.729 15-15 15H316V240h136v227zm30-272c0 8.271-6.729 15-15 15H316v-60h151c8.271 0 15 6.729 15 15v30z" class="color-svg"></path>
+                    </svg>
+                </div>
+                <div class="certificate__item">
+                    <p>сертифікат
+                        <br>
+                        учасника</p>
+                </div>
+            </div>
+            <div class="certificate__footer">
+                <p class="certificate__text">
+                    cертифікат <br>
+                    учасника
+                </p>
+                <picture><img src="{{ page.url('/images') }}/certificate_on_page_1.jpg" alt="certificate"/></picture>
+            </div>
+            </p><a href="#order" class="certificate__btn js-scroll-to">Стати учасником<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+
+        </div>
+    </div>
+    <div id="order" class="order">
+        <div class="order__container">
+            <div id="timer-custom" class="order__timer">
+                <p class="order__title"><span>спецпропозиція</span>акційні ціни діють ще {{ page.options['date']|default('') }}
+                </p>
+                <div class="pricing-timer" data-timer-2="{{ page.options['timer']|default('') }}">
+                    <div class="pricing-timer__inner">
+                        <div class="pricing-timer__box"><span class="days">00</span>дні</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="hours">00</span>год</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="minuts">00</span>хв</div>
+                        <div class="pricing-timer__box"><span class="separate">:</span></div>
+                        <div class="pricing-timer__box"><span class="seconds">00</span>сек</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__packages">
+                <div class="order__package  package package--gold">
+                    <div class="package__head  package__head--standart">
+                        <p class="package__header  package__header--gold"> ВІДЕОКУРС</p>
+                        <p class="package__price package__price-platform "></p>
+                        <p class="package__price  package__price--gold">{{shop_price('курс-04122020ПНП','site')}}  <br> <span>грн</span>
+                        <p class="package__old-price">
+                            <s>{{shop_price('курс-04122020ПНП','line')}}грн</s>
+                        </p>
+                        </p>
+                        <div class="package__btn">
+                            <a class="btn dk-hide js-btn-utm"  href="https://7eminar.ua/checkout/k-pnpfz011220" target="_blank">оплатити <br>
+                                <span>рахунок/картою</span></a>
+                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-04122020ПНП"/>
+                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                    <span>рахунок/картою</span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="package__body  package__body--gold">
+                        <div class="package__platform"></div>
+                        <ul class="package__list">
+                            <li> відеозапис курсу</li>
+                            <li>відповіді на запитання</li>
+                            <li>презентації лектора</li>
+                            <li>сертифікат учасника</li></ul>
+                    </div>
+                    <div class="package__footer  package__footer--gold">
+                       {# <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#345ce4"></path> </svg>Подарунок: </p>
+                        <ul class="package__list package__list--footer">
+                            <li>Відеокурс <br>«ПДВ в 1С»</li>
+                        </ul>#}
+                        <div class="package__btn--footer">
+                            <a class="btn dk-hide js-btn-utm" href="https://7eminar.ua/checkout/k-pnpfz011220" target="_blank">оплатити <br>
+                                <span>рахунок/картою</span></a>
+                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="курс-04122020ПНП"/>
+                                <button type="submit" rel="order" class="btn">оплатити <br>
+                                    <span>рахунок/картою</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              {#  <div class="order__package  package package--gold">
+                    <div class="package__head  package__head--gold">
+                        <p class="package__header  package__header--gold">GOLD</p>
+                        <p class="package__price package__price-platform "></p>
+                        <p class="package__price  package__price--gold">{{shop_price('онлайн-05052020БСЗП_голд_593','site')}}  <br> <span>грн</span>
+                        <p class="package__old-price">
+                            <s>{{shop_price('онлайн-05052020БСЗП_голд_593','line')}}грн</s>
+                        </p>
+                        </p>
+                        <div class="package__btn">
+                            <form method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="онлайн-05052020БСЗП_голд_593"/>
+                                <button type="submit" rel="order" class="btn">Замовити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="package__body  package__body--gold">
+
+                        <div class="package__platform"></div>
+                        <ul class="package__list"><li>online-трансляція</li><li>відеозапис семінару</li><li>  відповіді на запитання
+                                <br>(у записі 7 травня)</li><li>презентація лектора</li><li>сертифікат учасника</li></ul>
+                    </div>
+                    <div class="package__footer  package__footer--gold">
+                        <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#345ce4"></path> </svg>Подарунки: </p>
+                        <ul class="package__list package__list--footer"><li>відеокурс «Зарплата в 1С»</li><li>бонуси від лектора</li>
+                        </ul>
+                        <div class="package__btn--footer">
+                            <form method="post" action="?new=1" data-validate="ajax">
+                                <input type="hidden" name="product" value="онлайн-05052020БСЗП_голд_593"/>
+                                <button type="submit" rel="order" class="btn">Замовити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>#}
+                <div class="order__package  package package--gold-plus">
+                    <div class="package__head  package__head--gold-plus">
+                        <p class="package__header  package__header--gold-plus">БУХГАЛТЕРСЬКА ВІДЕОПЛАТФОРМА №1</p>
+                        <p class="price-platform-js"> {{ shop_price('онлайн-platform_price','month') }} <br> <span>грн/міс.</span> </p>
+                        <p class="package__old-price">
+                            <s> {{ shop_price('онлайн-platform_price','line') }} грн/міс.</s>
+                        </p>
+                        <div class="package__btn"><a href="{{ link_platform }}" target="_blank" class="btn btn--Sale js-platform-link js-banner-link">оплатити <br>
+                                <span>рахунок/картою</span></a></div>
+                    </div>
+                    <div class="package__body  package__body--gold-plus">
+
+                        <div class="package__platform"></div>
+                        <ul class="package__list"><li class="is-platform">  <b>Доступ до цього відеопроєкту</b>, а також ще до <b>{{ shop_price('онлайн-platform_price','courses') }}+</b> відеокурсів, вебінарів та трансляцій на усі найважливіші бухгалтерські теми <b>за супервигідною ціною</b>  </li></ul>
+                    </div>
+                    <div class="package__footer  package__footer--gold-plus">
+                       {# <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" fill="#1a3aa7"></path> </svg>Подарунок: </p>
+                        <ul class="package__list package__list--footer">
+                            <li>Відеокурс <br>«ПДВ в 1С»</li>
+                        </ul>#}
+                        <div class="package__btn--footer"><a href="{{ link_platform }}" target="_blank" class="btn btn--Sale js-platform-link js-banner-link">оплатити <br>
+                                <span>рахунок/картою</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__banner js-platform-banner">
+            </div>
+        </div>
+    </div>
+    <div id="free-video" class="free-video">
+        <div class="free-video__container container">
+            <div class="free-video__content">
+                <p class="free-video__subtitle">бухгалтерська відеоплатформа №1</p>
+                <p class="free-video__title">Всі корисні відеоматеріали в одному місці!</p>
+                <div class="free-video__block">
+                    <div class="free-video__text">
+                        <p>Хочете зекономити свої кошти та отримати доступ до {{ shop_price('онлайн-platform_price','courses') }}+ відеокурсів, вебінарів та трансляцій на усі найважливіші бухгалтерські теми?</p>
+                        <p>Передплатіть Бухгалтерську Відеоплатформу №1.</p><a href="{{ link_platform_video }}" target="_blank" class="js-platform-link">Детальніше про відеоплатформу</a>
+                    </div>
+                    <div class="free-video__video">
+                        <iframe src="https://www.youtube.com/embed/LOHtuZD_zP0?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div><a href="{{ link_platform_video }}" target="_blank" class="free-video__btn js-platform-link">Передплатити зі знижкою<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="partners">
+        <div class="container partners__container">
+            <ul class="partners__list">
+                <li><a href="https://www.otpbank.com.ua/smb/products-financing/" target="_blank" rel="nofollow"><img src="{{ link }}/logo_otp.svg"  width="170" alt="otpbank" /></a></li>
+                <li><a class="logonoclik" href="https://7eminar.com/" target="_blank"><img class="img_partners1" style="width: 175px;height: 43px;" src="https://7eminar.com/storage/seminars/mails/7eminar.png" alt="7eminar" /></a></li>
+                <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит" /></a></li>
+            </ul>
+          {#  <ul class="partners__list">
+                <li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком"/></a></li>
+                <li><a href="https://kraft.net.ua" target="_blank" class="logonoclik"><img style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" class="img_partners1"/></a></li>
+            </ul>#}
+        </div>
+    </div>
+    <div id="modal-video" tabindex="-1" role="dialog" class="modal-video modal fade">
+        <div role="document" class="modal-dialog">
+            <div id="closeModal" data-dismiss="modal" class="close-modal close-modal-video"></div>
+            <div class="modal-content">
+                <div class="player"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-present" tabindex="-1" role="dialog" class="modal-present modal fade">
+        <div role="document" class="modal-dialog">
+            <div data-dismiss="modal" class="close-modal"></div>
+            <div class="modal-content">
+                <div class="modal-present__content"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-page" class="loader-page">
+        <div class="dots">
+            <div class="loading"><span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+        </div>
+    </div>
+</div>

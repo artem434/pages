@@ -1,0 +1,83 @@
+.advantages {
+  background: url(images/bg_2-min.png) top center  no-repeat;
+
+  @at-root .webp & {
+    background: url(images/bg_2.webp) top center  no-repeat;
+  }
+  &__container {
+    @extend %container;
+
+    @media (max-width: 767px){
+      padding-top: 0;
+    }
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__certificate{
+
+    @media (max-width: 1200px){
+      width: 100%;
+    }
+
+    img{
+      display: block;
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__item{
+    width: 160px;
+    height: 210px;
+    background-image: linear-gradient(to bottom, #3221b4, #3900a1, #7f0299);
+    border-bottom-left-radius: 40px;
+
+    @media (max-width: 767px){
+      width: 49%;
+      margin: 2px 0;
+
+    }
+
+    svg{
+      fill: #fff;
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 35px auto 20px;
+    }
+
+    p{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      color: #f2f2f2;
+    }
+  }
+
+  &__btn{
+    margin-top: 70px;
+    text-align: center;
+
+    @media (max-width: 767px){
+      margin-top: 30px;
+    }
+    .btn{
+      @extend %btn;
+    }
+  }
+}

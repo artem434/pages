@@ -198,7 +198,7 @@
   </div>
   <section id="order" class="order">
     <div class="container">
-      <h3 class="page-titles"><span>{{ page.options['order__title']|default('Тількі до 30 вересня') }}</span></h3>
+      <h3 class="page-titles"><span>{{ page.options['order__title-top']|default('Останні 2 квитки!') }}</span><br><span>{{ page.options['order__title']|default('Тількі до 30 вересня') }}</span></h3>
       <div class="order__packages">
         {% set packages = [
           {
@@ -206,7 +206,7 @@
             title: 'Вартість туру за одного учасника',
             price: 'тур-26112020Єгипет_2',
             link: 'https://7eminar.ua/',
-            newprice: 'https://7eminar.ua/checkout/t-Egypt2020',
+            newprice: 'https://7eminar.ua/checkout/t-Egypt2020/action',
           }
         ] %}
         {% for package in packages %}

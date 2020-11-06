@@ -1,0 +1,402 @@
+.hero{
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+
+
+  &__top-container{
+    padding: 0px 0px 0px 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 1200px){
+      justify-content: center;
+      position: relative;
+      flex-direction: row;
+      right: inherit;
+      top: inherit;
+    }
+    @media (max-width: 767px){
+      padding: 0px;
+    }
+    img{
+      width: 170px;
+      height: auto;
+      margin: 15px 0;
+
+      @media (max-width: 1200px){
+        margin: 15px;
+      }
+      @media (max-width: 767px){
+
+        width: 140px;
+      }
+    }
+  }
+
+  &__logo-dk{
+
+    img{
+      border-radius: 4px;
+    }
+  }
+
+  &__container{
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-white;
+
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+
+    &:before{
+      position: absolute;
+      content: "";
+      background: url(images/hero_bg-min.png) center top -3px  no-repeat;
+      background-size: cover;
+      width: 1157px;
+      height: 645px;
+      top: 0;
+      left: -160px;
+      z-index: -1;
+
+      @media (max-width: 767px){
+        left: -560px;
+      }
+
+      @at-root .webp & {
+        background: url(images/hero_bg.webp) center top -3px  no-repeat;
+      }
+    }
+  }
+
+
+  &__content{
+    padding-left: 315px;
+    padding-top: 20px;
+
+    @media (max-width: 1200px){
+      padding-left: 0px;
+    }
+
+
+  }
+
+  &__date{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    color: $color-white;
+
+    span{
+      background-color: $color-white;
+      box-shadow: 0px 0px 33px #1970b2;
+      color: $color-black;
+      padding: 7px 20px 5px;
+      border-top-right-radius: 15px;
+      margin-right: 7px;
+      margin-top: 50px;
+
+      @media (max-width: 767px){
+        display: block;
+        margin-top: 0;
+      }
+    }
+  }
+
+
+
+  &__title{
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1;
+    color: $color-white;
+    margin-top: 50px;
+    padding-left: 10px;
+
+    @media (max-width: 767px){
+      font-size: 54px;
+      margin-top: 30px;
+      padding-left: 0;
+    }
+  }
+
+  &__sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    color: $color-white;
+    padding: 25px 0 20px 20px;
+    background: url(images/hero_dec.png) left center  no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1200px){
+      background-size: contain;
+      text-align: left;
+      margin-left: 110px;
+
+      br{
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px){
+      background-size: cover;
+      font-size: 40px;
+      margin-left: 0px;
+      padding: 12px 0 8px 8px;
+    }
+
+    span{
+
+      &:first-child{
+        color: $color-pink;
+      }
+
+      &:last-child{
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__online{
+    text-shadow: 0 0 26px rgba(31, 44, 61, 0.75);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    color: $color-white;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  &__lectors{
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-end;
+
+    @media (max-width: 1200px){
+      bottom: 0px;
+    }
+
+    @media (max-width: 767px){
+      display: none;
+    }
+
+    li{
+      margin: 0 5px;
+
+      p{
+        text-shadow: 0 0 26px rgba(31, 44, 61, 0.75);
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 2.8px;
+        text-align: right;
+        margin-top: 18px;
+        font-weight: bold;
+
+        span{
+          color: $color-blue;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  &__lector{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    z-index: -1;
+
+    @media (max-width: 1200px){
+      left: 0;
+      width:300px ;
+    }
+
+    @media (max-width: 767px){
+      display: none;
+    }
+
+    img{
+      @media (max-width: 1200px){
+        width: 100%;
+      }
+    }
+
+    p{
+      text-shadow: 0 0 26px rgba(31, 44, 61, 0.75);
+      margin-top: -68px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 4.8px;
+      color: #ffffff;
+      padding-left: 10px;
+      position: relative;
+
+      &:before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        transform: translate(0%,-50%);
+        width: 2px;
+        height: 80%;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 12px $color-pink;
+      }
+
+
+      span{
+        color: $color-pink;
+        font-weight: normal;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+  p.seminar_rec{
+    font-size: 22px;
+    line-height: 35px;
+    padding: 0 0 0px 0px;
+    color: #000;
+    text-transform: uppercase;
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+    @media (max-width: 767px){
+      padding: 0px 0 0px 20px;
+    }
+
+
+
+    span {
+    /*  padding-left: 60px;*/
+      position: relative;
+      display: inline-block;
+
+
+    /*  &:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-image: url(../../parts/pages/online/images/camera.png);
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: -20px;
+      }*/
+    }
+  }
+
+  &__button{
+    text-align: center;
+    padding-top: 100px;
+    @media (max-width: 767px){
+      padding-top: 60px;
+    }
+  }
+
+  &__btn{
+    margin-bottom: 90px;
+    margin-top: 90px;
+    @media (max-width: 1200px){
+      margin-top: 50px;
+      margin-bottom: 420px;
+    }
+    @media (max-width: 767px){
+      margin-bottom: 0px;
+      margin-top: 30px;
+    }
+    .btn{
+      @extend %btn;
+    }
+  }
+
+}
+
+
+
+
+
+.hero__controls-modal-btn {
+  top: 282px;
+  right: 587px;
+  position: absolute;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 103px;
+  border: none;
+  outline: none;
+  background: url(images/btn-modal.png) no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: scale 1.5s linear infinite;
+  animation: scale 1.5s linear infinite;
+  @media (max-width: 1200px){
+    display: none;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}

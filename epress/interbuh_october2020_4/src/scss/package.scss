@@ -1,7 +1,7 @@
 .package {
-  $color-header-one:#ffc2bd;
+  $color-header-one:#b813e9;
   $color-header-two:#ff887e;
-  $color-period:#eb3645;
+  $color-period:#080808;
 
 
   &__header{
@@ -16,7 +16,7 @@
 
   &__title{
     font-size: 20px;
-    color: #262626;
+    color: #FFF;
     text-transform: uppercase;
     min-height: 48px;
     margin-bottom: 0;
@@ -29,7 +29,7 @@
     font-size: 20px;
     line-height: 1.25;
     color: $color-period;
-    margin: 20px auto;
+    margin: 0px auto 20px;
   }
 
   &__price{
@@ -37,12 +37,27 @@
   }
 
   &__custom-price{
+
+    display: none;
+  }
+
+  &__price{
     display: block;
     font-size: 40px;
     line-height: 0.63;
     text-align: center;
-    color: #262626;
+    color: #FFF;
     font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__old-price{
+    font-size: 20px;
+    line-height: 0.63;
+    text-align: center;
+    color: #a0a0a0;
+    display: inline-block;
+
   }
 
   &__presents{
@@ -130,11 +145,11 @@
 
   .btn-package--three{
     display: inline-block;
-    background-color: #fa9087;
+    background-color: #b813e9;
     transition: all 0.5s;
 
     &:hover{
-      background-color: #ff5f52;
+      background-color: #fa4511;
     }
   }
 

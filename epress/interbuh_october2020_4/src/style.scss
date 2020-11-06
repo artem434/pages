@@ -9,10 +9,15 @@
   }
 
   .dtkt-promo{
-    background: linear-gradient(to right, #ffbcb6 0%, #ffbdb7 51%,  #ffc1bc 52%, #ffc1bc 100%);
+    background: linear-gradient(to right, #050016  0%, #050016 51%,  #050016 52%, #050016 100%);
     .container{
       padding-top: 0;
       padding-bottom: 0;
+    }
+
+    img{
+      display: block;
+      margin: 0 auto;
     }
   }
 

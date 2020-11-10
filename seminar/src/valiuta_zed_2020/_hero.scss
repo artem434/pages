@@ -1,0 +1,349 @@
+.hero{
+  display: block;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background: url(images/head_bg-min.jpg) top center no-repeat;
+  background-size: cover;
+
+
+  &__top-container{
+    padding: 15px 30px 0px;
+    position: relative;
+    z-index: 1;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width: 1200px){
+      justify-content: space-between;
+    }
+    @media (max-width: 767px){
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0 0;
+    }
+
+    img{
+      width: 170px;
+      height: auto;
+      @media (max-width: 767px){
+        margin: 15px 0;
+        width: 140px;
+      }
+    }
+  }
+
+  &__logo-dk{
+    padding-right: 180px;
+    @media (max-width: 1200px){
+      padding-right: 0px;
+    }
+
+    img{
+      border-radius: 4px;
+    }
+  }
+
+  &__container{
+    position: relative;
+    padding-bottom: 0px;
+
+    @media (max-width: 1200px){
+      max-width: 767px;
+    }
+
+    @media (max-width: 767px){
+      max-width: 100%;
+    }
+  }
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding:  30px 20px 0 50px;
+
+    @media (max-width: 1200px){
+      justify-content: center;
+      flex-direction: column;
+      padding:  30px 0px 0;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 767px){
+      padding-top: 10px;
+    }
+  }
+
+  &__item{
+
+    @media (max-width: 767px){
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__lector{
+
+    @media (max-width: 1200px){
+      padding-top: 30px;
+      margin-left: -85px;
+    }
+    @media (max-width: 767px){
+      padding-top: 0px;
+      margin-left: -50px;
+    }
+
+    img{
+      @media (max-width: 767px){
+        width: 100%;
+      }
+    }
+  }
+
+  &__title{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.03;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    span{
+      color: #fa28e9;
+    }
+
+    @media (max-width: 767px){
+      font-size: 41px;
+    }
+  }
+
+  &__subtitle{
+    font-family: 'Caveat', cursive;
+    font-size: 86px;
+    line-height: 0.84;
+    color: #fa28e9;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px){
+      font-size: 42px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__seminar{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+    text-transform: uppercase;
+
+    &:after{
+      content: "";
+      background: url(images/hero_online_dec.png) top center no-repeat;
+      width: 115px;
+      height: 36px;
+      left: -23px;
+      top: 7px;
+      position: absolute;
+      z-index: -1;
+
+      @media (max-width: 1200px){
+        left: 119px;
+      }
+
+      @media (max-width: 767px){
+        left: 14px;
+      }
+    }
+
+    span{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #2f2f2f;
+      font-family: 'Caveat', cursive;
+    }
+
+  }
+
+
+  &__date{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    color: #2f2f2f;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 767px){
+      font-size: 20px;
+    }
+
+    &:after{
+      content: "";
+      background: url(images/hero_date_dec.png) top center no-repeat;
+      width: 326px;
+      height: 114px;
+      left: -10px;
+      top: -27px;
+      position: absolute;
+      z-index: -1;
+
+      @media (max-width: 1200px){
+        left: 90px;
+        top: -30px;
+      }
+
+      @media (max-width: 767px){
+        left: -12px;
+      }
+    }
+
+    span{
+      font-family: 'Caveat', cursive;
+      font-size: 36px;
+      letter-spacing: 0.9px;
+      color: #626262;
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+
+  &__button{
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+  }
+
+
+
+  &__btn{
+    @extend %btn;
+    margin-left: 0;
+    margin-top: 55px;
+
+
+    @media (max-width: 1200px){
+      margin: 40px auto 30px;
+    }
+    @media (max-width: 767px){
+      margin: 35px auto;
+      padding: 20px;
+    }
+  }
+
+  &__text{
+
+  }
+
+
+
+
+
+  p.seminar_rec{
+    font-size: 22px;
+    line-height: 50px;
+    padding: 0px 0 30px 20px;
+    color: #000;
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+    @media (max-width: 767px){
+      padding: 0px 0 0px 20px;
+      line-height: 1.32;
+      font-size: 18px;
+    }
+
+
+
+    span {
+      padding-left: 60px;
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-image: url(../../parts/pages/online/images/camera.png);
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: -20px;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
+
+.hero__controls-modal-btn {
+  top: 282px;
+  right: 527px;
+  position: absolute;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 103px;
+  border: none;
+  outline: none;
+  background: url(images/btn-modal.png) no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: scale 1.5s linear infinite;
+  animation: scale 1.5s linear infinite;
+  @media (max-width: 1200px){
+    display: none;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}

@@ -227,3 +227,14 @@ $color:  $color-blue;
     }
 
 }
+.theme__more-btn[aria-expanded="true"] {
+
+    &:before{
+        transform: rotate(90deg);
+
+    }
+    &:after{
+        transform: rotate(180deg);
+
+    }
+}

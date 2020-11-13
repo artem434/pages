@@ -4,9 +4,21 @@
   z-index: 1;
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background: url(images/head_bg-min.jpg) top center no-repeat;
-  background-size: cover;
+  background: url(images/hero_bg-min.png) top center no-repeat;
 
+  @media (max-width: 1200px){
+    background: url(images/hero_bg_tab-min.png) top center no-repeat;
+  }
+
+  @media (max-width: 767px){
+    background: url(images/hero_bg_mob-min.png) top center no-repeat;
+  }
+
+
+
+  p{
+    margin-bottom: 0;
+  }
 
   &__top-container{
     padding: 15px 30px 0px;
@@ -47,88 +59,106 @@
 
   &__container{
     position: relative;
-    padding-bottom: 0px;
+    padding-bottom: 120px;
 
     @media (max-width: 1200px){
       max-width: 767px;
     }
-
     @media (max-width: 767px){
       max-width: 100%;
+      padding-bottom: 100px;
     }
   }
 
   &__content{
     display: flex;
     justify-content: space-between;
-    padding:  30px 20px 0 50px;
+    padding:  30px 135px 0 90px;
 
     @media (max-width: 1200px){
       justify-content: center;
       flex-direction: column;
       padding:  30px 0px 0;
-      align-items: center;
-      text-align: center;
     }
 
     @media (max-width: 767px){
-      padding-top: 10px;
+      padding-top: 30px;
+      text-align: center;
     }
   }
 
   &__item{
-
     @media (max-width: 767px){
       display: flex;
       flex-direction: column;
     }
+
   }
 
   &__lector{
 
     @media (max-width: 1200px){
-      padding-top: 30px;
-      margin-left: -85px;
-    }
-    @media (max-width: 767px){
-      padding-top: 0px;
-      margin-left: -50px;
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
 
-    img{
-      @media (max-width: 767px){
-        width: 100%;
+      img{
+        padding-left: 75px;
       }
     }
   }
+
+
+  &__lector-name{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    text-align: right;
+    color: #ffffff;
+    margin-top: -80px;
+    padding-right: 40px;
+
+    @media (max-width: 1200px){
+      text-align: center;
+      padding-right: 0px;
+      margin-top: -230px;
+    }
+
+    span{
+      font-size: 18px;
+      letter-spacing: 1.8px;
+      color: #212121;
+      display: block;
+    }
+  }
+
+
 
   &__title{
     font-size: 70px;
     font-weight: 800;
     line-height: 1.03;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 0;
-
-    span{
-      color: #fa28e9;
-    }
+    padding-top: 80px;
 
     @media (max-width: 767px){
-      font-size: 41px;
+      font-size: 34px;
+      padding-top: 25px;
     }
   }
 
   &__subtitle{
-    font-family: 'Caveat', cursive;
-    font-size: 86px;
-    line-height: 0.84;
-    color: #fa28e9;
-    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 2;
+    color: #212121;
+    text-transform: uppercase;
 
     @media (max-width: 767px){
-      font-size: 42px;
-      margin-bottom: 35px;
+      font-size: 18px;
+      line-height: 1.33;
     }
   }
 
@@ -136,83 +166,58 @@
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1.8px;
-    position: relative;
-    color: #ffffff;
-    z-index: 1;
-    line-height: 1.4;
+    color: #2f2f2f;
     text-transform: uppercase;
+    display: flex;
 
+    @media (max-width: 767px){
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    &:before,
     &:after{
       content: "";
-      background: url(images/hero_online_dec.png) top center no-repeat;
-      width: 115px;
-      height: 36px;
-      left: -23px;
-      top: 7px;
-      position: absolute;
-      z-index: -1;
+      background: url(images/brecket.png) top center no-repeat;
+      width: 11px;
+      height: 26px;
+      display: block;
+    }
+    &:after{
+      transform: rotate(180deg);
+    }
 
-      @media (max-width: 1200px){
-        left: 119px;
-      }
-
-      @media (max-width: 767px){
-        left: 14px;
-      }
+    p{
+      display: block;
+      margin: 0 10px;
     }
 
     span{
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      color: #2f2f2f;
-      font-family: 'Caveat', cursive;
+      background-color: #fadf28;
+      padding: 0 3px;
     }
-
   }
 
 
   &__date{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 2.4px;
+    letter-spacing: 1.8px;
     color: #2f2f2f;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
-    line-height: 1.4;
-
-    @media (max-width: 767px){
-      font-size: 20px;
+    text-align: right;
+    padding-top: 40px;
+    @media (max-width: 1200px){
+      text-align: center;
     }
-
-    &:after{
-      content: "";
-      background: url(images/hero_date_dec.png) top center no-repeat;
-      width: 326px;
-      height: 114px;
-      left: -10px;
-      top: -27px;
-      position: absolute;
-      z-index: -1;
-
-      @media (max-width: 1200px){
-        left: 90px;
-        top: -30px;
-      }
-
-      @media (max-width: 767px){
-        left: -12px;
-      }
+    @media (max-width: 767px){
+      padding-top: 25px;
+      order: 1;
     }
 
     span{
-      font-family: 'Caveat', cursive;
-      font-size: 36px;
-      letter-spacing: 0.9px;
-      color: #626262;
       font-weight: normal;
-      text-transform: none;
+      color: #ffffff;
     }
   }
 
@@ -227,14 +232,14 @@
   &__btn{
     @extend %btn;
     margin-left: 0;
-    margin-top: 55px;
+    margin-top: 35px;
 
 
     @media (max-width: 1200px){
       margin: 40px auto 30px;
     }
     @media (max-width: 767px){
-      margin: 35px auto;
+      margin: 25px auto ;
       padding: 20px;
     }
   }
@@ -293,8 +298,8 @@
 
 
 .hero__controls-modal-btn {
-  top: 282px;
-  right: 527px;
+  top: 390px;
+  left: 200px;
   position: absolute;
   z-index: 4;
   display: inline-block;

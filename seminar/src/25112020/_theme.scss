@@ -21,9 +21,7 @@ $color:  $color-blue;
         position: relative;
         padding-right: 200px;
 
-        br{
-            display: none;
-        }
+
 
         @media (max-width: 767px){
             padding-right: 0px;

@@ -1,0 +1,139 @@
+.lectors{
+  padding: 75px 0;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: "";
+    background: url(./images/lector_bg-min.png) top center no-repeat;
+    width: 770px;
+    height: 790px;
+    top: -60px;
+    left: 50%;
+    transform: translate(-70%, 0%);
+  }
+
+  @media (max-width: 767px){
+    padding: 50px 0;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+  &__container {
+    @extend %container;
+    text-align: center;
+  }
+
+  &__sub-title{
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: #a4a4a4;
+    text-transform: uppercase;
+    padding-bottom: 55px;
+    @media (max-width: 767px){
+      font-size: 32px;
+    }
+  }
+
+  &__content{
+    max-width: 795px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+
+    @media (max-width: 1200px){
+      flex-direction: column;
+    }
+    @media (max-width: 767px){
+      padding: 0;
+    }
+
+  }
+  &__item{
+    display: flex;
+    background-color: #ffffff;
+    @media (max-width: 1200px){
+
+    }
+    @media (max-width: 767px){
+      flex-direction: column-reverse;
+    }
+
+
+    img{
+      @media (max-width: 767px){
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+
+
+  &__name{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: 0.24px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    @media (max-width: 767px){
+      font-size: 24px;
+      padding-bottom: 25px;
+      padding-top: 20px;
+    }
+    span{
+      color: #5dd070;
+      @media (max-width: 767px){
+       display: none;
+      }
+    }
+  }
+
+  &__text{
+    padding: 25px 30px 25px 55px;
+    text-align: left;
+    @media (max-width: 767px){
+      padding: 0px 15px  35px;
+      text-align: center;
+    }
+  }
+
+  &__regalia{
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: 0.14px;
+    color: #000000;
+    padding-bottom: 15px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+
+
+
+  &__btn{
+    margin: 100px auto 0;
+    @extend %btn;
+    @media (max-width: 767px){
+      margin: 60px auto 0;
+    }
+  }
+}

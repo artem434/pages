@@ -1,0 +1,206 @@
+.peredplata_ib{
+
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+  body {
+    background: #eef3fa;
+  }
+
+  .pricing {
+    padding-top: 30px;
+    font-family: Tahoma, Helvetica, "Liberation Sans", Arial, Sans, sans-serif;
+    text-align: center;
+
+    &__logo {
+      width: 240px;
+      height: 90px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background: url(logo.png) no-repeat center;
+    }
+
+    .pricing__title {
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: normal;
+        color: #333;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+    }
+
+    &__tariffs {
+      display: flex; 	display: -webkit-box; 	display: -webkit-flex; 	display: -ms-flexbox;
+      align-items: stretch;
+      justify-content: center;
+      padding: 30px;
+      //width: 700px;
+      //margin: 0 auto;
+    }
+  }
+
+  //--------------------
+
+  //.tariff {
+  //  padding: 30px 20px;
+  //  width: 300px;
+  //  margin: 0 15px;
+  //  border-radius: 6px;
+  //  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  //  background: #f5f5f5;
+  //
+  //  &__header {
+  //    margin-top: -30px;
+  //    margin-right: -20px;
+  //    margin-left: -20px;
+  //    padding: 15px;
+  //
+  //    h2 {
+  //      margin: 0;
+  //      font-size: 15px;
+  //      font-weight: normal;
+  //      text-transform: uppercase;
+  //      color: #fff;
+  //      > span {
+  //        display: block;
+  //        font-weight: bold;
+  //        font-size: 25px;
+  //      }
+  //    }
+  //
+  //    &--gazeta {
+  //      background: #989b9e;
+  //    }
+  //
+  //    &--standart {
+  //      background: #25c45a;
+  //    }
+  //
+  //    &--premium {
+  //      background: #2297DC;
+  //    }
+  //  }
+  //
+  //  &__list {
+  //    margin: 0;
+  //    padding: 0;
+  //    list-style: none;
+  //  }
+  //
+  //  &__list-item {
+  //    margin: 0;
+  //    padding: 20px 0;
+  //    font-size: 16px;
+  //    line-height: 17px;
+  //    color: #124d6e;
+  //    border-bottom: solid 1px #dfe5ea;
+  //    &:last-child {
+  //      border-bottom: none;
+  //    }
+  //    > span {
+  //      display: block;
+  //      padding: 5px 0;
+  //      font-size: 12px;
+  //      line-height: 13px;
+  //      color: #333;
+  //    }
+  //  }
+  //}
+
+  //--------------------
+
+  //.prices-wrapper {margin-bottom: 50px;}
+  //.tariff-wrap-row {position: relative; display: table; height: 100%; width: 100%;  padding-left: 35px;}
+  //.tariff-wrap {
+  //  position: relative;
+  //  margin: 0 auto;
+  //  margin-bottom: 30px;
+  //  padding: 30px 20px;
+  //  /* display: table-cell; */
+  //  width: 520px;
+  //  clear: both;
+  //  float: none;
+  //  background: #eef3fa;
+  //}
+  //
+  .tariff-review-wrap { position: relative; padding: 30px 35px; }
+  .tariff-review-wrap .tariff { position: relative; width: 80%}
+  .tariff {padding: 0; text-align: center;}
+  .tariff-wrap.recommended {background: #25c45a;}
+  .tariff-wrap.recommended .t-cell, .tariff-wrap:hover .t-cell {border-bottom: solid 1px #93D7AF;}
+  //.tariff-wrap:hover { background: #2297DC;}
+  .t-name {font-size: 15px; font-weight: 400; text-transform: uppercase;}
+  .tariff-review-wrap .t-name {margin: 11px 0;}
+  .tariff-review-wrap .t-name b {font-size: 16px;}
+  .t-name {padding-bottom: 15px; margin-bottom: 10px; border-bottom: solid 1px rgba(0, 0, 0, 0.3);}
+  .t-name b {font-weight: 800; font-size: 25px; }
+  .t-cell { font-size: 16px; line-height: 17px; color: #124d6e; margin: 0; padding: 15px 0; border-bottom: solid 1px #dfe5ea;}
+  .t-cell small { display: block; margin-top: 10px; font-size: 12px; line-height: 13px; color: #333;}
+  .t-cell.desc {font-size: 12px; color: #6a6b64}
+  .t-cell.cons {height: 72px; line-height: 17px; padding-top: 10px;}
+  .t-cell.cons.row {}
+  .t-cell.serv { height: 74px; line-height: 18px; padding-top: 10px;}
+  .t-cell.bonus { height: 55px; line-height: 17px; padding-top: 10px;}
+  .t-cell.last, .tariff-wrap.recommended .t-cell.last, .tariff-wrap:hover .t-cell.last {border-bottom: none;}
+  .tariff-review-wrap .t-cell.last {margin-bottom: 30px;}
+  .t-cell-bottom { position: absolute; bottom: 30px; left: 0; margin: 0 auto; width: 100%}
+
+  //--------------------
+
+  .tarif-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+
+
+  .tarif {
+    width: 260px;
+    border: 1px solid #3b9cec;
+    padding: 10px 5px;
+    margin: 8px;
+
+    &__head {
+      border-bottom: 1px solid #3b9cec;
+      font-weight: bold;
+      padding: 10px 0;
+      margin: 0;
+      min-height: 100px;
+      font-size: 21px;
+    }
+
+    ul {
+      list-style-type: none;
+      text-align: center;
+      font-size: 16px;
+      padding-top: 15px;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: solid 1px #3b9cec;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+      }
+
+    }
+  }
+}

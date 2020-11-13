@@ -1,0 +1,79 @@
+.landing-dtkt_november2020_1{
+
+  .package__old-price{
+    display: none;
+  }
+
+  .package__price-half{
+    display: none;
+  }
+
+  .dtkt-promo{
+    background: linear-gradient(to right, #df3341 0%, #df3341 100%);
+
+    img{
+      border-radius: 0px;
+
+      @media (max-width: 767px){
+        border-radius: 0px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .container{
+      padding-top: 0;
+      padding-bottom: 0;
+      @media (max-width: 767px){
+        padding: 0;
+      }
+
+    }
+  }
+
+  .landing-title{
+      text-align: center;
+      color: #262626;
+      padding-top: 20px;
+
+    span{
+      padding: 0px;
+    }
+  }
+
+  .landing-section__action{
+    text-align: center;
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 0;
+
+    @media (max-width: 767px){
+      font-size: 16px;
+    }
+  }
+
+  .packages {
+    padding-top: 30px;
+
+    &__title{
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: .88px;
+      text-align: center;
+      color: #000;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 30px 0;
+
+
+
+      @media (max-width: 767px){
+        font-size: 25px;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  @import "scss/package";
+
+}

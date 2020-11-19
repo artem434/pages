@@ -1,0 +1,154 @@
+.advantages {
+  text-align: center;
+  background: #fdc613  url(images/adv_bg-min.jpg) no-repeat bottom  center;
+  &__container {
+    @extend %container;
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px){
+      margin-bottom: 20px;
+
+    }
+  }
+
+
+
+  &__item{
+    width: 165px;
+    height: 250px;
+    margin: 0 15px;
+    padding-top: 40px;
+    @media (max-width: 1200px){
+      margin: 15px;
+    }
+
+    @media (max-width: 767px){
+      width: 44%!important;
+      margin: 7px;
+      height: 180px!important;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &:nth-child(1){
+      background: #fff url(images/adv_bg1-min.jpg) no-repeat top  center;
+
+      svg{
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 25px;
+        @media (max-width: 767px){
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    &:nth-child(2){
+      width: 260px;
+      height: 339px;
+      background: #fff url(images/adv_bg2-min.jpg) no-repeat top  center;
+      padding-top: 60px;
+      @media (max-width: 1200px){
+        order: -2;
+      }
+      @media (max-width: 767px){
+        padding-top: 20px;
+      }
+
+      svg{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 65px;
+        @media (max-width: 767px){
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    &:nth-child(3){
+      width: 260px;
+      height: 339px;
+      background: #fff url(images/adv_bg3-min.jpg) no-repeat top  center;
+      padding-top: 60px;
+      @media (max-width: 1200px){
+        order: -1;
+      }
+      @media (max-width: 767px){
+        padding-top: 20px;
+      }
+      svg{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 65px;
+        @media (max-width: 767px){
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    &:nth-child(4){
+      background: #fff url(images/adv_bg4-min.jpg) no-repeat top  center;
+
+      svg{
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 25px;
+        @media (max-width: 767px){
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+
+
+    svg{
+      fill: #fff;
+      @media (max-width: 767px){
+        margin-bottom: 20px!important;
+      }
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: left;
+      color: #242424;
+      padding-left: 30px;
+
+      @media (max-width: 767px){
+        font-size: 16px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__btn{
+    margin-top: 70px;
+    text-align: center;
+
+    @media (max-width: 767px){
+      margin-top: 30px;
+    }
+    .btn{
+      @extend %btn;
+    }
+  }
+}

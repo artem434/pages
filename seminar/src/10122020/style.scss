@@ -2,12 +2,12 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap&subset=cyrillic');
 
 $color-pink: #f354e4;
 $color-blue: #64d9ff;
 $color-white: #ffffff;
-$color-black: #0e131c;
+$color-black: #242424;
 $color-black-light: #515660;
 .kbs-hide{
   display: none;
@@ -21,7 +21,7 @@ button{
 }
 
 .seminar-landing{
-    background-color: #030a16;
+    background-color: #f1f1f1;
 
 
 }
@@ -89,47 +89,46 @@ html * {
 
 
 %title {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1.17;
-  text-align: left;
-  color: $color-white;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.27;
+  margin-bottom: 75px;
   text-transform: uppercase;
-  margin-bottom: 40px;
 
   @media (max-width: 1200px){
-    font-size: 30px;
-    text-align: center;
-
+    margin-bottom: 30px;
   }
 
   @media (max-width: 767px){
     font-size: 24px;
-    margin-bottom: 25px;
   }
 }
 
 %btn {
   display: inline-block;
-    max-width: 300px;
-    width: 100%;
+    width: 370px;
     font-size: 22px;
     font-weight: bold;
     line-height: 2.6;
     transition: all 0.3s ease 0s;
     border-radius: 35px;
-    background-image: linear-gradient(to right, #ff23ea, #871cf4, #26caff);
-     box-shadow: 0px 0px 15px $color-blue;
+    background-image: linear-gradient(to top, #f5376f, #db32bd);
+    box-shadow: 0px 25px 30px 0 rgba(176, 1, 95, 0.25);
     border: none;
     color: $color-white;
     letter-spacing: 2.2px;
-  text-transform: uppercase;
+    text-transform: uppercase;
+    @media (max-width: 767px){
+      max-width: 370px;
+      width: 100%;
+    }
+
 
 
   &:hover {
     color: #ffffff;
     letter-spacing: 3px;
-    background-image: linear-gradient(to left, #ff23ea, #871cf4, #26caff);
+    background-image: linear-gradient(to bottom, #f5376f, #db32bd);
     transition: all 0.3s ease 0s;
     text-decoration: none;
   }
@@ -175,27 +174,29 @@ html * {
 
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
-@import "mixins";
-@import "variables";
-@import "haeding";
-@import "menu";
-@import "hero";
-@import "info";
-@import "profession";
-@import "lectors";
-@import "themes";
-@import "theme";
-@import "gift";
-@import "advantages";
-@import "order";
-@import "package";
-@import "pricing-timer";
-@import "partners";
-@import "loader-page";
+@import "scss/mixins";
+@import "scss/variables";
+@import "scss/haeding";
+@import "scss/menu";
+@import "scss/hero";
+@import "scss/video";
+@import "scss/info";
+@import "scss/profession";
+@import "scss/lectors";
+@import "scss/themes";
+@import "scss/theme";
+@import "scss/advantages";
+@import "scss/gift";
+@import "scss/order";
+@import "scss/pricing-timer";
+@import "scss/package";
+@import "scss/reviews";
+@import "scss/free-video";
+@import "scss/partners";
+@import "scss/loader-page";
 /*@import "video";*/
-@import "free-video";
 /*@import "map";*/
-@import "modal-video";
+@import "scss/modal-video";
 
 
 .branding-page #main{

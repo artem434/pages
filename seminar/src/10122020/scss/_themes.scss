@@ -1,0 +1,120 @@
+$color: #c000ae;
+.themes {
+
+
+  @media (max-width: 767px){
+    text-align: center;
+  }
+
+  &__container {
+    @extend %container;
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    @media (max-width: 1200px){
+      padding-bottom: 90px;
+    }
+  }
+
+  &__title{
+    @extend %title;
+    margin-bottom: 0;
+
+    @media (max-width: 767px){
+      text-align: left;
+    }
+
+    &--one{
+      color: #da2cd7;
+      margin-bottom: 15px;
+    }
+
+    &--two{
+      color: #c82d56;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__caption{
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.27;
+    text-align: left;
+    color: #60bf75;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+
+    @media (max-width: 767px){
+      font-size: 24px;
+    }
+  }
+
+  &__sections{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1200px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme{
+      min-height: 466px;
+      @media (max-width: 1200px){
+        min-height: auto;
+      }
+    }
+  }
+
+  &__section{
+    width: 49%;
+    @media (max-width: 1200px){
+      width: 100%;
+    }
+  }
+
+
+  .questions{
+    padding: 30px;
+    background-image: linear-gradient(to left, #7fed94, #f3cf38);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #0e131c;
+
+    @media (max-width: 767px){
+      padding: 20px 10px;
+      font-size: 18px;
+    }
+
+    p{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    span{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.33;
+      display: block;
+      @media (max-width: 767px){
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__btn{
+    padding-top: 90px;
+    text-align: center;
+
+    @media (max-width: 1200px){
+      padding-top: 60px;
+    }
+    .btn{
+      @extend %btn;
+    }
+  }
+}

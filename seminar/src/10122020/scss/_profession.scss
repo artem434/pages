@@ -1,0 +1,101 @@
+@charset "utf-8";
+.profession {
+  background: #860bd5  url(images/prof_bg-min.jpg) no-repeat bottom  center;
+
+  &__container {
+    @extend %container;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+
+  }
+
+  &__title{
+    @extend %title;
+    color: #ffffff;
+
+    @media (max-width: 767px){
+      margin-top: 0;
+    }
+  }
+
+  &__content{
+
+
+  }
+
+  &__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li{
+      max-width: 260px;
+      width: 100%;
+      color: $color-black;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #242424;
+      background-color: #fff;
+      height: 290px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+      margin: 15px;
+      padding-top: 40px;
+
+      @media (max-width: 1200px){
+        width: 50%;
+      }
+      @media (max-width: 767px){
+       margin: 0 0 15px;
+        width: 100%;
+        height: auto!important;
+        padding-bottom: 15px;
+      }
+
+      &:nth-child(1){
+        background: #fff url(images/prof_bg1-min.jpg) no-repeat bottom  center;
+      }
+
+      &:nth-child(2){
+        height: 310px;
+        background: #fff url(images/prof_bg2-min.jpg) no-repeat bottom  center;
+        @media (max-width: 1200px){
+          order: -2;
+        }
+      }
+
+      &:nth-child(3){
+        height: 310px;
+        background: #fff url(images/prof_bg3-min.jpg) no-repeat bottom  center;
+        @media (max-width: 1200px){
+          order: -1;
+        }
+      }
+
+      &:nth-child(4){
+        background: #fff url(images/prof_bg4-min.jpg) no-repeat bottom  center;
+      }
+
+      b{
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__btn{
+    text-align: center;
+    margin-top: 65px;
+
+    @media (max-width: 767px){
+      margin-top: 15px;
+    }
+    .btn{
+      @extend %btn;
+    }
+  }
+}

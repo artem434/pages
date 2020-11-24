@@ -1,7 +1,7 @@
 .package {
-  $color-one:#fb5d69;
-  $color-two:#ff4452;
-  $color-three:#df3341;
+  $color-one:#fed57d;
+  $color-two:#ffbd30;
+  $color-three:#ff9c00;
   $color-period:#ffffff;
 
   &__header{
@@ -11,15 +11,15 @@
 
   .btn-package{
     background-color: $color-one;
-    color: #fff;
+    color: #000;
 
     &:after{
-      border-bottom: 2px solid #fff;
-      border-right: 2px solid #fff;
+      border-bottom: 2px solid #000;
+      border-right: 2px solid #000;
     }
 
     &:hover{
-      background-color: #ae3942;
+      background-color: #dd2066;
     }
   }
 
@@ -27,19 +27,20 @@
 
     .package__header{
       background-color: $color-two;
+
     }
 
     .btn-package{
       background-color: $color-two;
-      color: #fff;
+      color: #000;
 
       &:after{
-        border-bottom: 2px solid #fff;
-        border-right: 2px solid #fff;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
       }
 
       &:hover{
-        background-color: #ae3942;
+        background-color: #dd2066;
       }
     }
   }
@@ -48,6 +49,7 @@
 
     .package__header{
       background-color: $color-three;
+      color: #ffffff;
     }
 
     .btn-package{
@@ -61,7 +63,7 @@
       }
 
       &:hover{
-        background-color:#ae3942;
+        background-color:#dd2066;
       }
     }
 
@@ -72,9 +74,9 @@
     &:before{
       position: absolute;
       content: "топ продажу";
-      color: #040207;
+      color: #fff;
       border-radius: 4px;
-      background-color: #ffea00;
+      background-color: #dd2066;
       box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
       width: 180px;
       left: 50%;
@@ -97,6 +99,11 @@
     @media (max-width: 767px){
       min-height: auto;
     }
+  }
+
+  &__old-price{
+    font-size: 20px;
+    color: #837e75;
   }
 
   &__month{
@@ -180,10 +187,10 @@
     display: none;
   }
   .btn-package--six{
-    display: none;
+    display: inline-block;
   }
   .btn-package--twelve{
-    display: inline-block;
+    display: none;
   }
 
 

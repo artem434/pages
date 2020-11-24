@@ -41,10 +41,10 @@
                       <span>ЕКСПЕРТ<br>та подарунки</span>
                     </template>
                     <template v-slot:period>
-                      <div class="package__month">3 місяці</div>
+                      <!--<div class="package__month">3 місяці</div>-->
                       <p class="package__custom-price">
-                        <price article="ep-dtkt_ek_gift1" :options="{periods: 3}" format="0"/>
-                        грн
+                        <price article="ep-dtkt_ek_gift1" :options="{periods: 1}" format="0"/>
+                        грн/міс.
                       </p>
                     </template>
 
@@ -82,10 +82,10 @@
                   <span>ПРОФІ<br>та подарунки</span>
                 </template>
                 <template v-slot:period>
-                  <div class="package__month">3 місяці</div>
+              <!--    <div class="package__month">3 місяці</div>-->
                   <p class="package__custom-price">
-                    <price article="ep-dtkt_pr_gift1" :options="{periods: 3}" format="0"/>
-                    грн
+                    <price article="ep-dtkt_pr_gift1" :options="{periods: 1}" format="0"/>
+                    грн/міс.
                   </p>
                 </template>
 
@@ -121,10 +121,10 @@
                           <span>ПРОФІ + 7eminar.ua<br>та подарунки</span>
                         </template>
                             <template v-slot:period>
-                              <div class="package__month">3 місяці</div>
+                              <!--<div class="package__month">3 місяці</div>-->
                               <p class="package__custom-price">
-                                <price article="ep-dtkt_pp_gift1" :options="{periods: 3}" format="0"/>
-                                грн
+                                <price article="ep-dtkt_pp_gift1" :options="{periods: 1}" format="0"/>
+                                грн/міс.
                               </p>
                             </template>
                         <template v-slot:gifts>
@@ -163,10 +163,10 @@
                 <span>ЕКСПЕРТ<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                <div class="package__month">3 місяці</div>
+               <!-- <div class="package__month">3 місяці</div>-->
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_ek_action" :options="{periods: 3}" format="0"/>
-                  грн
+                  <price article="ep-dtkt_ek_action" :options="{periods: 1}" format="0"/>
+                  грн/міс.
                 </p>
               </template>
 
@@ -201,10 +201,10 @@
                 <span>ПРОФІ<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                <div class="package__month">3 місяці</div>
+               <!-- <div class="package__month">3 місяці</div>-->
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_pr_action" :options="{periods: 3}" format="0"/>
-                  грн
+                  <price article="ep-dtkt_pr_action" :options="{periods: 1}" format="0"/>
+                  грн/міс.
                 </p>
               </template>
 
@@ -239,10 +239,10 @@
                 <span>ПРОФІ + 7eminar.ua<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                 <div class="package__month">3 місяці</div>
+               <!--  <div class="package__month">3 місяці</div>-->
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_pp_action" :options="{periods: 3}" format="0"/>
-                  грн
+                  <price article="ep-dtkt_pp_action" :options="{periods: 1}" format="0"/>
+                  грн/міс.
                 </p>
               </template>
               <template v-slot:gifts>

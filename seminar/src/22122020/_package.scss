@@ -1,4 +1,4 @@
-$package-color: #ee1fdf;
+$package-color: #d9384c;
 .package {
   position: relative;
   z-index: 1;
@@ -12,7 +12,7 @@ $package-color: #ee1fdf;
   &--gold-plus{
     background-image: linear-gradient(to right, #ff732a, #ff9628);
     .package__presents{
-      color: #930188;
+      color: $package-color;
     }
   }
 
@@ -48,28 +48,25 @@ $package-color: #ee1fdf;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 1.5;
-    margin-bottom: 5px;
-    color: #8e1585;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+    color: #363636;
     height: 53px;
-    padding-top: 5px;
+    padding-top: 30px;
 
-
-    &--gold{
-     color: #136197;
+    span{
+      font-size: 16px;
     }
 
-    &--platform{
-      color: 363636;
+    &--gold-plus{
       font-size: 18px;
-      margin-bottom: 55px;
-      padding-top: 40px;
+      margin-bottom: 25px;
+      padding-top: 15px;
     }
-  }
 
-  &__subheader{
-    font-size: 16px;
-    font-weight: 500;
   }
 
   &__head{
@@ -86,13 +83,10 @@ $package-color: #ee1fdf;
     }
 
     &--standart{
-      background-image: linear-gradient(to top, #ffffff, #d5d5d5);
+      background-color: #cdcdcd;
     }
     &--gold{
-      background-color: #facfcf;
-    }
-    &--gold-more{
-      background-image: linear-gradient(to top, #ffbaf9, #b0ebff);
+      background-image: linear-gradient(-45deg,#ff96f7,#ff96f7,#ff96f7,#ff96f7);
     }
 
   }
@@ -118,7 +112,9 @@ $package-color: #ee1fdf;
     text-align: center;
     color: #363636;
     padding-bottom: 10px;
+    &-platform{
 
+    }
     span{
       font-size: 18px;
     }
@@ -134,8 +130,10 @@ $package-color: #ee1fdf;
     letter-spacing: 0.9px;
     text-align: center;
     color: #363636;
-  }
 
+
+
+  }
   .btn{
     width: 210px;
     height: auto;
@@ -151,15 +149,23 @@ $package-color: #ee1fdf;
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
-
     span{
       font-size: 14px;
     }
-
     &:hover,
     &:active,
     &:focus {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+
+    }
+    &--Sale{
+
+      &:hover,
+      &:active,
+      &:focus {
+
+
+      }
     }
   }
 
@@ -168,12 +174,10 @@ $package-color: #ee1fdf;
 
     &--footer {
       margin: 0;
-
       .btn{
         background-image: linear-gradient(to top, $package-color, $package-color);
         color: #ffffff;
       }
-
       .btn--Sale{
         width: 210px;
         height: auto;
@@ -189,11 +193,9 @@ $package-color: #ee1fdf;
         font-weight: bold;
         line-height: 30px;
         text-transform: uppercase;
-
         span{
           font-size: 14px;
         }
-
         &:hover,
         &:active,
         &:focus {
@@ -206,6 +208,9 @@ $package-color: #ee1fdf;
         display: none;
       }
     }
+
+
+
 
     &--platform {
       display: none;
@@ -237,6 +242,7 @@ $package-color: #ee1fdf;
 
 
   &__list {
+    padding: 0 10px;
     list-style: none;
     text-align: left;
     font-size: 15px;
@@ -285,6 +291,7 @@ $package-color: #ee1fdf;
       }
       &.is-platform {
         color: #2a2a2a;
+        font-weight: normal;
 
         &:before {
           position: absolute;
@@ -301,11 +308,7 @@ $package-color: #ee1fdf;
     &--footer {
       margin-bottom: 30px;
       color: #fff;
-    }
-    b{
-      span{
-        text-transform: uppercase;
-      }
+
     }
   }
 
@@ -318,10 +321,6 @@ $package-color: #ee1fdf;
 
   &__footer {
     padding: 0 5px 50px;
-
-    &--gold-plus{
-
-    }
   }
 
   &__presents {
@@ -358,5 +357,8 @@ $package-color: #ee1fdf;
       font-size: 14px;
       line-height: 23px;
     }
+
   }
+
+
 }

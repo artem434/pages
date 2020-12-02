@@ -1,0 +1,110 @@
+.hero {
+  background: url(images/hero_bg_mob-min.png) center center no-repeat;
+  @at-root .webp & {
+    background: url(images/hero_bg_mob.webp) center center no-repeat;
+    background-size: cover;
+  }
+
+  @include mobile() {
+    background: url(images/hero_bg-min.jpg) center center no-repeat;
+    height: 750px;
+    background-size: cover;
+
+    @at-root .webp & {
+      background: url(images/hero_bg.webp) center center no-repeat;
+      background-size: cover;
+    }
+  }
+  &__main {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile() {
+      padding-top: 60px;
+    }
+
+    @include laptop-l() {
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-size: 37.5px;
+    letter-spacing: 1.37px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: left;
+    color: #feffff;
+    text-transform: uppercase;
+    padding: 18px 25px 17px 23px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 155px 0 rgba(2, 27, 65, 0.92);
+    background-image: linear-gradient(to top, #045de9, #09c6f9);
+    margin-top: 0;
+
+    @include mobile() {
+      font-size: 79px;
+      line-height: 1.16;
+      letter-spacing: 2.37px;
+    }
+
+    small{
+      font-size: 21px;
+      letter-spacing: 0.62px;
+      color: #feffff;
+
+      @include mobile() {
+        font-size: 44px;
+        letter-spacing: 2.6px;
+      }
+    }
+    span{
+      font-size: 31.5px;
+      letter-spacing: 0.9px;
+
+      @include mobile() {
+        font-size: 67px;
+        letter-spacing: 2.01px;
+      }
+    }
+  }
+
+
+
+  &__date {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.54px;
+    text-align: left;
+    color: #045de9;
+    padding: 7px 16px 7px 19px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    margin-bottom: -20px;
+    z-index: 1;
+
+    @include mobile() {
+      font-size: 18px;
+    }
+
+    @include laptop-l() {
+      margin-left: 50px;
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+    text-align: center;
+
+    @include mobile() {
+      margin-top: 100px;
+    }
+    @include laptop-l() {
+      margin-left: 50px;
+      text-align: left;
+    }
+
+  }
+}

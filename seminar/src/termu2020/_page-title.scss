@@ -1,0 +1,23 @@
+.page-titles {
+  margin: 0 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #2b6ed8;
+
+  span{
+    text-transform: uppercase;
+  }
+
+
+  @include laptop-l() {
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 1;
+
+    br{
+      display: none;
+    }
+  }
+}

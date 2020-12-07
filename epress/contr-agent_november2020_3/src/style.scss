@@ -1,4 +1,4 @@
-.landing-buhzakon_novemder2020_3{
+.landing-contr-agent_november2020_3{
 
   .package__old-price{
     display: none;
@@ -9,26 +9,18 @@
   }
 
   .dtkt-promo{
-    background-color: #000;
-    img{
-      @media (max-width: 767px){
-        display: block;
-        margin: 0 auto;
-      }
-    }
+    background-color: #000 ;
+
     .container{
       padding-top: 0;
       padding-bottom: 0;
-      @media (max-width: 767px){
-        padding: 0px;
-      }
     }
   }
 
   .landing-title{
-    text-align: center;
-    color: #262626;
-    padding-top: 20px;
+      text-align: center;
+      color: #262626;
+      padding-top: 20px;
 
     span{
       padding: 0px;

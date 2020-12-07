@@ -5,8 +5,8 @@
   $color-period:#dedddd;
 
   &__header{
-    background-color: $color-one;
-    color: #dedddd;
+      background-color: $color-one;
+      color: #dedddd;
   }
 
   .btn-package{
@@ -177,13 +177,13 @@
   }
 
   .btn-package--three{
-    display: inline-block;
+    display: none;
   }
   .btn-package--six{
-    display: none;
+    display: inline-block;
   }
   .btn-package--twelve{
-    display: none;
+  display: none;
   }
 }
 

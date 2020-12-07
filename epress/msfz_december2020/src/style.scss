@@ -1,4 +1,4 @@
-.landing-buhzakon_novemder2020_3{
+.landing-msfz_december2020{
 
   .package__old-price{
     display: none;
@@ -9,26 +9,29 @@
   }
 
   .dtkt-promo{
-    background-color: #000;
-    img{
-      @media (max-width: 767px){
-        display: block;
-        margin: 0 auto;
-      }
-    }
+   background-color: #021e4e;
     .container{
       padding-top: 0;
       padding-bottom: 0;
+
       @media (max-width: 767px){
         padding: 0px;
       }
     }
   }
+  .cover__img{
+    @media (max-width: 767px){
+      img{
+        margin:0 auto;
+        display: block;
+      }
+    }
+  }
 
   .landing-title{
-    text-align: center;
-    color: #262626;
-    padding-top: 20px;
+      text-align: center;
+      color: #262626;
+      padding-top: 20px;
 
     span{
       padding: 0px;
@@ -66,4 +69,7 @@
 
   @import "scss/package";
 
+  .landing-section--advantages{
+    display: none;
+  }
 }

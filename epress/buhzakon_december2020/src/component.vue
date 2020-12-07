@@ -1,20 +1,32 @@
 <template>
-  <landing name="buhzakon_novemder2020_3" advantages="epressa_add_interbuh" class="landing-buhzakon_novemder2020_3">
+  <landing name="dtkt_december2020" advantages="epressa_add_interbuh" class="landing-buhzakon_december2020">
     <template v-slot:cover>
+      <Snowf
+          :amount="50"
+          :size="5"
+          :speed="1.5"
+          :wind="0"
+          :opacity="0.8"
+          :swing="1"
+          :image="null"
+          :zIndex="null"
+          :resize="true"
+          color="#fff"
+      />
       <div class="dtkt-promo">
         <div class="landing-section">
           <div class="container">
             <div class="cover">
               <a class="d-none d-md-block" href="#gift">
                 <picture class="cover__img">
-                  <source :src="mix('images/hero_buh.webp')" type="image/webp">
-                  <img :src="mix('images/hero_buh-min.jpg')" class="img-fluid" alt="IB">
+                  <source :src="mix('images/bz.webp')" type="image/webp">
+                  <img :src="mix('images/bz-min.jpg')" class="img-fluid" alt="IB">
                 </picture>
               </a>
               <a class="d-block d-md-none" href="#gift">
                 <picture class="cover__img">
-                  <source :src="mix('images/320_buh.webp')" type="image/webp">
-                  <img :src="mix('images/320_buh-min.jpg')" class="img-fluid" alt="IB">
+                  <source :src="mix('images/320_bz.webp')" type="image/webp">
+                  <img :src="mix('images/320_bz-min.jpg')" class="img-fluid" alt="IB">
                 </picture>
               </a>
             </div>
@@ -50,7 +62,7 @@
           <template v-slot:gifts>
             <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
               Online-Семінар</a></li>
-            <li class="no-active">Телевізор Xiaomi Mi TV 4A 32</li>
+            <li class="no-active">Смартфон або планшет</li>
           </template>
           <template v-slot:abilities>
             <li>Електронне видання</li>
@@ -80,7 +92,7 @@
           <template v-slot:gifts>
             <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
               Online-Семінар</a></li>
-            <li><a href="https://www.xiaomi.ua/tv/televizor-xiaomi-mi-tv-4a-32-14gb-2831195/" target="_blank">Телевізор Xiaomi Mi TV 4A 32 </a></li>
+            <li><a href="https://iglaz.ua/xiaomi-redmi-9a-2-32gb-granite-gray-eu/option/48272" target="_blank">Смартфон  </a> або <a href="https://www.citrus.ua/planshety/huawei-mediapad-t3-7-8gb-grey-615719.html" target="_blank">планшет</a></li>
           </template>
           <template v-slot:abilities>
             <li>Електронне видання</li>
@@ -96,18 +108,18 @@
           </template>
         </landing-package>
       </landing-package-row>
-
-
     </template>
-
   </landing>
 </template>
 
 <script>
 import Page from '../../core/Page'
-
+import Snowf from 'vue-snowf';
 export default {
   mixins: [Page],
+  components: {
+    Snowf
+  },
   computed: {
 
     btnText: function() {

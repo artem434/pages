@@ -65,14 +65,14 @@
             <p class="package__list-show" @click="show = !show">{{ btnText }}</p>
           </template>
         </landing-package>
-        <landing-package article="ep-buhzakon_action" class="package__three package__plus-top">
+        <landing-package article="ep-buhzakon_action1" class="package__three package__plus-top">
           <template v-slot:title>
             <span>БУХГАЛТЕР&ЗАКОН <br> ТА ПОДАРУНКИ</span>
           </template>
           <template v-slot:period>
             <div class="package__month">3 місяці</div>
             <p class="package__custom-price">
-              <price article="ep-buhzakon_action" :options="{periods: 3}" format="0"/>
+              <price article="ep-buhzakon_action1" :options="{periods: 3}" format="0"/>
               грн
             </p>
           </template>

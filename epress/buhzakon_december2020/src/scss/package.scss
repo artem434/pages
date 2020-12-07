@@ -1,12 +1,12 @@
 .package {
-  $color-one:#be46e6;
-  $color-two:#be00ff;
-  $color-three:#7d00a7;
+  $color-one:#0360b7;
+  $color-two:#c40202;
+  $color-three:#c40202;
   $color-period:#dedddd;
 
   &__header{
     background-color: $color-one;
-    color: #dedddd;
+    color: #fff;
   }
 
   .btn-package{
@@ -72,9 +72,9 @@
     &:before{
       position: absolute;
       content: "топ продажу";
-      color: #040207;
+      color: #fff;
       border-radius: 4px;
-      background-color: #38ff84;
+      background-color: #0360b7;
       box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
       width: 180px;
       left: 50%;

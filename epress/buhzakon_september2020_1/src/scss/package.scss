@@ -1,0 +1,155 @@
+.package {
+  $color-header-one:#de4fab;
+  $color-header-two:#0a88f7;
+  $color-period:#041b6c;
+
+
+  &__header{
+      background-color: $color-header-one;
+  }
+
+  &__two{
+    .package__header{
+      background-color: $color-header-two;
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    color: #262626;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  
+  &__month{
+    font-size: 20px;
+    line-height: 1.25;
+    color: $color-period;
+    margin: 20px auto;
+  }
+
+  &__price{
+    display: none;
+  }
+
+  &__custom-price{
+    display: block;
+    font-size: 40px;
+    line-height: 0.63;
+    text-align: center;
+    color: #262626;
+    font-weight: bold;
+  }
+
+  &__presents{
+    display: block;
+  }
+
+  &__presents-title, &__abilities-title{
+    color: #040207;
+  }
+
+  &__presents-list {
+
+    li {
+      color: #040207;
+
+      &:before{
+        background: transparent url(images/gift_purple.svg) no-repeat top center;
+        width: 20px;
+        height: 24px;
+      }
+    }
+
+    .no-active{
+      color: #bdbbbb;
+      cursor: not-allowed;
+
+      a{
+        color: #bdbbbb;
+        cursor: not-allowed;
+        text-decoration: none;
+
+        &:hover{
+          color: #bdbbbb;
+          cursor: not-allowed;
+          text-decoration: none;
+        }
+      }
+
+      &:before{
+        background: transparent url(images/gift_gray.svg) no-repeat top center;
+      }
+    }
+  }
+
+  &__presents-sub-list{
+    padding-left: 0;
+    padding-top: 10px;
+    list-style-type: disc;
+
+    li{
+      color: #e810ff;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      span{
+        color: #010000;
+      }
+
+      &:before{
+        content: none;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .no-active{
+      color: #bdbbbb;
+      span{
+        color: #bdbbbb;
+      }
+    }
+  }
+
+  &__list-show{
+    color: #0a3fa7;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .btn-package--six{
+    display: none;
+  }
+
+  .btn-package--three{
+    display: inline-block;
+    background-color: #de4fab;
+    transition: all 0.5s;
+
+    &:hover{
+      background-color: #f5388c;
+    }
+  }
+
+  &__abilities-list{
+    flex: 1 0 auto;
+
+    li{
+      color: #000;
+    }
+  }
+}
+
+.package-two{
+
+  .package__presents{
+    display: none;
+  }
+
+  .package__present{
+    display: block;
+  }
+}

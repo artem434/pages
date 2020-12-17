@@ -22,6 +22,9 @@ jQuery(($) => {
             body.removeClass('no-scroll');
         }
     });
+    if (document.location.host == "seminars.dtkt.ua") {
+        $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
+    }
 
 });
 

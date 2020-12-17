@@ -29,13 +29,7 @@ $color:  #60bf75;
 
    &--section{
      padding-right: 0px;
-     .theme__title{
-       min-height: 48px;
 
-       @media (max-width: 767px){
-         min-height: auto;
-       }
-     }
    }
   }
 

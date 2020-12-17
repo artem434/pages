@@ -18,7 +18,7 @@ $color: #c000ae;
 
   &__title{
     @extend %title;
-    margin-bottom: 0;
+
 
     @media (max-width: 767px){
       text-align: left;

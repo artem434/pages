@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="hero__content">
-                <p class="hero__date"> 10 грудня <b>|</b> <span>Online-трансляція</span></p>
+                <p class="hero__date"> <span>відеозапис</span></p>
                 <h1 class="hero__title">Великий
                     <span>Бухгалтерський</span>
                     <b>Online-Семінар</b></h1>
@@ -59,14 +59,14 @@
 
             <div class="hero__lectors">
                 <picture>
-                    <source srcset="{{ link }}/hero_lectors.webp" type="image/webp"/>
-                    <img src="{{ link }}/hero_lectors-min.png" alt="Лектори"/>
+                    <source srcset="{{ link }}/lectors.webp" type="image/webp"/>
+                    <img src="{{ link }}/lectors-min.png" alt="Лектори"/>
                 </picture>
             </div>
         </div>
     </div>
 
-    <div class="video">
+  {#  <div class="video">
         <div class="video__container container">
             <h2 class="video__title">Головна online-подія зими</h2>
             <div class="video__content">
@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>#}
 
     <div class="info"  id="info">
         <div class="info__container container">
@@ -172,8 +172,8 @@
                     <div class="lectors__img">
                         <picture>
                             {#  <source srcset="{{ link }}/lectors_tm_mob.png" media="(max-width: 767.98px)" >#}
-                            <source srcset="{{ link }}/lectors_vv.webp" type="image/webp"/>
-                            <img src="{{ link }}/lectors_vv-min.jpg" alt=" Вікторія Величко"/>
+
+                            <img src="{{ link }}/vv1.png" alt=" Вікторія Величко"/>
                         </picture>
                     </div>
                     <div class="lectors__footer">
@@ -262,12 +262,12 @@
 
     <div id="themes" class="themes">
         <div class="themes__container">
-            <div class="themes__title">регламент</div>
-            <p class="themes__caption">Основний потік</p>
+            <div class="themes__title">теми</div>
+            {#<p class="themes__caption">Основний потік</p>#}
 
                 <div class="theme">
                     <div class="theme__header">
-                        <p class="theme__info"><span>10:00–10:40</span> <b>|</b>Мар’яна Кавин</p>
+                        <p class="theme__info">Мар’яна Кавин</p>
                         <p class="theme__title">ФОП-звітність за 2020 рік з ЄСВ та єдиного податку. Новації-2021</p>
                     </div>
                     <ol class="theme__list ">
@@ -280,7 +280,7 @@
 
                 <div class="theme">
                     <div class="theme__header">
-                        <p class="theme__info"><span>10:40 – 11:20</span> <b>|</b>Вікторія Величко</p>
+                        <p class="theme__info">Вікторія Величко</p>
                         <p class="theme__title">Податкові зміни-2021. Нова і стара декларації <br>з податку на прибуток</p>
                     </div>
                     <ol class="theme__list ">
@@ -293,7 +293,7 @@
 
                 <div class="theme">
                     <div class="theme__header">
-                        <p class="theme__info"><span>11:20 – 12:00</span> <b>|</b>Тетяна Мойсеєнко</p>
+                        <p class="theme__info">Тетяна Мойсеєнко</p>
                         <p class="theme__title">ЄСВ-2021. ПДФО-перерахунки-2020. Святкові подарунки</p>
                     </div>
                     <ol class="theme__list ">
@@ -305,72 +305,60 @@
 
 
                 </div>
-                <div class="theme__breake"><p class="theme__info"><span>12:00–12:30</span> <b>|</b> Перерва </p></div>
 
-
-            <div class="themes__sections">
-                <div class="themes__section">
-                    <p class="themes__title themes__title--one">Секція 1</p>
-                    <div class="theme">
-                        <div class="theme__header theme__header--section">
-
-                            <p class="theme__info theme__info--one"><span>12:30–13:30</span> <b>|</b>Ірина Губіна</p>
-                            <p class="theme__title">Відрядження-2021: добові, витрати, аванс і звітність</p>
-                        </div>
-                        <ol class="theme__list theme__list--section ">
-                            <li class="theme__list-item">Наказ про відрядження, строки, обґрунтування витрат</li>
-                            <li class="theme__list-item">Аванс на відрядження: розмір, валюта, строки, форма видачі</li>
-                            <li class="theme__list-item">Витрати на відрядження: добові, проїзд, проживання. Курсові різниці</li>
-                            <li class="theme__list-item">Авансовий звіт та підтверджуючі документи: як уникнути ПДФО та ВЗ</li>
-                        </ol>
-                    </div>
-
-                    <div class="theme">
-                        <div class="theme__header theme__header--section">
-                            <p class="theme__info theme__info--one"><span>13:30–14:30</span> <b>|</b>Тимур Алієв</p>
-                            <p class="theme__title">РРО/ПРРО: черговий відкат часу. Нові штрафи з 1 січня 2021 року</p>
-                        </div>
-                        <ol class="theme__list theme__list--section ">
-                            <li class="theme__list-item"> РРО і ПРРО: нові штрафи з 1 січня 2021 року. Строк давності для РРО/ПРРО-порушень</li>
-                            <li class="theme__list-item">КОРО та РК: реєстрація/скасування реєстрації, ведення</li>
-                            <li class="theme__list-item">Z-звіт: електронний чи паперовий? Вибір, зберігання, надання під час перевірки</li>
-                            <li class="theme__list-item">Кешбек: механізм, ризики для продавця, штрафи</li>
-                        </ol>
-                    </div>
+                <div class="theme">
+                <div class="theme__header theme__header--section">
+                    <p class="theme__info">Сергій Дробоття</p>
+                    <p class="theme__title">ПДВ-зміни та звітність</p>
                 </div>
-                <div class="themes__section">
-                    <p class="themes__title themes__title--two">Секція 2</p>
-                    <div class="theme">
-                        <div class="theme__header theme__header--section">
-                            <p class="theme__info theme__info--two"><span>12:30–13:30</span> <b>|</b>Сергій Дробоття</p>
-                            <p class="theme__title">ПДВ-зміни та звітність</p>
-                        </div>
-                        <ol class="theme__list theme__list--section ">
-                            <li class="theme__list-item">Податковий кредит: як документально підтвердити. Наявні проблеми та наслідки</li>
-                            <li class="theme__list-item">Умовне постачання: хто і коли нараховує податкове зобов'язання. Приклади</li>
-                            <li class="theme__list-item">«Дешеві» продажі: не помилитись з базою оподаткування</li>
-                            <li class="theme__list-item">Практичні аспекти заповнення ПДВ-звітності</li>
-                        </ol>
-                    </div>
+                <ol class="theme__list theme__list--section ">
+                    <li class="theme__list-item">Податковий кредит: як документально підтвердити. Наявні проблеми та наслідки</li>
+                    <li class="theme__list-item">Умовне постачання: хто і коли нараховує податкове зобов'язання. Приклади</li>
+                    <li class="theme__list-item">«Дешеві» продажі: не помилитись з базою оподаткування</li>
+                    <li class="theme__list-item">Практичні аспекти заповнення ПДВ-звітності</li>
+                </ol>
+            </div>
 
-                    <div class="theme">
-                        <div class="theme__header theme__header--section">
-                            <p class="theme__info theme__info--two"><span>13:30–14:30</span> <b>|</b>Олександр Смирнов</p>
-                            <p class="theme__title">Перевірки ДПС і Держпраці та штрафи-2021</p>
-                        </div>
-                        <ol class="theme__list theme__list--section ">
-                            <li class="theme__list-item">Податкова перевірка: як законно перенести її початок і виграти час</li>
-                            <li class="theme__list-item">Листи від ДПС про надання інформації: чи можна не відповідати</li>
-                            <li class="theme__list-item">Планові перевірки Держпраці у 2021 році: як підготуватися</li>
-                            <li class="theme__list-item"> Штрафи у 2021 році: що змінилось і для кого</li>
-                        </ol>
-                    </div>
+                <div class="theme">
+                <div class="theme__header theme__header--section">
+
+                    <p class="theme__info">Ірина Губіна</p>
+                    <p class="theme__title">Відрядження-2021: добові, витрати, аванс і звітність</p>
                 </div>
+                <ol class="theme__list theme__list--section ">
+                    <li class="theme__list-item">Наказ про відрядження, строки, обґрунтування витрат</li>
+                    <li class="theme__list-item">Аванс на відрядження: розмір, валюта, строки, форма видачі</li>
+                    <li class="theme__list-item">Витрати на відрядження: добові, проїзд, проживання. Курсові різниці</li>
+                    <li class="theme__list-item">Авансовий звіт та підтверджуючі документи: як уникнути ПДФО та ВЗ</li>
+                </ol>
             </div>
-            <div class="questions">
-                <p>індивідуальні консультації від кожного з лекторів</p>
-                <span>Відповіді на ваші запитання надішлемо вже <b>11 грудня</b>  <br> разом з відеозаписом семінару.</span>
+
+                <div class="theme">
+                <div class="theme__header theme__header--section">
+                    <p class="theme__info ">Тимур Алієв</p>
+                    <p class="theme__title">РРО/ПРРО: черговий відкат часу. Нові штрафи з 1 січня 2021 року</p>
+                </div>
+                <ol class="theme__list theme__list--section ">
+                    <li class="theme__list-item"> РРО і ПРРО: нові штрафи з 1 січня 2021 року. Строк давності для РРО/ПРРО-порушень</li>
+                    <li class="theme__list-item">КОРО та РК: реєстрація/скасування реєстрації, ведення</li>
+                    <li class="theme__list-item">Z-звіт: електронний чи паперовий? Вибір, зберігання, надання під час перевірки</li>
+                    <li class="theme__list-item">Кешбек: механізм, ризики для продавця, штрафи</li>
+                </ol>
             </div>
+
+                <div class="theme">
+                <div class="theme__header theme__header--section">
+                    <p class="theme__info ">Олександр Смирнов</p>
+                    <p class="theme__title">Перевірки ДПС і Держпраці та штрафи-2021</p>
+                </div>
+                <ol class="theme__list theme__list--section ">
+                    <li class="theme__list-item">Податкова перевірка: як законно перенести її початок і виграти час</li>
+                    <li class="theme__list-item">Листи від ДПС про надання інформації: чи можна не відповідати</li>
+                    <li class="theme__list-item">Планові перевірки Держпраці у 2021 році: як підготуватися</li>
+                    <li class="theme__list-item"> Штрафи у 2021 році: що змінилось і для кого</li>
+                </ol>
+            </div>
+
             <p class="themes__btn">
                 <a href="#order" class="btn js-scroll-to">Детальніше ></a>
             </p>
@@ -384,15 +372,12 @@
             <div class="advantages__content">
                 <div class="advantages__item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C115 0 0 115.1 0 256c0 141 115.1 256 256 256 141 0 256-115.1 256-256C512 115 396.9 0 256 0zm0 482C131.4 482 30 380.6 30 256S131.4 30 256 30s226 101.4 226 226-101.4 226-226 226z" /><path d="M181 404l222-148-222-148v296zm30-240l138 92-138 92V164z"/></svg>
-                    <p>Online <br> та запис <br>семінару</p>
+                    <p>Відеозапис семінару та <br>
+                        відповідей на запитання</p>
                 </div>
                 <div class="advantages__item">
                     <svg height="512" viewBox="0 0 510 510" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M510 .986H0v390h270v118.027l60-40 60 40V390.986h120zM324.195 375.7C294.215 372.908 270 347.393 270 315.986c0-33.084 26.916-60 60-60s60 26.916 60 60c0 35.151-30.31 63.123-65.805 59.714zM360 452.959l-30-20-30 20v-52.076c19.239 6.802 40.809 6.785 60 0zm120-91.973h-72.082c7.68-13.246 12.082-28.618 12.082-45 0-49.626-40.374-90-90-90s-90 40.374-90 90c0 16.382 4.402 31.754 12.082 45H30v-330h450z"/><path d="M90 60.986h330v30H90zM90 120.986h330v30H90zM90 180.986h150v30H90zM90 240.986h105v30H90zM90 300.986h90v30H90z"/></svg>
                     <p>Сертифікат</p>
-                </div>
-                <div class="advantages__item">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve"><style></style><path d="M144.6 19.1v104.2H0v270.6h64.3V493l109.2-99.1h194v-85.4l88.4 80.2v-99.1H512V19.1H144.6zm192.8 344.8H161.8l-67.6 61.3v-61.3H30V153.3h307.4v210.6zM482 259.6h-56.2V321l-58.4-53V123.3H174.6V49.1H482v210.5z" fill="#fff"/><path d="M63.2 211.5h241v30h-241v-30zM95.3 275.7H272v30H95.3v-30z"/></svg>
-                    <p>Відповіді <br>на запитання</p>
                 </div>
                 <div class="advantages__item">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 569 569" xml:space="preserve"><style></style><path d="M66.2 66.3v492.9c0 5.2 4.2 9.5 9.5 9.5h360.2c5.2 0 9.5-4.2 9.5-9.5V161.1c0-.2-.1-.4-.1-.6 0-.8-.2-1.7-.5-2.4l-.3-.9c-.5-1-1.1-2-1.9-2.8l-94.8-94.8c-.8-.8-1.7-1.4-2.8-1.9l-.9-.3c-.8-.3-1.6-.4-2.5-.5-.2 0-.3-.1-.5-.1H75.7c-5.2.1-9.5 4.3-9.5 9.5zM413 151.7h-62.4V89.2l62.4 62.5zM85.2 75.8h246.4v85.3c0 5.2 4.2 9.5 9.5 9.5h85.3v379.1H85.2V75.8z"/><path  d="M464.3 492.9v19h28.4c5.2 0 9.5-4.2 9.5-9.5V9.5c0-5.2-4.2-9.5-9.5-9.5H132.6c-5.2 0-9.5 4.2-9.5 9.5v28.4h19V19h341.2v473.9h-19z"/><path  d="M142 189.6h227.5v19H142v-19zM142 132.7h75.8v19H142v-19zM142 246.4h151.7v19H142v-19zM312.7 246.4h56.9v19h-56.9v-19zM142 303.3h227.5v19H142v-19zM142 417.1h227.5v19H142v-19zM227.4 360.2h142.2v19H227.4v-19zM142 360.2h66.3v19H142v-19zM142 473.9h38v19h-38v-19zM198.9 473.9h170.6v19H198.9v-19z"/></svg>
@@ -462,9 +447,8 @@
                     <div class="package__body package__body--gold">
                         <div class="package__platform"></div>
                         <ul class="package__list">
-                            <li>online-трансляція</li>
-                            <li>відеозапис</li>
-                            <li>відповіді на запитання</li>
+                            <li>відеозапис семінару та <br>
+                                відповідей на запитання</li>
                             <li>презентації лекторів</li>
                             <li>сертифікат учасника</li>
                         </ul>
@@ -505,9 +489,8 @@
                     <div class="package__body package__body--gold">
                         <div class="package__platform"></div>
                         <ul class="package__list">
-                            <li>online-трансляція</li>
-                            <li>відеозапис</li>
-                            <li>відповіді на запитання</li>
+                            <li>відеозапис семінару та <br>
+                                відповідей на запитання</li>
                             <li>презентації лекторів</li>
                             <li>сертифікат учасника</li>
                         </ul>

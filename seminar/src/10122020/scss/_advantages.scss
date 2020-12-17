@@ -44,12 +44,19 @@
     }
 
     &:nth-child(1){
-      background: #fff url(images/adv_bg1-min.jpg) no-repeat top  center;
+      width: 260px;
+      height: 339px;
+      padding-top: 60px;
+      background: #fff url(images/bg1.jpg) no-repeat top  center;
+      background-size: cover;
+      @media (max-width: 767px){
+        padding-top: 20px;
+      }
 
       svg{
-        width: 90px;
-        height: 90px;
-        margin: 0 auto 25px;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 65px;
         @media (max-width: 767px){
           width: 70px;
           height: 70px;
@@ -60,7 +67,7 @@
     &:nth-child(2){
       width: 260px;
       height: 339px;
-      background: #fff url(images/adv_bg2-min.jpg) no-repeat top  center;
+      background: #fff url(images/bg2.jpg) no-repeat top  center;
       padding-top: 60px;
       @media (max-width: 1200px){
         order: -2;
@@ -83,7 +90,7 @@
     &:nth-child(3){
       width: 260px;
       height: 339px;
-      background: #fff url(images/adv_bg3-min.jpg) no-repeat top  center;
+      background: #fff url(images/bg3.jpg) no-repeat top  center;
       padding-top: 60px;
       @media (max-width: 1200px){
         order: -1;
@@ -102,19 +109,7 @@
       }
     }
 
-    &:nth-child(4){
-      background: #fff url(images/adv_bg4-min.jpg) no-repeat top  center;
 
-      svg{
-        width: 90px;
-        height: 90px;
-        margin: 0 auto 25px;
-        @media (max-width: 767px){
-          width: 70px;
-          height: 70px;
-        }
-      }
-    }
 
 
 
@@ -126,7 +121,7 @@
     }
 
     p{
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
       text-align: left;

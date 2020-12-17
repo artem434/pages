@@ -263,6 +263,7 @@
       <div class="order__packages">
         {% set packages = [
 
+
           {
             name: 'standart',
             title: 'Вартість туру за одного учасника',
@@ -281,13 +282,13 @@
               <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>
               <p class="package__present package__present--{{ package.name }}">Подарунок:</p>
               <p class="package__present-name package__present-name--{{ package.name }}">Доступ до
-                <a href="{{ package.link }}" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
+                <a href="{{ package.link }}" class="js-platform-link js-banner-link" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
                 місяців
               </p>
               <div class=" ">
                 <form method="post" action="?new=1" data-validate="ajax" class="hide-kbs dk-show">
                   <input type="hidden" name="product" value="{{ package.price }}"/>
-                  <button type="submit" rel="order" class="btn btn--package ">Хочу в тур</button>
+                  <button type="submit" rel="order" class=" package__btn package__btn--{{ package.name }}">Хочу в тур</button>
                 </form>
                 <a class="package__btn package__btn--{{ package.name }} dk-hide" href="{{ package.newprice }}" target="_blank">Хочу в тур</a>
               </div>

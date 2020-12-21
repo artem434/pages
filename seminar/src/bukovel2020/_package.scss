@@ -118,4 +118,13 @@
       }
     }
   }
+
+  .button{
+    display: block;
+    margin: 0 auto;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }

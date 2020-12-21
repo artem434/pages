@@ -1,4 +1,16 @@
-.btn {
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 285px;
   padding: 0;
   font-size: 22px;
@@ -19,7 +31,7 @@
   @include on-event() {
     color: #fff;
     box-shadow: none;
-
+text-decoration: none;
 
   }
 

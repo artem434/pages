@@ -81,15 +81,6 @@ jQuery(($) => {
         $('.header').hide();
         $('.heading').show();
     }
-
-
-
-
-
-
-
-
-
 });
 
 /*

@@ -1,0 +1,36 @@
+.tour_skidnytsia {
+  background: #00a9ca url(images/dec.png) repeat  center center;
+  @media (max-width: 760px){
+    background: #00a9ca;
+  }
+
+  &__container{
+    background: #00a9ca  url(images/calendar_1-min.jpg) no-repeat  top center;
+    background-size: contain;
+    @at-root .webp & {
+      background:#00a9ca  url(images/calendar_1.webp) no-repeat  top center;
+      background-size: contain;
+    }
+    @media (max-width: 767px){
+      background: none;
+      @at-root .webp & {
+        background: none;
+      }
+    }
+  }
+  &__month{
+    border-right: solid 1px #43117c;
+  }
+
+  &__btn{
+    @media (max-width: 760px){
+      color: #43117c;
+      margin: 20px auto;
+      background-color: #d7782e;
+      border: none;
+    }
+  }
+}
+
+
+

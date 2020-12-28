@@ -2,11 +2,7 @@
 
   $color: #d4412c;
   .themes {
-    padding: 75px 0;
 
-    @media (max-width: 1200px){
-      padding: 50px 0;
-    }
     p{
       margin-bottom: 0px;
     }
@@ -15,7 +11,6 @@
     &__container {
       @extend %container;
       position: relative;
-      padding: 0 10px;
       z-index: 1;
 
 
@@ -303,7 +298,8 @@
 
     .questions{
       padding: 30px;
-      background-image: linear-gradient(to left, #152c9f, #152c9f);
+      background: url(./images/questions_bg.png)  center center no-repeat, linear-gradient(to left, #152c9f, #152c9f);
+
       font-size: 24px;
       font-weight: bold;
       line-height: 1;
@@ -319,8 +315,9 @@
       }
 
       p{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-transform: uppercase;
+        letter-spacing: 1.2px;
       }
 
       span{

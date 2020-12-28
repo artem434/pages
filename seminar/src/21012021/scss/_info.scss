@@ -3,11 +3,7 @@
   &__container {
     @extend %container;
     text-align: left;
-    padding-top: 100px;
 
-    @media (max-width: 767px){
-      padding-top: 30px;
-    }
   }
   &__content{
     display: flex;

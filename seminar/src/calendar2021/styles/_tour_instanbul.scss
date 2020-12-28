@@ -1,0 +1,32 @@
+.tour_instanbul {
+  background: #063b85 url(images/istanbul_bg.png)  center center;
+  @media (max-width: 760px){
+    background: #063b85;
+  }
+
+  &__container{
+    background:  url(images/calendar_3-min.jpg) no-repeat  top center;
+    background-size: contain;
+    @at-root .webp & {
+      background:  url(images/calendar_3.webp) no-repeat  top center;
+      background-size: contain;
+    }
+    @media (max-width: 767px){
+      background: none;
+      @at-root .webp & {
+        background: none;
+      }
+    }
+  }
+  &__btn{
+    @media (max-width: 760px){
+      color: #ffffff;
+      margin: 20px auto;
+      background-color: #f77915;
+      border: none;
+    }
+  }
+}
+
+
+

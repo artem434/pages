@@ -1,6 +1,6 @@
 const mix = require('laravel-mix')
-const id = 499;
-const alias = 'dtkt_2Fdecember2020_2'
+const id = 500
+const alias = 'dtkt_2Fdemo2020'
 
 mix.webpackConfig({
 })

@@ -1,32 +1,20 @@
 <template>
-    <landing name="dtkt_december2020_2" advantages="epressa_add_interbuh" class="landing-dtkt_december2020_2">
+    <landing name="dtkt_december2020" advantages="epressa_add_interbuh" class="landing-dtkt_january2021">
         <template v-slot:cover>
-          <Snowf
-              :amount="50"
-              :size="5"
-              :speed="1.5"
-              :wind="0"
-              :opacity="0.8"
-              :swing="1"
-              :image="null"
-              :zIndex="null"
-              :resize="true"
-              color="#fff"
-          />
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container">
                         <div class="cover">
                             <a class="d-none d-md-block" href="#gift">
                                 <picture class="cover__img">
-                                    <source :src="mix('images/dk.webp')" type="image/webp">
-                                    <img :src="mix('images/dk-min.jpg')" class="img-fluid" alt="dk">
+                                    <source :src="mix('images/AnyConv.com__dtkt.webp')" type="image/webp">
+                                    <img :src="mix('images/dtkt-min.jpg')" class="img-fluid" alt="dk">
                                 </picture>
                             </a>
                           <a class="d-block d-md-none" href="#gift">
                             <picture class="cover__img">
-                              <source :src="mix('images/320__dk.webp')" type="image/webp">
-                              <img :src="mix('images/320__dk-min.jpg')" class="img-fluid" alt="dk">
+                              <source :src="mix('images/AnyConv.com__dtkt_mob.webp')" type="image/webp">
+                              <img :src="mix('images/dtkt_mob-min.jpg')" class="img-fluid" alt="dk">
                             </picture>
                           </a>
                         </div>
@@ -48,23 +36,23 @@
         <template v-slot:packages_list>
           <h2  id="gift" class="packages__title">{{ page.options['order_title-top']}}</h2>
             <landing-package-row>
-                <landing-package article="ep-dtkt_ek_action">
+                <landing-package article="ep-dtkt_ek_gift1">
                     <template v-slot:title>
                       <span>ЕКСПЕРТ<br>та подарунки</span>
                     </template>
                     <template v-slot:period>
-                      <div class="package__month">6 місяців</div>
+                      <div class="package__month">3 місяці</div>
                       <p class="package__custom-price">
-                        <price article="ep-dtkt_ek_action" :options="{periods: 6}" format="0"/>
+                        <price article="ep-dtkt_ek_gift1" :options="{periods: 3}" format="0"/>
                         грн
                       </p>
                     </template>
 
                   <template v-slot:gifts>
-                    <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
+                    <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                       Online-Семінар</a></li>
-                    <li><a href="https://iglaz.ua/xiaomi-redmi-9a-2-32gb-granite-gray-eu/option/48272" target="_blank">Смартфон  </a> або <a href="https://www.citrus.ua/planshety/huawei-mediapad-t3-7-8gb-grey-615719.html" target="_blank">планшет</a></li>
-                    </template>
+                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                  </template>
 
                   <template v-slot:abilities>
                     <li>Щоденна добірка новин</li>
@@ -89,22 +77,22 @@
                   </template>
                 </landing-package>
 
-                <landing-package article="ep-dtkt_pr_action" class="package__two">
+                <landing-package article="ep-dtkt_pr_gift1" class="package__two">
                 <template v-slot:title>
                   <span>ПРОФІ<br>та подарунки</span>
                 </template>
                 <template v-slot:period>
-                  <div class="package__month">6 місяців</div>
+                  <div class="package__month">3 місяці</div>
                   <p class="package__custom-price">
-                    <price article="ep-dtkt_pr_action" :options="{periods: 6}" format="0"/> грн
+                    <price article="ep-dtkt_pr_gift1" :options="{periods: 3}" format="0"/> грн
                   </p>
                 </template>
 
                   <template v-slot:gifts>
-                    <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
+                    <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                       Online-Семінар</a></li>
-                    <li><a href="https://iglaz.ua/xiaomi-redmi-9a-2-32gb-granite-gray-eu/option/48272" target="_blank">Смартфон  </a> або <a href="https://www.citrus.ua/planshety/huawei-mediapad-t3-7-8gb-grey-615719.html" target="_blank">планшет</a></li>
-                </template>
+                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                  </template>
                 <template v-slot:abilities>
                   <li>Щоденна добірка новин</li>
                   <li>«Документи за тиждень»</li>
@@ -127,22 +115,22 @@
                 </template>
               </landing-package>
 
-                <landing-package article="ep-dtkt_pp_action" class="package__three package__plus-top">
+                <landing-package article="ep-dtkt_pp_gift1" class="package__three package__plus-top">
                         <template v-slot:title>
                           <span>ПРОФІ + 7eminar.ua<br>та подарунки</span>
                         </template>
                             <template v-slot:period>
-                              <div class="package__month">6 місяців</div>
+                              <div class="package__month">3 місяці</div>
                               <p class="package__custom-price">
-                                <price article="ep-dtkt_pp_action" :options="{periods: 6}" format="0"/>
+                                <price article="ep-dtkt_pp_gift1" :options="{periods: 3}" format="0"/>
                                 грн
                               </p>
                             </template>
-                        <template v-slot:gifts>
-                          <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
-                            Online-Семінар</a></li>
-                          <li><a href="https://iglaz.ua/xiaomi-redmi-9a-2-32gb-granite-gray-eu/option/48272" target="_blank">Смартфон  </a> або <a href="https://www.citrus.ua/planshety/huawei-mediapad-t3-7-8gb-grey-615719.html" target="_blank">планшет</a></li>
-                        </template>
+                  <template v-slot:gifts>
+                    <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
+                      Online-Семінар</a></li>
+                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                  </template>
                       <template v-slot:abilities>
                     <li>Щоденна добірка новин</li>
                     <li>«Документи за тиждень»</li>
@@ -169,20 +157,22 @@
             </landing-package-row>
           <h2 class="packages__title">{{ page.options['order_title-bottom']}}</h2>
           <landing-package-row class="package-two">
-            <landing-package article="ep-dtkt_ek">
+            <landing-package article="ep-dtkt_ek_action">
               <template v-slot:title>
                 <span>ЕКСПЕРТ<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                <div class="package__month">6 місяців</div>
+                <div class="package__month">3 місяці</div>
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_ek" :options="{periods: 6}" format="0"/>
+                  <price article="ep-dtkt_ek_action" :options="{periods: 3}" format="0"/>
                   грн
                 </p>
               </template>
 
               <template v-slot:gifts>
-                <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
+
+
+                <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                   Online-Семінар</a></li>
               </template>
               <template v-slot:abilities>
@@ -207,20 +197,20 @@
               </template>
             </landing-package>
 
-            <landing-package article="ep-dtkt_pr"vclass="package__two">
+            <landing-package article="ep-dtkt_pr_action"vclass="package__two">
               <template v-slot:title>
                 <span>ПРОФІ<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                <div class="package__month">6 місяців</div>
+                <div class="package__month">3 місяці</div>
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_pr" :options="{periods: 6}" format="0"/>
+                  <price article="ep-dtkt_pr_action" :options="{periods: 3}" format="0"/>
                   грн
                 </p>
               </template>
 
               <template v-slot:gifts>
-                <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
+                <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                   Online-Семінар</a></li>
               </template>
               <template v-slot:abilities>
@@ -245,19 +235,19 @@
               </template>
             </landing-package>
 
-            <landing-package article="ep-dtkt_pp" class="package__three">
+            <landing-package article="ep-dtkt_pp_action" class="package__three">
               <template v-slot:title>
                 <span>ПРОФІ + 7eminar.ua<br>та подарунок</span>
               </template>
               <template v-slot:period>
-                <div class="package__month">6 місяців</div>
+                <div class="package__month">3 місяці</div>
                 <p class="package__custom-price">
-                  <price article="ep-dtkt_pp" :options="{periods: 6}" format="0"/>
+                  <price article="ep-dtkt_pp_action" :options="{periods: 3}" format="0"/>
                   грн
                 </p>
               </template>
               <template v-slot:gifts>
-                <li ><a href="https://7eminar.com/10122020" target="_blank">Великий Бухгалтерський <br>
+                <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                   Online-Семінар</a></li>
               </template>
               <template v-slot:abilities>
@@ -292,12 +282,9 @@
 
 <script>
     import Page from '../../core/Page'
-    import Snowf from 'vue-snowf';
     export default {
         mixins: [Page],
-      components: {
-        Snowf
-      },
+
         computed: {
 
             btnText: function() {

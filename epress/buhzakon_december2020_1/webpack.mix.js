@@ -1,6 +1,6 @@
-const mix = require('laravel-mix')
-const id = 499;
-const alias = 'dtkt_2Fdecember2020_2'
+const mix = require('laravel-mix');
+const id = 503;
+const alias = 'buhzakon_2Fdecember2020_1';
 
 mix.webpackConfig({
 })
@@ -14,6 +14,3 @@ mix.webpackConfig({
     .copy('index.twig', `../../${id}_${alias}/index.twig`)
     .copy(`src/images/*`, `../../${id}_${alias}/images`)
     .version()
-
-
-

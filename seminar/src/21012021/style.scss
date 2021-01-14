@@ -25,7 +25,11 @@ button{
 
 
 }
-
+.modal-open{
+  .branding-fixed-js{
+    position: absolute;
+  }
+}
 .branding ~ .seminars-container #main {
   z-index: inherit;
 }

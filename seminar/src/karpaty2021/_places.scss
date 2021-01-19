@@ -1,12 +1,35 @@
 .places {
+  position: relative;
 
   @include laptop-l() {
-    background: url(images/bg_lending-min.png) top -127px center no-repeat;
-
-    @at-root .webp & {
-      background: url(images/bg_lending.webp) top -127px center no-repeat;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      top: -175px;
+      width: 3590px;
+      height: 411px;
+      margin-right: 10px;
+      background: url(images/1.png) no-repeat center;
     }
   }
+
+  @include laptop-l() {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: -105px;
+      width: 3590px;
+      height: 411px;
+      margin-right: 10px;
+      background: url(images/2.png) no-repeat center;
+    }
+  }
+
+
 
   .container {
     padding-top: 50px;

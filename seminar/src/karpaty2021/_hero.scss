@@ -1,10 +1,10 @@
 .hero {
-  background: url(images/hero__bg-min.jpg) center center no-repeat;
-  height: 765px;
+  background:  url(images/bg_header1.jpg) top center no-repeat, linear-gradient(180deg, #070d2f, #070d2f 750px, #070d2f, #070d2f);
+  height: 780px;
   background-size: cover;
 
   @at-root .webp & {
-    background: url(images/hero__bg.webp) center center no-repeat;
+    background:   url(images/bg_header1.webp) center center no-repeat, linear-gradient(180deg, #eac4cc, #eac4cc 756px, transparent 756px, transparent);
 
   }
 

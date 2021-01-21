@@ -1,0 +1,337 @@
+{% set link = page.url('/images') %}
+
+<div class="seminar-landing" data-require="{{ page.url('/script.js') }}">
+
+  <section class="hero">
+    <div class="top-line">
+      <div class="container">
+        <div class="top-line__logo logo">
+          <a href="#">
+            <img src="{{ page.url('/images/logo.svg') }}" width="186" height="42"
+                 alt="Курси, вебінари, уроки та онлайн-трансляції для бухгалтерів за передплатою">
+          </a>
+        </div>
+        <div id="burger-page" class="top-line__burger burger-page"><span></span></div>
+        <div class="menu">
+          <div class="menu__container">
+            <ul class="menu__list">
+              <li><a href="#places">Програма туру</a></li>
+              <li><a href="#info">Що входить у вартість</a></li>
+              <li><a href="#order">Придбати тур</a></li>
+            </ul>
+            <ul class="menu__list">
+
+            </ul>
+            <a href="#order" class="menu__btn button js-scroll-to">ПРИДБАТИ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero__main">
+        <p class="hero__date">20-23 травня 2021 року</p>
+        <p class="hero__sub-title">Непізнана Туреччина</p>
+        <div class="hero__title">
+          <p>Каппадокія</p>
+          <span>чудо <br> світу</span>
+        </div>
+      </div>
+      <p class="hero__btn">
+        <a href="#info" class="button js-scroll-to">Дізнатися деталі</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="tour" class="tour">
+    <div class="container">
+      <h2 class="page-titles">Загадковий світ фей <br>
+        та космічних пейзажів</h2>
+
+      <div class="tour__content">
+        <ul class="tour__list">
+          <li>
+            <p>
+              Шарм непізнаної <br>
+              Туреччини
+            </p>
+          </li>
+
+          <li>
+            <div class="tour__img">
+              <picture>
+                <source srcset="{{ link }}/img1.webp" type="image/webp"/>
+                <img src="{{ link }}/img1-min.jpg" alt="Що на вас чекає"/>
+              </picture>
+            </div>
+
+          </li>
+        </ul>
+        <ul class="tour__list">
+          <li>
+            <p>
+              Музей <br>
+              просто неба
+            </p>
+          </li>
+          <li>
+            <div class="tour__img">
+              <picture>
+                <source srcset="{{ link }}/img3.webp" type="image/webp"/>
+                <img src="{{ link }}/img3-min.jpg" alt="Що на вас чекає"/>
+              </picture>
+            </div>
+
+          </li>
+        </ul>
+
+        <ul class="tour__list">
+          <li>
+            <p>
+              Фестиваль <br>
+              повітряних куль
+            </p>
+          </li>
+
+          <li>
+            <div class="tour__img">
+              <picture>
+                <source srcset="{{ link }}/img2.webp" type="image/webp"/>
+                <img src="{{ link }}/img2-min.jpg" alt="Що на вас чекає"/>
+              </picture>
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <p class="tour__btn">
+        <a href="#info" class="button js-scroll-to">Хочу в тур</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="places" class="places" >
+    <div class="container">
+      <h3 class="page-titles">дні безмежного <br>
+        <span>задоволення</span> </h3>
+      <ul class="places__list">
+        <li class="places__item places__item--blue">
+          <picture>
+            <source srcset="{{ link }}/pic1.webp" type="image/webp"/>
+            <img src="{{ link }}/pic1-min.png" alt="Запрошуємо до східної казки"/>
+          </picture>
+          <div class="places__text">
+            <b>Зимові <br> SPA-задоволення</b>
+            <p>Запрошуємо вас поніжитись в сірководних чанах в Лумшорах та розважитись в термальному парку Косино, де безліч відкритих гарячих басейнів та 8 видів саун</p>
+          </div>
+
+        </li>
+
+        <li class="places__item places__item--orange">
+          <picture>
+            <source srcset="{{ link }}/pic2.webp" type="image/webp"/>
+            <img src="{{ link }}/pic2-min.png" alt="Запрошуємо до східної казки"/>
+          </picture>
+          <div class="places__text">
+            <b>Екскурсійна програма <br> «Чудеса Карпат»</b>
+            <p>Ви зможете познайомитись  з культурною спадщиною гуцулів та лемків, відвідати дивовижні старовинні замки та набратись знань  в музеї виноробства</p>
+          </div>
+
+        </li>
+
+        <li class="places__item places__item--blue">
+          <picture>
+            <source srcset="{{ link }}/pic3.webp" type="image/webp"/>
+            <img src="{{ link }}/pic3-min.png" alt="Запрошуємо до східної казки"/>
+          </picture>
+          <div class="places__text">
+            <b> Проживання в готелі <br> «Золота гора»</b>
+            <p>Готельний комплекс «Золота Гора» – це бездоганний європейський сервіс та чудове розміщення    в мальовничому Закарпатському краї. Його окраса – власні термальні басейни</p>
+          </div>
+
+        </li>
+
+        <li class="places__item places__item--orange">
+          <picture>
+            <source srcset="{{ link }}/pic4.webp" type="image/webp"/>
+            <img src="{{ link }}/pic4-min.png" alt="Запрошуємо до східної казки"/>
+          </picture>
+          <div class="places__text">
+            <b>Дегустація  <br> закарпатських  <br>  смаколиків</b>
+            <p>Дегустаційна карта вражає: смачний бограч та закарпатські спеціалітети, фермерська  та крафтова продукція, знайомство із сучасним виноробством в долині Чизай</p>
+          </div>
+
+
+        </li>
+      </ul>
+      <p class="tour__btn">
+      <a href="https://7eminar.com/files/termu2020_presentation.pdf" target="_blank" class="button js-scroll-to">Повна програма</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <div class="container">
+      <h3 class="page-titles">у вартість туру <br> <span>входить</span></h3>
+      <ul class="info__list">
+        <li>
+          <picture>
+            <img src="{{ link }}/icon1.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b>Проживання</b>
+            <p>Двомісне поселення в номерах <br>
+              «Золота гора» </p>
+          </div>
+
+        </li>
+        <li>
+          <picture>
+            <img src="{{ link }}/icon2.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b> Харчування</b>
+            <p>Повний пансіон, обіди та вечері <br>
+              в гуцульських колибах</p>
+          </div>
+
+        </li>
+
+        <li>
+          <picture>
+            <img src="{{ link }}/icon4.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b> Програма</b>
+            <p>Екскурсія до замку «Паланок», <br>
+              знайомство з м. Ужгород</p>
+          </div>
+
+        </li>
+
+        <li>
+          <picture>
+            <img src="{{ link }}/icon3.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b> Дегустації</b>
+            <p>Мануфактура крафтових <br>
+              продуктів, музей виноробства</p>
+          </div>
+
+        </li>
+
+        <li>
+          <picture>
+            <img src="{{ link }}/icon5.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b> Термальні басейни</b>
+            <p>Вхідні квитки в чани <br>
+              та термальний парк в Косино</p>
+          </div>
+        </li>
+
+        <li>
+          <picture>
+            <img src="{{ link }}/icon6.png" alt="У вартість туру  входить"/>
+          </picture>
+          <div class="info__text">
+            <b>Трансфер</b>
+            <p>Зустріч на вокзалі, супровід <br>
+              до всіх локацій</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <div class="safety">
+    <div class="container">
+      <div class="safety__item">
+        <picture>
+          <source srcset="{{ link }}/safety.jpg" media="(min-width: 1200px)" type="image/jpeg">
+          <img src="{{ link }}/safety_mob.jpg" alt="Марини Нікуліної"/>
+        </picture>
+        <p class="safety__text">
+          <b>Супровід</b>
+          Безмежна турбота під час <br>
+          подорожі від івент-директора <br>
+          компанії – Марини Нікуліної
+          <br>
+          <br>
+          <span>Пізнавайте світ <br> з 7eminar.com!</span>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+  <section id="order" class="order">
+    <div class="container">
+      <h3 class="page-titles"><span>{{ page.options['order__title']|default('Тількі до 30 вересня') }}</span></h3>
+      <div class="order__packages">
+        {% set packages = [
+
+
+          {
+            name: 'standart',
+            title: 'Вартість туру за одного учасника',
+            price: 'тур-26012021Термал',
+            link: 'https://7eminar.ua/',
+            newprice: 'https://7eminar.ua/checkout/t-termu26012021',
+          }
+        ] %}
+        {% for package in packages %}
+          <article class="package package--{{ package.name }}">
+            <div class="package__header package__header--{{ package.name }}">
+              {{ package.title }}
+            </div>
+            <div class="package__body package__body--{{ package.name }}">
+              <p class="package__price-regular"><s>{{ shop_price(package.price,'line') }}</s></p>
+              <p class="package__price"><span>{{ shop_price(package.price,'site') }}</span> грн</p>
+              <p class="package__present package__present--{{ package.name }}">Подарунок:</p>
+              <p class="package__present-name package__present-name--{{ package.name }}">Доступ до
+                <a href="{{ package.link }}" class="js-platform-link js-banner-link" target="_blank">Бухгалтерської Відеоплатформи №1</a> протягом трьох
+                місяців
+              </p>
+              <div class=" ">
+                <form method="post" action="?new=1" data-validate="ajax" class="hide-kbs dk-show">
+                  <input type="hidden" name="product" value="{{ package.price }}"/>
+                  <button type="submit" rel="order" class=" package__btn package__btn--{{ package.name }}">Хочу в тур</button>
+                </form>
+                <a class="package__btn package__btn--{{ package.name }} dk-hide" href="{{ package.newprice }}" target="_blank">Хочу в тур</a>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+    </div>
+    <div class="order__info">
+      <div class="order__text">
+        <div>
+          <b>Важлива інформація:</b>
+          <p> Оплачувати виїзні заходи можна частинами. 100% оплати повинні надійти не пізніше ніж за 7 днів  до початку туру.</p>
+          <p>У разі відмови від туру: за 14  днів – утримується 60% оплати, менш ніж за 13 днів – утримується 100% оплати</p>
+        </div>
+
+
+        <picture>
+          <source srcset="{{ link }}/order_info.webp" type="image/webp"/>
+          <img src="{{ link }}/order_info-min.png" alt="Запрошуємо до східної казки"/>
+        </picture>
+      </div>
+
+    </div>
+  </section>
+  <div id="loader-page" class="loader-page">
+    <div class="dots">
+      <div class="loading">
+        <span>7</span><span>e</span><span>m</span><span>i</span><span>n</span><span>a</span><span>r</span><span
+            class="loading__dots">.</span><span>c</span><span>o</span><span>m</span></div>
+    </div>
+  </div>
+</div>

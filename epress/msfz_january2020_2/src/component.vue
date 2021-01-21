@@ -4,12 +4,20 @@
             <div class="dtkt-promo">
                 <div class="landing-section">
                     <div class="container container--august">
-                        <div class="cover">
-                            <picture class="cover__img">
-                                <source :src="mix('images/head_000_PMSFZ.webp')" type="image/webp">
-                                <img :src="mix('images/head_000_PMSFZ.jpg')" class="img-fluid" alt="PMSFZ">
-                            </picture>
-                        </div>
+                      <div class="cover">
+                        <a class="d-none d-md-block" href="#gift">
+                          <picture class="cover__img">
+                            <source :src="mix('images/03_msfz.webp')" type="image/webp">
+                            <img :src="mix('images/03_msfz-min.jpg')" class="img-fluid" alt="IB">
+                          </picture>
+                        </a>
+                        <a class="d-block d-md-none" href="#gift">
+                          <picture class="cover__img">
+                            <source :src="mix('images/03_msfz_mob.webp')" type="image/webp">
+                            <img :src="mix('images/03_msfz_mob-min.jpg')" class="img-fluid" alt="IB">
+                          </picture>
+                        </a>
+                      </div>
                     </div>
                 </div>
             </div>

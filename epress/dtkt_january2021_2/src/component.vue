@@ -1,5 +1,5 @@
 <template>
-    <landing name="dtkt_december2020" advantages="epressa_add_interbuh" class="landing-dtkt_january2021">
+    <landing name="dtkt_december2020" advantages="epressa_add_interbuh" class="landing-dtkt_january2021_2">
         <template v-slot:cover>
             <div class="dtkt-promo">
                 <div class="landing-section">
@@ -7,14 +7,14 @@
                         <div class="cover">
                             <a class="d-none d-md-block" href="#gift">
                                 <picture class="cover__img">
-                                    <source :src="mix('images/AnyConv.com__dtkt.webp')" type="image/webp">
-                                    <img :src="mix('images/dtkt-min.jpg')" class="img-fluid" alt="dk">
+                                    <source :src="mix('images/01_dk.webp')" type="image/webp">
+                                    <img :src="mix('images/01_dk-min.jpg')" class="img-fluid" alt="dk">
                                 </picture>
                             </a>
                           <a class="d-block d-md-none" href="#gift">
                             <picture class="cover__img">
-                              <source :src="mix('images/AnyConv.com__dtkt_mob.webp')" type="image/webp">
-                              <img :src="mix('images/dtkt_mob-min.jpg')" class="img-fluid" alt="dk">
+                              <source :src="mix('images/01_dk_mob.webp')" type="image/webp">
+                              <img :src="mix('images/01_dk_mob-min.jpg')" class="img-fluid" alt="dk">
                             </picture>
                           </a>
                         </div>
@@ -51,7 +51,7 @@
                   <template v-slot:gifts>
                     <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                       Online-Семінар</a></li>
-                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                    <li><a href="https://all-ok.com.ua/ua/pylesos-2v1-vertikalnyjruchnoj-deerma-vc20-plus-cordless-vacuum-cleaner-white-dem-vc20p" target="_blank">Пилосмок 2в1 Deerma</a></li>
                   </template>
 
                   <template v-slot:abilities>
@@ -86,7 +86,7 @@
                   <template v-slot:gifts>
                     <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                       Online-Семінар</a></li>
-                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                    <li><a href="https://all-ok.com.ua/ua/pylesos-2v1-vertikalnyjruchnoj-deerma-vc20-plus-cordless-vacuum-cleaner-white-dem-vc20p" target="_blank">Пилосмок 2в1 Deerma</a></li>
                   </template>
                 <template v-slot:abilities>
                   <li>Щоденна добірка новин</li>
@@ -124,7 +124,7 @@
                   <template v-slot:gifts>
                     <li ><a href="https://7eminar.com/21012021" target="_blank">Великий Річний <br>
                       Online-Семінар</a></li>
-                    <li><a href="https://www.tefal.ua/ru/%D0%9A%D0%A3%D0%A5%D0%9E%D0%9D%D0%9D%D0%AB%D0%95-%D0%9F%D0%A0%D0%98%D0%91%D0%9E%D0%A0%D0%AB/%D0%93%D1%80%D0%B8%D0%BB%D0%B8/INICIO-GRILL-GC241/p/8000035958" target="_blank">Гриль TEFAL</a></li>
+                    <li><a href="https://all-ok.com.ua/ua/pylesos-2v1-vertikalnyjruchnoj-deerma-vc20-plus-cordless-vacuum-cleaner-white-dem-vc20p" target="_blank">Пилосмок 2в1 Deerma</a></li>
                   </template>
                       <template v-slot:abilities>
                     <li>Щоденна добірка новин</li>

@@ -1,0 +1,115 @@
+.info{
+
+  &__container {
+    @extend %container;
+    text-align: center;
+    padding: 100px 0 75px;
+    @media (max-width: 1200px){
+      padding: 0 0 55px;
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1200px){
+      justify-content: center;
+    }
+  }
+
+
+
+
+
+  &__title{
+    @extend %title;
+  }
+
+  &__item{
+    max-width: 263px;
+    width: 100%;
+    min-height: 263px;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    @media (max-width: 1200px){
+      margin: 14px;
+    }
+
+    &:first-child{
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 20px 0px;
+      line-height: 1.47;
+      background-color: #e5eaf0;
+
+      p{
+        border-bottom: solid 1px #c8c8c8;
+        padding: 15px 0;
+        &:first-child{
+          padding-top: 0px;
+
+        }
+        &:last-child{
+          padding-bottom: 0px;
+          border-bottom: none;
+        }
+      }
+
+    }
+
+    &:nth-child(2){
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 20px ;
+      background: #000 url(images/bg-min.jpg) center center no-repeat;
+      background-size: cover;
+      color: #fff;
+
+
+      @media (max-width: 767px){
+        background-image: linear-gradient(to right, #e5eaf0, #e5eaf0, #e5eaf0);
+        color: #000;
+      }
+    }
+
+    &:last-child{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: left;
+      color: #fff;
+      max-width: 554px;
+      background-image: linear-gradient(to right, #00d0a8, #9600ff);
+      padding-left: 40px;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: bold;
+      @media (max-width: 767px){
+        max-width: 263px;
+        font-size: 16px;
+        text-align: left;
+        padding: 20px 15px;
+        min-height: 190px;
+        order: -1;
+        background-image: linear-gradient(to right, #e5eaf0, #e5eaf0, #e5eaf0);
+        color: #000;
+        p{
+          margin-bottom: 10px;
+          line-height: 1.5;
+
+          br{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

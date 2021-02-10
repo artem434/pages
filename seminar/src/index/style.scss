@@ -1,5 +1,10 @@
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+.main{
+  display: none!important;
+}
+
 @mixin slider($width, $height, $size: 1) {
   .viewport, .slide, .items {
     width: $width;
@@ -242,4 +247,11 @@
   &:before {
     background-image: url("images/icons/icon-gift.png");
   }
+}
+.footer{
+  display: none!important;
+}
+
+.header{
+  display: none;
 }

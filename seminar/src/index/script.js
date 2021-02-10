@@ -17,6 +17,7 @@ System.register(["jquery", "bootstrap", "cdnjs/slick-carousel/1.8.1/slick.min.js
                 jquery_1.default('#gift').hide();
 
             }
+            document.location.href = 'https://7eminar.ua/all'
         }
     };
 });

@@ -106,7 +106,7 @@ jQuery(($) => {
     });
 
     if (document.location.host == "7eminar.com") {
-        $('.js-banner-link').attr('href', 'https://7eminar.ua/');
+        $('.js-banner-link').attr('href', 'https://7eminar.ua/subscribe');
         $('.header').hide();
         $('.heading').show();
     }

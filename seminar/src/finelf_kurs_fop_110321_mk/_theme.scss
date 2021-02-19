@@ -1,0 +1,143 @@
+.theme {
+  width: 100%;
+  background-color: $white;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  font-size: 15px;
+
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+  }
+
+
+
+  &__header {
+    position: relative;
+    text-align: left;
+    background-color: #fdce16;
+    padding: 25px 10px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 30px 0 30px 100px;
+    }
+  }
+
+  &__body{
+    border: solid 1px #fdce16;
+
+  }
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+     flex-direction: row;
+    }
+
+
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.25;
+    color: #0e131c;
+    margin-bottom: 0;
+  }
+
+  ol {
+    padding: 25px 10px 25px 20px;
+    color: #272727;
+    line-height: 1.29;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    @include media-breakpoint-up(xl) {
+      padding: 25px 100px 25px 100px;
+      margin-bottom: 0;
+      line-height: 1.67;
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      b{
+        font-weight: 600;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__more-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    &:focus{
+      outline: none;
+    }
+
+    &
+
+
+
+    span {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: #272727;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 2px;
+        height: 16px;
+      }
+      &:after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 16px;
+        height: 2px;
+      }
+    }
+
+  }
+  .not-collapsed {
+
+
+  }
+}
+.theme__more-btn[aria-expanded="true"] {
+
+  span {
+    &:before {
+      content: none;
+    }
+  }
+}

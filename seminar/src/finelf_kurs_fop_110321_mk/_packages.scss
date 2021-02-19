@@ -1,0 +1,163 @@
+.package {
+  background-color: #ffffff;
+  color: #161616;
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 15px 12px;
+  border-radius: 4.3px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding: 15px 60px;
+  }
+
+  &:before{
+    position: absolute;
+    top: -37px;
+    content: "";
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 37px solid #fff;
+  }
+
+  &:after{
+    position: absolute;
+    bottom: -37px;
+    content: "";
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top:  37px solid #fff;
+  }
+
+  &__title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(xl) {
+     line-height: 48px;
+    }
+
+  }
+
+  &__price{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1;
+
+    s{
+      font-size: 18px;
+      position: absolute;
+      right: -8px;
+      top: 6px;
+      color: #666666;
+    }
+  }
+
+  &__currency{
+    font-size: 18px;
+  }
+
+  &__main{
+    padding: 20px 0;
+
+    &--line{
+      border-bottom: solid 1px  #e6e5e5; ;
+      border-top: solid 1px  #e6e5e5; ;
+    }
+
+    &--bottom{
+      padding-bottom: 0;
+    }
+  }
+
+  .btn{
+    margin: 25px 0;
+  }
+
+  &__advantages{
+
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      text-align: left;
+
+      li{
+        font-size: 12px;
+        line-height: 1;
+        padding: 13px 0;
+        position: relative;
+        @include media-breakpoint-up(xl) {
+          font-size: 14px;
+        }
+
+        &:before{
+          position: absolute;
+          content: '';
+          display: block;
+          left: 0;
+          bottom: 0;
+          width: 60%;
+          height: 1px;
+          background-color: #e6e5e5;
+        }
+      }
+    }
+  }
+
+  &__parts{
+
+
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+    }
+
+    a{
+      color: #fdce16;
+      text-decoration: underline;
+      margin-bottom: 0;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  &--mk{
+    background-color: #161616;
+    color: #ffffff;
+    margin-bottom: 100px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+
+
+
+    &:before{
+      border-bottom: 37px solid #161616;
+    }
+    &:after{
+      border-top:  37px solid #161616;
+    }
+
+    .package__title{
+      @include media-breakpoint-up(xl) {
+        line-height: 1;
+      }
+    }
+  }
+}
+

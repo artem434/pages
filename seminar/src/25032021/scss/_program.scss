@@ -1,0 +1,49 @@
+.program{
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title{
+    @extend %title;
+    color: #e12930;
+    text-align: center;
+
+    br{
+      display: none;
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
+  }
+
+  &__block{
+    background: url(images/program_img-min.jpg) no-repeat bottom  center;
+    padding: 190px 540px 35px 45px;
+    width: 1140px;
+    height: 400px;
+    margin: 0 auto 100px;
+    font-family: 'Montserrat', sans-serif;
+
+    @media (max-width: 767px){
+      background: url(images/program_img_mob.jpg) no-repeat bottom  center;
+      width: 290px;
+      height: 678px;
+      padding: 400px 37px 27px 20px;
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.33;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 15px;
+
+      @media (max-width: 767px){
+        font-size: 16px;
+      }
+    }
+  }
+
+}

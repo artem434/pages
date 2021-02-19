@@ -1,0 +1,43 @@
+.order {
+  background-color: #fdce16;
+
+  .title{
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 13px;
+    }
+  }
+
+  .subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 50px;
+    @include media-breakpoint-up(xl) {
+      font-size: 45px;
+    }
+  }
+
+  &__packages{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__sale{
+    font-size: 15px;
+    line-height: 1.33;
+    text-align: center;
+    color: #161616;
+    padding: 70px 0 50px;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(xl) {
+      padding: 90px 0 80px;
+      font-size: 18px;
+    }
+  }
+
+}
+

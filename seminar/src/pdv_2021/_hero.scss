@@ -41,7 +41,7 @@
     position: absolute;
     flex-direction: column;
     right: 354px;
-    top: 146px;
+    top: 80px;
     @media (max-width: 1200px){
       justify-content: space-between;
       position: relative;
@@ -92,7 +92,7 @@
   &__content{
     display: flex;
     justify-content: space-between;
-    padding:  25px 135px 0 65px;
+    padding:  0px 135px 0 65px;
     color: #ffffff;
     text-align: left;
     text-transform: uppercase;

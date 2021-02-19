@@ -1,0 +1,99 @@
+.professions {
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
+  }
+
+  &__content{
+    @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+      width: 360px;
+    }
+
+
+    b{
+      display: block;
+    }
+
+  }
+
+  &__text{
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1a1a1a;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+
+    &:before,&:after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0%);
+      width: 195px;
+      height: 1px;
+      background-color: #161616;
+    }
+
+    &:after{
+      top: -3px;
+    }
+  }
+
+
+  &__icon{
+    width: 205px;
+    height: 205px;
+    transform: rotate(45deg);
+    background-color: #fdce16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 55px 0;
+
+    &:before{
+      position: absolute;
+      content: '';
+      width: 175px;
+      height: 175px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #626262;
+    }
+
+
+
+
+    svg{
+      width: 82px;
+      height: 82px;
+      transform: rotate(-45deg);
+      fill: #fff;
+    }
+  }
+
+  &__btn{
+    padding: 40px 0;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 0;
+    }
+  }
+}
+

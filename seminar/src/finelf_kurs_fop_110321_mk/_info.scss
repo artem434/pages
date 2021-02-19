@@ -1,0 +1,38 @@
+.info {
+  background-color: #000000;
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__text{
+    font-size: 15px;
+    line-height: 1.53;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      margin-bottom: 15px;
+      padding-left: 100px;
+    }
+
+    p{
+      margin-bottom: 15px;
+    }
+
+    b{
+      color: #fdce16;
+    }
+
+  }
+}
+

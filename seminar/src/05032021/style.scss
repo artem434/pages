@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
+
+
+
+
+
+.kbs-hide{
+  display: none;
+}
+
+button{
+  &:focus{
+    outline: none!important;
+
+  }
+}
+
+.seminar-landing{
+  @media (max-width: 767px){
+    background-color: #f0f0f0;
+  }
+
+}
+
+.branding ~ .seminars-container #main {
+  z-index: inherit;
+}
+
+#bg_popup{
+  display: none!important;
+}
+
+#bg_popup_two{
+  display: none!important;
+}
+
+#__telerWdTriggerContent{
+  display: none!important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+html * {
+  max-height: 1000000px;
+
+  //-font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#main {
+  width: 100%;
+  overflow: hidden;
+  background: #fff!important;
+}
+.circle{
+  display: none;
+}
+
+%container{
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 75px 0;
+  @media (max-width: 1200px){
+    max-width: 767px;
+    padding: 50px 0;
+  }
+  @media (max-width: 767px){
+    max-width: 320px;
+    padding: 30px 10px;
+  }
+}
+
+%sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #cd2765;
+  text-transform: uppercase;
+  @media (max-width: 767px){
+    font-size: 16px;
+  }
+}
+
+%title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #2f2f2f;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media (max-width: 1200px){
+   text-align: center;
+    padding: 20px;
+    font-size: 31px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 7px;
+    right: -65px;
+    width: 75%;
+    height: 4px;
+    background-image: linear-gradient(to right, #9f1321, #ef2438, transparent);
+    @media (max-width: 1200px){
+      width: 250px;
+      right: 50%;
+      transform: translate(50%,0%);
+      bottom: 0px;
+    }
+  }
+}
+
+%btn {
+    box-shadow: 0px 35px 70px 0 rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to top, #8d0f1c, #ff273d);
+    justify-content: center;
+    border-radius: 0px;
+    align-items: center;
+    padding: 30px ;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 1200px){
+      padding: 25px ;
+    }
+    i{
+      margin-left: 10px;
+    }
+
+  &:hover {
+    color: #2f2f2f;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right, #ffabb3, #ffabb3);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  }
+
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "mixins";
+@import "variables";
+@import "haeding";
+@import "menu";
+@import "hero";
+@import "info";
+@import "profession";
+@import "lectors";
+@import "theme";
+@import "advantages";
+@import "order";
+@import "package";
+@import "pricing-timer";
+@import "loader-page";
+@import "gift";
+@import "partners";
+@import "reviews";
+/*@import "info";
+@import "profession";
+@import "lectors";
+@import "theme";
+@import "gift";
+@import "advantages";
+@import "order";
+@import "package";
+@import "pricing-timer";
+@import "partners";
+@import "loader-page";
+@import "video";*/
+@import "free-video";
+@import "modal-video";
+
+.branding-page #main{
+  width: 100%;
+  background: #ffe2ec;
+}
+
+.branding-page{
+  padding-top: 0px;
+  background: #ffe2ec;
+}
+
+.branding-page .footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+.branding ~ .seminars-container {
+  padding-top: 32px;
+}
+.branding ~ .seminars-container #main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+  background: #fff;
+
+  .heading{
+    display: none;
+  }
+}

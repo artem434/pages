@@ -470,11 +470,11 @@
 
     <div class="order" id="order">
         <div class="container">
-            <h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
+            {#<h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
             <p class="subtitle">АКЦІЙНІ
-                <br class="d-xl-none"> ЦІНИ ДІЮТЬ ЩЕ</p>
+                <br class="d-xl-none"> ЦІНИ ДІЮТЬ ЩЕ</p>#}
 
-            <div class="timer"  data-timer-2="{{ page.options['timer']|default('') }}">
+           {# <div class="timer"  data-timer-2="{{ page.options['timer']|default('') }}">
                 <div class="timer__item">
                     <div class="timer__block">
                         <div><span class="timer__time days">00</span> <span class="timer__text">дні</span></div>
@@ -495,13 +495,13 @@
                         <div><span class="timer__time seconds">00</span> <span class="timer__text">секунди</span></div>
                     </div>
                 </div>
-            </div>
+            </div>#}
 
             <div class="order__packages">
                 <div class="package package--mk">
                     <h3 class="package__title">Для учасників <br> майстер-класу </h3>
                     <div class="package__main package__main--line">
-                        <p class="package__price">{{shop_price('elf-finelf010421fop','site')}} <span class="package__currency">грн</span> <s>{{shop_price('elf-finelf010421fop','line')}}</s></p>
+                        <p class="package__price">{{shop_price('elf-finelf010421fop','site')}} <span class="package__currency">грн</span> {#<s>{{shop_price('elf-finelf010421fop','line')}}</s>#}</p>
                     </div>
                     <p class="package__btn">
                         <form class=" btn-page btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -523,7 +523,7 @@
                         </ul>
                     </div>
                     <div class="package__main package__main--bottom">
-                        <p class="package__price">{{shop_price('elf-finelf010421fop_card','site')}} <span class="package__currency">грн</span> <s>{{shop_price('elf-finelf010421fop_card','line')}}</s></p>
+                        <p class="package__price">{{shop_price('elf-finelf010421fop_card','site')}} <span class="package__currency">грн</span> {#<s>{{shop_price('elf-finelf010421fop_card','line')}}</s>#}</p>
                     </div>
                     <p class="package__btn">
                     <form class=" btn-page btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -535,7 +535,7 @@
                 <div class="package">
                     <h3 class="package__title">Для своїх*</h3>
                     <div class="package__main package__main--line">
-                        <p class="package__price">{{shop_price('elf-finelf010421fop_sv','site')}} <span class="package__currency">грн</span> <s>{{shop_price('elf-finelf010421fop_sv','line')}}</s></p>
+                        <p class="package__price">{{shop_price('elf-finelf010421fop_sv','site')}} <span class="package__currency">грн</span>{# <s>{{shop_price('elf-finelf010421fop_sv','line')}}</s>#}</p>
                     </div>
                     <p class="package__btn">
                         <form class=" btn-page btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -557,7 +557,7 @@
                         </ul>
                     </div>
                     <div class="package__main package__main--bottom">
-                        <p class="package__price">{{shop_price('elf-finelf010421fop_sv','site')}} <span class="package__currency">грн</span> <s>{{shop_price('elf-finelf010421fop_sv','line')}}</s></p>
+                        <p class="package__price">{{shop_price('elf-finelf010421fop_sv','site')}} <span class="package__currency">грн</span> {#<s>{{shop_price('elf-finelf010421fop_sv','line')}}</s>#}</p>
                     </div>
                     <p class="package__btn">
                         <form class=" btn-page btn-package" method="post" action="?new=1" data-validate="ajax">

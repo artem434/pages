@@ -40,10 +40,10 @@
                 </a>
             </div>
             <div class="hero__content">
-                <p class="hero__online">Online-трансляція <span>і повертаємось у зали</span></p>
+                <p class="hero__online"><span>Відеозапис</span></p>
                 <div class="hero__title-content">
-                    <p class="hero__date">25 березня <span>2021 року</span></p>
-                    <p class="hero__place"><a href="https://goo.gl/maps/GewXEFKkaushH1ov6" target="_blank">М. КИЇВ, КОНГРЕС-ХОЛ «MERCURE»</a></p>
+                  {#  <p class="hero__date">25 березня <span>2021 року</span></p>
+                    <p class="hero__place"><a href="https://goo.gl/maps/GewXEFKkaushH1ov6" target="_blank">М. КИЇВ, КОНГРЕС-ХОЛ «MERCURE»</a></p>#}
                     <p class="hero__title">
                         <span>Великий</span>  <br>
                         <b>Квартальний</b>  <br>
@@ -70,13 +70,13 @@
         </div>
     </div>
 
-    <div class="video" id="video">
+    {#<div class="video" id="video">
         <div class="video__container container">
             <h2 class="video__title">Найяскравіша подія весни</h2>
             <div class="video__content">
                 <div class="video__item >
                     <picture>
-                    {#  <source srcset="{{ link }}/lectors_tm_mob.png" media="(max-width: 767.98px)" >#}
+                    #}{#  <source srcset="{{ link }}/lectors_tm_mob.png" media="(max-width: 767.98px)" >#}{#
                     <source srcset="{{ link }}/illustration.webp" type="image/webp"/>
                     <img src="{{ link }}/illustration-min.png" alt="illustration"/>
                     </picture>
@@ -97,7 +97,7 @@
                 </div>
 
             </div>
-        </div></div>
+        </div></div>#}
 
 
 
@@ -185,12 +185,11 @@
                         </picture>
 
                     </div>
-
                     <div class="lectors__footer">
                         <b>Тетяна Мойсеєнко</b>
                         <p>Шеф-редактор 7eminar.com, експерт з трудового права та кадрового обліку</p>
                     </div>
-                    {#<button type="button" aria-label="Open modal video" data-toggle="modal" data-target="#modal-video" data-vidId="-fs2VjDorck" class="hero__controls-modal-btn"></button>#}
+                   {# <button type="button" aria-label="Open modal video" data-toggle="modal" data-target="#modal-video" data-vidId="MdME0uHV7Wk" class="hero__controls-modal-btn"></button>#}
                 </div>
 
                 <div class="lectors__item">
@@ -260,7 +259,7 @@
                 </div>
             </div>
             <p class="lectors__btn">
-                <a href="#order" class="btn js-scroll-to">замовити квиток ></a>
+                <a href="#order" class="btn js-scroll-to">Хочу дивитися ></a>
             </p>
         </div>
     </div>
@@ -273,7 +272,7 @@
                     <div class="themes__header">
                          <div class="themes__info">
                             <div>
-                                <p class="themes__time">10:00–11:00</p>
+                               {# <p class="themes__time">10:00–11:00</p>#}
                                 <p class="themes__lector-name"> Тимур Алієв
                                 </p>
                             </div>
@@ -310,7 +309,7 @@
                     <div class="themes__header">
                          <div class="themes__info">
                              <div>
-                                 <p class="themes__time">11:00–12:00</p>
+                               {#  <p class="themes__time">11:00–12:00</p>#}
                                  <p class="themes__lector-name">  Сергій Дробоття
                                  </p>
                              </div>
@@ -339,7 +338,7 @@
                 </div>
             </div>
 
-            <div class="themes__item themes__item--break">
+           {# <div class="themes__item themes__item--break">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
@@ -350,14 +349,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>#}
 
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
                             <div>
-                                <p class="themes__time">12:30–14:00</p>
+                             {#   <p class="themes__time">12:30–14:00</p>#}
                                 <p class="themes__lector-name"> Тетяна Мойсеєнко
                                 </p>
                             </div>
@@ -381,7 +380,7 @@
                 </div>
             </div>
 
-            <div class="themes__item themes__item--break">
+           {# <div class="themes__item themes__item--break">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
@@ -392,14 +391,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>#}
 
             <div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
                             <div>
-                                <p class="themes__time"> 15:00–16:00 </p>
+                               {# <p class="themes__time"> 15:00–16:00 </p>#}
                                 <p class="themes__lector-name">Мар’яна Кавин
                                 </p>
                             </div>
@@ -433,7 +432,7 @@
                     <div class="themes__header">
                         <div class="themes__info">
                             <div>
-                                <p class="themes__time"> 16:00–17:00</p>
+                              {#  <p class="themes__time"> 16:00–17:00</p>#}
                                 <p class="themes__lector-name"> Олександр Смирнов
                                 </p>
                             </div>
@@ -458,7 +457,7 @@
                     </div>
                 </div>
             </div>
-            <div class="themes__item themes__item--break">
+            {#<div class="themes__item themes__item--break">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
@@ -469,8 +468,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="themes__item">
+            </div>#}
+            {#<div class="themes__item">
                 <div class="themes__box">
                     <div class="themes__header">
                         <div class="themes__info">
@@ -486,21 +485,21 @@
                     </div>
 
                 </div>
-            </div>
+            </div>#}
 
 
-            <div class="questions">
+          {#  <div class="questions">
                 <p>Індивідуальні консультації безлімітно!</p>
                 <span>Експерти в перервах між виступами лекторів відповідатимуть на запитання глядачів у залі та під час всієї трансляції у чаті. </span> <span>Запитання лекторам будуть прийматися протягом всього ефіру.</span>
                 <span>Відповіді від них отримаєте <b>26 березня</b> разом з відеозаписом семінару.</span>
-            </div>
+            </div>#}
             <p class="themes__btn">
                 <a href="#order" class="btn js-scroll-to">приєднатися ></a>
             </p>
         </div>
     </div>
 
-<div class="program">
+{#<div class="program">
     <div class="program__containe"></div>
     <p class="program__title">Розважальна <br> програма</p>
     <div class="program__block">
@@ -512,7 +511,7 @@
         <p>Це буде максимально яскраво, весело та по-душевному –
             море посмішок та чудовий настрій гарантовано!</p>
     </div>
-</div>
+</div>#}
 
 
     <div id="advantages" class="advantages">
@@ -542,12 +541,12 @@
 
 
                 <div class="gifts">
-                    <p class="gifts__title">ПОДАРУНКИ</p>
+                    <p class="gifts__title">ПОДАРУНОК</p>
                     <p class="gifts__name">відеокурс «Облік МШП, МНМА, ОЗ, НА в 1С»
 
                         <br>
                         <span>(5 модулів (32 уроки) та відповіді на запитання)</span></p>
-                    <p class="gifts__name"> Стильний срібний кулон
+                   {# <p class="gifts__name"> Стильний срібний кулон#}
                      </p>
                    {# <div class="gifts__button"><a data-toggle="collapse" data-target="#gifts2" aria-expanded="false" aria-controls="#gifts2" class="gifts__more-btn">Детальніше</a></div>#}
                    {# <div id="gifts2" class="gifts__more collapse">
@@ -570,7 +569,7 @@
                 </div>
             </div>
             <p class="advantages__btn">
-                <a href="#order" class="btn js-scroll-to">стати учасником ></a>
+                <a href="#order" class="btn js-scroll-to">Хочу дивитися ></a>
             </p>
         </div>
     </div>
@@ -592,7 +591,7 @@
             </div>
         </div>
         <div class="order__packages">
-            <div class="order__package  package package--standart package--standart-zal">
+            {#<div class="order__package  package package--standart package--standart-zal">
                 <div class="package__head  package__head--standart">
                     <p class="package__header  package__header--gold"><span>ЗАЛ</span> СТАНДАРТ</p>
                     <p class="package__price package__price-platform "></p>
@@ -602,12 +601,10 @@
                     </p>
                     </div>
                     <div class="package__btn">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalstandart" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalstandart" target="_blank" >Замовити рахунок</a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="зал-250321БКС_ст"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn">Замовити рахунок</button>
                         </form>
                     </div>
                 </div>
@@ -633,12 +630,11 @@
                         <li class="is-inactive">стильний срібний кулон</li>
                     </ul>
                     <div class="package__btn--footer">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalstandart" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalstandart?payType=card" target="_blank" >Оплатити картою</a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="зал-250321БКС_ст"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn">Оплатити картою
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -653,13 +649,13 @@
                         <s>{{shop_price('зал-250321БКС_голд','line')}}грн</s>
                     </p>
                     </div>
-                    <div class="package__btn">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalgold" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                    <div class="package__btn package__disabled">
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalgold" target="_blank" >
+                            Продано
+                        </a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="зал-250321БКС_голд"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn">   Продано</button>
                         </form>
                     </div>
                 </div>
@@ -678,7 +674,7 @@
                         <li  >місця з 1 по 8 ряд </li>
                     </ul>
                 </div>
-                <div class="package__footer  package__footer--gold">
+                <div class="package__footer package__disabled   package__footer--gold">
                     <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" ></path> </svg>подарунки: </p>
                     <ul class="package__list package__list--footer">
                         <li >відеокурс<a href="/automatization2020#course_15" target="_blank"> «Облік МШП, МНМА, ОЗ, НА в 1С»</a></li>
@@ -686,20 +682,64 @@
 
                     </ul>
                     <div class="package__btn--footer">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalgold" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-25032021BKSzal/zalgold" target="_blank" >Продано</a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="зал-250321БКС_голд"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn">Продано
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>#}
+            <div class="order__package  package package--standart package--standart-online">
+                <div class="package__head  package__head--standart">
+                    <p class="package__header  package__header--gold"> <span>Відеозапис</span>СТАНДАРТ</p>
+                    <p class="package__price package__price-platform "></p>
+                    <div     class="package__price  package__price--gold">{{shop_price('онлайн-250321БКС_ст','site')}}  <br> <span>грн</span>
+                        <p class="package__old-price">
+                            <s>{{shop_price('онлайн-250321БКС_ст','line')}}грн</s>
+                        </p>
+                    </div>
+                    <div class="package__btn">
+
+
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/standart?payType=card" target="_blank" >Оплатити картою</a>
+                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                            <input type="hidden" name="product" value="онлайн-250321БКС_ст"/>
+                            <button type="submit" rel="order" class="btn">Оплатити картою
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="package__body  package__body--gold">
+                    <div class="package__platform"></div>
+                    <ul class="package__list">
+                        <li>відеозапис семінару та відповідей на запитання</li>
+                        <li>презентації лекторів </li>
+                        <li>сертифікат учасника</li>
+                    </ul>
+                </div>
+                <div class="package__footer  package__footer--gold">
+                    <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" ></path> </svg>ПОДАРУНОК: </p>
+                    <ul class="package__list package__list--footer">
+
+                        <li class="is-inactive">відеокурс «Облік МШП, МНМА, ОЗ, НА в 1С»</li>
+
+                    </ul>
+                    <div class="package__btn--footer">
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/standart" target="_blank" >
+                            Замовити рахунок
+                        </a>
+                        <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
+                            <input type="hidden" name="product" value="онлайн-250321БКС_ст"/>
+                            <button type="submit" rel="order" class="btn">   Замовити рахунок</button>
                         </form>
                     </div>
                 </div>
             </div>
-
             <div class="order__package  package package--gold package--gold-online">
                 <div class="package__head  package__head--gold">
-                    <p class="package__header  package__header--gold"><span>online</span> Gold</p>
+                    <p class="package__header  package__header--gold"><span>Відеозапис</span> Gold</p>
                     <p class="package__price package__price-platform "></p>
                     <div class="package__price  package__price--gold">{{shop_price('онлайн-250321БКС_голд','site')}}  <br> <span>грн</span>
                         <p class="package__old-price">
@@ -707,40 +747,37 @@
                         </p>
                     </div>
                     <div class="package__btn">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/Gold" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/Gold?payType=card" target="_blank" >Оплатити картою</a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="онлайн-250321БКС_голд"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn">Оплатити картою
+                            </button>
                         </form>
+
                     </div>
                 </div>
 
                 <div class="package__body  package__body--gold">
                     <div class="package__platform"></div>
                     <ul class="package__list">
-                        <li>online-трансляція</li>
-                        <li>  відеозапис</li>
-                        <li> відповіді на запитання</li>
+                        <li>відеозапис семінару та відповідей на запитання</li>
                         <li>презентації лекторів </li>
                         <li>сертифікат учасника</li>
 
                     </ul>
                 </div>
                 <div class="package__footer  package__footer--gold">
-                    <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" ></path> </svg>ПОДАРУНКИ: </p>
+                    <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" ></path> </svg>ПОДАРУНОК: </p>
                     <ul class="package__list package__list--footer">
                         <li >відеокурс<a href="/automatization2020#course_15" target="_blank"> «Облік МШП, МНМА, ОЗ, НА в 1С»</a></li>
-                        <li class="is-inactive">стильний срібний кулон</li>
                     </ul>
                     <div class="package__btn--footer">
-                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/Gold" target="_blank" >оплатити <br>
-                            <span>рахунок/картою</span></a>
+                        <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/Gold" target="_blank" >
+                            Замовити рахунок
+                        </a>
                         <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
                             <input type="hidden" name="product" value="онлайн-250321БКС_голд"/>
-                            <button type="submit" rel="order" class="btn">оплатити <br>
-                                <span>рахунок/картою</span></button>
+                            <button type="submit" rel="order" class="btn"> Замовити рахунок</button>
                         </form>
                     </div>
                 </div>
@@ -748,53 +785,7 @@
 
 
 
-            <div class="order__package  package package--standart package--standart-online">
-                    <div class="package__head  package__head--standart">
-                        <p class="package__header  package__header--gold"> <span>online</span>СТАНДАРТ</p>
-                        <p class="package__price package__price-platform "></p>
-                        <div     class="package__price  package__price--gold">{{shop_price('онлайн-250321БКС_ст','site')}}  <br> <span>грн</span>
-                            <p class="package__old-price">
-                                <s>{{shop_price('онлайн-250321БКС_ст','line')}}грн</s>
-                            </p>
-                        </div>
-                        <div class="package__btn">
-                            <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/standart" target="_blank" >оплатити <br>
-                                <span>рахунок/картою</span></a>
-                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
-                                <input type="hidden" name="product" value="онлайн-250321БКС_ст"/>
-                                <button type="submit" rel="order" class="btn">оплатити <br>
-                                    <span>рахунок/картою</span></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="package__body  package__body--gold">
-                        <div class="package__platform"></div>
-                        <ul class="package__list">
-                            <li>online-трансляція</li>
-                            <li>  відеозапис</li>
-                            <li> відповіді на запитання</li>
-                            <li>презентації лекторів </li>
-                            <li>сертифікат учасника</li>
-                        </ul>
-                    </div>
-                    <div class="package__footer  package__footer--gold">
-                         <p class="package__presents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="31" height="31"> <path d="M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.9 13-13S20.1 0 13 0zm6.5 14.3h-5.2v5.2h-2.6v-5.2H6.5v-2.6h5.2V6.5h2.6v5.2h5.2v2.6z" ></path> </svg>ПОДАРУНКИ: </p>
-                    <ul class="package__list package__list--footer">
 
-                            <li class="is-inactive">відеокурс «Облік МШП, МНМА, ОЗ, НА в 1С»</li>
-                            <li class="is-inactive">стильний срібний кулон</li>
-                    </ul>
-                        <div class="package__btn--footer">
-                            <a class="btn js-btn-utm dk-hide"  href="https://7eminar.ua/checkout/s-250321BKS/standart" target="_blank" >оплатити <br>
-                                <span>рахунок/картою</span></a>
-                            <form class="kbs-hide dk-show" method="post" action="?new=1" data-validate="ajax">
-                                <input type="hidden" name="product" value="онлайн-250321БКС_ст"/>
-                                <button type="submit" rel="order" class="btn">оплатити <br>
-                                    <span>рахунок/картою</span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
         <div class="order__platform">
             <div class="platform">
                 <div class="platform__item">
@@ -902,11 +893,11 @@
                 <li><a href="https://dtkt.ua/" target="_blank" rel="nofollow"><img src="https://7eminar.com/modules/seminars/images/logos/dtkt.png" width="146" height="38" alt="Дебет-Кредит" /></a></li>
                 <li><a  href="http://unisystem.ua/?utm_source=google&utm_medium=7eminar.com&utm_campaign=cpc&utm_term=webinar" target="_blank" rel="nofollow"><img src="https://7eminar.com/files/0_2021/logo/unisystem_logo.jpg"  width="170" alt="unisystem" /></a></li>
             </ul>
-          {#  <ul class="partners__list">
+            <ul class="partners__list">
 
-                <li><a href="http://www.softcom.ua/" target="_blank" rel="nofollow"><img src="/modules/seminars/images/logos/softcom.png" height="50" alt="Софтком" /></a></li>
-                <li><a class="logonoclik" href="https://kraft.net.ua" target="_blank"><img class="img_partners1" style="width: 143px;height: 38px;" src="https://7eminar.com/storage/seminars/mails/1/kraft.png" alt="Image Title" /></a></li>
-            </ul>#}
+                <li><a href=" https://inagro.com.ua/" target="_blank" rel="nofollow"><img  src="{{ link }}/agro.png" height="50" alt="Софтком" /></a></li>
+                <li><a class="logonoclik" href=" https://edin.ua/vilnij" target="_blank"><img class="img_partners1" style="width: 143px;height: 38px;"  src="{{ link }}/logo_rgb.png" alt="Image Title" /></a></li>
+            </ul>
         </div>
     </div>
 
@@ -940,3 +931,22 @@
 
 <div id="modal_form"><span id="modal_close">X</span></div>
 <div id="overlay"></div>
+
+
+{#
+<div id="banner" class="modal fade">
+    <div class="banner">
+        <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <picture>
+                <img src="{{ link }}/banner_mask.png" alt="banner_mask"/>
+            </picture>
+            <p>
+                Під час проведення семінару у залі ми дотримуємось усіх норм і вимог, встановлених МОЗ і КМУ: <br>               належної дистанції між учасниками, наявності вільних місць, кількості слухачів на одиницю площі приміщення.
+                <br>
+                Будьмо здорові, навчаймось разом!
+            </p>
+
+        </div>
+    </div>
+</div>#}

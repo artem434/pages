@@ -15,6 +15,7 @@ jQuery(function ($) {
         $(this).attr('href', link)
     });
 
+
     (function($) {
         $.fn.animated = function(inEffect) {
             $(this).each(function() {

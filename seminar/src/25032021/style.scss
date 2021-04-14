@@ -93,8 +93,6 @@ html * {
   }
 }
 
-
-
 %title {
   font-size: 44px;
   font-weight: 800;
@@ -207,6 +205,8 @@ html * {
 /*@import "map";*/
 @import "scss/modal-video";
 
+@import "scss/banner";
+
 
 .branding-page #main{
   width: 100%;
@@ -217,6 +217,8 @@ html * {
   padding-top: 0px;
 
 }
+
+
 
 .branding-page .footer {
   position: relative;
@@ -296,3 +298,4 @@ html * {
   cursor:pointer;
   display:none;
 }
+

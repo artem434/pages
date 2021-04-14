@@ -139,6 +139,15 @@
     @include media-breakpoint-up(xl) {
       margin-bottom: 100px;
     }
+
+    .btn{
+      background-color: #ff2033;
+
+      &:hover{
+        background-color: #ca1c2c;
+        color: #fff;
+      }
+    }
   }
 }
 

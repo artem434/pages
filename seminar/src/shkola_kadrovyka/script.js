@@ -75,6 +75,10 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/waypoints/4.0.1/jquery
                     }
                     jquery_2.default('#main').css('position', 'static');
                 });
+                if (document.location.host == "seminars.dtkt.ua") {
+                    var viewport = $("meta[name=viewport]");
+                    viewport.attr('content', 'width=1024, max-scale=1.0');
+                };
                 myModal.on('hide.bs.modal', function (e) {
                     var player = jquery_2.default(e.target).data('youtube-player');
                     player && player.stopVideo();

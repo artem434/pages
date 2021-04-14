@@ -1,0 +1,149 @@
+.timer {
+  padding: 110px 0px 100px;
+
+  @media (max-width: 1200px){
+    padding: 75px 0px;
+  }
+  @media (max-width: 767px){
+    padding: 30px 0px;
+
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box {
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(to top, #088ddc, #088ddc);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    margin-right: 30px;
+    @media (max-width: 767px){
+      margin-right: 5px;
+      font-size: 15px;
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    > span {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1;
+
+      @media (max-width: 767px){
+        font-size: 25px;
+
+      }
+
+      &.separate {
+        display: none;
+      }
+    }
+
+    &:nth-child(odd) {
+
+
+
+      @media (max-width: 980px){
+
+      }
+      @media (max-width: 600px){
+
+      }
+    }
+    &:nth-child(even ) {
+      display: none;
+
+    }
+  }
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  @include media-breakpoint-up(xl) {
+    margin: 80px 0 115px;
+  }
+
+  &__item{
+    background:  url(images/timer_bg.png) no-repeat center center;
+    background-size: contain;
+    width: 66px;
+    height: 51px;
+    padding: 3px 11px;
+    margin: 0 5px;
+    color: #2b2b2b;
+
+    &:last-child{
+      .timer__block{
+
+        color: #fd164c;
+      }
+
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 196px;
+      height: 156px;
+      padding: 12px 32px;
+      margin: 0 15px;
+
+
+    }
+  }
+
+  &__block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+      display: block;
+      line-height: 1.3;
+
+    }
+
+
+  }
+
+  &__time{
+    font-size: 23.5px;
+    font-weight: bold;
+    line-height: 1;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 72px;
+    }
+  }
+
+  &__text{
+    font-size: 6px;
+    font-weight: 600;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+  }
+
+}

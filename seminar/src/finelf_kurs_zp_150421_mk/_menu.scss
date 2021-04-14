@@ -1,0 +1,53 @@
+.menu {
+
+  &__container {
+      display: none;
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 20px 0;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 0 15px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1.39px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+    a {
+      color: #c7c7c7;
+      letter-spacing: 0.7px;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+        color: #fd164c;
+      }
+    }
+  }
+}

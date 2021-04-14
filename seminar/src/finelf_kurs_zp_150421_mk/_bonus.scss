@@ -1,0 +1,116 @@
+.bonus {
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
+  }
+
+  &__content{
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+      width: 32%;
+      flex-direction: row;
+      text-align: left;
+      margin-bottom: 80px;
+      padding-left: 30px;
+
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 80px;
+      }
+    }
+
+    b{
+      display: block;
+      font-weight: 600;
+      padding-top: 11px;
+      margin-top: 11px;
+      position: relative;
+
+
+      @include media-breakpoint-up(xl) {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 18px;
+      }
+
+      &:before,&:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0%);
+        width: 37px;
+        height: 1px;
+        background-color: #fd164c;
+        @include media-breakpoint-up(xl) {
+          content: none;
+        }
+      }
+
+      &:after{
+        top: -3px;
+      }
+    }
+
+    p{
+      margin-bottom: 0;
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+    }
+
+
+  }
+
+  &__icon{
+    @include media-breakpoint-up(xl) {
+      margin-right: 15px;
+      position: relative;
+      padding-bottom: 13px;
+
+      &:before,&:after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0%);
+        width: 37px;
+        height: 1px;
+        background-color: #fd164c;
+      }
+
+      &:after{
+        bottom: -3px;
+      }
+    }
+   svg{
+     width: 42px;
+     height: 42px;
+     fill: #fd164c;
+   }
+  }
+
+  &__btn{
+    padding: 40px 0;
+  }
+}
+

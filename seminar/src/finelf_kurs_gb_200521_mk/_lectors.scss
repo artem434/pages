@@ -1,0 +1,132 @@
+.lectors {
+  background-color: #041b28;
+
+  .title{
+    margin-bottom: 50px;
+
+  }
+
+  &__content{
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item{
+    background-color: #fff;
+    padding: 120px 15px 25px;
+    margin-top: 120px;
+    text-align: left;
+    position: relative;
+    color: #161616;
+    height: auto;
+
+
+    @include media-breakpoint-up(xl) {
+      width: 100%;
+      margin: 105px 15px 15px 15px;
+
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__img{
+    position: absolute;
+    left: 50%;
+    top: -103.5px;
+    transform: translate(-50%,0);
+  }
+
+  &__name{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+
+    &:before,&:after{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,0%);
+      width: 140px;
+      height: 1px;
+      background-color: #0092d3;
+    }
+
+    &:after{
+      bottom: -3px;
+    }
+  }
+
+  ul{
+    //list-style-type: "\2013";
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    li{
+      line-height: 1.6;
+      font-size: 15px;
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__btn{
+    padding: 50px 0;
+
+    @include media-breakpoint-up(xl) {
+      padding: 80px 0;
+
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 30px;
+
+    @include media-breakpoint-up(xl) {
+      color: #fff;
+    }
+
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .prev{
+    left: -15px;
+    z-index: 1;
+
+
+    @media (max-width: 767px){
+      left: -5px;
+    }
+  }
+
+  .next{
+    right: -20px;
+
+    @media (max-width: 767px){
+      right: -5px;
+    }
+  }
+
+
+}
+

@@ -1,0 +1,99 @@
+.reviews {
+  text-align: center;
+  .slick-track {
+    display: flex;
+  }
+
+  &__container {
+    @extend %container;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title{
+    @extend %title;
+  }
+
+  &__content{
+    margin-bottom: 50px;
+    position: relative;
+
+    @media (max-width: 767px){
+      margin-bottom: 20px;
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 30px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .prev{
+    left: -15px;
+    z-index: 1;
+
+
+    @media (max-width: 767px){
+      left: -5px;
+    }
+  }
+
+  .next{
+    right: -20px;
+
+    @media (max-width: 767px){
+      right: -5px;
+    }
+  }
+
+  .slick-track{
+    display: flex;
+  }
+
+
+  &__item{
+    text-align: left;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #282828;
+    background-color: #f6f6f6;
+    border: solid 1px #ffa30c;
+    padding:20px ;
+    margin: 20px;
+
+    @media (max-width: 767px){
+      margin: 15px 25px;
+      font-size: 15px;
+      height: auto;
+      padding: 12px;
+    }
+    &:focus{
+      outline: none;
+    }
+
+
+    p{
+      padding: 25px 0;
+    }
+    b{
+      display: block;
+    }
+  }
+
+
+
+  &__btn{
+    @extend %btn;
+    margin: 0px auto;
+    @media (max-width: 767px){
+      margin-top: 0;
+    }
+
+  }
+}

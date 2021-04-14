@@ -51,13 +51,14 @@ System.register(["jquery", "youtube", "bootstrap", "cdnjs/waypoints/4.0.1/jquery
                 }
                 ;
                 $('.got__item').show();
-
                 if (document.location.host != "7eminar.com") {
                     $('.link-js-dealer').attr('href', '/platform');
                 };
                 if (document.location.host == "seminars.dtkt.ua") {
                     $('.js-banner-link').attr('href', 'https://promo.dtkt.ua/7eminar');
                     $('.link-js-dealer').attr('href', 'https://promo.dtkt.ua/7eminar');
+                    var viewport = $("meta[name=viewport]");
+                    viewport.attr('content', 'width=1024, max-scale=1.0');
                 };
             });
             youtube_1.default.ready(function () {

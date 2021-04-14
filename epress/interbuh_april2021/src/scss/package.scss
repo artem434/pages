@@ -1,8 +1,8 @@
 .package {
-  $color-one:#0c4f3d;
-  $color-two:#0c4f3d;
-  $color-three:#0c3b4f;
-  $color-period:#dedddd;
+  $color-one:#f3894f;
+  $color-two:#f3894f;
+  $color-three:#0f1b3f;
+  $color-period:#ae3e00;
 
   &__header{
     background-color: $color-one;
@@ -50,6 +50,10 @@
       background-color: $color-three;
     }
 
+    .package__month{
+      color: #dedddd;
+    }
+
     .btn-package{
       background-color: $color-three;
       border: none;
@@ -74,7 +78,7 @@
       content: "топ продажу";
       color: #fff;
       border-radius: 4px;
-      background-color: #d830b9;
+      background-color: #f3894f;
       box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
       width: 180px;
       left: 50%;
@@ -116,7 +120,6 @@
     line-height: 0.63;
     text-align: center;
     font-weight: bold;
-    padding-top: 40px;
 
     b{
       font-size: 25px;
@@ -194,10 +197,10 @@
   }
 
   .btn-package--three{
-    display: none;
+    display: inline-block;
   }
   .btn-package--six{
-    display: inline-block;
+    display: none;
   }
   .btn-package--twelve{
     display: none;

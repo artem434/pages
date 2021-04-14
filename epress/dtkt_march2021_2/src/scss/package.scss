@@ -1,16 +1,16 @@
 .package {
-  $color-one:#0c4f3d;
+  $color-one:#f9d401;
   $color-two:#0c4f3d;
-  $color-three:#0c3b4f;
-  $color-period:#dedddd;
+  $color-three:#f9d401;
+  $color-period:#857100;
 
   &__header{
     background-color: $color-one;
-    color: #fff;
+    color: #040207;
   }
 
   .btn-package{
-    background-color: $color-one;
+    background-color: #ff3535;
     color: #fff;
 
     &:after{
@@ -19,7 +19,7 @@
     }
 
     &:hover{
-      background-color: #ae3942;
+      background-color: #c80d0d;
     }
   }
 
@@ -50,20 +50,6 @@
       background-color: $color-three;
     }
 
-    .btn-package{
-      background-color: $color-three;
-      border: none;
-      color: #fff;
-
-      &:after{
-        border-bottom: 2px solid #fff;
-        border-right: 2px solid #fff;
-      }
-
-      &:hover{
-        background-color:#ae3942;
-      }
-    }
 
   }
 
@@ -74,7 +60,7 @@
       content: "топ продажу";
       color: #fff;
       border-radius: 4px;
-      background-color: #d830b9;
+      background-color: #ff3535;
       box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
       width: 180px;
       left: 50%;
@@ -102,7 +88,7 @@
   &__month{
     font-size: 20px;
     line-height: 1.25;
-    margin: 20px auto;
+    margin: 15px auto;
     color: $color-period;
   }
 
@@ -113,14 +99,19 @@
   &__custom-price{
     display: block;
     font-size: 40px;
-    line-height: 0.63;
+    line-height: 1;
     text-align: center;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 0px;
 
     b{
-      font-size: 25px;
+      font-weight: bold;
     }
+  }
+
+  &__price-text{
+    font-size: 20px;
+    display: block;
   }
 
   &__presents{
@@ -129,12 +120,36 @@
 
   &__presents-title, &__abilities-title{
     color: #040207;
+
+    &--no-active{
+      color: #bdbbbb;
+    }
+  }
+
+  &__abilities{
+    padding-top: 0;
+  }
+
+  &__footer{
+    padding-bottom: 0;
+
+
+    &--top{
+      padding-top: 30px;
+    }
   }
 
   &__presents-list {
 
     li {
       color: #040207;
+      a{
+        color: #000;
+
+        &:hover{
+          color: #000;
+        }
+      }
 
       &:nth-child(2){
         padding-left: 0;
@@ -144,6 +159,8 @@
           height: 4px;
         }
       }
+
+
 
       &:before{
         background: transparent url(images/gift_purple.svg) no-repeat top center;
@@ -179,6 +196,7 @@
     li{
       color: #000;
 
+
       &:before{
         color: #0c4f3d;
       }
@@ -186,7 +204,7 @@
   }
 
   &__list-show{
-    color: #0a3fa7;
+    color: #ff3535;
     text-decoration: underline;
     cursor: pointer;
     margin-bottom: 0;
@@ -196,8 +214,12 @@
   .btn-package--three{
     display: none;
   }
-  .btn-package--six{
+  .btn-package--nine{
     display: inline-block;
+  }
+
+  .btn-package--six{
+    display: none;
   }
   .btn-package--twelve{
     display: none;

@@ -1,5 +1,4 @@
-.landing-interbuh_february2021_2{
-
+.landing-dtkt_april2021{
   .package__old-price{
     display: none;
   }
@@ -9,7 +8,7 @@
   }
 
   .dtkt-promo{
-    background-image: linear-gradient(to right, #cdfffe, #bbfaff);
+    background-image: linear-gradient(to right, #000, #000);
     img{
 
       @media (max-width: 767px){
@@ -64,5 +63,4 @@
   }
 
   @import "scss/package";
-
 }

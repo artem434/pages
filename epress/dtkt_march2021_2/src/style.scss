@@ -1,5 +1,5 @@
-.landing-interbuh_february2021_2{
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+.landing-dtkt_march2021_2{
   .package__old-price{
     display: none;
   }
@@ -9,7 +9,11 @@
   }
 
   .dtkt-promo{
-    background-image: linear-gradient(to right, #cdfffe, #bbfaff);
+    background: #fad401 url(images/head.jpg) no-repeat top 0px center;
+
+    @media (max-width: 767px){
+      background: #fad401 url(images/head_mob.jpg) no-repeat top 0px center;
+    }
     img{
 
       @media (max-width: 767px){
@@ -64,5 +68,5 @@
   }
 
   @import "scss/package";
-
+  @import "scss/hero";
 }

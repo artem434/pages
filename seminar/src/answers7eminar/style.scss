@@ -472,6 +472,8 @@ body {
         li{
           position: relative;
           margin-bottom: 5px;
+          line-height: 1.75;
+
           &:after{
             display: block;
             content: "";
@@ -480,7 +482,7 @@ body {
             position: absolute;
             border-radius: 50%;
             background-color: #fe5254;
-            bottom: 9px;
+            top: 10px;
             left: -10px;
 
           }

@@ -55,6 +55,10 @@
       width: 170px;
       height: auto;
 
+      @media (max-width: 767px){
+        width: 150px;
+      }
+
     }
   }
 
@@ -181,6 +185,8 @@
     }
     small{
       font-size: 14px;
+
+      display: block;
     }
   }
 

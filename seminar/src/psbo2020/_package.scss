@@ -36,7 +36,8 @@
     line-height: 1.2;
     letter-spacing: normal;
     color: #ffffff;
-    padding-bottom: 45px;
+    text-transform: uppercase;
+
     @media (max-width: 767px){
       font-size: 20px;
       padding-bottom: 25px;
@@ -144,6 +145,10 @@
   &__btn{
     margin: 45px 0 -43px;
 
+    &--top{
+      margin: 30px 0;
+    }
+
     a{
       width: 305px;
       line-height: 75px;
@@ -161,12 +166,15 @@
       border: none;
       border-radius: 0;
       margin: 0 auto;
+      padding: 20px 12px;
       padding-right: 75px;
+
       &:hover{
         color: #fff;
       }
       @media (max-width: 767px){
         width: 280px;
+        font-size: 16px;
       }
     }
 
@@ -210,7 +218,8 @@
 
   &__btn-platform{
     @extend %btn;
-    margin: 45px 0 -43px;
+
+
     a{
       display: block;
       width: 305px;
@@ -229,9 +238,11 @@
       border: none;
       border-radius: 0;
       margin: 0 auto;
-      padding: 5px 75px  5px 0;
+      padding: 20px 12px;
+      padding-right: 75px;
       @media (max-width: 767px){
         width: 280px;
+        font-size: 16px;
       }
       &:after{
         background-image: linear-gradient(to top, #e81491, #e6872a);
@@ -264,11 +275,9 @@
     }
 
     .package__title{
-      font-size: 22px;
-      padding-bottom: 25px;
-      @media (max-width: 767px){
-        font-size: 20px;
-      }
+      font-size: 25px;
+      height: 72px;
+
     }
     .package__item{
 

@@ -158,7 +158,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__video">
-                        <iframe src="https://www.youtube.com/embed/pLl_UE3ZXHo?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe src="https://www.youtube.com/embed/6JymWgZ5W5Q?rel=0&amp;showinfo=0&amp;autohide=2" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
 
 
@@ -559,12 +559,9 @@
                     <div class="teaching__icon"><span>3</span></div><b>Відповіді <br /> на запитання</b>
                     <p>Персональні консультації від лекторів у кожному модулі </p>
                 </div>
+
                 <div class="teaching__item">
-                    <div class="teaching__icon"><span>4</span></div><b>Закрита група у вайбері </b>
-                    <p>Обговорення професійних питань з іншими учасниками курсу</p>
-                </div>
-                <div class="teaching__item">
-                    <div class="teaching__icon"><span>5</span></div><b>Персональний <br /> сертифікат</b>
+                    <div class="teaching__icon"><span>4</span></div><b>Персональний <br /> сертифікат</b>
                     <p>Електронний сертифікат про проходження курсу після складання екзамену</p>
                 </div>
             </div>
@@ -744,7 +741,7 @@
 
     <div class="order" id="order">
         <div class="container">
-            <h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
+           {# <h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
             <p class="subtitle">АКЦІЙНІ
                 <br class="d-xl-none"> ЦІНИ ДІЮТЬ ЩЕ</p>
 
@@ -769,14 +766,14 @@
                         <div><span class="timer__time seconds">00</span> <span class="timer__text">секунди</span></div>
                     </div>
                 </div>
-            </div>
+            </div>#}
             <div class="order__packages">
                 <div class="package package--mk">
                     <div><span class="package__discount"></span>
                         <h3 class="package__title">Для учасників <br /> майстер-класу</h3>
                         <div class="package__main package__main--line">
                             <p class="package__price">{{shop_price('elf-200521glavbuh','site')}}<span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-200521glavbuh','line')}}</s>
+                              {#  <s>{{shop_price('elf-200521glavbuh','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -792,7 +789,7 @@
                     </div>
                     <div class="package__advantages">
                         <ul>
-                            <li>4 модулі (24 уроки)</li>
+                            <li>10 модулів (73 уроки)</li>
                             <li>Відповіді на запитання у кожному модулі</li>
                             <li>Роздатковий матеріал</li>
                             <li>Тести для перевірки засвоєння матеріалу</li>
@@ -806,7 +803,7 @@
                     <div>
                         <div class="package__main package__main--bottom">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_card','site')}}<span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-200521glavbuh_card','line')}}</s>
+                            {#    <s>{{shop_price('elf-200521glavbuh_card','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -820,7 +817,7 @@
                         <h3 class="package__title">Для своїх*</h3>
                         <div class="package__main package__main--line">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_sv','site')}}<span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>
+                            {#    <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -836,7 +833,7 @@
                     </div>
                     <div class="package__advantages">
                         <ul>
-                            <li>4 модулі (24 уроки)</li>
+                            <li>10 модулів (73 уроки)</li>
                             <li>Відповіді на запитання у кожному модулі</li>
                             <li>Роздатковий матеріал</li>
                             <li>Тести для перевірки засвоєння матеріалу</li>
@@ -850,7 +847,7 @@
                     <div>
                         <div class="package__main package__main--bottom">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_sv','site')}}<span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>
+                              {#  <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -863,8 +860,8 @@
                     <div><span class="package__discount"></span>
                         <h3 class="package__title">Передплата <br /> на ONLINE-академію <br /> професій</h3>
                         <div class="package__main package__main--line">
-                            <p class="package__price">{{shop_price('elf-platform_price','year')}}<span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-platform_price','line')}}</s>
+                            <p class="package__price">{{shop_price('elf-platform_price','bvpyear')}}<sup class="star">* </sup><span class="package__currency">грн</span>
+                               {# <s>{{shop_price('elf-platform_price','line')}}</s>#}
                             </p>
                         </div>
                         <p class="package__btn"><a class="btn" href="https://promo.dtkt.ua/finelf#order" target="_blank"> Замовити рахунок</a></p>
@@ -884,10 +881,10 @@
                     </div>
                     <div>
                         <div class="package__main package__main--bottom">
-
-                            <p class="package__price">{{shop_price('elf-platform_price','bvpyear')}}<sup class="star">* </sup><span class="package__currency">грн</span>
-                                <s>{{shop_price('elf-platform_price','line')}}</s>
+                            <p class="package__price">{{shop_price('elf-platform_price','year')}}<span class="package__currency">грн</span>
+                                {#<s>{{shop_price('elf-platform_price','line')}}</s>#}
                             </p>
+
                         </div>
                         <p class="package__btn"><a class="btn" href="https://promo.dtkt.ua/finelf#order" target="_blank"> Оплатити картою</a></p>
                     </div>

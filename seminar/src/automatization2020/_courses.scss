@@ -268,6 +268,22 @@
 
   }
 
+  ul{
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 250px;
+
+    @media (max-width: 767px){
+      padding-right: 0px;
+      padding-left: 20px;
+    }
+
+    li{
+      line-height: 1.5;
+      padding-bottom: 15px;
+    }
+  }
+
   &__all-lessons{
     color: #2d46a3;
     text-decoration: underline;

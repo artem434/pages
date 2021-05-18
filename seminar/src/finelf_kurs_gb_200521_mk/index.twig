@@ -395,7 +395,7 @@
                 <div class="theme__header">
                     <div class="theme__info">
                         <p>15.07.2021 | МОДУЛЬ 9.</p>
-                        <p>СЕКРЕТНИЙ ЛЕКТОР (10 УРОКІВ)</p>
+                        <p>ВАЛЕНТИНА ВЕРХОГЛЯД (10 УРОКІВ)</p>
                     </div>
                     <p class="theme__title">Фінансова звітність. Податок на прибуток: декларація, застосування податкових різниць</p>
                     <p class="theme__more-btn" data-toggle="collapse" data-target="#lesson9" aria-expanded="false" aria-controls="#lesson9"><span></span></p>
@@ -411,7 +411,7 @@
                         <li><b>Урок 7. Операції з нерезидентами: кредити, роялті тощо </b></li>
                         <li><b>Урок 8. Помилки і результати податкових перевірок у фінзвітності і в декларації з податку на прибуток.</b></li>
                         <li><b>Урок 9. Виправлення бухгалтерських і податкових помилок </b></li>
-                        <li><b>Урок 10. Відповіді на запитання до Модуля 9 </b></li>
+                        <li><b>Урок 10. Відповіді на запитання Валентини Верхогляд до Модуля 9</b></li>
                         <li>Тестові завдання | Додатковий матеріал | Домашнє завдання </li>
                     </ol>
                 </div>
@@ -525,6 +525,18 @@
                     <p class="lectors__name">Ірина Губіна</p>
                     <ul>
                         <li>Експерт з податкового та бухгалтерського обліку </li>
+                    </ul>
+                </div>
+                <div class="lectors__item">
+                    <div class="lectors__img">
+                        <picture>
+                            <source srcset="{{ link }}/vv.webp"  type="image/webp">
+                            <img src="{{ link }}/vv.webp"  alt="Валентина Верхогляд" >
+                        </picture>
+                    </div>
+                    <p class="lectors__name">Валентина Верхогляд</p>
+                    <ul>
+                        <li>Податковий консультант, автор публікацій у спеціалізованих бухгалтерських виданнях</li>
                     </ul>
                 </div>
                 <div class="lectors__item">
@@ -660,7 +672,7 @@
                         </svg>
                     </div>
                     <div><b>Брошура </b>
-                        <p>«Адміністративна і кримінальна відповідальність бухгалтера та керівника»'</p>
+                        <p>«Заповнення нової зарплатної звітності на прикладах»</p>
                     </div>
                 </div>
                 <div class="bonus__item">
@@ -741,7 +753,7 @@
 
     <div class="order" id="order">
         <div class="container">
-           {# <h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
+          {#  <h2 class="title title--black">СПЕЦПРОПОЗИЦІЯ</h2>
             <p class="subtitle">АКЦІЙНІ
                 <br class="d-xl-none"> ЦІНИ ДІЮТЬ ЩЕ</p>
 
@@ -773,7 +785,7 @@
                         <h3 class="package__title">Для учасників <br /> майстер-класу</h3>
                         <div class="package__main package__main--line">
                             <p class="package__price">{{shop_price('elf-200521glavbuh','site')}}<span class="package__currency">грн</span>
-                              {#  <s>{{shop_price('elf-200521glavbuh','line')}}</s>#}
+                             {#   <s>{{shop_price('elf-200521glavbuh','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -803,7 +815,7 @@
                     <div>
                         <div class="package__main package__main--bottom">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_card','site')}}<span class="package__currency">грн</span>
-                            {#    <s>{{shop_price('elf-200521glavbuh_card','line')}}</s>#}
+                               {# <s>{{shop_price('elf-200521glavbuh_card','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -817,7 +829,7 @@
                         <h3 class="package__title">Для своїх*</h3>
                         <div class="package__main package__main--line">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_sv','site')}}<span class="package__currency">грн</span>
-                            {#    <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
+                              {#  <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -847,7 +859,7 @@
                     <div>
                         <div class="package__main package__main--bottom">
                             <p class="package__price">{{shop_price('elf-200521glavbuh_sv','site')}}<span class="package__currency">грн</span>
-                              {#  <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
+                               {# <s>{{shop_price('elf-200521glavbuh_sv','line')}}</s>#}
                             </p>
                         </div>
                         <form class=" btn-page package__btn btn-package" method="post" action="?new=1" data-validate="ajax">
@@ -861,19 +873,19 @@
                         <h3 class="package__title">Передплата <br /> на ONLINE-академію <br /> професій</h3>
                         <div class="package__main package__main--line">
                             <p class="package__price">{{shop_price('elf-platform_price','bvpyear')}}<sup class="star">* </sup><span class="package__currency">грн</span>
-                               {# <s>{{shop_price('elf-platform_price','line')}}</s>#}
+                              {#  <s>{{shop_price('elf-platform_price','line')}}</s>#}
                             </p>
                         </div>
                         <p class="package__btn"><a class="btn" href="https://promo.dtkt.ua/finelf#order" target="_blank"> Замовити рахунок</a></p>
                     </div>
                     <div class="package__advantages">
                         <ul>
-                            <li><b>Повний доступ до цього курсу</b>, <br /> а також до 7 професійних курсів</li>
-                            <li>Професія Бухгалтер. Облік у ФОПів</li>
-                            <li>Професія Бухгалтер. Облік <br /> заробітної плати</li>
+                            <li><b>Ви отримаєте:</b>, <br>8 професійних курсів</li>
+                            <li>Професія Бухгалтер. Облік заробітної плати</li>
                             <li>Професія Головний бухгалтер</li>
+                            <li>Професія Бухгалтер. Облік у ФОПів</li>
                             <li>Професія Бухгалтер. Облік ПДВ</li>
-                            <li>Професія Кадровик. Кадровий облік <br /> і трудове право</li>
+                            <li>Професія Кадровик. Кадровий облік і трудове право</li>
                             <li>Професія IT-Бухгалтер</li>
                             <li>Професія Фінансовий директор</li>
                             <li>Професія Бухгалтер. Облік ЗЕД</li>
@@ -882,7 +894,7 @@
                     <div>
                         <div class="package__main package__main--bottom">
                             <p class="package__price">{{shop_price('elf-platform_price','year')}}<span class="package__currency">грн</span>
-                                {#<s>{{shop_price('elf-platform_price','line')}}</s>#}
+                               {# <s>{{shop_price('elf-platform_price','line')}}</s>#}
                             </p>
 
                         </div>

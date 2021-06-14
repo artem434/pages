@@ -44,38 +44,13 @@
     }
   }
 
-  &__three{
 
-    .package__header{
-      background-color: $color-three;
-    }
-
-    .package__month{
-      color: #dedddd;
-    }
-
-    .btn-package{
-      background-color: $color-three;
-      border: none;
-      color: #fff;
-
-      &:after{
-        border-bottom: 2px solid #fff;
-        border-right: 2px solid #fff;
-      }
-
-      &:hover{
-        background-color:#ae3942;
-      }
-    }
-
-  }
 
   &__plus-top{
     position: relative;
     &:before{
       position: absolute;
-      content: "топ продажу";
+      content: "Акція дня";
       color: #fff;
       border-radius: 4px;
       background-color: #f3894f;
@@ -120,6 +95,7 @@
     line-height: 0.63;
     text-align: center;
     font-weight: bold;
+    padding-top: 20px;
 
     b{
       font-size: 25px;
@@ -135,6 +111,11 @@
   }
 
   &__presents-list {
+
+    .package__btn{
+      padding-top: 20px;
+      margin-bottom: -20px;
+    }
 
     li {
       color: #040207;
@@ -204,6 +185,49 @@
   }
   .btn-package--twelve{
     display: none;
+  }
+
+  &__three{
+
+    .package__header{
+      background-color: $color-three;
+    }
+
+    .package__month{
+      color: #dedddd;
+    }
+
+    .btn-package--three{
+      display: none;
+    }
+
+    .btn-package{
+      background-color: $color-three;
+      border: none;
+      color: #fff;
+
+      &:after{
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+      }
+
+      &:hover{
+        background-color:#ae3942;
+      }
+    }
+
+  }
+
+  &__footer--top{
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  &__footer{
+    padding-bottom: 0;
+    .btn-package--three{
+      display: none;
+    }
   }
 }
 

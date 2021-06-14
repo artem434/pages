@@ -1,0 +1,247 @@
+.package {
+  $color-one:#ffe7e7;
+  $color-two:#ffe7e7;
+  $color-three:#ff4342;
+  $color-period:#cd8686;
+
+  border: solid 1px $color-three;
+
+  &__header{
+    background-color: $color-one;
+    color: #000;
+    border-bottom: solid 1px $color-three;
+    padding-top: 45px;
+
+  }
+
+
+
+
+  .btn-package{
+    background-color: transparent;
+    border: solid 1px $color-three;
+    color: $color-three;
+
+    &:after{
+      border-bottom: 2px solid $color-three;
+      border-right: 2px solid $color-three;
+    }
+
+    &:hover{
+      color: #fff;
+      background-color: #ae3942;
+      border: solid 1px #ae3942;
+
+      &:after{
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+
+      }
+    }
+  }
+
+  &__two{
+
+    .package__header{
+      background-color: $color-two;
+    }
+
+
+  }
+
+
+
+  &__plus-top{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "топ продажу";
+      color: #040207;
+      border-radius: 4px;
+      background-color: #ffea00;
+      box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
+      width: 180px;
+      left: 50%;
+      top: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 25px;
+      transform: translate(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    text-transform: uppercase;
+    min-height: 48px;
+    margin-bottom: 0;
+    @media (max-width: 767px){
+      min-height: auto;
+    }
+  }
+
+  &__month{
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 20px auto;
+    color: $color-period;
+  }
+
+  &__price{
+    display: none;
+  }
+
+  &__custom-price{
+    display: block;
+    font-size: 40px;
+    line-height: 0.63;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0 25px;
+
+    b{
+      font-size: 25px;
+    }
+  }
+  s{
+    color: #cd8686;
+  }
+
+  &__present{
+    display: block;
+  }
+
+  &__presents-title, &__abilities-title{
+    color: #040207;
+  }
+
+  &__presents-list {
+
+    .package__btn{
+      padding-top: 20px;
+      margin-bottom: -20px;
+    }
+
+    li {
+      color: #040207;
+
+
+      &:before{
+        background: transparent url(images/gift_purple.svg) no-repeat top center;
+        width: 20px;
+        height: 24px;
+      }
+    }
+
+    .no-active{
+      color: #bdbbbb;
+      cursor: not-allowed;
+
+      a{
+        color: #bdbbbb;
+        cursor: not-allowed;
+        text-decoration: none;
+
+        &:hover{
+          color: #bdbbbb;
+          cursor: not-allowed;
+          text-decoration: none;
+        }
+      }
+
+      &:before{
+        background: transparent url(images/gift_gray.svg) no-repeat top center;
+      }
+    }
+  }
+
+  &__abilities-list{
+
+    li{
+      color: #000;
+
+      &:before{
+        color: #0c4f3d;
+      }
+    }
+  }
+
+  &__list-show{
+    color: #0a3fa7;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .btn-package--three{
+    display: none;
+  }
+  .btn-package--six{
+    display: inline-block;
+  }
+  .btn-package--twelve{
+    display: none;
+  }
+
+  .btn-package--eight{
+    display: inline-block;
+  }
+
+  .btn-body{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  &__three{
+
+
+
+    .package__header{
+      background-color: $color-three;
+      color: #fff;
+    }
+
+    .package__month{
+      color: #dedddd;
+    }
+
+
+    .btn-package{
+      background-color: $color-three;
+      border: solid 1px $color-three;
+      color: #fff;
+
+      &:after{
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+      }
+
+      &:hover{
+        background-color:#ae3942;
+      }
+    }
+
+  }
+
+  &__footer--top{
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+}
+
+.package-two{
+
+  .package__presents{
+    display: none;
+  }
+
+  .package__present{
+    display: block;
+  }
+}

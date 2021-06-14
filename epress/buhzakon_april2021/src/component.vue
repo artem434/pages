@@ -41,15 +41,15 @@
             <span>БУХГАЛТЕР&ЗАКОН <br>ТА ПОДАРУНок</span>
           </template>
           <template v-slot:period>
-            <div class="package__month">3 місяці</div>
+<!--            <div class="package__month">3 місяці</div>-->
             <p class="package__custom-price">
-              <price article="ep-buhzakon" :options="{periods: 3}" format="0"/>
-              <b>грн</b>
+              <price article="ep-buhzakon" :options="{periods: 1}" format="0"/>
+              <b>грн/міс.</b>
             </p>
           </template>
 
           <template v-slot:gifts>
-            <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+            <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
 
             <li class="no-active">Електрошашличниця
@@ -75,15 +75,15 @@
             <span>БУХГАЛТЕР&ЗАКОН <br> ТА ПОДАРУНКИ</span>
           </template>
           <template v-slot:period>
-            <div class="package__month">3 місяці</div>
+<!--            <div class="package__month">3 місяці</div>-->
             <p class="package__custom-price">
-              <price article="ep-buhzakon_action" :options="{periods: 3}" format="0"/>
-              <b>грн</b>
+              <price article="ep-buhzakon_action" :options="{periods: 1}" format="0"/>
+              <b>грн/міс.</b>
             </p>
           </template>
 
           <template v-slot:gifts>
-            <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+            <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
             <li><a href="https://bt.rozetka.com.ua/ua/scarlett_sc_kg22601/p24865877/characteristics/" target="_blank">Електрошашличниця
               SCARLETT</a></li>

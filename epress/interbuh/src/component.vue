@@ -96,7 +96,7 @@
                             <li>CONTRAGENT – система перевірки та моніторингу контрагентів</li>
                         </template>
                     </landing-package>-->
-                <landing-package article="ep-api_liga">
+<!--                <landing-package article="ep-api_liga">
                     <template v-slot:title>ТАРИФ «Інтербух <br>  + 7eminar.com»</template>
                     <template v-slot:gifts>
                         <li>Відеозапис Великого бухгалтерського семінару</li>
@@ -117,7 +117,7 @@
                         <li>Сервіс онлайн-звітності Liga:REPORT</li>
                         <li>Бухгалтерська відеоплатформа 7eminar.ua</li>
                     </template>
-                </landing-package>
+                </landing-package>-->
             </landing-package-row>
 
         </template>

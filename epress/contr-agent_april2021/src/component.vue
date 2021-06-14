@@ -41,15 +41,15 @@
               <span>ТАРИФ<br>«START»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+<!--              <div class="package__month">3 місяці</div>-->
               <p class="package__custom-price">
-                <price article="ep-contr-agent_ek_action" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_ek_action" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
               <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
               <li><a href="https://bt.rozetka.com.ua/ua/scarlett_sc_kg22601/p24865877/characteristics/" target="_blank">Електрошашличниця
                 SCARLETT</a></li>
@@ -79,15 +79,15 @@
               <span>ТАРИФ<br>«OPTIMUM»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+<!--              <div class="package__month">3 місяці</div>-->
               <p class="package__custom-price">
-                <price article="ep-contr-agent_cp_action" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_cp_action" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
               <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
               <li><a href="https://bt.rozetka.com.ua/ua/scarlett_sc_kg22601/p24865877/characteristics/" target="_blank">Електрошашличниця
                 SCARLETT</a></li>
@@ -116,16 +116,16 @@
               <span>ТАРИФ<br>«PREMIUM»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_pr_action" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_pr_action" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
               <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
               <li><a href="https://bt.rozetka.com.ua/ua/scarlett_sc_kg22601/p24865877/characteristics/" target="_blank">Електрошашличниця
                 SCARLETT</a></li>
@@ -155,16 +155,16 @@
               <span>ТАРИФ<br>«CORPORATE»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_pp_action" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_pp_action" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
               <li><h5 class="package__presents-title">Оберіть подарунок:</h5></li>
               <li><a href="https://bt.rozetka.com.ua/ua/scarlett_sc_kg22601/p24865877/characteristics/" target="_blank">Електрошашличниця
                 SCARLETT</a></li>
@@ -198,15 +198,15 @@
               <span>ТАРИФ<br>«START»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_ek" :options="{periods:3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_ek" :options="{periods:1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             </template>
             <template v-slot:abilities>
               <li>До 50 об'єктів моніторингу</li>
@@ -230,15 +230,15 @@
               <span>ТАРИФ<br>«OPTIMUM»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_cp_action2" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_cp_action2" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             </template>
             <template v-slot:abilities>
               <li>До 150 об'єктів моніторингу</li>
@@ -262,15 +262,15 @@
               <span>ТАРИФ<br>«PREMIUM»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_pr" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_pr" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             </template>
             <template v-slot:abilities>
               <li>До 300 об'єктів моніторингу</li>
@@ -295,15 +295,15 @@
               <span>ТАРИФ<br>«CORPORATE»</span>
             </template>
             <template v-slot:period>
-              <div class="package__month">3 місяці</div>
+
               <p class="package__custom-price">
-                <price article="ep-contr-agent_pp" :options="{periods: 3}" format="0"/>
-                <b>грн</b>
+                <price article="ep-contr-agent_pp" :options="{periods: 1}" format="0"/>
+                <b>грн/міс.</b>
               </p>
             </template>
 
             <template v-slot:gifts>
-              <li ><a href="https://7eminar.com/25032021" target="_blank">Великий Квартальний Семінар запис</a></li>
+              <li ><a href="https://7eminar.ua/22042021" target="_blank">Великий Online-Семінар із Заробітної Плати запис</a></li>
             </template>
             <template v-slot:abilities>
               <li>До 1000 об'єктів моніторингу</li>

@@ -1,0 +1,130 @@
+.hero {
+  height: 500px;
+  position: relative;
+  background-color: #274778;
+  font-family: 'Inter', sans-serif;
+  z-index: 1;
+
+  @media (max-width: 767px) {
+    height: 605px;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 1140px;
+    z-index: -1;
+
+    @media (max-width: 767px) {
+      width: 767px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    margin: 35px 0 0px;
+    color: #fff;
+
+    @media (max-width: 767px) {
+      margin: 15px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+
+    img {
+      margin: 0 13px;
+
+      @media (max-width: 767px) {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 1;
+
+    @media (max-width: 767px) {
+      font-size: 55px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: 79px;
+    color: #9dc3ff;
+    text-transform: none;
+    line-height: 1;
+
+    @media (max-width: 767px) {
+      font-size: 46px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 1.38;
+    color: #fff;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+
+    span {
+      font-weight: bold;
+      color: #9dc3ff;
+    }
+
+  }
+
+  &__btn {
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+
+    .btn {
+      border-radius: 5px;
+      box-shadow: 0px 5px 24.3px 2.7px rgba(142, 186, 255, 0.48);
+      background-image: linear-gradient(to top, #9dc3ff, var(--white));
+      line-height: 58px;
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #00072e;
+      width: 100%;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 42px;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}

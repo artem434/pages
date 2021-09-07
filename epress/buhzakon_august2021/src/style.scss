@@ -1,0 +1,69 @@
+.landing-buhzakon_august2021{
+
+  .package__old-price{
+    display: none;
+  }
+
+  .package__price-half{
+    display: none;
+  }
+
+  .dtkt-promo{
+    background-image: linear-gradient(to right, #fff, #fff);
+    img{
+
+      @media (max-width: 767px){
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+
+    .container{
+      padding:  0;
+    }
+  }
+
+  .landing-title{
+    text-align: center;
+    color: #262626;
+    padding-top: 20px;
+
+    span{
+      padding: 0px;
+    }
+  }
+
+  .landing-section__action{
+    text-align: center;
+    color: #262626;
+    font-size: 18px;
+
+    @media (max-width: 767px){
+      font-size: 16px;
+    }
+  }
+
+  .packages {
+    padding-top: 30px;
+
+    &__title{
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: .88px;
+      text-align: center;
+      color: #000;
+      text-transform: uppercase;
+      padding-top: 30px;
+
+      @media (max-width: 767px){
+        font-size: 25px;
+        padding-top: 0;
+      }
+    }
+  }
+
+  @import "scss/package";
+  @import "scss/hero";
+
+}

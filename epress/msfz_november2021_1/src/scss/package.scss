@@ -1,0 +1,202 @@
+.package {
+  $color-one: #fd0130;
+  $color-two:#fd0130;
+  $color-three:#0485ff;
+  $color-period:#3d3d3d;
+
+  &__header{
+    background-color: $color-one;
+    color: #FFF;
+  }
+
+  .btn-package{
+    background-color: $color-one;
+    color: #FFF;
+
+    &:after{
+      border-bottom: 2px solid #FFF;
+      border-right: 2px solid #FFF;
+    }
+
+    &:hover{
+      background-color: #d00731;
+    }
+  }
+
+
+
+
+
+  &__plus-top{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "топ продажу";
+      color: #fff;
+      border-radius: 4px;
+      background-color: #fd0130;
+      box-shadow: 0 0 13px rgba(51, 0, 12, 0.34);
+      width: 180px;
+      left: 50%;
+      top: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 25px;
+      transform: translate(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+  &__title{
+    font-size: 20px;
+    text-transform: uppercase;
+    min-height: 48px;
+    margin-bottom: 0;
+    @media (max-width: 767px){
+      min-height: auto;
+    }
+  }
+
+  &__month{
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 20px auto;
+    color: $color-period;
+  }
+
+  &__price{
+    display: none;
+  }
+
+  &__custom-price{
+    display: block;
+    font-size: 40px;
+    line-height: 0.63;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+
+    b{
+      font-size: 25px;
+    }
+  }
+
+  &__presents{
+    display: block;
+  }
+
+  &__presents-title, &__abilities-title{
+    color: #040207;
+  }
+
+  &__presents-list {
+
+    .package__btn{
+      padding-top: 20px;
+      margin-bottom: -20px;
+    }
+
+    li {
+      color: #040207;
+
+      &:nth-child(2){
+        padding-left: 0;
+        &:before{
+          background: none;
+          width: 0px;
+          height: 4px;
+        }
+      }
+
+      &:before{
+        background: transparent url(images/gift_purple.svg) no-repeat top center;
+        width: 20px;
+        height: 24px;
+      }
+    }
+
+    .no-active{
+      color: #bdbbbb;
+      cursor: not-allowed;
+
+      a{
+        color: #bdbbbb;
+        cursor: not-allowed;
+        text-decoration: none;
+
+        &:hover{
+          color: #bdbbbb;
+          cursor: not-allowed;
+          text-decoration: none;
+        }
+      }
+
+      &:before{
+        background: transparent url(images/gift_gray.svg) no-repeat top center;
+      }
+    }
+  }
+
+  &__abilities-list{
+
+    li{
+      color: #000;
+
+      &:before{
+        color: #0c4f3d;
+      }
+    }
+  }
+
+  &__list-show{
+    color: #0a3fa7;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .btn-package--three{
+    display: none;
+  }
+  .btn-package--six{
+    display: inline-block;
+  }
+  .btn-package--twelve{
+    display: none;
+  }
+
+  &__three{
+
+    .package__header{
+      background-color: $color-three;
+      color: #fff;
+    }
+
+    .package__month{
+      color: #dedddd;
+    }
+
+    .btn-package--three{
+      display: none;
+    }
+
+    .btn-package{
+      background-color: $color-three;
+      border: none;
+    }
+
+  }
+}
+
+.package-two{
+
+  .package__presents{
+    display: none;
+  }
+
+  .package__present{
+    display: block;
+  }
+}

@@ -5,7 +5,7 @@
                 <carousel-main></carousel-main>
             </div>
         </div>
-        <div class="section">
+        <div class="section">r
             <div class="container section__container-products">
                 <h2 class="section__title-products section-title"><span>Видання</span></h2>
                 <slider class="row justify-content-center" name="epressa_subs">

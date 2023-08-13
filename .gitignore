@@ -1,4 +1,0 @@
-node_modules
-/[0-9]*
-yarn.lock
-package-lock.json

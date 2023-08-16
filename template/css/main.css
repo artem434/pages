@@ -446,6 +446,7 @@ a {
   line-height: 22px;
   display: block;
 }
+
 .form__btn {
   font: 700 20px "Neue Machina";
   width: 100%;
@@ -506,22 +507,20 @@ a {
   z-index: 111 !important;
   background: #fff;
 }
-@media (max-width: 760px) {
-  .header {
-    background-color: red;
-  }
-}
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header__logo {
   width: 216px;
   height: 47px;
   transition: var(--transition);
   background: url(../img/header__logo.svg) 50%/contain no-repeat;
 }
+
 .header__menu {
   display: flex;
   align-items: center;
@@ -560,10 +559,12 @@ a {
   text-decoration: underline;
   font-size: 20px;
 }
+
 .header__burger {
   display: none;
   z-index: 30;
 }
+
 .header.active {
   background: var(--dark);
 }
@@ -2053,6 +2054,20 @@ a {
   }
   .company__items {
     flex-wrap: wrap;
+  }
+  .footer__decor--1 {
+    position: absolute;
+    left: calc(50% - 800px);
+    top: -100px;
+  }
+  .footer__decor--2 {
+    position: absolute;
+    top: 70px;
+    right: calc(50% - 600px);
+  }
+  .footer__container {
+    justify-content: space-between;
+    gap: 40px;
   }
   .header {
     padding-top: 10px;

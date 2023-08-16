@@ -1,12 +1,12 @@
 body {
-  font: 400 var(--fz-default) / 120% var(--default-font-family), Helvetica,
-    Arial, sans-serif;
-  background: var(--bg);
+  font-family: "Montserrat", sans-serif;
+  background: $bg;
   min-width: 360px;
-  color: var(--text-color);
+  color: $black;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
 }
 
 body.fixed {
@@ -62,4 +62,24 @@ form input.not_error {
 
 .swiper-button-next {
   right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-none {
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+.d-xl-block {
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
 }

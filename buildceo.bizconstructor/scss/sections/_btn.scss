@@ -1,0 +1,17 @@
+.btn-hero {
+  background-color: $orange;
+  font-size: 22px;
+  color: $white;
+  width: 100%;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 375px;
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-left: 26px;
+  }
+}

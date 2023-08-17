@@ -1,4 +1,4 @@
-.btn-hero {
+.btn-page {
   background-color: $orange;
   font-size: 22px;
   color: $white;
@@ -8,7 +8,15 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  font-weight: 700;
   max-width: 375px;
+}
+
+.btn--radius {
+  border-radius: 73px;
+}
+.btn--hero {
   svg {
     width: 40px;
     height: 40px;

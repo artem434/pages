@@ -22,19 +22,19 @@
   --xs: 16px;
 }
 
-.results .container, .for .container, .about .container, .hero .container {
+.methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
   max-width: 375px;
   padding: 0 16px;
   position: relative;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .results .container, .for .container, .about .container, .hero .container {
+  .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
     padding: 0;
   }
 }
 @media (min-width: 1200px) {
-  .results .container, .for .container, .about .container, .hero .container {
+  .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
     max-width: 1140px;
   }
 }
@@ -260,7 +260,7 @@ a {
   }
 }
 
-.btn-hero {
+.btn-page {
   background-color: #f76800;
   font-size: 22px;
   color: #ffffff;
@@ -270,9 +270,15 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-weight: 700;
   max-width: 375px;
 }
-.btn-hero svg {
+
+.btn--radius {
+  border-radius: 73px;
+}
+
+.btn--hero svg {
   width: 40px;
   height: 40px;
   margin-left: 26px;
@@ -824,6 +830,221 @@ a {
   display: block;
 }
 
+.program .container {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+@media (min-width: 1200px) {
+  .program .container {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+.program__title {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.program__title span {
+  color: #ffffff;
+  background-color: #f76800;
+  padding: 0 6px;
+}
+@media (min-width: 1200px) {
+  .program__title {
+    font-size: 42px;
+    margin-bottom: 62px;
+  }
+}
+.program__content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  gap: 54px;
+}
+.program .item {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-flow: wrap;
+}
+.program .item.active .item__info {
+  margin-top: 20px;
+  max-height: 10000px;
+}
+.program .item.active .item__more:before {
+  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+}
+.program .item.active .item__more:after {
+  content: "МЕНШЕ";
+}
+.program .item__number {
+  font-size: 34px;
+  width: 62px;
+  color: #f76800;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .program .item__number {
+    width: 120px;
+    font-size: 38px;
+  }
+}
+.program .item__title {
+  width: calc(100% - 150px);
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+@media (min-width: 1200px) {
+  .program .item__title {
+    width: calc(100% - 270px);
+    font-size: 22px;
+  }
+}
+.program .item__title span {
+  color: #f76800;
+}
+.program .item__more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  width: 80px;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .program .item__more {
+    width: 100px;
+    font-size: 18px;
+  }
+}
+.program .item__more:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3Crect x='11.5' y='24' width='22' height='4' transform='rotate(-90 11.5 24)' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+}
+@media (min-width: 1200px) {
+  .program .item__more:before {
+    width: 22px;
+    height: 22px;
+  }
+}
+.program .item__more:after {
+  content: "БІЛЬШЕ";
+  font-weight: 500;
+  font-size: 16px;
+}
+.program .item__info {
+  width: 100%;
+  padding-left: 62px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+@media (min-width: 1200px) {
+  .program .item__info {
+    padding-left: 120px;
+    font-size: 18px;
+  }
+}
+.program .item__info li {
+  padding-left: 20px;
+  background-position: 0 0;
+  background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.02381 0.5L9.56122 1.66044L8.41837 5.45824L12.5 6.77692L6.92177 12.5L3.46599 11.6297L4.60884 7.46264L0.5 6.32857L6.02381 0.5Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") 0 4px no-repeat;
+}
+@media (min-width: 1200px) {
+  .program .item__info li {
+    padding-left: 34px;
+  }
+}
+.program .item__info li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.methodology {
+  background: #3d3d3d;
+  color: #ffffff;
+}
+.methodology .container {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 140px;
+}
+@media (min-width: 1200px) {
+  .methodology .container {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+}
+.methodology .container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/methodology-img.png) center no-repeat;
+  height: 122px;
+  width: 358px;
+  background-size: contain;
+}
+@media (min-width: 1200px) {
+  .methodology .container:before {
+    width: 897.902px;
+    height: 282.978px;
+    left: inherit;
+    right: 0;
+    right: -305px;
+    top: 57px;
+  }
+}
+.methodology__content {
+  max-width: 612px;
+}
+.methodology__title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .methodology__title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+}
+.methodology__title b {
+  display: block;
+  text-align: right;
+}
+.methodology__text {
+  color: #cdcdcd;
+}
+@media (min-width: 1200px) {
+  .methodology__text {
+    font-size: 18px;
+    padding-left: 86px;
+  }
+}
+.methodology__text p:first-child {
+  margin-bottom: 12px;
+}
+.methodology__btn {
+  margin-top: 26px;
+}
+@media (min-width: 1200px) {
+  .methodology__btn {
+    margin-top: 44px;
+  }
+}
+.methodology__btn .btn-page {
+  margin: 0 auto;
+}
+
 .footer {
   background-color: #3d3d3d;
   padding: 48px 0;
@@ -880,7 +1101,4 @@ a {
     justify-content: space-between;
     gap: 40px;
   }
-}
-section {
-  height: 1000px;
 }/*# sourceMappingURL=main.css.map */

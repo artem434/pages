@@ -5,6 +5,9 @@
   left: 0;
   top: 0;
   z-index: 111 !important;
+  background: rgba(17, 17, 17, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
   &__container {
     display: flex;
@@ -85,7 +88,7 @@
   }
 
   &.active {
-    background: var(--dark);
+    background: $greay;
 
     .header__logo {
       background: url(../img/header__logo--white.svg) (50% / contain) no-repeat;
@@ -127,7 +130,7 @@
     left: 0;
     top: 66px;
     text-align: center;
-    background: var(--dark);
+    background: $greay;
     padding-top: 50px;
     padding-bottom: 46px;
     z-index: 10;

@@ -42,10 +42,10 @@
         background: $orange;
         padding: 10px 26px;
         padding-bottom: 12px;
-        transition: var(--transition);
+        background-color: $orange;
 
         &:hover {
-          background: var(--accent);
+          background-color: #db5c00;
         }
 
         a {

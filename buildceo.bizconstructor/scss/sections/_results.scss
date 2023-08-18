@@ -94,4 +94,74 @@
       }
     }
   }
+
+  &__subblock {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    color: $white;
+    max-width: 360px;
+
+    span {
+      margin-left: auto;
+      display: block;
+      width: 273px;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 133%;
+
+      b {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $orange;
+        @include media-breakpoint-up(xl) {
+          font-size: 74px;
+        }
+      }
+    }
+  }
+
+  &__subtext {
+    color: $white;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 86px;
+      margin-top: 40px;
+      margin-right: 112px;
+    }
+
+    p {
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+    }
+    //margin-bottom: 24px;
+  }
+
+  &__btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
 }

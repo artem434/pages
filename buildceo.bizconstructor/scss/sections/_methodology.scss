@@ -42,15 +42,19 @@
     font-weight: 800;
     margin-bottom: 18px;
     text-transform: uppercase;
+    text-align: center;
 
     @include media-breakpoint-up(xl) {
       font-size: 38px;
       margin-bottom: 28px;
+      text-align: left;
     }
 
     b {
-      display: block;
-      text-align: right;
+      @include media-breakpoint-up(xl) {
+        display: block;
+        text-align: right;
+      }
     }
   }
 
@@ -69,9 +73,11 @@
 
   &__btn {
     margin-top: 26px;
+    display: none;
 
     @include media-breakpoint-up(xl) {
       margin-top: 44px;
+      display: block;
     }
 
     .btn-page {

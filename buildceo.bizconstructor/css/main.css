@@ -287,6 +287,9 @@ a {
   font-weight: 700;
   max-width: 375px;
 }
+.btn-page:hover {
+  background-color: #db5c00;
+}
 
 .btn--radius {
   border-radius: 73px;
@@ -385,10 +388,10 @@ a {
   background: #f76800;
   padding: 10px 26px;
   padding-bottom: 12px;
-  transition: var(--transition);
+  background-color: #f76800;
 }
 .header__menu li.btn:hover {
-  background: var(--accent);
+  background-color: #db5c00;
 }
 .header__menu li.btn a {
   font-size: 20px;
@@ -914,6 +917,74 @@ a {
   font-weight: 700;
   display: block;
 }
+.results__subblock {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .results__subblock {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+}
+.results__subtitle {
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+  max-width: 360px;
+}
+.results__subtitle span {
+  margin-left: auto;
+  display: block;
+  width: 273px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 133%;
+}
+.results__subtitle span b {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #f76800;
+}
+@media (min-width: 1200px) {
+  .results__subtitle span b {
+    font-size: 74px;
+  }
+}
+.results__subtext {
+  color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .results__subtext {
+    margin-left: 86px;
+    margin-top: 40px;
+    margin-right: 112px;
+  }
+}
+.results__subtext p {
+  margin-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .results__subtext p {
+    font-size: 22px;
+  }
+}
+.results__btn {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .results__btn {
+    display: block;
+  }
+}
 
 .program .container {
   padding-top: 62px;
@@ -1098,16 +1169,20 @@ a {
   font-weight: 800;
   margin-bottom: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .methodology__title {
     font-size: 38px;
     margin-bottom: 28px;
+    text-align: left;
   }
 }
-.methodology__title b {
-  display: block;
-  text-align: right;
+@media (min-width: 1200px) {
+  .methodology__title b {
+    display: block;
+    text-align: right;
+  }
 }
 .methodology__text {
   color: #cdcdcd;
@@ -1123,10 +1198,12 @@ a {
 }
 .methodology__btn {
   margin-top: 26px;
+  display: none;
 }
 @media (min-width: 1200px) {
   .methodology__btn {
     margin-top: 44px;
+    display: block;
   }
 }
 .methodology__btn .btn-page {

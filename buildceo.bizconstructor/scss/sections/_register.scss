@@ -131,7 +131,10 @@
         }
         &:nth-child(3) {
           justify-content: flex-end;
-          margin-top: -40px;
+          margin-top: -30px;
+          @include media-breakpoint-up(xl) {
+            margin-top: -40px;
+          }
         }
       }
     }

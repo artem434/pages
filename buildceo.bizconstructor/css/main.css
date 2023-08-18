@@ -22,19 +22,19 @@
   --xs: 16px;
 }
 
-.company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
+.clients .container, .company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
   max-width: 375px;
   padding: 0 16px;
   position: relative;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
+  .clients .container, .company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
     padding: 0;
   }
 }
 @media (min-width: 1200px) {
-  .company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
+  .clients .container, .company .container, .how .container, .register .container, .packages .container, .speakers .container, .methodology .container, .program .container, .results .container, .for .container, .about .container, .hero .container {
     max-width: 1140px;
   }
 }
@@ -235,9 +235,22 @@ form input.not_error {
 .swiper-button-prev {
   left: 0;
 }
+.swiper-button-prev::after {
+  content: "";
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGNzY4MDAiLz4KPC9zdmc+Cg==") center/contain no-repeat;
+  width: 30px;
+  height: 30px;
+}
 
 .swiper-button-next {
   right: 0;
+}
+.swiper-button-next::after {
+  content: "";
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGNzY4MDAiLz4KPC9zdmc+Cg==") center/contain no-repeat;
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
 }
 
 a {
@@ -583,6 +596,22 @@ a {
 }
 .hero__text span {
   color: #f76800;
+}
+.hero__btn {
+  position: fixed;
+  z-index: 10;
+  width: 340px;
+  height: 56px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  .hero__btn {
+    position: relative;
+    left: inherit;
+    transform: translate(0);
+  }
 }
 
 .about {
@@ -1521,7 +1550,12 @@ a {
 }
 .register .block__info li:nth-child(3) {
   justify-content: flex-end;
-  margin-top: -40px;
+  margin-top: -30px;
+}
+@media (min-width: 1200px) {
+  .register .block__info li:nth-child(3) {
+    margin-top: -40px;
+  }
 }
 .register .form {
   text-align: center;
@@ -1785,6 +1819,37 @@ a {
   .company ul li b span {
     font-size: 28px;
   }
+}
+
+.clients {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+@media (min-width: 1200px) {
+  .clients {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+.clients__title {
+  text-align: center;
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #263238;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .clients__title {
+    font-size: 42px;
+  }
+}
+.clients__slider {
+  padding: 0 24px;
+}
+.clients .logo {
+  background: 50%/contain no-repeat;
+  height: 93px;
 }
 
 .footer {

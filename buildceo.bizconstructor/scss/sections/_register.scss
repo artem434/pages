@@ -1,5 +1,8 @@
-.register {
+.no-webp .register {
   background: url(../img/register-bg-min.jpg) center no-repeat;
+}
+.register {
+  background: url(../img/register-bg-min.webp) center no-repeat;
 
   background-size: cover;
   .container {

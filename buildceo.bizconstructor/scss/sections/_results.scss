@@ -1,5 +1,8 @@
-.results {
+.no-webp .results {
   background: url(../img/results-bg.jpg) center no-repeat;
+}
+.results {
+  background: url(../img/results-bg.webp) center no-repeat;
 
   background-size: cover;
   .container {

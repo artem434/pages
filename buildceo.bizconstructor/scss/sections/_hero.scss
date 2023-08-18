@@ -1,5 +1,8 @@
-.hero {
+.no-webp .hero {
   background: url(../img/hero-xl.jpg) top center no-repeat;
+}
+.hero {
+  background: url(../img/hero-xl.webp) top center no-repeat;
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 56px;

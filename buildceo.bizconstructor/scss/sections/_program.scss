@@ -44,6 +44,10 @@
     align-items: center;
     flex-flow: wrap;
 
+    &__speaker {
+      display: none;
+    }
+
     &.active {
       .item__info {
         margin-top: 20px;

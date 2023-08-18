@@ -957,6 +957,9 @@ a {
   align-items: center;
   flex-flow: wrap;
 }
+.program .item__speaker {
+  display: none;
+}
 .program .item.active .item__info {
   margin-top: 20px;
   max-height: 10000px;

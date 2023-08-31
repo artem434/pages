@@ -1,0 +1,125 @@
+.no-webp .hero {
+  background: url(../img/hero-xl.jpg) top center no-repeat;
+}
+.hero {
+  background: url(../img/hero-xl.webp) top center no-repeat;
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 56px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 136px;
+    padding-bottom: 86px;
+  }
+
+  .container {
+    @extend %content;
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  h1 {
+    color: $orange;
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 202px;
+    }
+  }
+
+  &__subtitle {
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 34px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 44px;
+      padding-bottom: 42px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    color: $white;
+    font-weight: 500;
+    display: flex;
+    padding-bottom: 28px;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 44px;
+      font-size: 22px;
+    }
+
+    span {
+      color: $orange;
+      padding: 0 12px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 28px;
+    position: relative;
+    padding-left: 12px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 272px;
+    }
+
+    &::after {
+      content: "“";
+      color: $orange;
+      position: absolute;
+      font-style: italic;
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__btn {
+    position: fixed;
+    z-index: 10;
+    width: 340px;
+    height: 56px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      left: inherit;
+      transform: translate(0);
+    }
+  }
+}

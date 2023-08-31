@@ -328,7 +328,7 @@ a {
   max-width: 375px;
 }
 .btn-page:hover {
-  background-color: #db5c00;
+  background-color: #fb443d;
 }
 
 .btn--radius {
@@ -431,7 +431,7 @@ a {
   padding-bottom: 12px;
 }
 .header__menu li.btn:hover {
-  background-color: #db5c00;
+  background-color: #fb443d;
 }
 .header__menu li.btn a {
   font-size: 20px;

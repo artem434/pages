@@ -1,6 +1,6 @@
 .about {
   background: #010903;
-  padding-top: 62px;
+  padding-top: 0;
   padding-bottom: 62px;
   color: $white;
 
@@ -11,6 +11,8 @@
 
   .container {
     @extend%content!optional;
+    z-index: 1;
+    position: relative;
   }
 
   &__content {
@@ -25,10 +27,11 @@
     font-size: 18px;
     margin-bottom: 42px;
     margin-bottom: 42px;
+    font-weight: 300;
 
     @include media-breakpoint-up(xl) {
       font-size: 24px;
-      padding-right: 100px;
+      padding-right: 190px;
       margin-bottom: 0;
     }
   }

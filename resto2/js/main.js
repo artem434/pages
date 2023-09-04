@@ -229,19 +229,19 @@ $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
 });
+
 $(document).ready(function () {
-  var topElementId = "packages";
-  var bottomElementId = "how";
+  var aboutElementId = "about";
   var $heroBtn = $(".hero__btn");
 
   $(window).scroll(function () {
-    var topOffset = $("#" + topElementId).offset().top;
-    var bottomOffset = $("#" + bottomElementId).offset().top;
+    var aboutOffset = $("#" + aboutElementId).offset().top;
     var scrollPosition = $(window).scrollTop();
 
-    $heroBtn.toggleClass(
-      "d-none",
-      scrollPosition >= topOffset && scrollPosition <= bottomOffset
-    );
+    $heroBtn.toggleClass("active", scrollPosition >= aboutOffset);
+
+    if (scrollPosition < aboutOffset) {
+      $heroBtn.removeClass("active");
+    }
   });
 });

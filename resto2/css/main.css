@@ -518,6 +518,9 @@ a {
   .header__menu li.btn {
     background: #04ab1e;
   }
+  .header__menu li.btn a {
+    font-size: 20px;
+  }
   .header__menu a {
     color: #fff;
     font-weight: 700;
@@ -748,13 +751,8 @@ a {
   color: #fb443d;
 }
 .hero__btn {
-  position: fixed;
-  z-index: 10;
   width: 340px;
   height: 56px;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 @media (min-width: 768px) {
   .hero__btn {
@@ -763,10 +761,17 @@ a {
     transform: translate(0);
   }
 }
+.hero__btn.active {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
 
 .about {
   background: #010903;
-  padding-top: 62px;
+  padding-top: 0;
   padding-bottom: 62px;
   color: #ffffff;
 }
@@ -775,6 +780,10 @@ a {
     padding-top: 66px;
     padding-bottom: 66px;
   }
+}
+.about .container {
+  z-index: 1;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .about__content {
@@ -787,11 +796,12 @@ a {
   font-size: 18px;
   margin-bottom: 42px;
   margin-bottom: 42px;
+  font-weight: 300;
 }
 @media (min-width: 1200px) {
   .about__text {
     font-size: 24px;
-    padding-right: 100px;
+    padding-right: 190px;
     margin-bottom: 0;
   }
 }
@@ -1578,6 +1588,7 @@ a {
   padding-top: 62px;
   padding-bottom: 62px;
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .packages .container {
@@ -1669,7 +1680,13 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9403 7.14004L17.6632 7.14004L17.6551 16.1599L7.82773 6.33253L6.21271 7.94755L16.0401 17.7749L7.02022 17.7668L7.02022 20.0602H19.9403L19.9403 7.14004Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M17.5917 6.12003L15.6399 6.12003L15.6329 13.8513L7.20948 5.42789L5.82518 6.81218L14.2486 15.2356L6.51733 15.2287L6.51733 17.1944L17.5917 17.1944L17.5917 6.12003Z' fill='%2304AB1E'/%3E%3C/svg%3E") 50%/contain no-repeat;
+}
+.packages .item__info .no-active {
+  color: #a3a3a3;
+}
+.packages .item__info .no-active::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M17.5917 6.12003L15.6399 6.12003L15.6329 13.8513L7.20948 5.42789L5.82518 6.81218L14.2486 15.2356L6.51733 15.2287L6.51733 17.1944L17.5917 17.1944L17.5917 6.12003Z' fill='%23a3a3a3'/%3E%3C/svg%3E") 50%/contain no-repeat;
 }
 .packages .item__btn {
   z-index: 2;
@@ -2042,6 +2059,7 @@ a {
 }
 .how__btn {
   margin-top: 24px;
+  display: none;
 }
 @media (min-width: 1200px) {
   .how__btn {

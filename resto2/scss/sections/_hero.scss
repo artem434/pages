@@ -211,18 +211,21 @@
   }
 
   &__btn {
-    position: fixed;
-    z-index: 10;
     width: 340px;
     height: 56px;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
 
     @include media-breakpoint-up(md) {
       position: relative;
       left: inherit;
       transform: translate(0);
+    }
+
+    &.active {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
     }
   }
 }

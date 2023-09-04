@@ -135,7 +135,7 @@
   &__subtitle {
     font-weight: 700;
     font-size: 26px;
-    color: $black;
+    color: #1f2229;
     max-width: 360px;
 
     strong {
@@ -166,7 +166,7 @@
   }
 
   &__subtext {
-    color: $black;
+    color: #1f2229;
 
     @include media-breakpoint-up(xl) {
       margin-left: 86px;

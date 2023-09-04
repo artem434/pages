@@ -635,6 +635,7 @@ a {
   height: 709px;
   top: -266px;
   left: 50%;
+  background-size: contain;
 }
 @media (min-width: 1200px) {
   .hero__photo--sm {
@@ -767,6 +768,14 @@ a {
   left: 50%;
   transform: translateX(-50%);
   z-index: 15;
+}
+@media (min-width: 768px) {
+  .hero__btn.active {
+    left: 0;
+    bottom: 0;
+    transform: translateX(0%);
+    position: relative;
+  }
 }
 
 .about {
@@ -1087,7 +1096,7 @@ a {
 .results__subtitle {
   font-weight: 700;
   font-size: 26px;
-  color: #000;
+  color: #1f2229;
   max-width: 360px;
 }
 .results__subtitle strong {
@@ -1116,7 +1125,7 @@ a {
   }
 }
 .results__subtext {
-  color: #000;
+  color: #1f2229;
 }
 @media (min-width: 1200px) {
   .results__subtext {
@@ -1544,7 +1553,8 @@ a {
 .speakers .speaker__list li {
   position: relative;
   margin-bottom: 6px;
-  padding-left: 0;
+  padding-left: 22px;
+  font-weight: 400;
 }
 .speakers .speaker__list li::before {
   content: "";
@@ -1556,6 +1566,11 @@ a {
   width: 18px;
   height: 18px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M12.8188 4.59003L11.3549 4.59003L11.3497 10.3885L5.03211 4.07091L3.99389 5.10914L10.3115 11.4267L4.513 11.4215L4.513 12.8958L12.8188 12.8958L12.8188 4.59003Z' fill='%23FB443D'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+@media (min-width: 1200px) {
+  .speakers .speaker__list li::before {
+    position: absolute;
+  }
 }
 .speakers .speaker__text {
   color: #000;
@@ -2046,11 +2061,15 @@ a {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 8px;
+  color: #1f2229;
 }
 @media (min-width: 1200px) {
   .how ul li b {
     font-size: 22px;
   }
+}
+.how ul li p {
+  color: #1f2229;
 }
 @media (min-width: 1200px) {
   .how ul li p {

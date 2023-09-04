@@ -76,6 +76,7 @@
         font-size: 18px;
         font-weight: 800;
         margin-bottom: 8px;
+        color: #1f2229;
 
         @include media-breakpoint-up(xl) {
           font-size: 22px;
@@ -83,6 +84,7 @@
       }
 
       p {
+        color: #1f2229;
         @include media-breakpoint-up(xl) {
           font-size: 16px;
         }

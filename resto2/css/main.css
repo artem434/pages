@@ -1426,9 +1426,10 @@ a {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .speakers .speaker {
-  flex: 0 0 100%;
+  flex: 0 0 90%;
 }
 @media (min-width: 1200px) {
   .speakers .speaker {

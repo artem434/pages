@@ -460,9 +460,6 @@ function hidePackagesBtn() {
     }
   });
 }
-
-hidePackagesBtn();
-
 const clientsSlider = new Swiper(".clients__slider", {
   loop: true,
   spaceBetween: 24,
@@ -487,3 +484,5 @@ const clientsSlider = new Swiper(".clients__slider", {
     },
   },
 });
+
+hidePackagesBtn();

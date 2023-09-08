@@ -686,7 +686,7 @@ a {
   .hero__date {
     font-size: 18px;
     margin-bottom: 36px;
-    padding-top: 68px;
+    padding-top: 50px;
   }
 }
 .hero__date b {
@@ -1242,11 +1242,6 @@ a {
 .registration {
   padding-top: 30px;
   padding-bottom: 60px;
-}
-@media (min-width: 1200px) {
-  .registration {
-    padding-top: 114px;
-  }
 }
 .registration__inner {
   border-radius: 7px;

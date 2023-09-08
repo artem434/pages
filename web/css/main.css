@@ -1314,13 +1314,12 @@ a {
 .registration__gift b {
   color: #fb443d;
 }
-
 @media (min-width: 1200px) {
-  .form {
+  .registration .form {
     margin-left: 46px;
   }
 }
-.form__title {
+.registration .form__title {
   color: #202228;
   font-size: 24px;
   font-weight: 800;
@@ -1329,25 +1328,25 @@ a {
   margin-top: 22px;
 }
 @media (min-width: 1200px) {
-  .form__title {
+  .registration .form__title {
     margin-top: 0;
     margin-bottom: 26px;
   }
 }
-.form__input {
+.registration .form__input {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1200px) {
-  .form__input {
+  .registration .form__input {
     margin-bottom: 19px;
   }
 }
-.form .intl-tel-input {
+.registration .form .intl-tel-input {
   width: 100%;
 }
-.form .input__label {
+.registration .form .input__label {
   color: #666;
   font-family: "MuseoSansCyrl";
   font-size: 15px;
@@ -1355,18 +1354,18 @@ a {
   margin-bottom: 8px;
   display: block;
 }
-.form .btn-page {
+.registration .form .btn-page {
   border: none;
   margin-bottom: 14px;
   max-width: 100%;
 }
-.form__notice {
+.registration .form__notice {
   color: #1f2229;
   font-size: 12px;
   font-weight: 300;
   opacity: 0.3;
 }
-.form__notice a {
+.registration .form__notice a {
   text-decoration: underline;
   color: #1f2229;
   font-size: 12px;

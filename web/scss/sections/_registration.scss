@@ -75,67 +75,66 @@
       color: #fb443d;
     }
   }
-}
-
-.form {
-  @include media-breakpoint-up(xl) {
-    margin-left: 46px;
-  }
-  &__title {
-    color: #202228;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-top: 22px;
-
+  .form {
     @include media-breakpoint-up(xl) {
-      margin-top: 0;
-      margin-bottom: 26px;
+      margin-left: 46px;
     }
-  }
+    &__title {
+      color: #202228;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-top: 22px;
 
-  &__input {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-
-    @include media-breakpoint-up(xl) {
-      margin-bottom: 19px;
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-bottom: 26px;
+      }
     }
-  }
 
-  .intl-tel-input {
-    width: 100%;
-  }
-  .input__label {
-    color: #666;
-    font-family: "MuseoSansCyrl";
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 8px;
-    display: block;
-  }
+    &__input {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
 
-  .btn-page {
-    border: none;
-    margin-bottom: 14px;
-    max-width: 100%;
-  }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 19px;
+      }
+    }
 
-  &__notice {
-    color: #1f2229;
+    .intl-tel-input {
+      width: 100%;
+    }
+    .input__label {
+      color: #666;
+      font-family: "MuseoSansCyrl";
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 8px;
+      display: block;
+    }
 
-    font-size: 12px;
-    font-weight: 300;
-    opacity: 0.3;
+    .btn-page {
+      border: none;
+      margin-bottom: 14px;
+      max-width: 100%;
+    }
 
-    a {
-      text-decoration: underline;
+    &__notice {
       color: #1f2229;
 
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 300;
+      opacity: 0.3;
+
+      a {
+        text-decoration: underline;
+        color: #1f2229;
+
+        font-size: 12px;
+        font-weight: 600;
+      }
     }
   }
 }

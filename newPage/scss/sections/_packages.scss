@@ -1,0 +1,279 @@
+.packages {
+  color: #fff;
+  padding-top: 30px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 48px;
+    }
+
+    span {
+      color: #fe5151;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+    span {
+      color: #fe5151;
+    }
+  }
+
+  &__timer {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+    p {
+      text-align: center;
+      font-family: "Lexend Giga", sans-serif;
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      margin-top: 94px;
+    }
+  }
+
+  .package {
+    border-radius: 20px 20px 20px 0px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 45px 25px 30px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 274px;
+      width: 100%;
+      padding: 45px 15px 15px;
+      background: var(
+        --partners-fon-2,
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.24) 0%,
+          rgba(254, 81, 81, 0.24) 100%
+        )
+      );
+    }
+
+    ul {
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: "Lexend Giga", sans-serif;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease;
+      @include media-breakpoint-up(xl) {
+        max-height: 1000px;
+        overflow: inherit;
+        gap: 16px;
+        padding-left: 20px;
+      }
+
+      li {
+        &:first-child {
+          font-weight: 700;
+        }
+
+        &.no-active {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    &__name {
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 20px 0px 20px 20px;
+      border: 1px solid #fff;
+      background: var(--red, linear-gradient(180deg, #fe5151 0%, #ca0018 100%));
+      width: 220px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      line-height: 60px;
+      transform: translate(-50%, 0);
+
+      @include media-breakpoint-up(xl) {
+        left: 10px;
+        transform: translate(0, 0);
+      }
+    }
+
+    &__btn {
+      display: block;
+
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .btn-page {
+        @include media-breakpoint-up(xl) {
+          margin-top: 40px;
+        }
+      }
+
+      .btn-page-no-active {
+        border-radius: 12px 12px 12px 0px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      &--active {
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+          display: block;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .btn-page {
+          width: 245px;
+          font-size: 14px;
+          margin: 0 auto;
+          @include media-breakpoint-up(xl) {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+
+    &__more {
+      font-family: "Lexend Giga", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      position: relative;
+
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='17' viewBox='0 0 42 17' fill='none'%3E%3Cpath d='M1 1L21 11L41 1' stroke='url(%23paint0_linear_103_756)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 6L21 16L41 6' stroke='url(%23paint1_linear_103_756)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_103_756' x1='21' y1='1' x2='21' y2='11' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.2'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_103_756' x1='21' y1='6' x2='21' y2='16' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.2'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+          no-repeat center;
+        width: 40px;
+        height: 15px;
+        background-size: cover;
+      }
+    }
+
+    &__less {
+      display: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.active {
+      background: var(
+        --partners-fon-2,
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.24) 0%,
+          rgba(254, 81, 81, 0.24) 100%
+        )
+      );
+      ul {
+        max-height: 1000px;
+        margin-bottom: 64px;
+
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 0;
+        }
+      }
+      .package__more {
+        display: none;
+      }
+
+      .package__btn--active {
+        display: block;
+      }
+
+      .package__btn {
+        display: none;
+      }
+
+      .package__less {
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 0px;
+        position: relative;
+        display: block;
+
+        @include media-breakpoint-up(xl) {
+          display: none;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 24px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='17' viewBox='0 0 42 17' fill='none'%3E%3Cpath d='M1 16L21 6L41 16' stroke='url(%23paint0_linear_103_724)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 11L21 1L41 11' stroke='url(%23paint1_linear_103_724)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_103_724' x1='21' y1='16' x2='21' y2='6' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.2'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_103_724' x1='21' y1='11' x2='21' y2='1' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.2'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+            no-repeat center;
+          width: 40px;
+          height: 15px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

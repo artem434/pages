@@ -1,0 +1,66 @@
+.pass {
+  text-align: center;
+  padding-bottom: 80px;
+  color: #fff;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 120px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    span {
+      color: #fe5151;
+    }
+  }
+  .btn-page {
+    margin: 0 auto;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__slider {
+    .img {
+      width: 335px;
+      border-radius: 20px;
+      height: 232px;
+      background-size: contain;
+    }
+    .swiper-pagination {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      .swiper-pagination-bullet-active {
+        background-color: #fe5151 !important;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #818081;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.speakers {
+  padding-top: 60px;
+  color: #fff;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 48px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    span {
+      color: #fe5151;
+    }
+  }
+  ul {
+    max-width: 274px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 100%;
+      column-gap: 24px;
+      row-gap: 60px;
+    }
+
+    li {
+      @include media-breakpoint-up(xl) {
+        max-width: 274px;
+        width: 100%;
+      }
+      b {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: block;
+        text-transform: uppercase;
+
+        span {
+          color: #fe5151;
+          display: block;
+        }
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+
+  &__img {
+    height: 277px;
+    width: 100%;
+    border-radius: 20px 20px 60px 0px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+  }
+}

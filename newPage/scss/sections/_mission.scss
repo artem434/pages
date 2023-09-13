@@ -1,0 +1,133 @@
+.mission {
+  padding-top: 60px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 120px;
+  }
+  color: #fff;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      margin-bottom: 38px;
+    }
+    span {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      line-height: normal;
+      letter-spacing: 8px;
+      font-weight: 200;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+        letter-spacing: 12px;
+      }
+    }
+  }
+
+  &__block-top {
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(xl) {
+      width: 663px;
+      margin-bottom: 76px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 16px;
+    line-height: normal;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    color: #fe5151;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 84px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      padding-left: 200px;
+      margin-bottom: 56px;
+      letter-spacing: 4px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/mission-titel.png) no-repeat center;
+      height: 52.125px;
+      width: 80px;
+      background-size: cover;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+
+      @include media-breakpoint-up(xl) {
+        height: 100px;
+        width: 154px;
+        left: 28px;
+      }
+    }
+  }
+
+  &__block {
+    border-radius: 20px;
+    border: 1px solid #fe5151;
+    padding: 20px 18px 62px;
+    font-family: "Montserrat", sans-serif;
+    @include media-breakpoint-up(xl) {
+      padding: 20px 80px 40px 120px;
+      margin-left: 430px;
+    }
+
+    strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+      }
+
+      span {
+        color: #fe5151;
+      }
+    }
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &__img {
+    width: 299.421px;
+    height: 201px;
+    background-size: contain;
+    border-radius: 20px;
+    margin-top: -42px;
+
+    @include media-breakpoint-up(xl) {
+      width: 476px;
+      height: 320px;
+      margin-top: -156px;
+    }
+  }
+}

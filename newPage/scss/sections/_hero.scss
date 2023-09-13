@@ -1,0 +1,204 @@
+.no-webp .hero {
+  //background: url(../img/hero-xl.jpg) top center no-repeat;
+}
+.hero {
+  padding-top: 135px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 200px;
+
+  @include media-breakpoint-up(xl) {
+    //background: url(../img/hero-bg-min.jpg) top center no-repeat;
+    background-size: 1360px;
+    padding-top: 180px;
+    padding-bottom: 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: url(../img/hero-ellipse-mob-min.png) no-repeat center;
+    width: 100%;
+    height: 685px;
+    background-size: cover;
+    top: 0px;
+    left: 0%;
+
+    @include media-breakpoint-up(xl) {
+      background: url(../img/hero-ellipse-min.png) no-repeat center;
+      width: 986px;
+      height: 938px;
+      right: 0px;
+      left: inherit;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/hero__decor-mob-min.png) no-repeat center;
+    width: 531px;
+    height: 651px;
+    background-size: cover;
+    top: 62px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      background: url(../img/hero__decor-min.png) no-repeat center;
+      width: 1477px;
+      height: 686px;
+    }
+  }
+
+  .container {
+    position: relative;
+
+    // &:before {
+    //   position: absolute;
+    //   content: "";
+    //   background: url(../img/hero-paper.png) no-repeat center;
+    //   width: 170px;
+    //   height: 320px;
+    //   background-size: cover;
+    //   top: 0px;
+    //   left: 61%;
+    //   transform: translate(-50%, 0);
+
+    //   @include media-breakpoint-up(xl) {
+    //     width: 271.215px;
+    //     height: 539.594px;
+    //     left: 55%;
+    //     top: -140px;
+    //   }
+    // }
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 48px;
+      margin-bottom: 38px;
+    }
+    span {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      letter-spacing: 8px;
+      font-weight: 200;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 40px;
+        letter-spacing: 16px;
+      }
+    }
+  }
+
+  &__events-list {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    list-style-type: disc;
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 32px;
+    margin-bottom: 70px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+      column-gap: 56px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-bottom: 34px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      margin-bottom: 94px;
+    }
+  }
+
+  &__social-list {
+    display: none;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      display: flex;
+      right: 0;
+      top: 30%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    text-stroke: 1.5px white;
+    margin-bottom: 56px;
+  }
+
+  &__local {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 15px 0 45px;
+    position: relative;
+    margin-bottom: 26px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/hero-location.png) no-repeat center;
+      width: 18px;
+      height: 30px;
+      background-size: cover;
+      top: -11px;
+      left: 15px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+
+    .btn-page {
+      margin: 0 auto;
+      width: 300px;
+    }
+    @include media-breakpoint-up(md) {
+      position: relative;
+      left: inherit;
+      transform: translate(0);
+      text-align: center;
+    }
+  }
+}

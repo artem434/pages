@@ -326,15 +326,13 @@ $(document).ready(function () {
       $(" #form-partner").find("input[name=text]").val()
     );
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    const storedName = localStorage.getItem("text");
+  const storedName = localStorage.getItem("text");
 
-    const spanElement = document.querySelector("#namePlaceholder");
-
-    if (storedName) {
-      spanElement.textContent = storedName;
-    }
-  });
+  const spanElement = document.querySelector("#namePlaceholder");
+  console.log(localStorage.getItem("text"));
+  if (storedName) {
+    spanElement.textContent = storedName;
+  }
 
   if ($(window).width() <= 768) {
     $(window).scroll(function () {

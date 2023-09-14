@@ -306,16 +306,19 @@ $(document).ready(function () {
   });
 });
 
-var landingIdInput = document.querySelector('input[name="landing_id"]');
-
 // Обработчик клика для всех кнопок
 var landingBtns = document.querySelectorAll(".btn-page--active");
 landingBtns.forEach(function (btn) {
   btn.addEventListener("click", function () {
+    var landingIdInput = document.querySelector(
+      '#form input[name="landing_id"]'
+    );
     $("#popup").fadeIn();
     $("#overlay").fadeIn();
     localStorage.setItem("text", $("#form").find("input[name=text]").val());
+
     landingIdInput.value = btn.getAttribute("data-landing-id");
+    console.log(landingIdInput.value);
   });
 });
 
@@ -329,8 +332,8 @@ $(document).ready(function () {
   const storedName = localStorage.getItem("text");
 
   const spanElement = document.querySelector("#namePlaceholder");
-  console.log(localStorage.getItem("text"));
-  if (storedName) {
+
+  if (storedName && spanElement) {
     spanElement.textContent = storedName;
   }
 

@@ -2439,11 +2439,11 @@ a {
   position: relative;
 }
 .thanks__item {
+  position: relative;
   color: #fff;
   padding: 80px 18px 40px;
   max-width: 343px;
   width: 100%;
-  left: 50%;
   background-color: #fff;
   z-index: 1001;
   border-radius: 20px 0px;
@@ -2484,8 +2484,8 @@ a {
   background-size: cover;
   position: absolute;
   display: block;
-  top: 35px;
-  right: 20px;
+  top: -44px;
+  right: 0px;
 }
 .thanks .close:hover {
   cursor: pointer;

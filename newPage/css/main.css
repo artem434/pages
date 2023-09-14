@@ -764,6 +764,10 @@ a {
   }
 }
 
+.no-webp .chat:after {
+  background: url(../img/top-bg-mob-min.png) no-repeat center;
+}
+
 .top {
   padding-top: 60px;
   color: #fff;
@@ -777,7 +781,7 @@ a {
 .top:after {
   position: absolute;
   content: "";
-  background: url(../img/top-bg-mob-min.png) no-repeat center;
+  background: url(../img/top-bg-mob-min.webp) no-repeat center;
   width: 800px;
   height: 800px;
   background-size: cover;
@@ -1479,6 +1483,10 @@ a {
   }
 }
 
+.no-webp .chat:after {
+  background: url(../img/chat-bg-mob-min.png) no-repeat center;
+}
+
 .chat {
   color: #fff;
   padding-top: 120px;
@@ -1494,7 +1502,7 @@ a {
 .chat:after {
   position: absolute;
   content: "";
-  background: url(../img/chat-bg-mob-min.png) no-repeat center;
+  background: url(../img/chat-bg-mob-min.webp) no-repeat center;
   width: 800px;
   height: 1812px;
   background-size: cover;
@@ -1944,6 +1952,10 @@ a {
   background-size: cover;
 }
 
+.no-webp .chat:after {
+  background: url(../img/partner-bg-mob-min.png) no-repeat center;
+}
+
 .partner {
   text-align: center;
   padding-top: 100px;
@@ -1953,7 +1965,7 @@ a {
 .partner:after {
   position: absolute;
   content: "";
-  background: url(../img/partner-bg-mob-min.png) no-repeat center;
+  background: url(../img/partner-bg-mob-min.webp) no-repeat center;
   width: 360px;
   height: 552px;
   background-size: cover;

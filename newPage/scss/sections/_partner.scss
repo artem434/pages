@@ -1,3 +1,8 @@
+.no-webp .chat {
+  &:after {
+    background: url(../img/partner-bg-mob-min.png) no-repeat center;
+  }
+}
 .partner {
   text-align: center;
   padding-top: 100px;
@@ -7,7 +12,7 @@
   &:after {
     position: absolute;
     content: "";
-    background: url(../img/partner-bg-mob-min.png) no-repeat center;
+    background: url(../img/partner-bg-mob-min.webp) no-repeat center;
     width: 360px;
     height: 552px;
     background-size: cover;

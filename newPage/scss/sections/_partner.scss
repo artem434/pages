@@ -2,6 +2,34 @@
   text-align: center;
   padding-top: 100px;
   color: #fff;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/partner-bg-mob-min.png) no-repeat center;
+    width: 360px;
+    height: 552px;
+    background-size: cover;
+    top: 55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      content: none;
+    }
+  }
+
+  .partner-bg {
+    position: absolute;
+    width: 1360px;
+    height: 500px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 120px;
+  }
   h2 {
     font-weight: 700;
     font-size: 20px;

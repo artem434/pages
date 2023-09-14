@@ -2,11 +2,72 @@
   color: #fff;
   padding-top: 120px;
   padding-bottom: 180px;
-
+  position: relative;
   @include media-breakpoint-up(xl) {
     padding-top: 215px;
     padding-bottom: 60px;
   }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/chat-bg-mob-min.png) no-repeat center;
+    width: 800px;
+    height: 1812px;
+    background-size: cover;
+    top: -273px;
+    left: 30%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      content: none;
+    }
+  }
+
+  .chat-bg {
+    position: absolute;
+    width: 1360px;
+    height: 644px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 140px;
+  }
+  .chat-bg-two {
+    position: absolute;
+    width: 1360px;
+    height: 663px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 806px;
+  }
+
+  .container {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/ellipse-min.png) no-repeat center;
+      width: 1600px;
+      height: 1600px;
+      background-size: cover;
+      top: 0px;
+      z-index: -1;
+      left: 0%;
+
+      @include media-breakpoint-up(xl) {
+        background: url(../img/ellipse-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        left: -850px;
+        top: -500px;
+      }
+    }
+  }
+
   &__block-top {
     @include media-breakpoint-up(xl) {
       display: flex;

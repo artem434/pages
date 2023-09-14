@@ -4,14 +4,53 @@
   position: relative;
 
   @include media-breakpoint-up(xl) {
-    padding-top: 120px;
+    padding-top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/top-bg-mob-min.png) no-repeat center;
+    width: 800px;
+    height: 800px;
+    background-size: cover;
+    top: -95px;
+    left: 56%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      content: none;
+    }
+  }
+
+  .container {
+    position: relative;
+
+    &:before {
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        content: "";
+
+        background-size: cover;
+        background: url(../img/ellipse-white-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        right: -900px;
+        top: -200px;
+        left: inherit;
+      }
+    }
   }
 
   .top-bg {
     position: absolute;
     width: 1360px;
-    height: 1065px;
-    top: 0;
+    height: 635px;
+    top: -88;
+    background-size: cover;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -19,8 +58,8 @@
   .top-bg-two {
     position: absolute;
     width: 1360px;
-    height: 1016px;
-    top: 0;
+    height: 586px;
+    top: 620px;
     left: 50%;
     transform: translate(-50%, 0);
   }

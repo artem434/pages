@@ -1,8 +1,19 @@
 .program {
   color: #fff;
   padding-top: 300px;
+  position: relative;
   @include media-breakpoint-up(xl) {
     padding-top: 0px;
+  }
+
+  .program-bg {
+    position: absolute;
+    width: 1360px;
+    height: 531px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 188px;
   }
 
   &__item {
@@ -38,6 +49,7 @@
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
+      flex-direction: column;
 
       @include media-breakpoint-up(xl) {
         padding-left: 24px;

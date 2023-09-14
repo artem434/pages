@@ -572,55 +572,69 @@ a {
   color: #fff;
   text-align: center;
   z-index: 1;
+  position: relative;
   padding-bottom: 200px;
 }
 @media (min-width: 1200px) {
   .hero {
+    background: url(../img/hero-bg-min.png) top center no-repeat;
     background-size: 1360px;
-    padding-top: 180px;
-    padding-bottom: 0;
-  }
-}
-.hero:before {
-  position: absolute;
-  content: "";
-  background: url(../img/hero-ellipse-mob-min.png) no-repeat center;
-  width: 100%;
-  height: 685px;
-  background-size: cover;
-  top: 0px;
-  left: 0%;
-}
-@media (min-width: 1200px) {
-  .hero:before {
-    background: url(../img/hero-ellipse-min.png) no-repeat center;
-    width: 986px;
-    height: 938px;
-    right: 0px;
-    left: inherit;
+    padding-top: 224px;
+    padding-bottom: 180px;
   }
 }
 .hero:after {
   position: absolute;
   content: "";
-  background: url(../img/hero__decor-mob-min.png) no-repeat center;
-  width: 531px;
-  height: 651px;
+  background: url(../img/hero-bg-mob-min.png) no-repeat center;
+  width: 975px;
+  height: 1256px;
   background-size: cover;
-  top: 62px;
+  top: -226px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: -1;
 }
 @media (min-width: 1200px) {
   .hero:after {
-    background: url(../img/hero__decor-min.png) no-repeat center;
-    width: 1477px;
-    height: 686px;
+    content: none;
   }
 }
 .hero .container {
   position: relative;
+}
+.hero .container:before {
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .hero .container:before {
+    position: absolute;
+    content: "";
+    background: url(../img/ellipse-min.png) no-repeat center;
+    background-size: cover;
+    width: 1600px;
+    height: 1600px;
+    right: -800px;
+    top: -400px;
+    left: inherit;
+  }
+}
+.hero .container::after {
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .hero .container::after {
+    position: absolute;
+    content: "";
+    background: url(../img/ellipse-min.png) no-repeat center;
+    background-size: cover;
+    width: 1600px;
+    height: 1600px;
+    left: -800px !important;
+    right: inherit;
+    top: -400px;
+    left: inherit;
+  }
 }
 .hero h1 {
   font-size: 32px;
@@ -757,22 +771,59 @@ a {
 }
 @media (min-width: 1200px) {
   .top {
-    padding-top: 120px;
+    padding-top: 0;
+  }
+}
+.top:after {
+  position: absolute;
+  content: "";
+  background: url(../img/top-bg-mob-min.png) no-repeat center;
+  width: 800px;
+  height: 800px;
+  background-size: cover;
+  top: -95px;
+  left: 56%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .top:after {
+    content: none;
+  }
+}
+.top .container {
+  position: relative;
+}
+.top .container:before {
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .top .container:before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background: url(../img/ellipse-white-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    right: -900px;
+    top: -200px;
+    left: inherit;
   }
 }
 .top .top-bg {
   position: absolute;
   width: 1360px;
-  height: 1065px;
-  top: 0;
+  height: 635px;
+  top: -88;
+  background-size: cover;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .top .top-bg-two {
   position: absolute;
   width: 1360px;
-  height: 1016px;
-  top: 0;
+  height: 586px;
+  top: 620px;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -861,6 +912,29 @@ a {
 @media (min-width: 1200px) {
   .mission {
     padding-top: 120px;
+  }
+}
+.mission .container {
+  position: relative;
+}
+.mission .container:before {
+  position: absolute;
+  content: "";
+  background: url(../img/ellipse-min.png) no-repeat center;
+  width: 1600px;
+  height: 1600px;
+  background-size: cover;
+  top: -184px;
+  left: -116%;
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .mission .container:before {
+    background: url(../img/ellipse-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    left: -850px;
+    top: -200px;
   }
 }
 .mission h2 {
@@ -990,10 +1064,83 @@ a {
 .speakers {
   padding-top: 60px;
   color: #fff;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .speakers {
     padding-top: 100px;
+  }
+}
+.speakers:after {
+  position: absolute;
+  content: "";
+  background: url(../img/speakers-bg-mob-min.png) no-repeat center;
+  width: 975px;
+  height: 4800px;
+  background-size: cover;
+  top: -186px;
+  left: 56%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .speakers:after {
+    content: none;
+  }
+}
+.speakers .speakers-bg {
+  position: absolute;
+  width: 1360px;
+  height: 1462px;
+  top: -88;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-position-y: -640px;
+  background-repeat: no-repeat;
+}
+.speakers .container {
+  position: relative;
+}
+.speakers .container:before {
+  position: absolute;
+  content: "";
+  background: url(../img/ellipse-min.png) no-repeat center;
+  width: 1600px;
+  height: 1600px;
+  background-size: cover;
+  top: 0px;
+  z-index: -1;
+  right: 0%;
+}
+@media (min-width: 1200px) {
+  .speakers .container:before {
+    background: url(../img/ellipse-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    right: -850px;
+    top: -500px;
+    z-index: -1;
+  }
+}
+.speakers .container:after {
+  position: absolute;
+  content: "";
+  background: url(../img/ellipse-white-min.png) no-repeat center;
+  width: 1600px;
+  height: 1600px;
+  background-size: cover;
+  bottom: -200px;
+  left: 0%;
+}
+@media (min-width: 1200px) {
+  .speakers .container:after {
+    background: url(../img/ellipse-white-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    left: -850px;
+    bottom: -500px;
+    z-index: -1;
   }
 }
 .speakers h2 {
@@ -1010,7 +1157,7 @@ a {
 .speakers h2 span {
   color: #fe5151;
 }
-.speakers ul {
+.speakers__list {
   max-width: 274px;
   width: 100%;
   margin: 0 auto;
@@ -1019,7 +1166,7 @@ a {
   gap: 40px;
 }
 @media (min-width: 1200px) {
-  .speakers ul {
+  .speakers__list {
     max-width: 100%;
     -moz-column-gap: 24px;
          column-gap: 24px;
@@ -1027,24 +1174,28 @@ a {
   }
 }
 @media (min-width: 1200px) {
-  .speakers ul li {
+  .speakers__list li {
     max-width: 274px;
     width: 100%;
   }
 }
-.speakers ul li b {
+.speakers__list li b {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   display: block;
   text-transform: uppercase;
 }
-.speakers ul li b span {
+.speakers__list li b span {
   color: #fe5151;
   display: block;
 }
-.speakers ul li p {
+.speakers__list li p {
   font-family: "Montserrat", sans-serif;
+}
+.speakers__list ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 .speakers__img {
   height: 277px;
@@ -1052,15 +1203,49 @@ a {
   border-radius: 20px 20px 60px 0px;
   margin-bottom: 10px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tasks {
   padding-top: 60px;
   color: #fff;
+  position: relative;
+}
+.tasks .tasks-bg {
+  position: absolute;
+  width: 1357px;
+  height: 681px;
+  background-size: cover;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
 }
 @media (min-width: 1200px) {
   .tasks {
     padding-top: 120px;
+  }
+}
+.tasks .container {
+  position: relative;
+}
+.tasks .container:before {
+  position: absolute;
+  content: "";
+  background: url(../img/ellipse-min.png) no-repeat center;
+  width: 1600px;
+  height: 1600px;
+  background-size: cover;
+  top: 0px;
+  z-index: -1;
+  right: 0%;
+}
+@media (min-width: 1200px) {
+  .tasks .container:before {
+    background: url(../img/ellipse-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    right: -850px;
+    top: -250px;
   }
 }
 .tasks h2 {
@@ -1198,11 +1383,21 @@ a {
 .program {
   color: #fff;
   padding-top: 300px;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .program {
     padding-top: 0px;
   }
+}
+.program .program-bg {
+  position: absolute;
+  width: 1360px;
+  height: 531px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 188px;
 }
 .program__item {
   padding: 20px 20px 20px 26px;
@@ -1237,6 +1432,7 @@ a {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 @media (min-width: 1200px) {
   .program__item ul {
@@ -1273,11 +1469,70 @@ a {
   color: #fff;
   padding-top: 120px;
   padding-bottom: 180px;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .chat {
     padding-top: 215px;
     padding-bottom: 60px;
+  }
+}
+.chat:after {
+  position: absolute;
+  content: "";
+  background: url(../img/chat-bg-mob-min.png) no-repeat center;
+  width: 800px;
+  height: 1812px;
+  background-size: cover;
+  top: -273px;
+  left: 30%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .chat:after {
+    content: none;
+  }
+}
+.chat .chat-bg {
+  position: absolute;
+  width: 1360px;
+  height: 644px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 140px;
+}
+.chat .chat-bg-two {
+  position: absolute;
+  width: 1360px;
+  height: 663px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 806px;
+}
+.chat .container {
+  position: relative;
+}
+.chat .container:before {
+  position: absolute;
+  content: "";
+  background: url(../img/ellipse-min.png) no-repeat center;
+  width: 1600px;
+  height: 1600px;
+  background-size: cover;
+  top: 0px;
+  z-index: -1;
+  left: 0%;
+}
+@media (min-width: 1200px) {
+  .chat .container:before {
+    background: url(../img/ellipse-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    left: -850px;
+    top: -500px;
   }
 }
 @media (min-width: 1200px) {
@@ -1378,6 +1633,53 @@ a {
 .packages {
   color: #fff;
   padding-top: 30px;
+  position: relative;
+}
+.packages:after {
+  position: absolute;
+  content: "";
+  background: url(../img/packages-bg-mob-min.png) no-repeat center;
+  width: 800px;
+  height: 2384px;
+  background-size: cover;
+  top: -314px;
+  left: 55%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .packages:after {
+    content: none;
+  }
+}
+.packages .packages-bg {
+  position: absolute;
+  width: 1359px;
+  height: 1371px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0px;
+}
+.packages .container {
+  position: relative;
+}
+.packages .container:before {
+  top: 0px;
+  z-index: -1;
+  right: 0%;
+}
+@media (min-width: 1200px) {
+  .packages .container:before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background: url(../img/ellipse-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    right: -850px;
+    top: -500px;
+  }
 }
 .packages h2 {
   font-size: 32px;
@@ -1632,6 +1934,33 @@ a {
   text-align: center;
   padding-top: 100px;
   color: #fff;
+  position: relative;
+}
+.partner:after {
+  position: absolute;
+  content: "";
+  background: url(../img/partner-bg-mob-min.png) no-repeat center;
+  width: 360px;
+  height: 552px;
+  background-size: cover;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .partner:after {
+    content: none;
+  }
+}
+.partner .partner-bg {
+  position: absolute;
+  width: 1360px;
+  height: 500px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 120px;
 }
 .partner h2 {
   font-weight: 700;
@@ -1778,11 +2107,58 @@ a {
   text-align: center;
   padding-bottom: 80px;
   color: #fff;
+  position: relative;
+}
+.pass:after {
+  position: absolute;
+  content: "";
+  background: url(../img/pass-bg-mob-min.png) no-repeat center;
+  width: 376px;
+  height: 544px;
+  background-size: cover;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .pass:after {
+    content: none;
+  }
 }
 @media (min-width: 1200px) {
   .pass {
     padding-bottom: 120px;
   }
+}
+.pass .container {
+  position: relative;
+}
+.pass .container:before {
+  top: 0px;
+  z-index: -1;
+  right: 0%;
+}
+@media (min-width: 1200px) {
+  .pass .container:before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background: url(../img/ellipse-white-min.png) no-repeat center;
+    width: 1600px;
+    height: 1600px;
+    right: -850px;
+    top: -700px;
+  }
+}
+.pass .pass-bg {
+  position: absolute;
+  width: 1360px;
+  height: 470px;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 40px;
 }
 .pass h2 {
   font-weight: 700;

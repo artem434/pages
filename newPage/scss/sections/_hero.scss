@@ -6,56 +6,67 @@
   color: #fff;
   text-align: center;
   z-index: 1;
+  position: relative;
   padding-bottom: 200px;
 
   @include media-breakpoint-up(xl) {
-    //background: url(../img/hero-bg-min.jpg) top center no-repeat;
+    background: url(../img/hero-bg-min.png) top center no-repeat;
     background-size: 1360px;
-    padding-top: 180px;
-    padding-bottom: 0;
-  }
-
-  &:before {
-    position: absolute;
-    content: "";
-    background: url(../img/hero-ellipse-mob-min.png) no-repeat center;
-    width: 100%;
-    height: 685px;
-    background-size: cover;
-    top: 0px;
-    left: 0%;
-
-    @include media-breakpoint-up(xl) {
-      background: url(../img/hero-ellipse-min.png) no-repeat center;
-      width: 986px;
-      height: 938px;
-      right: 0px;
-      left: inherit;
-    }
+    padding-top: 224px;
+    padding-bottom: 180px;
   }
 
   &:after {
     position: absolute;
     content: "";
-    background: url(../img/hero__decor-mob-min.png) no-repeat center;
-    width: 531px;
-    height: 651px;
+    background: url(../img/hero-bg-mob-min.png) no-repeat center;
+    width: 975px;
+    height: 1256px;
     background-size: cover;
-    top: 62px;
+    top: -226px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: -1;
 
     @include media-breakpoint-up(xl) {
-      background: url(../img/hero__decor-min.png) no-repeat center;
-      width: 1477px;
-      height: 686px;
+      content: none;
     }
   }
 
   .container {
     position: relative;
 
+    &:before {
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        content: "";
+        background: url(../img/ellipse-min.png) no-repeat center;
+        background-size: cover;
+        width: 1600px;
+        height: 1600px;
+        right: -800px;
+        top: -400px;
+        left: inherit;
+      }
+    }
+    &::after {
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        content: "";
+        background: url(../img/ellipse-min.png) no-repeat center;
+        background-size: cover;
+        width: 1600px;
+        height: 1600px;
+        left: -800px !important;
+        right: inherit;
+        top: -400px;
+        left: inherit;
+      }
+    }
     // &:before {
     //   position: absolute;
     //   content: "";

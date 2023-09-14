@@ -1,10 +1,43 @@
 .tasks {
   padding-top: 60px;
-
+  color: #fff;
+  position: relative;
+  .tasks-bg {
+    position: absolute;
+    width: 1357px;
+    height: 681px;
+    background-size: cover;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
   @include media-breakpoint-up(xl) {
     padding-top: 120px;
   }
-  color: #fff;
+
+  .container {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/ellipse-min.png) no-repeat center;
+      width: 1600px;
+      height: 1600px;
+      background-size: cover;
+      top: 0px;
+      z-index: -1;
+      right: 0%;
+
+      @include media-breakpoint-up(xl) {
+        background: url(../img/ellipse-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        right: -850px;
+        top: -250px;
+      }
+    }
+  }
 
   h2 {
     font-size: 20px;

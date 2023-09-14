@@ -2472,7 +2472,7 @@ a {
   width: 198px;
   height: 41.569px;
   background: url(../img/log_bc-white.svg) 50%/contain no-repeat;
-  position: fixed;
+  position: absolute;
   bottom: 22px;
   left: 50%;
   transform: translate(-50%);
@@ -2482,7 +2482,7 @@ a {
   width: 20px;
   height: 20px;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   display: block;
   top: 35px;
   right: 20px;

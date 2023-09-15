@@ -141,6 +141,7 @@
         flex-direction: row;
       }
       &__btn {
+        font-family: "Benzin", sans-serif;
         border-radius: 12px 12px 12px 0px;
         @include media-breakpoint-up(xl) {
           max-width: 300px;

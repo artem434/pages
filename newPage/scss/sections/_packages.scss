@@ -140,7 +140,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      font-family: "Lexend Giga", sans-serif;
+      font-family: "Montserrat", sans-serif;
       padding-left: 30px;
       margin-bottom: 10px;
       max-height: 0;
@@ -199,6 +199,7 @@
       }
 
       .btn-page {
+        text-transform: uppercase;
         @include media-breakpoint-up(xl) {
           margin-top: 40px;
         }
@@ -221,6 +222,8 @@
         }
 
         .btn-page {
+         
+          text-transform: uppercase;
           width: 245px;
           font-size: 14px;
           margin: 0 auto;

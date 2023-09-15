@@ -745,7 +745,7 @@ a {
   width: 18px;
   height: 30px;
   background-size: cover;
-  top: -11px;
+  top: -6px;
   left: 15px;
 }
 .hero__btn {
@@ -1100,7 +1100,7 @@ a {
   background-size: cover;
   left: 50%;
   transform: translate(-50%, 0);
-  background-position-y: -640px;
+  background-position-y: 860px;
   background-repeat: no-repeat;
 }
 .speakers .container {
@@ -1787,7 +1787,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: "Lexend Giga", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-left: 30px;
   margin-bottom: 10px;
   max-height: 0;
@@ -1843,6 +1843,9 @@ a {
 .packages .package__btn:hover {
   cursor: pointer;
 }
+.packages .package__btn .btn-page {
+  text-transform: uppercase;
+}
 @media (min-width: 1200px) {
   .packages .package__btn .btn-page {
     margin-top: 40px;
@@ -1865,6 +1868,7 @@ a {
   cursor: pointer;
 }
 .packages .package__btn--active .btn-page {
+  text-transform: uppercase;
   width: 245px;
   font-size: 14px;
   margin: 0 auto;
@@ -2097,6 +2101,7 @@ a {
   }
 }
 .partner .form-block .form__btn {
+  font-family: "Benzin", sans-serif;
   border-radius: 12px 12px 12px 0px;
 }
 @media (min-width: 1200px) {

@@ -1,0 +1,210 @@
+.results {
+  position: relative;
+  padding-top: 60px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 120px;
+  }
+  .container {
+    @extend%content!optional;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1140px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    color: $black;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $main-color;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  &__content {
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    li {
+      max-width: 343px;
+      border-radius: 27px;
+      background: #f8f8f8;
+      backdrop-filter: blur(0px);
+      padding: 32px;
+
+      @include media-breakpoint-up(xl) {
+        padding: 24px 36px;
+        max-width: 360px;
+
+        &:nth-child(4) {
+          transform: translateY(-24px);
+        }
+
+        &:nth-child(5) {
+          transform: translateY(-24px);
+          b {
+            display: inline;
+          }
+        }
+      }
+
+      &:last-child {
+        b {
+          display: inline;
+        }
+      }
+
+      strong {
+        color: $main-color;
+        font-size: 26px;
+        font-weight: 700;
+        display: block;
+        font-weight: 900;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 32px;
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_136_879)'%3E%3Cpath d='M19.4209 19.5791L19.4209 16.9632L9.05947 16.954L20.3485 5.66492L18.4933 3.80969L7.20424 15.0987L7.21352 4.7373L4.5791 4.7373L4.5791 19.5791L19.4209 19.5791Z' fill='%23F5C120'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_136_879'%3E%3Crect width='24' height='24' fill='white' transform='translate(24 24) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+        }
+
+        b {
+          font-weight: 700;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__subblock {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    color: #1f2229;
+    max-width: 360px;
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 114px;
+    }
+
+    strong {
+      font-size: 42px;
+      font-weight: 900;
+      display: block;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 10px;
+      }
+    }
+
+    span {
+      margin-left: auto;
+      display: block;
+      width: 273px;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 133%;
+
+      b {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $orange;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+
+  &__subtext {
+    color: #1f2229;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 86px;
+      margin-top: 40px;
+      margin-right: 112px;
+    }
+
+    p {
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+    }
+    //margin-bottom: 24px;
+  }
+
+  &__btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+
+    .btn-page {
+      color: #2b6432;
+      font-weight: 800;
+      background: #eaf3eb;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 28px;
+      }
+    }
+  }
+}

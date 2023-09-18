@@ -90,7 +90,8 @@
         color: #1f2229;
 
         @include media-breakpoint-up(xl) {
-          font-size: 22px;
+          font-size: 26px;
+          max-width: 606px;
         }
       }
 

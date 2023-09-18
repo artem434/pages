@@ -329,7 +329,7 @@ a {
   text-transform: uppercase;
 }
 .btn-page:hover {
-  background-color: #1f2229;
+  background-color: #f5c120;
 }
 
 .btn--fix {
@@ -360,6 +360,9 @@ a {
     height: 38px;
     margin-left: 38px;
   }
+}
+.btn--hero:hover:after {
+  background: url(../img/btn-hero-hover.png) no-repeat center;
 }
 
 .btn--core {
@@ -984,7 +987,7 @@ a {
 }
 @media (min-width: 1200px) {
   .results {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 }
 .results .container {
@@ -1178,6 +1181,10 @@ a {
   .results__btn .btn-page {
     margin-top: 28px;
   }
+}
+.results__btn .btn-page:hover {
+  background-color: #f5c120;
+  color: #fff;
 }
 
 .program .container {
@@ -1445,7 +1452,7 @@ a {
 @media (min-width: 1200px) {
   .speakers .container {
     padding-top: 66px;
-    padding-bottom: 66px;
+    padding-bottom: 120px;
     max-width: 1200px;
     position: relative;
   }
@@ -1650,7 +1657,7 @@ a {
 @media (min-width: 1200px) {
   .packages .container {
     padding-top: 87px;
-    padding-bottom: 96px;
+    padding-bottom: 0;
   }
 }
 .packages__items {
@@ -1785,7 +1792,7 @@ a {
   .register .container {
     max-width: 1200px;
     padding-bottom: 90px;
-    padding-top: 90px;
+    padding-top: 120px;
   }
 }
 .register__title {
@@ -1927,7 +1934,7 @@ a {
   font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .register .form__package {
   display: inline-flex;
@@ -1936,7 +1943,7 @@ a {
   padding: 5px;
   position: relative;
   gap: 5px;
-  margin-bottom: 35px;
+  margin-bottom: 12px;
 }
 @media (min-width: 1200px) {
   .register .form__package {
@@ -1955,7 +1962,7 @@ a {
   text-transform: uppercase;
   align-items: center;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 800;
 }
 @media (min-width: 1200px) {
   .register .form__package span {
@@ -2097,7 +2104,8 @@ a {
 }
 @media (min-width: 1200px) {
   .how ul li b {
-    font-size: 22px;
+    font-size: 26px;
+    max-width: 606px;
   }
 }
 .how ul li p {

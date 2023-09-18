@@ -14,7 +14,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: #1f2229;
+    background-color: $orange;
     //color: $black;
   }
 }
@@ -42,6 +42,12 @@
       width: 38px;
       height: 38px;
       margin-left: 38px;
+    }
+  }
+
+  &:hover {
+    &:after {
+      background: url(../img/btn-hero-hover.png) no-repeat center;
     }
   }
 }

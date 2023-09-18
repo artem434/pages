@@ -11,7 +11,7 @@
     @include media-breakpoint-up(xl) {
       max-width: 1200px;
       padding-bottom: 90px;
-      padding-top: 90px;
+      padding-top: 120px;
     }
   }
 
@@ -157,7 +157,7 @@
       font-size: 26px;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     &__package {
@@ -167,7 +167,7 @@
       padding: 5px;
       position: relative;
       gap: 5px;
-      margin-bottom: 35px;
+      margin-bottom: 12px;
 
       @include media-breakpoint-up(xl) {
         font-size: 28px;
@@ -186,7 +186,7 @@
         text-transform: uppercase;
         align-items: center;
         cursor: pointer;
-        font-weight: 700;
+        font-weight: 800;
 
         @include media-breakpoint-up(xl) {
           font-size: 24px;

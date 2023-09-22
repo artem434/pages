@@ -1,0 +1,148 @@
+.no-webp .chat {
+  &:after {
+    background: url(../img/top-bg-mob-min.png) no-repeat center;
+  }
+}
+.top {
+  padding-top: 60px;
+  color: #fff;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/top-bg-mob-min.webp) no-repeat center;
+    width: 800px;
+    height: 800px;
+    background-size: cover;
+    top: -95px;
+    left: 56%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      content: none;
+    }
+  }
+
+  .container {
+    position: relative;
+
+    &:before {
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        content: "";
+
+        background-size: cover;
+        background: url(../img/ellipse-white-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        right: -900px;
+        top: -200px;
+        left: inherit;
+      }
+    }
+  }
+
+  .top-bg {
+    position: absolute;
+    width: 1360px;
+    height: 635px;
+    top: -88;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .top-bg-two {
+    position: absolute;
+    width: 1360px;
+    height: 586px;
+    top: 620px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 48px;
+
+    @include media-breakpoint-up(xl) {
+      align-items: flex-start;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    li {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+      b {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 4px;
+        margin-bottom: 4px;
+
+        @include media-breakpoint-up(xl) {
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='2' viewBox='0 0 152 2' fill='none'%3E%3Cpath d='M1.00049 1H151' stroke='url(%23paint0_radial_103_1847)' stroke-width='2' stroke-linecap='round'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_103_1847' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(76.0005 1.5) rotate(90) scale(0.5 75)'%3E%3Cstop stop-color='white'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0.2'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E")
+            50% / contain no-repeat;
+          width: 100px;
+          height: 2px;
+          background-size: cover;
+          @include media-breakpoint-up(xl) {
+            width: 150px;
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          font-size: 48px;
+
+          svg {
+            width: 77.036px;
+            height: 34.762px;
+          }
+        }
+
+        span {
+          @include media-breakpoint-up(xl) {
+            font-size: 40px;
+          }
+        }
+      }
+
+      p {
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 14px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

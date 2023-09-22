@@ -82,3 +82,9 @@
       50% no-repeat;
   }
 }
+.form__btn[disabled] {
+  background: var(--red, linear-gradient(180deg, #ccc 0%, #ccc 100%));
+  color: #514e4e;
+  box-shadow: none;
+  cursor: not-allowed;
+}

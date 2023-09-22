@@ -39,10 +39,15 @@ $.get("https://ipapi.co/json/", function (obj) {
   });
 });
 
-$("form [type=sumbit]").on("click", function (e) {
+$("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
+  var submitButton = form.find(".form__btn");
   form.addClass("loading");
+  setCookie("name", $('input[name="name"]').val(), 365);
+  setCookie("email", $('input[name="email"]').val(), 365);
+  setCookie("phone", $('input[name="phone"]').val(), 365);
+  submitButton.prop("disabled", true);
   setTimeout(function () {
     form.submit();
   }, 1000);

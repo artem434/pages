@@ -20,19 +20,6 @@
 
   .container {
     @extend%content!optional;
-
-    @include media-breakpoint-up(xl) {
-      &:before {
-        content: "";
-        position: absolute;
-        right: -123px;
-        bottom: -91px;
-        background: url(../img/how-img.png) center no-repeat;
-        width: 594.164px;
-        height: 937px;
-        background-size: contain;
-      }
-    }
   }
 
   &__title {

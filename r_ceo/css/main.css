@@ -370,7 +370,10 @@ a {
   font-size: 18px;
 }
 .btn--core:hover {
-  background-color: #000;
+  background-color: #f5c120;
+}
+.btn--core:hover:before {
+  background: url(../img/btn-hero-hover.png) no-repeat center;
 }
 .btn--core::before {
   content: "";
@@ -391,11 +394,11 @@ a {
   color: #000;
 }
 .btn--pro:hover {
-  background-color: #000;
+  background-color: #f5c120;
   color: #ffffff;
 }
-.btn--pro:hover::before {
-  background: #fff url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_130_235)'%3E%3Cpath d='M15.0002 3.8335L13.6489 5.18475L18.9964 10.5418L2 10.5418L2 12.4585L18.9964 12.4585L13.6489 17.8156L15.0002 19.1668L22.6668 11.5002L15.0002 3.8335Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_130_235'%3E%3Crect width='23' height='23' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 50% no-repeat;
+.btn--pro:hover:before {
+  background: url(../img/btn-hero-hover.png) no-repeat center;
 }
 .btn--pro::before {
   content: "";
@@ -406,7 +409,7 @@ a {
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
-  background: #f5c120 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38' fill='none'%3E%3Ccircle cx='19' cy='19' r='19' fill='%2304AB1E'/%3E%3Cg clip-path='url(%23clip0_3175_10741)'%3E%3Cpath d='M23 11.8333L21.6488 13.1845L26.9963 18.5416L9.99988 18.5416L9.99988 20.4583L26.9963 20.4583L21.6488 25.8153L23 27.1666L30.6667 19.4999L23 11.8333Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3175_10741'%3E%3Crect width='23' height='23' fill='white' transform='translate(8 8)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") 50% no-repeat;
+  background: url(../img/btn-hero-hover.png) no-repeat center;
 }
 
 .header {
@@ -1943,7 +1946,7 @@ a {
   padding: 5px;
   position: relative;
   gap: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
   .register .form__package {
@@ -2001,8 +2004,7 @@ a {
   border: none;
 }
 .register .form__btn:hover {
-  background-color: #ffffff;
-  color: #000;
+  background-color: #f5c120;
   cursor: pointer;
 }
 .register .form__agree {
@@ -2033,18 +2035,6 @@ a {
   .how {
     padding-top: 66px;
     padding-bottom: 66px;
-  }
-}
-@media (min-width: 1200px) {
-  .how .container:before {
-    content: "";
-    position: absolute;
-    right: -123px;
-    bottom: -91px;
-    background: url(../img/how-img.png) center no-repeat;
-    width: 594.164px;
-    height: 937px;
-    background-size: contain;
   }
 }
 .how__title {

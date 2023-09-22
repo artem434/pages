@@ -1,0 +1,57 @@
+.ticker {
+  display: flex;
+  padding: 48px 0;
+  gap: 32px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 84px 0;
+  }
+}
+
+.ticker__string {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: white;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 28px;
+  }
+
+  &--white {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+@-webkit-keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

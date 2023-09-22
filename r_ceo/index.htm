@@ -56,18 +56,10 @@
       async=""
       src="https://www.google-analytics.com/analytics.js"
     ></script>
-    <script
-      gtm="GTM-TZ48NNJ"
-      type="text/javascript"
-      async=""
-      src="https://www.google-analytics.com/gtm/optimize.js?id=GTM-NZCD4C4"
-    ></script>
+
     <script async="" src="https://www.clarity.ms/s/0.7.10/clarity.js"></script>
     <script async="" src="https://www.clarity.ms/tag/hxq8cxegar"></script>
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtm.js?id=GTM-TZ48NNJ"
-    ></script>
+
     <script
       async=""
       src="https://connect.facebook.net/en_US/fbevents.js"
@@ -99,7 +91,7 @@
         "script",
         "https://connect.facebook.net/en_US/fbevents.js"
       );
-      fbq("init", "207946528779724");
+      fbq("init", "422318891243887");
       fbq("track", "PageView");
     </script>
     <noscript
@@ -107,26 +99,10 @@
         height="1"
         width="1"
         style="display: none"
-        src="https://www.facebook.com/tr?id=207946528779724&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=422318891243887&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
-    </script>
-    <!-- End Google Tag Manager -->
+
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -153,16 +129,6 @@
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TZ48NNJ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
@@ -492,7 +458,7 @@
               <ul class="item__info">
                 <li>
                   Основні принципи побудови ефективної організаційної структури
-                  в ритейл
+                  в ритейлі
                 </li>
                 <li>
                   Види організаційних структур в залежності від діяльності та
@@ -1247,10 +1213,13 @@
                     </div>
                   </li>
                 </ul>
-
-                <label class="input__wrap">
+                <label
+                  class="form__input"
+                  style="display: none; visibility: hidden"
+                >
+                  <!-- <input class="input" name="name" type="text" placeholder="Твоє ім’я" required="" value="Unknow User"> -->
                   <input
-                    class="d-none input"
+                    class="hidden-name-input input"
                     type="text"
                     name="name"
                     required="true"
@@ -1258,16 +1227,8 @@
                     value="Unknow User"
                   />
                 </label>
-                <label class="input__wrap">
-                  <input
-                    class="input"
-                    name="email"
-                    type="email"
-                    placeholder="Твій email"
-                    required="true"
-                  />
-                </label>
-                <label class="input__wrap">
+                <label class="form__input input__wrap">
+                  <!-- <span class="input__label">Номер телефону:</span> -->
                   <div class="intl-tel-input allow-dropdown">
                     <div class="flag-container">
                       <div
@@ -1289,6 +1250,28 @@
                           </div>
                           <span class="country-name">Ukraine (Україна)</span
                           ><span class="dial-code">+380</span>
+                        </li>
+                        <li
+                          class="country preferred"
+                          data-dial-code="7"
+                          data-country-code="ru"
+                        >
+                          <div class="flag-box">
+                            <div class="iti-flag ru"></div>
+                          </div>
+                          <span class="country-name">Russia (Россия)</span
+                          ><span class="dial-code">+7</span>
+                        </li>
+                        <li
+                          class="country preferred"
+                          data-dial-code="375"
+                          data-country-code="by"
+                        >
+                          <div class="flag-box">
+                            <div class="iti-flag by"></div>
+                          </div>
+                          <span class="country-name">Belarus (Беларусь)</span
+                          ><span class="dial-code">+375</span>
                         </li>
                         <li
                           class="country preferred"
@@ -4055,18 +4038,28 @@
                       </ul>
                     </div>
                     <input
-                      class="input"
+                      class="input phone"
                       id="phone"
-                      name="phone"
                       type="tel"
-                      placeholder="Твій номер телефону"
+                      name="phone"
                       required="true"
+                      inputmode="tel"
                       autocomplete="off"
+                      placeholder="Твій номер телефону"
                     />
                   </div>
                 </label>
-
-                <div class="hidden">
+                <label class="form__input">
+                  <!-- <span class="input__label">Email:</span> -->
+                  <input
+                    class="input email"
+                    type="email"
+                    name="email"
+                    placeholder="Твій email"
+                    required="true"
+                  />
+                </label>
+                <div class="form__hidden hidden">
                   <input type="hidden" name="ref" value="" autocomplete="off" />
                   <input type="hidden" name="ga" value="" autocomplete="off" />
                   <input
@@ -4114,10 +4107,9 @@
                   <input
                     type="hidden"
                     name="landing_id"
-                    value="2108311000744387328"
+                    value="2108311000756773961"
                     autocomplete="off"
                   />
-                  <!-- Landing_id-->
                   <input
                     type="hidden"
                     name="es_mail_id"
@@ -4132,7 +4124,7 @@
                   <input
                     type="hidden"
                     name="es_id"
-                    value="1154"
+                    value=""
                     autocomplete="off"
                   />
                   <input
@@ -4144,13 +4136,13 @@
                   <input
                     type="hidden"
                     name="success_url"
-                    value="https://web.bizconstructor.com/12gd47"
+                    value="https://web.bizconstructor.com/gbr7rm"
                     autocomplete="off"
                   />
                   <input
                     type="hidden"
                     name="error_url"
-                    value="https://web.bizconstructor.com/12gd47"
+                    value=""
                     autocomplete="off"
                   />
                   <input
@@ -4334,6 +4326,10 @@
               <div
                 class="swiper-slide logo lazy"
                 data-bg="img/clients/11.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/12.png"
               ></div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -4523,7 +4519,7 @@
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://web.bizconstructor.com/yn53a8";
+          cSuccess_url = "https://web.bizconstructor.com/gbr7rm";
 
         //  дата скидки (автозамена)
         let dataDeadline;

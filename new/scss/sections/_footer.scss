@@ -1,0 +1,73 @@
+.footer {
+  font-family: "Lexend Giga", sans-serif;
+  background: #2a2829 url(../img/footer-bg.png) center bottom;
+  background-repeat: repeat-x;
+  padding: 48px 0;
+  color: $white;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 268px;
+
+    @media (min-width: 760px) {
+      max-width: $maxWidth;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    h5 {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &_menu_title {
+  }
+
+  &__social_links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+      gap: 30px;
+    }
+    a {
+      display: block;
+    }
+  }
+
+  &__social {
+    svg {
+      fill: $orange;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .footer__container {
+    justify-content: space-between;
+    gap: 40px;
+  }
+}

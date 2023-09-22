@@ -1,0 +1,171 @@
+.speakers {
+  padding-top: 60px;
+  color: #fff;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../img/speakers-bg-mob-min.png) no-repeat center;
+    width: 975px;
+    height: 2746px;
+    background-size: cover;
+    top: -186px;
+    left: 56%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      content: none;
+    }
+  }
+
+  .speakers-bg {
+    position: absolute;
+    width: 1360px;
+    height: 1462px;
+    top: -88;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-position-y: 860px;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/ellipse-min.png) no-repeat center;
+      width: 1600px;
+      height: 1600px;
+      background-size: cover;
+      top: 0px;
+      z-index: -1;
+      right: 0%;
+
+      @include media-breakpoint-up(xl) {
+        background: url(../img/ellipse-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        right: -850px;
+        top: -500px;
+        z-index: -1;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url(../img/ellipse-white-min.png) no-repeat center;
+      width: 1600px;
+      height: 1600px;
+      background-size: cover;
+      bottom: -200px;
+      z-index: -1;
+      left: 0%;
+
+      @include media-breakpoint-up(xl) {
+        background: url(../img/ellipse-white-min.png) no-repeat center;
+        width: 1600px;
+        height: 1600px;
+        left: -850px;
+        bottom: -500px;
+        z-index: -1;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 48px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    span {
+      color: #fe5151;
+    }
+  }
+  &__list {
+    max-width: 274px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 100%;
+      column-gap: 24px;
+      row-gap: 60px;
+    }
+
+    li {
+      @include media-breakpoint-up(xl) {
+        max-width: 274px;
+        width: 100%;
+      }
+      b {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: block;
+        text-transform: uppercase;
+
+        span {
+          color: #fe5151;
+          display: block;
+        }
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  }
+
+  &__img {
+    height: 277px;
+    width: 100%;
+    border-radius: 20px 20px 60px 0px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__bottom {
+    margin-top: 48px;
+    display: inline-block;
+    border-radius: 12px 12px 12px 0px;
+    border: 1px solid #fe5151;
+    padding: 11px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    span {
+      color: #fe5151;
+      font-size: 16px;
+    }
+  }
+}

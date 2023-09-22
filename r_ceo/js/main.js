@@ -14,11 +14,11 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
+  $("input[name=name]").val("Unknow User");
   $("input[name=email]").val(getCookie("email"));
   $("input[name=phone]").val(getCookie("phone"));
 });
-
+const inputElement = document.querySelector('input[name="name"]');
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });

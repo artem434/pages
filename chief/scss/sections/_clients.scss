@@ -1,0 +1,18 @@
+.clients {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__slider {
+    padding: 0 24px;
+  }
+
+  .logo {
+    background: 50% / contain no-repeat;
+    height: 93px;
+  }
+}

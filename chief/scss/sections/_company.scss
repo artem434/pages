@@ -1,0 +1,89 @@
+.company {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 26px;
+
+    span {
+      color: $color-main;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 46px;
+      }
+    }
+    b {
+      max-width: 360px;
+      font-size: 36px;
+      margin-top: 10px;
+      display: block;
+      display: block;
+      font-weight: 700;
+      line-height: 100%;
+      width: 100%;
+      text-transform: none;
+      @include media-breakpoint-up(xl) {
+        font-size: 54px;
+        max-width: 680px;
+        margin-bottom: 32px;
+      }
+
+      i {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 860px;
+      margin-left: auto;
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 56px;
+
+    li {
+      width: calc(50% - 10px);
+      font-size: 18px;
+
+      @include media-breakpoint-up(xl) {
+        width: 100%;
+        max-width: 170px;
+      }
+
+      b {
+        font-size: 32px;
+        line-height: 31px;
+        font-weight: 700;
+        display: block;
+        color: $color-main;
+        margin-bottom: 8px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 45px;
+
+          span {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

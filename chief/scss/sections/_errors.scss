@@ -20,6 +20,7 @@
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(13px);
     gap: 12px;
+    background-color: red;
 
     @include media-breakpoint-up(xl) {
       padding: 30px 32px;

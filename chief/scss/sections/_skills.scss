@@ -1,4 +1,8 @@
 .skills {
+  padding-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 80px;
+  }
   .container {
     @include media-breakpoint-up(xl) {
       max-width: 1020px;

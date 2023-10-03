@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор</title>
+  <!-- SEO-->
+  <meta property="og:title" content="CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор">
+  <meta property="og:description" content="Ефективна та концентрована освітня програма для навчання перших осіб компанії">
+  <meta property="og:image" content="img/og-image.png">
+  <meta property="og:url" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png">
+  <meta name="msapplication-TileImage" content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png">
+  <script src="js/modernizr-custom.js"></script>
+
+ <!-- Meta Pixel Code --> <script> !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '207946528779724'); fbq('track', 'PageView'); </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=207946528779724&ev=PageView&noscript=1" /></noscript> 
+  <!-- End Meta Pixel Code -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZ48NNJ');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript"> (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "hxq8cxegar"); </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ48NNJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+  <header class="header" id="header">
+      <div class="header__container">
+        <a class="header__logo" href="https://ceo.bizconstructor.com/new"></a>
+        <ul class="header__menu">
+          <li>
+            <a href="#program">Структура програми</a>
+          </li>
+          <li>
+            <a href="#expert">Експерти</a>
+          </li>
+          <li><a class="phone" href="tel:+380931701239">+38 ( 093 ) 170 12 39</a></li>
+          <li class="btn">
+            <a href="#register">Реєстрація</a>
+          </li>
+        </ul>
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__description">
+            Інтенсивна <br class="d-xl-none" /><span>освітня програма </span>
+            <br class="d-none d-xl-block" />для керівників будівельного бізнесу
+          </div>
+          <h1>CEO</h1>
+          <div class="hero__subtitle">
+            будівельної <br class="d-none d-xl-block" />
+            компанії
+          </div>
+          <div class="hero__info">
+            17 жовтня <span>|</span> 3 місяці <span>|</span> онлайн
+          </div>
+          <div class="hero__text">
+            Стань <span>еталонним лідером </span> <br class="d-xl-none" />
+            для своєї компанії
+          </div>
+
+          <div class="hero__btn">
+            <a href="#register" class="btn-page btn--hero"
+              >Зареєструватися
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <circle
+                  cx="23.1378"
+                  cy="20.158"
+                  r="14.175"
+                  stroke="white"
+                  stroke-width="1.62"
+                />
+                <path
+                  d="M1.86285 19.7529C1.4155 19.7529 1.05285 20.1156 1.05285 20.5629C1.05285 21.0103 1.4155 21.3729 1.86285 21.3729V19.7529ZM28.3556 21.1357C28.6719 20.8194 28.6719 20.3065 28.3556 19.9902L23.2008 14.8354C22.8845 14.519 22.3716 14.519 22.0553 14.8354C21.739 15.1517 21.739 15.6646 22.0553 15.9809L26.6373 20.5629L22.0553 25.145C21.739 25.4613 21.739 25.9742 22.0553 26.2905C22.3716 26.6068 22.8845 26.6068 23.2008 26.2905L28.3556 21.1357ZM1.86285 21.3729H27.7829V19.7529H1.86285V21.3729Z"
+                  fill="white"
+                /></svg></a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__content">
+            <p class="about__text">
+              Цей 3-місячний курс дозволить в найкоротші терміни здобути всі
+              необхідні знання та компетенції, які допоможуть тобі стати
+              еталонним CEO для своєї компанії.
+            </p>
+            <ul>
+              <li>3 місяці навчання в онлайн форматі</li>
+              <li>Індивідуальний експертний супровід</li>
+              <li>Практичні завдання та шаблони документів</li>
+              <li>Робота в професійному оточенні однодумців</li>
+              <li>Сертифікат про проходження програми</li>
+            </ul>
+          </div>
+          <h3 class="about__title">
+            Так швидко
+            <span
+              >твій професійний <br />
+              рівень</span
+            >
+            ще ніколи не зростав
+          </h3>
+        </div>
+      </section>
+
+      <section class="for" id="for">
+        <div class="container">
+          <h3 class="for__title"><span>ДЛЯ КОГО</span> ПРОГРАМА</h3>
+          <div class="for__content">
+            <ul>
+              <li>
+                <hr />
+                <b
+                  >Керівники <br />
+                  будівельних компаній</b
+                >
+                <p>які прагнуть вирости професійно та карʼєрно як управлінці</p>
+              </li>
+              <li>
+                <hr />
+                <b
+                  >Власники <br />
+                  будівельного бізнесу</b
+                >
+                <p>
+                  які прагнуть більш ефективно керувати своїм бізнесом або
+                  виростити CEO всередині компанії
+                </p>
+              </li>
+              <li>
+                <hr />
+                <b
+                  >Чинні CEO <br />
+                  будівельних компаній</b
+                >
+                <p>
+                  що прагнуть в короткі терміни значно підвищити рівень власних
+                  компетенцій
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="results" id="results">
+        <div class="container">
+          <h3 class="results__title">
+            ПІСЛЯ НАВЧАННЯ <span>НА ПРОГРАМІ ТИ:</span>
+          </h3>
+
+          <ul>
+            <li>
+              <strong>01</strong>
+              <p>
+                <b>Чітко зрозумієш цілі та завдання позиції СЕО </b> та значно
+                підвищиш ефективність свого робочого процесу
+              </p>
+            </li>
+            <li>
+              <strong>02</strong>
+              <p>
+                <b>Навчишся будувати стратегію компанії </b>та організовувати
+                високу дисципліну реалізації стратегічних проектів
+              </p>
+            </li>
+            <li>
+              <strong>03</strong>
+              <p>
+                <b
+                  >Сформуєш комплексне розуміння діяльності бізнесу як системи </b
+                >та навчишся налагоджувати ефективну взаємодію всіх елементів
+              </p>
+            </li>
+            <li>
+              <strong>04</strong>
+              <p>
+                <b>Навчишся тримати стратегічний фокус </b>без надмірного
+                залучення в операційні процеси
+              </p>
+            </li>
+            <li>
+              <strong>05</strong>
+              <p>
+                <b>Опануєш методи побудови сильної команди </b>та значно
+                підвищиш якість взаємодії в команді
+              </p>
+            </li>
+            <li>
+              <strong>06</strong>
+              <p>
+                <b
+                  >Впровадиш інструменти управління всіма ключовими функціями
+                  бізнесу
+                </b>
+                та навчишся будувати системні та прибуткові компанії
+              </p>
+            </li>
+          </ul>
+          <div class="results__subblock">
+            <div class="results__subtitle">
+              <span
+                >« <b>CEO</b> <br />БУДІВЕЛЬНОЇ <br />
+                КОМПАНІЇ»</span
+              >
+            </div>
+            <div class="results__subtext">
+              <p>
+                значно перевищує за своєю ефективністю та практичністю більшість
+                існуючих MBA-програм.
+              </p>
+
+              <p>
+                Всі інструменти, які ти будеш вивчати, поєднані в єдину
+                комплексну систему і викладаються в максимально практичній
+                формі.
+              </p>
+              <div class="results__btn">
+                <a href="#ankor" class="btn-page btn--radius"
+                  >ЗАРЕЄСТРУВАТИСЯ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="program" id="program">
+        <div class="container">
+          <h3 class="program__title"><span>структура</span> програми</h3>
+          <div class="program__content">
+            <div class="item">
+              <p class="item__number">01</p>
+              <h4 class="item__title">
+                Модель системної компанії та дорожня карта розвитку бізнесу
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Модель системного бізнесу в будівельній галузі</li>
+                <li>Діагностика поточного стану компанії</li>
+                <li>Дорожня карта розвитку бізнесу</li>
+                <li>Функціонал та компетенції ефективного CEO</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">02</p>
+              <h4 class="item__title">Особиста ефективність СЕО</h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Особиста ефективність СЕО</li>
+                <li>Особистий та корпоративний тайм-менеджмент</li>
+                <li>Лідерство та принципи створення сильної компанії</li>
+                <li>
+                  Зміна моделі поведінки CEO на різних етапах розвитку компанії
+                </li>
+                <li>Робота з персональним асистентом</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">03</p>
+              <h4 class="item__title">
+                Стратегія бізнесу та бізнес-планування
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>
+                  Бізнес-модель та product-market fit в будівельній галузі
+                </li>
+                <li>Стратегія масштабування компанії</li>
+                <li>Ринок та цільовий споживач</li>
+                <li>Методи дослідження ринку</li>
+                <li>
+                  Unique Selling Proposition (USP) та конкурентна стратегія
+                </li>
+                <li>Методи аналізу конкурентів</li>
+                <li>Benchmarking</li>
+                <li>Продукт та управління шляхом клієнта (Customer Journey)</li>
+                <li>Сегментація цільової аудиторії та продуктів компанії</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">04</p>
+              <h4 class="item__title">
+                Система залучення та утримання клієнтів
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>
+                  Стратегія залучення та утримання клієнтів у будівельній галузі
+                </li>
+                <li>Inbound та outbound підходи у залученні клієнтів</li>
+                <li>Brand-маркетинг та performance-маркетинг</li>
+                <li>Юніт-економіка та моделювання маркетингових воронок</li>
+                <li>Сучасні інструменти Інтернет-маркетингу</li>
+                <li>Управління продажами та CRM</li>
+                <li>Методологія утримання клієнтів та збільшення LTV</li>
+                <li>Відмінність продажів у B2C та B2B сегментах</li>
+                <li>Технології та стандарти продажів</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">05</p>
+              <h4 class="item__title">
+                Організаційна структура та регламентація зон відповідальності
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>
+                  Основні принципи побудови ефективної організаційної структури
+                  в будівельному бізнесу
+                </li>
+                <li>
+                  Види організаційних структур в залежності від діяльності та
+                  розміру компанії
+                </li>
+                <li>
+                  C-level та ключові центри відповідальності в організаційній
+                  структурі
+                </li>
+                <li>Еволюція організаційної структури з розвитком компанії</li>
+                <li>
+                  Регламентація зон відповідальності в організаційній структурі
+                </li>
+                <li>
+                  Карти посади та очікувані результати роботи співробітників
+                </li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">06</p>
+              <h4 class="item__title">
+                Бізнес-процеси та організація ефективної взаємодії у команді
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Опис бізнес-процесів</li>
+                <li>Формат BPMN 2.0</li>
+                <li>Впровадження SOP (Standard Operating Procedures)</li>
+                <li>Принцип внутрішнього клієнта</li>
+                <li>Підвищення якості взаємодії у команді</li>
+                <li>
+                  Як привчити команду працювати за встановленими процесами
+                </li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">07</p>
+              <h4 class="item__title">
+                HR-менеджмент та розвиток корпоративної культури
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Роль HR-функції у компанії</li>
+                <li>
+                  Специфіка функції управління персоналом в будівельному бізнесі
+                </li>
+                <li>Управління якісним складом команди</li>
+                <li>HR-директор та його функціонал</li>
+                <li>Ефективний процес рекрутингу</li>
+                <li>Канали пошуку кандидатів на вакансії</li>
+                <li>
+                  Методологія аналізу кандидатів та ефективне проведення
+                  співбесід
+                </li>
+                <li>Система вступної адаптації та атестації</li>
+                <li>Побудова автоматизованої системи адаптації в LMS</li>
+                <li>Звільнення співробітників</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">08</p>
+              <h4 class="item__title">
+                Мотивація команди, розвиток співробітників та керівників
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Управління мотивацією співробітників</li>
+                <li>Управління залученістю співробітників до роботи</li>
+                <li>Принципи розробки систем фінансової мотивації</li>
+                <li>Оцінка та розвиток персоналу</li>
+                <li>Використання грейдів у розвитку команди</li>
+                <li>Корпоративна культура та принципи її формування</li>
+                <li>Принципи управління робочим персоналом</li>
+                <li>Розвиток керівників</li>
+                <li>Ситуаційне лідерство</li>
+                <li>Система адаптації нових керівників</li>
+                <li>Впровадження принципу "другого пілота"</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">09</p>
+              <h4 class="item__title">Бренд-маркетинг</h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>
+                  Сила бренду: управління впізнаваністю та лояльністю до бренду
+                </li>
+                <li>Медіа-тиск та share of voice</li>
+                <li>ATL та BTL реклама</li>
+                <li>PR</li>
+                <li>SMM для розвитку бренду</li>
+                <li>Контент-маркетинг</li>
+                <li>Інфлюєнс-маркетинг</li>
+                <li>Event-маркетинг</li>
+                <li>Особистий бренд СЕО</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">10</p>
+              <h4 class="item__title">
+                Performance-маркетинг та управління продажами
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Логіка performance-маркетингу</li>
+                <li>Математика performance-маркетингу</li>
+                <li>
+                  Управління психологією цільового клієнта: Awareness,
+                  Consideration, Conversion
+                </li>
+                <li>Inbound та Outbound підходи до залучення клієнтів</li>
+                <li>Воронка залучення клієнтів</li>
+                <li>Аналітика і управління маркетинговим бюджетом</li>
+                <li>Функція продажів та лідогенерація</li>
+                <li>Відділ продажів у структурі компанії</li>
+                <li>Робота з CRM</li>
+                <li>Технології та стандарти продажів</li>
+                <li>Юніт-економіка</li>
+                <li>Утримання клієнтів та управління зростанням LTV</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">11</p>
+              <h4 class="item__title">Управління фінансами</h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Основні помилки в управлінні фінансами компанії</li>
+                <li>Роль CFO та процес управління фінансами компанії</li>
+                <li>
+                  Ключові фінансові звіти, балансовий звіт (Balance) та власний
+                  капітал компанії (equity)
+                </li>
+                <li>
+                  Звіт про прибутки та збитки (P&L) та управління прибутковістю
+                  бізнесу
+                </li>
+                <li>
+                  Звіт про рух грошових коштів (Cashflow) та управління
+                  ліквідністю бізнесу
+                </li>
+                <li>
+                  Специфіка ведення управлінської звітності в будівельній галузі
+                </li>
+                <li>Фінансова модель компанії</li>
+                <li>Фінансове планування та бюджетування</li>
+                <li>Фінансовий аналіз</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">12</p>
+              <h4 class="item__title">Операційне управління</h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Регулярний менеджмент</li>
+                <li>Правила ефективного проведення управлінських заходів</li>
+                <li>Побудова dashboard-ів та система внутрішньої звітності</li>
+                <li>Підходи до управління проєктами</li>
+                <li>Забезпечення дисципліни виконання завдань</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">13</p>
+              <h4 class="item__title">
+                Стратегічне планування та забезпечення дисципліни реалізації
+                стратегії
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Ритм заходів щодо стратегічного планування</li>
+                <li>Бачення майбутнього компанії та CEO view</li>
+                <li>Підготовка і проведення стратегічної сесії</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">14</p>
+              <h4 class="item__title">
+                Залучення інвестицій <span>[пакет участі PRO]</span>
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Капіталізація бізнесу</li>
+                <li>Методи оцінки вартості бізнесу</li>
+                <li>Раунди інвестицій</li>
+                <li>Джерела пошуку інвесторів</li>
+                <li>Правила побудови відносин з інвесторами</li>
+                <li>Продаж бізнесу</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">15</p>
+              <h4 class="item__title">
+                Міжнародний розвиток <span>[пакет участі PRO]</span>
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>
+                  Сценарії міжнародного масштабування будівельного бізнесу
+                </li>
+                <li>Вибір географії та макроекономічний аналіз країн</li>
+                <li>Побудова міжнародних продажів віддалено</li>
+                <li>Робота з дилерами та дистриб’юторами</li>
+                <li>
+                  Відкриття та розвиток повноцінного філіалу в іншій країні
+                </li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">16</p>
+              <h4 class="item__title">
+                HR-маркетинг і бренд роботодавця <span>[пакет участі PRO]</span>
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Бренд роботодавця та управління HR-продуктом</li>
+                <li>Точки контакту в HR-маркетингу</li>
+                <li>Робота з відгуками про роботу в компанії</li>
+                <li>
+                  Звільнення співробітників без конфліктів та проведення
+                  exit-інтерв'ю
+                </li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__number">17</p>
+              <h4 class="item__title">
+                Управління проєктами <span>[пакет участі PRO]</span>
+              </h4>
+              <div class="item__more"></div>
+              <ul class="item__info">
+                <li>Проєктний менеджмент та етапи реалізації проєкту</li>
+                <li>Waterfall-підхід до управління проєктами</li>
+                <li>Agile та SCRUM</li>
+                <li>Автоматизація управління проєктами</li>
+              </ul>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="methodology" id="methodology">
+        <div class="container">
+          <div class="methodology__content">
+            <div class="methodology__title">
+              Авторська методологія <b>та система навчання</b>
+            </div>
+            <div class="methodology__text">
+              <p>
+                дозволять у найкоротший термін значно підняти рівень власних
+                компетенцій, що призведе до миттєвого зростання вашого бізнесу.
+              </p>
+              <p>Залишай заявку, щоб забронювати участь.</p>
+            </div>
+          </div>
+          <div class="methodology__btn">
+            <a href="#register" class="btn-page btn--radius">ЗАРЕЄСТРУВАТИСЯ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakers" id="speakers">
+        <div class="container">
+          <h3 class="speakers__title"><span>експерти </span> програми</h3>
+
+          <div class="speakers__list">
+            <div class="speakers__item speaker speaker--main">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-1.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Головний експерт</div>
+                  <div class="speaker__name">КИРИЛО КУНИЦЬКИЙ</div>
+                  <div class="speaker__text">
+                    Засновник та CEO міжнародної освітньо-консалтингової
+                    компанії
+                    <b>«Бізнес-Конструктор»</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-2.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Анна Попруга</div>
+                  <ul class="speaker__list">
+                    <li>
+                      Marketing&Lease Director, KAN Development (ЖК "Паркове
+                      Місто", "Комфорт Таун" та інші)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-3.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Дар'я Шкуренко</div>
+                  <ul class="speaker__list">
+                    <li>
+                      Співзасновниця та керуючий партнер консалтингової агенції
+                      "NO matter"
+                    </li>
+
+                    <li>
+                      Екс-заступник комерційного директора SAGA Development
+                    </li>
+                    <li>Спікер DIM.RIA та address.ua</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker speaker--reverse">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-4.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Дмитро Васильєв</div>
+                  <ul class="speaker__list">
+                    <li>
+                      СЕО та головний архітектор Archimatika (ЖК "Файна Таун",
+                      ЖК "Республіка", ЖК "Комфорт Таун" та інші)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker speaker--reverse">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-5.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Павло Чиклікчи</div>
+                  <ul class="speaker__list">
+                    <li>Власник ТОВ "Агро Інвест Брусилів"</li>
+                    <li>Співзасновник компанії CorQ</li>
+                    <li>Керівник проектів KAN Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-6.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Володимир Лімаков</div>
+                  <ul class="speaker__list">
+                    <li>Засновник і керуючий партнер Riviera Village</li>
+
+                    <li>Екс-голова казначейства Citigroup в Україні</li>
+                    <li>
+                      Регіональний керівник відділу деривативів і структурованих
+                      продуктів
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="packages" id="packages">
+        <div class="container">
+          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
+          <div class="packages__items">
+            <div
+              class="item item--core core_price active__button__id tabs__tab--active"
+              data-id="2108311000744387305"
+            >
+              <div class="item__header">
+                <p class="item__title">CORE</p>
+              </div>
+              <ul class="item__info">
+                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
+                <li><b>13 модулів програми</b></li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом
+                  <b>протягом 3-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(12 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(3 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми 3&nbsp;місяцi після її
+                  завершення
+                </li>
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--core"
+                id="btn-core"
+                href="#register"
+                data-package="core"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
+
+            <div class="item item--pro pro_price" data-id="2108311000744387328">
+              <div class="item__header">
+                <p class="item__title">PRO</p>
+              </div>
+              <ul class="item__info">
+                <li><b>4 місяці навчання в онлайн-форматі</b></li>
+                <li><b>17 модулів програми</b></li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом протягом
+                  <b>4-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(16 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(4 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми 4&nbsp;місяці після її
+                  завершення
+                </li>
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--pro"
+                id="btn-pro"
+                href="#register"
+                data-package="pro"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="register" id="register">
+      <div class="container">
+        <p class="register__title">Навчись будувати системну компанію та стань кращим CEO в своїй галузі</p>
+        <div class="block">
+        <div class="block__content">
+              <p class="block__title">ЗАЛИШ <b>ЗАЯВКУ</b></p>
+              <p class="block__subtitle">
+                НА ПРОГРАМУ <br />«CEO БУДІВЕЛЬНОЇ КОМПАНІЇ» <br /><b
+                  >НА СПЕЦІАЛЬНИХ УМОВАХ</b
+                >
+              </p>
+              <ul class="block__info">
+                <li><p>Онлайн</p></li>
+                <li><p>3 місяці</p></li>
+                <li><p class="cDate">17 жовтня</p></li>
+              </ul>
+            </div>
+          <div class="block__form">
+            <form class="form zoho_url" id="form" method="post">
+              <div class="loader"></div>
+              <ul class="form__package">
+                <li>
+                  <div class="packages-btns__pack-name tabs__tab core_price" data-id="">
+                      <span>CORE</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="packages-btns__pack-name tabs__tab pro_price"
+                      data-id="">
+                      <span>PRO</span>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="form__title">Реєстрація</p>
+              <label class="input__wrap">
+                <input class="input" name="name" type="text" placeholder="Твоє ім’я" required="">
+              </label>
+              <label class="input__wrap">
+                <input class="input" id="phone" name="phone" type="tel" placeholder="Твій номер телефону" required="">
+              </label>
+              <label class="input__wrap">
+                <input class="input" name="email" type="email" placeholder="Твій email" required="">
+              </label>
+              <div class="hidden">
+                <input type="hidden" name="ref" value="" autocomplete="off">
+                <input type="hidden" name="ga" value="" autocomplete="off">
+                <input type="hidden" name="ym_uid" value="" autocomplete="off">
+                <input type="hidden" name="utm_source" value="" autocomplete="off">
+                <input type="hidden" name="utm_medium" value="" autocomplete="off">
+                <input type="hidden" name="utm_term" value="" autocomplete="off">
+                <input type="hidden" name="utm_content" value="" autocomplete="off">
+                <input type="hidden" name="utm_campaign" value="" autocomplete="off">
+                <input type="hidden" name="google_client_id" value="" autocomplete="off">
+                <input type="hidden" name="landing_id" value="" autocomplete="off">
+                <!-- Landing_id-->
+                <input type="hidden" name="es_mail_id" value="" autocomplete="off">
+                <input type="hidden" name="convert_in_zoho" autocomplete="off">
+                <input type="hidden" name="es_id" value="" autocomplete="off">
+                <input type="hidden" name="token"
+                    value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
+                    autocomplete="off">
+                <input type="hidden" name="success_url"
+                    value="" autocomplete="off">
+                <input type="hidden" name="error_url" value="" autocomplete="off">
+                <input type="hidden" name="redirect" value="false" autocomplete="off">
+                <input type="hidden" name="send_to_gf" value="buildceo">
+              </div>
+              <button class="form__btn btn-page subm" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
+              <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/'>Політикою конфіденційності</a>. 
+                <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="how" id="how">
+        <div class="container">
+          <div class="how__title">ЯК ПРОХОДИТЬ НАВЧАННЯ</div>
+
+          <div class="how__content">
+            <ul>
+              <li>
+                <hr />
+                <b>НАВЧАЄШСЯ ОНЛАЙН У БУДЬ-ЯКОМУ МІСЦІ В БУДЬ-ЯКИЙ ЧАС</b>
+                <p>
+                  Все навчання відбувається в зручному онлайн-кабінеті, де ти
+                  щотижня отримуєш доступ до нового модуля програми (перегляд
+                  матеріалів займає 2-3 години на тиждень).
+                </p>
+              </li>
+              <li>
+                <hr />
+                <b>ВИКОНУЄШ ЗАВДАННЯ ТА ЗАКРІПЛЮЄШ ЗНАННЯ НА ПРАКТИЦІ</b>
+                <p>
+                  Після перегляду кожного модулю ти проходиш невеличке
+                  тестування, після чого отримуєш практичні завдання, які
+                  допоможуть тобі закріпити нову навичку. Завдання можуть
+                  виконуватись як на базі неіснуючої компанії, так і на базі
+                  реального діючого бізнесу.
+                </p>
+              </li>
+              <li>
+                <hr />
+                <b>ОТРИМУЄШ СУПРОВІД ПРОФЕСІЙНОГО БІЗНЕС-КОНСУЛЬТАНТА</b>
+                <p>
+                  Всі 3 місяці тебе супроводжує професійний консультант
+                  «Бізнес-Конструктор», який допомагає тобі доводити всі
+                  завдання до ідеалу, а також знаходити відповіді на свої
+                  запитання.
+                </p>
+              </li>
+              <li>
+                <hr />
+                <b
+                  >ЩОТИЖНЯ МАЄШ МОЖЛИВІСТЬ РОЗБИРАТИ СВІЙ КЕЙС З ГОЛОВНИМ
+                  ЕКСПЕРТОМ</b
+                >
+                <p>
+                  Щотижня Кирило Куницький проводить онлайн майстер-групи в
+                  ZOOM, на яких розбирає всі наявні питання та допомагає
+                  знаходити найбільш ефективні рішення.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="company" id="company">
+        <div class="container">
+          <h2 class="company__title">
+            <span>ПРО НАС</span><b>«Бізнес- <i>Конструктор»</i></b>
+          </h2>
+          <div class="company__content">
+            <div class="company__block">
+              <div class="company__text">
+                — це міжнародна освітньо-консалтингова компанія. Ми допомагаємо
+                власникам бізнесу та топ-менеджменту систематизувати роботу
+                своїх компаній за допомогою інноваційних освітньо-консалтингових
+                продуктів, створених на методології Кирила Куницького.
+              </div>
+              <div class="company__text">
+                Завдяки багаторічній практиці роботи з тисячами компаній та
+                постійному вивченню найкращого світового досвіду, ми створили
+                методологію систематизації бізнесу, яка дозволяє в найкоротші
+                терміни значно підняти ефективність роботи будь-якої компанії.
+              </div>
+              <ul>
+                <li><b>20 000</b> клієнтів</li>
+                <li>
+                  <b>10 <span>років</span></b
+                  >на ринку, працюємо з 2013 року
+                </li>
+                <li><b>20+</b>країн, в яких працюємо</li>
+                <li><b>25 000</b>випускників освітніх програм</li>
+                <li><b>400+</b>проведених івентів</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients" id="clients">
+        <div class="container">
+          <h2 class="clients__title">Серед наших клієнтів</h2>
+          <div class="clients__slider swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/3.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/5.jpg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/1.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/2.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/BD-Holding.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/6.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/7.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/8.png"
+              ></div>
+              <!-- <div class="swiper-slide logo lazy" data-bg="img/clients/9.svg"></div> -->
+
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/00.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/04.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/01.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/ohmylook.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/02.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/atan.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/03.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/castrofamily.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/05.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/moyo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/06.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/megogo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/07.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/sherif.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/08.jpg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/kyrag.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/09.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/atan.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/10.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/ohmylook.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/11.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/castrofamily.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/12.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/kino.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/13.png"
+              ></div>
+
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/14.png"
+              ></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer" id="footer">
+        <div class="footer__container">
+          <div class="footer__menu">
+            <h5 class="footer__menu_title">Корисно</h5>
+            <ul class="footer__menu_list">
+              <li>
+                <a
+                  href="http://bizconstructor.com/about?_ga=2.150560566.1675371198.1664796566-206334048.1655729050"
+                  >Про Нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://bizconstructor.com/blog?_ga=2.150631350.1675371198.1664796566-206334048.1655729050"
+                  >Блог Бізнес-Конструктор</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.kunitsky.com/?_ga=2.150631350.1675371198.1664796566-206334048.1655729050"
+                  >Блог Кирила Куницького</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.work.ua/jobs/by-company/448901?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
+                  >Робота в Бізнес-Конструктор</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h5 class="footer__links_title">Клієнтам</h5>
+            <ul class="footer__menu_list">
+              <li>
+                <a
+                  href="http://privacy.bizconstructor.com/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
+                  >Політика конфіденційності</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://terms-conditions.bizconstructor.com/ua?_ga=2.75242514.1675371198.1664796566-206334048.1655729050"
+                  >Публічна оферта UA</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h5 class="footer__social_title">Наші соц.мережі</h5>
+            <div class="footer__socials">
+              <a
+                class="footer__social_link"
+                href="https://www.facebook.com/business.constructor/?_ga=2.75242514.1675371198.1664796566-206334048.1655729050"
+              >
+                <svg
+                  width="16"
+                  height="30"
+                  viewbox="0 0 16 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.47669 6.79257C4.47669 7.44719 4.47669 10.369 4.47669 10.369H1.85645V14.7424H4.47669V27.7384H9.85921V14.7427H13.4711C13.4711 14.7427 13.8094 12.6458 13.9734 10.3529C13.5033 10.3529 9.87956 10.3529 9.87956 10.3529C9.87956 10.3529 9.87956 7.80866 9.87956 7.3627C9.87956 6.91578 10.4664 6.3146 11.0465 6.3146C11.6254 6.3146 12.8473 6.3146 13.9791 6.3146C13.9791 5.71917 13.9791 3.66181 13.9791 1.76172C12.4682 1.76172 10.7494 1.76172 9.99172 1.76172C4.34364 1.76142 4.47669 6.1391 4.47669 6.79257Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="footer__social_link"
+                href="https://www.instagram.com/business_constructor/?_ga=2.150035382.1675371198.1664796566-206334048.1655729050"
+              >
+                <svg
+                  width="23"
+                  height="24"
+                  viewbox="0 0 23 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_116_885)">
+                    <path
+                      d="M16.3582 0.486328H6.26379C2.83579 0.486328 0.046875 3.27537 0.046875 6.70337V16.7978C0.046875 20.2259 2.83579 23.0148 6.26379 23.0148H16.3582C19.7864 23.0148 22.5754 20.2258 22.5754 16.7978V6.70337C22.5755 3.27537 19.7864 0.486328 16.3582 0.486328ZM20.5767 16.7978C20.5767 19.1237 18.6843 21.016 16.3583 21.016H6.26379C3.93794 21.0161 2.04571 19.1237 2.04571 16.7978V6.70337C2.04571 4.37753 3.93794 2.48516 6.26379 2.48516H16.3582C18.6842 2.48516 20.5765 4.37753 20.5765 6.70337V16.7978H20.5767Z"
+                    ></path>
+                    <path
+                      d="M11.3118 5.94434C8.11092 5.94434 5.50684 8.54842 5.50684 11.7494C5.50684 14.9502 8.11092 17.5541 11.3118 17.5541C14.5127 17.5541 17.1168 14.9502 17.1168 11.7494C17.1168 8.54842 14.5127 5.94434 11.3118 5.94434ZM11.3118 15.5552C9.21321 15.5552 7.50568 13.8479 7.50568 11.7493C7.50568 9.65045 9.21308 7.94304 11.3118 7.94304C13.4106 7.94304 15.118 9.65045 15.118 11.7493C15.118 13.8479 13.4104 15.5552 11.3118 15.5552Z"
+                    ></path>
+                    <path
+                      d="M17.3614 4.24902C16.9762 4.24902 16.5979 4.40493 16.326 4.6781C16.0527 4.94995 15.8955 5.32839 15.8955 5.71483C15.8955 6.10008 16.0528 6.47839 16.326 6.75156C16.5978 7.0234 16.9762 7.18065 17.3614 7.18065C17.7478 7.18065 18.1249 7.0234 18.3981 6.75156C18.6713 6.47839 18.8272 6.09994 18.8272 5.71483C18.8272 5.32839 18.6713 4.94995 18.3981 4.6781C18.1262 4.40493 17.7478 4.24902 17.3614 4.24902Z"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_116_885">
+                      <rect width="23" height="24" fill="white"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </a>
+              <a
+                class="footer__social_link"
+                href=" https://t.me/bizkonstructor?_ga=2.175258786.1675371198.1664796566-206334048.1655729050"
+              >
+                <svg
+                  width="25"
+                  height="26"
+                  viewbox="0 0 25 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.72623 16.0359L9.31621 21.8032C9.90285 21.8032 10.1569 21.5512 10.4616 21.2486L13.212 18.62L18.9111 22.7936C19.9563 23.3762 20.6927 23.0694 20.9747 21.8321L24.7155 4.30305L24.7166 4.30202C25.0481 2.75692 24.1578 2.15273 23.1394 2.53178L1.15074 10.9503C-0.349941 11.5328 -0.327219 12.3694 0.895638 12.7485L6.51727 14.497L19.5752 6.32634C20.1897 5.91941 20.7485 6.14458 20.2889 6.55151L9.72623 16.0359Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="footer__social_link"
+                href="https://youtube.com/user/businessconstructor?_ga=2.175258786.1675371198.1664796566-206334048.1655729050"
+              >
+                <svg
+                  width="28"
+                  height="20"
+                  viewbox="0 0 28 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_116_892)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.08026 0.0947266C3.52536 0.0947266 0.643555 2.97654 0.643555 6.53143V12.9682C0.643555 16.5231 3.52536 19.4049 7.08025 19.4049H21.5629C25.1178 19.4049 27.9996 16.5231 27.9996 12.9682V6.53143C27.9996 2.97654 25.1178 0.0947266 21.5629 0.0947266H7.08026ZM11.9083 13.7027V6.53187L18.1114 10.1172L11.9083 13.7027Z"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_116_892">
+                      <rect width="28" height="20" fill="white"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- HIDDEN ELEMENTS (MODALS)-->
+    <div class="modal-overlay" id="modal-video">
+      <div class="modal-overlay__container">
+        <div class="modal-content">
+          <div class="close-button"></div>
+          <div class="video">
+            <div id="video-popup"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END HIDDEN ELEMENTS (MODALS)-->
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+      $(document).ready(function () {
+      	// Дата мероприятия
+      	let cDate = '17 жовтня',
+
+      	// Landing id // Online
+        cLandingId = "2108311000744387305",
+          // Landing id // Online Pro
+          cLandingIdPro = "2108311000744387328",
+
+      	// es_mail_id
+      	cMail_id = '',
+
+      	// es_id
+      	cEs_id = '1154',
+
+      	// success_url
+        cSuccess_url = "https://web.bizconstructor.com/12gd47";
+
+      	//  дата скидки (автозамена)
+      	let dataDeadline;
+      	// dataDeadline = foundSale.date;
+
+      	// Проверка данных с универсального блока (Удаем тут, если удалили с блока)
+      	// if (cDate !=='date'){
+      	// 	$('.cDate').each(function (){
+      	// 		$(this).html(cDate);
+      	// 	});
+      	// };
+      	if (cLandingId !=='id'){
+      		$("input[name='landing_id']").val(cLandingId);
+      		$(".core_price").attr("data-id", cLandingId)
+      	};
+      	if (cLandingIdPro !=='id'){
+      		$(".pro_price").attr("data-id", cLandingIdPro)
+      	};
+      	if (cMail_id !=='es_mail_id'){
+      		$("input[name='es_mail_id']").val(cMail_id)
+      	};
+      	if (cEs_id !=='cEs_id'){
+      		$("input[name='es_id']").val(cEs_id)
+      	};
+      	if (cSuccess_url !=='success_url'){
+      		$("input[name='success_url'], input[name='error_url']").val(cSuccess_url)
+      	};
+      	if (dataDeadline !=='dataDeadline'){
+      		$(".data_deadline").each(function (){
+      			$(this).html(dataDeadline);
+      		})
+      	}
+
+
+      	// Установка цен на пакетах
+      	let data=LP.CORE.getSearchJson();
+      	LP.CORE.getPriceByID(data.landing_id);
+      	$('.package_price').each(function (i, el){
+      		LP.CORE.setPriceThanks($(this).data('id'),
+      			$(this).find('.price-full-redline'),
+      			$(this).find( '.price-discount-big')
+      		);
+      });
+
+      });
+
+
+      // Настройка собитыий при клике на кнопки пакета
+      $('#btn-core').click(function () {
+        $('.packages-btns__pack-name.core_price').click();
+      });
+
+
+      $('#btn-pro').click(function () {
+        $('.packages-btns__pack-name.pro_price').click();
+      });
+
+    </script>
+  <script>
+    document.write(`<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js?ver=${Math.floor(Math.random() * 100)}"><\/script>`);
+  </script>
+
+  <!-- FB CAPI Script -->
+  <script>
+    /*** Get Facebook AD Click ID ***/
+    function getFBclid() {
+      var params = window.location.search
+        .replace("?", "")
+        .split("&")
+        .reduce(function (p, e) {
+          var a = e.split("=");
+          p[decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+          return p;
+        }, {});
+      if (typeof params["fbclid"] !== "undefined") {
+        return params["fbclid"];
+      } else return false;
+    }
+
+    /*** Restore Facebook Click ID ***/
+    var restoreFBClId = setTimeout(function () {
+      try {
+        if (fbq.getState().pixels.length > 0) {
+          console.log("GTM: FB Pixel is active");
+        } else {
+          console.log("GTM: FB Pixel is blocked or not installed");
+          if (getFBclid()) setCookie("_fbc", "fb.1." + Math.round(new Date().getTime()) + "." + getFBclid());
+        }
+      } catch (e) {
+        console.log("GTM: FB Pixel is blocked or not installed");
+        if (getFBclid()) setCookie("_fbc", "fb.1." + Math.round(new Date().getTime()) + "." + getFBclid());
+      }
+    }, 5000);
+
+    /*** Get Cookies ***/
+    function getCookie(cookieName) {
+      var matches = document.cookie.match(
+        new RegExp("(?:^|; )" + cookieName.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)")
+      );
+      return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    /*** Set Cookies ***/
+    function setCookie(cookieName, cookieValue, daysOfLife) {
+      // Create/Update Cookies
+      var cookieExp = new Date(new Date().getTime() + daysOfLife * 86400000);
+      document.cookie =
+        cookieName +
+        "=" +
+        cookieValue +
+        "; expires=" +
+        cookieExp.toUTCString() +
+        "; path=/;" +
+        "domain=" +
+        location.hostname +
+        ";SameSite=Lax";
+    }
+
+    /*** Send Event to FB CAPI ***/
+    function sendEventToFBCAPI(data, endpoint) {
+      return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+
+        var stringifiedData = JSON.stringify(data);
+
+        xhr.open("POST", endpoint);
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.send(stringifiedData);
+
+        xhr.onload = function () {
+          if (xhr.status.toString()[0] !== "2") {
+            console.error(xhr.status + "> " + xhr.statusText);
+            reject(false);
+          } else if (xhr.status == 200) {
+            resolve(true);
+          }
+        };
+      });
+    }
+  </script>
+  <!-- End FB CAPI Script -->
+
+  <script>
+    //пакет по умолчанию
+    setTimeout(function() {
+        $('.packages-btns__pack-name.pro_price').click();
+    }, 0)
+
+  </script>
+</body>
+
+</html>

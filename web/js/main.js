@@ -486,3 +486,41 @@ const clientsSlider = new Swiper(".clients__slider", {
 });
 
 hidePackagesBtn();
+
+let targetDay = 2;
+let newDate = new Date();
+
+const dateCopy = new Date(newDate.getTime());
+const nextMonday = new Date(
+  dateCopy.setDate(
+    dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
+  )
+);
+
+console.log(newDate.getDay());
+
+// if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
+if (newDate.getDay() == 2 && newDate.getHours() < 19) {
+  // newDate.setDate( newDate.Date() + 7);
+  // console.log('today is Monday');
+  console.log("today is Tuesday");
+} else {
+  newDate = nextMonday;
+}
+
+let month = [
+  "січня",
+  "лютого",
+  "березня",
+  "квітня",
+  "травня",
+  "червня",
+  "липня",
+  "серпня",
+  "вересня",
+  "жовтня",
+  "листопада",
+  "грудня",
+];
+
+$(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);

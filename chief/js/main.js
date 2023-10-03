@@ -14,11 +14,11 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
+  $("input[name=name]").val("Unknow User");
   $("input[name=email]").val(getCookie("email"));
   $("input[name=phone]").val(getCookie("phone"));
 });
-
+const inputElement = document.querySelector('input[name="name"]');
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
@@ -216,6 +216,52 @@ const clientsSlider = new Swiper(".clients__slider", {
 // 	},
 // });
 
+$(".item__more, .program .item__title").on("click", function () {
+  $(this).parent().toggleClass("active");
+});
+
+$(".packages .item__btn").on("click", function () {
+  let package = $(this).data("package");
+  $("input[name=package][value=" + package + "]").prop("checked", true);
+});
+
+$(".header__burger").on("click", function () {
+  $(".header").toggleClass("active");
+  $("body").toggleClass("fixed");
+});
+
+$(document).ready(function () {
+  function hidePackagesBtn() {
+    let target = document.querySelector("#packages");
+    let btn = document.querySelector(".btn--hero");
+    if (!target || !btn) return;
+
+    let targetPosititon = target.offsetTop;
+    let targetkHeight = target.offsetHeight;
+
+    if (
+      window.scrollY > targetPosititon - window.innerHeight ||
+      window.scrollY < window.innerHeight
+    ) {
+      btn.classList.remove("btn--fix");
+    } else {
+      btn.classList.add("btn--fix");
+    }
+
+    window.addEventListener("scroll", function (e) {
+      if (
+        window.scrollY > targetPosititon - window.innerHeight ||
+        window.scrollY < window.innerHeight
+      ) {
+        btn.classList.remove("btn--fix");
+      } else {
+        btn.classList.add("btn--fix");
+      }
+    });
+  }
+  hidePackagesBtn();
+});
+
 $(".program .desc__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
@@ -230,4 +276,13 @@ $(".packages .item__btn").on("click", function () {
 $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
+});
+
+$(".questions .desc__title").on("click", function () {
+  $(this).parent().toggleClass("active");
+});
+
+$(".questions .item__btn").on("click", function () {
+  let package = $(this).data("package");
+  $("input[name=package][value=" + package + "]").prop("checked", true);
 });

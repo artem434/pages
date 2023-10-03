@@ -56,9 +56,14 @@
     padding: 6px 14px;
     display: inline-block;
     margin-bottom: 485px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
     @include media-breakpoint-up(xl) {
       margin-bottom: 22px;
+      left: inherit;
+      transform: translateX(0);
     }
   }
 
@@ -71,6 +76,7 @@
 
     @include media-breakpoint-up(xl) {
       font-size: 54px;
+
       margin-bottom: 14px;
     }
   }
@@ -94,7 +100,7 @@
     height: 640px;
     position: absolute;
     top: -21px;
-    left: 50%;
+    left: 54%;
     transform: translate(-50%, 0);
     background-size: contain;
     z-index: -1;

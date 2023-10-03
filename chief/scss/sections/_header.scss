@@ -44,17 +44,18 @@
         padding: 10px 26px;
         padding-bottom: 12px;
         border-radius: 36px;
-        background-color: $color-main;
-
         &:hover {
-          background-color: #db5c00;
+          background-color: $white;
+
+          a {
+            color: $color-main !important;
+          }
         }
 
         a {
           font-size: 20px;
           text-decoration: none;
           font-weight: 700;
-          color: #fff;
 
           @media (max-width: 1200px) {
             font-size: 16px;

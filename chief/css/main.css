@@ -1981,9 +1981,14 @@ a {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M16.167 2H15.167V1C15.167 0.4 14.767 0 14.167 0C13.567 0 13.167 0.4 13.167 1V2H5.167V1C5.167 0.500001 4.767 0 4.267 0H4.167C3.667 0 3.167 0.400001 3.167 0.900001V1V2H2.16699C1.06699 2 0.166992 2.9 0.166992 4.00001V16C0.166992 17.1 1.06699 18 2.16699 18H16.167C17.267 18 18.167 17.1 18.167 16V4.00001C18.167 2.9 17.267 2 16.167 2ZM16.167 16H2.16699V8.00001H16.167V16ZM16.167 6.00001H2.16699V4.00001H16.167V6.00001Z' fill='white'/%3E%3C/svg%3E");
 }
 .register .block__info li p {
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .register .block__info li p {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .register .form {

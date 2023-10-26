@@ -1222,6 +1222,7 @@ a {
   margin-bottom: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
 }
 .speakers__bottom {
   margin-top: 48px;

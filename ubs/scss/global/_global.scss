@@ -98,6 +98,11 @@ a {
     display: block !important;
   }
 }
+.d-xl-flex {
+  @include media-breakpoint-up(xl) {
+    display: flex !important;
+  }
+}
 .container {
   max-width: 375px;
   padding: 0 16px;

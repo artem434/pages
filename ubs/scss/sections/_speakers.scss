@@ -1,0 +1,131 @@
+.speakers {
+  padding-top: 32px;
+  text-transform: uppercase;
+  padding-bottom: 66px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 120px;
+    padding-bottom: 77px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 40px;
+    }
+
+    &-text {
+      color: #ff4545;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 56px; /* 164.706% */
+      display: flex;
+      gap: 6px;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    &-line {
+      display: block;
+      width: 32px;
+      height: 40px;
+      background-size: contain;
+      background: url("data:image/svg+xml,%3Csvg width='148' height='173' viewBox='0 0 148 173' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 173L58.4622 0H87.8055L28.6445 173H0Z' fill='%23FFDE00'/%3E%3Cpath d='M60.1945 173L118.657 0H148L88.839 173H60.1945Z' fill='%23FFDE00'/%3E%3C/svg%3E%0A")
+        center/contain no-repeat;
+    }
+  }
+
+  &__img {
+    width: 231px;
+    height: 273px;
+    background-size: contain;
+    margin: 0 auto 20px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+    }
+  }
+
+  &__block {
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      max-width: 240px;
+      text-align: left;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+    justify-content: space-between;
+    margin-bottom: 52px;
+
+    li {
+      color: #fff;
+      max-width: 330px;
+      width: 100%;
+
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+        width: 100%;
+      }
+      b {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: 3px;
+        display: block;
+        margin-bottom: 14px;
+        span {
+          display: block;
+          color: #ffde00;
+        }
+      }
+    }
+  }
+
+  &__soon {
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 14px 20px;
+    color: #fff;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      display: inline;
+    }
+    span {
+      color: #fee71d;
+    }
+  }
+}

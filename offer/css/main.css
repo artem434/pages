@@ -3435,6 +3435,7 @@ strong.medical b {
   background-color: #fff;
   height: 44px;
   color: #232323;
+  padding-left: 16px;
 }
 
 .hero .input::placeholder {

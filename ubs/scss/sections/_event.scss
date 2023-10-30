@@ -1,5 +1,5 @@
 .event {
-  padding-top: 32px;
+  padding-top: 68px;
   text-transform: uppercase;
   padding-bottom: 66px;
   position: relative;
@@ -17,6 +17,12 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      gap: 64px;
+    }
   }
 
   &__big {
@@ -24,6 +30,11 @@
     font-weight: 800;
     letter-spacing: 12.786px;
     margin-bottom: -12px;
+    color: #fff;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 117px;
+    }
   }
 
   &__title {
@@ -31,6 +42,11 @@
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 0.9px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      max-width: 338px;
+    }
 
     span {
       color: #ffde00;
@@ -41,6 +57,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 0;
+      justify-content: space-between;
+    }
   }
 
   p {
@@ -55,6 +76,12 @@
     width: 335px;
     height: 212px;
     background-size: cover;
+
+    @include media-breakpoint-up(xl) {
+      width: 494px;
+      height: 314px;
+      margin-bottom: 38px;
+    }
   }
 
   &__block {
@@ -69,6 +96,69 @@
       height: 50px;
       display: block;
       content: "";
+    }
+  }
+  $base: 0.6rem;
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+  .chevron {
+    position: absolute;
+    width: $base * 3.5;
+    height: $base * 0.8;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+  }
+
+  .chevron:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+  }
+
+  .chevron:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+  }
+
+  .chevron:before,
+  .chevron:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: red;
+  }
+
+  .chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+  }
+
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+  }
+
+  @keyframes move-chevron {
+    25% {
+      opacity: 1;
+    }
+    33.3% {
+      opacity: 1;
+      transform: translateY($base * 3.8);
+    }
+    66.6% {
+      opacity: 1;
+      transform: translateY($base * 5.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY($base * 8) scale(0.5);
     }
   }
 }

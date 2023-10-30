@@ -173,7 +173,7 @@ const lineSlider = new Swiper(".line__slider", {
   },
 });
 
-const clientsSlider = new Swiper(".pass__slider", {
+const clientsSlider = new Swiper(".samit__slider", {
   loop: true,
   spaceBetween: 24,
   slidesPerView: 1,
@@ -188,11 +188,12 @@ const clientsSlider = new Swiper(".pass__slider", {
     },
     1200: {
       slidesPerView: 3,
+      spaceBetween: 0,
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".samit-next",
+    prevEl: ".samit-prev",
   },
   on: {
     init: function () {
@@ -235,10 +236,17 @@ const clientsSlider = new Swiper(".pass__slider", {
 // 		},
 // 	},
 // });
-
-$(".package__more, .package__less, .package__btn").on("click", function () {
-  $(this).parent().toggleClass("active");
-});
+if (window.innerWidth >= 768) {
+  $(".package__more").on("click", function () {
+    $(".package__more").parent().toggleClass("active");
+  });
+  console.log(1);
+} else {
+  console.log(2);
+  $(".package__more, .package__less, .package__btn").on("click", function () {
+    $(this).parent().toggleClass("active");
+  });
+}
 
 $(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
@@ -352,17 +360,95 @@ $(document).ready(function () {
   }
 
   if ($(window).width() <= 768) {
+    var $myDiv = $(".btn_fixed-bottom");
+    $myDiv.addClass("btn_fixed-bottom-active");
     $(window).scroll(function () {
-      var $myDiv = $(".btn_fixed-bottom");
       var $packages = $("#packages");
       var scrollPosition = $(this).scrollTop();
       var packagesTop = $packages.offset().top;
 
-      if (scrollPosition >= 500 && scrollPosition < packagesTop) {
+      if (scrollPosition >= 0 && scrollPosition < packagesTop) {
         $myDiv.addClass("btn_fixed-bottom-active");
       } else {
         $myDiv.removeClass("btn_fixed-bottom-active");
       }
     });
   }
+});
+
+const toggleButtons = document.querySelectorAll(".package__more");
+const contentElements = document.querySelectorAll(".package__body");
+
+if (window.innerWidth >= 768) {
+  toggleButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      contentElements.forEach((content) => {
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = "100%";
+        }
+      });
+    });
+  });
+} else {
+  toggleButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const content = contentElements[index];
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = "100%";
+      }
+    });
+  });
+}
+
+var listItems = document.querySelectorAll(".register__list li");
+var landingIdInput = document.querySelector('.zoho_url [name="landing_id"]');
+var packageButtons = document.querySelectorAll(".package__btn");
+
+// Добавьте класс "active" к первому элементу по умолчанию
+listItems[0].classList.add("active");
+// Установите значение data-id первого элемента в input
+landingIdInput.value = listItems[0].getAttribute("data-id");
+
+// Переберите элементы и добавьте обработчик события щелчка для списка
+listItems.forEach(function (item) {
+  if (item.classList.contains("active")) {
+    // Отримуємо значення атрибута "data-name" поточного елемента
+    const packageName = item.getAttribute("data-name");
+
+    // Зберігаємо значення "data-name" в локальному сховищі (localStorage)
+    localStorage.setItem("packegeNmame", packageName);
+  }
+  item.addEventListener("click", function () {
+    // Удалите класс "active" у всех элементов списка
+    listItems.forEach(function (li) {
+      li.classList.remove("active");
+    });
+    const packageName = item.getAttribute("data-name");
+    // Добавьте класс "active" к выбранному элементу
+    item.classList.add("active");
+    // Установите значение data-id выбранного элемента в input
+    landingIdInput.value = item.getAttribute("data-id");
+    localStorage.setItem("packegeNmame", packageName);
+  });
+});
+
+// Переберите кнопки и добавьте обработчик события щелчка для кнопок
+packageButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    var buttonDataId = button.getAttribute("data-id");
+
+    // Найдите соответствующий элемент listItems с тем же data-id и добавьте класс "active"
+    listItems.forEach(function (item) {
+      if (item.getAttribute("data-id") === buttonDataId) {
+        item.classList.add("active");
+        landingIdInput.value = buttonDataId;
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  });
 });

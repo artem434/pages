@@ -9,9 +9,10 @@
   text-align: center;
   z-index: 1;
   position: relative;
+  background: url(../img/bg-hero-sm-min.png) top -100px center no-repeat;
   @include media-breakpoint-up(xl) {
     padding-top: 120px;
-    background: url(../img/bg-hero-xl.webp) top -100px center no-repeat;
+    background: url(../img/bg-hero-xl-min.png) top 0px center no-repeat;
     background-size: contain;
   }
 

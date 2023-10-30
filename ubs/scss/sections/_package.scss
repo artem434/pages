@@ -1,0 +1,149 @@
+.package {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 280px;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 18px;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 2px,
+      #fee71d 2px,
+      #fee71d 6px
+    );
+  }
+
+  ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 28px;
+
+    li {
+      position: relative;
+      padding-left: 24px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='20' viewBox='0 0 13 20' fill='none'%3E%3Ccircle cx='7' cy='10' r='3' fill='%23FFDE00'/%3E%3C/svg%3E")
+          no-repeat center;
+        width: 13px;
+        height: 20px;
+        background-size: contain;
+      }
+
+      ul {
+        margin-top: 18px;
+        gap: 8px;
+        li {
+          &::before {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='20' viewBox='0 0 13 20' fill='none'%3E%3Ccircle cx='7' cy='10' r='3' fill='%23fff'/%3E%3C/svg%3E")
+              no-repeat center;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .btn-top {
+    background: rgba(255, 255, 255, 0.07);
+
+    font-size: 15px;
+    span {
+      color: #fff;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .btn-bottom {
+    margin-top: 28px;
+    font-size: 18px;
+  }
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+
+  &__more {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 6px;
+    margin-top: 22px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &::before {
+      content: " Дізнатися детальний опис пакету";
+    }
+
+    &:after {
+      content: "";
+      height: 24px;
+      width: 90px;
+      background: url("data:image/svg+xml,%3Csvg width='91' height='24' viewBox='0 0 91 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.48523 9.4667L7.46084 8.55884L12.147 12.9196L16.8331 8.55884L17.8088 9.4667L12.147 14.7353L6.48523 9.4667Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M39.4852 9.4667L40.4608 8.55884L45.147 12.9196L49.8331 8.55884L50.8088 9.4667L45.147 14.7353L39.4852 9.4667Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M72.4852 9.4667L73.4608 8.55884L78.147 12.9196L82.8331 8.55884L83.8088 9.4667L78.147 14.7353L72.4852 9.4667Z' fill='white'/%3E%3C/svg%3E%0A")
+        50% no-repeat;
+    }
+  }
+  &.active {
+    .package__more {
+      &:before {
+        content: "Приховати деталі";
+        order: 2;
+      }
+    }
+    .package__more:after {
+      transform: rotate(180deg);
+    }
+  }
+}

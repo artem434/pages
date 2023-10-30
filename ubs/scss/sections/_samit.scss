@@ -1,0 +1,146 @@
+.samit {
+  padding-top: 100px;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 45px;
+      gap: 28px;
+    }
+
+    b {
+      color: #ff4545;
+    }
+    &-line {
+      display: block;
+      width: 32px;
+      height: 40px;
+      background-size: contain;
+      background: url("data:image/svg+xml,%3Csvg width='148' height='173' viewBox='0 0 148 173' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 173L58.4622 0H87.8055L28.6445 173H0Z' fill='%23FFDE00'/%3E%3Cpath d='M60.1945 173L118.657 0H148L88.839 173H60.1945Z' fill='%23FFDE00'/%3E%3C/svg%3E%0A")
+        center/contain no-repeat;
+
+      @include media-breakpoint-up(xl) {
+        width: 55px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__slider {
+    margin-top: 28px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 38px;
+    }
+  }
+  .swiper-slide {
+    width: 332px;
+    height: 200px;
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(xl) {
+      width: 434.131px;
+      height: 267.893px;
+    }
+  }
+
+  .swiper-button-arrows {
+    min-width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 28px;
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0;
+    }
+    .samit-btn {
+      background: #ff4545;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21' fill='none'%3E%3Cg clip-path='url(%23clip0_353_8698)'%3E%3Cpath d='M10.4947 20.9893L12.3444 19.1396L5.02435 11.8064L20.9895 11.8064L20.9895 9.18268L5.02435 9.18268L12.3576 1.8626L10.4947 -0.000214082L-4.5874e-07 10.4945L10.4947 20.9893Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_353_8698'%3E%3Crect width='21' height='21' fill='white' transform='translate(21 21) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+          no-repeat center;
+        background-size: contain;
+        display: block;
+        width: 21px;
+        height: 21px;
+      }
+    }
+    .samit-next {
+      transform: rotate(-180deg);
+    }
+  }
+  &__description {
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 18px;
+    font-weight: 800;
+    padding: 14px 20px;
+    color: #fff;
+    margin-bottom: 14px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      display: inline;
+    }
+    span {
+      color: #fee71d;
+    }
+  }
+
+  &__bottom-block {
+    text-transform: uppercase;
+    margin-top: 48px;
+    text-align: left;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      gap: 44px;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    p {
+      color: #505d6c;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.3; /* 131.25% */
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 24px;
+      }
+    }
+  }
+  .btn-page {
+    width: 300px;
+    margin: 30px auto 0;
+    //display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
+      margin: 0;
+    }
+  }
+}

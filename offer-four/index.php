@@ -3661,7 +3661,7 @@
           cEs_id = "1154",
           // success_url
           // cSuccess_url = 'https://online.masterclassb.com/crq1lr';
-          cSuccess_url = "https://ceo.bizconstructor.com/offer-one/thanks.html";
+          cSuccess_url = "https://ceo.bizconstructor.com/offer-four/thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;

@@ -153,7 +153,7 @@
                 <div class="loader"></div>
                 <div class="hero__block">
                   <div class="hero__sale">
-                    Для учасників ефіру депозит <b>- 600€</b>
+                    Для учасників ефіру депозит <b>- 500€</b>
                   </div>
                   <div class="hero__timer">
                     <p><span id="minutes">03</span> <b>хв</b></p>
@@ -3123,7 +3123,7 @@
                   <input
                     type="hidden"
                     name="send_to_gf"
-                    value="offer-two-gf"
+                    value="offer-three-gf"
                   />
                 </div>
                 <button class="form__btn subm" type="submit">
@@ -3652,16 +3652,16 @@
           // let cDate = tomorrowDate.getDate() + ' ' + months[tomorrowDate.getMonth()],
 
           // Landing id // Online
-          cLandingId = "2108311000780496034",
+          cLandingId = "2108311000780496067",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000780496034",
+          cLandingIdPro = "2108311000780496067",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
           // cSuccess_url = 'https://online.masterclassb.com/crq1lr';
-          cSuccess_url = "https://ceo.bizconstructor.com/offer-two/thanks.html";
+          cSuccess_url = "https://ceo.bizconstructor.com/offer-three/thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;

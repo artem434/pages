@@ -422,6 +422,7 @@ listItems.forEach(function (item) {
     // Зберігаємо значення "data-name" в локальному сховищі (localStorage)
     localStorage.setItem("packegeNmame", packageName);
   }
+
   item.addEventListener("click", function () {
     // Удалите класс "active" у всех элементов списка
     listItems.forEach(function (li) {
@@ -433,6 +434,16 @@ listItems.forEach(function (item) {
     // Установите значение data-id выбранного элемента в input
     landingIdInput.value = item.getAttribute("data-id");
     localStorage.setItem("packegeNmame", packageName);
+    const submitButton = document.querySelector(".form__btn span");
+    if (item.getAttribute("data-id") === "2108311000746741174") {
+      // Найдите кнопку с атрибутом data-id="2108311000746741174" и измените ее текст
+
+      if (submitButton) {
+        submitButton.textContent = "Взяти участь";
+      }
+    } else {
+      submitButton.textContent = "ЗАБРОНювати квиток";
+    }
   });
 });
 

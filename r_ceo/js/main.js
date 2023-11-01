@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-  $("input[name=name]").val("Unknow User");
+  $("input[name=name]").val(getCookie("name"));
   $("input[name=email]").val(getCookie("email"));
   $("input[name=phone]").val(getCookie("phone"));
 });

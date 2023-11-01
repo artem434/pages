@@ -442,7 +442,7 @@ listItems.forEach(function (item) {
         submitButton.textContent = "Взяти участь";
       }
     } else {
-      submitButton.textContent = "ЗАБРОНювати квиток";
+      submitButton.textContent = "Зареєструватись";
     }
   });
 });

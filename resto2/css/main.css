@@ -1428,6 +1428,11 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (min-width: 1200px) {
+  .speakers__list {
+    justify-content: inherit;
+  }
+}
 .speakers .speaker {
   flex: 0 0 90%;
 }

@@ -286,11 +286,40 @@ const header = document.querySelector(".header");
 let isHeaderVisible = false;
 
 window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.scrollY;
-  const isScrollingDown = currentScrollPosition > 0;
+  const windowWidth = window.innerWidth;
 
-  if (isScrollingDown !== isHeaderVisible) {
-    header.style.display = isScrollingDown ? "block" : "none";
-    isHeaderVisible = isScrollingDown;
+  if (windowWidth > 767) {
+    const currentScrollPosition = window.scrollY;
+    const isScrollingDown = currentScrollPosition > 0;
+
+    if (isScrollingDown !== isHeaderVisible) {
+      header.style.display = isScrollingDown ? "block" : "none";
+      isHeaderVisible = isScrollingDown;
+    }
+  }
+});
+
+const registerSection = document.querySelector("#register");
+const button = document.querySelector(".btn-page-fix"); // Замініть "your-button-id" на ідентифікатор вашої кнопки
+let isButtonVisible = false;
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const registerSectionTop = registerSection.offsetTop;
+  const registerSectionHeight = registerSection.offsetHeight;
+
+  if (
+    scrollY >= registerSectionTop &&
+    scrollY <= registerSectionTop + registerSectionHeight
+  ) {
+    if (!isButtonVisible) {
+      button.style.display = "none";
+      isButtonVisible = true;
+    }
+  } else {
+    if (isButtonVisible) {
+      button.style.display = "block";
+      isButtonVisible = false;
+    }
   }
 });

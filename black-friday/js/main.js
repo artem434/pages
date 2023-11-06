@@ -281,3 +281,16 @@ $(".program-btn").click(function () {
   var $styledSelect = $select.next("div.styledSelect");
   $styledSelect.text($select.children("option:selected").text());
 });
+
+const header = document.querySelector(".header");
+let isHeaderVisible = false;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPosition = window.scrollY;
+  const isScrollingDown = currentScrollPosition > 0;
+
+  if (isScrollingDown !== isHeaderVisible) {
+    header.style.display = isScrollingDown ? "block" : "none";
+    isHeaderVisible = isScrollingDown;
+  }
+});

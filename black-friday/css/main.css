@@ -406,7 +406,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1140px;
+  max-width: 1200px;
+}
+@media (min-width: 1200px) {
+  .header__container {
+    padding: 0;
+  }
 }
 .header__logo {
   width: 216px;
@@ -552,6 +557,15 @@ a {
   background: url(../img/hero-xl.jpg) top center no-repeat;
 }
 
+.hero {
+  mix-blend-mode: screen;
+}
+@media (min-width: 1200px) {
+  .hero {
+    background: url(../img/bg.png) top center no-repeat;
+    background-size: contain;
+  }
+}
 .hero .hero-bg-dec {
   width: 1366px;
   height: 961px;
@@ -563,6 +577,7 @@ a {
   position: relative;
   padding-top: 202px;
   padding-bottom: 226px;
+  mix-blend-mode: exclusion;
 }
 @media (min-width: 1200px) {
   .hero .container {

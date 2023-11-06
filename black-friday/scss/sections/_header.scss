@@ -13,7 +13,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1200px;
+    @include media-breakpoint-up(xl) {
+      padding: 0;
+    }
   }
 
   &__logo {

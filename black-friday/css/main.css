@@ -405,7 +405,7 @@ a {
 }
 @media (min-width: 1200px) {
   .btn-page-fix {
-    display: none;
+    display: none !important;
   }
 }
 

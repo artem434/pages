@@ -274,6 +274,7 @@ $(".packages .item__btn").on("click", function () {
 });
 
 $(".header__burger").on("click", function () {
+  console.log("dad");
   $(".header").addleClass("active");
   $("body").toggleClass("fixed");
 });

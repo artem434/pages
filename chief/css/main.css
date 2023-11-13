@@ -1938,8 +1938,9 @@ a {
 .register .block__info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 48px;
+  gap: 16px;
 }
 .register .block__info li {
   border-radius: 7px;

@@ -151,8 +151,10 @@
     &__info {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 48px;
+      gap: 16px;
+
       li {
         border-radius: 7px;
         background: #04aef3;

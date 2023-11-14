@@ -6,7 +6,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl") format("svg");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl")
+      format("svg");
 }
 
 @font-face {
@@ -15,7 +20,12 @@
   font-style: "italic";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.svg#MuseoSansCyrl") format("svg");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.svg#MuseoSansCyrl")
+      format("svg");
 }
 
 @font-face {
@@ -24,7 +34,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.svg#MuseoSansCyrl") format("svg");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.svg#MuseoSansCyrl")
+      format("svg");
 }
 
 @font-face {
@@ -33,7 +48,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl") format("svg");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl")
+      format("svg");
 }
 
 @font-face {
@@ -42,7 +62,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl") format("svg");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl")
+      format("svg");
 }
 
 @font-face {
@@ -51,7 +76,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/NeueMachina/NeueMachina-Regular.eot");
-  src: url("../fonts/NeueMachina/NeueMachina-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueMachina/NeueMachina-Regular.woff") format("woff"), url("../fonts/NeueMachina/NeueMachina-Regular.ttf") format("truetype"), url("../fonts/NeueMachina/NeueMachina-Regular.svg#NeueMachina") format("svg");
+  src: url("../fonts/NeueMachina/NeueMachina-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.svg#NeueMachina")
+      format("svg");
 }
 
 @font-face {
@@ -60,7 +90,11 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/NeueMachina/NeueMachina-Medium.eot");
-  src: url("../fonts/NeueMachina/NeueMachina-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueMachina/NeueMachina-Medium.woff") format("woff"), url("../fonts/NeueMachina/NeueMachina-Medium.ttf") format("truetype"), url("../fonts/NeueMachina/NeueMachina-Medium.svg#NeueMachina") format("svg");
+  src: url("../fonts/NeueMachina/NeueMachina-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.svg#NeueMachina") format("svg");
 }
 
 @font-face {
@@ -69,7 +103,11 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/NeueMachina/NeueMachina-Bold.eot");
-  src: url("../fonts/NeueMachina/NeueMachina-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueMachina/NeueMachina-Bold.woff") format("woff"), url("../fonts/NeueMachina/NeueMachina-Bold.ttf") format("truetype"), url("../fonts/NeueMachina/NeueMachina-Bold.svg#NeueMachina") format("svg");
+  src: url("../fonts/NeueMachina/NeueMachina-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.svg#NeueMachina") format("svg");
 }
 
 @font-face {
@@ -78,7 +116,12 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/NeueMachina/NeueMachina-Ultrabold.eot");
-  src: url("../fonts/NeueMachina/NeueMachina-Ultrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueMachina/NeueMachina-Ultrabold.woff") format("woff"), url("../fonts/NeueMachina/NeueMachina-Ultrabold.ttf") format("truetype"), url("../fonts/NeueMachina/NeueMachina-Ultrabold.svg#NeueMachina") format("svg");
+  src: url("../fonts/NeueMachina/NeueMachina-Ultrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.svg#NeueMachina")
+      format("svg");
 }
 
 @font-face {
@@ -87,7 +130,11 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/Gilroy/Gilroy-Light.eot");
-  src: url("../fonts/Gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"), url("../fonts/Gilroy/Gilroy-Light.svg#Gilroy") format("svg");
+  src: url("../fonts/Gilroy/Gilroy-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"),
+    url("../fonts/Gilroy/Gilroy-Light.svg#Gilroy") format("svg");
 }
 
 @font-face {
@@ -96,7 +143,11 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/Gilroy/Gilroy-Regular.eot");
-  src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"), url("../fonts/Gilroy/Gilroy-Regular.svg#Gilroy") format("svg");
+  src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"),
+    url("../fonts/Gilroy/Gilroy-Regular.svg#Gilroy") format("svg");
 }
 
 @font-face {
@@ -105,7 +156,10 @@
   font-style: "normal";
   font-display: swap;
   src: url("../fonts/Gilroy/Gilroy-Bold.eot");
-  src: url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"), url("../fonts/Gilroy/Gilroy-Bold.svg#Gilroy") format("svg");
+  src: url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"),
+    url("../fonts/Gilroy/Gilroy-Bold.svg#Gilroy") format("svg");
 }
 
 html,
@@ -281,7 +335,7 @@ form input.error {
 
 form input.not_error {
   box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
-  border: 2px solid #99FF99 !important;
+  border: 2px solid #99ff99 !important;
 }
 
 .video {
@@ -404,11 +458,11 @@ form input.not_error {
 
 .form .input__label {
   color: #666;
-font-family: "MuseoSansCyrl";
-font-size: 15px;
-font-weight: 300;
-margin-bottom: 8px;
-display: block;
+  font-family: "MuseoSansCyrl";
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .form .input::-moz-placeholder {
@@ -480,7 +534,7 @@ button {
 }
 
 .burger span {
-  background: #1F2229;
+  background: #1f2229;
   position: absolute;
   display: block;
   width: 100%;
@@ -536,18 +590,18 @@ button {
 }
 
 .btn_dark {
-  background: #1F2229;
+  background: #1f2229;
   color: #ffffff;
   padding: 17.8px 34px;
 }
 
 .btn_dark:hover {
-  background: #4C09D2;
+  background: #4c09d2;
 }
 
 .btn_info {
-  background: #F1F1F1;
-  color: #6C6C6C;
+  background: #f1f1f1;
+  color: #6c6c6c;
   display: inline-flex;
   align-items: center;
   padding: 15px 30px;
@@ -569,12 +623,12 @@ button {
 .btn_color {
   padding: 20px 40px;
   border-radius: 5px;
-  background: #0009D7;
+  background: #0009d7;
 }
 
 .btn_color span {
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "MuseoSansCyrl";
   font-size: 18px;
@@ -597,7 +651,7 @@ button {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #eaeaea;
   z-index: 150 !important;
 }
 
@@ -654,7 +708,7 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 18px;
   font-weight: 300;
-  opacity: .6;
+  opacity: 0.6;
   text-decoration: none;
 }
 
@@ -668,7 +722,7 @@ button {
 
 .menu__phone a,
 .menu__phone a:visited {
-  color: #4C09D2;
+  color: #4c09d2;
   text-decoration: underline;
   font-size: 18px;
   font-weight: 900;
@@ -677,12 +731,12 @@ button {
 .footer {
   padding: 70px 0;
   background: #262626;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer a,
 .footer a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__row {
@@ -733,7 +787,7 @@ button {
 }
 
 .footer__social-item {
-  background: #4C09D2;
+  background: #4c09d2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -876,7 +930,7 @@ button {
 }
 
 ._mark {
-  color: #0009D7;
+  color: #0009d7;
 }
 
 ._bold {
@@ -1097,7 +1151,7 @@ button {
 }
 
 .hero__inner {
-    position: relative;
+  position: relative;
   padding-top: 30px;
   padding-bottom: 85px;
   display: flex;
@@ -1109,7 +1163,7 @@ button {
 }
 
 .hero__type {
-  color: #0009D7;
+  color: #0009d7;
   font-family: "MuseoSansCyrl";
   font-size: 24px;
   font-weight: 600;
@@ -1118,11 +1172,9 @@ button {
 
 .hero__title {
   font-family: MuseoSansCyrl;
-  text-transform: uppercase;
   color: #090909;
   font-size: 38px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .hero__title span {
@@ -1134,7 +1186,7 @@ button {
 
 .hero__text {
   margin: 25px 0;
-  color: #7C7C7C;
+  color: #7c7c7c;
   font-family: MuseoSansCyrl;
   font-size: 18px;
   font-weight: 400;
@@ -1150,13 +1202,13 @@ button {
 }
 
 .hero__data-item::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 2px;
   height: 19px;
   margin: 0 19px;
   border-radius: 3px;
-  background: #0009D7;
+  background: #0009d7;
 }
 
 .hero__data-item {
@@ -1166,7 +1218,7 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 18px;
   font-weight: 600;
-  line-height: 128.182%; 
+  line-height: 128.182%;
 }
 
 .hero__data-item:last-child {
@@ -1228,121 +1280,123 @@ button {
 }
 
 .hero-form {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 21px 27px;
-    background: #ffffff;
-    box-shadow: 0px 4px 32px rgb(157, 169, 194, 25%);
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 21px 27px;
+  background: #ffffff;
+  box-shadow: 0px 4px 32px rgb(157, 169, 194, 25%);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .hero-form:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #ffffff;
-    z-index: 2;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  z-index: 2;
 }
 
 .hero-form__timer {
-    position: relative;
-    z-index: 3;
-    margin-right: 40px;
+  position: relative;
+  z-index: 3;
+  margin-right: 40px;
 }
 
-.hero-form .wrapHours, .hero-form .wrapDays {
-    display: none !important;
+.hero-form .wrapHours,
+.hero-form .wrapDays {
+  display: none !important;
 }
 
 .hero-form .countelement .digit {
-    font-size: 28px;
-    font-weight: 500;
-    color: #0009D7;
+  font-size: 28px;
+  font-weight: 500;
+  color: #0009d7;
 }
 
-.hero-form .simpleCountdown .countDiv:before, .hero-form .simpleCountdown .countDiv:after {
-    background: #0009D7;
+.hero-form .simpleCountdown .countDiv:before,
+.hero-form .simpleCountdown .countDiv:after {
+  background: #0009d7;
 }
 
 .hero-form .simpleCountdown .countDiv2 {
-    display: initial;
+  display: initial;
 }
 
 .hero-form__form {
-    position: relative;
-    z-index: 3;
-    flex: 1 1 auto;
+  position: relative;
+  z-index: 3;
+  flex: 1 1 auto;
 }
 
 .hero-form .form {
-    display: flex;
-    max-width: initial;
-    align-items: center;
+  display: flex;
+  max-width: initial;
+  align-items: center;
 }
 
 .hero-form .form input::placeholder {
-    color: #DCDCDC;
+  color: #dcdcdc;
 }
 
 .hero-form .form__input {
-    flex: 1 1 265px;
-    margin-right: 28px;
+  flex: 1 1 265px;
+  margin-right: 28px;
 }
 
 .hero-form .btn {
-    width: 340px;
-    padding: 20px 0;
+  width: 340px;
+  padding: 20px 0;
 }
 
 .hero-form .btn span {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
 }
 
 .hero-form__bonus {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-40%);
-    background: #F8F9FF;
-    border-radius: 15px 15px 0 0 ;
-    padding: 10px 140px 10px 24px;
-    box-shadow: -4px -5px 36px rgb(124, 134, 153, 25%);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-40%);
+  background: #f8f9ff;
+  border-radius: 15px 15px 0 0;
+  padding: 10px 140px 10px 24px;
+  box-shadow: -4px -5px 36px rgb(124, 134, 153, 25%);
 }
 
 .hero-form__bonus-text {
-    min-width: 427px;
-    font-weight: 300;
+  min-width: 427px;
+  font-weight: 300;
 }
 .hero-form__bonus ._mark {
 }
 
 .hero-form__bonus b {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .hero-form__bonus del {
-    color: rgb(29, 29, 29, 30%);
+  color: rgb(29, 29, 29, 30%);
+  font-weight: 400;
 }
 
 .hero-form__bonus-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(20%, -45%);
-    background: center / contain no-repeat;
-    height: 236px;
-    width: 188px;
- 
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(20%, -45%);
+  background: center / contain no-repeat;
+  height: 236px;
+  width: 188px;
 }
 
 @-webkit-keyframes ticker {
@@ -1377,7 +1431,7 @@ button {
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #0009D7;
+  -webkit-text-stroke: 1px #0009d7;
   -webkit-animation-name: ticker;
   animation-name: ticker;
   -webkit-animation-duration: 10s;
@@ -1410,7 +1464,7 @@ button {
   font-weight: 900;
 }
 
-.program-double__prehead span{
+.program-double__prehead span {
   display: inline !important;
 }
 
@@ -1431,11 +1485,11 @@ button {
 }
 
 .double__head {
-  border: 1px solid #4C09D2;
+  border: 1px solid #4c09d2;
   border-radius: 10px;
   padding: 30px 70px 36px 70px;
   margin: 26px 0;
-  border: 1px solid #0009D7;
+  border: 1px solid #0009d7;
   color: #000;
   text-align: center;
   font-family: "MuseoSansCyrl";
@@ -1446,7 +1500,7 @@ button {
 .double__title {
   font: 900 35px "NeueMachina";
   text-align: center;
-  color: #8041FF;
+  color: #8041ff;
 }
 
 .double__text {
@@ -1465,7 +1519,7 @@ button {
 
 .double__col-l-text {
   padding: 27px 29px;
-  background: #F5F4F7;
+  background: #f5f4f7;
   border-radius: 5px;
   box-shadow: 0 4px 32px rgb(215, 215, 215);
 }
@@ -1526,7 +1580,7 @@ button {
 }
 
 .mistakes__title b {
-  color: #0009D7;
+  color: #0009d7;
 }
 
 .mistakes__subtitle {
@@ -1653,7 +1707,7 @@ button {
 
 .decor__image {
   width: 1247px;
-  background: 50%/contain no-repeat;
+  background: 50% / contain no-repeat;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -1676,7 +1730,7 @@ button {
 }
 
 .lecture__btn-wrap .btn {
-  color: #FFF;
+  color: #fff;
   font-family: "MuseoSansCyrl";
   font-size: 18px;
   font-weight: 600;
@@ -1711,7 +1765,7 @@ button {
 .lecturer__pretitle {
   line-height: 1;
   margin-bottom: 10px;
-  color: #0009D7;
+  color: #0009d7;
   font-family: "MuseoSansCyrl";
   font-size: 20px;
   font-weight: 600;
@@ -1737,7 +1791,7 @@ button {
 }
 
 .lecturer__info-text p::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1745,7 +1799,7 @@ button {
   top: 9px;
   left: 0;
   display: inline-block;
-  background: #0009D7;
+  background: #0009d7;
 }
 
 .lecturer__info-text p {
@@ -1757,7 +1811,7 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px
+  line-height: 24px;
 }
 
 .lecturer__info-text p:first-child {
@@ -1814,19 +1868,19 @@ button {
 
 .program__item-day {
   display: inline-block;
-  background: #0009D7;
+  background: #0009d7;
   border-radius: 3px;
   padding: 5px;
   flex: 0 0 auto;
   margin-right: 25px;
-  color: #FFF;
+  color: #fff;
   font-family: "MuseoSansCyrl";
   font-size: 12px;
   font-weight: 600;
 }
 
 .program__item-title {
-  color: #2B2D42;
+  color: #2b2d42;
   font-family: "MuseoSansCyrl";
   font-size: 20px;
   font-weight: 400;
@@ -1855,7 +1909,7 @@ button {
   padding: 33px 44px 33px 16px;
   color: #ffffff;
   border-radius: 7px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 32px 0px rgba(157, 169, 194, 0.24);
 }
 
@@ -1877,7 +1931,7 @@ button {
   flex: 0 0 57%;
   padding: 63px 0;
   border-radius: 7px;
-  background: #F7F7F8;
+  background: #f7f7f8;
 }
 
 .registration__title {
@@ -1895,7 +1949,7 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 
 .registration-main__subtitle {
@@ -1911,7 +1965,7 @@ button {
 
 .registration-btm__title {
   display: block;
-  color: #0009D7;
+  color: #0009d7;
   text-align: center;
   font-family: "MuseoSansCyrl";
   font-size: 20px;
@@ -1921,7 +1975,7 @@ button {
 }
 
 .registration__title ._mark {
-  color: #7032EC;
+  color: #7032ec;
   font-weight: 900;
 }
 
@@ -1942,7 +1996,7 @@ button {
   line-height: 0.9;
   padding: 10px 26px;
   text-align: center;
-  border: 1.5px solid #7032EC;
+  border: 1.5px solid #7032ec;
   border-radius: 50px;
   margin-bottom: 5px;
 }
@@ -1988,7 +2042,7 @@ button {
   line-height: 1;
   height: auto;
   width: 100%;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 
 .registration__form .form__input input.error {
@@ -2007,7 +2061,7 @@ button {
 }
 
 .registration__form .form__btn-wrap .btn_color {
-  background: #0009D7;
+  background: #0009d7;
 }
 
 .registration__form .form__btn-wrap .btn_color span {
@@ -2015,16 +2069,16 @@ button {
 }
 
 .registration__form .form__notice {
-  color: #1F2229;
+  color: #1f2229;
   font-family: "Museo Sans Cyrl";
   font-size: 12px;
   font-weight: 300;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .registration__form .form__notice a {
   text-decoration: underline;
-  color: #1F2229;
+  color: #1f2229;
   font-family: "Museo Sans Cyrl";
   font-size: 12px;
   font-weight: 600;
@@ -2091,7 +2145,7 @@ button {
 .nums__indicator {
   display: flex;
   align-items: center;
-  color: #3217FF;
+  color: #3217ff;
   font-family: "MuseoSansCyrl";
   font-size: 45px;
   font-weight: 900;
@@ -2127,7 +2181,7 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 35px;
   font-weight: 900;
-  line-height: 45px; 
+  line-height: 45px;
 }
 
 .clients__logo-list {
@@ -2149,20 +2203,19 @@ button {
 }
 
 @media only screen and (max-width: 1366px) {
-    .hero__inner {
-        padding-top: 30px;
-        padding-bottom: 0;
-    }
+  .hero__inner {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 
-    .hero__type {
-        font-size: 20px;
-    }
+  .hero__type {
+    font-size: 20px;
+  }
 
-    .hero__title {
-        font-size: 32px;
-    }
+  .hero__title {
+    font-size: 32px;
+  }
 }
-
 
 @media only screen and (max-width: 1260px) {
   body {
@@ -2197,7 +2250,7 @@ button {
     padding: 10px 0;
     z-index: 111;
     background: #fff;
-    transition: .3s all;
+    transition: 0.3s all;
     transform: translateY(-100%);
     pointer-events: none;
   }
@@ -2477,17 +2530,17 @@ button {
     transform: translateX(0);
     left: 0;
     box-shadow: -4px -20px 36px rgb(124, 134, 153, 25%);
-}
+  }
 
   .hero-form__bonus-image {
     transform: translate(30px, -50px);
   }
 
-  .arrows-left span, .arrows-right span {
+  .arrows-left span,
+  .arrows-right span {
     width: 50px;
   }
   .lecturer {
-
     padding-top: 50px;
   }
 }
@@ -2762,7 +2815,7 @@ button {
   .double__l-big-text {
     font-size: 19px;
     font-weight: 900;
-    color: #4C09D2;
+    color: #4c09d2;
     margin-bottom: 28px;
   }
 
@@ -3154,7 +3207,6 @@ button {
 
   .hero-form .form {
     min-width: 100%;
-
   }
 
   .lecturer__subtitle {

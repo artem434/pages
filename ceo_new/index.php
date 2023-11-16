@@ -42,6 +42,7 @@
       content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
     />
     <script src="js/modernizr-custom.js"></script>
+
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -92,6 +93,8 @@
       })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- clarity code -->
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -106,20 +109,135 @@
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "hxq8cxegar");
     </script>
+    <!-- end clarity code -->
     <!-- Start VWO Async SmartCode -->
-<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-<script type='text/javascript' id='vwoCode'>
-window._vwo_code || (function() {
-var account_id=780161,
-version=2.0,
-settings_tolerance=2000,
-hide_element='body',
-hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
-/* DO NOT EDIT BELOW THIS LINE */
-f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();
-</script>
-<!-- End VWO Async SmartCode -->
-
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 780161,
+            version = 2.0,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style =
+              "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(
+              localStorage.getItem("_vwo_" + account_id + "_config")
+            );
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined"
+                ? use_existing_jquery
+                : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined"
+                ? library_tolerance
+                : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function () {
+              if (!f) {
+                f = true;
+                var e = d.getElementById("_vis_opt_path_hides");
+                if (e) e.parentNode.removeChild(e);
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            load: function (e) {
+              var t = this.getSettings(),
+                n = d.createElement("script"),
+                i = this;
+              if (t) {
+                n.textContent = t;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  i.load(e);
+                }
+              } else {
+                n.fetchPriority = "high";
+                n.src = e;
+                n.type = "text/javascript";
+                n.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(n);
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t = d.currentScript,
+                n = d.createElement("style"),
+                i = this.hide_element(),
+                r = t && !t.async && i ? i + this.hide_element_style() : "",
+                c = d.getElementsByTagName("head")[0];
+              n.setAttribute("id", "_vis_opt_path_hides");
+              v && n.setAttribute("nonce", v.nonce);
+              n.setAttribute("type", "text/css");
+              if (n.styleSheet) n.styleSheet.cssText = r;
+              else n.appendChild(d.createTextNode(r));
+              c.appendChild(n);
+              this.load(
+                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                  account_id +
+                  "&u=" +
+                  encodeURIComponent(d.URL) +
+                  "&vn=" +
+                  version
+              );
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
   </head>
 
   <body>
@@ -186,6 +304,39 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
                 заявку</span
               ></a
             >
+          </div>
+        </div>
+        <div class="students">
+          <div class="students__content">
+            <p>у нас навчаються</p>
+            <div class="students__block">
+              <div class="swiper-wrapper">
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_1.svg"
+                ></div>
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_2.svg"
+                ></div>
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_3.svg"
+                ></div>
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_4.svg"
+                ></div>
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_5.svg"
+                ></div>
+                <div
+                  class="students__img lazy swiper-slide"
+                  data-bg="img/student_6.svg"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -478,18 +629,10 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
           </p>
           <div class="block">
             <div class="block__content">
-              <p class="block__text">
-                Діє система <span>early bird price</span>
-              </p>
-              <div class="block__quantity">
-                Залишилось <br /><span id="places">6 місць із 14</span> <br />
-                зі знижкою <span id="percent">15%</span>
-              </div>
-              <div class="block__title">ЗАЛИШ ЗАЯВКУ</div>
+              <p class="block__title">ЗАЛИШ <b>ЗАЯВКУ</b></p>
               <p class="block__subtitle">
                 НА ПРОГРАМУ «СЕО» <br />
-                НА СПЕЦІАЛЬНИХ УМОВАХ <br />
-                та отримай бонус
+                НА СПЕЦІАЛЬНИХ УМОВАХ та отримай бонус
               </p>
               <ul class="block__info">
                 <li>
@@ -498,9 +641,9 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
                 <li>
                   <p>3 місяці</p>
                 </li>
-                <li>
-                  <p class="cDate">7 листопада</p>
-                </li>
+                <!-- <li>
+                <p class="cDate">5 вересня</p>
+              </li> -->
               </ul>
             </div>
             <div class="block__form">
@@ -1022,9 +1165,9 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000756871357",
+          cLandingId = "2108311000787392366",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000756871327",
+          cLandingIdPro = "2108311000786898058",
           // es_mail_id
           cMail_id = "",
           // es_id
@@ -1085,15 +1228,6 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
 
       $("#btn-pro").click(function () {
         $(".packages-btns__pack-name.pro_price").click();
-      });
-
-      $(".packages-btns__pack-name.core_price, #btn-core").click(function () {
-        $("#places").text("8 місць із 20");
-        $("#percent").text("20%");
-      });
-      $(".packages-btns__pack-name.pro_price, #btn-pro").click(function () {
-        $("#places").text("6 місць із 14");
-        $("#percent").text("15%");
       });
     </script>
     <script>

@@ -134,7 +134,7 @@
               <li><p>Онлайн</p></li>
               <li><p>3 місяці</p></li>
               <!--                        <li><p class="cDate">5 вересня</p></li>-->
-              <li><p >7 листопада</p></li>
+              <!-- <li><p >7 листопада</p></li> -->
             </ul>
             <h1 class="hero__title">
               Інтенсивна <span>освітня програма</span> для керівників бізнесу
@@ -153,7 +153,8 @@
                 <div class="loader"></div>
                 <div class="hero__block">
                   <div class="hero__sale">
-                    Для учасників ефіру депозит <b>- 400€</b>
+                  СПЕЦІАЛЬНІ УМОВИ ДЛЯ УЧАСНИКІВ ЕФІРУ 
+
                   </div>
                   <div class="hero__timer">
                     <p><span id="minutes">03</span> <b>хв</b></p>
@@ -3292,9 +3293,9 @@
                 <li>
                   <p>3 місяці</p>
                 </li>
-                   <li>
+                   <!-- <li>
                                  <p>7 листопада</p>
-                             </li>
+                             </li> -->
               </ul>
             </div>
             <div class="block__form">
@@ -3443,7 +3444,7 @@
                   <input
                     type="hidden"
                     name="send_to_gf"
-                    value="offer-one_28102023"
+                    value="offer-four-gf"
                   />
                 </div>
                 <button class="form__btn subm" type="submit">
@@ -3652,9 +3653,9 @@
           // let cDate = tomorrowDate.getDate() + ' ' + months[tomorrowDate.getMonth()],
 
           // Landing id // Online
-          cLandingId = "2108311000780496090",
+          cLandingId = "2108311000791856003",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000780496090",
+          cLandingIdPro = "2108311000791856003",
           // es_mail_id
           cMail_id = "",
           // es_id

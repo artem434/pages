@@ -2,7 +2,7 @@
   .container {
     @extend %content;
     position: relative;
-    padding: 68px 0;
+    padding: 68px 16px;
     @include media-breakpoint-up(xl) {
       padding: 128px 0;
     }
@@ -93,6 +93,23 @@
     color: #fff;
     text-align: center;
     position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      right: -18px;
+      background: url(../img/sale.png) no-repeat center;
+      background-size: cover;
+      width: 68px;
+      height: 68px;
+      @include media-breakpoint-up(xl) {
+        width: 107px;
+        height: 107px;
+        top: -22px;
+        right: -44px;
+      }
+    }
 
     @include media-breakpoint-up(xl) {
       max-width: 400px;

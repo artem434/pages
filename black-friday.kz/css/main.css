@@ -914,7 +914,7 @@ a {
 .now__title b {
   display: block;
   color: #fff;
-  font-size: 52px;
+  font-size: 46px;
   word-wrap: break-word;
   font-weight: 800;
   transform: rotate(-1.788deg);
@@ -922,7 +922,7 @@ a {
 }
 @media (min-width: 1200px) {
   .now__title b {
-    font-size: 114px;
+    font-size: 92px;
     transform: rotate(3.617deg);
   }
 }
@@ -1241,7 +1241,7 @@ a {
   bottom: -28px;
   left: 50%;
   transform: translate(-50%, 0);
-  max-width: 282px;
+  max-width: 312px;
   width: 100%;
   z-index: 1;
 }

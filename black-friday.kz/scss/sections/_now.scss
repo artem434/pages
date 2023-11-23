@@ -64,14 +64,14 @@
     b {
       display: block;
       color: #fff;
-      font-size: 52px;
+      font-size: 46px;
       word-wrap: break-word;
       font-weight: 800;
       transform: rotate(-1.788deg);
       line-height: 1;
 
       @include media-breakpoint-up(xl) {
-        font-size: 114px;
+        font-size: 92px;
         transform: rotate(3.617deg);
       }
 

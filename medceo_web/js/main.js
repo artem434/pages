@@ -487,7 +487,7 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 hidePackagesBtn();
 
-let targetDay = 2;
+let targetDay = 3;
 let newDate = new Date();
 
 const dateCopy = new Date(newDate.getTime());

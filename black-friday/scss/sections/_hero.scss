@@ -68,7 +68,7 @@
       right: 0;
 
       @include media-breakpoint-up(xl) {
-        top: 507px;
+        top: 407px;
         right: 236px;
         width: 296.348px;
         height: 140.475px;
@@ -81,7 +81,7 @@
     b {
       display: block;
       color: #fff;
-      font-size: 92px;
+      font-size: 68px;
       text-transform: uppercase;
       transform: rotate(4.544deg);
       margin-bottom: -20px;
@@ -92,19 +92,19 @@
       }
 
       @include media-breakpoint-up(xl) {
-        font-size: 234px;
+        font-size: 200px;
       }
     }
 
     span {
       display: block;
       color: #cf0;
-      font-size: 84px;
+      font-size: 44px;
       font-weight: 700;
       text-transform: uppercase;
 
       @include media-breakpoint-up(xl) {
-        font-size: 206px;
+        font-size: 140px;
       }
     }
   }

@@ -500,7 +500,7 @@ const nextMonday = new Date(
 console.log(newDate.getDay());
 
 // if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
-if (newDate.getDay() == 2 && newDate.getHours() < 19) {
+if (newDate.getDay() == 3 && newDate.getHours() < 19) {
   // newDate.setDate( newDate.Date() + 7);
   // console.log('today is Monday');
   console.log("today is Tuesday");

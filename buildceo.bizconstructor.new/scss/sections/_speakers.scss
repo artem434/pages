@@ -1,0 +1,107 @@
+.speakers {
+  .container {
+    @extend%content!optional;
+    padding-top: 62px;
+    padding-bottom: 62px;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 66px;
+      padding-bottom: 66px;
+      max-width: 1200px;
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $orange;
+      padding: 0 6px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      gap: 8px;
+    }
+  }
+
+  .speaker {
+    border-radius: 18px;
+    border: 1px dashed #e2e2e2;
+    padding: 12px 12px 38px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      width: 394px;
+      padding: 24px 32px 38px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      background: #db2b1e;
+      display: block;
+    }
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 26px;
+    }
+    &__photo {
+      min-width: 114px;
+      height: 114px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include media-breakpoint-up(xl) {
+        width: 118px;
+        height: 118px;
+      }
+    }
+
+    &__name {
+      font-size: 22px;
+      font-weight: 700;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+        max-width: 160px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+}

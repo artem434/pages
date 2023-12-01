@@ -14,6 +14,29 @@
 
   .container {
     @extend %content;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -505px;
+      right: -503px;
+      width: 500px;
+      height: 250px;
+      transform: rotate(-5.822deg);
+      border-radius: 400px/200px;
+      background: #db2b1e;
+      z-index: -1;
+      z-index: 111;
+
+      @include media-breakpoint-up(xl) {
+        top: -124px;
+        width: 700px;
+        height: 350px;
+        left: inherit;
+        right: -600px;
+      }
+    }
   }
 
   &__description {

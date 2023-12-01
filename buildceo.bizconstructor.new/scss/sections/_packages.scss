@@ -6,6 +6,45 @@
     padding-bottom: 62px;
     position: relative;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 62px;
+      left: 50%;
+      width: 1000px;
+      height: 500px;
+      transform: rotate(-16.322deg) translate(-50%, 0%);
+      border-radius: 504px/262px;
+      background: #db2b1e;
+      z-index: -1;
+      z-index: 0;
+
+      @include media-breakpoint-up(xl) {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) rotate(-16.322deg);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 62px;
+      left: 50%;
+      width: 1000px;
+      height: 500px;
+      transform: rotate(16.322deg) translate(-50%, 0%);
+      border-radius: 504px/262px;
+      background: #db2b1e;
+      z-index: -1;
+      z-index: 0;
+
+      @include media-breakpoint-up(xl) {
+        content: none;
+      }
+    }
+
     @include media-breakpoint-up(xl) {
       padding-top: 87px;
       padding-bottom: 96px;
@@ -44,6 +83,7 @@
     flex-flow: column;
     gap: 20px;
     border-radius: 27px;
+    z-index: 1;
 
     @include media-breakpoint-up(xl) {
       padding: 24px;

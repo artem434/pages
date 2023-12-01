@@ -513,6 +513,31 @@ a {
     padding-bottom: 86px;
   }
 }
+.hero .container {
+  position: relative;
+}
+.hero .container::before {
+  content: "";
+  position: absolute;
+  top: -505px;
+  right: -503px;
+  width: 500px;
+  height: 250px;
+  transform: rotate(-5.822deg);
+  border-radius: 400px/200px;
+  background: #db2b1e;
+  z-index: -1;
+  z-index: 111;
+}
+@media (min-width: 1200px) {
+  .hero .container::before {
+    top: -124px;
+    width: 700px;
+    height: 350px;
+    left: inherit;
+    right: -600px;
+  }
+}
 .hero__description {
   color: #2f2f2f;
   font-size: 22px;
@@ -1139,11 +1164,34 @@ a {
 .methodology {
   background: rgba(247, 247, 247, 0.8);
   color: #000;
+  overflow: hidden;
 }
 .methodology .container {
   position: relative;
   padding-top: 36px;
   padding-bottom: 36px;
+}
+.methodology .container::before {
+  position: absolute;
+  top: -505px;
+  right: -503px;
+  width: 500px;
+  height: 250px;
+  transform: rotate(-5.822deg);
+  border-radius: 400px/200px;
+  background: #db2b1e;
+  z-index: -1;
+  z-index: 111;
+}
+@media (min-width: 1200px) {
+  .methodology .container::before {
+    content: "";
+    top: -97px;
+    width: 400px;
+    height: 200px;
+    left: inherit;
+    right: -60px;
+  }
 }
 @media (min-width: 1200px) {
   .methodology .container {
@@ -1320,6 +1368,44 @@ a {
   padding-bottom: 62px;
   position: relative;
 }
+.packages .container::before {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  width: 1000px;
+  height: 500px;
+  transform: rotate(-16.322deg) translate(-50%, 0%);
+  border-radius: 504px/262px;
+  background: #db2b1e;
+  z-index: -1;
+  z-index: 0;
+}
+@media (min-width: 1200px) {
+  .packages .container::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-16.322deg);
+  }
+}
+.packages .container::after {
+  content: "";
+  position: absolute;
+  bottom: 62px;
+  left: 50%;
+  width: 1000px;
+  height: 500px;
+  transform: rotate(16.322deg) translate(-50%, 0%);
+  border-radius: 504px/262px;
+  background: #db2b1e;
+  z-index: -1;
+  z-index: 0;
+}
+@media (min-width: 1200px) {
+  .packages .container::after {
+    content: none;
+  }
+}
 @media (min-width: 1200px) {
   .packages .container {
     padding-top: 87px;
@@ -1356,6 +1442,7 @@ a {
   flex-flow: column;
   gap: 20px;
   border-radius: 27px;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .packages .item {
@@ -1601,6 +1688,7 @@ a {
 .register .form__btn {
   margin: 30px 0 14px;
   border: none;
+  border: solid 1px #db2b1e;
 }
 .register .form__btn:hover {
   background-color: #ffffff;

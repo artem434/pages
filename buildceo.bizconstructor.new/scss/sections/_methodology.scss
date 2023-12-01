@@ -1,12 +1,35 @@
 .methodology {
   background: rgba(247, 247, 247, 0.8);
   color: #000;
+  overflow: hidden;
 
   .container {
     @extend%content!optional;
     position: relative;
     padding-top: 36px;
     padding-bottom: 36px;
+
+    &::before {
+      position: absolute;
+      top: -505px;
+      right: -503px;
+      width: 500px;
+      height: 250px;
+      transform: rotate(-5.822deg);
+      border-radius: 400px/200px;
+      background: #db2b1e;
+      z-index: -1;
+      z-index: 111;
+
+      @include media-breakpoint-up(xl) {
+        content: "";
+        top: -97px;
+        width: 400px;
+        height: 200px;
+        left: inherit;
+        right: -60px;
+      }
+    }
 
     @include media-breakpoint-up(xl) {
       padding-bottom: 90px;

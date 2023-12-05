@@ -224,9 +224,8 @@ table {
   --default-font-family: "Gilroy";
   --heading-font-family: "Neue Machina";
   --sp: 66px;
-  --gray: #5A5A5A;
-  --accent: #FF8129;
-  --fiolet: #FF8129;
+  --accent: #21B6B2;
+  --fiolet: #21B6B2;
   --dark: #1F2229;
   --bg: #fff;
   --text-color: #000000;
@@ -322,7 +321,7 @@ h2,
 }
 
 h2 span,
-.results__block_title b {
+.results__block_title span {
   color: var(--accent);
 }
 
@@ -416,13 +415,13 @@ a {
 
 .form__package input:checked + span,
 .tabs__tab--active span {
-  background: var(--accent);
+  background: var(--fiolet);
   border-radius: 53px;
 }
 
 .form__title {
   font: 700 28px/100% "Neue Machina";
-  color: var(--accent);
+  color: var(--fiolet);
   margin-bottom: 20px;
 }
 
@@ -466,7 +465,7 @@ a {
   height: 55px;
   color: #fff;
   border: none;
-  background: var(--accent);
+  background: var(--fiolet);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -646,17 +645,15 @@ a {
 .hero__content {
   width: 100%;
   max-width: 662px;
-  position: relative;
 }
 
 .hero__info {
-  width: 240px;
+  width: 320px;
   display: flex;
   flex-flow: wrap;
-  gap: 24px;
-  position: absolute;
-  right: -70px;
-  top: 0;
+  gap: 6px;
+  margin-left: 145px;
+  margin-bottom: 20px;
 }
 
 .hero__info li {
@@ -665,16 +662,16 @@ a {
 }
 
 .hero__info li:nth-child(1) {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .hero__info li:nth-child(2) {
-  justify-content: flex-start;
+  margin-left: -20px;
 }
 
 .hero__info li:nth-child(3) {
-  justify-content: center;
-  /* margin-top: -30px; */
+  justify-content: flex-end;
+  margin-top: -30px;
 }
 
 .hero__info li p {
@@ -685,25 +682,18 @@ a {
   border-radius: 36px;
 }
 
-.hero__title {
-  margin-bottom: 27px;
-}
-
-
-.hero__title i {
-  font-weight: 900;
-  font-size: 175px;
-  line-height: 100%;
+.hero__title span {
   display: block;
 }
 
 .hero__title b {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #5A5A5A;
   display: block;
+  font-weight: 900;
+  font-size: 88px;
+  line-height: 100%;
+  color: var(--accent);
+  margin-top: 32px;
+  margin-bottom: 30px;
 }
 
 .hero__subtitle {
@@ -745,17 +735,10 @@ a {
 }
 
 .hero__image {
-    position: relative;
-    /* width: 378px; */
-    width: 400px;
-    background: url(../img/full.webp) 50%/contain no-repeat;
-}
-
-.hero__image:after {
-  content:'';
-  display: block;
-  /* padding-bottom: calc(388/378*100%); */
-  padding-bottom: calc(480/378*100%);
+  width: 353px;
+  height: 491px;
+  background: url(../img/hero__image.webp) 50%/contain no-repeat;
+  transform: translateY(-10px);
 }
 
 .line__slider {
@@ -794,16 +777,16 @@ a {
 
 .about__image1 {
   position: absolute;
-  left: calc(50% - 840px);
-  top: 0;
-  width: 600px;
+  left: calc(50% - 750px);
+  top: 130px;
+  width: 424px;
   background: url(../img/about__image1.webp) 50%/contain no-repeat;
 }
 
 .about__image1:after {
   content: "";
   display: block;
-  padding-bottom: calc(497 / 600 * 100%);
+  padding-bottom: 62%;
 }
 
 .about__text {
@@ -828,28 +811,16 @@ a {
 }
 
 .about__block {
-  background: var(--gray);
+  background: var(--accent);
   border-radius: 57px;
   color: #fff;
-  padding: 47px 57px 40px;
+  padding: 57px 57px 73px;
   margin-bottom: 60px;
-  text-align: center;
 }
 
 .about__title {
   position: relative;
-  font-weight: 700;
   /* max-width: 1000px; */
-}
-
-.about__title span {
-  display: block;
-  margin-top: 25px;
-  font-size: 59px;
-  line-height: calc(57 / 59 * 100%);
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--accent);
 }
 
 
@@ -886,6 +857,13 @@ strong.medical b {
     transform: translateX(30px);
 }
 
+.about__title strong {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(calc(-50% + 25px));
+}
+
 .about__info {
   display: flex;
   justify-content: space-between;
@@ -915,7 +893,6 @@ strong.medical b {
   font-family: "Neue Machina";
   font-weight: 500;
   border-bottom: 2px solid #F5F4F7;
-  color: var(--dark);
 }
 
 .about__info_list li:first-child {
@@ -931,7 +908,7 @@ strong.medical b {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5791 1.5791L13.9632 1.5791L13.954 11.9405L2.66492 0.651489L0.809692 2.50671L12.0987 13.7958L1.7373 13.7865V16.4209H16.5791V1.5791Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50% no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5791 1.5791L13.9632 1.5791L13.954 11.9405L2.66492 0.651489L0.809692 2.50671L12.0987 13.7958L1.7373 13.7865V16.4209H16.5791V1.5791Z' fill='%2321B6B2'/%3E%3C/svg%3E%0A") 50% no-repeat;
   display: block;
   flex-shrink: 0;
 }
@@ -987,7 +964,7 @@ strong.medical b {
 .for__title span {
   display: inline-flex;
   color: #fff;
-  background: var(--accent);
+  background: var(--fiolet);
   padding: 0 10px;
 }
 
@@ -1005,7 +982,7 @@ strong.medical b {
 .for .item__title {
   padding-top: 25px;
   position: relative;
-  color: var(--accent);
+  color: var(--fiolet);
   margin-bottom: 8px;
 }
 
@@ -1013,7 +990,7 @@ strong.medical b {
   content: "";
   width: 50px;
   height: 7px;
-  background: var(--accent);
+  background: var(--fiolet);
   position: absolute;
   left: 0;
   top: 0;
@@ -1052,7 +1029,7 @@ strong.medical b {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--gray);
+  color: var(--accent);
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -1062,11 +1039,7 @@ strong.medical b {
   display: block;
   width: 24px;
   height: 24px;
-  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_116_534)'%3E%3Cpath d='M19.4209 19.5791L19.4209 16.9632L9.05947 16.954L20.3485 5.66492L18.4933 3.80969L7.20424 15.0987L7.21352 4.7373L4.5791 4.7373L4.5791 19.5791L19.4209 19.5791Z' fill='%23FF8129'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_116_534'%3E%3Crect width='24' height='24' fill='white' transform='translate(24 24) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 50%/contain no-repeat;
-}
-
-.results .item__text {
-  color: var(--dark);
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_116_534)'%3E%3Cpath d='M19.4209 19.5791L19.4209 16.9632L9.05947 16.954L20.3485 5.66492L18.4933 3.80969L7.20424 15.0987L7.21352 4.7373L4.5791 4.7373L4.5791 19.5791L19.4209 19.5791Z' fill='%2321B6B2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_116_534'%3E%3Crect width='24' height='24' fill='white' transform='translate(24 24) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 50%/contain no-repeat;
 }
 
 .results .item__text b {
@@ -1094,16 +1067,16 @@ strong.medical b {
 }
 
 .results__block_title span {
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 55px;
   font-weight: 500;
-  color: var(--gray);
-  line-height: 133%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .results__block_title b {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 128px;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -1114,22 +1087,22 @@ strong.medical b {
   display: flex;
   flex-flow: wrap;
   gap: 17px;
-  color: var(--dark);
 }
 
 .results__block_btn {
   font: normal 700 20px/100% "Neue Machina";
-  background: var(--accent);
+  background: #E2F8F7;
   border-radius: 73px;
   display: inline-flex;
   padding: 20px 65px;
   align-items: center;
-  color: var(--bg);
+  color: var(--accent);
   transition: var(--transition);
 }
 
 .results__block_btn:hover {
-  background: var(--dark);
+  background: var(--accent);
+  color: #fff;
 }
 
 .decor {
@@ -1173,7 +1146,6 @@ strong.medical b {
   display: flex;
   flex-flow: column;
   gap: 54px;
-  color: var(--gray);
 }
 
 .program .item {
@@ -1183,28 +1155,13 @@ strong.medical b {
   flex-flow: wrap;
 }
 
-.program .item__speaker {
-    padding-left: 120px;
-    padding-top: 0px;
-    transition: padding 0.3s ease 0s;
-    display: none;
-}
-
-.program .item__speaker span {
-    color: var(--accent);
-    font-size: var(--m);
-}
 .program .item.active .item__info {
   margin-top: 20px;
   max-height: 10000px;
 }
 
-.program .item.active .item__speaker {
-    padding-top: 30px;
-}
-
 .program .item.active .item__more:before {
-  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%2321B6B2'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
 }
 
 .program .item.active .item__more:after {
@@ -1213,7 +1170,7 @@ strong.medical b {
 
 .program .item__number {
   font: normal 800 64px/100% "Neue Machina";
-  color: var(--gray);
+  color: var(--accent);
   width: 120px;
 }
 
@@ -1238,7 +1195,7 @@ strong.medical b {
   content: "";
   width: 22px;
   height: 22px;
-  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3Crect x='11.5' y='24' width='22' height='4' transform='rotate(-90 11.5 24)' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%2321B6B2'/%3E%3Crect x='11.5' y='24' width='22' height='4' transform='rotate(-90 11.5 24)' fill='%2321B6B2'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
 }
 
 .program .item__more:after {
@@ -1262,7 +1219,7 @@ strong.medical b {
 
 .program .item__info li {
   padding-left: 34px;
-  background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.02381 0.5L9.56122 1.66044L8.41837 5.45824L12.5 6.77692L6.92177 12.5L3.46599 11.6297L4.60884 7.46264L0.5 6.32857L6.02381 0.5Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") 0 4px no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.02381 0.5L9.56122 1.66044L8.41837 5.45824L12.5 6.77692L6.92177 12.5L3.46599 11.6297L4.60884 7.46264L0.5 6.32857L6.02381 0.5Z' fill='%2321B6B2'/%3E%3C/svg%3E%0A") 0 4px no-repeat;
 }
 
 .program .block {
@@ -1312,7 +1269,7 @@ strong.medical b {
   display: inline-flex;
   padding: 20px 65px;
   border-radius: 80px;
-  background: var(--accent);
+  background: var(--fiolet);
   color: #fff;
   margin-top: 20px;
   transition: var(--transition);
@@ -1349,16 +1306,11 @@ strong.medical b {
   gap: 46px;
 }
 
-.how__title {
-  color: var(--gray);
-}
-
 .how__items {
   display: flex;
   flex-flow: column;
   gap: 46px;
   max-width: 800px;
-  color: var(--dark);
 }
 
 .how .item__title {
@@ -1469,7 +1421,7 @@ strong.medical b {
   padding-left: 44px;
   font-size: var(--m);
   line-height: 120%;
-  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_116_740)'%3E%3Cpath d='M19.5791 4.5791L16.9632 4.5791L16.954 14.9405L5.66492 3.65149L3.80969 5.50671L15.0987 16.7958L4.7373 16.7865V19.4209H19.5791V4.5791Z' fill='%23FF8129'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_116_740'%3E%3Crect width='24' height='24' fill='white' transform='translate(24) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 0 0 no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_116_740)'%3E%3Cpath d='M19.5791 4.5791L16.9632 4.5791L16.954 14.9405L5.66492 3.65149L3.80969 5.50671L15.0987 16.7958L4.7373 16.7865V19.4209H19.5791V4.5791Z' fill='%2321B6B2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_116_740'%3E%3Crect width='24' height='24' fill='white' transform='translate(24) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 0 0 no-repeat;
 }
 
 .speakers {}
@@ -1480,37 +1432,25 @@ strong.medical b {
 .speakers__head {
     margin-bottom: 34px;
 }
-.speakers__title span {
-  display: inline-flex;
-  background: var(--accent);
-  color: #fff;
-  padding: 5px;
+.speakers__title {
+    display: inline-block;
+    padding: 10px 14px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: var(--dark);
 }
 .speakers__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -18px -10px;
-    position: relative;
+    margin: -27.5px -10px;
 }
-
-
-
-.speakers__list-decor {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 745px;
-    height: 400px;
-    background: center / contain no-repeat;
-    transform: translate(160px, 100px);
-    bottom: -85px;
-}
-
 .speakers__list-item {
     flex: 0 0 50%;
-    padding: 18px 10px;
+    padding: 27.5px 10px;
 }
-
+ 
 .speaker {
     display: flex;
 }
@@ -1518,24 +1458,23 @@ strong.medical b {
     order: 1;
     flex: 0 0 50%;
     height: 278px;
-    background: center / cover no-repeat;
+    background: center / contain no-repeat;
 }
 .speaker__info {
     order: 2;
     flex: 0 0 50%;
-    /* padding: 28px; */
-    padding: 0 28px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 .speaker__info-industry {
-    color: #ffffff !important;
+    color: #ffffff;
     background: var(--accent);
-    padding: 6px 14px;
+    padding: 3px 5px;
     display: inline-block;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
 }
 .speaker__info-name {
     font-family: var(--heading-font-family);
@@ -1543,94 +1482,32 @@ strong.medical b {
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--accent);
     margin-bottom: 11px;
 
 }
 .speaker__info-desc {
     font-size: var(--xs);
-    /* line-height: 1.2; */
-    line-height: 1.1;
+    line-height: 1.2;
+
 }
 .speaker__info-desc b {
     font-weight: 700;
-}
+} 
 
-.speaker__info-desc li {
-  position: relative;
-  margin-bottom: 6px;
-  padding-left: 20px;
-}
-
-.speaker__info-desc li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8188 4.59003L11.3549 4.59003L11.3497 10.3885L5.03211 4.07091L3.99389 5.10914L10.3115 11.4267L4.513 11.4215L4.513 12.8958L12.8188 12.8958L12.8188 4.59003Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") center/contain no-repeat;
-}
-
-.speakers__list-item:nth-child(1) {
-    flex: 0 0 100%;
-}
-
-.speakers__list-item:nth-child(1) .speaker__photo  {
-    height: 600px;
-}
-
-.speakers__list-item:nth-child(1) .speaker__info  {
-    background-color: var(--gray);
-    padding: 90px;
-}
-.speakers__list-item:nth-child(1) .speaker__info-industry {
-    background-color: var(--accent);
-    color: #fff;
-    color: initial;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-
-.speakers__list-item:nth-child(1) .speaker__info-name {
-    margin-bottom: 30px;
-    color: #ffffff;
-}
-
-.speakers__list-item:nth-child(1) .speaker__info-name br {
-    display: none;
-}
-
-.speakers__list-item:nth-child(1) .speaker__info-desc {
-    color: #ffffff;
-    font-weight: 400;
-}
-
-
-.speakers__list-item:nth-child(4) .speaker__photo,
-.speakers__list-item:nth-child(5) .speaker__photo {
+.speakers__list-item:nth-child(3) .speaker__photo,
+.speakers__list-item:nth-child(4) .speaker__photo {
     order: 2;
 }
 
-.speakers__list-item:nth-child(4) .speaker__info,
-.speakers__list-item:nth-child(5) .speaker__info {
+.speakers__list-item:nth-child(3) .speaker__info,
+.speakers__list-item:nth-child(4) .speaker__info {
     order: 1;
     text-align: right;
     align-items: flex-end;
 }
 
-/* .speakers__list-item:nth-child(4) .speaker__info-desc li, */
-.speakers__list-item:nth-child(5) .speaker__info-desc li {
-    /* width: fit-content; */
-}
-/* .speakers__list-item:nth-child(4) .speaker__info-desc li:before, */
-.speakers__list-item:nth-child(5) .speaker__info-desc li:before {
-    position: static;
-    display: inline-block;
-    margin-right: 0;
-    transform: translate(-5px, 4px);
-}
+
 
 
 .packages {
@@ -1719,8 +1596,7 @@ strong.medical b {
 }
 
 .packages .item--core {
-  background: var(--gray);
-  color: #fff;
+  background: #F5F4F7;
 }
 
 .packages .item--core .item__title {
@@ -1729,7 +1605,7 @@ strong.medical b {
 }
 
 .packages .item--core .item__info li:before {
-  background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9403 7.14004L17.6632 7.14004L17.6551 16.1599L7.82773 6.33253L6.21271 7.94755L16.0401 17.7749L7.02022 17.7668L7.02022 20.0602H19.9403L19.9403 7.14004Z' fill='%23FF8129'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9403 7.14004L17.6632 7.14004L17.6551 16.1599L7.82773 6.33253L6.21271 7.94755L16.0401 17.7749L7.02022 17.7668L7.02022 20.0602H19.9403L19.9403 7.14004Z' fill='%2321B6B2'/%3E%3C/svg%3E%0A") 50%/contain no-repeat;
 }
 
 .packages .item--core .item__btn {
@@ -1789,7 +1665,7 @@ strong.medical b {
 }
 
 .register .block {
-  background: var(--gray);
+  background: var(--dark);
   border-radius: 57px;
   color: #fff;
   padding: 70px 130px;
@@ -1807,18 +1683,12 @@ strong.medical b {
 .register .block__form {
   width: 100%;
   max-width: 340px;
-  position: relative;
-}
-
-.block__form .anchor {
-  position: absolute;
-  top: -100px;
 }
 
 .register .block__title {
   font: 800 76px/73px "Neue Machina";
   margin-bottom: 24px;
-  color: var(--accent);
+  color: var(--fiolet);
   max-width: 387px;
 }
 
@@ -1865,7 +1735,7 @@ strong.medical b {
   font: var(--l) "Neue Machina";
   display: inline-flex;
   padding: 4px 26px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--fiolet);
   border-radius: 36px;
 }
 
@@ -1915,7 +1785,6 @@ strong.medical b {
   max-width: 860px;
   margin-left: auto;
   margin-bottom: 70px;
-  color: var(--dark);
 }
 
 .company__items {
@@ -1923,13 +1792,13 @@ strong.medical b {
   justify-content: space-between;
   gap: 20px;
   padding-left: 340px;
-  color: var(--dark);
 }
 
 .company .item__title {
   font: normal 700 45px/43px "Neue Machina";
-  /* display: flex;
-  white-space: nowrap; */
+  color: var(--accent);
+  display: flex;
+  white-space: nowrap;
 }
 
 .company .item__title span {
@@ -1959,10 +1828,6 @@ strong.medical b {
   height: 93px;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  color: #4C09D2;
-}
-
 .footer {
   padding: 76px 0 139px;
   color: #fff;
@@ -1989,7 +1854,7 @@ strong.medical b {
   width: 400px;
   background: 50%/contain no-repeat;
   position: absolute;
-  top: 150px;
+  top: 70px;
   right: calc(50% - 700px);
 }
 
@@ -2017,7 +1882,7 @@ strong.medical b {
 }
 
 .footer a:hover {
-  color: var(--accent);
+  color: var(--fiolet);
 }
 
 .footer__container {
@@ -2208,15 +2073,19 @@ strong.medical b {
   }
 
   .hero__info {
-    right: -160px;
+    width: 300px;
+    margin-left: 0;
   }
 
+  .hero__info li:nth-child(2) {
+    margin-left: 0;
+  }
 
   .hero__title b {
     margin-left: 0;
     margin-top: 0;
-    font-size: 25px;
-    line-height: 120%;
+    font-size: 150px;
+    line-height: 0.7;
   }
 
   .hero__title b i {
@@ -2225,14 +2094,9 @@ strong.medical b {
   }
 
   .hero__image {
-    /* width: 375px; */
-    width: 250px;
-    /* transform: translateX(-20px); */
-    transform: translateX(70px);
-  }
-
-  .hero__image:after {
-    padding-bottom: calc(400/378*100%);
+    width: 375px;
+    height: 500px;
+    transform: translateX(-20px);
   }
 
   .about {
@@ -2263,6 +2127,19 @@ strong.medical b {
     padding: 30px;
     padding-bottom: 44px;
     margin-bottom: 44px;
+  }
+
+  .about__title strong {
+    transform: translateY(calc(-50% + 10px));
+  }
+  .about__title strong span {
+    font-size: 30px;
+  }
+  .about__title strong i {
+    font-size: 32px;
+  }
+  .about__title strong b {
+    font-size: 80px;
   }
 
   /* .about__title i {
@@ -2354,10 +2231,6 @@ strong.medical b {
     width: calc(100% - 150px);
   }
 
-  .program .item__speaker {
-    padding-left: 60px;
-}
-
   .program .item__more {
     width: 80px;
   }
@@ -2440,30 +2313,18 @@ strong.medical b {
   }
 
   .speakers__list {
-    margin: -20px;
-  }
-
-  .speakers__list-decor {
-    display: none;
+    margin: -28px;
   }
   .speakers__list-item {
-    padding: 20px;
+    padding: 28px;
   }
 
-  .speakers__list-item:nth-child(1) .speaker__info {
-    padding: 50px;
-  }
-  .speakers__list-item:nth-child(1) .speaker__photo {
-    height: 500px;
-  }
-
+  .speakers__list-item:nth-child(3) .speaker__photo,
   .speakers__list-item:nth-child(4) .speaker__photo,
-  .speakers__list-item:nth-child(5) .speaker__photo,
-  .speakers__list-item:nth-child(4) .speaker__info,
-  .speakers__list-item:nth-child(5) .speaker__info {
+  .speakers__list-item:nth-child(3) .speaker__info,
+  .speakers__list-item:nth-child(4) .speaker__info {
     order: initial;
     text-align: initial;
-    align-items: center;
   }
 
   .speaker {
@@ -2473,7 +2334,7 @@ strong.medical b {
   .speaker__photo,
   .speaker__info {
     flex: 0 0 100%;
-
+    
   }
   .speaker__photo {
     height: 320px;
@@ -2486,18 +2347,6 @@ strong.medical b {
     text-align: center !important;
     padding: 28px 0;
     align-items: center;
-  }
-
-  .speaker__info-desc li {
-    /* width: fit-content; */
-    padding-left: 0;
-  }
-
-  .speaker__info-desc li::before {
-    /* content: none; */
-    position: static;
-    display: inline-block;
-    transform: translate(-5px, 4px);
   }
 
 
@@ -2693,9 +2542,6 @@ strong.medical b {
     margin-bottom: 0px;
     max-width: 202px;
     margin-bottom: 38px;
-    position: relative;
-    right: auto;
-    top: auto;
   }
   .hero__info li:nth-child(1) {
     justify-content: flex-end;
@@ -2713,18 +2559,14 @@ strong.medical b {
   }
 
   .hero__title {
-    margin-bottom: 11px;
   }
-
   .hero__title b {
-    font-size: 36px;
+    font-size: 66px;
   }
-  .hero__title  b i {
-    font-size: 100px;
-    line-height: 100%;
-    /* font-size: inherit; */
+  .hero__title i {
+    font-size: inherit;
   }
-
+  
 
   .hero__subtitle {
   }
@@ -2733,7 +2575,7 @@ strong.medical b {
     display: none;
   }
 
-  .hero__btn {
+  .hero__btn { 
     position: fixed;
     z-index: 10;
     width: 340px;
@@ -2784,22 +2626,11 @@ strong.medical b {
 
   .about__block {
     padding-bottom: 30px;
-    border-radius: 27px;
-    text-align: left;
   }
 
   .about__title i {
-    display: none;
-  }
-
-  .about__title span {
-    font-size: 21px;
-  }
-
-  .about__title b {
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 1;
+    position: relative;
+    transform: none;
   }
 
   .about__info {
@@ -2851,10 +2682,6 @@ strong.medical b {
     padding-top: 22px;
   }
 
-  .for .item__title br {
-    display: none;
-  }
-
   .for .item__title:before {
     width: 34px;
     height: 4px;
@@ -2876,11 +2703,17 @@ strong.medical b {
     width: 100%;
   }
 
-  .results__block_title span {
-    margin-left: auto;
-    display: block;
-    width: 273px;
+  .results__block_title strong.medical {
+
   }
+
+/*   .results__block_title span {
+    justify-content: flex-end;
+  }
+
+  .results__block_title b {
+    font-size: 94px;
+  } */
 
   .results__block_btn {
     display: none;
@@ -2893,11 +2726,6 @@ strong.medical b {
   .program .item__title span {
     display: block;
   }
-
-  .program .item__speaker {
-    padding-left: 60px;
-    padding-top: 5px;
-}
 
   .program .block {
     flex-wrap: wrap;
@@ -2956,26 +2784,13 @@ strong.medical b {
     text-align: center;
   }
 
-  .speakers__title {
-    display: inline-flex;
-    background: var(--accent);
-    color: #fff;
-    padding: 5px;
-  }
-
-  .speakers__title span {
-    padding: 0;
-    padding-right: 5px;
-  }
-
   .speakers__list {
-    margin: -10px 0;
-    padding: 0 31.5px;
-    /* padding: 0px; */
+    margin: -4px 0;
+    padding: 0 22px;
   }
   .speakers__list-item {
     flex: 0 0 100%;
-    padding: 10px 0px;
+    padding: 4px 0px;
   }
 
   .speaker__photo {
@@ -2984,8 +2799,7 @@ strong.medical b {
     background-position: top center;
   }
 
-  .speaker__info,
-  .speakers__list-item:nth-child(1) .speaker__info {
+  .speaker__info {
     padding: 26px 10px;
   }
   .speaker__info-name {
@@ -2996,9 +2810,6 @@ strong.medical b {
   }
   .speaker__info-desk {}
 
-  .speakers__list-item:nth-child(1) .speaker__photo {
-    height: 294px;
-  }
 
   .packages__items {
     flex-wrap: wrap;
@@ -3008,14 +2819,9 @@ strong.medical b {
     margin-bottom: 40px;
   }
 
-  .register .block__subtitle {
-    text-align: center;
-  }
-
   .register .block {
     padding: 40px 20px;
     flex-wrap: wrap;
-    gap: 67px;
   }
 
   .register .block__info {

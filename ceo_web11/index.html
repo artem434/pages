@@ -148,7 +148,7 @@
                 <span>Безкоштовний майстер-клас Кирила Куницького</span>
               </div>
               <ul class="hero__data-list _bold">
-                <li class="hero__data-item">4 грудня</li>
+                <li class="hero__data-item cDate">4 грудня</li>
                 <li class="hero__data-item">19:00</li>
                 <li class="hero__data-item">Онлайн</li>
               </ul>
@@ -1646,23 +1646,29 @@
         "листопада",
         "грудня",
       ];
-      // let tomorrowDate = new Date();
-      // tomorrowDate.setDate(tomorrowDate.getDate() + 1);
+      let tomorrowDate = new Date();
+      //tomorrowDate.setDate(tomorrowDate.getDate() + 1);
 
-      // let cDate = 'Дата: ' + tomorrowDate.getDate() + ' ' + months[tomorrowDate.getMonth()];
+      // let cDate =
+      //   "Дата: " +
+      //   tomorrowDate.getDate() +
+      //   " " +
+      //   months[tomorrowDate.getMonth()];
+
       let today = new Date();
 
       if (today.getHours() >= 18) {
+        console.log(tomorrowDate);
         today.setDate(today.getDate() + 1);
       }
 
-      // let cDate = today.getDate() + ' ' + months[today.getMonth()];
-      // console.log(cDate)
-      // if (cDate !== 'date') {
-      //     $('.cDate').each(function () {
-      //         $(this).html(cDate);
-      //     });
-      // };
+      let cDate = today.getDate() + " " + months[today.getMonth()];
+      console.log(cDate);
+      if (cDate !== "date") {
+        $(".cDate").each(function () {
+          $(this).html(cDate);
+        });
+      }
     </script>
 
     <script>

@@ -76,6 +76,7 @@
       height: 114px;
       background-repeat: no-repeat;
       background-size: cover;
+      border-radius: 50%;
 
       @include media-breakpoint-up(xl) {
         width: 118px;

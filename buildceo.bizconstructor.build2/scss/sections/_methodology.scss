@@ -1,0 +1,87 @@
+.methodology {
+  background: $greay;
+  color: $white;
+
+  .container {
+    @extend%content!optional;
+    position: relative;
+    padding-top: 36px;
+    padding-bottom: 140px;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: url(../img/methodology-img.png) center no-repeat;
+      height: 122px;
+      width: 358px;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        width: 897.902px;
+        height: 282.978px;
+        left: inherit;
+        right: 0;
+        right: -305px;
+        top: 57px;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 612px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 38px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    b {
+      @include media-breakpoint-up(xl) {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+
+  &__text {
+    color: #cdcdcd;
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      padding-left: 86px;
+    }
+    p {
+      &:first-child {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 26px;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 44px;
+      display: block;
+    }
+
+    .btn-page {
+      margin: 0 auto;
+    }
+  }
+}

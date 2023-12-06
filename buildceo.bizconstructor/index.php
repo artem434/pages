@@ -599,10 +599,7 @@
                             </div>
                         </div>
                     </li>  -->
-            <li
-              class="speakers__list-decor lazy"
-              data-bg="img/speaker-list-decor.png"
-            ></li>
+           
           </ul>
         </div>
       </section>

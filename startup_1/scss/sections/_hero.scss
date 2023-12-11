@@ -1,6 +1,7 @@
 .no-webp .hero {
 }
 .hero {
+  flex: 1 0 auto;
   .container {
     @extend %content;
     padding-top: 32px;

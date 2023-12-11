@@ -73,28 +73,16 @@
       fbq("init", "422318891243887");
       fbq("track", "PageView");
     </script>
-    <noscript
-      ><img
+    <noscript>
+      <img
         height="1"
         width="1"
         style="display: none"
         src="https://www.facebook.com/tr?id=422318891243887&ev=PageView&noscript=1"
-    /></noscript>
+      />
+    </noscript>
     <!-- End Meta Pixel Code -->
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
-    </script>
-    <!-- End Google Tag Manager -->
+
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -109,10 +97,28 @@
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "hxq8cxegar");
     </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
 
   <body>
     <div class="wrapper">
+      <div class="header"></div>
       <!-- <header class="header" id="header">
         <div class="header__container">
           <a class="header__logo" href="index.htm"></a>
@@ -3112,7 +3118,7 @@
                   <input
                     type="hidden"
                     name="success_url"
-                    value="/thanks.html"
+                    value="thanks.html"
                     autocomplete="off"
                   />
                   <input
@@ -3153,14 +3159,6 @@
       </section>
 
       <section class="footer" id="footer">
-        <div
-          class="footer__decor footer__decor--1 lazy"
-          data-bg="img/footer__decor--1.png"
-        ></div>
-        <div
-          class="footer__decor footer__decor--2 lazy"
-          data-bg="img/footer__decor--2.png"
-        ></div>
         <div class="footer__container">
           <div class="footer__menu">
             <h5 class="footer__menu_title">Корисно</h5>
@@ -3311,16 +3309,7 @@
         </div>
       </section>
       <!-- HIDDEN ELEMENTS (MODALS)-->
-      <div class="modal-overlay" id="modal-video">
-        <div class="modal-overlay__container">
-          <div class="modal-content">
-            <div class="close-button"></div>
-            <div class="video">
-              <div id="video-popup"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <!-- END HIDDEN ELEMENTS (MODALS)-->
     </div>
     <script src="js/libs.min.js"></script>
@@ -3330,15 +3319,15 @@
         // Дата мероприятия
         let cDate = "22 серпня",
           // Landing id // Online
-          cLandingId = "2F2108311000795833077",
+          cLandingId = "2108311000795833077",
           // Landing id // Online Pro
-          cLandingIdPro = "2F2108311000795833077",
+          cLandingIdPro = "2108311000795833077",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "/thanks.thml";
+          cSuccess_url = "thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;

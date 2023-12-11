@@ -1,9 +1,10 @@
 .header {
-  padding: 15px 0;
+  flex: 0 0 auto;
+  //padding: 15px 0;
   width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
+  //position: fixed;
+  //left: 0;
+  //top: 0;
   z-index: 111 !important;
   background: rgba(17, 17, 17, 0.4);
   -webkit-backdrop-filter: blur(10px);
@@ -120,10 +121,10 @@
 }
 
 @media (max-width: 760px) {
-  .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  // .header {
+  //   padding-top: 10px;
+  //   padding-bottom: 10px;
+  // }
 
   .header__menu {
     position: fixed;

@@ -1,7 +1,8 @@
 .footer {
-  background-color: #0066cc;
+  background-color: $maincolor;
   padding: 48px 0;
   color: $white;
+  flex: 0 0 auto;
 
   &__container {
     display: flex;

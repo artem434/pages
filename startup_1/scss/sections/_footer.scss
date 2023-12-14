@@ -1,68 +1,84 @@
 .footer {
-  background-color: $maincolor;
-  padding: 48px 0;
-  color: $white;
-  flex: 0 0 auto;
+  padding: 70px 0;
+  background: #262626;
+  color: #ffffff;
 
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 268px;
-
-    @media (min-width: 760px) {
-      max-width: $maxWidth;
-      justify-content: center;
-      gap: 80px;
-    }
-
-    h5 {
-      color: #fff;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      li {
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  &__social {
-    svg {
-      fill: $white;
-    }
-  }
-
-  &__social_links {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  .container {
+    @extend %content;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
-@media (max-width: 1260px) {
-  .footer__decor--1 {
-    position: absolute;
-    left: calc(50% - 800px);
-    top: -100px;
-  }
+.footer a,
+.footer a:visited {
+  color: #ffffff;
+}
 
-  .footer__decor--2 {
-    position: absolute;
-    top: 70px;
-    right: calc(50% - 600px);
-  }
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
 
-  .footer__container {
-    justify-content: space-between;
-    gap: 40px;
-  }
+.footer__logo {
+  width: 200px;
+  height: 45px;
+  background: center no-repeat;
+  background-size: contain;
+  margin-bottom: 12px;
+}
+
+.footer__menu li {
+  margin-bottom: 13px;
+}
+
+.footer__menu li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__menu li a {
+  transition: color 0.3s ease 0s;
+}
+
+.footer__tel {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  transition: color 0.3s ease 0s;
+  margin-top: 16px;
+  display: block;
+}
+
+.footer__social {
+  display: flex;
+  margin-top: 27px;
+}
+
+.footer__social-item {
+  background: $maincolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  //transition: background 0.3s ease 0s;
+}
+
+.footer__social-item:hover {
+  background: #5c0bff;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__copywrite {
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }

@@ -599,7 +599,6 @@
                             </div>
                         </div>
                     </li>  -->
-           
           </ul>
         </div>
       </section>
@@ -1282,9 +1281,9 @@
         // Дата мероприятия
         let cDate = "17 жовтня",
           // Landing id // Online
-          cLandingId = "2108311000776635133",
+          cLandingId = "2108311000799416028",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000776635156",
+          cLandingIdPro = "2108311000799538001",
           // es_mail_id
           cMail_id = "",
           // es_id

@@ -730,6 +730,9 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.hero__bottom-block p b {
+  font-weight: 700;
+}
 .hero__bottom-block a {
   display: block;
   width: 100%;

@@ -681,6 +681,27 @@
                 </div>
               </div>
             </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">
+                    Роман <br />
+                    Гудима
+                  </div>
+                  <div class="speaker__info-desc">
+                    Власник стоматологічної клініки <b>"Dentaro Garden"</b>,
+                    засновник та головний лектор навчального центру
+                    <b>"Dentaro Study Club"</b>, засновник зуботехнічної
+                    лабораторії <b>"Dentaro Lab"</b>
+                  </div>
+                </div>
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/gudyma.webp"
+                ></div>
+              </div>
+            </li>
             <!-- <li class="speakers__list-decor lazy" data-bg="img/speaker-list-decor.png"></li> -->
           </ul>
         </div>

@@ -578,6 +578,32 @@
                 </div>
               </div>
             </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speaker-8.jpeg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">
+                    Євген <br />
+                    Кудрявченко
+                  </div>
+                  <div class="speaker__info-desc">
+                    <ul>
+                      <li>
+                        Засновник Vintage Web Production (серед клієнтів: DIM,
+                        Ковальска, Дія, Socar, Okko, Ощадбанк, Toyota, Lexus,
+                        Novus, PocketBook, Laba, ПУМБ, Чорноморка, Sweet.Tv,
+                        Danone, BODO, Helen Marlen, Guzema та інші)
+                      </li>
+                      <li>Засновник Ukrainian Digital Community</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
 
             <!-- <li class="speakers__list-item">
                         <div class="speaker">

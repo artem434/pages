@@ -1,0 +1,142 @@
+.path {
+  padding-top: 100px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 114px;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 62px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 104px;
+      text-align: left;
+      margin-bottom: 104px;
+    }
+
+    span {
+      color: $maincolor;
+      display: block;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 226px;
+    left: 0;
+    width: 368px;
+    height: 567px;
+    background-size: contain;
+
+    @include media-breakpoint-up(xl) {
+      width: 1298px;
+      height: 537px;
+      background-size: cover;
+      top: 325px;
+      left: -140px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    row-gap: 64px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 112px;
+      row-gap: 96px;
+    }
+
+    li {
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+
+      &:nth-child(1) {
+        width: 80px;
+
+        @include media-breakpoint-up(xl) {
+          width: 115px;
+          margin-left: 10px;
+        }
+      }
+      &:nth-child(2) {
+        width: 113px;
+        @include media-breakpoint-up(xl) {
+          width: 188px;
+        }
+      }
+      &:nth-child(3) {
+        width: 113px;
+        @include media-breakpoint-up(xl) {
+          width: 163px;
+        }
+      }
+      &:nth-child(4) {
+        width: 132px;
+        margin-left: 44px;
+
+        @include media-breakpoint-up(xl) {
+          width: 188px;
+          margin-left: 0;
+        }
+      }
+      &:nth-child(5) {
+        width: 148px;
+
+        @include media-breakpoint-up(xl) {
+          width: 213px;
+          margin-left: 150px;
+        }
+      }
+      &:nth-child(6) {
+        width: 178px;
+        @include media-breakpoint-up(xl) {
+          width: 262px;
+        }
+      }
+      &:nth-child(7) {
+        width: 132px;
+        @include media-breakpoint-up(xl) {
+          width: 208px;
+        }
+      }
+      &:nth-child(8) {
+        width: 106px;
+        @include media-breakpoint-up(xl) {
+          width: 249px;
+          margin-left: 60px;
+        }
+      }
+      &:nth-child(9) {
+        width: 96px;
+        @include media-breakpoint-up(xl) {
+          width: 236px;
+        }
+      }
+      &:nth-child(10) {
+        width: 100px;
+        @include media-breakpoint-up(xl) {
+          width: 200px;
+        }
+      }
+      b {
+        font-size: 22px;
+        font-weight: 700;
+        color: $maincolor;
+        display: block;
+        margin: 12px 0;
+        @include media-breakpoint-up(xl) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

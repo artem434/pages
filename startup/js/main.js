@@ -200,7 +200,7 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 const expertsSlider = new Swiper(".experts__list", {
   //centeredSlides: true,
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   slidesPerView: 1,
   pagination: {
@@ -227,25 +227,30 @@ const expertsSlider = new Swiper(".experts__list", {
   },
 });
 var copiedBlock = $(".active .item__info").clone();
-copiedBlock.appendTo(".program__result");
+copiedBlock.appendTo(".program__text");
+var copiednNumber = $(".active .item__number").clone();
+copiednNumber.appendTo(".program__number");
 
 $(".item__more, .program .item__title").on("click", function () {
-  // Очистить содержимое .program__result
-  $(".program__result").empty();
+  $(".program__text").empty();
+  $(".program__number").empty();
 
   if ($(window).width() >= 1200) {
+    window.location.href = "#program-anchor";
+    window.scrollBy(0, 60);
     $(".active").removeClass("active");
     $(this).parent().addClass("active");
   } else {
     $(this).parent().toggleClass("active");
   }
 
-  // Добавить класс "active" только к текущему родительскому элементу
-
-  // Если элемент стал активным, скопировать блок и вставить в .program__result
   if ($(this).parent().hasClass("active")) {
     var copiedBlock = $(".active .item__info").clone();
-    copiedBlock.appendTo(".program__result");
+    var copiednNumber = $(".active .item__number").clone();
+
+    copiedBlock.appendTo(".program__text");
+
+    copiednNumber.appendTo(".program__number");
   }
 });
 
@@ -282,7 +287,6 @@ document.querySelectorAll(".format__btns a").forEach(function (button) {
   button.addEventListener("click", function () {
     var dataId = this.getAttribute("data-id");
 
-    // Устанавливаем класс "active" для соответствующего span
     spans.forEach(function (span) {
       if (span.getAttribute("data-id") === dataId) {
         span.classList.add("active");
@@ -291,14 +295,22 @@ document.querySelectorAll(".format__btns a").forEach(function (button) {
       }
     });
 
-    // Устанавливаем значение input равным data-id кнопки
     landingIdInput.value = dataId;
   });
 });
+
+$(".expert__collapse-btn").click(function () {
+  $(".expert__text").toggleClass("active");
+});
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= $("#register").offset().top) {
-    $("#btn").addClass("d-none");
-  } else {
-    $("#btn").removeClass("d-none");
+  if ($(window).width() < 767) {
+    if ($(window).scrollTop() >= $("#register").offset().top) {
+      $("#btn").addClass("d-none");
+    } else {
+      $("#btn").removeClass("d-none");
+    }
   }
 });
+if (window.innerWidth > 1000) {
+  $(".item__more").click(function () {});
+}

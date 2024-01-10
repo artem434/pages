@@ -231,11 +231,16 @@
 
       @include media-breakpoint-up(xl) {
         margin-top: 0;
+        font-size: 12px;
       }
 
       a {
         color: rgba(255, 255, 255, 0.4);
+        text-decoration: underline;
       }
+    }
+    .country {
+      color: #000;
     }
   }
 
@@ -270,7 +275,7 @@
       width: 163px;
       height: 163px;
       background-size: cover;
-      animation: 9s linear 0s normal none infinite running rot;
+      animation: 18s linear 0s normal none infinite running rot;
 
       @include media-breakpoint-up(xl) {
         width: 210px;

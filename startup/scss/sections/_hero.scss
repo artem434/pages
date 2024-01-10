@@ -116,7 +116,7 @@
       width: 163px;
       height: 163px;
       background-size: cover;
-      animation: 9s linear 0s normal none infinite running rot;
+      animation: 18s linear 0s normal none infinite running rot;
 
       @include media-breakpoint-up(xl) {
         width: 210px;
@@ -205,7 +205,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -214,6 +214,6 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }

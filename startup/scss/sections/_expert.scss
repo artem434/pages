@@ -60,6 +60,52 @@
     }
   }
 
+  &__collapse-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 1.5;
+    height: 214px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+    @include media-breakpoint-up(xl) {
+      height: auto;
+    }
+  }
+
+  &__collapse-btn {
+    color: $maincolor;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 8px;
+    &:before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='0.5' y='0.5' width='23' height='23' fill='%231F1F1F'/%3E%3Crect x='0.5' y='0.5' width='23' height='23' stroke='white'/%3E%3Crect x='11' y='5' width='2' height='14' fill='%239FF565'/%3E%3Crect x='5' y='13' width='2' height='14' transform='rotate(-90 5 13)' fill='%239FF565'/%3E%3C/svg%3E")
+        50% / contain no-repeat;
+      display: block;
+
+      @include media-breakpoint-up(xl) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &:after {
+      content: "Більше про експерта";
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
@@ -70,6 +116,24 @@
       gap: 28px;
       line-height: 1.6;
     }
+
+    &.active {
+      .expert__collapse-text {
+        height: auto;
+        transition: all 0.4s;
+      }
+
+      .expert__collapse-btn {
+        &:before {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='0.5' y='0.5' width='23' height='23' fill='%231F1F1F'/%3E%3Crect x='0.5' y='0.5' width='23' height='23' stroke='white'/%3E%3Crect x='5' y='13' width='2' height='14' transform='rotate(-90 5 13)' fill='%239FF565'/%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+        &:after {
+          content: "приховати";
+        }
+      }
+    }
+
     p {
       font-size: 14px;
 

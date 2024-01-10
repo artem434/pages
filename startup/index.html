@@ -538,7 +538,9 @@
 
       <section class="program" id="program">
         <div class="container">
-          <div class="program__title">СТРУКТУРА <span>ПРОГРАМИ:</span></div>
+          <div id="program-anchor" class="program__title">
+            СТРУКТУРА <span>ПРОГРАМИ:</span>
+          </div>
           <div class="program__block">
             <div class="program__content">
               <div class="item active">
@@ -864,7 +866,14 @@
                 </div>
               </div>
             </div>
-            <div class="program__result"></div>
+            <div class="program__result">
+              <div class="program__top">
+                модуль
+                <p class="program__number"></p>
+              </div>
+
+              <div class="program__text"></div>
+            </div>
           </div>
           <div class="btn-arrows">
             <div class="arrow arrow--left d-xl-flex">
@@ -898,29 +907,32 @@
             ></div>
             <div class="expert__text">
               <div class="expert__name">КИРИЛО КУНИЦЬКИЙ</div>
-              <p>
-                <b
-                  >Засновник та CEO міжнародної освітньо-консалтингової компанії
-                  <span>«Бізнес-Конструктор» </span></b
-                >
-              </p>
-              <p>
-                Бізнесмен із 20-річним досвідом управління компаніями у сфері
-                логістики, туризму, постачання промислового обладнання,
-                роздрібної торгівлі, виробництва ювелірних прикрас та IT.
-              </p>
-              <p>
-                Протягом останніх 10 років Кирило особисто консультує власників
-                та топ-менеджмент провідних компаній (Планета Кіно, Шериф, Новий
-                Зір,  Епіцентр, G.Bar, Gastro Family, MTI, Ultra Group, Andre
-                Tan та багато інших).
-              </p>
-              <p>
-                Візитна картка Кирила – власні унікальні технології ведення
-                бізнесу, які працюють не тільки в його компаніях, а й успішно
-                впроваджено більш ніж у 25 000 підприємствах, що є клієнтами
-                компанії «Бізнес-Конструктор».
-              </p>
+              <div class="expert__collapse-text">
+                <p>
+                  <b
+                    >Засновник та CEO міжнародної освітньо-консалтингової
+                    компанії <span>«Бізнес-Конструктор» </span></b
+                  >
+                </p>
+                <p>
+                  Бізнесмен із 20-річним досвідом управління компаніями у сфері
+                  логістики, туризму, постачання промислового обладнання,
+                  роздрібної торгівлі, виробництва ювелірних прикрас та IT.
+                </p>
+                <p class="">
+                  Протягом останніх 10 років Кирило особисто консультує
+                  власників та топ-менеджмент провідних компаній (Планета Кіно,
+                  Шериф, Новий Зір,  Епіцентр, G.Bar, Gastro Family, MTI, Ultra
+                  Group, Andre Tan та багато інших).
+                </p>
+                <p>
+                  Візитна картка Кирила – власні унікальні технології ведення
+                  бізнесу, які працюють не тільки в його компаніях, а й успішно
+                  впроваджено більш ніж у 25 000 підприємствах, що є клієнтами
+                  компанії «Бізнес-Конструктор».
+                </p>
+              </div>
+              <div class="expert__collapse-btn"></div>
             </div>
           </div>
           <div class="expert__title">Експерти програми</div>
@@ -946,7 +958,7 @@
               <div class="experts__item swiper-slide">
                 <div
                   class="img"
-                  data-bg="img/expert-2.jpeg"
+                  data-bg="img/expert.jpeg"
                   data-ll-status="loaded"
                   style="background-image: url('img/expert.jpeg')"
                 ></div>
@@ -955,18 +967,18 @@
                   <p>Гастрохолдинг "Інакші"</p>
                 </div> -->
               </div>
-              <div class="experts__item swiper-slide">
+              <!-- <div class="experts__item swiper-slide">
                 <div
                   class="img"
                   data-bg="img/expert.jpeg"
                   data-ll-status="loaded"
                   style="background-image: url('img/expert.jpeg')"
                 ></div>
-                <!-- <div class="experts__bottom">
+                <div class="experts__bottom">
                   <b>Тарас Середюк</b>
                   <p>«MAFIA», «CASTA», «Georgia», «BAO», «NAM»</p>
-                </div> -->
-              </div>
+                </div>
+              </div> -->
             </div>
           </div>
           <div class="experts__navigation">
@@ -1155,9 +1167,9 @@
               </tr>
             </table>
             <div class="format__btns">
-              <a data-id="2108311000809977174" href="#form">Замовити</a>
-              <a data-id="2108311000809977151" href="#form">Замовити</a>
-              <a data-id="2108311000809977028" href="#form">Замовити</a>
+              <a data-id="2108311000809977174" href="#register">Замовити</a>
+              <a data-id="2108311000809977151" href="#register">Замовити</a>
+              <a data-id="2108311000809977028" href="#register">Замовити</a>
             </div>
           </div>
         </div>
@@ -1275,7 +1287,7 @@
                     type="text"
                     placeholder="Твоє ім’я"
                     required=""
-                    value="Unknow User"
+                    value=""
                   />
                   <!-- <input
                   class="hidden-name-input input"
@@ -4293,6 +4305,18 @@
               <div class="swiper-wrapper">
                 <div
                   class="swiper-slide logo lazy"
+                  data-bg="img/clients/10.png"
+                ></div>
+                <div
+                  class="swiper-slide logo lazy"
+                  data-bg="img/clients/11.png"
+                ></div>
+                <div
+                  class="swiper-slide logo lazy"
+                  data-bg="img/clients/12.png"
+                ></div>
+                <div
+                  class="swiper-slide logo lazy"
                   data-bg="img/clients/1.png"
                 ></div>
                 <div
@@ -4327,18 +4351,7 @@
                   class="swiper-slide logo lazy"
                   data-bg="img/clients/9.png"
                 ></div>
-                <div
-                  class="swiper-slide logo lazy"
-                  data-bg="img/clients/10.png"
-                ></div>
-                <div
-                  class="swiper-slide logo lazy"
-                  data-bg="img/clients/11.png"
-                ></div>
-                <div
-                  class="swiper-slide logo lazy"
-                  data-bg="img/clients/12.png"
-                ></div>
+
                 <div
                   class="swiper-slide logo lazy"
                   data-bg="img/clients/13.png"
@@ -4369,12 +4382,6 @@
 
       <section class="footer" id="footer">
         <div class="footer__container">
-          <div
-            class="footer__shadow lazy entered loaded d-xl-none"
-            data-bg="img/shadow.png"
-            data-ll-status="loaded"
-            style="background-image: url('img/shadow.png')"
-          ></div>
           <a class="footer__logo" href="index.htm"></a>
           <div class="footer__menu">
             <h5 class="footer__menu_title">Корисно</h5>

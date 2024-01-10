@@ -220,6 +220,27 @@
     }
   }
 
+  &__top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+    gap: 8px;
+    background-color: $maincolor;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 2px 8px;
+    margin-bottom: 18px;
+
+    .item__number {
+      color: $black;
+      width: auto;
+      font-size: 20px;
+    }
+  }
+
   .btn-arrows {
     display: none;
 

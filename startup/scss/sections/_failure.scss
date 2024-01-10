@@ -211,7 +211,7 @@
       width: 132px;
       height: 132px;
       background-size: cover;
-      animation: 9s linear 0s normal none infinite running rot;
+      animation: 20s linear 0s normal none infinite running rot;
 
       @include media-breakpoint-up(xl) {
         width: 210px;
@@ -249,7 +249,7 @@
       width: 132px;
       height: 132px;
       background-size: cover;
-      animation: 12s linear 0s normal none infinite running rot-revers;
+      animation: 18s linear 0s normal none infinite running rot-revers;
 
       @include media-breakpoint-up(xl) {
         width: 220px;

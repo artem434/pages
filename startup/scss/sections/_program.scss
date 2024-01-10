@@ -1,7 +1,7 @@
 .program {
   padding-top: 106px;
   @include media-breakpoint-up(xl) {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 
   &__title {

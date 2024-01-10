@@ -12,6 +12,25 @@
 
   .container {
     @extend %content;
+    position: relative;
+  }
+
+  &__shadow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 775px;
+    height: 775px;
+    position: absolute;
+    transform: scale(0.4);
+    top: -226px;
+    left: 0px;
+
+    @include media-breakpoint-up(xl) {
+      transform: scale(1);
+      z-index: -1;
+      top: -116px;
+    }
   }
 
   &__date {
@@ -107,15 +126,24 @@
   }
 
   &__btn {
-    margin-top: -50px;
+    position: fixed;
+    z-index: 2;
+    bottom: 16px;
+    .btn-page {
+      font-size: 16px;
+      padding: 0 16px;
+    }
 
     @include media-breakpoint-up(xl) {
+      position: relative;
+      bottom: inherit;
       .btn-page {
         max-width: 440px;
         margin-left: auto;
         margin-right: 185px;
         z-index: 11;
         position: relative;
+        font-size: 18px;
       }
     }
   }

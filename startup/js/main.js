@@ -258,3 +258,47 @@ $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
 });
+
+var spans = document.querySelectorAll(".register__package span");
+
+var landingIdInput = document.getElementsByName("landing_id")[0];
+
+spans.forEach(function (span) {
+  span.addEventListener("click", function () {
+    this.classList.toggle("active");
+    var activeSpan = document.querySelector(".register__package span.active");
+    var activeDataId = activeSpan ? activeSpan.getAttribute("data-id") : "";
+
+    landingIdInput.value = activeDataId;
+    spans.forEach(function (otherSpan) {
+      if (otherSpan !== span) {
+        otherSpan.classList.remove("active");
+      }
+    });
+  });
+});
+
+document.querySelectorAll(".format__btns a").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var dataId = this.getAttribute("data-id");
+
+    // Устанавливаем класс "active" для соответствующего span
+    spans.forEach(function (span) {
+      if (span.getAttribute("data-id") === dataId) {
+        span.classList.add("active");
+      } else {
+        span.classList.remove("active");
+      }
+    });
+
+    // Устанавливаем значение input равным data-id кнопки
+    landingIdInput.value = dataId;
+  });
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= $("#register").offset().top) {
+    $("#btn").addClass("d-none");
+  } else {
+    $("#btn").removeClass("d-none");
+  }
+});

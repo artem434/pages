@@ -15,10 +15,25 @@
     padding-bottom: 18px;
   }
 
+  &__shadow {
+    @include media-breakpoint-up(xl) {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 775px;
+      height: 775px;
+      position: absolute;
+      transform: scale(0.4);
+      top: -434px;
+      left: -81px;
+    }
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
     max-width: 268px;
+    position: relative;
 
     @media (min-width: 760px) {
       max-width: $maxWidth;

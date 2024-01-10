@@ -1,9 +1,9 @@
 .clients {
-  padding-top: 62px;
+  padding-top: 88px;
   padding-bottom: 62px;
 
   @include media-breakpoint-up(xl) {
-    padding-top: 66px;
+    padding-top: 128px;
     padding-bottom: 66px;
   }
 
@@ -16,7 +16,6 @@
     margin-bottom: 34px;
     font-weight: 800;
     font-size: 26px;
-    color: #263238;
     text-transform: uppercase;
 
     @include media-breakpoint-up(xl) {
@@ -31,5 +30,9 @@
   .logo {
     background: 50% / contain no-repeat;
     height: 93px;
+  }
+
+  &__block {
+    position: relative;
   }
 }

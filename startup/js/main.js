@@ -171,13 +171,8 @@ const clientsSlider = new Swiper(".clients__slider", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
   },
 });
 // const expertsSlider = new Swiper(".experts__list", {
@@ -207,8 +202,8 @@ const expertsSlider = new Swiper(".experts__list", {
     el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 
   on: {

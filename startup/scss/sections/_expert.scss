@@ -51,11 +51,14 @@
       display: block;
       background-position: center top;
       margin-bottom: 28px;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       @include media-breakpoint-up(xl) {
         margin-bottom: 0;
         min-width: 430px;
         height: 593px;
+        background-size: contain;
       }
     }
   }
@@ -161,9 +164,6 @@
     font-weight: 700;
     line-height: 152%;
     text-transform: uppercase;
-    @include media-breakpoint-up(xl) {
-      padding-top: 36px;
-    }
   }
 
   .experts {
@@ -191,6 +191,12 @@
         height: 460px;
         background-position: center top;
         background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .img--cover {
+        background-size: cover;
+        background-position: center center;
       }
     }
     &__bottom {

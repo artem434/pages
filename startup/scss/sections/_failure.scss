@@ -24,7 +24,7 @@
     }
   }
   &__title {
-    padding-bottom: 110px;
+    padding-bottom: 126px;
 
     @include media-breakpoint-up(xl) {
       display: flex;
@@ -265,7 +265,7 @@
     width: 1114px;
     height: 519px;
     position: absolute;
-    top: 163px;
+    top: 186px;
     right: -220px;
 
     @include media-breakpoint-up(xl) {

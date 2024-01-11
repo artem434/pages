@@ -8,6 +8,8 @@
 
   .container {
     position: relative;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   &__shadow {
@@ -65,7 +67,7 @@
 
   &__bg {
     position: absolute;
-    top: 226px;
+    top: 228px;
     left: 0;
     width: 368px;
     height: 567px;
@@ -84,7 +86,7 @@
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
-    row-gap: 64px;
+    row-gap: 56px;
 
     @include media-breakpoint-up(xl) {
       gap: 112px;
@@ -107,13 +109,13 @@
         }
       }
       &:nth-child(2) {
-        width: 113px;
+        width: 130px;
         @include media-breakpoint-up(xl) {
           width: 188px;
         }
       }
       &:nth-child(3) {
-        width: 113px;
+        width: 85px;
         @include media-breakpoint-up(xl) {
           width: 163px;
         }
@@ -137,33 +139,43 @@
       }
       &:nth-child(6) {
         width: 178px;
+        margin-top: 24px;
         @include media-breakpoint-up(xl) {
           width: 262px;
+          margin-top: 0;
         }
       }
       &:nth-child(7) {
         width: 132px;
+        margin-top: 24px;
         @include media-breakpoint-up(xl) {
           width: 208px;
+          margin-top: 0;
         }
       }
       &:nth-child(8) {
         width: 106px;
+        margin-top: 20px;
         @include media-breakpoint-up(xl) {
           width: 249px;
           margin-left: 60px;
+          margin-top: 0;
         }
       }
       &:nth-child(9) {
+        margin-top: 20px;
         width: 96px;
         @include media-breakpoint-up(xl) {
           width: 236px;
+          margin-top: 0;
         }
       }
       &:nth-child(10) {
+        margin-top: 20px;
         width: 100px;
         @include media-breakpoint-up(xl) {
           width: 200px;
+          margin-top: 0;
         }
       }
       b {
@@ -171,9 +183,10 @@
         font-weight: 700;
         color: $maincolor;
         display: block;
-        margin: 12px 0;
+        margin: 8px 0;
         @include media-breakpoint-up(xl) {
           font-size: 30px;
+          margin: 12px 0;
         }
       }
     }

@@ -9,6 +9,7 @@
 
   .container {
     @extend%content!optional;
+    position: relative;
   }
 
   &__title {
@@ -29,7 +30,7 @@
 
   .logo {
     background: 50% / contain no-repeat;
-    height: 93px;
+    height: 88px;
   }
 
   &__block {

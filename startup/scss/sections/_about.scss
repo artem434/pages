@@ -71,11 +71,13 @@
       font-size: 22px;
       display: block;
       color: $black;
+      margin-top: 28px;
 
       @include media-breakpoint-up(xl) {
         font-size: 36px;
         display: inline-block;
         margin-right: 560px;
+        margin-top: 0;
       }
     }
   }
@@ -103,12 +105,17 @@
   }
 
   ul {
-    padding-bottom: 330px;
+    //padding-bottom: 330px;
     position: relative;
     margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
 
     @include media-breakpoint-up(xl) {
-      padding-bottom: 206px;
+      //padding-bottom: 206px;
+      padding-top: 38px;
     }
 
     li {
@@ -116,12 +123,14 @@
       background: rgba(31, 31, 31, 0.8);
       backdrop-filter: blur(3px);
       padding: 12px;
-      position: absolute;
+      flex: 0 0 47%;
+      //position: absolute;
       font-size: 14px;
 
       @include media-breakpoint-up(xl) {
         font-size: 18px;
         padding: 24px;
+        flex: 0 0 18%;
       }
 
       b {
@@ -149,63 +158,63 @@
         }
       }
 
-      &:nth-child(1) {
-        max-width: 161px;
-        left: 78px;
-        top: 0;
-        z-index: 1;
-        @include media-breakpoint-up(xl) {
-          max-width: 216px;
-          top: -170px;
-        }
-      }
-      &:nth-child(2) {
-        max-width: 123px;
-        right: -11px;
-        top: 92px;
+      // &:nth-child(1) {
+      //   max-width: 161px;
+      //   left: 78px;
+      //   top: 0;
+      //   z-index: 1;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 216px;
+      //     top: -170px;
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   max-width: 123px;
+      //   right: -11px;
+      //   top: 92px;
 
-        @include media-breakpoint-up(xl) {
-          max-width: 256px;
-          top: 40px;
-          right: inherit;
-          left: 200px;
-        }
-      }
-      &:nth-child(3) {
-        max-width: 110px;
-        left: 0;
-        top: 52px;
-        @include media-breakpoint-up(xl) {
-          max-width: 183px;
-          top: 20px;
-          left: 500px;
-        }
-      }
-      &:nth-child(4) {
-        max-width: 250px;
-        left: 0px;
-        bottom: 0px;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 256px;
+      //     top: 40px;
+      //     right: inherit;
+      //     left: 200px;
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   max-width: 110px;
+      //   left: 0;
+      //   top: 52px;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 183px;
+      //     top: 20px;
+      //     left: 500px;
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   max-width: 250px;
+      //   left: 0px;
+      //   bottom: 0px;
 
-        @include media-breakpoint-up(xl) {
-          max-width: 210px;
-          left: inherit;
-          right: 206px;
-          bottom: inherit;
-          top: 80px;
-        }
-      }
-      &:nth-child(5) {
-        max-width: 134px;
-        right: 118px;
-        top: 148px;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 210px;
+      //     left: inherit;
+      //     right: 206px;
+      //     bottom: inherit;
+      //     top: 80px;
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   max-width: 134px;
+      //   right: 118px;
+      //   top: 148px;
 
-        @include media-breakpoint-up(xl) {
-          max-width: 181px;
-          right: inherit;
-          top: 40px;
-          right: 0px;
-        }
-      }
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 181px;
+      //     right: inherit;
+      //     top: 40px;
+      //     right: 0px;
+      //   }
+      // }
     }
   }
 }

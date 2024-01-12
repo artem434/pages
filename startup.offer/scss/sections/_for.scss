@@ -1,0 +1,185 @@
+.for {
+  position: relative;
+  padding-top: 106px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 160px;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__title {
+    text-align: center;
+    font-size: 44px;
+    color: $maincolor;
+    font-weight: 700;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 74px;
+    }
+    b {
+      display: block;
+      color: $white;
+      font-size: 29px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 58px;
+        margin-top: 28px;
+      }
+
+      span {
+        color: $maincolor;
+        font-style: italic;
+      }
+    }
+  }
+  ul {
+    //padding-bottom: 450px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+
+    @include media-breakpoint-up(xl) {
+      //padding-bottom: 300px;
+      row-gap: 32px;
+    }
+    li {
+      border: 1px solid #9f9f9f;
+      background: rgba(31, 31, 31, 0.8);
+      backdrop-filter: blur(3px);
+      padding: 12px;
+      flex: 0 0 47%;
+      //position: absolute;
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+        padding: 24px;
+        flex: 0 0 30%;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: 13px;
+        width: 24px;
+        height: 24px;
+        background: $maincolor
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z' fill='black'/%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-up(xl) {
+          left: 20px;
+        }
+      }
+
+      // &:nth-child(1) {
+      //   max-width: 137px;
+      //   left: 0;
+      //   top: 0;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 194px;
+      //     top: -280px;
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   max-width: 140px;
+      //   right: 0;
+      //   top: 0;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 179px;
+      //     top: -240px;
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   max-width: 132px;
+      //   left: 0;
+      //   top: 140px;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 210px;
+      //     top: 68px;
+      //     left: 76px;
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   max-width: 138px;
+      //   left: 80px;
+      //   top: 78px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 256px;
+      //     left: inherit;
+      //     right: 36px;
+      //     top: -16px;
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   max-width: 172px;
+      //   right: 0;
+      //   top: 148px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 240px;
+      //     right: inherit;
+      //     left: 30px;
+      //     top: -106px;
+      //   }
+      // }
+      // &:nth-child(6) {
+      //   max-width: 120px;
+      //   left: 124px;
+      //   top: 235px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 230px;
+      //     left: 300px;
+      //     top: -30px;
+      //   }
+      // }
+      // &:nth-child(7) {
+      //   max-width: 112px;
+      //   left: 20px;
+      //   top: 280px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 221px;
+      //     left: inherit;
+      //     right: 318px;
+      //     top: -36px;
+      //   }
+      // }
+      // &:nth-child(8) {
+      //   max-width: 140px;
+      //   right: 0;
+      //   top: 282px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 200px;
+      //     right: inherit;
+      //     left: 356px;
+      //     top: 146px;
+      //   }
+      // }
+      // &:nth-child(9) {
+      //   max-width: 222px;
+      //   right: 0;
+      //   top: 385px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 302px;
+      //     top: 127px;
+      //     right: 300px;
+      //   }
+      // }
+    }
+  }
+}

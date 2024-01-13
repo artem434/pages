@@ -345,6 +345,23 @@ a {
   }
 }
 
+.form:before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(31, 34, 41, 0.6274509804) url(../img/loading.svg) 50% no-repeat;
+  z-index: 10;
+  color: rgba(31, 34, 41, 0.6274509804);
+}
+
+.form.loading:before {
+  display: block;
+}
+
 .btn-page {
   border-radius: 5px;
   background: #20a29f;
@@ -895,6 +912,15 @@ a {
   max-width: 100%;
   font-size: 16px;
   background-color: red;
+  transition: all 0.4s;
+}
+.hero .form .btn:hover {
+  cursor: pointer;
+}
+.hero .form .btn:disabled {
+  transition: all 0.4s;
+  background-color: #dcdcdc;
+  color: #000;
 }
 .hero .hero-form {
   position: relative;
@@ -1408,6 +1434,9 @@ a {
 .registration__gift b {
   color: #20a29f;
 }
+.registration .form {
+  position: relative;
+}
 @media (min-width: 1200px) {
   .registration .form {
     margin-left: 46px;
@@ -1452,6 +1481,14 @@ a {
   border: none;
   margin-bottom: 14px;
   max-width: 100%;
+}
+.registration .form .btn-page:hover {
+  cursor: pointer;
+}
+.registration .form .btn-page:disabled {
+  transition: all 0.4s;
+  background-color: #dcdcdc;
+  color: #000;
 }
 .registration .form__notice {
   color: #1f2229;

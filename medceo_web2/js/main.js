@@ -106,6 +106,7 @@ $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
+
   setCookie("name", $('input[name="name"]').val(), 365);
   setCookie("email", $('input[name="email"]').val(), 365);
   setCookie("phone", $('input[name="phone"]').val(), 365);

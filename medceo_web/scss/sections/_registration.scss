@@ -134,6 +134,15 @@
       border: none;
       margin-bottom: 14px;
       max-width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:disabled {
+        transition: all 0.4s;
+        background-color: #dcdcdc;
+        color: #000;
+      }
     }
 
     &__notice {

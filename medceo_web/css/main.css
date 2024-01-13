@@ -877,6 +877,14 @@ a {
   max-width: 100%;
   font-size: 16px;
 }
+.hero .form .btn:hover {
+  cursor: pointer;
+}
+.hero .form .btn:disabled {
+  transition: all 0.4s;
+  background-color: #dcdcdc;
+  color: #000;
+}
 .hero .hero-form {
   position: relative;
   padding: 2px 12px 14px 12px;
@@ -1421,6 +1429,14 @@ a {
   border: none;
   margin-bottom: 14px;
   max-width: 100%;
+}
+.registration .form .btn-page:hover {
+  cursor: pointer;
+}
+.registration .form .btn-page:disabled {
+  transition: all 0.4s;
+  background-color: #dcdcdc;
+  color: #000;
 }
 .registration .form__notice {
   color: #1f2229;

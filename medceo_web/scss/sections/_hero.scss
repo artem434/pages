@@ -207,6 +207,15 @@
       font-weight: 400;
       max-width: 100%;
       font-size: 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:disabled {
+        transition: all 0.4s;
+        background-color: #dcdcdc;
+        color: #000;
+      }
     }
   }
 

@@ -248,6 +248,16 @@
       max-width: 100%;
       font-size: 16px;
       background-color: red;
+      transition: all 0.4s;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:disabled {
+        transition: all 0.4s;
+        background-color: #dcdcdc;
+        color: #000;
+      }
     }
   }
 

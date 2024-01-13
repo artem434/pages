@@ -105,6 +105,7 @@ $.get("https://ipapi.co/json/", function (obj) {
 $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
+  $(this).prop("disabled", true);
   form.addClass("loading");
   setCookie("name", $('input[name="name"]').val(), 365);
   setCookie("email", $('input[name="email"]').val(), 365);

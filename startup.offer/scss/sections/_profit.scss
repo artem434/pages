@@ -1,0 +1,115 @@
+.profit {
+  @include media-breakpoint-up(xl) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 646px;
+      gap: 32px;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__toptext {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+    }
+
+    b {
+      color: var(--wt, #fff);
+      font-family: Montserrat;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 98%;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 100px;
+      }
+
+      span {
+        color: $maincolor;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+    }
+
+    b {
+      font-weight: 700;
+      color: $maincolor;
+    }
+  }
+
+  p {
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+  }
+
+  .btn {
+    background-color: $maincolor;
+    font-size: 18px;
+    color: $black;
+    width: 100%;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-weight: 700;
+    max-width: 444px;
+    text-transform: uppercase;
+    padding: 0 12px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: $hoverBTN;
+      cursor: pointer;
+    }
+  }
+}

@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
+  //$("input[name=name]").val(getCookie("name"));
   $("input[name=email]").val(getCookie("email"));
   $("input[name=phone]").val(getCookie("phone"));
 });
@@ -52,6 +52,7 @@ function validate(formid) {
   var output = false;
   form = $(formid);
   form.addClass("loading");
+  $(this).prop("disabled", true);
   form.find("input[name=name]").focus();
   form.find("input[name=email]").focus();
   form.find("input[name=phone]").focus();

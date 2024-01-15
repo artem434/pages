@@ -1,0 +1,109 @@
+.for {
+  .container {
+    @extend%content!optional;
+    padding-top: 92px;
+    padding-bottom: 92;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 66px;
+      padding-bottom: 66px;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      gap: 44px;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 52px;
+    color: $white;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 300px;
+      transform: translateX(-65px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: -144px;
+      width: 400px;
+      height: 200px;
+      transform: rotate(5.822deg);
+      border-radius: 200px/100px;
+      background: #db2b1e;
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        top: -56px;
+        left: -97px;
+      }
+    }
+
+    span {
+      background-color: $orange;
+      padding: 0 6px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      margin-bottom: 62px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: space-between;
+      gap: 35px;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      text-align: left;
+      font-size: 18px;
+
+      @include media-breakpoint-up(xl) {
+        min-width: 243px;
+        text-align: left;
+      }
+
+      b {
+        font-size: 20px;
+        display: block;
+        font-weight: 700;
+        color: $orange;
+        margin-bottom: 8px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+        }
+      }
+
+      p {
+        @include media-breakpoint-up(xl) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

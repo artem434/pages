@@ -817,13 +817,19 @@ a {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    font-size: 46px;
+    font-size: 43px;
     margin-bottom: 32px;
-    max-width: 600px;
+    max-width: 900px;
+    line-height: 1.4;
   }
 }
 .hero__title span {
   color: #44a900;
+}
+@media (min-width: 1200px) {
+  .hero__title span {
+    display: block;
+  }
 }
 .hero__dec {
   width: 730px;
@@ -1514,7 +1520,7 @@ a {
   .registration__list {
     padding-top: 0;
     font-size: 16px;
-    gap: 20px;
+    gap: 16px;
   }
 }
 @media (min-width: 1200px) {

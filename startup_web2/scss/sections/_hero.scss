@@ -98,13 +98,17 @@
     line-height: 1;
 
     @include media-breakpoint-up(xl) {
-      font-size: 46px;
+      font-size: 43px;
       margin-bottom: 32px;
-      max-width: 600px;
+      max-width: 900px;
+      line-height: 1.4;
     }
 
     span {
       color: #44a900;
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
     }
   }
 

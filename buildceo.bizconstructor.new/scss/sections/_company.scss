@@ -25,6 +25,7 @@
       }
     }
     b {
+      max-width: 360px;
       font-size: 36px;
       margin-top: 10px;
       display: block;
@@ -34,9 +35,14 @@
       width: 100%;
       text-transform: none;
       @include media-breakpoint-up(xl) {
-        font-size: 54px;
-
+        font-size: 70px;
+        max-width: 660px;
         margin-bottom: 48px;
+      }
+
+      i {
+        display: block;
+        text-align: right;
       }
     }
   }
@@ -46,6 +52,7 @@
 
     @include media-breakpoint-up(xl) {
       max-width: 860px;
+      margin-left: auto;
       font-size: 20px;
     }
   }

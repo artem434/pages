@@ -1,84 +1,72 @@
 .methodology {
-  background: rgba(247, 247, 247, 0.8);
-  color: #000;
-  overflow: hidden;
+  background: $greay;
+  color: $white;
 
   .container {
     @extend%content!optional;
     position: relative;
     padding-top: 36px;
-    padding-bottom: 36px;
-
-    &::before {
-      position: absolute;
-      top: -505px;
-      right: -503px;
-      width: 500px;
-      height: 250px;
-      transform: rotate(-5.822deg);
-      border-radius: 400px/200px;
-      background: #db2b1e;
-      z-index: -1;
-      z-index: 111;
-
-      @include media-breakpoint-up(xl) {
-        content: "";
-        top: -97px;
-        width: 400px;
-        height: 200px;
-        left: inherit;
-        right: -60px;
-      }
-    }
+    padding-bottom: 140px;
 
     @include media-breakpoint-up(xl) {
-      padding-bottom: 90px;
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: url(../img/methodology-img.png) center no-repeat;
+      height: 122px;
+      width: 358px;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        width: 897.902px;
+        height: 282.978px;
+        left: inherit;
+        right: 0;
+        right: -305px;
+        top: 57px;
+      }
     }
   }
 
   &__content {
-    //max-width: 612px;
+    max-width: 612px;
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 800;
     margin-bottom: 18px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
 
     @include media-breakpoint-up(xl) {
-      font-size: 42px;
-      margin-bottom: 12px;
+      font-size: 38px;
+      margin-bottom: 28px;
+      text-align: left;
     }
 
-    span {
-      color: $orange;
-      display: block;
+    b {
+      @include media-breakpoint-up(xl) {
+        display: block;
+        text-align: right;
+      }
     }
   }
 
   &__text {
-    color: #000;
+    color: #cdcdcd;
     @include media-breakpoint-up(xl) {
       font-size: 18px;
-      display: flex;
-      justify-content: space-between;
+      padding-left: 86px;
     }
     p {
       &:first-child {
         margin-bottom: 12px;
-
-        @include media-breakpoint-up(xl) {
-          margin-bottom: 0;
-          width: 480px;
-        }
-      }
-
-      &:last-child {
-        @include media-breakpoint-up(xl) {
-          width: 408px;
-        }
       }
     }
   }
@@ -88,18 +76,12 @@
     display: none;
 
     @include media-breakpoint-up(xl) {
-      margin-top: 0px;
+      margin-top: 44px;
       display: block;
     }
 
     .btn-page {
       margin: 0 auto;
-
-      @include media-breakpoint-up(xl) {
-        position: absolute;
-        bottom: 50px;
-        right: 10px;
-      }
     }
   }
 }

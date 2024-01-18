@@ -18,13 +18,14 @@
     margin-bottom: 36px;
 
     span {
-      color: $orange;
+      color: $white;
+      background-color: $orange;
+      padding: 0 6px;
     }
 
     @include media-breakpoint-up(xl) {
       font-size: 42px;
       margin-bottom: 62px;
-      text-align: left;
     }
   }
 
@@ -34,20 +35,14 @@
     margin: 0 auto;
     display: flex;
     flex-flow: column;
-    gap: 10px;
+    gap: 54px;
   }
 
   .item {
     display: flex;
     justify-content: normal;
-    align-items: flex-start;
+    align-items: center;
     flex-flow: wrap;
-    padding-bottom: 10px;
-    border-bottom: dashed 1px #e2e2e2;
-
-    @include media-breakpoint-up(xl) {
-      align-items: center;
-    }
 
     &__speaker {
       display: none;
@@ -61,26 +56,30 @@
 
       .item__more {
         &:before {
-          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='37' viewBox='0 0 37 37' fill='none'%0A%3E%3Crect x='0.5' y='0.500732' width='36' height='36' rx='18' stroke='%23E2E2E2' stroke-dasharray='5 5' /%3E%3Cpath d='M13 20.0007V17.0007H24V20.0007H13Z' fill='%231F2229' /%3E%3C/svg%3E%0A")
+          background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3C/svg%3E%0A")
             50% / contain no-repeat;
+        }
+
+        &:after {
+          content: "МЕНШЕ";
         }
       }
     }
 
     &__number {
-      font-size: 20px;
-      width: 46px;
+      font-size: 34px;
+      width: 62px;
       color: $orange;
-      font-weight: 400;
+      font-weight: 700;
       @include media-breakpoint-up(xl) {
-        width: 60px;
-        font-size: 20px;
+        width: 120px;
+        font-size: 38px;
       }
     }
     &__title {
-      width: calc(100% - 96px);
-      font-size: 20px;
-      font-weight: 400;
+      width: calc(100% - 150px);
+      font-size: 18px;
+      font-weight: 700;
       color: $black;
       @include media-breakpoint-up(xl) {
         width: calc(100% - 270px);
@@ -97,7 +96,7 @@
       justify-content: space-between;
       align-items: center;
       margin-left: auto;
-      width: 36px;
+      width: 80px;
       cursor: pointer;
 
       @include media-breakpoint-up(xl) {
@@ -107,9 +106,9 @@
 
       &:before {
         content: "";
-        width: 37px;
-        height: 37px;
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='38' viewBox='0 0 37 38' fill='none'%3E%3Crect x='0.5' y='0.541016' width='36' height='36' rx='18' stroke='%23E2E2E2' stroke-dasharray='5 5'/%3E%3Cpath d='M24.424 17.121V20.049H20.248V24.129H17.152V20.049H13V17.121H17.152V13.041H20.248V17.121H24.424Z' fill='%231F2229'/%3E%3Cpath d='M13 20.041V17.041H24V20.041H13Z' fill='%231F2229'/%3E%3C/svg%3E")
+        width: 12px;
+        height: 12px;
+        background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='11' width='22' height='4' fill='%23FF8129'/%3E%3Crect x='11.5' y='24' width='22' height='4' transform='rotate(-90 11.5 24)' fill='%23FF8129'/%3E%3C/svg%3E%0A")
           50% / contain no-repeat;
 
         @include media-breakpoint-up(xl) {
@@ -119,6 +118,12 @@
       }
 
       &:after {
+        content: "БІЛЬШЕ";
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      &:before {
       }
     }
 
@@ -127,7 +132,6 @@
       padding-left: 62px;
       max-height: 0;
       overflow: hidden;
-      list-style-type: disc;
       transition: 0.3s ease;
 
       @include media-breakpoint-up(xl) {
@@ -136,11 +140,13 @@
       }
 
       li {
-        padding-left: 0px;
+        padding-left: 20px;
         background-position: 0 0;
-        // background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.02381 0.5L9.56122 1.66044L8.41837 5.45824L12.5 6.77692L6.92177 12.5L3.46599 11.6297L4.60884 7.46264L0.5 6.32857L6.02381 0.5Z' fill='%23FF8129'/%3E%3C/svg%3E%0A")
-        //   0 4px no-repeat;
-
+        background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.02381 0.5L9.56122 1.66044L8.41837 5.45824L12.5 6.77692L6.92177 12.5L3.46599 11.6297L4.60884 7.46264L0.5 6.32857L6.02381 0.5Z' fill='%23FF8129'/%3E%3C/svg%3E%0A")
+          0 4px no-repeat;
+        @include media-breakpoint-up(xl) {
+          padding-left: 34px;
+        }
         &:not(:last-child) {
           margin-bottom: 10px;
         }

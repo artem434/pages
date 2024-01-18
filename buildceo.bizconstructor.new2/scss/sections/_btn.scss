@@ -1,0 +1,78 @@
+.btn-page {
+  background-color: $orange;
+  font-size: 22px;
+  color: $white;
+  width: 100%;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-weight: 700;
+  max-width: 375px;
+  text-transform: uppercase;
+  border-radius: 36px;
+
+  &:hover {
+    background-color: #db5c00;
+  }
+}
+
+.btn--radius {
+  border-radius: 73px;
+}
+.btn--hero {
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-left: 26px;
+  }
+}
+
+.btn--core {
+  position: relative;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #b8261b;
+  }
+}
+
+.btn--pro {
+  position: relative;
+  font-size: 18px;
+  background-color: $white;
+  color: $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+
+    &::before {
+      background: #fff
+        url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_130_235)'%3E%3Cpath d='M15.0002 3.8335L13.6489 5.18475L18.9964 10.5418L2 10.5418L2 12.4585L18.9964 12.4585L13.6489 17.8156L15.0002 19.1668L22.6668 11.5002L15.0002 3.8335Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_130_235'%3E%3Crect width='23' height='23' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+        50% no-repeat;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: $orange
+      url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_130_235)'%3E%3Cpath d='M15.0002 3.8335L13.6489 5.18475L18.9964 10.5418L2 10.5418L2 12.4585L18.9964 12.4585L13.6489 17.8156L15.0002 19.1668L22.6668 11.5002L15.0002 3.8335Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_130_235'%3E%3Crect width='23' height='23' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+      50% no-repeat;
+  }
+}
+.form__btn[disabled] {
+  background: var(--red, linear-gradient(180deg, #ccc 0%, #ccc 100%));
+  color: #514e4e;
+  box-shadow: none;
+  cursor: not-allowed;
+}

@@ -4,9 +4,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  color: #000;
   z-index: 111 !important;
-  background: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
   &__container {
     display: flex;
@@ -18,7 +19,7 @@
   &__logo {
     width: 216px;
     height: 47px;
-    background: url(../img/header__logo.svg) (50% / contain) no-repeat;
+    background: url(../img/header__logo--white.svg) (50% / contain) no-repeat;
   }
 
   &__menu {
@@ -38,23 +39,20 @@
         justify-content: center;
         align-items: center;
         display: inline-flex;
-        background-color: #fff;
+        background: $orange;
         padding: 10px 26px;
         padding-bottom: 12px;
-        border-radius: 36px;
-        border: solid 1px $orange;
-        transition: all 0.3s;
+        background-color: $orange;
 
         &:hover {
-          background-color: $orange;
-          transition: all 0.3s;
-          color: #fff;
+          background-color: #db5c00;
         }
 
         a {
           font-size: 20px;
           text-decoration: none;
           font-weight: 700;
+          color: #fff;
 
           @media (max-width: 1200px) {
             font-size: 16px;
@@ -65,7 +63,7 @@
 
     a {
       font-size: 20px;
-      color: #000;
+      color: $white;
       text-decoration: none;
 
       @media (max-width: 1200px) {
@@ -90,10 +88,10 @@
   }
 
   &.active {
-    background: #fff;
+    background: $greay;
 
     .header__logo {
-      background: url(../img/header__logo.svg) (50% / contain) no-repeat;
+      background: url(../img/header__logo--white.svg) (50% / contain) no-repeat;
     }
 
     .header__menu {
@@ -102,7 +100,7 @@
     }
 
     .header__burger span {
-      background: #000;
+      background: #fff;
 
       &:nth-child(1) {
         transform: translate(1px, 4px) rotate(45deg);
@@ -132,7 +130,7 @@
     left: 0;
     top: 66px;
     text-align: center;
-    background: #fff;
+    background: $greay;
     padding-top: 50px;
     padding-bottom: 46px;
     z-index: 10;
@@ -150,7 +148,7 @@
     }
 
     a {
-      color: #000;
+      color: #fff;
       font-weight: 700;
       font-size: 20px;
     }

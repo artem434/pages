@@ -280,7 +280,6 @@
             <ul class="hero__infos">
               <li><p>Онлайн</p></li>
               <li><p>3 місяці</p></li>
-              <li><p class="cDate">18 січня</p></li>
             </ul>
             <div class="hero__image"></div>
             <h1 class="hero__title">
@@ -798,7 +797,6 @@
               <ul class="block__info">
                 <li><p>Онлайн</p></li>
                 <li><p>3 місяці</p></li>
-                <li><p class="cDate">18 січня</p></li>
               </ul>
             </div>
             <div class="block__form">
@@ -1347,9 +1345,9 @@
         // Дата мероприятия
         let cDate = "18 січня ",
           // Landing id // Online
-          cLandingId = "2108311000797797392",
+          cLandingId = "2108311000817881001",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000797797415",
+          cLandingIdPro = "2108311000817881024",
           // es_mail_id
           cMail_id = "",
           // es_id

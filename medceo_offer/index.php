@@ -1388,9 +1388,9 @@
         // Дата мероприятия
         let cDate = "18 січня ",
           // Landing id // Online
-          cLandingId = "2108311000797797440",
+          cLandingId = "2108311000817881047",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000797797542",
+          cLandingIdPro = "2108311000817881070",
           // es_mail_id
           cMail_id = "",
           // es_id

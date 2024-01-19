@@ -235,6 +235,7 @@ $(".header__burger").on("click", function () {
   $("body").toggleClass("fixed");
 });
 $(document).ready(function () {
+  window.location.href;
   var topElementId = "packages";
   var bottomElementId = "how";
   var $heroBtn = $(".hero__btn");

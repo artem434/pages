@@ -1,0 +1,182 @@
+.program {
+  .container {
+    @extend%content!optional;
+    padding-top: 62px;
+    padding-bottom: 62px;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 120px;
+      padding-bottom: 66px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $white;
+      background-color: $orange;
+      padding: 0 6px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    gap: 54px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-flow: wrap;
+
+    &__speaker {
+      display: none;
+      padding-left: 60px;
+      color: #1f2229;
+      margin-top: 8px;
+
+      @include media-breakpoint-up(xl) {
+        padding-left: 76px;
+      }
+
+      &--bonus {
+        padding: 0;
+        @include media-breakpoint-up(xl) {
+          padding-left: 160px;
+        }
+      }
+
+      b {
+        color: $main-color;
+      }
+    }
+
+    &.active {
+      .item__info {
+        margin-top: 20px;
+        max-height: 10000px;
+      }
+
+      .item__more {
+        &:before {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Crect x='2' y='11' width='22' height='4' fill='%232B6432'/%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+
+        &:after {
+          content: "МЕНШЕ";
+          color: #1f2229;
+        }
+      }
+    }
+
+    &__number {
+      font-size: 34px;
+      width: 62px;
+      color: $main-color;
+      font-weight: 800;
+      @include media-breakpoint-up(xl) {
+        width: 74px;
+        font-size: 64px;
+        margin-right: 32px;
+      }
+
+      &--bonus {
+        width: 156px;
+      }
+    }
+    &__title {
+      width: calc(100% - 150px);
+      font-size: 18px;
+      font-weight: 700;
+      color: #1f2229;
+      @include media-breakpoint-up(xl) {
+        width: calc(100% - 256px);
+        font-size: 28px;
+      }
+
+      span {
+        color: $main-color;
+      }
+    }
+
+    &__more {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: auto;
+      width: 80px;
+      cursor: pointer;
+
+      @include media-breakpoint-up(xl) {
+        width: 100px;
+        font-size: 18px;
+      }
+
+      &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Crect x='2' y='11' width='22' height='4' fill='%232B6432'/%3E%3Crect x='11' y='24' width='22' height='4' transform='rotate(-90 11 24)' fill='%232B6432'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+
+        @include media-breakpoint-up(xl) {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      &:after {
+        content: "БІЛЬШЕ";
+        color: #1f2229;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      &:before {
+      }
+    }
+
+    &__info {
+      width: 100%;
+      padding-left: 62px;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease;
+
+      @include media-breakpoint-up(xl) {
+        padding-left: 120px;
+        font-size: 20px;
+      }
+
+      li {
+        padding-left: 20px;
+        background-position: 0 0;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M5.52381 0L9.06122 1.16044L7.91837 4.95824L12 6.27692L6.42177 12L2.96599 11.1297L4.10884 6.96264L0 5.82857L5.52381 0Z' fill='%23F5C120'/%3E%3C/svg%3E")
+          0 4px no-repeat;
+        color: #1f2229;
+        @include media-breakpoint-up(xl) {
+          padding-left: 34px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

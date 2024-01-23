@@ -454,6 +454,60 @@ h1::after {
   color: var(--accent);
 }
 
+.circle {
+  width: 143px;
+  height: 143px;
+  position: absolute;
+  bottom: -3px;
+  left: 53px;
+  z-index: 2;
+}
+@media (min-width: 1200px) {
+  .circle {
+    width: 233px;
+    height: 233px;
+    left: 350px;
+  }
+}
+.circle__bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  animation: rotate 20s linear infinite;
+}
+
+.circle__book {
+  width: 121.483px;
+  height: 106.788px;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  top: -59px;
+  left: -56px;
+}
+
+@media (min-width: 1200px) {
+  .circle__book {
+    width: 197.941px;
+    height: 173.997px;
+    top: -96px;
+    left: -91px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
 .hero {
   position: relative;
 }
@@ -557,7 +611,7 @@ h1::after {
 .hero__images {
   position: relative;
   display: flex;
-  margin-top: 136px;
+  margin-top: 36px;
   column-gap: 20px;
 }
 
@@ -594,11 +648,18 @@ h1::after {
   font-size: 22px;
   font-weight: 900;
   text-align: center;
-  left: 28%;
+  left: 44%;
   text-transform: uppercase;
   transform: rotate(4.436deg) translateY(-50%);
   top: 50%;
   transition: 0.3s all;
+}
+
+@media (min-width: 1200px) {
+  .hero__images_btn {
+    left: 62%;
+    top: 60%;
+  }
 }
 
 .btn_fixed-bottom-hidden {
@@ -2894,7 +2955,7 @@ a {
     display: none;
   }
   .hero__images_btn {
-    left: 24%;
+    left: 47%;
   }
 
   .hero__btn {
@@ -2950,7 +3011,7 @@ a {
     transform: translate(0px, 100px);
   }
   .hero__images {
-    margin-top: 126px;
+    margin-top: 26px;
   }
 
   .about__image1 {

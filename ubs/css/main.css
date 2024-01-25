@@ -1888,6 +1888,12 @@ a {
     gap: 36px;
   }
 }
+.partners__img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .register {
   padding-top: 72px;
   padding-bottom: 100px;

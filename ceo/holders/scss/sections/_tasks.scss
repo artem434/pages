@@ -1,0 +1,130 @@
+.tasks {
+  padding-top: 60px;
+  color: #fff;
+  position: relative;
+  .tasks-bg {
+    position: absolute;
+    width: 1357px;
+    height: 681px;
+    background-size: cover;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 120px;
+  }
+
+  .container {
+    position: relative;
+
+    &:before {
+      z-index: -1;
+
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        content: "";
+        background: url(../img/ellipse-min.png) no-repeat center;
+        background-size: cover;
+        width: 1600px;
+        height: 1600px;
+        right: -850px;
+        top: -250px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 84px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+    }
+
+    span {
+      display: block;
+      color: #fe5151;
+    }
+
+    b {
+      font-size: 24px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 48px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 172px;
+    margin-bottom: 110px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1060px;
+      margin: 0 auto 130px;
+      gap: 0;
+      justify-content: space-between;
+    }
+    li {
+      text-align: center;
+      max-width: 268px;
+      margin: 0 auto;
+      position: relative;
+
+      &:nth-child(3) {
+        &:before {
+          top: -60px;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url(../img/tasks-dec.png) no-repeat center;
+        width: 195.904px;
+        height: 300px;
+        background-size: cover;
+        top: -68px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @include media-breakpoint-up(xl) {
+          top: -60px;
+        }
+      }
+      b {
+        font-size: 48px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-family: "Lexend Giga", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__description {
+    text-align: left;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    margin: 40px auto 0;
+    text-align: center;
+    .btn-page {
+      margin: 0 auto;
+    }
+  }
+}

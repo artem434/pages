@@ -52,6 +52,12 @@
       max-width: 672px;
     }
     li {
+      span {
+        font-weight: 400;
+        display: block;
+        font-style: italic;
+        color: #ff4545;
+      }
       &:nth-child(odd) {
         color: #fff;
         font-size: 18px;

@@ -257,7 +257,7 @@
               <a href="#program">Структура програми</a>
             </li>
             <li>
-              <a href="#expert">Експерт</a>
+              <a href="#speakers">Експерти</a>
             </li>
             <li>
               <a class="phone" href="tel:+380931701239"
@@ -283,7 +283,7 @@
               програма для <br />
               <span>керівників медичного бізнесу</span>
             </p>
-            <h1>CEO</h1>
+            <h1><span>Medical</span>CEO</h1>
             <p class="hero__subtitle">
               Стань еталонним лідером <br />
               для своєї компанії
@@ -321,9 +321,9 @@
         <div class="about__container">
           <div class="about__info">
             <p class="about__info_text">
-              Цей 3-місячний курс дозволить тобі в найкоротші терміни здобути
-              всі необхідні знання та компетенції, які дозволять тобі стати
-              еталонним CEO для своєї компанії.
+              Цей 3-місячний курс дозволить в найкоротші терміни здобути всі
+              необхідні знання та компетенції, які допоможуть тобі стати
+              еталонним CEO для своєї компанії
             </p>
             <ul class="about__info_list">
               <li>3 місяці навчання в онлайн форматі</li>
@@ -356,23 +356,23 @@
             <h2 class="for__title"><span>ДЛЯ КОГО</span> ПРОГРАМА</h2>
             <div class="for__items">
               <div class="item">
-                <h3 class="item__title">Керівники</h3>
+                <h3 class="item__title">Керівники медичних компаній,</h3>
                 <p class="item__text">
                   які прагнуть вирости професійно та карʼєрно як управлінці
                 </p>
               </div>
               <div class="item">
-                <h3 class="item__title">Власники бізнесу</h3>
-                <p class="item__text">
-                  які прагнуть більш ефективно керувати своїм бізнесом або
-                  виростити CEO всередині компанії
-                </p>
-              </div>
-              <div class="item">
-                <h3 class="item__title">Діючі CEO,</h3>
+                <h3 class="item__title">Діючі CEO медичних компаній,</h3>
                 <p class="item__text">
                   що прагнуть в короткі терміни значно підвищити рівень власних
                   компетенцій
+                </p>
+              </div>
+              <div class="item">
+                <h3 class="item__title">Власники медичного бізнесу,</h3>
+                <p class="item__text">
+                  які прагнуть більш ефективно керувати своїм бізнесом або
+                  виростити CEO всередині компанії
                 </p>
               </div>
             </div>
@@ -447,7 +447,7 @@
           </div>
           <div class="results__block">
             <p class="results__block_title">
-              Програма <span>« <b>Ceo</b> »</span>
+              Програма <span>« <b>Medical CEO</b> »</span>
             </p>
             <div class="results__block_content">
               <p>
@@ -470,39 +470,149 @@
 
       <?php include 'program.php' ?>
 
-      <section class="expert" id="expert">
-        <div class="expert__container">
-          <div class="expert__content">
-            <p class="expert__uptitle">Експерт програми</p>
-            <p class="expert__name">КИРИЛО <b>КУНИЦЬКИЙ</b></p>
-            <p class="expert__prof">
-              Засновник міжнародної <br />освітньо-консалтингової компанії
-              «Бізнес-Конструктор»
-            </p>
-            <ul class="expert__bio">
-              <li>
-                Бізнесмен із 20-річним досвідом управління компаніями у сфері
-                логістики, туризму, постачання промислового обладнання,
-                роздрібної торгівлі, виробництва ювелірних <br />
-                прикрас та IT.
-              </li>
-              <li>
-                Протягом останніх 10 років Кирило особисто консультує власників
-                та топ-менеджмент топових компаній (Епіцентр, Шериф, Планета
-                Кіно, Золотий Вік, G.Bar, Gastro Family, Taryan Group, KAN
-                Development, MTI, Ultra Group та багато інших).
-              </li>
-              <li>
-                Візитна картка Кирила – власні унікальні технології ведення
-                бізнесу, які працюють не тільки в його компаніях, а й успішно
-                впроваджено більш ніж 25 000 підприємств, що є клієнтами
-                компанії «Бізнес-Конструктор».
-              </li>
-            </ul>
+      <section class="speakers" id="speakers">
+        <div class="speakers__container">
+          <div class="speakers__head">
+            <h2 class="speakers__title">Експерти програми</h2>
           </div>
-          <div class="expert__photo">
-            <div class="photo lazy" data-bg="img/expert__photo.jpg"></div>
-          </div>
+          <ul class="speakers__list">
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/kunitsky.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Головний експерт</div>
+                  <div class="speaker__info-name">КИРИЛО <br />КУНИЦЬКИЙ</div>
+                  <div class="speaker__info-desc">
+                    Засновник та CEO міжнародної освітньо-консалтингової
+                    компанії <b>«Бізнес-Конструктор»</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/zukin.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">Вадим <br />Зукін</div>
+                  <div class="speaker__info-desc">
+                    Операційний <br /><b>директор та співвласник</b> <br />
+                    багатопрофільного медичного <br />центру <b>«Лелека»</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/zabolotsky.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">Ярослав <br />Заблоцький</div>
+                  <div class="speaker__info-desc">
+                    Засновник та керівник мережі клінік
+                    <b>«КЛІНІКА ЗАБЛОЦЬКОГО»</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/kitaeva.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">Яна <br />Китаєва</div>
+                  <div class="speaker__info-desc">
+                    Засновниця медичної б’юті-клініки <b>method.clinic</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/chirva.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">Марина <br />Чирва</div>
+                  <div class="speaker__info-desc">
+                    Операційна директорка медичних центрів <b>«Новий Зір»</b> та
+                    <b>«Ексімер»</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/macekh.jpg"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">Олег <br />Мацех</div>
+                  <div class="speaker__info-desc">
+                    Засновник компанії <br /><b>«INSPE»</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/valikhnovski.webp"
+                ></div>
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">
+                    Ростислав <br />Валіхновський
+                  </div>
+                  <div class="speaker__info-desc">
+                    Засновник та СЕО Інституту хірургії
+                    <b>Valikhnovski Surgery Institute</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="speakers__list-item">
+              <div class="speaker">
+                <div class="speaker__info">
+                  <div class="speaker__info-industry">Галузевий експерт</div>
+                  <div class="speaker__info-name">
+                    Роман <br />
+                    Гудима
+                  </div>
+                  <div class="speaker__info-desc">
+                    Власник стоматологічної клініки <b>"Dentaro Garden"</b>,
+                    засновник та головний лектор навчального центру
+                    <b>"Dentaro Study Club"</b>, засновник зуботехнічної
+                    лабораторії <b>"Dentaro Lab"</b>
+                  </div>
+                </div>
+                <div
+                  class="speaker__photo lazy"
+                  data-bg="img/speakers/gudyma.webp"
+                ></div>
+              </div>
+            </li>
+
+            <!-- <li class="speakers__list-decor lazy" data-bg="img/speaker-list-decor.png"></li> -->
+          </ul>
         </div>
       </section>
 
@@ -595,8 +705,7 @@
             <div class="block__content">
               <p class="block__title">ЗАЛИШ <b>ЗАЯВКУ</b></p>
               <p class="block__subtitle">
-                НА ПРОГРАМУ «СЕО» <br />
-                НА СПЕЦІАЛЬНИХ УМОВАХ та отримай бонус
+                НА ПРОГРАМУ «Medical CEO» НА СПЕЦІАЛЬНИХ УМОВАХ та отримай бонус
               </p>
               <ul class="block__info">
                 <li>
@@ -754,7 +863,7 @@
                     value="false"
                     autocomplete="off"
                   />
-                  <input type="hidden" name="send_to_gf" value="ceo" />
+                  <input type="hidden" name="send_to_gf" value="medceo" />
                 </div>
                 <button class="form__btn subm" type="submit">
                   ЗАЛИШИТИ ЗАЯВКУ
@@ -885,35 +994,76 @@
             <div class="swiper-wrapper">
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/1.png"
+                data-bg="img/clients/00.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/2.png"
+                data-bg="img/clients/04.webp"
+              ></div>
+
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/01.svg"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/3.png"
+                data-bg="img/clients/old/ohmylook.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/4.png"
+                data-bg="img/clients/02.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/5.png"
+                data-bg="img/clients/old/atan.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/6.png"
+                data-bg="img/clients/03.svg"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/7.png"
+                data-bg="img/clients/old/castrofamily.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/8.png"
+                data-bg="img/clients/05.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/moyo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/06.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/megogo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/07.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/sherif.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/08.jpg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/kyrag.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/09.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/atan.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
@@ -921,7 +1071,15 @@
               ></div>
               <div
                 class="swiper-slide logo lazy"
+                data-bg="img/clients/old/ohmylook.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
                 data-bg="img/clients/11.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/castrofamily.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
@@ -929,7 +1087,15 @@
               ></div>
               <div
                 class="swiper-slide logo lazy"
+                data-bg="img/clients/old/kino.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
                 data-bg="img/clients/13.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/old/kino.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
@@ -937,19 +1103,7 @@
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/15.png"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/16.png"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/17.png"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/18.png"
+                data-bg="img/clients/old/moyo.png"
               ></div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -1129,15 +1283,15 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000820763575",
+          cLandingId = "2108311000817881001",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000820763552",
+          cLandingIdPro = "2108311000817881024",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://web.bizconstructor.com/crq1lr";
+          cSuccess_url = "https://web.bizconstructor.com/iph8xa";
 
         //  дата скидки (автозамена)
         let dataDeadline;

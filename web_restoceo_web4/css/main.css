@@ -1259,6 +1259,7 @@ a {
 }
 .lecturer__item:nth-child(even) .lecturer__name {
   color: #fb443d;
+  text-transform: uppercase;
 }
 .lecturer__item:nth-child(even) ul li {
   color: #fb443d;
@@ -1268,6 +1269,7 @@ a {
   font-size: 22px;
   font-weight: 800;
   line-height: normal;
+  text-transform: uppercase;
 }
 @media (min-width: 1200px) {
   .lecturer__name {

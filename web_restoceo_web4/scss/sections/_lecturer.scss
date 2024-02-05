@@ -54,6 +54,7 @@
       }
       .lecturer__name {
         color: #fb443d;
+        text-transform: uppercase;
       }
       ul {
         li {
@@ -68,6 +69,7 @@
     font-size: 22px;
     font-weight: 800;
     line-height: normal;
+    text-transform: uppercase;
 
     @include media-breakpoint-up(xl) {
       font-size: 36px;

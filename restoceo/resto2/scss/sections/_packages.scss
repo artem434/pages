@@ -1,0 +1,184 @@
+.packages {
+  background: #f7f7f7;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 51%;
+      bottom: 109px;
+      transform: translate(-50%, 0);
+      background: url(../img/register-decor.png) center no-repeat;
+      width: 1625px;
+      height: 1033px;
+      background-size: contain;
+      z-index: 1;
+    }
+  }
+
+  .container {
+    @extend%content!optional;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 87px;
+      padding-bottom: 96px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 26px;
+    color: $black;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $orange;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    padding: 35px 15px;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    border-radius: 27px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 48px 32px 48px 48px;
+      width: 486px;
+    }
+
+    &__header {
+      text-align: center;
+      background-color: reed;
+    }
+    &__title {
+      font-size: 42px;
+      font-weight: 800;
+      display: inline-flex;
+      padding: 0 5px;
+      line-height: 1;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 62px;
+      }
+    }
+
+    &__info {
+      text-align: left;
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+
+      @include media-breakpoint-up(xl) {
+        gap: 30px;
+      }
+      li {
+        padding-left: 44px;
+        position: relative;
+        font-weight: 400;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+
+        b {
+          font-weight: 800;
+        }
+
+        &::before {
+          content: "";
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M17.5917 6.12003L15.6399 6.12003L15.6329 13.8513L7.20948 5.42789L5.82518 6.81218L14.2486 15.2356L6.51733 15.2287L6.51733 17.1944L17.5917 17.1944L17.5917 6.12003Z' fill='%2304AB1E'/%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+      }
+
+      .no-active {
+        color: #a3a3a3;
+
+        &::before {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M17.5917 6.12003L15.6399 6.12003L15.6329 13.8513L7.20948 5.42789L5.82518 6.81218L14.2486 15.2356L6.51733 15.2287L6.51733 17.1944L17.5917 17.1944L17.5917 6.12003Z' fill='%23a3a3a3'/%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+      }
+    }
+
+    &__btn {
+      z-index: 2;
+    }
+    &--core {
+      background-color: $white;
+      color: $black;
+
+      .item__title {
+        background-color: $main-color;
+        color: $white;
+      }
+    }
+
+    &--pro {
+      background-color: $main-color;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -50px;
+        right: -50px;
+        background: url(../img/package-label.png);
+        width: 124px;
+        background-size: cover;
+        height: 124px;
+        animation: 9s linear 0s normal none infinite running rot;
+      }
+
+      @keyframes rot {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .item__title {
+        background-color: $white;
+        color: $black;
+      }
+
+      .item__info {
+        li {
+          &::before {
+            background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9403 7.14004L17.6632 7.14004L17.6551 16.1599L7.82773 6.33253L6.21271 7.94755L16.0401 17.7749L7.02022 17.7668L7.02022 20.0602H19.9403L19.9403 7.14004Z' fill='white'/%3E%3C/svg%3E%0A")
+              50% / contain no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

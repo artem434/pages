@@ -73,6 +73,10 @@
       font-size: 36px;
       margin-bottom: 8px;
     }
+
+    b {
+      font-weight: 700;
+    }
   }
 
   &__sub-text {
@@ -111,7 +115,10 @@
       }
 
       span {
-        color: #263238;
+        color: #000;
+        b {
+          font-weight: 700;
+        }
       }
     }
   }

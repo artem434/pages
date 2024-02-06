@@ -1,0 +1,239 @@
+.hero {
+  background: #000;
+  background-size: cover;
+  padding-top: 136px;
+  padding-bottom: 56px;
+  z-index: 1;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    background: url(../img/hero-dec-md.png) center no-repeat;
+    width: 520px;
+    height: 1137px;
+    background-size: contain;
+    z-index: 0;
+
+    @include media-breakpoint-up(xl) {
+      background: url(../img/hero-dec-xl.png) center no-repeat;
+      width: 1659px;
+      height: 1353px;
+      top: 86px;
+      background-size: cover;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 136px;
+    padding-bottom: 86px;
+  }
+
+  .container {
+    @extend %content;
+    text-align: center;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1100px;
+    }
+  }
+
+  &__block-foto {
+    height: 183px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      height: 280px;
+    }
+  }
+
+  &__description {
+    background: $main-color;
+    color: $white;
+    text-transform: uppercase;
+    padding: 6px 0;
+    z-index: 1;
+    width: 140%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+
+    @include media-breakpoint-up(xl) {
+      width: 100%;
+      font-size: 24px;
+      border-radius: 22px;
+      padding: 9px 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    b {
+      font-weight: 800;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &--sm {
+      width: 1079px;
+      height: 709px;
+      top: -266px;
+      left: 50%;
+      background-size: contain;
+
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+
+    &--xl {
+      display: none;
+      @include media-breakpoint-up(xl) {
+        display: block;
+        width: 1366px;
+        height: 757px;
+        bottom: -350px;
+        z-index: -1;
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 12px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding-left: 56px;
+      margin-bottom: 24px;
+    }
+
+    span {
+      font-size: 120px;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $orange;
+      display: block;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 200px;
+      }
+    }
+
+    b {
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 56px;
+        text-align: left;
+      }
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    color: $white;
+    font-weight: 500;
+    display: flex;
+    padding-bottom: 28px;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      margin-right: 68px;
+    }
+
+    span {
+      color: $orange;
+      padding: 0 12px;
+    }
+  }
+
+  &__bottom {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      padding-left: 62px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      position: absolute;
+      top: inherit;
+      left: inherit;
+      bottom: 125px;
+      right: 55px;
+      width: 256px;
+    }
+
+    &::after {
+      content: "“";
+      color: $orange;
+      position: absolute;
+      font-style: italic;
+      top: 0;
+      left: -12px;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__btn {
+    width: 340px;
+    height: 56px;
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      left: inherit;
+      transform: translate(0);
+    }
+
+    &.active {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
+
+      @include media-breakpoint-up(md) {
+        left: 0;
+        bottom: 0;
+        transform: translateX(0%);
+        position: relative;
+      }
+    }
+  }
+}

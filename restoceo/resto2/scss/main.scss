@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "./global//mixins";
+@import "./global/variables";
+@import "./global/reset";
+@import "./global/fonts";
+@import "./global/global";
+
+@import "./sections/btn";
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/about";
+@import "./sections/for";
+@import "./sections/results";
+@import "./sections/program";
+@import "./sections/methodology";
+@import "./sections/speakers";
+@import "./sections/packages";
+@import "./sections/register";
+@import "./sections/how";
+@import "./sections/company";
+@import "./sections/clients";
+@import "./sections/footer";

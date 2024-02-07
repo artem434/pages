@@ -976,7 +976,7 @@ a {
   left: 50%;
   transform: translate(-50%, 0);
   width: 355px;
-  height: 257px;
+  height: 271px;
 }
 @media (min-width: 1200px) {
   .hero__img {

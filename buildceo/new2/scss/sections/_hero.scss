@@ -1,0 +1,161 @@
+// .no-webp .hero {
+//   background: url(../img/hero-xl.jpg) top center no-repeat;
+// }
+.hero {
+  // background: url(../img/hero-xl.webp) top center no-repeat;
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 56px;
+  color: #000;
+  @include media-breakpoint-up(xl) {
+    padding-top: 136px;
+    padding-bottom: 86px;
+  }
+
+  .container {
+    @extend %content;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -505px;
+      right: -503px;
+      width: 500px;
+      height: 250px;
+      transform: rotate(-5.822deg);
+      border-radius: 400px/200px;
+      background: #db2b1e;
+      z-index: -1;
+      z-index: 111;
+
+      @include media-breakpoint-up(xl) {
+        top: -124px;
+        width: 700px;
+        height: 350px;
+        left: inherit;
+        right: -600px;
+      }
+    }
+  }
+
+  &__description {
+    color: #2f2f2f;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+      padding-bottom: 38px;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  h1 {
+    color: #2f2f2f;
+    font-size: 152px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 240px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__subtitle {
+    color: $orange;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 34px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 44px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__title-block {
+    @include media-breakpoint-up(xl) {
+      padding-left: 288px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 32px;
+      gap: 44px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    padding-bottom: 28px;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 0;
+      font-size: 22px;
+    }
+
+    span {
+      color: $orange;
+      padding: 0 12px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 28px;
+    position: relative;
+    padding-left: 12px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+      position: absolute;
+      bottom: 78px;
+      left: 0;
+      width: 272px;
+    }
+
+    &::after {
+      content: "“";
+      color: $orange;
+      position: absolute;
+      font-style: italic;
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__btn {
+    position: fixed;
+    z-index: 10;
+    width: 340px;
+    height: 56px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      left: inherit;
+      transform: translate(0);
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+    }
+  }
+}

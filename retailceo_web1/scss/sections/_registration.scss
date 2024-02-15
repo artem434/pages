@@ -1,0 +1,156 @@
+.registration {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  &__dec {
+    position: absolute;
+
+    &--1 {
+      right: -230px;
+      width: 306px;
+      height: 545px;
+      top: 0;
+      z-index: -1;
+    }
+    &--2 {
+      left: -157px;
+      top: 62px;
+      width: 250px;
+      height: 457px;
+      z-index: -1;
+    }
+  }
+
+  &__inner {
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0px 4px 32px 0px rgba(134, 134, 134, 0.24);
+    padding: 20px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      display: flex;
+      width: 836px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    border-radius: 7px;
+    background: #f7f7f8;
+    padding: 20px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__subtitle {
+    color: #263238;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    b {
+      color: #017f4a;
+      display: block;
+      font-size: 18px;
+
+      font-weight: 800;
+    }
+  }
+
+  &__gift {
+    font-size: 18px;
+    color: #263238;
+    font-weight: 800;
+
+    b {
+      color: #2b6432;
+    }
+  }
+  .form {
+    @include media-breakpoint-up(xl) {
+      margin-left: 46px;
+    }
+    &__title {
+      color: #202228;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-top: 22px;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-bottom: 26px;
+      }
+    }
+
+    &__input {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 19px;
+      }
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+    .input__label {
+      color: #666;
+      font-family: "MuseoSansCyrl";
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .btn-page {
+      border: none;
+      margin-bottom: 14px;
+      max-width: 100%;
+    }
+
+    &__notice {
+      color: #1f2229;
+
+      font-size: 12px;
+      font-weight: 300;
+      opacity: 0.3;
+
+      a {
+        text-decoration: underline;
+        color: #1f2229;
+
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}

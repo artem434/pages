@@ -693,7 +693,7 @@ a {
   padding-bottom: 40px;
 }
 .hero .container {
-  padding-bottom: 46px;
+  padding-bottom: 300px;
 }
 @media (min-width: 1200px) {
   .hero .container {

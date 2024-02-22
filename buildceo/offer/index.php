@@ -320,7 +320,7 @@
                   value="false"
                   autocomplete="off"
                 />
-                <input type="hidden" name="send_to_gf" value="buildceo" />
+                <input type="hidden" name="send_to_gf" value="gf_buildceo.offer" />
               </div>
               <button class="form__btn subm" type="submit">
                 <div class="loader">
@@ -1091,7 +1091,7 @@
                     value="false"
                     autocomplete="off"
                   />
-                  <input type="hidden" name="send_to_gf" value="buildceo" />
+                  <input type="hidden" name="send_to_gf" value="gf_buildceo.offer" />
                 </div>
                 <button class="form__btn subm" type="submit">
                   ЗАЛИШИТИ ЗАЯВКУ

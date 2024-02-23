@@ -164,24 +164,213 @@
             <span>В РОЗДРІБНІЙ ТОРГІВЛІ</span>
           </div>
           <h1>Retail CEO</h1>
-          <div class="hero__description d-xl-none">
+          <div class="hero__description">
             Стань еталонним лідером для своєї компанії
           </div>
-          <div class="hero__btn">
-            <a href="#anchor" class="btn-page btn--hero btn--radius btn--fix"
-              >Зареєструватися на програму
-            </a>
-          </div>
-          <div
+
+          <!-- <div
             class="hero__img lazy entered loaded d-xl-none"
             data-bg="img/hero-dec-mob.png"
           ></div>
           <div
             class="hero__img lazy entered loaded d-none d-xl-block"
             data-bg="img/hero-dec.png"
-          ></div>
+          ></div> -->
+          <div class="hero__form">
+            <form class="form zoho_url" id="form" method="post">
+              <div class="hero__form_title">
+                Тільки для учасників <br />
+                ефіру діє <b>знижка 40%</b>
+              </div>
+              <div class="hero__form_sub-block">
+                <ul class="form__package">
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab core_price"
+                      data-id=""
+                    >
+                      <span>CORE</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab pro_price"
+                      data-id=""
+                    >
+                      <span>PRO</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="hero__form_timer">
+                  <div class="hero__timer_item">
+                    <div class="time minutes">10</div>
+                    <span>хв</span>
+                  </div>
+                  <div class="hero__timer_item">
+                    <div class="time seconds">00</div>
+                    <span>сек</span>
+                  </div>
+                  <div class="hero__timer_item">
+                    <div class="time milliseconds">00</div>
+                    <span>міл</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <p class="form__title">Реєстрація</p> -->
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="name"
+                  type="text"
+                  placeholder="Твоє ім’я"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="email"
+                  type="email"
+                  placeholder="Твій email"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Твій номер телефону"
+                  required=""
+                />
+              </label>
+              <div class="hidden">
+                <input type="hidden" name="ref" value="" autocomplete="off" />
+                <input type="hidden" name="ga" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="ym_uid"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_source"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_medium"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_term"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_content"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_campaign"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="google_client_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="landing_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <!-- Landing_id-->
+                <input
+                  type="hidden"
+                  name="es_mail_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="convert_in_zoho"
+                  autocomplete="off"
+                />
+                <input type="hidden" name="es_id" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="token"
+                  value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="success_url"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="error_url"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="false"
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="send_to_gf"
+                  value="gf_retailceo.offer"
+                />
+              </div>
+              <button class="form__btn subm" type="submit">
+                <div class="loader">
+                  <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                  </div>
+                  <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                  </div>
+                  <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                  </div>
+                  <div class="circle">
+                    <div class="dot"></div>
+                    <div class="outline"></div>
+                  </div>
+                </div>
+                Зареєструватися
+              </button>
+              <!-- <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/'>Політикою конфіденційності</a>. <a href="http://refund.bizconstructor.com/">Політика повернення</a>
+                        </p> -->
+            </form>
+          </div>
         </div>
       </section>
+      <div class="hero__btn">
+        <a href="#anchor" class="btn-page btn--hero btn--radius btn--fix"
+          >Зареєструватися
+        </a>
+      </div>
       <div class="ticker">
         <div class="ticker__string">
           <span class="ticker__icon">
@@ -296,6 +485,93 @@
           <span>Бізнес-Конструктор</span>
         </div>
       </div>
+      <section class="packages" id="packages">
+        <div class="container">
+          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
+          <div class="packages__items">
+            <div
+              class="item item--core core_price active__button__id tabs__tab--active"
+              data-id="2108311000835426434"
+            >
+              <div class="item__header">
+                <p class="item__title">CORE</p>
+              </div>
+              <ul class="item__info">
+                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
+                <li><b>13 модулів програми</b></li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом
+                  <b>протягом 3-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(12 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(3 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми <b>3&nbsp;місяцi</b> після її
+                  завершення
+                </li>
+                <!-- <li class="no-active">
+                  <b>Бонусний модуль</b> про юридичні аспекти
+                </li> -->
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--core"
+                id="btn-core"
+                href="#anchor"
+                data-package="core"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
+
+            <div class="item item--pro pro_price" data-id="2108311000835426457">
+              <div class="item__header">
+                <p class="item__title">PRO</p>
+              </div>
+              <ul class="item__info">
+                <li><b>4 місяці </b> навчання в онлайн-форматі</li>
+                <li><b>17 модулів </b> програми</li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом протягом
+                  <b>4-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(16 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(4 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми <b>4&nbsp;місяці</b> після її
+                  завершення
+                </li>
+                <!-- <li><b>Бонусний модуль</b> про юридичні аспекти</li> -->
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--pro"
+                id="btn-pro"
+                href="#anchor"
+                data-package="pro"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="about" id="about">
         <div class="container">
           <div class="about__content">
@@ -1214,94 +1490,6 @@
         </div>
       </section>
 
-      <section class="packages" id="packages">
-        <div class="container">
-          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
-          <div class="packages__items">
-            <div
-              class="item item--core core_price active__button__id tabs__tab--active"
-              data-id="2108311000824689035"
-            >
-              <div class="item__header">
-                <p class="item__title">CORE</p>
-              </div>
-              <ul class="item__info">
-                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>13 модулів програми</b></li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом
-                  <b>протягом 3-х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(12 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(3 онлайн-зустрічі)</b>
-                </li>
-                <li>
-                  Спілкування з іншими учасниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <b>3&nbsp;місяцi</b> після її
-                  завершення
-                </li>
-                <!-- <li class="no-active">
-                  <b>Бонусний модуль</b> про юридичні аспекти
-                </li> -->
-              </ul>
-              <a
-                class="item__btn btn-page btn--radius btn--core"
-                id="btn-core"
-                href="#anchor"
-                data-package="core"
-                >ЗАРЕЄСТРУВАТИСЯ</a
-              >
-            </div>
-
-            <div class="item item--pro pro_price" data-id="2108311000824689058">
-              <div class="item__header">
-                <p class="item__title">PRO</p>
-              </div>
-              <ul class="item__info">
-                <li><b>4 місяці </b> навчання в онлайн-форматі</li>
-                <li><b>17 модулів </b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>4-х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(16 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(4 онлайн-зустрічі)</b>
-                </li>
-                <li>
-                  Спілкування з іншими учасниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <b>4&nbsp;місяці</b> після її
-                  завершення
-                </li>
-                <!-- <li><b>Бонусний модуль</b> про юридичні аспекти</li> -->
-              </ul>
-              <a
-                class="item__btn btn-page btn--radius btn--pro"
-                id="btn-pro"
-                href="#anchor"
-                data-package="pro"
-                >ЗАРЕЄСТРУВАТИСЯ</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="register" id="register">
         <div class="container">
           <h3 class="register__title">
@@ -1337,7 +1525,7 @@
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab core_price"
-                      data-id="2108311000824689035"
+                      data-id="2108311000835426434"
                     >
                       <span>CORE</span>
                     </div>
@@ -1345,7 +1533,7 @@
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab pro_price active__button__id tabs__tab--active"
-                      data-id="2108311000824689058"
+                      data-id="2108311000835426457"
                     >
                       <span>PRO</span>
                     </div>
@@ -4277,7 +4465,7 @@
                   <input
                     type="hidden"
                     name="success_url"
-                    value="https://web.bizconstructor.com/gbr7rm"
+                    value="https://retailceo.bizconstructor.com/offer/thanks.html"
                     autocomplete="off"
                   />
                   <input
@@ -4292,7 +4480,11 @@
                     value="false"
                     autocomplete="off"
                   />
-                  <input type="hidden" name="send_to_gf" value="r_ceo" />
+                  <input
+                    type="hidden"
+                    name="send_to_gf"
+                    value="gf_retailceo.offer"
+                  />
                 </div>
                 <button class="form__btn btn-page subm" type="submit">
                   ЗАЛИШИТИ ЗАЯВКУ
@@ -4652,15 +4844,16 @@
         // Дата мероприятия
         let cDate = "16 листопада ",
           // Landing id // Online
-          cLandingId = "2108311000824689035",
+          cLandingId = "2108311000835426434",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000824689058",
+          cLandingIdPro = "2108311000835426457",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://web.bizconstructor.com/gbr7rm";
+          cSuccess_url =
+            "https://retailceo.bizconstructor.com/offer/thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;
@@ -4822,6 +5015,44 @@
       setTimeout(function () {
         $(".packages-btns__pack-name.pro_price").click();
       }, 0);
+    </script>
+    <script>
+      var minutesLabel = document.querySelector(".time.minutes");
+      var secondsLabel = document.querySelector(".time.seconds");
+      var millisecondsLabel = document.querySelector(".time.milliseconds");
+
+      var totalMilliseconds = 600000;
+      var interval = setInterval(setTime, 10);
+
+      function setTime() {
+        totalMilliseconds -= 10;
+        var minutes = Math.floor(totalMilliseconds / 60000);
+        var seconds = Math.floor((totalMilliseconds % 60000) / 1000);
+        var milliseconds = totalMilliseconds % 1000;
+
+        minutesLabel.textContent = padValue(minutes);
+        secondsLabel.textContent = padValue(seconds);
+        millisecondsLabel.textContent = padValueMilliseconds(milliseconds);
+
+        if (totalMilliseconds <= 0) {
+          clearInterval(interval);
+          alert("Час вийшов!");
+          resetTimer();
+          interval = setInterval(setTime, 10);
+        }
+      }
+
+      function resetTimer() {
+        totalMilliseconds = 600000;
+      }
+
+      function padValue(value) {
+        return value.toString().padStart(2, "0");
+      }
+
+      function padValueMilliseconds(value) {
+        return value.toString().padStart(3, "0").slice(0, 2);
+      }
     </script>
   </body>
 </html>

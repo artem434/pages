@@ -39,15 +39,18 @@ $.get("https://ipapi.co/json/", function (obj) {
   });
 });
 
-$("form [type=sumbit]").on("click", function (e) {
+$("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
+  form.find(".subm").prop("disabled", true);
+  setCookie("name", $('input[name="name"]').val(), 365);
+  setCookie("email", $('input[name="email"]').val(), 365);
+  setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 1000);
 });
-
 function validate(formid) {
   var output = false;
   form = $(formid);
@@ -261,3 +264,48 @@ $(document).ready(function () {
   }
   hidePackagesBtn();
 });
+
+// Функция, которая будет вызываться при вхождении и выходе из блока #hero
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Пользователь видит блок #hero
+      hideButton();
+    } else {
+      // Пользователь не видит блок #hero
+      showButton();
+    }
+  });
+}
+
+// Функция для скрытия кнопки
+function hideButton() {
+  var button = document.querySelector(".hero__btn");
+  button.style.display = "none";
+}
+
+// Функция для отображения кнопки
+function showButton() {
+  var button = document.querySelector(".hero__btn");
+  button.style.display = "flex";
+}
+
+// Создаем новый экземпляр IntersectionObserver
+var observer = new IntersectionObserver(handleIntersection, {
+  root: null, // null означает viewport
+  rootMargin: "0px",
+  threshold: 0.5, // Когда блок #hero виден на половину
+});
+
+// Наблюдаем за блоком #hero
+var heroBlock = document.getElementById("hero");
+if (heroBlock) {
+  observer.observe(heroBlock);
+}
+
+// Скрываем кнопку при начальной загрузке, если #hero видим
+if (heroBlock && heroBlock.getBoundingClientRect().top < window.innerHeight) {
+  hideButton();
+} else {
+  showButton();
+}

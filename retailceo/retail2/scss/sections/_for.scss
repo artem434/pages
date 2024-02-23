@@ -1,0 +1,118 @@
+.for {
+  .container {
+    @extend%content!optional;
+    color: #fff;
+    background: #1f2229;
+    padding: 40px 20px;
+    border-radius: 27px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      border-radius: 57px;
+      padding: 56px 110px;
+      max-width: 1140px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $white;
+      background-color: $main-color;
+      padding: 0 6px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+      margin-bottom: 62px;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: space-between;
+      gap: 55px;
+    }
+
+    li {
+      text-align: left;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 394px;
+
+        &:nth-child(2) {
+          max-width: 368px;
+        }
+
+        &:nth-child(3) {
+          max-width: 368px;
+        }
+      }
+      hr {
+        width: 44px;
+        height: 4px;
+        background-color: $orange;
+        border: none;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 18px;
+
+        @include media-breakpoint-up(xl) {
+        }
+      }
+
+      b {
+        font-size: 22px;
+        display: block;
+        font-weight: 700;
+        color: $orange;
+        margin-bottom: 8px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 414.497px;
+    height: 385.414px;
+    position: absolute;
+    bottom: -147px;
+    right: -269px;
+    z-index: 0;
+
+    @include media-breakpoint-up(xl) {
+      width: 391px;
+      height: 337.906px;
+      right: 142px;
+      bottom: -88px;
+    }
+  }
+}

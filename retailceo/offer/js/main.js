@@ -233,7 +233,8 @@ $(".header__burger").on("click", function () {
   $("body").toggleClass("fixed");
 });
 
-$(document).ready(function () {
+if (window.innerWidth < 767) {
+  console.log("sss");
   function hidePackagesBtn() {
     let target = document.querySelector("#packages");
     let btn = document.querySelector(".btn--hero");
@@ -263,49 +264,48 @@ $(document).ready(function () {
     });
   }
   hidePackagesBtn();
-});
+  // Функция, которая будет вызываться при вхождении и выходе из блока #hero
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Пользователь видит блок #hero
+        hideButton();
+      } else {
+        // Пользователь не видит блок #hero
+        showButton();
+      }
+    });
+  }
 
-// Функция, которая будет вызываться при вхождении и выходе из блока #hero
-function handleIntersection(entries, observer) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      // Пользователь видит блок #hero
-      hideButton();
-    } else {
-      // Пользователь не видит блок #hero
-      showButton();
-    }
+  // Функция для скрытия кнопки
+  function hideButton() {
+    var button = document.querySelector(".hero__btn");
+    button.style.display = "none";
+  }
+
+  // Функция для отображения кнопки
+  function showButton() {
+    var button = document.querySelector(".hero__btn");
+    button.style.display = "flex";
+  }
+
+  // Создаем новый экземпляр IntersectionObserver
+  var observer = new IntersectionObserver(handleIntersection, {
+    root: null, // null означает viewport
+    rootMargin: "0px",
+    threshold: 0.5, // Когда блок #hero виден на половину
   });
-}
 
-// Функция для скрытия кнопки
-function hideButton() {
-  var button = document.querySelector(".hero__btn");
-  button.style.display = "none";
-}
+  // Наблюдаем за блоком #hero
+  var heroBlock = document.getElementById("hero");
+  if (heroBlock) {
+    observer.observe(heroBlock);
+  }
 
-// Функция для отображения кнопки
-function showButton() {
-  var button = document.querySelector(".hero__btn");
-  button.style.display = "flex";
-}
-
-// Создаем новый экземпляр IntersectionObserver
-var observer = new IntersectionObserver(handleIntersection, {
-  root: null, // null означает viewport
-  rootMargin: "0px",
-  threshold: 0.5, // Когда блок #hero виден на половину
-});
-
-// Наблюдаем за блоком #hero
-var heroBlock = document.getElementById("hero");
-if (heroBlock) {
-  observer.observe(heroBlock);
-}
-
-// Скрываем кнопку при начальной загрузке, если #hero видим
-if (heroBlock && heroBlock.getBoundingClientRect().top < window.innerHeight) {
-  hideButton();
-} else {
-  showButton();
+  // Скрываем кнопку при начальной загрузке, если #hero видим
+  if (heroBlock && heroBlock.getBoundingClientRect().top < window.innerHeight) {
+    hideButton();
+  } else {
+    showButton();
+  }
 }

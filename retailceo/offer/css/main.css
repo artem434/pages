@@ -424,12 +424,13 @@ a {
 .btn--core {
   position: relative;
   font-size: 18px;
-}
-.btn--core:hover {
   background-color: #f5c120;
 }
+.btn--core:hover {
+  background-color: #2b6432;
+}
 .btn--core:hover:before {
-  background: url(../img/btn-hero-hover.png) no-repeat center;
+  background: url(../img/btn-hero.png) no-repeat center;
 }
 .btn--core::before {
   content: "";
@@ -720,7 +721,7 @@ a {
 }
 .hero__btn {
   width: 77%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -731,7 +732,6 @@ a {
   color: #fff;
   border-radius: 41px;
   transition: var(--transition);
-  display: none;
 }
 
 .hero__btn:hover {
@@ -1741,6 +1741,13 @@ a {
 .results__btn .btn-page:hover {
   background-color: #f5c120;
   color: #fff;
+}
+
+.methodology__btn .btn-page {
+  background-color: #2b6432;
+}
+.methodology__btn .btn-page:hover {
+  background-color: #f5c120;
 }
 
 .program .container {

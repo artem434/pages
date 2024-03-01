@@ -548,7 +548,7 @@ a {
   background: #000;
   background-size: cover;
   padding-top: 136px;
-  padding-bottom: 56px;
+  padding-bottom: 76px;
   z-index: 1;
   position: relative;
 }
@@ -575,8 +575,8 @@ a {
 }
 @media (min-width: 1200px) {
   .hero {
-    padding-top: 136px;
-    padding-bottom: 86px;
+    padding-top: 203px;
+    padding-bottom: 136px;
   }
 }
 .hero .container {
@@ -608,7 +608,7 @@ a {
   width: 140%;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: -54px;
   transform: translate(-50%, 0);
 }
 @media (min-width: 1200px) {
@@ -624,35 +624,6 @@ a {
 }
 .hero__description b {
   font-weight: 800;
-}
-.hero__photo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.hero__photo--sm {
-  width: 1079px;
-  height: 709px;
-  top: -266px;
-  left: 50%;
-  background-size: contain;
-}
-@media (min-width: 1200px) {
-  .hero__photo--sm {
-    display: none;
-  }
-}
-.hero__photo--xl {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .hero__photo--xl {
-    display: block;
-    width: 1366px;
-    height: 757px;
-    bottom: -350px;
-    z-index: -1;
-  }
 }
 .hero h1 {
   margin-bottom: 12px;
@@ -694,18 +665,83 @@ a {
     text-align: left;
   }
 }
+.hero__subtitle {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 22px;
+}
+@media (min-width: 1200px) {
+  .hero__subtitle {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+.hero__subtitle span {
+  color: #fb443d;
+}
+@media (min-width: 1200px) {
+  .hero__subtitle span {
+    display: block;
+  }
+}
+.hero__logos {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  position: relative;
+  padding: 6px;
+}
+@media (min-width: 1200px) {
+  .hero__logos {
+    padding: 10px 0;
+  }
+}
+.hero__logos--last {
+  margin-bottom: 18px;
+}
+.hero__logos--last::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='617' height='2' viewBox='0 0 617 2' fill='none'%3E%3Cpath d='M0 1H617' stroke='%2304AB1E' stroke-dasharray='10 10'/%3E%3C/svg%3E");
+}
+.hero__logos::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='617' height='2' viewBox='0 0 617 2' fill='none'%3E%3Cpath d='M0 1H617' stroke='%2304AB1E' stroke-dasharray='10 10'/%3E%3C/svg%3E");
+}
+.hero__logo {
+  background: 50%/contain no-repeat;
+  height: 42px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .hero__logo {
+    height: 66px;
+  }
+}
 .hero__info {
   font-size: 18px;
   color: #ffffff;
   font-weight: 500;
   display: flex;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
   justify-content: center;
 }
 @media (min-width: 1200px) {
   .hero__info {
     font-size: 22px;
-    margin-right: 68px;
+    margin: 0 auto 42px;
   }
 }
 .hero__info span {
@@ -715,18 +751,30 @@ a {
 @media (min-width: 1200px) {
   .hero__bottom {
     display: flex;
-    padding-left: 62px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 384px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__bottom-2 {
+    width: 618px;
+    position: absolute;
+    bottom: -118px;
+    right: 0;
   }
 }
 .hero__text {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   font-style: italic;
-  position: relative;
   position: absolute;
-  top: -32px;
-  left: 0;
+  bottom: -62px;
+  left: 50%;
+  width: -moz-max-content;
+  width: max-content;
+  transform: translate(-50%, 0);
   text-align: left;
 }
 @media (min-width: 1200px) {
@@ -735,8 +783,9 @@ a {
     position: absolute;
     top: inherit;
     left: inherit;
-    bottom: 125px;
-    right: 55px;
+    bottom: -68px;
+    left: 16px;
+    transform: translate(0, 0);
     width: 256px;
   }
 }
@@ -754,12 +803,18 @@ a {
 .hero__btn {
   width: 340px;
   height: 56px;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .hero__btn {
     position: relative;
     left: inherit;
     transform: translate(0);
+  }
+}
+@media (min-width: 1200px) {
+  .hero__btn .btn-page {
+    margin: 0 auto;
   }
 }
 .hero__btn.active {

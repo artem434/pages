@@ -361,6 +361,7 @@ a {
   --animation: 2s ease-in-out infinite;
   opacity: 0.6;
 }
+
 .loading .loader .circle {
   display: flex;
   align-items: center;
@@ -374,6 +375,7 @@ a {
   background-color: transparent;
   animation: circle-keys var(--animation);
 }
+
 .loading .loader .circle .dot {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -383,6 +385,7 @@ a {
   background-color: var(--color);
   animation: dot-keys var(--animation);
 }
+
 .loading .loader .circle .outline {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -391,42 +394,55 @@ a {
   border-radius: 50%;
   animation: outline-keys var(--animation);
 }
+
 .loading .circle:nth-child(2) {
   animation-delay: 0.3s;
 }
+
 .loading .circle:nth-child(2) .dot {
   animation-delay: 0.3s;
 }
+
 .loading .circle:nth-child(2) .outline {
   animation-delay: 1.2s;
 }
+
 .loading .circle:nth-child(3) {
   animation-delay: 0.6s;
 }
+
 .loading .circle:nth-child(3) .dot {
   animation-delay: 0.6s;
 }
+
 .loading .circle:nth-child(3) .outline {
   animation-delay: 1.5s;
 }
+
 .loading .circle:nth-child(4) {
   animation-delay: 0.9s;
 }
+
 .loading .circle:nth-child(4) .dot {
   animation-delay: 0.9s;
 }
+
 .loading .circle:nth-child(4) .outline {
   animation-delay: 1.8s;
 }
+
 .loading .circle:nth-child(5) {
   animation-delay: 1.2s;
 }
+
 .loading .circle:nth-child(5) .dot {
   animation-delay: 1.2s;
 }
+
 .loading .circle:nth-child(5) .outline {
   animation-delay: 2.1s;
 }
+
 .loading .circle:nth-child(1) .outline {
   animation-delay: 0.9s;
 }

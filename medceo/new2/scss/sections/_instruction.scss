@@ -1,0 +1,229 @@
+.instruction {
+  background-color: $white;
+  .container {
+    position: relative;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__icon {
+    border: solid 1px $maincolor;
+    border-radius: 50%;
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  &__arrow {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Crect x='0.6' y='29.8961' width='28.8' height='28.8' rx='14.4' transform='rotate(-90 0.6 29.8961)' stroke='%2300B6FF' stroke-width='1.2'/%3E%3Cpath d='M12 21.4961L18 15.4961L12 9.49609' stroke='%2300B6FF' stroke-width='1.2'/%3E%3C/svg%3E")
+      no-repeat center;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    background-size: cover;
+    transform: rotate(90deg);
+
+    @include media-breakpoint-up(xl) {
+      min-width: 30px;
+      height: 30px;
+      transform: rotate(0deg);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 584px;
+      gap: 14px;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    display: none;
+    margin: 24px auto;
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      right: 144px;
+      top: 50px;
+    }
+
+    .phone {
+      width: 167.007px;
+      height: 337px;
+      transform: rotate(7.34deg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include media-breakpoint-up(xl) {
+        width: 311.218px;
+        height: 628px;
+        transform: rotate(0);
+      }
+
+      &::before {
+        content: "";
+        width: 306px;
+        height: 291px;
+        position: absolute;
+        bottom: 0;
+        left: -76px;
+        background: url(../img/phone_bg_mob.png) no-repeat center;
+        background-size: cover;
+
+        @include media-breakpoint-up(xl) {
+          background: url(../img/phone_bg_desk.png) no-repeat center;
+          width: 530px;
+          height: 669px;
+        }
+      }
+
+      &-active {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .video {
+      position: absolute;
+      top: 38px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 151px;
+    }
+  }
+
+  &__item {
+    border-radius: 14px;
+    background: #f6f6f6;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 12px;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 20px 27px;
+      gap: 30px;
+    }
+
+    &--active {
+      .instruction__arrow {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 18 18' fill='none'%3E%3Crect x='17.64' y='17.64' width='17.28' height='17.28' rx='8.64' transform='rotate(-180 17.64 17.64)' fill='%2300B6FF'/%3E%3Crect x='17.64' y='17.64' width='17.28' height='17.28' rx='8.64' transform='rotate(-180 17.64 17.64)' stroke='%2300B6FF' stroke-width='0.72'/%3E%3Cpath d='M12.6016 10.8008L9.00156 7.20078L5.40156 10.8008' stroke='white' stroke-width='0.72'/%3E%3C/svg%3E")
+          no-repeat center;
+        transform: rotate(0);
+
+        @include media-breakpoint-up(xl) {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    b {
+      font-size: 16px;
+      font-style: normal;
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 12px;
+  width: 290px;
+
+  @include media-breakpoint-up(xl) {
+    width: 60%;
+    min-width: 600px;
+  }
+}
+
+.close {
+  position: absolute;
+  color: $black;
+  top: -21px;
+  right: -21px;
+  font-size: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff8b;
+  border-radius: 50%;
+}

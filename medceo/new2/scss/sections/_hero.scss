@@ -3,7 +3,7 @@
 }
 .hero {
   padding-top: 98px;
-  padding-bottom: 56px;
+  padding-bottom: 0px;
 
   @include media-breakpoint-up(xl) {
     padding-top: 152px;
@@ -157,6 +157,37 @@
       .btn {
         width: auto;
         padding: 0 40px;
+
+        @include media-breakpoint-up(xl) {
+          max-width: 400px;
+        }
+      }
+    }
+
+    .btn-page--full {
+      position: fixed;
+      z-index: 10;
+      width: 340px;
+      height: 56px;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-breakpoint-up(xl) {
+        position: relative;
+        left: inherit;
+        bottom: inherit;
+        left: inherit;
+        transform: translate(0);
+      }
+    }
+
+    .btn-page-nofull {
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        display: inherit;
+        position: relative;
       }
     }
   }
@@ -165,7 +196,7 @@
     width: 355px;
     height: 352px;
     position: absolute;
-    bottom: 88px;
+    bottom: -48px;
     right: -116px;
     z-index: -1;
 

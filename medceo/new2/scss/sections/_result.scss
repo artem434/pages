@@ -73,7 +73,6 @@
   &__header {
     display: flex;
     flex-direction: column;
-    height: 165px;
     padding: 16px 8px;
 
     @include media-breakpoint-up(xl) {

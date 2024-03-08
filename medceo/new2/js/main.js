@@ -208,25 +208,37 @@ const clientsSlider = new Swiper(".clients__slider", {
     },
   },
 });
-// const expertsSlider = new Swiper(".experts__list", {
-//   loop: true,
+const expertsSlider = new Swiper(".experts__list", {
+  //centeredSlides: true,
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
 
-//   breakpoints: {
-//     760: {},
-//     1260: {},
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   on: {
-//     init: function () {
-//       lazyLoadInstance.update();
-//     },
-//   },
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+  breakpoints: {
+    // 760: {
+    //   slidesPerView: 4,
+    // },
+    1200: {
+      slidesPerView: 4,
+      // loop: false,
+    },
+  },
+});
 // });
 
-const expertsSlider = new Swiper(".difficulties__content", {
+const difficultiesSlider = new Swiper(".difficulties__content", {
   //centeredSlides: true,
   loop: false,
   spaceBetween: 20,
@@ -245,32 +257,8 @@ const expertsSlider = new Swiper(".difficulties__content", {
     },
   },
 });
-var copiedBlock = $(".active .item__info").clone();
-copiedBlock.appendTo(".program__text");
-var copiednNumber = $(".active .item__number").clone();
-copiednNumber.appendTo(".program__number");
-
 $(".item__more, .program .item__title").on("click", function () {
-  $(".program__text").empty();
-  $(".program__number").empty();
-
-  if ($(window).width() >= 1200) {
-    window.location.href = "#program-anchor";
-    window.scrollBy(0, 60);
-    $(".active").removeClass("active");
-    $(this).parent().addClass("active");
-  } else {
-    $(this).parent().toggleClass("active");
-  }
-
-  if ($(this).parent().hasClass("active")) {
-    var copiedBlock = $(".active .item__info").clone();
-    var copiednNumber = $(".active .item__number").clone();
-
-    copiedBlock.appendTo(".program__text");
-
-    copiednNumber.appendTo(".program__number");
-  }
+  $(this).parent().toggleClass("active");
 });
 
 $(".packages .item__btn").on("click", function () {
@@ -409,4 +397,21 @@ document.addEventListener("DOMContentLoaded", function () {
     activeItem.classList.add("instruction__item--active");
     activePhone.style.display = "block";
   }
+});
+
+$(document).ready(function () {
+  var topElementId = "packages";
+  var bottomElementId = "footer";
+  var $heroBtn = $(".btn-page--full");
+
+  $(window).scroll(function () {
+    var topOffset = $("#" + topElementId).offset().top;
+    var bottomOffset = $("#" + bottomElementId).offset().top;
+    var scrollPosition = $(window).scrollTop();
+
+    $heroBtn.toggleClass(
+      "d-none",
+      scrollPosition >= topOffset && scrollPosition <= bottomOffset
+    );
+  });
 });

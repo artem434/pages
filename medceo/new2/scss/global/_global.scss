@@ -174,3 +174,28 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px $bg inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+@keyframes runLine {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.line {
+  width: 100000%;
+  height: 45px;
+  background: url(../img/line-bg.png);
+  animation: runLine 40000s linear infinite;
+  background-size: auto 100%;
+
+  @include media-breakpoint-up(xl) {
+    height: 55px;
+  }
+
+  &--blue {
+    background: url(../img/line-bg--blue.png);
+    background-size: auto 100%;
+  }
+}

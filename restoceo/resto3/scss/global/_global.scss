@@ -61,10 +61,11 @@ form input.not_error {
   left: 0;
   &::after {
     content: "";
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGQjQ0M0QiLz4KPC9zdmc+Cg==")
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Crect width='26' height='26' rx='13' transform='matrix(-1 0 0 1 26.0696 0.0395508)' fill='%23FB443D'/%3E%3Cpath d='M10.4446 9.40205L14.2696 13.2271L10.4446 17.0521L11.6279 18.2271L16.6279 13.2271L11.6279 8.22705L10.4446 9.40205Z' fill='white'/%3E%3C/svg%3E")
       center/contain no-repeat;
     width: 30px;
     height: 30px;
+    transform: rotate(180deg);
   }
 }
 
@@ -72,11 +73,10 @@ form input.not_error {
   right: 0;
   &::after {
     content: "";
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGQjQ0M0QiLz4KPC9zdmc+Cg==")
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Crect width='26' height='26' rx='13' transform='matrix(-1 0 0 1 26.0696 0.0395508)' fill='%23FB443D'/%3E%3Cpath d='M10.4446 9.40205L14.2696 13.2271L10.4446 17.0521L11.6279 18.2271L16.6279 13.2271L11.6279 8.22705L10.4446 9.40205Z' fill='white'/%3E%3C/svg%3E")
       center/contain no-repeat;
     width: 30px;
     height: 30px;
-    transform: rotate(180deg);
   }
 }
 

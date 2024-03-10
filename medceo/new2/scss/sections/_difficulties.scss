@@ -17,7 +17,7 @@
     @include media-breakpoint-up(xl) {
       flex-direction: row;
       gap: 26px;
-      padding: 0 66px;
+      padding: 0 106px;
     }
   }
 
@@ -38,6 +38,7 @@
 
     @include media-breakpoint-up(xl) {
       font-size: 16px;
+      max-width: 433px;
       padding: 20px 121px 20px 32px;
     }
     svg {

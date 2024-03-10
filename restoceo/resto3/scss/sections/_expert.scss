@@ -1,0 +1,167 @@
+.expert {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  z-index: 0;
+  position: relative;
+  .container {
+    padding: 0 16px;
+    @include media-breakpoint-up(xl) {
+    }
+  }
+  .title {
+    text-align: center;
+  }
+  &__title {
+    font-size: 26px;
+    color: $black;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $main-color;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  .experts {
+    max-width: 267px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1120px;
+
+      position: relative;
+    }
+    .swiper {
+      overflow: inherit;
+    }
+    &__list {
+    }
+
+    &__item {
+      position: relative;
+
+      .img {
+        width: 267px;
+        height: 403px;
+        background-position: center top;
+        background-size: contain;
+        border-radius: 12px;
+        background-repeat: no-repeat;
+      }
+
+      .img--cover {
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    &__bottom {
+      text-align: left;
+      padding-top: 20px;
+      width: 100%;
+      b {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 4px;
+
+        span {
+          display: block;
+          color: $maincolor;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: normal;
+        span {
+          font-weight: 700;
+          color: $maincolor;
+        }
+      }
+    }
+
+    &__navigation {
+      position: absolute;
+      top: 220px;
+      width: 263px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include media-breakpoint-up(xl) {
+        width: 100%;
+        transform: translate(-50%, 0);
+        left: 50%;
+        z-index: 2;
+      }
+
+      .swiper-button-prev {
+        position: relative;
+        width: 49px;
+        height: 49px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='49' viewBox='0 0 48 49' fill='none'%3E%3Crect width='48' height='48' rx='24' transform='matrix(-1 0 0 1 48 0.5)' fill='%23FB443D'/%3E%3Cpath d='M18.0156 16.4675L26.0481 24.5L18.0156 32.5325L20.5006 35L31.0006 24.5L20.5006 14L18.0156 16.4675Z' fill='white'/%3E%3C/svg%3E")
+          50% no-repeat;
+        background-size: contain;
+        margin-top: 0;
+        transform: rotate(180deg);
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .swiper-button-next {
+        position: relative;
+        width: 49px;
+        height: 49px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='49' viewBox='0 0 48 49' fill='none'%3E%3Crect width='48' height='48' rx='24' transform='matrix(-1 0 0 1 48 0.5)' fill='%23FB443D'/%3E%3Cpath d='M18.0156 16.4675L26.0481 24.5L18.0156 32.5325L20.5006 35L31.0006 24.5L20.5006 14L18.0156 16.4675Z' fill='white'/%3E%3C/svg%3E")
+          50% no-repeat;
+        background-size: contain;
+        margin-top: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .swiper-pagination {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        .swiper-pagination-bullet {
+          background: $maincolor;
+        }
+      }
+    }
+  }
+  .btn-arrows {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      margin-top: 98px;
+
+      .arrow {
+        &--left {
+          left: -150px;
+        }
+
+        &--right {
+          right: -150px;
+        }
+      }
+    }
+  }
+}

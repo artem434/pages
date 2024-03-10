@@ -51,11 +51,45 @@
     align-items: center;
     flex-flow: wrap;
 
+    &__block {
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        flex-direction: row;
+      }
+      p {
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      &-first {
+        margin-bottom: 22px;
+
+        @include media-breakpoint-up(xl) {
+          min-width: 500px;
+          width: 100%;
+        }
+        p {
+          color: #04ab1e;
+        }
+      }
+
+      &-second {
+        margin-bottom: 22px;
+        p {
+          color: #fb443d;
+        }
+      }
+    }
+
     &__speaker {
-      display: block;
+      display: none;
+
       padding-left: 60px;
       color: $white;
       margin-top: 8px;
+
+      b {
+        color: #fb443d;
+      }
 
       @include media-breakpoint-up(xl) {
         padding-left: 76px;
@@ -70,6 +104,7 @@
 
       b {
         color: #fb443d;
+        font-weight: 600;
       }
     }
 

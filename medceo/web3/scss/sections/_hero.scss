@@ -2,7 +2,7 @@
   padding-bottom: 40px;
 
   .container {
-    padding-bottom: 260px;
+    padding-bottom: 280px;
 
     @include media-breakpoint-up(xl) {
       padding-bottom: 40px;
@@ -166,11 +166,11 @@
   &__img {
     margin: 0 auto;
     position: absolute;
-    bottom: -10px;
+    bottom: -49px;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 358.249px;
-    height: 260px;
+    width: 375px;
+    height: 329px;
 
     @include media-breakpoint-up(xl) {
       left: inherit;

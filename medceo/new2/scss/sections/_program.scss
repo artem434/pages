@@ -162,6 +162,10 @@
         border-radius: 12px;
         border: 2px dashed #00b6ff;
         background: rgba(0, 182, 255, 0.06);
+
+        @include media-breakpoint-up(xl) {
+          max-width: 55%;
+        }
       }
     }
     &__content {

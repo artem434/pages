@@ -1,5 +1,6 @@
 .packages {
   background: #f7f7f7;
+  z-index: 0;
   position: relative;
 
   @include media-breakpoint-up(xl) {

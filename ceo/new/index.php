@@ -286,7 +286,7 @@
               програма для <br />
               <span>керівників бізнесу</span>
 
-              <strong>12 березня</strong>
+              <!-- <strong>12 березня</strong> -->
             </p>
             <h1>CEO</h1>
             <p class="hero__subtitle">
@@ -610,9 +610,9 @@
                 <li>
                   <p>3 місяці</p>
                 </li>
-                <li>
+                <!-- <li>
                   <p>12 березня</p>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="block__form">

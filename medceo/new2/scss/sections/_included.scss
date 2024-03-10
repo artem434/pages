@@ -25,7 +25,7 @@
     position: relative;
     @include media-breakpoint-up(xl) {
       display: flex;
-      align-items: center;
+
       flex-direction: row-reverse;
       gap: 78px;
     }
@@ -63,7 +63,7 @@
       @include media-breakpoint-up(xl) {
         font-size: 18px;
         width: 460px;
-        margin-top: 0;
+        margin-top: 34px;
         align-items: self-start;
         gap: 12px;
         padding-left: 22px;

@@ -685,7 +685,7 @@ a {
   padding-bottom: 40px;
 }
 .hero .container {
-  padding-bottom: 260px;
+  padding-bottom: 280px;
 }
 @media (min-width: 1200px) {
   .hero .container {
@@ -853,11 +853,11 @@ a {
 .hero__img {
   margin: 0 auto;
   position: absolute;
-  bottom: -10px;
+  bottom: -49px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 358.249px;
-  height: 260px;
+  width: 375px;
+  height: 329px;
 }
 @media (min-width: 1200px) {
   .hero__img {

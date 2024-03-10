@@ -306,7 +306,7 @@ a {
 }
 
 .btn-page {
-  background-color: #00b6ff;
+  background-color: #9ff565;
   font-size: 22px;
   color: #ffffff;
   width: 100%;
@@ -538,7 +538,7 @@ a {
   }
 }
 .hero h1 span {
-  color: #00b6ff;
+  color: #9ff565;
 }
 .hero__content {
   padding-bottom: 316px;
@@ -588,7 +588,7 @@ a {
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  background-color: #00b6ff;
+  background-color: #9ff565;
   position: absolute;
   top: 20px;
   left: 0;
@@ -625,7 +625,7 @@ a {
 }
 .hero__img b span {
   color: #fff;
-  background-color: #00b6ff;
+  background-color: #9ff565;
   display: inline;
   font-weight: 700;
   font-style: normal;
@@ -676,7 +676,7 @@ a {
 }
 .hero .form {
   border-radius: 8px;
-  border: 2px solid #00b6ff;
+  border: 2px solid #9ff565;
   background: #fff;
   padding: 18px;
 }
@@ -700,7 +700,7 @@ a {
   }
 }
 .hero .form__title span {
-  color: #00b6ff;
+  color: #9ff565;
 }
 .hero .form__items {
   display: flex;
@@ -739,7 +739,7 @@ a {
   width: 100%;
 }
 .hero__bottom-block {
-  background-color: #00b6ff;
+  background-color: #9ff565;
   padding: 20px 15px 20px 18px;
   display: flex;
   flex-direction: column;
@@ -828,7 +828,7 @@ a {
 }
 .main__subtitle b {
   font-weight: 700;
-  color: #00b6ff;
+  color: #9ff565;
 }
 .main__title {
   color: #1f1f1f;
@@ -850,7 +850,7 @@ a {
 .main__title b {
   display: block;
   font-family: 700;
-  color: #00b6ff;
+  color: #9ff565;
 }
 @media (min-width: 1200px) {
   .main__title b {
@@ -861,7 +861,7 @@ a {
   margin-bottom: 22px;
   border-radius: 8px;
   padding: 16px;
-  background-color: #00b6ff;
+  background-color: #9ff565;
 }
 @media (min-width: 1200px) {
   .main__video {
@@ -999,7 +999,7 @@ a {
 }
 
 .footer__social-item {
-  background: #00b6ff;
+  background: #9ff565;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -140,28 +140,6 @@ $('a[href*="#"]')
     }
   });
 
-const lineSlider = new Swiper(".line__slider", {
-  speed: 4000,
-  loop: true,
-  freeMode: true,
-  centeredSlides: true,
-  slidesPerView: 3.5,
-  //freeModeMomentum: false,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-
-  760: {
-    speed: 7000,
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-});
-
 const tickerSlider = new Swiper(".ticker--line", {
   speed: 4000,
   loop: true,
@@ -217,8 +195,8 @@ const expertsSlider = new Swiper(".experts__list", {
     el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".next",
-    prevEl: ".prev",
+    nextEl: ".next-experts",
+    prevEl: ".prev-experts",
   },
 
   on: {
@@ -232,6 +210,7 @@ const expertsSlider = new Swiper(".experts__list", {
     // },
     1200: {
       slidesPerView: 4,
+      loop: true,
       // loop: false,
     },
   },
@@ -241,7 +220,7 @@ const expertsSlider = new Swiper(".experts__list", {
 const difficultiesSlider = new Swiper(".difficulties__content", {
   //centeredSlides: true,
   loop: false,
-  spaceBetween: 20,
+  //spaceBetween: 20,
   slidesPerView: 1,
   pagination: {
     el: ".difficulties-pagination",
@@ -257,7 +236,7 @@ const difficultiesSlider = new Swiper(".difficulties__content", {
     },
   },
 });
-$(".item__more, .program .item__title").on("click", function () {
+$(".item__more, .program .faq .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
 
@@ -400,7 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-  var topElementId = "packages";
+  var topElementId = "register";
   var bottomElementId = "footer";
   var $heroBtn = $(".btn-page--full");
 

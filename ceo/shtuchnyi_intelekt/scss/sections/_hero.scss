@@ -1,0 +1,215 @@
+.no-webp .hero {
+  background: #0b0a09 url(../img/hero-sm.png) top center no-repeat;
+  background-size: contain;
+
+  @include media-breakpoint-up(xl) {
+    background: #0b0a09 url(../img/hero-xl.png) top center no-repeat;
+    background-size: contain;
+  }
+}
+.hero {
+  padding-top: 98px;
+  padding-bottom: 0px;
+  background: #0b0a09 url(../img/hero-sm.webp) top center no-repeat;
+  background-size: cover;
+  background-size: 375px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 152px;
+    padding-bottom: 0;
+    background: #0b0a09 url(../img/hero-xl.webp) top center no-repeat;
+    background-size: contain;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 68px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__subtitle {
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 90px;
+      margin-bottom: 28px;
+      line-height: 1;
+      width: 668px;
+    }
+
+    span {
+      color: $maincolor;
+    }
+  }
+  &__subtitle {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 144px;
+    margin-bottom: 22px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 23px;
+      width: 332px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+    }
+
+    span {
+      margin: 0 12px;
+      color: $maincolor;
+    }
+  }
+
+  &__description {
+    border-radius: 8px 8px 0px 0px;
+    background: #ff8718;
+    width: 249px;
+    padding: 5px 14px 2px 14px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      background: transparent;
+      font-weight: 700;
+      font-size: 26px;
+      padding: 0;
+      width: 100%;
+    }
+
+    b {
+      color: #22165d;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @include media-breakpoint-up(xl) {
+        color: $maincolor;
+      }
+    }
+  }
+
+  &__form {
+    border-radius: 8px;
+    background: #22165d;
+    padding: 20px 14px;
+
+    @include media-breakpoint-up(xl) {
+      width: 379px;
+      padding: 22px 26px;
+    }
+
+    p {
+      color: #fff;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      b {
+        color: $maincolor;
+      }
+    }
+
+    span {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form {
+      &__agree {
+        color: #fff;
+        margin-top: 14px;
+        text-align: center;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .input {
+      border-radius: 3.769px;
+      background: #fff;
+      height: 48px;
+      color: #3a3a3a;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      width: 100%;
+      line-height: 100%;
+      border: none;
+      padding-left: 18px;
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+
+    .btn-page {
+      max-width: 100%;
+      border-radius: 4px;
+      background: #ff8718;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      display: block;
+      padding: 10px 0;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

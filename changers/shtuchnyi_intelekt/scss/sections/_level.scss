@@ -1,0 +1,52 @@
+.level {
+  background: $maincolor;
+
+  .container {
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    text-align: center;
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
+  }
+
+  &__block {
+    text-align: center;
+    max-width: 460px;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
+    p {
+      color: #fff;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 22px 0;
+    }
+  }
+
+  &__btn {
+    .btn-page {
+      background: #22165d;
+      max-width: 100%;
+    }
+  }
+}

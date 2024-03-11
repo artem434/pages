@@ -1391,7 +1391,7 @@ a {
   color: #fb443d;
 }
 .program .item__speaker {
-  display: none;
+  display: block;
   padding-left: 60px;
   color: #ffffff;
   margin-top: 8px;

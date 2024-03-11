@@ -165,7 +165,7 @@ const clientsSlider = new Swiper(".clients__slider", {
 var mySwiper = new Swiper(".swiper-container", {
   loop: true,
   slidesPerView: 1,
-  speed: 3000,
+  speed: 1000,
   centeredSlides: true,
   effect: "coverflow",
   coverflow: {
@@ -181,7 +181,7 @@ var mySwiper = new Swiper(".swiper-container", {
     },
   },
   autoplay: {
-    delay: 1000,
+    delay: 500,
   },
   navigation: {
     nextEl: ".hero-next",
@@ -194,7 +194,7 @@ const expertsSlider = new Swiper(".experts__list", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 1,
-  speed: 3000,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
   },

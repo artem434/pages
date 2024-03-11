@@ -1,0 +1,35 @@
+.title {
+  font-weight: 700;
+  margin-bottom: 32px;
+  font-size: 20px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 44px;
+  }
+  &--small {
+    font-size: 26px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  span {
+    color: $maincolor;
+  }
+  &--big {
+    font-size: 36px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+    }
+
+    b {
+      display: block;
+      color: $maincolor;
+      @include media-breakpoint-up(xl) {
+        font-size: 60px;
+      }
+    }
+  }
+}

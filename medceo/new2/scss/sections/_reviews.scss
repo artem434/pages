@@ -1,0 +1,68 @@
+.reviews {
+  background-color: $white;
+  color: $black;
+  .container {
+    position: relative;
+  }
+
+  .title {
+    text-align: center;
+  }
+  .video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: #000000;
+  }
+
+  .video__embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  &__item {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 600px;
+      padding: 0 60px;
+    }
+  }
+
+  &__block {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    max-width: 346px;
+    height: 192px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 483px;
+      height: 270px;
+      margin-bottom: 0;
+    }
+  }
+
+  .navigation {
+    .swiper-pagination-bullets {
+      display: flex;
+      justify-content: center;
+      margin: 16px auto 0;
+    }
+  }
+}

@@ -236,6 +236,7 @@ const difficultiesSlider = new Swiper(".difficulties__content", {
     },
   },
 });
+
 $(".item__more, .program .faq .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
@@ -303,40 +304,32 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// Функция, вызываемая после загрузки плеера
 function onPlayerReady(event) {
   player = event.target;
 }
 
-// Функция воспроизведения видео и отображения модального окна
 function playVideo() {
   var popup = document.getElementById("popup");
   popup.style.display = "block";
 
-  // Проверяем, что плеер был инициализирован
   if (player) {
     player.playVideo();
   }
 }
 
-// Функция закрытия модального окна и остановки видео
 function closePopup() {
   var popup = document.getElementById("popup");
   popup.style.display = "none";
 
-  // Проверяем, что плеер был инициализирован
   if (player) {
     player.stopVideo();
   }
 }
 
-// Установка слушателя клика на кнопку воспроизведения в модальном окне
 document.getElementById("playButton").addEventListener("click", playVideo);
 
-// Установка слушателя клика на кнопку закрытия модального окна
 document.querySelector(".close").addEventListener("click", closePopup);
 
-// Установка слушателя клика на область вне модального окна для его закрытия
 document.getElementById("popup").addEventListener("click", function (event) {
   if (event.target === this) {
     closePopup();
@@ -344,27 +337,21 @@ document.getElementById("popup").addEventListener("click", function (event) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Получаем все элементы .instruction__item
   var items = document.querySelectorAll(".instruction__item");
 
-  // Устанавливаем активным первый элемент и его соответствующий .instruction__phone
   setActiveItem(items[0]);
 
-  // Добавляем обработчики событий клика для каждого элемента .instruction__item
   items.forEach(function (item) {
     item.addEventListener("click", function () {
       var phone = this.nextElementSibling;
 
-      // Устанавливаем активным текущий элемент и его .instruction__phone
       setActiveItem(this);
     });
   });
 
-  // Функция для установки активного элемента и его .instruction__phone
   function setActiveItem(activeItem) {
     var activePhone = activeItem.nextElementSibling;
 
-    // Удаляем класс активности и скрываем все .instruction__phone
     items.forEach(function (item) {
       item.classList.remove("instruction__item--active");
     });
@@ -372,7 +359,6 @@ document.addEventListener("DOMContentLoaded", function () {
       phone.style.display = "none";
     });
 
-    // Добавляем класс активности и показываем соответствующий .instruction__phone
     activeItem.classList.add("instruction__item--active");
     activePhone.style.display = "block";
   }
@@ -392,5 +378,41 @@ $(document).ready(function () {
       "d-none",
       scrollPosition >= topOffset && scrollPosition <= bottomOffset
     );
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const reviewsSlider = new Swiper(".reviews__content", {
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // Обработчик события при смене слайда
+    on: {
+      slideChange: function () {
+        const currentSlide = this.slides[this.activeIndex];
+        const videoEmbed = currentSlide.querySelector(".video__embed");
+        if (videoEmbed) {
+          const iframe = videoEmbed.querySelector("iframe");
+          if (iframe) {
+            // Если видео запущено, поставим его на паузу
+            if (
+              iframe.contentWindow &&
+              typeof iframe.contentWindow.postMessage === "function"
+            ) {
+              iframe.contentWindow.postMessage(
+                '{"event":"command","func":"pauseVideo","args":""}',
+                "*"
+              );
+            }
+          }
+        }
+      },
+    },
   });
 });

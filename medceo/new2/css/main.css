@@ -2795,6 +2795,69 @@ select:-webkit-autofill:focus {
   }
 }
 
+.reviews {
+  background-color: #ffffff;
+  color: #011132;
+}
+.reviews .container {
+  position: relative;
+}
+.reviews .title {
+  text-align: center;
+}
+.reviews .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
+}
+.reviews .video__embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.reviews__item {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .reviews__item {
+    max-width: 600px;
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.reviews__text {
+  max-width: 346px;
+  height: 192px;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 24px;
+}
+@media (min-width: 1200px) {
+  .reviews__text {
+    max-width: 483px;
+    height: 270px;
+    margin-bottom: 0;
+  }
+}
+.reviews .navigation .swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  margin: 16px auto 0;
+}
+
 .footer {
   margin: 18px;
   background: #000d2c;

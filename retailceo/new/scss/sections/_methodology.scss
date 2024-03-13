@@ -11,6 +11,10 @@
     margin: 84px 0 0;
     padding: 30px;
 
+    &--two {
+      margin-top: 0;
+    }
+
     @include media-breakpoint-up(xl) {
       display: flex;
       align-items: flex-end;

@@ -14,9 +14,12 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
-  $("input[name=email]").val(getCookie("email"));
-  $("input[name=phone]").val(getCookie("phone"));
+  var $form = $(".form.zoho_url-consultation");
+  if ($form.length > 0) {
+    $form.find("input[name=name]").val("user");
+    $form.find("input[name=email]").val("user@gmail.com");
+    $form.find("input[name=phone]").val(getCookie("phone"));
+  }
 });
 const inputElement = document.querySelector('input[name="name"]');
 var lazyLoadInstance = new LazyLoad({
@@ -30,7 +33,7 @@ $.get("https://ipapi.co/json/", function (obj) {
     $("input[name=phone]").val(obj.country_calling_code);
   }
   $("input[name=phone]").intlTelInput({
-    // utilsScript       : '/js/utils.js',
+    utilsScript: "/js/utils.js",
     defaultCountry: "auto",
     separateDialCode: false,
     nationalMode: false,
@@ -39,13 +42,48 @@ $.get("https://ipapi.co/json/", function (obj) {
   });
 });
 
-$("form [type=sumbit]").on("click", function (e) {
+$("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
+  form.find(".subm").prop("disabled", true);
+  setCookie("name", $('input[name="name"]').val(), 365);
+  setCookie("email", $('input[name="email"]').val(), 365);
+  setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 1000);
+});
+
+$(".zoho_url-consultation .subm-consultation").on("click", function (e) {
+  e.preventDefault();
+  var form = $(this).closest("form");
+  form.addClass("loading");
+  form.find(".subm-consultation").prop("disabled", true);
+
+  setTimeout(function () {
+    form.submit();
+    $("#popup").fadeIn();
+  }, 1000);
+});
+
+$(".close").click(function () {
+  $("#popup").fadeOut();
+  $(".zoho_url-consultation").removeClass("loading");
+  var form = $(".zoho_url-consultation");
+  form.find(".subm-consultation").prop("disabled", false);
+});
+
+$(document).on("click", function (e) {
+  var popupContent = $(".popup-content");
+  if (!popupContent.is(e.target) && popupContent.has(e.target).length === 0) {
+    if ($("#popup").is(":visible")) {
+      $("#popup").fadeOut();
+      $(".zoho_url-consultation").removeClass("loading");
+      var form = $(".zoho_url-consultation");
+      form.find(".subm-consultation").prop("disabled", false);
+    }
+  }
 });
 
 function validate(formid) {

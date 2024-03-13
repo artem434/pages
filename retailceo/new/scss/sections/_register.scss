@@ -15,6 +15,10 @@
     }
   }
 
+  &--p0 {
+    padding: 0;
+  }
+
   &__title {
     font-size: 26px;
     color: #000;
@@ -35,7 +39,7 @@
   .block {
     padding: 40px 20px;
     flex-wrap: wrap;
-    gap: 67px;
+    gap: 36px;
     border-radius: 57px;
     border: 2px solid #fff;
     background: #1f2229;
@@ -59,8 +63,8 @@
     }
 
     &__form {
+      width: 100%;
       @include media-breakpoint-up(xl) {
-        width: 100%;
         max-width: 340px;
         position: relative;
       }
@@ -69,7 +73,7 @@
     &__title {
       margin-bottom: 24px;
       color: $orange;
-      font-size: 52px;
+      font-size: 42px;
       line-height: 100%;
       font-weight: 800;
       max-width: 300px;
@@ -241,6 +245,16 @@
         color: $white;
         text-decoration: underline;
       }
+    }
+  }
+
+  .zoho_url-consultation {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 100px;
     }
   }
 }

@@ -909,6 +909,7 @@
                 </div>
                 <div class="instruction__text">
                   <b>Зустрічі Case study</b>
+
                   <p>
                     де ви зможете отримати коментар головного експерта програми
                     Кирила Куницького щодо свого кейсу
@@ -916,13 +917,14 @@
                 </div>
                 <div class="instruction__arrow"></div>
               </div>
+
               <div class="instruction__phone">
                 <div id="popup" class="popup">
                   <div class="popup-content">
                     <div class="video-container">
-                      <div id="player"></div>
+                      <div id="players" class="player"></div>
                     </div>
-                    <span class="close">&times;</span>
+                    <span onclick="closePopup()" class="close">&times;</span>
                   </div>
                 </div>
 
@@ -5696,55 +5698,47 @@
           <h2 class="title title--big">
             <span>Що кажуть</span> учасники про програму?
           </h2>
-          <div class="pause-video-button">dffdf</div>
+
           <div class="reviews__block">
-            <div class="swiper-wrapper">
-              <!-- Слайд с видео -->
-              <div class="swiper-slide">
-                <div class="video__embed">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    frameborder="0"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-              <!-- Другие слайды -->
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-            </div>
+            <div
+              class="reviews__text lazy entered loaded"
+              data-bg="img/reviews-img.png"
+              data-ll-status="loaded"
+              style="background-image: url('img/reviews-img.png')"
+            ></div>
             <div class="reviews__item">
-              <div class="reviews__content swiper">
-                <div class="swiper-slide">
-                  <div class="video__embed">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/video-id1"
-                      frameborder="0"
-                      allowfullscreen
-                    ></iframe>
+              <div class="youtube-slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <iframe
+                        width="500"
+                        height="400"
+                        src="https://www.youtube.com/embed/nol8MGvMt5Q?enablejsapi=1&rel=0"
+                        frameborder="0"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <iframe
+                        width="500"
+                        height="400"
+                        src="https://www.youtube.com/embed/r6RsQFjRG7Y?enablejsapi=1&rel=0"
+                        frameborder="0"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="video__embed">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/video-id2"
-                      frameborder="0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
+
+                <!-- <div class="swiper-button-next"></div> -->
+                <div class="swiper-button-prev"></div>
               </div>
-              <div class="navigation">
-                <div class="swiper-button-prev reviews-prev"></div>
-                <div class="reviews-pagination"></div>
-                <div class="swiper-button-next reviews-next"></div>
-              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>

@@ -282,6 +282,7 @@
     height: 60px;
     display: none;
     text-align: center;
+    text-transform: uppercase;
 
     @include media-breakpoint-up(xl) {
       height: 120px;
@@ -291,7 +292,6 @@
       font-size: 14px;
       font-weight: 700;
       color: #fb443d;
-      text-transform: uppercase;
 
       br {
         display: none;

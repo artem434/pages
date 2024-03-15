@@ -280,14 +280,17 @@ function updateTimer() {
   var now = new Date();
   var friday = new Date(now);
 
-  // Знаходимо наступну п'ятницю
   friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
   friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
 
-  // Обчислюємо різницю в мілісекундах
+  // Перевіряємо, чи вже відбулася п'ятниця цього тижня
+  if (now.getDay() >= 5) {
+    // Якщо так, знаходимо наступну п'ятницю
+    friday.setDate(friday.getDate() + 7);
+  }
+
   var difference = friday - now;
 
-  // Обчислюємо дні, години, хвилини та секунди
   var days = Math.floor(difference / (1000 * 60 * 60 * 24));
   var hours = Math.floor(
     (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -295,18 +298,15 @@ function updateTimer() {
   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  // Додаємо ведучі нулі до годин, хвилин і секунд, якщо вони складають менше двох цифр
   hours = hours < 10 ? "0" + hours : hours;
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  // Оновлюємо відображення таймера
   document.getElementById("days").innerText = days;
   document.getElementById("hours").innerText = hours;
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
 
-  // Оновлюємо кожну секунду
   setTimeout(updateTimer, 1000);
 }
 

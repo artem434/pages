@@ -2821,15 +2821,24 @@ select:-webkit-autofill:focus {
   border: none;
 }
 .reviews__item {
-  max-width: 400px;
-  width: 100%;
   position: relative;
 }
+.reviews__item .youtube-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 @media (min-width: 1200px) {
-  .reviews__item {
+  .reviews__item .youtube-slider {
     max-width: 600px;
-    padding: 0 60px;
   }
+}
+.reviews__item .youtube-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  box-shadow: 0px 0p 8px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 1200px) {
   .reviews__block {

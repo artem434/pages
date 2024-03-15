@@ -823,6 +823,7 @@ a {
   height: 60px;
   display: none;
   text-align: center;
+  text-transform: uppercase;
 }
 @media (min-width: 1200px) {
   .hero__lector-item {
@@ -833,7 +834,6 @@ a {
   font-size: 14px;
   font-weight: 700;
   color: #fb443d;
-  text-transform: uppercase;
 }
 .hero__lector-item b br {
   display: none;

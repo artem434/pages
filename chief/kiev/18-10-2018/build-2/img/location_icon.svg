@@ -1,0 +1,23 @@
+<svg id="location_icon" xmlns="http://www.w3.org/2000/svg" width="20.187" height="22.906" viewBox="0 0 20.187 22.906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-linejoin: round;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M497.537,943c5.022,0,9.094,3.727,9.094,8.324s-4.362,8.3-9.048,12.591c-4.687-4.29-9.14-7.994-9.14-12.591S492.514,943,497.537,943Z" transform="translate(-487.438 -942)"/>
+  <circle class="cls-2" cx="10.078" cy="9.797" r="3.047"/>
+</svg>

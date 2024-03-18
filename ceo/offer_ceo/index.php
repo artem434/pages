@@ -464,10 +464,10 @@
             // let cDate = tomorrowDate.getDate() + ' ' + months[tomorrowDate.getMonth()],
 
                 // Landing id // Online
-                cLandingId = '2108311000820763630',
+                cLandingId = '2108311000844239107',
 
                 // Landing id // Online Pro
-                cLandingIdPro = '2108311000820763657',
+                cLandingIdPro = '2108311000844239130',
 
                 // es_mail_id
                 cMail_id = '',

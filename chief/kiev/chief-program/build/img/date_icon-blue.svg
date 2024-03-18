@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.531" height="22.906" viewBox="0 0 24.531 22.906">
+  <defs>
+    <style> 
+
+      .cls-2 {
+        fill: none;
+        stroke: #3F6EB1;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style> 
+  </defs>
+  <g id="date_icon" class="cls-1">
+    <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" d="M199,945.515h18.52a2,2,0,0,1,2,2v14.393a2,2,0,0,1-2,2H199a2,2,0,0,1-2-2V947.515A2,2,0,0,1,199,945.515Z" transform="translate(-196 -942)"/>
+    <path class="cls-2" d="M197,950.729h22.52v1.6H197v-1.6Z" transform="translate(-196 -942)"/>
+    <path id="Rectangle_1752_copy_4" data-name="Rectangle 1752 copy 4" class="cls-2" d="M202.144,943H202.2a0.851,0.851,0,0,1,.851.852V946.3h-1.761v-2.448A0.851,0.851,0,0,1,202.144,943Z" transform="translate(-196 -942)"/>
+    <path id="Rectangle_1752_copy_4-2" data-name="Rectangle 1752 copy 4" class="cls-2" d="M214.285,943h0.059a0.851,0.851,0,0,1,.851.852V946.3h-1.761v-2.448A0.851,0.851,0,0,1,214.285,943Z" transform="translate(-196 -942)"/>
+  </g>
+</svg>

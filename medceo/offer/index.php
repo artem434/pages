@@ -166,7 +166,7 @@
           <ul class="hero__info">
             <li><p>онлайн</p></li>
             <li><p>3 місяці</p></li>
-            <!-- <li><p class="cDate">18 січня</p></li> -->
+            <li><p > 21 березня</p></li>
           </ul>
           <div class="hero__form">
             <form class="form zoho_url" id="form" method="post">
@@ -839,7 +839,7 @@
               <ul class="block__info">
                 <li><p>Онлайн</p></li>
                 <li><p>3 місяці</p></li>
-                <!-- <li><p class="cDate">18 січня</p></li> -->
+                <li><p > 21 березня</p></li>
               </ul>
             </div>
             <div class="block__form">

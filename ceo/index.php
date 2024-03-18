@@ -552,10 +552,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       	let cDate = '5 вересня',
 
       	// Landing id // Online
-      	cLandingId = '2108311000820763575',
+      	cLandingId = '2108311000844239051',
 
       	// Landing id // Online Pro
-      	cLandingIdPro = '2108311000820763552',
+      	cLandingIdPro = '2108311000844239074',
 
       	// es_mail_id
       	cMail_id = '',

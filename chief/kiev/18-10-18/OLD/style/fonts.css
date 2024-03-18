@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "OpenSans";
+    src:         url("../fonts/OpenSans-Bold.eot");
+    src:         url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Bold.woff") format("woff"),
+                 url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Bold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "OpenSans";
+    src:         url("../fonts/OpenSans-Extrabold.eot");
+    src:         url("../fonts/OpenSans-Extrabold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Extrabold.woff") format("woff"),
+                 url("../fonts/OpenSans-Extrabold.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Extrabold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src:         url("../fonts/OpenSans-Light.eot");
+    src:         url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Light.woff") format("woff"),
+                 url("../fonts/OpenSans-Light.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Light.svg") format("svg");
+    font-style:  normal;
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "OpenSans";
+    src:         url("../fonts/OpenSans-Semibold.eot");
+    src:         url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Semibold.woff") format("woff"),
+                 url("../fonts/OpenSans-Semibold.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Semibold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src:         url("../fonts/OpenSans.eot");
+    src:         url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans.woff") format("woff"),
+                 url("../fonts/OpenSans.ttf") format("truetype"),
+                 url("../fonts/OpenSans.svg") format("svg");
+    font-style:  normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:         url("../fonts/Raleway-ExtraBold.eot");
+    src:         url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Raleway-ExtraBold.woff") format("woff"),
+                 url("../fonts/Raleway-ExtraBold.ttf") format("truetype"),
+                 url("../fonts/Raleway-ExtraBold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:         url("../fonts/Raleway-Medium.eot");
+    src:         url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Raleway-Medium.woff") format("woff"),
+                 url("../fonts/Raleway-Medium.ttf") format("truetype"),
+                 url("../fonts/Raleway-Medium.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:         url("../fonts/Raleway-Bold.eot");
+    src:         url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Bold.woff") format("woff"),
+    url("../fonts/Raleway-Bold.ttf") format("truetype"),
+    url("../fonts/Raleway-Bold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:         url("../fonts/Raleway-Regular.eot");
+    src:         url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Regular.woff") format("woff"),
+    url("../fonts/Raleway-Regular.ttf") format("truetype"),
+    url("../fonts/Raleway-Regular.svg") format("svg");
+    font-style:  normal;
+    font-weight: 400;
+}

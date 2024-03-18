@@ -27,7 +27,7 @@ $.get("https://ipapi.co/json/", function (obj) {
   if (getCookie("phone")) {
     $("input[name=phone]").val(getCookie("phone"));
   } else {
-    $("input[name=phone]").val(obj.country_calling_code);
+    //$("input[name=phone]").val(obj.country_calling_code);
   }
   $("input[name=phone]").intlTelInput({
     // utilsScript       : '/js/utils.js',

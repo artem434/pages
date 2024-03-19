@@ -15,10 +15,29 @@ $(document).ready(function () {
 
 $(window).load(function () {
   var $form = $(".form.zoho_url-consultation");
-  if ($form.length > 0) {
-    $form.find("input[name=name]").val("user");
-    $form.find("input[name=email]").val("user@gmail.com");
-    $form.find("input[name=phone]").val(getCookie("phone"));
+  // if ($form.length > 0) {
+  //   $form.find("input[name=name]").val("user");
+  //   $form.find("input[name=email]").val("user@gmail.com");
+  //   $form.find("input[name=phone]").val(getCookie("phone"));
+  // }
+
+  var formMainInputs = document
+    .querySelector(".form_main")
+    .getElementsByTagName("input");
+  var secondFormInputs = document
+    .querySelector(".zoho_url-consultation")
+    .getElementsByTagName("input");
+
+  // Додаємо обробник подій для кожного інпуту першої форми
+  for (var i = 0; i < formMainInputs.length; i++) {
+    formMainInputs[i].addEventListener("input", function () {
+      // Оновлюємо значення відповідного інпуту другої форми при зміні значення першої форми
+      var index = Array.prototype.indexOf.call(formMainInputs, this);
+      secondFormInputs[index].value = this.value;
+
+      // Якщо потрібно, ви можете відправити форму автоматично:
+      // document.querySelector('.zoho_url-consultation').submit();
+    });
   }
 });
 const inputElement = document.querySelector('input[name="name"]');
@@ -45,6 +64,7 @@ $.get("https://ipapi.co/json/", function (obj) {
 $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
+
   form.addClass("loading");
   form.find(".subm").prop("disabled", true);
   setCookie("name", $('input[name="name"]').val(), 365);
@@ -56,15 +76,34 @@ $("form .subm").on("click", function (e) {
 });
 
 $(".zoho_url-consultation .subm-consultation").on("click", function (e) {
-  e.preventDefault();
-  var form = $(this).closest("form");
-  form.addClass("loading");
-  form.find(".subm-consultation").prop("disabled", true);
-
-  setTimeout(function () {
-    form.submit();
-    $("#popup").fadeIn();
-  }, 1000);
+  // e.preventDefault();
+  // var form = $(this).closest("form");
+  // var allFieldsFilled = true; // Змінено на початково true
+  // // Перевірка, чи всі поля заповнені
+  // form
+  //   .find("input[name='name'], input[name='email'], input[name='phone']")
+  //   .each(function () {
+  //     if ($(this).val().trim() === "") {
+  //       allFieldsFilled = false;
+  //       $(this).removeClass("error");
+  //       return false;
+  //     }
+  //   });
+  // if (allFieldsFilled) {
+  //   form.find(".subm-consultation").prop("disabled", true);
+  //   // Додаємо обробник події submit
+  //   setTimeout(function () {
+  //     form.submit();
+  //
+  //   }, 1000);
+  // } else {
+  //   form.find("input").each(function () {
+  //     if ($(this).val().trim() === "") {
+  //       $(this).addClass("error");
+  //     }
+  //   });
+  //   console.log("Будь ласка, заповніть всі поля форми перед відправленням.");
+  // }
 });
 
 $(".close").click(function () {

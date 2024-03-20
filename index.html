@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="x-apple-disable-message-reformatting" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Certificate</title>
     <style>
       body {
         margin: 0;
-        font-family: Helvetica, Arial, Liberation Sans, sans-serif;
+        font-family: "Raleway", sans-serif;
         background-color: #d9d7d7;
       }
       .container {
@@ -18,7 +24,7 @@
       .certificate {
         width: 1190px;
         height: 1684px;
-        background: url(https://storage.kadroland.com/certificate/A4-certificate-KL.jpeg)
+        background: url(https://storage.kadroland.com/certificate/A4-certificate-kl.jpeg)
           no-repeat center center;
         background-size: cover;
         font-size: 26px;
@@ -41,7 +47,7 @@
         text-align: -webkit-auto;
       }
       .certificate__listener {
-        font-size: 20px;
+        font-size: 38px;
         text-transform: lowercase;
         background-color: red;
         color: #fff;
@@ -49,19 +55,19 @@
         background: #ed3434;
         padding: 14px 36px 16px 36px;
         display: inline-block;
-        margin-top: 15px;
-        margin-left: 50px;
+        margin-top: 38px;
+        margin-left: 75px;
       }
       .certificate__title {
         margin: 0;
-        padding: 160px 340px 120px 75px;
+        padding: 20px 340px 120px 75px;
         font-size: 48px;
         line-height: 1.14;
         color: #141414;
         text-transform: none;
       }
       .certificate__bottom {
-        padding-left: 55px;
+        padding-left: 75px;
         padding-right: 105px;
         text-align: left;
         font-size: 28px;
@@ -119,30 +125,27 @@
     <div class="container">
       <div class="certificate">
         <p class="certificate__name">{{client.info.fullName}}</p>
-        <!-- <p class="certificate__listener">пройшов (-ла) навчання</p> -->
+        <p class="certificate__listener">
+          {% if client.info.sex == 1%} прослухав {% elseif client.info.sex ==
+          2%} прослухала {% else %} прослухав(ла) {% endif %}
+        </p>
+
         <p class="certificate__title">{{record.title|raw}}</p>
         <div class="certificate__bottom">
           <div class="certificate__table">
-            {% for lector in record.allLectors %}
             <div class="certificate__row">
               <div class="certificate__col">
-                <span>19.03.2024</span>
+                <span>{{record.begin_at | date("d.m.Y") }}</span>
               </div>
               <div class="certificate__col">
-                <span>01:18 год.</span>
+                <span>{{ record.options.time }}</span>
               </div>
               <div class="certificate__col">
-                <span>Тетяна Мойсеєнко</span>
+                {% for lector in record.allLectors %}
+                <span>{{ lector.name }}</span> <br />
+                {% endfor %}
               </div>
             </div>
-            <div class="certificate__row">
-              <div class="certificate__col"></div>
-              <div class="certificate__col"></div>
-              <div class="certificate__col">
-                <span>Тетяна Мойсеєнко</span>
-              </div>
-            </div>
-            {% endfor %}
           </div>
         </div>
       </div>

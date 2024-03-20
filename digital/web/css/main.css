@@ -1924,6 +1924,20 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 20px;
   font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+}
+
+.program__item-title::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: inline-block;
+  background: #0abc40;
 }
 
 .program__btn-wrap {
@@ -3069,6 +3083,8 @@ button {
 
   .program__item-title {
     font-size: 16px;
+    position: relative;
+    padding-left: 20px;
   }
 
   .program__btn-wrap {

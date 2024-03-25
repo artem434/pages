@@ -13,11 +13,11 @@ $(document).ready(function () {
   // AOS.init();
 });
 
-$(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
-  $("input[name=email]").val(getCookie("email"));
-  $("input[name=phone]").val(getCookie("phone"));
-});
+// $(window).load(function () {
+//   $("input[name=name]").val(getCookie("name"));
+//   $("input[name=email]").val(getCookie("email"));
+//   $("input[name=phone]").val(getCookie("phone"));
+// });
 
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here

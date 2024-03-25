@@ -442,7 +442,7 @@ select:-webkit-autofill:focus {
   }
 }
 .btn-page:hover {
-  background-color: #0abc40;
+  background-color: #06802a;
 }
 
 .btn--radius {
@@ -644,7 +644,7 @@ select:-webkit-autofill:focus {
   padding-bottom: 12px;
 }
 .header__menu li.btn:hover {
-  background-color: #0abc40;
+  background-color: #06802a;
   cursor: pointer;
 }
 .header__menu li.btn a {
@@ -1668,6 +1668,10 @@ select:-webkit-autofill:focus {
     font-size: 16px;
     margin-bottom: 36px;
   }
+}
+.company__btn {
+  width: 343px;
+  z-index: 99;
 }
 
 .result {
@@ -3746,13 +3750,16 @@ select:-webkit-autofill:focus {
   text-align: center;
   transition: all 0.3s;
   cursor: pointer;
-}
-
-.profit .btn.trasparent {
-  margin-right: 10px;
   color: #262626;
   border: 1px solid var(--accent);
   background: #fff;
+}
+.profit .btn:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+.profit .btn .profit .btn.trasparent {
+  margin-right: 10px;
 }
 
 .profit .btn.full {

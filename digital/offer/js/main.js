@@ -278,11 +278,21 @@ $(".expert__collapse-btn").click(function () {
 });
 $(window).scroll(function () {
   if ($(window).width() < 767) {
-    if ($(window).scrollTop() >= $("#register").offset().top) {
-      $("#btn").addClass("d-none");
+    if ($(window).scrollTop() >= 300) {
+      $("#btn")
+        .addClass("d-block")
+        .css("position", "fixed")
+        .css("bottom", "16px");
+      if ($(window).scrollTop() >= $("#register").offset().top) {
+        $("#btn").addClass("d-none");
+      } else {
+        $("#btn").removeClass("d-none");
+      }
     } else {
-      $("#btn").removeClass("d-none");
+      $("#btn").css("position", "relative").css("bottom", "0px");
     }
+  } else {
+    $("#btn").removeClass("d-none");
   }
 });
 if (window.innerWidth > 1000) {

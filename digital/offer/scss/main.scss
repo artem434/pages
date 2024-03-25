@@ -95,13 +95,17 @@
   text-align: center;
   transition: all 0.3s;
   cursor: pointer;
-}
-
-.profit .btn.trasparent {
-  margin-right: 10px;
   color: #262626;
   border: 1px solid var(--accent);
   background: #fff;
+  &:hover {
+    background-color: var(--accent);
+    color: #fff;
+  }
+
+  .profit .btn.trasparent {
+    margin-right: 10px;
+  }
 }
 
 .profit .btn.full {

@@ -488,25 +488,20 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 hidePackagesBtn();
 
-let targetDay = 3;
+let targetDay = 1; // 1 для понеділка
 let newDate = new Date();
 
-const dateCopy = new Date(newDate.getTime());
-const nextMonday = new Date(
-  dateCopy.setDate(
-    dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
-  )
-);
-
-console.log(newDate.getDay());
-
-// if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
-if (newDate.getDay() == 3 && newDate.getHours() < 19) {
-  // newDate.setDate( newDate.Date() + 7);
-  // console.log('today is Monday');
-  console.log("today is Tuesday");
+if (newDate.getDay() == targetDay && newDate.getHours() < 19) {
+  console.log("Сьогодні понеділок до 19 години.");
 } else {
+  const dateCopy = new Date(newDate.getTime());
+  const nextMonday = new Date(
+    dateCopy.setDate(
+      dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
+    )
+  );
   newDate = nextMonday;
+  console.log("Наступний понеділок:", newDate);
 }
 
 let month = [

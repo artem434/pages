@@ -1,0 +1,129 @@
+.faq {
+  background-color: $white;
+  color: $black;
+  padding-bottom: 46px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 90px;
+  }
+  .container {
+    position: relative;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 16px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: normal;
+      align-items: center;
+      flex-flow: wrap;
+      padding: 16px 18px;
+      position: relative;
+      border-radius: 7px;
+      border: 2px solid #0abc40;
+
+      @include media-breakpoint-up(xl) {
+        padding: 26px 32px;
+      }
+
+      &.active {
+        .item__info {
+          max-height: 10000px;
+        }
+
+        .item__more {
+          &:before {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='16' fill='%230ABC40'/%3E%3Crect x='23.1094' y='15.1094' width='1.77778' height='14.2222' transform='rotate(90 23.1094 15.1094)' fill='white'/%3E%3C/svg%3E")
+              50% / contain no-repeat;
+          }
+        }
+      }
+
+      &__title {
+        width: calc(100% - 100px);
+        font-size: 14px;
+        font-weight: 700;
+        color: $black;
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+        }
+
+        span {
+          color: $orange;
+        }
+      }
+
+      &__more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        border-radius: 50%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:before {
+          content: "";
+          width: 22px;
+          height: 22px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='16' fill='%230ABC40'/%3E%3Crect x='15.1094' y='8.89062' width='1.77778' height='14.2222' fill='white'/%3E%3Crect x='23.1094' y='15.1094' width='1.77778' height='14.2222' transform='rotate(90 23.1094 15.1094)' fill='white'/%3E%3C/svg%3E")
+            50% / cover no-repeat;
+
+          @include media-breakpoint-up(xl) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        &:before {
+        }
+      }
+
+      &__info {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease;
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 12px;
+
+        @include media-breakpoint-up(xl) {
+          flex-direction: row;
+          align-items: start;
+          padding-top: 20px;
+
+          font-size: 22px;
+          max-width: 700px;
+        }
+      }
+    }
+  }
+}

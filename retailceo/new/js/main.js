@@ -75,36 +75,28 @@ $("form .subm").on("click", function (e) {
   }, 1000);
 });
 
-$(".zoho_url-consultation .subm-consultation").on("click", function (e) {
-  // e.preventDefault();
-  // var form = $(this).closest("form");
-  // var allFieldsFilled = true; // Змінено на початково true
-  // // Перевірка, чи всі поля заповнені
-  // form
-  //   .find("input[name='name'], input[name='email'], input[name='phone']")
-  //   .each(function () {
-  //     if ($(this).val().trim() === "") {
-  //       allFieldsFilled = false;
-  //       $(this).removeClass("error");
-  //       return false;
-  //     }
-  //   });
-  // if (allFieldsFilled) {
-  //   form.find(".subm-consultation").prop("disabled", true);
-  //   // Додаємо обробник події submit
-  //   setTimeout(function () {
-  //     form.submit();
-  //
-  //   }, 1000);
-  // } else {
-  //   form.find("input").each(function () {
-  //     if ($(this).val().trim() === "") {
-  //       $(this).addClass("error");
-  //     }
-  //   });
-  //   console.log("Будь ласка, заповніть всі поля форми перед відправленням.");
-  // }
-});
+// $(".zoho_url-consultation .subm-consultation").on("click", function (e) {
+//   e.preventDefault();
+//   var form = $(this).closest("form");
+//   var allFieldsFilled = true; // Змінено на початково true
+//   // Перевірка, чи всі поля заповнені
+//   form
+//     .find("input[name='name'], input[name='email'], input[name='phone']")
+//     .each(function () {
+//       if ($(this).val().trim() === "") {
+//         allFieldsFilled = false;
+
+//         return false;
+//       }
+//     });
+//   if (allFieldsFilled) {
+//     console.log("ok");
+//   } else {
+//     console.log("Будь ласка, заповніть всі поля форми перед відправленням.");
+
+//     $(this).removeClass("error");
+//   }
+// });
 
 $(".close").click(function () {
   $("#popup").fadeOut();

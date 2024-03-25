@@ -2254,7 +2254,6 @@ a {
 .register .zoho_url-consultation {
   display: flex;
   flex-direction: column;
-  gap: 22px;
 }
 .how {
   padding-top: 62px;

@@ -1,0 +1,41 @@
+.clients {
+  padding-top: 88px;
+  padding-bottom: 62px;
+  background-color: #fff;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 128px;
+    padding-bottom: 66px;
+  }
+
+  .container {
+    @extend%content!optional;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 34px;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #000;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+    }
+  }
+
+  &__slider {
+    padding: 0 24px;
+  }
+
+  .logo {
+    background: 50% / contain no-repeat;
+    height: 88px;
+  }
+
+  &__block {
+    position: relative;
+  }
+}

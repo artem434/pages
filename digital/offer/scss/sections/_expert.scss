@@ -1,0 +1,305 @@
+.expert {
+  padding: 102px 18px 48px;
+
+  .container {
+    @include media-breakpoint-up(xl) {
+    }
+  }
+  &__title {
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='319' height='116' viewBox='0 0 319 116' fill='none'%3E%3Cpath d='M7.87682 25.8451C22.0826 -18.2239 319.943 -0.391556 317.222 83.127C315.628 132.06 -79.6132 127.199 17.3595 32.3883' stroke='%230ABC40' stroke-width='3'/%3E%3C/svg%3E")
+        no-repeat center;
+      background-size: cover;
+      width: 315.764px;
+      height: 109.194px;
+      transform: rotate(1.866deg);
+      bottom: -6px;
+      left: -26px;
+      z-index: -1;
+      display: block;
+      @include media-breakpoint-up(xl) {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1076' height='190' viewBox='0 0 1076 190' fill='none'%3E%3Cpath d='M13.4878 30.841C43.3841 -18.6942 703.356 12.0264 700.27 106.756C698.461 162.257 -176.616 142.839 34.7087 38.6035' stroke='%230ABC40' stroke-width='3'/%3E%3Cpath d='M686.5 75.0553C779.361 75.0553 809.723 75.0553 902.584 75.0553C943.767 75.0553 986.587 73.9146 1027.01 81.9962C1041.21 84.834 1061.88 89.8784 1068.84 102.184C1078.36 119.004 1073.83 140.715 1062.45 155.888C1052 169.819 1039.15 181.685 1019.93 185' stroke='%230ABC40' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M1030.44 167C1028.79 171.847 1023.65 181.409 1018.16 184.289C1011.49 187.784 1035.48 189.038 1042.44 186' stroke='%230ABC40' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
+          no-repeat center;
+        width: 1074.002px;
+        bottom: -79px;
+        left: -48px;
+        height: 187.491px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 44px;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__main {
+    padding-top: 38px;
+    padding-bottom: 54px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: row;
+      gap: 92px;
+      padding-top: 66px;
+      padding-bottom: 70px;
+    }
+    .img {
+      width: 348px;
+      height: 416px;
+      display: block;
+      background-position: center top;
+      margin-bottom: 28px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        min-width: 430px;
+        height: 593px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__collapse-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 1.5;
+    height: 214px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+    @include media-breakpoint-up(xl) {
+      height: auto;
+    }
+  }
+
+  &__collapse-btn {
+    color: $maincolor;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 8px;
+    &:before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='2.5' fill='%231F1F1F'/%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='2.5' stroke='white'/%3E%3Crect x='11' y='5' width='2' height='14' fill='%230ABC40'/%3E%3Crect x='5' y='13' width='2' height='14' transform='rotate(-90 5 13)' fill='%230ABC40'/%3E%3C/svg%3E")
+        50% / contain no-repeat;
+      display: block;
+
+      @include media-breakpoint-up(xl) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &:after {
+      content: "Більше про експерта";
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 1.5;
+
+    @include media-breakpoint-up(xl) {
+      gap: 28px;
+      line-height: 1.6;
+    }
+
+    &.active {
+      .expert__collapse-text {
+        height: auto;
+        transition: all 0.4s;
+      }
+
+      .expert__collapse-btn {
+        &:before {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='0.5' y='0.5' width='23' height='23' fill='%231F1F1F'/%3E%3Crect x='0.5' y='0.5' width='23' height='23' stroke='white'/%3E%3Crect x='5' y='13' width='2' height='14' transform='rotate(-90 5 13)' fill='%239FF565'/%3E%3C/svg%3E")
+            50% / contain no-repeat;
+        }
+        &:after {
+          content: "приховати";
+        }
+      }
+    }
+
+    p {
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+
+      b {
+        font-size: 18px;
+        font-weight: 700;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 20px;
+        }
+        span {
+          color: $maincolor;
+        }
+      }
+    }
+  }
+
+  &__name {
+    font-size: 36px;
+    color: $maincolor;
+    font-weight: 700;
+    line-height: 152%;
+    text-transform: uppercase;
+  }
+
+  .experts {
+    padding-top: 38px;
+    max-width: 301px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1270px;
+      padding-top: 56px;
+      position: relative;
+    }
+    .swiper {
+      overflow: inherit;
+    }
+    &__list {
+    }
+
+    &__item {
+      position: relative;
+
+      .img {
+        width: 301px;
+        height: 460px;
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .img--cover {
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    &__bottom {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(1.5px);
+      width: 100%;
+      b {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__navigation {
+      width: 300px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 38px;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 66px;
+      }
+
+      .swiper-button-prev {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 -4.60819e-08)' stroke='%230ABC40' stroke-width='2'/%3E%3Cpath d='M22.5 12L24.2625 13.7625L17.2875 20.75L32.5 20.75L32.5 23.25L17.2875 23.25L24.275 30.225L22.5 32L12.5 22L22.5 12Z' fill='%230ABC40'/%3E%3C/svg%3E")
+          50% no-repeat;
+        background-size: contain;
+        margin-top: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .swiper-button-next {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Crect x='43' y='1' width='42' height='42' rx='21' transform='rotate(90 43 1)' stroke='%230ABC40' stroke-width='2'/%3E%3Cpath d='M22.5 12L20.7375 13.7625L27.7125 20.75L12.5 20.75L12.5 23.25L27.7125 23.25L20.725 30.225L22.5 32L32.5 22L22.5 12Z' fill='%230ABC40'/%3E%3C/svg%3E")
+          50% no-repeat;
+        background-size: contain;
+        margin-top: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .swiper-pagination {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        .swiper-pagination-bullet {
+          background: $maincolor;
+        }
+      }
+    }
+  }
+  .btn-arrows {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      margin-top: 98px;
+
+      .arrow {
+        &--left {
+          left: -150px;
+        }
+
+        &--right {
+          right: -150px;
+        }
+      }
+    }
+  }
+}

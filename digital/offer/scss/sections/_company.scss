@@ -1,0 +1,206 @@
+.company {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+
+  .container {
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1050px;
+    }
+  }
+
+  &__title {
+    font-family: "moloko", sans-serif;
+    color: $maincolor;
+    font-size: 106.493px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 152px;
+      padding-left: 62px;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+      padding-left: 62px;
+    }
+
+    svg {
+      min-width: 33px;
+      margin-top: 8px;
+
+      @include media-breakpoint-up(xl) {
+        width: 47px;
+        margin-top: 16px;
+      }
+    }
+    b {
+      font-weight: 700;
+
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 46px;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+      padding-left: 123px;
+      display: flex;
+      align-items: center;
+
+      br {
+        display: none;
+      }
+    }
+    p {
+      display: flex;
+      align-items: center;
+      margin-top: -8px;
+
+      @include media-breakpoint-up(xl) {
+        display: inline-flex;
+        margin-top: 0;
+        margin-left: 8px;
+      }
+    }
+    b {
+      font-weight: 700;
+    }
+
+    svg {
+      width: 9px;
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 28px;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 110px;
+      margin-top: 60px;
+    }
+  }
+
+  &__img {
+    width: 343px;
+    height: 221px;
+    background-size: contain;
+
+    @include media-breakpoint-up(xl) {
+      min-width: 515px;
+      height: 331px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding-top: 28px;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 28px;
+      position: relative;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 24px;
+        bottom: -16px;
+        background: url(../img/company_txt-dec.png) no-repeat center;
+        background-size: contain;
+        width: 294px;
+        height: 18px;
+      }
+    }
+
+    b {
+      color: #000;
+      display: block;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 22px;
+      position: relative;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 40px;
+        display: inline-block;
+        margin-bottom: 32px;
+      }
+
+      &::before {
+        position: absolute;
+        bottom: -25px;
+        right: 38px;
+        content: "для СЕО";
+        font-family: "moloko", sans-serif;
+        color: $maincolor;
+        font-size: 48px;
+        font-weight: 400;
+
+        @include media-breakpoint-up(xl) {
+          right: -38px;
+        }
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.4;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+        margin-bottom: 36px;
+      }
+    }
+  }
+}

@@ -208,41 +208,6 @@ const clientsSlider = new Swiper(".clients__slider", {
   },
 });
 
-// const slider = new Swiper('.slider', {
-// 	speed: 8000,
-// 	spaceBetween: 20,
-// 	loop: true,
-// 	freeMode: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 2,
-// 	freeModeMomentum: false,
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		dynamicBullets: true,
-// 	},
-// 	navigation: {
-// 		nextEl: ".swiper-button-next",
-// 		prevEl: ".swiper-button-prev",
-// 	},
-// 	autoplay: {
-// 		delay: 0,
-// 		disableOnInteraction: false
-// 	},
-// 	on: {
-// 		init: function () {
-// 			lazyLoadInstance.update();
-// 		},
-// 	},
-// 	breakpoints: {
-// 		760: {
-// 			slidesPerView: 4,
-// 		},
-// 		1260: {
-// 			slidesPerView: 5,
-// 		},
-// 	},
-// });
-
 $(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
@@ -296,4 +261,41 @@ function hidePackagesBtn() {
   });
 }
 
-hidePackagesBtn();
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    var modal = document.getElementById("modal-video");
+    if (modal) {
+      modal.style.display = "block";
+      setTimeout(function () {
+        modal.style.opacity = "1";
+      }, 50);
+    }
+  }, 5000); // 5000 миллисекунд = 5 секунд
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = document.getElementById("modal-video");
+  if (modal) {
+    var minutesDisplay = document.getElementById("minutes");
+    var secondsDisplay = document.getElementById("seconds");
+
+    var totalSeconds = 120; // 2 минуты
+
+    var timer = setInterval(function () {
+      var minutes = Math.floor(totalSeconds / 60);
+      var seconds = totalSeconds % 60;
+
+      minutesDisplay.innerHTML = pad(minutes) + "<span>хв</span>";
+      secondsDisplay.innerHTML = pad(seconds) + "<span>сек</span>";
+
+      if (totalSeconds <= 0) {
+        clearInterval(timer);
+      } else {
+        totalSeconds--;
+      }
+    }, 1000);
+  }
+});
+
+function pad(val) {
+  return val > 9 ? val : "0" + val;
+}

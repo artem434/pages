@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -280,10 +280,10 @@
       </header>
       <section class="hero" id="hero">
         <div class="hero__container">
-          <div class="circle hero__circle">
+          <!-- <div class="circle hero__circle">
             <div class="circle__bg lazy" data-bg="img/circle.png"></div>
             <div class="circle__book lazy" data-bg="img/book.png"></div>
-          </div>
+          </div> -->
           <div class="hero__content">
             <p class="hero__title">
               Інтенсивна освітня <br />
@@ -1154,8 +1154,190 @@
         <div class="modal-overlay__container">
           <div class="modal-content">
             <div class="close-button"></div>
-            <div class="video">
-              <div id="video-popup"></div>
+            <div class="block">
+              <div class="block__content">
+                <p class="block__title">
+                  <span> Залишай заявку на реєстрацію</span> прямо зараз, щоб
+                  отримати <span>бонус</span>
+                </p>
+                <div class="block__timer timer">
+                  <div class="timer__item" id="minutes">02<span>хв</span></div>
+                  <div class="timer__dots">:</div>
+                  <div class="timer__item" id="seconds">00<span>сек</span></div>
+                </div>
+              </div>
+              <div class="block__form">
+                <form class="form zoho_url" id="form" method="post">
+                  <div class="loader"></div>
+                  <ul class="form__package">
+                    <li>
+                      <div
+                        class="packages-btns__pack-name tabs__tab core_price"
+                        data-id=""
+                      >
+                        <span>CORE</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div
+                        class="packages-btns__pack-name tabs__tab pro_price"
+                        data-id=""
+                      >
+                        <span>PRO</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="circle hero__circle">
+                    <div class="circle__bg lazy" data-bg="img/circle.png"></div>
+                    <div class="circle__book lazy" data-bg="img/book.png"></div>
+                  </div>
+                  <p class="form__title">Реєстрація</p>
+                  <label class="input__wrap">
+                    <input
+                      class="input"
+                      name="name"
+                      type="text"
+                      placeholder="Твоє ім’я"
+                      required=""
+                    />
+                  </label>
+                  <label class="input__wrap">
+                    <input
+                      class="input"
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="Твій номер телефону"
+                      required=""
+                    />
+                  </label>
+                  <label class="input__wrap">
+                    <input
+                      class="input"
+                      name="email"
+                      type="email"
+                      placeholder="Твій email"
+                      required=""
+                    />
+                  </label>
+                  <div class="hidden">
+                    <input
+                      type="hidden"
+                      name="ref"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="ga"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="ym_uid"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="utm_source"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="utm_medium"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="utm_term"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="utm_content"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="utm_campaign"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="google_client_id"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="landing_id"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <!-- Landing_id-->
+                    <input
+                      type="hidden"
+                      name="es_mail_id"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="convert_in_zoho"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="es_id"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="token"
+                      value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="success_url"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="error_url"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <input
+                      type="hidden"
+                      name="redirect"
+                      value="false"
+                      autocomplete="off"
+                    />
+                    <input type="hidden" name="send_to_gf" value="ceo" />
+                  </div>
+                  <button class="form__btn subm" type="submit">
+                    ЗАЛИШИТИ ЗАЯВКУ
+                  </button>
+                  <p class="form__agree">
+                    Натискаючи кнопку «Залишити заявку», ти даєш згоду на
+                    обробку твоїх персональних даних згідно з
+                    <a href="http://privacy.bizconstructor.com/"
+                      >Політикою конфіденційності</a
+                    >.
+                    <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>

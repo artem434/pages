@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>СЕО освітнього бізнесу</title>
+    <meta
+      name="description"
+      content="Інтенсивна освітня програма
+      для власників бізнесу в освітній та EdTech-галузі"
+      data-vmid="description"
+    />
+    <!-- SEO-->
+    <meta property="og:title" content="СЕО освітнього бізнесу" />
+    <meta
+      property="og:description"
+      content="Інтенсивна освітня програма
+      для власників бізнесу в освітній та EdTech-галузі"
+    />
+    <meta property="og:image" content="img/og-image.png" />
+    <meta property="og:url" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
+    />
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/modernizr-custom.js"></script>
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "hxq8cxegar");
+    </script>
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 780161,
+            version = 2.1,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style =
+              "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(
+              localStorage.getItem("_vwo_" + account_id + "_config")
+            );
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined"
+                ? use_existing_jquery
+                : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined"
+                ? library_tolerance
+                : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName("first-contentful-paint")[0]) {
+                return "";
+              }
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true;
+                var t = d.getElementById("_vis_opt_path_hides");
+                if (t) t.parentNode.removeChild(t);
+                if (e)
+                  new Image().src =
+                    "https://dev.visualwebsiteoptimizer.com/ee.gif?a=" +
+                    account_id +
+                    e;
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement("script");
+              t.type = "text/javascript";
+              if (e.src) {
+                t.src = e.src;
+              } else {
+                t.text = e.text;
+              }
+              d.getElementsByTagName("head")[0].appendChild(t);
+            },
+            load: function (e, t) {
+              var n = this.getSettings(),
+                i = d.createElement("script"),
+                r = this;
+              t = t || {};
+              if (n) {
+                i.textContent = n;
+                d.getElementsByTagName("head")[0].appendChild(i);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  r.load(e);
+                }
+              } else {
+                var o = new XMLHttpRequest();
+                o.open("GET", e, true);
+                o.responseType = t.responseType || "text";
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e);
+                  }
+                  if (o.status === 200) {
+                    _vwo_code.addScript({ text: o.responseText });
+                  } else {
+                    _vwo_code.finish("&e=loading_failure:" + e);
+                  }
+                };
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e);
+                  }
+                  _vwo_code.finish("&e=loading_failure:" + e);
+                };
+                o.send();
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t;
+              if (this.hide_element() !== "body") {
+                t = d.createElement("style");
+                var n = this.hide_element(),
+                  i = n ? n + this.hide_element_style() : "",
+                  r = d.getElementsByTagName("head")[0];
+                t.setAttribute("id", "_vis_opt_path_hides");
+                v && t.setAttribute("nonce", v.nonce);
+                t.setAttribute("type", "text/css");
+                if (t.styleSheet) t.styleSheet.cssText = i;
+                else t.appendChild(d.createTextNode(i));
+                r.appendChild(t);
+              } else {
+                t = d.getElementsByTagName("head")[0];
+                var i = d.createElement("div");
+                i.style.cssText =
+                  "z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;";
+                i.setAttribute("id", "_vis_opt_path_hides");
+                i.classList.add("_vis_hide_layer");
+                t.parentNode.insertBefore(i, t.nextSibling);
+              }
+              var o =
+                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                account_id +
+                "&u=" +
+                encodeURIComponent(d.URL) +
+                "&vn=" +
+                version;
+              if (w.location.search.indexOf("_vwo_xhr") !== -1) {
+                this.addScript({ src: o });
+              } else {
+                this.load(o + "&x=true");
+              }
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+  </head>
+
+<body>
+    <div class="wrapper">
+        <section class="profit">
+            <div class="container">
+                <svg class="profit__icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.8333 11.8017V12.76C22.8321 15.0063 22.1047 17.192 20.7597 18.9911C19.4148 20.7902 17.5243 22.1064 15.3702 22.7433C13.2161 23.3802 10.9138 23.3037 8.80674 22.5252C6.69967 21.7468 4.90068 20.3081 3.67808 18.4236C2.45549 16.5392 1.87478 14.3101 2.02258 12.0687C2.17038 9.82729 3.03876 7.6937 4.49821 5.98615C5.95766 4.27859 7.92998 3.08855 10.121 2.59352C12.3121 2.09848 14.6044 2.32497 16.6563 3.2392"
+                        stroke="#ff8718" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.8334 4.42651L12.4167 14.8536L9.29175 11.7286" stroke="#ff8718" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="profit__toptext">Дякуємо за вашу заявку!
+                </div>
+                <div class="fake-line"></div>
+              
+
+                <h1 class="profit__title">Найближчим часом ми звʼяжемося з вами, щоб надати детальну інформацію щодо програми. 
+                </h1>
+
+             
+             
+                <!-- <p class="speacial-date">Спеціальна ціна дійсна до <b class="data_deadline">29.07</b>
+        </p> -->
+            </div>
+        </section>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+    <script>
+        // Landing id // Online
+        const cLandingId = '2108311000851144247';
+
+         // Landing id // про
+         const cLandingIdPro = '2108311000851144270';
+
+        // Landing id // Премиум
+        const cLandingIdPremium = '2108311000851144293';
+
+        // пакеты предоплаты
+        const PackageSaleOnline = '2108311000851144316';
+
+        const PackageSaleOnlinePremium = '2108311000851144316';
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            // Узнаем выбранный пакет
+            const urlWithPackage = new URL(window.location.href);
+            let currentPackage = urlWithPackage.searchParams.get("landing_id");
+            let currentPackageSale;
+
+            if (currentPackage) {
+                $("input[name='landing_id']").val(currentPackage);
+            } else {
+                $('.select-id').html("не обраний");
+                $('#salePrice, #fullPrice').prop('disabled', true);
+                $('#salePrice, #fullPrice, .sale_desc').css("display", "none")
+            }
+
+            // Online
+            if (currentPackage == cLandingId) {
+                $('.select-id').html("CORE");
+                currentPackageSale = PackageSaleOnline;
+
+            // Premium
+            } else if (currentPackage == cLandingIdPro) {
+                $('.select-id').html("PRO");
+                currentPackageSale = PackageSaleOnlinePremium;
+            
+        } else if (currentPackage == cLandingIdPremium) {
+                $('.select-id').html("PREMIUM");
+                currentPackageSale = PackageSaleOnlinePremium;
+            }
+
+            $('#salePrice').click(function () {
+                sendForm.bind($(this))();
+                sendForm(currentPackageSale);
+            });
+            $('#fullPrice').click(function () {
+                sendForm.bind($(this))();
+                sendForm(currentPackage);
+            });
+
+            function sendForm(id_landing_package) {
+                var $this = $(this);
+                $this.html('Обработка запроса...');
+
+                $("input[name='landing_id']").val(id_landing_package);
+                $('#salePrice, #fullPrice').prop('disabled', true);
+
+                setTimeout(() => {
+                    $('#btn-send').click();
+                }, 100);
+            }
+        });
+
+    </script>
+
+    <!-- <script>
+        document.write(`<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script.js?ver=${Math.floor(Math.random() * 100)}"><\/script>`);
+    </script> -->
+    <script>
+        document.write(`<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js?ver=${Math.floor(Math.random() * 100)}"><\/script>`);
+    </script>
+
+</html>

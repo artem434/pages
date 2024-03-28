@@ -1321,7 +1321,7 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .packages .item {
     padding: 20px 24px 32px 24px;
-    width: 520px;
+    width: 376px;
   }
 }
 .packages .item__header {
@@ -1348,6 +1348,7 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .packages .item__info {
     gap: 12px;
+    flex: 1 0 auto;
   }
 }
 .packages .item__info li {
@@ -1372,6 +1373,11 @@ select:-webkit-autofill:focus {
 }
 .packages .item--core {
   background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .packages .item--core {
+    height: 534px;
+  }
 }
 .packages .item--core .item__title {
   background-color: #ff8718;

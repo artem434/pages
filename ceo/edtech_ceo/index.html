@@ -3809,6 +3809,32 @@
                 >ЗАРЕЄСТРУВАТИСЯ</a
               >
             </div>
+            <div
+              class="item item--core premium_price active__button__id tabs__tab--active"
+              data-id="2108311000854316080"
+            >
+              <div class="item__header">
+                <p class="item__title">PREMIUM</p>
+              </div>
+              <div class="item__info">
+                <li><span>14 насичених модулів</span></li>
+                <li><span>Практичні матеріали та гайди</span></li>
+                <li><span>Зустрічі Case Study з експертами</span></li>
+                <li>
+                  <span>+ 4 місяці доступу після завершення навчання</span>
+                </li>
+                <li><span>Доступ до закритого Telegram-чату</span></li>
+                <li><span>Супровід персонального бізнес-консультанта</span></li>
+                <li><span>Воркшопи по розбору кейсів з експертом</span></li>
+              </div>
+              <a
+                class="item__btn btn-page btn--radius btn--core"
+                id="btn-core"
+                href="#anchor"
+                data-package="premium"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -4181,6 +4207,7 @@
           cLandingId = "2108311000854316057",
           // Landing id // Online Pro
           cLandingIdPro = "2108311000854316034",
+          cLandingIdPremium = "2108311000854316080",
           // es_mail_id
           cMail_id = "",
           // es_id
@@ -4205,6 +4232,10 @@
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
         }
+        if (cLandingIdPremium !== "id") {
+          $(".premium_price").attr("data-id", cLandingIdPremium);
+        }
+
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);
         }

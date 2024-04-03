@@ -488,20 +488,26 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 hidePackagesBtn();
 
-let targetDay = 1; // 1 для понеділка
-let newDate = new Date();
+let targetDay = 3; // 1 для понеділка
 
-if (newDate.getDay() == targetDay && newDate.getHours() < 19) {
-  console.log("Сьогодні понеділок до 19 години.");
-} else {
-  const dateCopy = new Date(newDate.getTime());
-  const nextMonday = new Date(
-    dateCopy.setDate(
-      dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
-    )
+// Задання дати за дефолтом на 10 квітня
+let defaultDate = new Date();
+defaultDate.setMonth(3); // Квітень
+defaultDate.setDate(10); // 10 число
+
+let newDate;
+
+// Перевірка, чи поточна дата після 10 квітня
+if (new Date() > defaultDate) {
+  const nextMonday = new Date(defaultDate.getTime());
+  nextMonday.setDate(
+    defaultDate.getDate() + ((7 - defaultDate.getDay() + targetDay) % 7 || 7)
   );
+  console.log("Наступний понеділок після 10 квітня:", nextMonday);
   newDate = nextMonday;
-  console.log("Наступний понеділок:", newDate);
+} else {
+  newDate = defaultDate;
+  console.log("За дефолтом встановлена дата:", newDate);
 }
 
 let month = [

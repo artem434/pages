@@ -1,62 +1,54 @@
 $(document).ready(function () {
-  var utm_source = getUrlParameter("utm_source");
-  var utm_medium = getUrlParameter("utm_medium");
-  var utm_term = getUrlParameter("utm_term");
-  var utm_campaign = getUrlParameter("utm_campaign");
-  var utm_content = getUrlParameter("utm_content");
-  $("input[name=utm_source]").val(utm_source);
-  $("input[name=utm_medium]").val(utm_medium);
-  $("input[name=utm_term]").val(utm_term);
-  $("input[name=utm_campaign]").val(utm_campaign);
-  $("input[name=utm_content]").val(utm_content);
+  var utmParams = {
+    utm_source: getUrlParameter("utm_source"),
+    utm_medium: getUrlParameter("utm_medium"),
+    utm_term: getUrlParameter("utm_term"),
+    utm_campaign: getUrlParameter("utm_campaign"),
+    utm_content: getUrlParameter("utm_content"),
+  };
 
-  // AOS.init();
-});
+  $.each(utmParams, function (key, value) {
+    $("input[name=" + key + "]").val(value);
+  });
 
-$(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
-  $("input[name=email]").val(getCookie("email"));
-  $("input[name=phone]").val(getCookie("phone"));
-});
+  // $("input[name=name]").val(getCookie("name"));
+  // $("input[name=email]").val(getCookie("email"));
+  // $("input[name=phone]").val(getCookie("phone"));
 
-var lazyLoadInstance = new LazyLoad({
-  // Your custom settings go here
-});
+  //var lazyLoadInstance = new LazyLoad();
 
-$.get("https://ipapi.co/json/", function (obj) {
-  if (getCookie("phone")) {
-    $("input[name=phone]").val(getCookie("phone"));
-  } else {
-    $("input[name=phone]").val(obj.country_calling_code);
-  }
-  $("input[name=phone]").intlTelInput({
-    // utilsScript       : '/js/utils.js',
-    defaultCountry: "auto",
-    separateDialCode: false,
-    nationalMode: false,
-    initialCountry: obj.country_code,
-    preferredCountries: ["ua", "kz"],
+  $.get("https://ipapi.co/json/", function (obj) {
+    // var phoneValue = getCookie("phone")
+    //   ? getCookie("phone")
+    //   : obj.country_calling_code;
+    // $("input[name=phone]").val(phoneValue);
+
+    $("input[name=phone]").intlTelInput({
+      defaultCountry: "auto",
+      separateDialCode: false,
+      nationalMode: false,
+      initialCountry: obj.country_code,
+      preferredCountries: ["ua", "kz"],
+    });
+  });
+
+  $("form [type=submit]").on("click", function (e) {
+    e.preventDefault();
+    var form = $(this).closest("form");
+    form.addClass("loading");
+    setTimeout(function () {
+      form.submit();
+    }, 1000);
   });
 });
 
-$("form [type=sumbit]").on("click", function (e) {
-  e.preventDefault();
-  var form = $(this).closest("form");
-  form.addClass("loading");
-  setTimeout(function () {
-    form.submit();
-  }, 1000);
-});
-
 function validate(formid) {
-  var output = false;
-  form = $(formid);
+  var form = $(formid);
   form.addClass("loading");
-  form.find("input[name=name]").focus();
-  form.find("input[name=email]").focus();
-  form.find("input[name=phone]").focus();
+  form.find("input[name=name], input[name=email], input[name=phone]").focus();
   form.find('button[type="submit"]').focus();
-  const formdata = {
+
+  var formdata = {
     name: form.find("input[name=name]").val(),
     email: form.find("input[name=email]").val(),
     phone: form.find("input[name=phone]").val().replace(/\s/g, ""),
@@ -66,6 +58,7 @@ function validate(formid) {
     utm_campaign: form.find("input[name=utm_campaign]").val(),
     utm_content: form.find("input[name=utm_content]").val(),
   };
+
   if ($(".error").length > 0) {
     form.find("input.error").first().focus();
     form.removeClass("loading");
@@ -83,17 +76,15 @@ function validate(formid) {
       },
     });
   }
-  return output;
+  return false;
 }
 
 // SMOOTH SCROLL //
-
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
   .not('[href*="modal"]')
   .click(function (event) {
-    // On-page links
     $(".header").removeClass("active");
     $("body").removeClass("fixed");
     if (
@@ -101,14 +92,10 @@ $('a[href*="#"]')
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        // var headerHeight = $('.header').height();
         var headerHeight = 0;
         if ($(window).width() < 760) {
           headerHeight = 0;
@@ -118,17 +105,9 @@ $('a[href*="#"]')
             scrollTop: target.offset().top - headerHeight,
           },
           {
-            // Set the duration long enough to allow time
-            // to lazy load the elements.
             duration: 1500,
-            // At each animation step, check whether the target has moved.
             step: function (now, fx) {
-              // Where is the target now located on the page?
-              // i.e. its location will change as images etc. are lazy loaded
               var newOffset = target.offset().top - headerHeight;
-              // If where we were originally planning to scroll to is not
-              // the same as the new offset (newOffset) then change where
-              // the animation is scrolling to (fx.end).
               if (fx.end !== newOffset) fx.end = newOffset;
             },
           }
@@ -140,7 +119,6 @@ $('a[href*="#"]')
 const lineSlider = new Swiper(".line__slider", {
   speed: 8000,
   loop: true,
-  // freeMode: true,
   spaceBetween: 34,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -151,7 +129,7 @@ const lineSlider = new Swiper(".line__slider", {
   },
   on: {
     init: function () {
-      lazyLoadInstance.update();
+      //lazyLoadInstance.update();
     },
   },
 });
@@ -176,45 +154,10 @@ const clientsSlider = new Swiper(".clients__slider", {
   },
   on: {
     init: function () {
-      lazyLoadInstance.update();
+      //lazyLoadInstance.update();
     },
   },
 });
-
-// const slider = new Swiper('.slider', {
-// 	speed: 8000,
-// 	spaceBetween: 20,
-// 	loop: true,
-// 	freeMode: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 2,
-// 	freeModeMomentum: false,
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		dynamicBullets: true,
-// 	},
-// 	navigation: {
-// 		nextEl: ".swiper-button-next",
-// 		prevEl: ".swiper-button-prev",
-// 	},
-// 	autoplay: {
-// 		delay: 0,
-// 		disableOnInteraction: false
-// 	},
-// 	on: {
-// 		init: function () {
-// 			lazyLoadInstance.update();
-// 		},
-// 	},
-// 	breakpoints: {
-// 		760: {
-// 			slidesPerView: 4,
-// 		},
-// 		1260: {
-// 			slidesPerView: 5,
-// 		},
-// 	},
-// });
 
 $(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
@@ -233,70 +176,57 @@ $(".header__burger").on("click", function () {
 function startCountdown() {
   var minutes = 10;
   var seconds = 0;
-
   var minutesDisplay = document.getElementById("minutes");
   var secondsDisplay = document.getElementById("seconds");
-
+  console.log("timer");
   var countdown = setInterval(function () {
     if (minutes === 0 && seconds === 0) {
-      // Если время закончилось, начать заново
       minutes = 10;
       seconds = 0;
     }
-
     seconds--;
-
     if (seconds < 0) {
       minutes--;
       seconds = 59;
     }
-
     minutesDisplay.textContent = minutes < 10 ? "0" + minutes : minutes;
     secondsDisplay.textContent = seconds < 10 ? "0" + seconds : seconds;
   }, 1000);
 }
 
-startCountdown(); // Начнет таймер при загрузке страницы
+startCountdown();
 
-// Функция, которая будет вызываться при вхождении и выходе из блока #hero
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Пользователь видит блок #hero
       hideButton();
     } else {
-      // Пользователь не видит блок #hero
       showButton();
     }
   });
 }
 
-// Функция для скрытия кнопки
 function hideButton() {
   var button = document.querySelector(".hero__btn");
   button.style.display = "none";
 }
 
-// Функция для отображения кнопки
 function showButton() {
   var button = document.querySelector(".hero__btn");
   button.style.display = "flex";
 }
 
-// Создаем новый экземпляр IntersectionObserver
 var observer = new IntersectionObserver(handleIntersection, {
-  root: null, // null означает viewport
+  root: null,
   rootMargin: "0px",
-  threshold: 0.5, // Когда блок #hero виден на половину
+  threshold: 0.5,
 });
 
-// Наблюдаем за блоком #hero
 var heroBlock = document.getElementById("hero");
 if (heroBlock) {
   observer.observe(heroBlock);
 }
 
-// Скрываем кнопку при начальной загрузке, если #hero видим
 if (heroBlock && heroBlock.getBoundingClientRect().top < window.innerHeight) {
   hideButton();
 } else {

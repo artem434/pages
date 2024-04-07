@@ -1,154 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
+  <!-- <head>
+    <link
+      rel="stylesheet"
+      href="https://restoceo.bizconstructor.com/offer/css/libs.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://restoceo.bizconstructor.com/offer/css/main_form.css"
+    />
+    <style>
+      .info_form {
+        background-color: transparent !important;
+      }
+      .hero {
+        padding: 0;
+      }
+      .hero .block {
+        margin: 0 auto;
+      }
+    </style>
+  </head> -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="x-apple-disable-message-reformatting" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
-      rel="stylesheet"
+    <title>
+      CEO ресторанного бізнесу | Інтенсивна освітня програма для керівників |
+      Бізнес-Конструктор
+    </title>
+    <meta
+      name="description"
+      content="Стань еталонним лідером для команди в своєму ресторанному бізнесі"
     />
-    <title>Certificate</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: "Raleway", sans-serif;
-        background-color: #d9d7d7;
-      }
-      .container {
-        position: relative;
-      }
-      .certificate {
-        width: 1190px;
-        height: 1684px;
-        background: url(https://storage.kadroland.com/certificate/A4-certificate-kl.jpeg)
-          no-repeat center center;
-        background-size: cover;
-        font-size: 26px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.31;
-        letter-spacing: normal;
-        text-align: left;
-        color: #000000;
-        text-transform: uppercase;
-        margin: 0 auto; /* Чтобы центрировать сертификат на странице */
-      }
-      .certificate__name {
-        margin: 0;
-        padding: 370px 228px 30px 75px;
-        font-size: 56px;
-        text-transform: capitalize;
-        color: #141414;
-        text-align: -webkit-auto;
-      }
-      .certificate__listener {
-        font-size: 38px;
-        text-transform: lowercase;
-        background-color: red;
-        color: #fff;
-        border-radius: 15px;
-        background: #ed3434;
-        padding: 14px 36px 16px 36px;
-        display: inline-block;
-        margin-top: 38px;
-        margin-left: 75px;
-      }
-      .certificate__title {
-        margin: 0;
-        padding: 20px 340px 120px 75px;
-        font-size: 48px;
-        line-height: 1.14;
-        color: #141414;
-        text-transform: none;
-      }
-      .certificate__bottom {
-        padding-left: 75px;
-        padding-right: 105px;
-        text-align: left;
-        font-size: 28px;
-        line-height: 1.66;
-        text-transform: none;
-        color: rgba(20, 20, 20, 0.6);
-        width: 670px;
-      }
-      .certificate__bottom p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .certificate__info {
-        color: #969696;
-        display: inline-block;
-      }
-      .certificate__info span {
-        color: #0a0a0a;
-      }
-      .certificate__info-date span {
-        padding-left: 110px;
-      }
-      .certificate__info-lector span {
-        display: inline-block;
-        text-align: left;
-        padding-left: 152px;
-        width: 800px;
-      }
-      .certificate__info-lector p {
-        position: absolute;
-        left: 0;
-        top: -11px;
-      }
-      .certificate__info-time span {
-        padding-left: 45px;
-      }
-      .certificate__table {
-        width: 100%;
-      }
-      .certificate__row {
-        display: flex;
-        justify-content: space-between;
-      }
-      .certificate__col {
-        flex-basis: 25%;
-        text-align: left;
-      }
+    <!-- <description>Стань еталонним лідером для команди в своєму ресторанному бізнесі</description> -->
+    <!-- SEO-->
+    <meta
+      property="og:title"
+      content="CEO ресторанного бізнесу | Інтенсивна освітня програма для керівників | Бізнес-Конструктор"
+    />
+    <meta
+      property="og:description"
+      content="Стань еталонним лідером для команди в своєму ресторанному бізнесі"
+    />
+    <meta property="og:image" content="img/og-image.png" />
+    <meta property="og:url" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
+    />
+    <script src="js/modernizr-custom.js"></script>
 
-      .certificate__col:last-child {
-        flex-basis: 45%;
-      }
-    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "207946528779724");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=207946528779724&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "hxq8cxegar");
+    </script>
   </head>
   <body>
-    <div class="container">
-      <div class="certificate">
-        <p class="certificate__name">{{client.info.fullName}}</p>
-        <p class="certificate__listener">
-          {% if client.info.sex == 1%} прослухав {% elseif client.info.sex ==
-          2%} прослухала {% else %} прослухав(ла) {% endif %}
-        </p>
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="block">
+          <div class="block__form">
+            <div class="anchor" id="anchor"></div>
+            <form class="form zoho_url" id="form" method="post">
+              <div class="loader"></div>
 
-        <p class="certificate__title">{{record.title|raw}}</p>
-        <div class="certificate__bottom">
-          <div class="certificate__table">
-            <div class="certificate__row">
-              <div class="certificate__col">
-                <span>{{record.begin_at | date("d.m.Y") }}</span>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="name"
+                  type="text"
+                  placeholder="Твоє ім’я"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Твій номер телефону"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="email"
+                  type="email"
+                  placeholder="Твій email"
+                  required=""
+                />
+              </label>
+              <div class="hidden">
+                <input type="hidden" name="ref" value="" autocomplete="off" />
+                <input type="hidden" name="ga" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="ym_uid"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_source"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_medium"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_term"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_content"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_campaign"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="google_client_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="landing_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <!-- Landing_id-->
+                <input
+                  type="hidden"
+                  name="es_mail_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="convert_in_zoho"
+                  autocomplete="off"
+                />
+                <input type="hidden" name="es_id" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="token"
+                  value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="success_url"
+                  value="/#"
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="error_url"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="false"
+                  autocomplete="off"
+                />
+                <input type="hidden" name="send_to_gf" value="restoceo_offer" />
               </div>
-              <div class="certificate__col">
-                <span>{{ record.options.time }}</span>
-              </div>
-              <div class="certificate__col">
-                {% for lector in record.allLectors %}
-                <span>{{ lector.name }}</span> <br />
-                {% endfor %}
-              </div>
-            </div>
+              <button class="form__btn subm" type="submit">
+                ЗАЛИШИТИ ЗАЯВКУ
+              </button>
+              <p class="form__agree">
+                Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку
+                твоїх персональних даних згідно з
+                <a href="http://privacy.bizconstructor.com/"
+                  >Політикою конфіденційності</a
+                >.
+                <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
+              </p>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
+  <script></script>
+  <script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js"></script>
+  <script src="https://restoceo.bizconstructor.com/offer/js/libs.min.js"></script>
+  <script src="./restoceo/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Дата мероприятия
+      let cDate = "3 жовтня",
+        // Landing id // Online
+        cLandingId = "2108311000825356176",
+        // Landing id // Online Pro
+        cLandingIdPro = "2108311000825356199",
+        // es_mail_id
+        cMail_id = "",
+        // es_id
+        cEs_id = "1154",
+        // success_url
+        cSuccess_url = "https://restoceo.bizconstructor.com/offer/thanks.html";
+
+      //  дата скидки (автозамена)
+      let dataDeadline;
+      // dataDeadline = foundSale.date;
+
+      // Проверка данных с универсального блока (Удаем тут, если удалили с блока)
+      if (cDate !== "date") {
+        $(".cDate").each(function () {
+          $(this).html(cDate);
+        });
+      }
+      if (cLandingId !== "id") {
+        $("input[name='landing_id']").val(cLandingId);
+        $(".core_price").attr("data-id", cLandingId);
+      }
+      if (cLandingIdPro !== "id") {
+        $(".pro_price").attr("data-id", cLandingIdPro);
+      }
+      if (cMail_id !== "es_mail_id") {
+        $("input[name='es_mail_id']").val(cMail_id);
+      }
+      if (cEs_id !== "cEs_id") {
+        $("input[name='es_id']").val(cEs_id);
+      }
+      if (cSuccess_url !== "success_url") {
+        $("input[name='success_url'], input[name='error_url']").val(
+          cSuccess_url
+        );
+      }
+      if (dataDeadline !== "dataDeadline") {
+        $(".data_deadline").each(function () {
+          $(this).html(dataDeadline);
+        });
+      }
+
+      // Установка цен на пакетах
+      let data = LP.CORE.getSearchJson();
+      LP.CORE.getPriceByID(data.landing_id);
+      $(".package_price").each(function (i, el) {
+        LP.CORE.setPriceThanks(
+          $(this).data("id"),
+          $(this).find(".price-full-redline"),
+          $(this).find(".price-discount-big")
+        );
+      });
+    });
+
+    // Настройка собитыий при клике на кнопки пакета
+    $("#btn-core").click(function () {
+      $(".packages-btns__pack-name.core_price").click();
+    });
+
+    $("#btn-pro").click(function () {
+      $(".packages-btns__pack-name.pro_price").click();
+    });
+  </script>
+  <script>
+    document.write(
+      `<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js?ver=${Math.floor(
+        Math.random() * 100
+      )}"><\/script>`
+    );
+  </script>
+
+  <!-- FB CAPI Script -->
+  <script>
+    /*** Get Facebook AD Click ID ***/
+    function getFBclid() {
+      var params = window.location.search
+        .replace("?", "")
+        .split("&")
+        .reduce(function (p, e) {
+          var a = e.split("=");
+          p[decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+          return p;
+        }, {});
+      if (typeof params["fbclid"] !== "undefined") {
+        return params["fbclid"];
+      } else return false;
+    }
+
+    /*** Restore Facebook Click ID ***/
+    var restoreFBClId = setTimeout(function () {
+      try {
+        if (fbq.getState().pixels.length > 0) {
+          console.log("GTM: FB Pixel is active");
+        } else {
+          console.log("GTM: FB Pixel is blocked or not installed");
+          if (getFBclid())
+            setCookie(
+              "_fbc",
+              "fb.1." + Math.round(new Date().getTime()) + "." + getFBclid()
+            );
+        }
+      } catch (e) {
+        console.log("GTM: FB Pixel is blocked or not installed");
+        if (getFBclid())
+          setCookie(
+            "_fbc",
+            "fb.1." + Math.round(new Date().getTime()) + "." + getFBclid()
+          );
+      }
+    }, 5000);
+
+    /*** Get Cookies ***/
+    function getCookie(cookieName) {
+      var matches = document.cookie.match(
+        new RegExp(
+          "(?:^|; )" +
+            cookieName.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+            "=([^;]*)"
+        )
+      );
+      return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    /*** Set Cookies ***/
+    function setCookie(cookieName, cookieValue, daysOfLife) {
+      // Create/Update Cookies
+      var cookieExp = new Date(new Date().getTime() + daysOfLife * 86400000);
+      document.cookie =
+        cookieName +
+        "=" +
+        cookieValue +
+        "; expires=" +
+        cookieExp.toUTCString() +
+        "; path=/;" +
+        "domain=" +
+        location.hostname +
+        ";SameSite=Lax";
+    }
+
+    /*** Send Event to FB CAPI ***/
+    function sendEventToFBCAPI(data, endpoint) {
+      return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+
+        var stringifiedData = JSON.stringify(data);
+
+        xhr.open("POST", endpoint);
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.send(stringifiedData);
+
+        xhr.onload = function () {
+          if (xhr.status.toString()[0] !== "2") {
+            console.error(xhr.status + "> " + xhr.statusText);
+            reject(false);
+          } else if (xhr.status == 200) {
+            resolve(true);
+          }
+        };
+      });
+    }
+  </script>
+  <!-- End FB CAPI Script -->
+
+  <script>
+    //пакет по умолчанию
+    setTimeout(function () {
+      $(".packages-btns__pack-name.pro_price").click();
+    }, 0);
+  </script>
 </html>

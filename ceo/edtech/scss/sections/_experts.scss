@@ -1,0 +1,133 @@
+.experts {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 48px;
+      margin-bottom: 44px;
+      gap: 18px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    row-gap: 40px;
+
+    li {
+      max-width: 48%;
+      width: 100%;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 33%;
+      }
+      b {
+        display: block;
+        color: $maincolor;
+        font-size: 14px;
+        font-weight: 600;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 20px;
+        }
+      }
+
+      strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 800;
+        @include media-breakpoint-up(xl) {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-size: 12px;
+        @include media-breakpoint-up(xl) {
+          font-size: 16px;
+        }
+      }
+      &:nth-child(2) {
+        order: -1;
+        max-width: 100%;
+
+        @include media-breakpoint-up(xl) {
+          order: 0;
+          max-width: 33%;
+        }
+        .experts__img {
+          width: 218.51px;
+          height: 295.37px;
+
+          @include media-breakpoint-up(xl) {
+            width: 278.158px;
+            height: 376px;
+          }
+        }
+
+        b {
+          font-size: 16px;
+          @include media-breakpoint-up(xl) {
+            font-size: 20px;
+          }
+        }
+        strong {
+          font-size: 18px;
+          @include media-breakpoint-up(xl) {
+            font-size: 30px;
+          }
+        }
+        p {
+          font-size: 14px;
+          @include media-breakpoint-up(xl) {
+            font-size: 16px;
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          max-width: 323px;
+          .experts__img {
+            width: 278.158px;
+            height: 376px;
+          }
+        }
+      }
+    }
+  }
+  &__img {
+    width: 127.848px;
+    height: 172.768px;
+    background-size: cover;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      width: 278.158px;
+      height: 376px;
+    }
+  }
+
+  &__footer {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      gap: 6px;
+    }
+  }
+}

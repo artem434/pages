@@ -2433,9 +2433,6 @@ strong.medical b {
 }
 
 @media (max-width: 1260px) {
-}
-
-@media (max-width: 1260px) {
   :root {
     --container-width: 760px;
     --sp: 35px;

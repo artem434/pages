@@ -35,31 +35,7 @@
       @include media-breakpoint-up(xl) {
         max-width: 33%;
       }
-      b {
-        display: block;
-        color: $maincolor;
-        font-size: 14px;
-        font-weight: 600;
 
-        @include media-breakpoint-up(xl) {
-          font-size: 20px;
-        }
-      }
-
-      strong {
-        display: block;
-        font-size: 16px;
-        font-weight: 800;
-        @include media-breakpoint-up(xl) {
-          font-size: 30px;
-        }
-      }
-      p {
-        font-size: 12px;
-        @include media-breakpoint-up(xl) {
-          font-size: 16px;
-        }
-      }
       &:nth-child(2) {
         order: -1;
         max-width: 100%;
@@ -128,6 +104,32 @@
     text-align: center;
     @include media-breakpoint-up(xl) {
       gap: 6px;
+    }
+
+    b {
+      display: block;
+      color: $maincolor;
+      font-size: 16px;
+      font-weight: 600;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+    }
+
+    strong {
+      display: block;
+      font-size: 18px;
+      font-weight: 800;
+      @include media-breakpoint-up(xl) {
+        font-size: 30px;
+      }
+    }
+    p {
+      font-size: 14px;
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
     }
   }
 }

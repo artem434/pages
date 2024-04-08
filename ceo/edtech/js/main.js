@@ -89,6 +89,38 @@ function validate(formid) {
   return output;
 }
 
+const expertsSlider = new Swiper(".experts__list", {
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      // loop: false,
+    },
+  },
+});
+
+// Перевіряємо ширину екрану і змінюємо порядок слайдів при необхідності
+if (window.innerWidth < 1200) {
+  expertsSlider.slideTo(2, 0); // Переміщаємо на другий слайд
+}
+
 // SMOOTH SCROLL //
 
 $('a[href*="#"]')

@@ -808,22 +808,26 @@ a {
   }
 }
 .hero__subtitle {
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding-right: 74px;
   margin-bottom: 16px;
 }
 @media (min-width: 1200px) {
   .hero__subtitle {
     font-size: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 108px;
     max-width: 595px;
   }
 }
 .hero__subtitle b {
   color: #2b6432;
   font-weight: 800;
+}
+.hero__subtitle span {
+  font-weight: 400;
 }
 .hero__description {
   font-size: 14px;

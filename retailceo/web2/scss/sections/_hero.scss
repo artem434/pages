@@ -115,22 +115,26 @@
     }
   }
   &__subtitle {
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
+    padding-right: 74px;
     margin-bottom: 16px;
 
     @include media-breakpoint-up(xl) {
       font-size: 20px;
-      margin-bottom: 34px;
+      margin-bottom: 108px;
       max-width: 595px;
     }
 
     b {
       color: #2b6432;
       font-weight: 800;
+    }
+
+    span {
+      font-weight: 400;
     }
   }
   &__description {

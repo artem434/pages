@@ -255,21 +255,21 @@ form input.not_error {
 }
 
 .swiper-button-prev {
-  left: -16px;
+  left: 16px;
 }
 .swiper-button-prev::after {
   content: "";
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2300B6FF' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2300B6FF'/%3E%3C/svg%3E") center/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2358d173' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2358d173'/%3E%3C/svg%3E") center/contain no-repeat;
   min-width: 44px;
   height: 44px;
 }
 
 .swiper-button-next {
-  right: -16px;
+  right: 16px;
 }
 .swiper-button-next::after {
   content: "";
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2300B6FF' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2300B6FF'/%3E%3C/svg%3E") center/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2358d173' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2358d173'/%3E%3C/svg%3E") center/contain no-repeat;
   min-width: 44px;
   height: 44px;
   transform: rotate(180deg);
@@ -280,9 +280,13 @@ form input.not_error {
 }
 .swiper-prev::after {
   content: "";
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2300B6FF' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2300B6FF'/%3E%3C/svg%3E") center/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%2358d173' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%2358d173'/%3E%3C/svg%3E") center/contain no-repeat;
   min-width: 44px;
   height: 44px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #58d173;
 }
 
 .form:before {
@@ -705,7 +709,7 @@ select:-webkit-autofill:focus {
   z-index: 30;
 }
 .header.active {
-  background: #e5e5e5;
+  background: #929090;
 }
 .header.active .header__logo {
   background: url(../img/header__logo--black.svg) 50%/contain no-repeat;
@@ -739,7 +743,7 @@ select:-webkit-autofill:focus {
     left: 0;
     top: 66px;
     text-align: center;
-    background: #e5e5e5;
+    background: #929090;
     padding-top: 50px;
     padding-bottom: 46px;
     z-index: 10;
@@ -897,7 +901,7 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .hero__info {
     font-size: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 62px;
   }
 }
 .hero__info b {
@@ -925,6 +929,7 @@ select:-webkit-autofill:focus {
 }
 .hero__btns .btn-page--full {
   position: fixed;
+  font-size: 22px;
   z-index: 10;
   width: 340px;
   height: 56px;
@@ -939,6 +944,7 @@ select:-webkit-autofill:focus {
     bottom: inherit;
     left: inherit;
     transform: translate(0);
+    font-size: 20px;
   }
 }
 .hero__btns .btn-page-nofull {
@@ -963,7 +969,7 @@ select:-webkit-autofill:focus {
   .hero__img {
     width: 455.481px;
     height: 413.642px;
-    bottom: 120px;
+    bottom: 150px;
     right: 0px;
   }
 }
@@ -1336,35 +1342,6 @@ select:-webkit-autofill:focus {
     max-width: 33%;
   }
 }
-.experts ul li b {
-  display: block;
-  color: #58d173;
-  font-size: 14px;
-  font-weight: 600;
-}
-@media (min-width: 1200px) {
-  .experts ul li b {
-    font-size: 20px;
-  }
-}
-.experts ul li strong {
-  display: block;
-  font-size: 16px;
-  font-weight: 800;
-}
-@media (min-width: 1200px) {
-  .experts ul li strong {
-    font-size: 30px;
-  }
-}
-.experts ul li p {
-  font-size: 12px;
-}
-@media (min-width: 1200px) {
-  .experts ul li p {
-    font-size: 16px;
-  }
-}
 .experts ul li:nth-child(2) {
   order: -1;
   max-width: 100%;
@@ -1441,6 +1418,35 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .experts__footer {
     gap: 6px;
+  }
+}
+.experts__footer b {
+  display: block;
+  color: #58d173;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .experts__footer b {
+    font-size: 20px;
+  }
+}
+.experts__footer strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+}
+@media (min-width: 1200px) {
+  .experts__footer strong {
+    font-size: 30px;
+  }
+}
+.experts__footer p {
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  .experts__footer p {
+    font-size: 16px;
   }
 }
 
@@ -1831,7 +1837,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   font-size: 18px;
   border-radius: 5px;
-  color: #666;
+  color: #666 !important;
   padding-left: 12px;
 }
 @media (min-width: 1200px) {

@@ -109,12 +109,12 @@
         <div class="header__container container">
           <a class="header__logo" href="index.html"></a>
           <ul class="header__menu">
-            <li><a href="#who">Для кого</a></li>
+            <!-- <li><a href="#who">Для кого</a></li> -->
             <li>
               <a href="#program">Програма</a>
             </li>
             <li>
-              <a href="#expert">Експерти</a>
+              <a href="#experts">Експерти</a>
             </li>
 
             <li>
@@ -158,7 +158,7 @@
             <a href="#register" class="btn btn-page btn-page--full">
               Залишити заявку
             </a>
-            <a href="#register" class="btn btn-page btn-page--second">
+            <a href="#program" class="btn btn-page btn-page--second">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -453,52 +453,76 @@
       <section class="experts" id="experts">
         <div class="container">
           <h2>Експерти програми</h2>
-          <ul>
-            <li>
-              <div
-                class="experts__img lazy entered loaded"
-                data-bg="img/expert.png"
-                data-ll-status="loaded"
-                style="background-image: url('img/expert.png')"
-              ></div>
-              <div class="experts__footer">
-                <b>Галузевий експерт</b>
-                <strong>Дмитро Корчевський</strong>
-                <p>Власник освітнього холдингу IT Step</p>
+
+          <div class="experts__list swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="experts__img lazy entered loaded"
+                  data-bg="img/expert.png"
+                  data-ll-status="loaded"
+                  style="background-image: url('img/expert.png')"
+                ></div>
+                <div class="experts__footer">
+                  <b>Галузевий експерт</b>
+                  <strong>Дмитро Корчевський</strong>
+                  <p>Власник освітнього холдингу IT Step</p>
+                </div>
               </div>
-            </li>
-            <li>
-              <div
-                class="experts__img lazy entered loaded"
-                data-bg="img/expert-1-min.png"
-                data-ll-status="loaded"
-                style="background-image: url('img/expert-1-min.png')"
-              ></div>
-              <div class="experts__footer">
-                <b>Головний експерт</b>
-                <strong>Кирило Куницький</strong>
-                <p>
-                  Засновник та CEO міжнародної освітньо-консалтингової компанії
-                  «Бізнес-Конструктор»
-                </p>
+              <div class="swiper-slide">
+                <div
+                  class="experts__img lazy entered loaded"
+                  data-bg="img/expert-1-min.png"
+                  data-ll-status="loaded"
+                  style="background-image: url('img/expert-1-min.png')"
+                ></div>
+                <div class="experts__footer">
+                  <b>Головний експерт</b>
+                  <strong>Кирило Куницький</strong>
+                  <p>
+                    Засновник та CEO міжнародної освітньо-консалтингової
+                    компанії «Бізнес-Конструктор»
+                  </p>
+                </div>
               </div>
-            </li>
-            <li>
-              <div
-                class="experts__img lazy entered loaded"
-                data-bg="img/expert.png"
-                data-ll-status="loaded"
-                style="background-image: url('img/expert.png')"
-              ></div>
-              <div class="experts__footer">
-                <b>Галузевий експерт</b>
-                <strong>Петро Назарович</strong>
-                <p>СЕО Pushka School (школа конструювання та пошиття одягу)</p>
+              <div class="swiper-slide">
+                <div
+                  class="experts__img lazy entered loaded"
+                  data-bg="img/expert.png"
+                  data-ll-status="loaded"
+                  style="background-image: url('img/expert.png')"
+                ></div>
+                <div class="experts__footer">
+                  <b>Галузевий експерт</b>
+                  <strong>Петро Назарович</strong>
+                  <p>
+                    СЕО Pushka School (школа конструювання та пошиття одягу)
+                  </p>
+                </div>
               </div>
-            </li>
-          </ul>
+              <div class="swiper-slide">
+                <div
+                  class="experts__img lazy entered loaded"
+                  data-bg="img/expert.png"
+                  data-ll-status="loaded"
+                  style="background-image: url('img/expert.png')"
+                ></div>
+                <div class="experts__footer">
+                  <b>Галузевий експерт</b>
+                  <strong>На погоджені..</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experts__navigation">
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next next"></div>
+          </div>
         </div>
       </section>
+
       <section class="format" id="format">
         <div class="format__table">
           <h2 class="d-xl-none">
@@ -519,13 +543,13 @@
               <tr>
                 <td>Навчання в онлайн-форматі</td>
                 <td class="text">2 міс.</td>
-                <td class="text">3 міс.</td>
+                <td class="text">2 міс.</td>
                 <td class="text">3 міс.</td>
               </tr>
               <tr>
                 <td>Доступ до модулів програми</td>
                 <td class="text">10</td>
-                <td class="text">14</td>
+                <td class="text">10</td>
                 <td class="text">14</td>
               </tr>
               <tr>
@@ -552,7 +576,7 @@
 
               <tr>
                 <td>Супровід куратором по організаційно-технічним питанням</td>
-                <td class="no-active"></td>
+                <td></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -561,7 +585,7 @@
                   Закрита група в Telegram для нетворкінгу з учасниками програми
                   з підтримкою куратора
                 </td>
-                <td class="no-active"></td>
+                <td></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -599,12 +623,7 @@
               </tr>
             </table>
             <div class="format__btns">
-              <a
-                data-id="2108311000854316057"
-                class="pro_price"
-                href="#register"
-                >Замовити</a
-              >
+              <a data-id="2108311000854316057" href="#register">Замовити</a>
               <a data-id="2108311000854316034" href="#register">Замовити</a>
               <a data-id="2108311000854316080" href="#register">Замовити</a>
             </div>
@@ -614,7 +633,7 @@
       <section class="register" id="register">
         <div class="container">
           <h2>
-            Навчіться будувати системну компанію та стань кращим CEO в EdTech
+            Навчіться будувати системну компанію та станьте кращим CEO в EdTech
             галузі – <span>залишайте заявку на програму</span>
           </h2>
           <div class="register__block">
@@ -949,18 +968,7 @@
                   data-bg="img/logos/05.jpg"
                 ></div>
               </li>
-              <li class="clients__logo-item">
-                <div
-                  class="clients__logo lazy"
-                  data-bg="img/logos/06.jpg"
-                ></div>
-              </li>
-              <li class="clients__logo-item">
-                <div
-                  class="clients__logo lazy"
-                  data-bg="img/logos/07.jpg"
-                ></div>
-              </li>
+
               <li class="clients__logo-item">
                 <div
                   class="clients__logo lazy"
@@ -991,12 +999,7 @@
                   data-bg="img/logos/12.jpg"
                 ></div>
               </li>
-              <li class="clients__logo-item">
-                <div
-                  class="clients__logo lazy"
-                  data-bg="img/logos/13.jpg"
-                ></div>
-              </li>
+
               <li class="clients__logo-item">
                 <div
                   class="clients__logo lazy"

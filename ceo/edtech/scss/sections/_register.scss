@@ -217,7 +217,7 @@
         background-color: transparent;
         font-size: 18px;
         border-radius: 5px;
-        color: #666;
+        color: #666 !important;
         padding-left: 12px;
 
         @include media-breakpoint-up(xl) {

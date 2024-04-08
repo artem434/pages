@@ -285,7 +285,11 @@ $(window).scroll(function () {
         $("#btn").removeClass("d-none");
       }
     } else {
-      $("#btn").css("position", "relative").css("bottom", "0px");
+      $("#btn")
+        .css("position", "relative")
+        .css("bottom", "0px")
+        .css("max-width", "343px")
+        .css("width", "100%");
     }
   } else {
     $("#btn").removeClass("d-none");

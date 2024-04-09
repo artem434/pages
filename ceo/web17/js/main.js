@@ -46,7 +46,6 @@ function clearF1Cookie() {
   setCookie("email", "", -1);
   setCookie("last1", "", -1);
 }
-
 $(window).load(function () {
   $("input.name").val(getCookie("name"));
   $("input.email").val(getCookie("email"));
@@ -106,10 +105,6 @@ $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
-  form.find(".subm").prop("disabled", true);
-  setCookie("name", $('input[name="name"]').val(), 365);
-  setCookie("email", $('input[name="email"]').val(), 365);
-  setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 500);
@@ -159,37 +154,35 @@ $(".slider__class").on("init", function (event, slick) {
 });
 
 ///AUTO DATE
-// let newDate = new Date();
 
-// const dateCopy = new Date(newDate.getTime());
-// const nextMonday = new Date(
-// 	dateCopy.setDate(
-// 		dateCopy.getDate() + ((7 - dateCopy.getDay() + 1) % 7 || 7),
-// 	),
-// );
+let newDate = new Date();
 
-// if(newDate.getDay()==1&&newDate.getHours() < 19) {
-// 	// newDate.setDate( newDate.Date() + 7);
-// 	console.log('today is Monday');
-// }
-// else {
-// 	newDate = nextMonday
-// }
+const dateCopy = new Date(newDate.getTime());
+const nextMonday = new Date(
+  dateCopy.setDate(dateCopy.getDate() + ((7 - dateCopy.getDay() + 1) % 7 || 7))
+);
 
-// let month = [
-// 	'січня',
-// 	'лютого',
-// 	'березня',
-// 	'квітня',
-// 	'травня',
-// 	'червня',
-// 	'липня',
-// 	'серпня',
-// 	'вересня',
-// 	'жовтня',
-// 	'листопада',
-// 	'грудня',
-// ];
+if (newDate.getDay() == 1 && newDate.getHours() < 19) {
+  // newDate.setDate( newDate.Date() + 7);
+  console.log("today is Monday");
+} else {
+  newDate = nextMonday;
+}
+
+let month = [
+  "січня",
+  "лютого",
+  "березня",
+  "квітня",
+  "травня",
+  "червня",
+  "липня",
+  "серпня",
+  "вересня",
+  "жовтня",
+  "листопада",
+  "грудня",
+];
 
 // $('.cDate').text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
 // let timer = `${newDate.getFullYear()},${newDate.getMonth()},${newDate.getDate()},24`;
@@ -433,95 +426,59 @@ headerMenu();
 /**
  * Прячет / показывает кнопку которая ведет на пакеты
  */
+// function hidePackagesBtn() {
+//     let target = document.querySelector('#registration');
+//     let btn = document.querySelector('.btn_fixed-bottom');
+//     if (!target || !btn) return;
+
+//     let targetPosititon = target.offsetTop;
+//     let targetkHeight = target.offsetHeight;
+
+//     window.addEventListener('scroll', function (e) {
+//         if (window.scrollY > targetPosititon - window.innerHeight) {
+//             btn.classList.add('btn_fixed-bottom-hidden');
+//         } else {
+//             btn.classList.remove('btn_fixed-bottom-hidden');
+//         }
+//     });
+// }
+
+// hidePackagesBtn();
+
 function hidePackagesBtn() {
   let target = document.querySelector("#registration");
-  let btn = document.querySelector(".btn_fixed-bottom");
-  if (!target || !btn) return;
+  let hero = document.querySelector("#hero");
+  let btn = document.querySelector(".btn_fixed");
 
-  let targetPosititon = target.offsetTop;
-  let targetkHeight = target.offsetHeight;
+  if (!target || !hero || !btn) return;
 
-  if (
-    window.scrollY > targetPosititon - window.innerHeight ||
-    window.scrollY < window.innerHeight
-  ) {
-    btn.classList.add("btn_fixed-bottom-hidden");
-  } else {
-    btn.classList.remove("btn_fixed-bottom-hidden");
-  }
+  let targetPosition = target.offsetTop;
+  let targetHeight = target.offsetHeight;
+
+  let targetPositionHero = hero.offsetTop;
+  let targetHeightHero = hero.offsetHeight;
+
+  let isBtnActive = false; // Додали змінну для відстеження активності кнопки
 
   window.addEventListener("scroll", function (e) {
+    let scrollY = window.scrollY;
+
     if (
-      window.scrollY > targetPosititon - window.innerHeight ||
-      window.scrollY < window.innerHeight
+      (scrollY > targetPosition - window.innerHeight &&
+        scrollY < targetPosition + targetHeight) ||
+      (scrollY > targetPositionHero - window.innerHeight &&
+        scrollY < targetPositionHero + targetHeightHero)
     ) {
-      btn.classList.add("btn_fixed-bottom-hidden");
+      if (!isBtnActive) {
+        // Додана перевірка, щоб змінити стан кнопки тільки один раз
+        btn.classList.remove("btn_fixed-bottom");
+        isBtnActive = true; // Встановити стан кнопки на "активний"
+      }
     } else {
-      btn.classList.remove("btn_fixed-bottom-hidden");
+      btn.classList.add("btn_fixed-bottom");
+      isBtnActive = false; // Встановити стан кнопки на "неактивний"
     }
   });
 }
-const clientsSlider = new Swiper(".clients__slider", {
-  loop: true,
-  spaceBetween: 24,
-  slidesPerView: 2,
-  freeModeMomentum: false,
-  disableOnInteraction: false,
-  breakpoints: {
-    760: {
-      slidesPerView: 4,
-    },
-    1260: {
-      slidesPerView: 8,
-    },
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-});
 
 hidePackagesBtn();
-
-let targetDay = 2;
-let newDate = new Date();
-
-const dateCopy = new Date(newDate.getTime());
-const nextMonday = new Date(
-  dateCopy.setDate(
-    dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
-  )
-);
-
-console.log(newDate.getDay());
-
-// if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
-if (newDate.getDay() == 2 && newDate.getHours() < 19) {
-  // newDate.setDate( newDate.Date() + 7);
-  // console.log('today is Monday');
-  console.log("today is Tuesday");
-} else {
-  newDate = nextMonday;
-}
-
-let month = [
-  "січня",
-  "лютого",
-  "березня",
-  "квітня",
-  "травня",
-  "червня",
-  "липня",
-  "серпня",
-  "вересня",
-  "жовтня",
-  "листопада",
-  "грудня",
-];
-
-$(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);

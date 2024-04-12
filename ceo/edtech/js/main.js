@@ -116,11 +116,6 @@ const expertsSlider = new Swiper(".experts__list", {
   },
 });
 
-// Перевіряємо ширину екрану і змінюємо порядок слайдів при необхідності
-if (window.innerWidth < 1200) {
-  expertsSlider.slideTo(2, 0); // Переміщаємо на другий слайд
-}
-
 // SMOOTH SCROLL //
 
 $('a[href*="#"]')

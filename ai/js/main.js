@@ -13,22 +13,22 @@ $(document).ready(function () {
   // AOS.init();
 });
 
-// $(window).load(function () {
-//   $("input[name=name]").val(getCookie("name"));
-//   $("input[name=email]").val(getCookie("email"));
-//   $("input[name=phone]").val(getCookie("phone"));
-// });
-const inputElement = document.querySelector('input[name="name"]');
+$(window).load(function () {
+  $("input[name=name]").val(getCookie("name"));
+  $("input[name=email]").val(getCookie("email"));
+  $("input[name=phone]").val(getCookie("phone"));
+});
+
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
 
 $.get("https://ipapi.co/json/", function (obj) {
-  // if (getCookie("phone")) {
-  //   $("input[name=phone]").val(getCookie("phone"));
-  // } else {
-  //   $("input[name=phone]").val(obj.country_calling_code);
-  // }
+  if (getCookie("phone")) {
+    $("input[name=phone]").val(getCookie("phone"));
+  } else {
+    $("input[name=phone]").val(obj.country_calling_code);
+  }
   $("input[name=phone]").intlTelInput({
     // utilsScript       : '/js/utils.js',
     defaultCountry: "auto",
@@ -43,14 +43,14 @@ $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
-  form.find(".subm").prop("disabled", true);
-  // setCookie("name", $('input[name="name"]').val(), 365);
-  // setCookie("email", $('input[name="email"]').val(), 365);
-  // setCookie("phone", $('input[name="phone"]').val(), 365);
+  setCookie("name", $('input[name="name"]').val(), 365);
+  setCookie("email", $('input[name="email"]').val(), 365);
+  setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 1000);
 });
+
 function validate(formid) {
   var output = false;
   form = $(formid);
@@ -140,86 +140,38 @@ $('a[href*="#"]')
     }
   });
 
-const lineSlider = new Swiper(".line__slider", {
-  speed: 8000,
+const expertsSlider = new Swiper(".experts__list", {
+  //centeredSlides: true,
   loop: true,
-  // freeMode: true,
-  spaceBetween: 34,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  freeModeMomentum: false,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-});
-
-const clientsSlider = new Swiper(".clients__slider", {
-  loop: true,
-  spaceBetween: 24,
-  slidesPerView: 2,
-  freeModeMomentum: false,
-  disableOnInteraction: false,
-  breakpoints: {
-    760: {
-      slidesPerView: 4,
-    },
-    1260: {
-      slidesPerView: 8,
-    },
+  spaceBetween: 20,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".next-experts",
+    prevEl: ".prev-experts",
   },
+
   on: {
     init: function () {
       lazyLoadInstance.update();
     },
   },
+  breakpoints: {
+    // 760: {
+    //   slidesPerView: 4,
+    // },
+    1200: {
+      slidesPerView: 4,
+      loop: true,
+      // loop: false,
+    },
+  },
 });
-
-// const slider = new Swiper('.slider', {
-// 	speed: 8000,
-// 	spaceBetween: 20,
-// 	loop: true,
-// 	freeMode: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 2,
-// 	freeModeMomentum: false,
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		dynamicBullets: true,
-// 	},
-// 	navigation: {
-// 		nextEl: ".swiper-button-next",
-// 		prevEl: ".swiper-button-prev",
-// 	},
-// 	autoplay: {
-// 		delay: 0,
-// 		disableOnInteraction: false
-// 	},
-// 	on: {
-// 		init: function () {
-// 			lazyLoadInstance.update();
-// 		},
-// 	},
-// 	breakpoints: {
-// 		760: {
-// 			slidesPerView: 4,
-// 		},
-// 		1260: {
-// 			slidesPerView: 5,
-// 		},
-// 	},
 // });
 
-$(".item__more, .program .item__title").on("click", function () {
+$(".item__more, .program .faq .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
 
@@ -233,79 +185,19 @@ $(".header__burger").on("click", function () {
   $("body").toggleClass("fixed");
 });
 
-if (window.innerWidth < 767) {
-  console.log("sss");
-  function hidePackagesBtn() {
-    let target = document.querySelector("#packages");
-    let btn = document.querySelector(".btn--hero");
-    if (!target || !btn) return;
+$(document).ready(function () {
+  var topElementId = "register";
+  var bottomElementId = "footer";
+  var $heroBtn = $(".btn-page--full");
 
-    let targetPosititon = target.offsetTop;
-    let targetkHeight = target.offsetHeight;
+  $(window).scroll(function () {
+    var topOffset = $("#" + topElementId).offset().top;
+    var bottomOffset = $("#" + bottomElementId).offset().top;
+    var scrollPosition = $(window).scrollTop();
 
-    if (
-      window.scrollY > targetPosititon - window.innerHeight ||
-      window.scrollY < window.innerHeight
-    ) {
-      btn.classList.remove("btn--fix");
-    } else {
-      btn.classList.add("btn--fix");
-    }
-
-    window.addEventListener("scroll", function (e) {
-      if (
-        window.scrollY > targetPosititon - window.innerHeight ||
-        window.scrollY < window.innerHeight
-      ) {
-        btn.classList.remove("btn--fix");
-      } else {
-        btn.classList.add("btn--fix");
-      }
-    });
-  }
-  hidePackagesBtn();
-  // Функция, которая будет вызываться при вхождении и выходе из блока #hero
-  function handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Пользователь видит блок #hero
-        hideButton();
-      } else {
-        // Пользователь не видит блок #hero
-        showButton();
-      }
-    });
-  }
-
-  // Функция для скрытия кнопки
-  function hideButton() {
-    var button = document.querySelector(".hero__btn");
-    button.style.display = "none";
-  }
-
-  // Функция для отображения кнопки
-  function showButton() {
-    var button = document.querySelector(".hero__btn");
-    button.style.display = "flex";
-  }
-
-  // Создаем новый экземпляр IntersectionObserver
-  var observer = new IntersectionObserver(handleIntersection, {
-    root: null, // null означает viewport
-    rootMargin: "0px",
-    threshold: 0.5, // Когда блок #hero виден на половину
+    $heroBtn.toggleClass(
+      "d-none",
+      scrollPosition >= topOffset && scrollPosition <= bottomOffset
+    );
   });
-
-  // Наблюдаем за блоком #hero
-  var heroBlock = document.getElementById("hero");
-  if (heroBlock) {
-    observer.observe(heroBlock);
-  }
-
-  // Скрываем кнопку при начальной загрузке, если #hero видим
-  if (heroBlock && heroBlock.getBoundingClientRect().top < window.innerHeight) {
-    hideButton();
-  } else {
-    showButton();
-  }
-}
+});

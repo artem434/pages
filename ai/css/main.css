@@ -1400,7 +1400,7 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .register__info {
     font-size: 18px;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 36px 0 52px;
   }
 }
@@ -1699,18 +1699,19 @@ select:-webkit-autofill:focus {
   .format__btns {
     display: flex;
     justify-content: flex-end;
-    gap: 44px;
-    padding: 14px 22px;
+    gap: 22px;
+    padding: 14px 0px;
   }
   .format__btns a {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     background-color: #5da3fb;
     border-radius: 6px;
     padding: 6px 10px;
   }
   .format__btns a:hover {
-    background-color: #59bf70;
+    background-color: #e9ff62;
+    color: #000;
   }
 }
 .format table {

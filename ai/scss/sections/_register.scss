@@ -98,7 +98,7 @@
 
     @include media-breakpoint-up(xl) {
       font-size: 18px;
-      justify-content: space-between;
+      justify-content: flex-end;
       margin: 36px 0 52px;
     }
 

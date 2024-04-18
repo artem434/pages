@@ -107,18 +107,18 @@
     @include media-breakpoint-up(xl) {
       display: flex;
       justify-content: flex-end;
-
-      gap: 44px;
-      padding: 14px 22px;
+      gap: 22px;
+      padding: 14px 0px;
 
       a {
-        font-size: 20px;
+        font-size: 16px;
         color: $white;
         background-color: $maincolor;
         border-radius: 6px;
         padding: 6px 10px;
         &:hover {
-          background-color: #59bf70;
+          background-color: #e9ff62;
+          color: #000;
         }
       }
     }

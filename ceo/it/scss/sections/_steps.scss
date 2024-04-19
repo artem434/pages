@@ -1,0 +1,88 @@
+.steps {
+  background: #f8f8f8;
+
+  .container {
+    position: relative;
+
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 72px;
+    }
+  }
+
+  h2 {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 376px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 592px;
+      padding-bottom: 48px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: -69px;
+      background: url(../img/steps-img-min.png) no-repeat center;
+      background-size: contain;
+      width: 477px;
+      height: 356px;
+
+      @include media-breakpoint-up(xl) {
+        width: 711px;
+        height: 524px;
+        left: inherit;
+        right: -600px;
+        bottom: -72px;
+      }
+    }
+    li {
+      color: #000;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 8px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+        gap: 18px;
+      }
+
+      &::before {
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect width='24' height='24' rx='12' fill='%23FF8718'/%3E%3Cpath d='M18.75 8.25281L9.75 17.2528L5.625 13.1278L6.6825 12.0703L9.75 15.1303L17.6925 7.19531L18.75 8.25281Z' fill='white'/%3E%3C/svg%3E")
+          no-repeat center;
+        background-size: contain;
+        display: block;
+        min-width: 16.05px;
+        height: 16.05px;
+
+        @include media-breakpoint-up(xl) {
+          min-width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

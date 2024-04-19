@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import "./global//mixins";
+@import "./global/variables";
+@import "./global/reset";
+@import "./global/global";
+@import "./global/fonts";
+
+@import "./sections/title";
+@import "./sections/main";
+@import "./sections/btn";
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/info";
+@import "./sections/steps";
+@import "./sections/level";
+@import "./sections/packages";
+@import "./sections/register";
+@import "./sections/footer";

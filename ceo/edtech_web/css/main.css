@@ -2553,6 +2553,9 @@ button {
   body {
     font-size: 14px;
   }
+  .hero-block__btm {
+    margin-top: 0;
+  }
 
   .wrapper {
     display: flex;
@@ -2715,7 +2718,7 @@ button {
   }
 
   .hero-form__bonus {
-    bottom: 180px;
+    bottom: 264px;
     z-index: -1;
     left: 80%;
     transform: translateX(-50%);

@@ -35,7 +35,7 @@ $data['entry.648990995'] = isset($_POST['ref']) ? $_POST['ref'] : false;
 
 
 // теперь подготовим данные для отправки в гугл форму
-$url = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSf33gRHQEdyeIL1o_LqhsCJcVpgmkiZpBJwCQ5km1N89qF7Jg/formResponse"; // куда слать, это атрибут action у гугл формы
+$url = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSd8nFhKrvp8VOHPpNGEd81CCs0neIss5YoDpnGGQYMPByeUcQ/formResponse"; // куда слать, это атрибут action у гугл формы
 
 
 $data = http_build_query($data); // теперь сериализуем массив данных в строку для отправки

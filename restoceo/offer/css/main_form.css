@@ -3373,10 +3373,9 @@ strong.medical b {
 }
 
 .hero .block {
-  border-radius: 34px;
+  border-radius: 24px;
   background: #017f4a;
   box-shadow: -10px 0px 36px 0px rgba(0, 0, 0, 0.15);
-  font-family: Neue Machina;
   padding: 22px 20px;
   color: #fff;
   position: relative;
@@ -3386,20 +3385,6 @@ strong.medical b {
     margin-top: -46px;
     padding: 31px 35px;
   }
-}
-
-.hero .block::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  background: url(../img/cooc.png) 50% / contain no-repeat;
-  background-size: cover;
-  width: 129.642px;
-  height: 99.442px;
-  top: -65px;
-  right: -38px;
-  transform: rotate(45deg);
 }
 
 @media (min-width: 767px) {

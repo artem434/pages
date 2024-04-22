@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://restoceo.bizconstructor.com/offer/css/libs.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://restoceo.bizconstructor.com/offer/css/main_form.css"
+    />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
+    />
+    <style>
+      .info_form {
+        background-color: transparent !important;
+      }
+      .hero {
+        padding: 50px 0;
+      }
+      .hero .block {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="hero" id="hero">
+        <div class="block">
+          <div class="block__form">
+            <div class="anchor" id="anchor"></div>
+            <form class="form zoho_url" id="form" method="post">
+              <div class="loader"></div>
+
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="name"
+                  type="text"
+                  placeholder="Твоє ім’я"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Твій номер телефону"
+                  required=""
+                />
+              </label>
+              <label class="input__wrap">
+                <input
+                  class="input"
+                  name="email"
+                  type="email"
+                  placeholder="Твій email"
+                  required=""
+                />
+              </label>
+              <div class="hidden">
+                <input type="hidden" name="ref" value="" autocomplete="off" />
+                <input type="hidden" name="ga" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="ym_uid"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_source"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_medium"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_term"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_content"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="utm_campaign"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="google_client_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="landing_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <!-- Landing_id-->
+                <input
+                  type="hidden"
+                  name="es_mail_id"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="convert_in_zoho"
+                  autocomplete="off"
+                />
+                <input type="hidden" name="es_id" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="token"
+                  value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="success_url"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="error_url"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="false"
+                  autocomplete="off"
+                />
+                <input type="hidden" name="send_to_gf" value="gf_ceo_edtech" />
+              </div>
+              <button class="form__btn subm" type="submit">
+                ЗАЛИШИТИ ЗАЯВКУ
+              </button>
+              <p class="form__agree">
+                Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку
+                твоїх персональних даних згідно з
+                <a href="http://privacy.bizconstructor.com/"
+                  >Політикою конфіденційності</a
+                >.
+                <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- END HIDDEN ELEMENTS (MODALS)-->
+    </div>
+
+    <script src="js/libs.min.js"></script>
+
+    <script src="js/webinar_form.js"></script>
+    <script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Дата мероприятия
+        let cDate = "3 жовтня",
+          // Landing id // Online
+          cLandingId = "2108311000856338090",
+          // Landing id // Online Pro
+          cLandingIdPro = "2108311000856338113",
+          // es_mail_id
+          cMail_id = "",
+          // es_id
+          cEs_id = "1154",
+          // success_url
+          cSuccess_url =
+            "https://restoceo.bizconstructor.com/offer/thanks.html";
+
+        //  дата скидки (автозамена)
+        let dataDeadline;
+        // dataDeadline = foundSale.date;
+
+        // Проверка данных с универсального блока (Удаем тут, если удалили с блока)
+        if (cDate !== "date") {
+          $(".cDate").each(function () {
+            $(this).html(cDate);
+          });
+        }
+        if (cLandingId !== "id") {
+          $("input[name='landing_id']").val(cLandingId);
+          $(".core_price").attr("data-id", cLandingId);
+        }
+        if (cLandingIdPro !== "id") {
+          $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+        if (cMail_id !== "es_mail_id") {
+          $("input[name='es_mail_id']").val(cMail_id);
+        }
+        if (cEs_id !== "cEs_id") {
+          $("input[name='es_id']").val(cEs_id);
+        }
+        if (cSuccess_url !== "success_url") {
+          $("input[name='success_url'], input[name='error_url']").val(
+            cSuccess_url
+          );
+        }
+        if (dataDeadline !== "dataDeadline") {
+          $(".data_deadline").each(function () {
+            $(this).html(dataDeadline);
+          });
+        }
+
+        // Установка цен на пакетах
+        let data = LP.CORE.getSearchJson();
+        LP.CORE.getPriceByID(data.landing_id);
+        $(".package_price").each(function (i, el) {
+          LP.CORE.setPriceThanks(
+            $(this).data("id"),
+            $(this).find(".price-full-redline"),
+            $(this).find(".price-discount-big")
+          );
+        });
+      });
+
+      // Настройка собитыий при клике на кнопки пакета
+      $("#btn-core").click(function () {
+        $(".packages-btns__pack-name.core_price").click();
+      });
+
+      $("#btn-pro").click(function () {
+        $(".packages-btns__pack-name.pro_price").click();
+      });
+    </script>
+  </body>
+</html>

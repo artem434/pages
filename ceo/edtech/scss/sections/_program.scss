@@ -1,4 +1,9 @@
 .program {
+  .container {
+    @include media-breakpoint-up(xl) {
+      max-width: 840px;
+    }
+  }
   h2 {
     color: $maincolor;
     font-size: 26px;
@@ -32,16 +37,110 @@
       }
     }
   }
+
+  .collapsible-content {
+    display: none;
+  }
+
+  .collapsible-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  .closed {
+    .vertical {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(-90deg);
+    }
+    .horizontal {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(-90deg);
+      opacity: 1;
+    }
+  }
+
+  .active {
+    opacity: 1;
+    .vertical {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(90deg);
+    }
+    .horizontal {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+  }
+
+  .collapsible-btn {
+    transform: scale(0.6);
+    font-size: 1em;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .collapsible-btn .circle .horizontal {
+    position: absolute;
+    background-color: $maincolor;
+    width: 30px;
+    height: 5px;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -2.5px;
+  }
+  .collapsible-btn .circle .vertical {
+    position: absolute;
+    background-color: $maincolor;
+    width: 5px;
+    height: 30px;
+    left: 50%;
+    margin-left: -2.5px;
+    top: 50%;
+    margin-top: -15px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    ul {
+      list-style-type: disc;
+      margin-top: 8px;
+
+      li {
+        font-size: 14px;
+        position: relative;
+        padding-left: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+
+        &::before {
+          content: "";
+          background: $maincolor;
+          border-radius: 50%;
+          background-size: contain;
+          min-width: 4px;
+          height: 4px;
+        }
+      }
+    }
 
     li {
       display: flex;
       flex-direction: row;
       gap: 14px;
       text-align: left;
+      position: relative;
+      padding-right: 24px;
 
       @include media-breakpoint-up(xl) {
         font-size: 20px;

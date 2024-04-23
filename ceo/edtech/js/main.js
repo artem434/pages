@@ -231,3 +231,21 @@ document.querySelectorAll(".format__btns a").forEach(function (button) {
     landingIdInput.value = dataId;
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const collapsibleBtns = document.querySelectorAll(".collapsible-btn");
+
+  collapsibleBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+
+        this.classList.add("active"); // добавляем класс active
+      } else {
+        content.style.display = "none";
+
+        this.classList.remove("active"); // удаляем класс active
+      }
+    });
+  });
+});

@@ -47,22 +47,22 @@ function clearF1Cookie() {
   setCookie("last1", "", -1);
 }
 
-$(window).load(function () {
-  $("input.name").val(getCookie("name"));
-  $("input.email").val(getCookie("email"));
-  $("input.phone").val(getCookie("phone"));
-});
+// $(window).load(function () {
+//   $("input.name").val(getCookie("name"));
+//   $("input.email").val(getCookie("email"));
+//   $("input.phone").val(getCookie("phone"));
+// });
 
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
 
 $.get("https://ipapi.co/json/", function (obj) {
-  if (getCookie("phone")) {
-    $("input.phone").val(getCookie("phone"));
-  } else {
-    $("input.phone").val(obj.country_calling_code);
-  }
+  // if (getCookie("phone")) {
+  //   $("input.phone").val(getCookie("phone"));
+  // } else {
+  //   $("input.phone").val(obj.country_calling_code);
+  // }
   $("input.phone").intlTelInput({
     utilsScript: "/js/utils.js",
     defaultCountry: "auto",
@@ -106,9 +106,9 @@ $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
-  setCookie("name", $('input[name="name"]').val(), 365);
-  setCookie("email", $('input[name="email"]').val(), 365);
-  setCookie("phone", $('input[name="phone"]').val(), 365);
+  // setCookie("name", $('input[name="name"]').val(), 365);
+  // setCookie("email", $('input[name="email"]').val(), 365);
+  // setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 1000);

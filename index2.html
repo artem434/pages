@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для тестування відправки даних в Pipedrive</title>
+  </head>
+  <body>
+    <h2>Форма для тестування відправки даних в Pipedrive</h2>
+
+    <form id="pipedriveForm">
+      <div>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="surname">Прізвище:</label>
+        <input type="text" id="surname" name="surname" required />
+      </div>
+      <div>
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <button type="submit">Відправити</button>
+      </div>
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("pipedriveForm");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = new FormData(form);
+          const data = {};
+
+          formData.forEach((value, key) => {
+            data[key] = value;
+          });
+
+          sendDataToPipedrive(data);
+        });
+      });
+
+      function sendDataToPipedrive(data) {
+        const API_KEY = "d291ce336580094a5ea31f509ac6a30c6288ca06"; // Ваш API ключ
+        const API_URL =
+          "https://api.pipedrive.com/v1/deals?api_token=" + API_KEY;
+
+        fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title: data.name + " " + data.surname, // Заголовок угоди
+            person_name: data.name, // Приклад поля ім'я
+            person_last_name: data.surname, // Приклад поля прізвище
+            person_email: data.email, // Приклад поля електронна пошта
+            status: "open", // Статус угоди
+            stage_id: 1, // ID етапу угоди (можна змінити на відповідний вашому потреби)
+            probability: 100, // Ймовірність угоди (відсотки)
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Success:", data);
+            alert("Дані відправлено до Pipedrive!");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Помилка відправки даних до Pipedrive.");
+          });
+      }
+    </script>
+  </body>
+</html>

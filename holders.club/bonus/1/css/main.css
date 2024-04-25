@@ -672,6 +672,8 @@ a {
   font-weight: 700;
   font-style: normal;
   padding: 1px;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 .hero__text {
   position: absolute;

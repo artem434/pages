@@ -150,6 +150,8 @@
         font-style: normal;
         padding: 1px;
         font-size: 9px;
+        display: inline-block;
+        margin-bottom: 2px;
 
         @include media-breakpoint-up(xl) {
           font-size: 14px;

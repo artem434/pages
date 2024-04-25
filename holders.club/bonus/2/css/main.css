@@ -673,6 +673,8 @@ a {
   font-style: normal;
   padding: 1px;
   font-size: 9px;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 @media (min-width: 1200px) {
   .hero__img b span {

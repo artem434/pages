@@ -1,0 +1,26 @@
+.btn-page {
+  background-color: $maincolor;
+  font-size: 22px;
+  color: $white;
+  width: 100%;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-weight: 700;
+  max-width: 375px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #2b6c00;
+    cursor: pointer;
+  }
+}
+
+.btn--radius {
+  border-radius: 73px;
+}

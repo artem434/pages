@@ -39,6 +39,7 @@
           formData.forEach((value, key) => {
             data[key] = value;
           });
+          console.log(data);
 
           sendDataToPipedrive(data);
         });
@@ -55,13 +56,9 @@
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            title: data.name + " " + data.surname, // Заголовок угоди
-            person_name: data.name, // Приклад поля ім'я
-            person_last_name: data.surname, // Приклад поля прізвище
-            person_email: data.email, // Приклад поля електронна пошта
-            status: "open", // Статус угоди
-            stage_id: 1, // ID етапу угоди (можна змінити на відповідний вашому потреби)
-            probability: 100, // Ймовірність угоди (відсотки)
+            name: data.name,
+            last_name: data.name,
+            email: data.email,
           }),
         })
           .then((response) => response.json())

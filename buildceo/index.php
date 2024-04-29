@@ -1321,9 +1321,9 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         // Дата мероприятия
         let cDate = "17 жовтня",
           // Landing id // Online
-          cLandingId = "2108311000831444142",
+          cLandingId = "2108311000856685051",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000831444109",
+          cLandingIdPro = "2108311000856685074",
           // es_mail_id
           cMail_id = "",
           // es_id

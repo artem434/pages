@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Форма для тестування відправки даних в Pipedrive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <h2>Форма для тестування відправки даних в Pipedrive</h2>
@@ -46,30 +47,32 @@
       });
 
       function sendDataToPipedrive(data) {
-        const API_KEY = "d291ce336580094a5ea31f509ac6a30c6288ca06"; // Ваш API ключ
+        const API_KEY = "d291ce336580094a5ea31f509ac6a30c6288ca06";
         const API_URL =
           "https://api.pipedrive.com/v1/deals?api_token=" + API_KEY;
 
-        fetch(API_URL, {
-          method: "POST",
+        $.ajax({
+          url: API_URL,
+          type: "POST",
+          contentType: "application/json",
           headers: {
-            "Content-Type": "application/json",
+            Authorization: "Bearer " + API_KEY,
           },
-          body: JSON.stringify({
+          data: JSON.stringify({
+            title: data.name,
             name: data.name,
-            last_name: data.name,
+            last_name: data.surname,
             email: data.email,
           }),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Success:", data);
+          success: function (response) {
+            console.log("Success:", response);
             alert("Дані відправлено до Pipedrive!");
-          })
-          .catch((error) => {
+          },
+          error: function (xhr, status, error) {
             console.error("Error:", error);
             alert("Помилка відправки даних до Pipedrive.");
-          });
+          },
+        });
       }
     </script>
   </body>

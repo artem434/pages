@@ -13,22 +13,17 @@ $(document).ready(function () {
   // AOS.init();
 });
 
-$(window).load(function () {
-  $("input[name=name]").val(getCookie("name"));
-  $("input[name=email]").val(getCookie("email"));
-  $("input[name=phone]").val(getCookie("phone"));
-});
+// $(window).load(function() {
+// 	$("input[name=name]").val(getCookie("name"));
+// 	$("input[name=email]").val(getCookie("email"));
+// 	$("input[name=phone]").val(getCookie("phone"));
+// });
 
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
 
 $.get("https://ipapi.co/json/", function (obj) {
-  if (getCookie("phone")) {
-    $("input[name=phone]").val(getCookie("phone"));
-  } else {
-    $("input[name=phone]").val(obj.country_calling_code);
-  }
   $("input[name=phone]").intlTelInput({
     // utilsScript       : '/js/utils.js',
     defaultCountry: "auto",
@@ -39,13 +34,10 @@ $.get("https://ipapi.co/json/", function (obj) {
   });
 });
 
-$("form .subm").on("click", function (e) {
+$("form [type=sumbit]").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
-  setCookie("name", $('input[name="name"]').val(), 365);
-  setCookie("email", $('input[name="email"]').val(), 365);
-  setCookie("phone", $('input[name="phone"]').val(), 365);
   setTimeout(function () {
     form.submit();
   }, 1000);
@@ -140,27 +132,86 @@ $('a[href*="#"]')
     }
   });
 
-const clientsSlider = new Swiper(".clients__slider", {
-  loop: false,
-  spaceBetween: 1,
-  slidesPerView: 1,
+const lineSlider = new Swiper(".line__slider", {
+  speed: 8000,
+  loop: true,
+  // freeMode: true,
+  spaceBetween: 34,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  freeModeMomentum: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+});
 
+const clientsSlider = new Swiper(".clients__slider", {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 2,
+  freeModeMomentum: false,
+  disableOnInteraction: false,
   breakpoints: {
     760: {
-      slidesPerView: 1,
+      slidesPerView: 4,
     },
     1260: {
-      slidesPerView: 4,
+      slidesPerView: 8,
     },
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
 });
+
+// const slider = new Swiper('.slider', {
+// 	speed: 8000,
+// 	spaceBetween: 20,
+// 	loop: true,
+// 	freeMode: true,
+// 	centeredSlides: true,
+// 	slidesPerView: 2,
+// 	freeModeMomentum: false,
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		dynamicBullets: true,
+// 	},
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// 	autoplay: {
+// 		delay: 0,
+// 		disableOnInteraction: false
+// 	},
+// 	on: {
+// 		init: function () {
+// 			lazyLoadInstance.update();
+// 		},
+// 	},
+// 	breakpoints: {
+// 		760: {
+// 			slidesPerView: 4,
+// 		},
+// 		1260: {
+// 			slidesPerView: 5,
+// 		},
+// 	},
 // });
 
-$(".item__more, .program .faq .item__title").on("click", function () {
+$(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
 
@@ -174,37 +225,13 @@ $(".header__burger").on("click", function () {
   $("body").toggleClass("fixed");
 });
 
-$(document).ready(function () {
-  var topElementId = "register";
-  var bottomElementId = "footer";
-  var $heroBtn = $(".btn-page--full");
+const checkbox = document.getElementById("myCheckbox");
+const hiddenInput = document.querySelector('input[name="formid"]');
 
-  $(window).scroll(function () {
-    var topOffset = $("#" + topElementId).offset().top;
-    var bottomOffset = $("#" + bottomElementId).offset().top;
-    var scrollPosition = $(window).scrollTop();
-
-    $heroBtn.toggleClass(
-      "d-none",
-      scrollPosition >= topOffset && scrollPosition <= bottomOffset
-    );
-  });
+checkbox.addEventListener("click", function () {
+  if (this.checked) {
+    hiddenInput.value = "1";
+  } else {
+    hiddenInput.value = "0";
+  }
 });
-
-var modal = document.getElementById("modal");
-
-// Get the image and insert it inside the modal - use its "data-img" attribute as the source
-var images = document.querySelectorAll(".swiper-slide");
-var modalImg = document.getElementById("modal-img");
-
-images.forEach(function (img) {
-  img.addEventListener("click", function () {
-    modal.style.display = "flex";
-    modalImg.src = this.getAttribute("data-bg");
-  });
-});
-
-// Close the modal when the user clicks on <span> (x)
-function closeModal() {
-  modal.style.display = "none";
-}

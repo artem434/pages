@@ -157,6 +157,7 @@
 
       &--first {
         background: #fff;
+        max-width: 420px;
       }
       &--second {
         border-radius: 12px;
@@ -164,8 +165,39 @@
         background: rgba(0, 182, 255, 0.06);
 
         @include media-breakpoint-up(xl) {
-          max-width: 55%;
+          max-width: 58%;
         }
+      }
+      &--last {
+        border: solid 2px #00b6ff;
+
+        @include media-breakpoint-up(xl) {
+          max-height: 316px;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            max-width: 326px;
+            width: 100%;
+          }
+        }
+
+        &-column {
+          ul {
+            //flex-direction: column;
+          }
+        }
+      }
+    }
+
+    &__wr {
+      @include media-breakpoint-up(xl) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: baseline;
       }
     }
     &__content {
@@ -173,6 +205,7 @@
       flex-direction: column;
       gap: 12px;
       padding-top: 12px;
+      flex-wrap: wrap;
 
       @include media-breakpoint-up(xl) {
         flex-direction: row;

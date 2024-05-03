@@ -75,7 +75,7 @@
       padding: 27px 26px;
       @include media-breakpoint-up(xl) {
         width: 100%;
-        max-width: 345px;
+        max-width: 402px;
         min-width: 345px;
         position: relative;
       }
@@ -234,6 +234,7 @@
       margin: 16px 0;
       border: none;
       background-color: $maincolor;
+      max-width: 100%;
       &:hover {
         background-color: $white;
         color: $black;

@@ -23,6 +23,11 @@
       rel="apple-touch-icon-precomposed"
       href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
     <style>
       .info_form {
         background-color: transparent !important;
@@ -32,6 +37,10 @@
       }
       .hero .block {
         margin: 0 auto;
+        background-color: #009716;
+      }
+      .hero .block::before {
+        content: none;
       }
     </style>
   </head>
@@ -121,7 +130,7 @@
                 <input
                   type="hidden"
                   name="landing_id"
-                  value=""
+                  value="2108311000867745024"
                   autocomplete="off"
                 />
                 <!-- Landing_id-->
@@ -161,7 +170,11 @@
                   value="false"
                   autocomplete="off"
                 />
-                <input type="hidden" name="send_to_gf" value="gf_ceo_edtech" />
+                <input
+                  type="hidden"
+                  name="send_to_gf"
+                  value="gf_ceo_edtech_offer_web"
+                />
               </div>
               <button class="form__btn subm" type="submit">
                 ЗАЛИШИТИ ЗАЯВКУ
@@ -179,9 +192,54 @@
         </div>
       </section>
     </div>
-    <script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Дата мероприятия
+        let cDate = "3 жовтня",
+          // Landing id // Online
+          cLandingId = "2108311000867745024",
+          // Landing id // Online Pro
+          cLandingIdPro = "2108311000867745024",
+          // es_mail_id
+          cMail_id = "",
+          // es_id
+          cEs_id = "1154",
+          // success_url
+          cSuccess_url = "";
+
+        //  дата скидки (автозамена)
+        let dataDeadline;
+        // dataDeadline = foundSale.date;
+
+        // Проверка данных с универсального блока (Удаем тут, если удалили с блока)
+        if (cDate !== "date") {
+          $(".cDate").each(function () {
+            $(this).html(cDate);
+          });
+        }
+        if (cLandingId !== "id") {
+          $("input[name='landing_id']").val(cLandingId);
+          $(".core_price").attr("data-id", cLandingId);
+        }
+        if (cLandingIdPro !== "id") {
+          $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+        if (cMail_id !== "es_mail_id") {
+          $("input[name='es_mail_id']").val(cMail_id);
+        }
+        if (cEs_id !== "cEs_id") {
+          $("input[name='es_id']").val(cEs_id);
+        }
+        if (cSuccess_url !== "success_url") {
+          $("input[name='success_url'], input[name='error_url']").val(
+            cSuccess_url
+          );
+        }
+      });
+    </script>
+
     <script src="https://restoceo.bizconstructor.com/offer/js/libs.min.js"></script>
-    <script src="https://restoceo.bizconstructor.com/offer/js/main.js"></script>
     <script src="https://restoceo.bizconstructor.com/offer/js/webinar_form.js"></script>
+    <script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js"></script>
   </body>
 </html>

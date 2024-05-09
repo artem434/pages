@@ -1,124 +1,133 @@
 .company {
-  background-color: $white;
-  color: $black;
+  position: relative;
+
+  text-align: center;
+
+  @include media-breakpoint-up(xl) {
+  }
+
   .container {
     position: relative;
   }
 
-  h2 {
-    text-align: left;
-    color: $black;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
+  &__shadow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 775px;
+    height: 775px;
+    position: absolute;
+    transform: scale(0.4);
+    top: -334px;
+    left: -181px;
 
     @include media-breakpoint-up(xl) {
-      margin-bottom: 44px;
-      font-size: 76px;
-      line-height: 1;
+      transform: scale(1);
+      z-index: -1;
+      left: 180px;
+    }
+  }
+
+  &__title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 946px;
+      margin: 0 auto;
+    }
+
+    br {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
     }
 
     span {
-      color: #00b6ff;
-      display: block;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 800;
+      display: inline-block;
+      background-color: $maincolor;
+      color: $white;
+      font-size: 24px;
+      padding: 12px 11px;
+      text-transform: uppercase;
 
       @include media-breakpoint-up(xl) {
-        font-size: 42px;
+        font-size: 36px;
       }
     }
-  }
-
-  &__content {
-    position: relative;
-
-    @include media-breakpoint-up(xl) {
-      display: flex;
-      flex-direction: row;
-      gap: 120px;
-      align-items: center;
-    }
-  }
-
-  &__item {
     p {
-      color: #1f2229;
-
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      margin-bottom: 24px;
+      margin-top: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
 
       @include media-breakpoint-up(xl) {
-        font-size: 18px;
-        margin-bottom: 36px;
-      }
-    }
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      padding-right: 46px;
-
-      @include media-breakpoint-up(xl) {
-        width: 292px;
-        padding-right: 0;
-      }
-
-      li {
-        max-width: 126px;
-
-        @include media-breakpoint-up(xl) {
-          max-width: 100%;
-          display: flex;
-          align-items: center;
-          gap: 36px;
-        }
+        margin-top: 52px;
+        font-size: 22px;
       }
     }
   }
 
-  &__icon {
-    border-radius: 5.12px;
-    background: var(--blue, #00b6ff);
-    box-shadow: 0px 0px 12.8px 0px rgba(0, 0, 0, 0.06);
-    width: 58px;
-    height: 58px;
+  &__block {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      gap: 42px;
+      margin-top: 80px;
+    }
+  }
+
+  &__img {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    flex-wrap: wrap;
+    //gap: 22px;
+    margin: 18px 0;
 
     @include media-breakpoint-up(xl) {
-      min-width: 76px;
-      height: 76px;
-      margin-bottom: 0;
+      //gap: 15px;
+    }
+  }
+  &__logos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 346.496px;
+    height: 177px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      width: 565.323px;
+      height: 275.16px;
+      margin: -40px auto 0;
+    }
+  }
+
+  &__dec {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1770.398px;
+    height: 524.609px;
+    position: absolute;
+    top: 11px;
+    right: -281px;
+
+    @include media-breakpoint-up(xl) {
+      top: 50px;
+      right: -100px;
     }
   }
 
   &__text {
     font-size: 14px;
-
-    @include media-breakpoint-up(xl) {
-      font-size: 18px;
-    }
+    line-height: 1.6;
     b {
-      display: block;
-      color: $maincolor;
-      font-size: 24px;
-      font-style: normal;
       font-weight: 700;
-
-      @include media-breakpoint-up(xl) {
-        font-size: 30px;
-      }
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 512px;
+      font-size: 18px;
+      text-align: left;
     }
   }
 }

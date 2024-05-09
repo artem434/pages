@@ -76,6 +76,21 @@
     }
   }
 
+  &__description {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+
+    @include media-breakpoint-up(xl) {
+      margin: 50px auto;
+      font-size: 24px;
+    }
+  }
+
   .navigation {
     position: relative;
     display: flex;

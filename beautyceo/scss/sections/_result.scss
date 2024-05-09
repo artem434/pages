@@ -1,4 +1,16 @@
 .result {
+  position: relative;
+
+  .bg {
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      width: 1616px;
+      height: 1112px;
+      top: -234px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
   .container {
     position: relative;
   }
@@ -9,7 +21,7 @@
 
   &__subtitle {
     max-width: 806px;
-    margin: 48px auto 0;
+    margin: 48px auto;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;

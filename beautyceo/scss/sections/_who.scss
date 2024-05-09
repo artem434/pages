@@ -17,6 +17,7 @@
 
     @include media-breakpoint-up(xl) {
       flex-direction: row;
+      justify-content: center;
     }
   }
 

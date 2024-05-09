@@ -140,28 +140,6 @@ $('a[href*="#"]')
     }
   });
 
-const tickerSlider = new Swiper(".ticker--line", {
-  speed: 4000,
-  loop: true,
-  freeMode: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  //freeModeMomentum: false,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-
-  760: {
-    //speed: 7000,
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-});
-
 const clientsSlider = new Swiper(".clients__slider", {
   spaceBetween: 24,
   slidesPerView: 2,
@@ -215,7 +193,6 @@ const expertsSlider = new Swiper(".experts__list", {
     },
   },
 });
-// });
 
 const difficultiesSlider = new Swiper(".difficulties__content", {
   //centeredSlides: true,
@@ -286,84 +263,6 @@ document.querySelectorAll(".format__btns a").forEach(function (button) {
   });
 });
 
-$(".expert__collapse-btn").click(function () {
-  $(".expert__text").toggleClass("active");
-});
-
-var player;
-
-// Функция инициализации плеера
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("players", {
-    height: "200",
-    width: "300",
-    videoId: "tok-0uAVj_s",
-    events: {
-      onReady: onPlayerReady,
-    },
-  });
-}
-
-function onPlayerReady(event) {
-  player = event.target;
-}
-
-function playVideo() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "block";
-
-  if (player) {
-    player.playVideo();
-  }
-}
-
-function closePopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "none";
-
-  if (player) {
-    player.stopVideo();
-  }
-}
-
-document.getElementById("playButton").addEventListener("click", playVideo);
-
-document.querySelector(".close").addEventListener("click", closePopup);
-
-document.getElementById("popup").addEventListener("click", function (event) {
-  if (event.target === this) {
-    closePopup();
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var items = document.querySelectorAll(".instruction__item");
-
-  setActiveItem(items[0]);
-
-  items.forEach(function (item) {
-    item.addEventListener("click", function () {
-      var phone = this.nextElementSibling;
-
-      setActiveItem(this);
-    });
-  });
-
-  function setActiveItem(activeItem) {
-    var activePhone = activeItem.nextElementSibling;
-
-    items.forEach(function (item) {
-      item.classList.remove("instruction__item--active");
-    });
-    document.querySelectorAll(".instruction__phone").forEach(function (phone) {
-      phone.style.display = "none";
-    });
-
-    activeItem.classList.add("instruction__item--active");
-    activePhone.style.display = "block";
-  }
-});
-
 $(document).ready(function () {
   var topElementId = "register";
   var bottomElementId = "footer";
@@ -378,31 +277,5 @@ $(document).ready(function () {
       "d-none",
       scrollPosition >= topOffset && scrollPosition <= bottomOffset
     );
-  });
-});
-
-$(document).ready(function () {
-  var youtubeSwiper = new Swiper(".swiper-container", {
-    loop: true,
-    //spaceBetween: 20,
-    slidesPerView: 1,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    // function to stop youtube video on slidechange
-    on: {
-      slideChange: function (el) {
-        $(".swiper-slide").each(function () {
-          var youtubePlayer = $(this).find("iframe").get(0);
-          if (youtubePlayer) {
-            youtubePlayer.contentWindow.postMessage(
-              '{"event":"command","func":"pauseVideo","args":""}',
-              "*"
-            );
-          }
-        });
-      },
-    },
   });
 });

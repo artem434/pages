@@ -69,9 +69,22 @@
 .btn-arrows {
   width: 100%;
   position: relative;
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+  }
 
   a {
     margin: 0 auto;
+  }
+
+  .btn {
+    background: $maincolor;
+
+    &:hover {
+      background: transparent;
+    }
   }
 }
 
@@ -90,12 +103,12 @@
 
   &__item {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 14px;
+    height: 14px;
     transform: rotate(-180deg);
     animation: arrow 2s infinite;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.1586 1.50537L10.3089 3.35507L17.629 10.6883L1.66385 10.6883L1.66385 13.3119L17.629 13.3119L10.2958 20.632L12.1586 22.4948L22.6533 12.0001L12.1586 1.50537Z' fill='%239FF565'/%3E%3C/svg%3E")
-      right top no-repeat;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='20' viewBox='0 0 12 20' fill='none'%3E%3Cpath d='M0.101562 17.2517L7.35323 10L0.101562 2.7325L2.33406 0.5L11.8341 10L2.33406 19.5L0.101562 17.2517Z' fill='%23FF016B'/%3E%3C/svg%3E")
+      center no-repeat;
     background-size: contain;
 
     &:nth-child(1) {
@@ -128,7 +141,7 @@
     top: 50%;
     transform: translate(0, -50%) rotate(180deg);
     right: inherit;
-    left: 100px;
+    left: 0px;
   }
   &--right {
     position: absolute;
@@ -136,7 +149,7 @@
     top: 50%;
     transform: translate(0, -50%);
     right: inherit;
-    right: 100px;
+    right: 0px;
   }
 }
 

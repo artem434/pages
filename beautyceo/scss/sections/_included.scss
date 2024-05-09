@@ -1,4 +1,16 @@
 .included {
+  position: relative;
+
+  .bg {
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      width: 914px;
+      height: 965px;
+      top: 34px;
+      left: 16%;
+      transform: translate(-50%, 0);
+    }
+  }
   .container {
     position: relative;
     @include media-breakpoint-up(xl) {

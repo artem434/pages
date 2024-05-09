@@ -1,5 +1,4 @@
 .clients {
-  background: #f2f3f4;
   padding: 22px 0;
   display: none;
 
@@ -14,7 +13,6 @@
 
   .title {
     font-size: 22px;
-    color: $black;
 
     @include media-breakpoint-up(xl) {
       font-size: 36px;

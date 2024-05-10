@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 :root {
   --container-width: 1160px;
@@ -300,7 +301,14 @@ form input.not_error {
 }
 
 .swiper-prev {
-  left: -20px;
+  left: 0px;
+}
+.swiper-prev::after {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Crect x='43' y='1' width='42' height='42' rx='21' transform='rotate(90 43 1)' stroke='%23FF016B' stroke-width='2'/%3E%3Cpath d='M22.5 12L20.7375 13.7625L27.7125 20.75L12.5 20.75L12.5 23.25L27.7125 23.25L20.725 30.225L22.5 32L32.5 22L22.5 12Z' fill='%23FF016B'/%3E%3C/svg%3E") center/contain no-repeat;
+  min-width: 44px;
+  height: 44px;
+  transform: rotate(180deg);
 }
 
 .form:before {
@@ -321,13 +329,12 @@ form input.not_error {
 }
 
 .swiper-next {
-  right: -20px;
+  right: 0px;
 }
 .swiper-next::after {
   content: "";
   min-width: 44px;
   height: 44px;
-  transform: rotate(180deg);
 }
 
 a {
@@ -1020,10 +1027,11 @@ select:-webkit-autofill:focus {
   }
 }
 .hero__btns .btn-page-nofull {
-  display: none;
+  margin-top: 22px;
 }
 @media (min-width: 1200px) {
   .hero__btns .btn-page-nofull {
+    margin-top: 0;
     display: inherit;
     position: relative;
   }
@@ -1445,7 +1453,6 @@ select:-webkit-autofill:focus {
 
 .clients {
   padding: 22px 0;
-  display: none;
 }
 @media (min-width: 1200px) {
   .clients {
@@ -1883,7 +1890,7 @@ select:-webkit-autofill:focus {
 .path__bg {
   position: absolute;
   top: 160px;
-  left: -28px;
+  left: -8px;
   width: 375.5px;
   height: 850px;
   background-size: contain;
@@ -2108,7 +2115,7 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 1200px) {
   .expert .experts {
-    max-width: 1120px;
+    max-width: 1300px;
     position: relative;
   }
 }
@@ -2119,8 +2126,8 @@ select:-webkit-autofill:focus {
   position: relative;
 }
 .expert .experts__item .img {
-  width: 267px;
-  height: 306px;
+  width: 310px;
+  height: 462px;
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2136,6 +2143,9 @@ select:-webkit-autofill:focus {
           backdrop-filter: blur(1.5px);
   width: 100%;
   padding: 14px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .expert .experts__bottom b {
   font-size: 22px;
@@ -2154,7 +2164,6 @@ select:-webkit-autofill:focus {
 .expert .experts__bottom p {
   font-size: 14px;
   line-height: normal;
-  display: none;
 }
 .expert .experts__bottom p span {
   font-weight: 700;
@@ -3087,6 +3096,117 @@ select:-webkit-autofill:focus {
     font-size: 22px;
     max-width: 700px;
   }
+}
+
+#popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Півпрозорий чорний колір */
+  z-index: 1000; /* Вище за попап, але нижче за хрестик */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Анімація затінення */
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1d1d1d;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Вище за оверлей */
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.3s ease; /* Анімація прозорості та положення */
+  transform-origin: center center;
+  border-radius: 16px;
+}
+
+#popup.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#popup-overlay.show {
+  display: block;
+  opacity: 1;
+}
+
+#close-popup {
+  position: absolute;
+  top: -26px;
+  right: 0px;
+  font-size: 32px;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  #close-popup {
+    right: -26px;
+  }
+}
+
+.close {
+  color: #aaa;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.thanks {
+  flex: 1 0 auto;
+  color: #fff;
+}
+.thanks .container {
+  position: relative;
+  background: url(../img/bg-thanks-min.jpeg) no-repeat center;
+  max-width: 100%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thanks__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.thanks h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .thanks h1 {
+    font-size: 32px;
+  }
+}
+.thanks h2 {
+  font-size: 66px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .thanks h2 {
+    font-size: 80px;
+  }
+}
+.thanks h2 span {
+  color: #ff016b;
+}
+.thanks p {
+  font-size: 24px;
 }
 
 .footer {

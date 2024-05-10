@@ -142,7 +142,7 @@ $('a[href*="#"]')
 
 const clientsSlider = new Swiper(".clients__slider", {
   spaceBetween: 24,
-  slidesPerView: 2,
+  slidesPerView: 1,
   //freeModeMomentum: false,
   //disableOnInteraction: false,
   breakpoints: {
@@ -165,7 +165,7 @@ const clientsSlider = new Swiper(".clients__slider", {
   },
 });
 const expertsSlider = new Swiper(".experts__list", {
-  //centeredSlides: true,
+  centeredSlides: true,
   loop: true,
   spaceBetween: 20,
   slidesPerView: 1,
@@ -230,7 +230,7 @@ $(".header__burger").on("click", function () {
 
 var spans = document.querySelectorAll(".register__package span");
 
-var landingIdInput = document.getElementsByName("landing_id")[0];
+var landingIdInput = document.querySelector("#register [name='landing_id']");
 
 spans.forEach(function (span) {
   span.addEventListener("click", function () {
@@ -277,5 +277,30 @@ $(document).ready(function () {
       "d-none",
       scrollPosition >= topOffset && scrollPosition <= bottomOffset
     );
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var consultationButton = document.querySelector("a.btn-page-nofull");
+  var popupOverlay = document.querySelector("#popup-overlay");
+  var popup = document.querySelector("#popup");
+  var closeButton = document.querySelector("#close-popup");
+  var landingIdInput = popup.querySelector("[name='landing_id']");
+
+  consultationButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    var dataId = consultationButton.getAttribute("data-id");
+    landingIdInput.value = dataId; // Встановлення значення
+    popupOverlay.classList.add("show");
+    popup.classList.add("show");
+  });
+
+  closeButton.addEventListener("click", function () {
+    popupOverlay.classList.remove("show");
+    popup.classList.remove("show");
+  });
+
+  popupOverlay.addEventListener("click", function () {
+    popupOverlay.classList.remove("show");
+    popup.classList.remove("show");
   });
 });

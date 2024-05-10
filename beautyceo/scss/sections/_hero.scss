@@ -235,9 +235,9 @@
     }
 
     .btn-page-nofull {
-      display: none;
-
+      margin-top: 22px;
       @include media-breakpoint-up(xl) {
+        margin-top: 0;
         display: inherit;
         position: relative;
       }

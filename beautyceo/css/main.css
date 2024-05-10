@@ -2108,7 +2108,7 @@ select:-webkit-autofill:focus {
   }
 }
 .expert .experts {
-  max-width: 267px;
+  max-width: 310px;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -2172,7 +2172,7 @@ select:-webkit-autofill:focus {
 .expert .experts__navigation {
   position: absolute;
   top: 220px;
-  width: 263px;
+  width: 310px;
   margin: 0 auto;
   display: flex;
   align-items: center;

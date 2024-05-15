@@ -35,6 +35,7 @@ $.get("https://ipapi.co/json/", function (obj) {
 });
 
 $("form [type=sumbit]").on("click", function (e) {
+  alert("12");
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");

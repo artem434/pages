@@ -1204,26 +1204,7 @@ function modalQuiz() {
     });
   }
 }
-$(document).ready(function () {
-  function getQueryParams(url) {
-    var queryParams = {};
-    var parser = document.createElement("a");
-    parser.href = url;
-    var query = parser.search.substring(1);
-    var vars = query.split("&");
-    vars.forEach(function (v) {
-      var pair = v.split("=");
-      queryParams[pair[0]] = decodeURIComponent(pair[1]);
-    });
-    return queryParams;
-  }
 
-  var url = window.location.href; // Отримуємо поточну URL з браузера
-  var params = getQueryParams(url);
-
-  var utm_source = params["utm_source"];
-  var utm_campaign = params["utm_campaign"];
-});
 // Обработчик на форму
 $(".zoho_url").submit(function (e) {
   e.preventDefault();
@@ -1301,40 +1282,36 @@ $(".zoho_url").submit(function (e) {
                 fbcapiData,
                 "https://cap1.space/fb-capi.php/"
               ).finally(() => {
-                /*
-                if (server_response.link !== false) {
-                  if (!quizComplete) {
-                    LP.CORE.showModal("#modal__quiz");
-                  } else {
-                    if (get_params == "false") {
-                      server_response_link = server_response.link.split("?")[0];
-                    } else {
-                      server_response_link = server_response.link;
-                    }
-                    setTimeout(function () {
-                      document.location.href = server_response_link;
-                    }, 250);
-                  }
-                }
-                */
+                // if (server_response.link !== false) {
+                //   if (!quizComplete) {
+                //     LP.CORE.showModal("#modal__quiz");
+                //   } else {
+                //     if (get_params == "false") {
+                //       server_response_link = server_response.link.split("?")[0];
+                //     } else {
+                //       server_response_link = server_response.link;
+                //     }
+                //     setTimeout(function () {
+                //       document.location.href = server_response_link;
+                //     }, 250);
+                //   }
+                // }
               });
             } else {
-              /*
-              if (server_response.link !== false) {
-                if (!quizComplete) {
-                  LP.CORE.showModal("#modal__quiz");
-                } else {
-                  if (get_params == "false") {
-                    server_response_link = server_response.link.split("?")[0];
-                  } else {
-                    server_response_link = server_response.link;
-                  }
-                  setTimeout(function () {
-                    document.location.href = server_response_link;
-                  }, 250);
-                }
-              }
-              */
+              // if (server_response.link !== false) {
+              //   if (!quizComplete) {
+              //     LP.CORE.showModal("#modal__quiz");
+              //   } else {
+              //     if (get_params == "false") {
+              //       server_response_link = server_response.link.split("?")[0];
+              //     } else {
+              //       server_response_link = server_response.link;
+              //     }
+              //     setTimeout(function () {
+              //       document.location.href = server_response_link;
+              //     }, 250);
+              //   }
+              // }
             }
 
             // Facebook pixel tracking
@@ -1412,7 +1389,24 @@ $(".zoho_url").submit(function (e) {
 function sendDataToPipedrive(data) {
   const API_KEY = "d291ce336580094a5ea31f509ac6a30c6288ca06";
   const API_URL = "https://api.pipedrive.com/v1/persons?api_token=" + API_KEY;
+  function getQueryParams(url) {
+    var queryParams = {};
+    var parser = document.createElement("a");
+    parser.href = url;
+    var query = parser.search.substring(1);
+    var vars = query.split("&");
+    vars.forEach(function (v) {
+      var pair = v.split("=");
+      queryParams[pair[0]] = decodeURIComponent(pair[1]);
+    });
+    return queryParams;
+  }
 
+  var url = window.location.href;
+  var params = getQueryParams(url);
+
+  var utm_source = params["utm_source"];
+  var utm_campaign = params["utm_campaign"];
   $.ajax({
     url: API_URL,
     type: "POST",
@@ -1424,6 +1418,8 @@ function sendDataToPipedrive(data) {
       name: data.name,
       email: data.email,
       phone: data.phone,
+      "1270774a4c06b5b037295365f4cd862ffa64cc7e": utm_source,
+      "617788c5068a48c40edec294da8716d2b68f84b0": utm_campaign,
     }),
     success: function (response) {
       console.log("Success:", response);

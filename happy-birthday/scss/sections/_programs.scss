@@ -1,0 +1,204 @@
+.programs {
+  position: relative;
+  .container {
+    @extend %content;
+    position: relative;
+    padding: 68px 0px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      padding: 128px 0;
+    }
+  }
+
+  &__dec {
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      background-size: cover;
+      width: 2128px;
+      height: 1408px;
+      top: -82px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+    }
+
+    span {
+      display: block;
+      color: $orange;
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    padding: 18px 29px;
+    text-align: center;
+    border: 3px solid #3b9aef;
+    background: rgba(59, 154, 239, 0.2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      max-width: 838px;
+      margin: 0 auto 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      row-gap: 62px;
+      column-gap: 38px;
+      justify-content: center;
+    }
+  }
+
+  .program {
+    border: solid 1px #fff;
+    padding: 26px 24px 60px 24px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    gap: 26px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 400px;
+      width: 100%;
+      padding: 28px 28px 46px 28px;
+
+      text-align: left;
+      gap: 30px;
+
+      &--long {
+        @include media-breakpoint-up(xl) {
+          max-width: 838px;
+          flex-direction: row;
+          padding: 28px;
+          gap: 74px;
+          .program__item {
+            width: 49%;
+
+            &:nth-child(2) {
+              &::before {
+                top: 42px;
+                left: -64px;
+              }
+            }
+          }
+        }
+        .program__btn {
+          transform: translate(0, 0);
+          left: inherit;
+          right: 50px;
+        }
+      }
+    }
+
+    &__item {
+      &:nth-child(2) {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -40px;
+          left: 0;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='32' viewBox='0 0 33 32' fill='none'%3E%3Crect x='0.5' width='32' height='32' fill='white'/%3E%3Cpath d='M23.5 14.1515V17.8485H18.3824V23H14.5882V17.8485H9.5V14.1515H14.5882V9H18.3824V14.1515H23.5Z' fill='black'/%3E%3C/svg%3E")
+            no-repeat center;
+          width: 32px;
+          height: 32px;
+          display: block;
+
+          @include media-breakpoint-up(xl) {
+            top: -46px;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .program__btn {
+        &::before {
+          content: " -25%";
+        }
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 8px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      b {
+        font-weight: 700;
+        display: block;
+        text-align: right;
+        margin-top: 8px;
+
+        span {
+          color: $orange;
+        }
+      }
+    }
+    &__btn {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      max-width: 282px;
+      width: 100%;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        content: "-40%";
+        right: -14.709px;
+        transform: rotate(7.248deg);
+        top: -21.439px;
+        padding: 4px 10px;
+        color: #000;
+        font-weight: 700;
+        background-color: #fff;
+        font-size: 22px;
+      }
+      .btn {
+        text-transform: uppercase;
+        max-width: 100%;
+      }
+    }
+  }
+}

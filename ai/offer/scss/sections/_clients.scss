@@ -1,0 +1,27 @@
+.clients {
+  max-width: 323px;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 800px;
+  }
+
+  &__slider {
+    padding: 0;
+  }
+
+  .logo {
+    background: 50% / contain no-repeat;
+    height: 140px;
+    width: 200px;
+  }
+
+  &__block {
+    position: relative;
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+}

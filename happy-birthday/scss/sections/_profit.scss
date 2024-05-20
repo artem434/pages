@@ -5,8 +5,12 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: url(../img/profit-bg-min.png) no-repeat center;
+  background: url(../img/profit-bg-min.png) no-repeat center -35px;
   background-size: cover;
+
+  @include media-breakpoint-up(xl) {
+    background: url(../img/profit-bg-min.png) no-repeat center;
+  }
 }
 
 .profit .container {

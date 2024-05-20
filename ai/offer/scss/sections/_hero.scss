@@ -184,7 +184,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
-    top: 288px;
+    top: 779px;
     left: 30px;
     width: 163.944px;
     height: 163.424px;
@@ -251,6 +251,205 @@
         display: inherit;
         position: relative;
       }
+    }
+  }
+  &__header {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: space-between;
+
+    .hero__form_timer {
+      display: flex;
+      gap: 8px;
+      color: #00b6ff;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+
+      .hero__timer_item {
+        width: 20px;
+
+        @include media-breakpoint-up(xl) {
+          width: 36px;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .register {
+    &__block {
+      margin-bottom: 28px;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        position: absolute;
+        top: 94px;
+        right: 0;
+      }
+    }
+    &__form {
+      @include media-breakpoint-up(xl) {
+        max-width: 333px;
+        padding-top: 0;
+      }
+    }
+    &__title {
+      color: #fff;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      span {
+        background-color: $maincolor;
+      }
+    }
+
+    &__package {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-size: 22px;
+      text-transform: uppercase;
+      border: 2px solid #e9ff62;
+      font-weight: 700;
+      border-radius: 5px;
+      padding: 3px;
+      max-width: 140px;
+
+      @include media-breakpoint-up(xl) {
+      }
+      span {
+        flex-grow: 1;
+        text-align: center;
+        border-radius: 5px;
+        display: block;
+        transition: all 0.3s;
+
+        @include media-breakpoint-up(xl) {
+          padding: 4px 0;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .tabs__tab--active {
+        font-weight: 700;
+        color: #060019;
+        background-color: #e9ff62;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .form {
+    //padding-top: 38px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      //padding-top: 26px;
+    }
+
+    .btn-page {
+      line-height: 50px;
+      margin-top: 12px;
+      border: none;
+      display: block;
+      border-radius: 5px;
+      border-radius: 6px;
+      background: #e9ff62;
+      box-shadow: 0px 0px 20px 0px rgba(233, 255, 98, 0.55);
+      color: #060019;
+
+      @include media-breakpoint-up(xl) {
+        min-width: 282px;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    &__bottom {
+      @include media-breakpoint-up(xl) {
+      }
+    }
+    &__input {
+      margin-bottom: 8px;
+      display: block;
+      input {
+        height: 52px;
+        border: none;
+        border: 0.5px solid #fff;
+        width: 100%;
+        background-color: transparent;
+        font-size: 18px;
+        border-radius: 5px;
+        color: #fff !important;
+        padding-left: 12px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 20px;
+        }
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 16px;
+
+          @include media-breakpoint-up(xl) {
+            font-size: 20px;
+          }
+        }
+      }
+      .intl-tel-input {
+        width: 100%;
+      }
+      .input__label {
+        color: #666;
+        display: block;
+        padding-bottom: 4px;
+      }
+    }
+
+    &__agree {
+      font-size: 11px;
+      color: #666;
+      margin-top: 10px;
+      color: #666;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        font-size: 12px;
+      }
+
+      a {
+        color: #666;
+        text-decoration: underline;
+      }
+    }
+    .country {
+      color: #000;
     }
   }
 }

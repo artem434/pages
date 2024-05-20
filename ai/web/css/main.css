@@ -3308,6 +3308,7 @@ button {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  border-radius: 20px;
 }
 @media (min-width: 1200px) {
   .lecturer__photo-image {

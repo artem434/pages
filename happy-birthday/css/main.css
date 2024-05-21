@@ -1712,6 +1712,9 @@ a {
   font: normal 11px/22px Arial, Sans-Serif;
   color: white;
 }
+.register__item--form .form .select.error .styledSelect {
+  border: 1px solid red;
+}
 .register__item--form .form .styledSelect {
   position: absolute;
   height: 42px;

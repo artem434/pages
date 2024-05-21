@@ -171,6 +171,11 @@
           position: relative;
           font: normal 11px/22px Arial, Sans-Serif;
           color: white;
+          &.error {
+            .styledSelect {
+              border: 1px solid red;
+            }
+          }
         }
 
         .styledSelect {

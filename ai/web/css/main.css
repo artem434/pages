@@ -1231,11 +1231,11 @@ button {
 
 .hero-form__bonus-image {
   position: absolute;
-  bottom: 0;
+  bottom: -28px;
   /* transform: translate(20%, -45%); */
   background: center / contain no-repeat;
-  width: 354.943px;
-  height: 209.241px;
+  width: 387.943px;
+  height: 236.241px;
   z-index: -1;
 }
 
@@ -2744,7 +2744,7 @@ button {
 
   .hero-form__bonus-image {
     bottom: -13px;
-    width: 214px;
+    width: 130px;
     left: 50%;
     transform: translateX(-50%);
   }

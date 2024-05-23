@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Інтенсивна освітня програма для керівників бізнесу</title>
+    <title>
+      CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор
+    </title>
     <!-- SEO-->
     <meta
       property="og:title"
-      content="Інтенсивна освітня програма для керівників бізнесу CEO"
+      content="CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор"
     />
     <meta
       property="og:description"
-      content="Стань еталонним лідером для своєї компанії"
+      content="Ефективна та концентрована освітня програма для навчання перших осіб компанії"
     />
     <meta property="og:image" content="img/og-image.png" />
     <meta property="og:url" content="" />
@@ -77,19 +79,193 @@
         src="https://www.facebook.com/tr?id=422318891243887&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- clarity code -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "hxq8cxegar");
+    </script>
+    <!-- end clarity code -->
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 780161,
+            version = 2.0,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style =
+              "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(
+              localStorage.getItem("_vwo_" + account_id + "_config")
+            );
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined"
+                ? use_existing_jquery
+                : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined"
+                ? library_tolerance
+                : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function () {
+              if (!f) {
+                f = true;
+                var e = d.getElementById("_vis_opt_path_hides");
+                if (e) e.parentNode.removeChild(e);
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            load: function (e) {
+              var t = this.getSettings(),
+                n = d.createElement("script"),
+                i = this;
+              if (t) {
+                n.textContent = t;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  i.load(e);
+                }
+              } else {
+                n.fetchPriority = "high";
+                n.src = e;
+                n.type = "text/javascript";
+                n.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(n);
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t = d.currentScript,
+                n = d.createElement("style"),
+                i = this.hide_element(),
+                r = t && !t.async && i ? i + this.hide_element_style() : "",
+                c = d.getElementsByTagName("head")[0];
+              n.setAttribute("id", "_vis_opt_path_hides");
+              v && n.setAttribute("nonce", v.nonce);
+              n.setAttribute("type", "text/css");
+              if (n.styleSheet) n.styleSheet.cssText = r;
+              else n.appendChild(d.createTextNode(r));
+              c.appendChild(n);
+              this.load(
+                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                  account_id +
+                  "&u=" +
+                  encodeURIComponent(d.URL) +
+                  "&vn=" +
+                  version
+              );
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TZ48NNJ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
-          <a class="header__logo" href="/"></a>
+          <a class="header__logo" href="https://ceo.bizconstructor.com/new"></a>
           <ul class="header__menu">
             <li>
               <a href="#program">Структура програми</a>
             </li>
             <li>
               <a href="#expert">Експерт</a>
+            </li>
+            <li>
+              <a class="phone" href="tel:+380931701239"
+                >+38 ( 093 ) 170 12 39</a
+              >
             </li>
             <li class="btn">
               <a href="#register">Реєстрація</a>
@@ -104,29 +280,33 @@
       </header>
       <section class="hero" id="hero">
         <div class="hero__container">
-          <p class="hero__decor">CEO</p>
           <div class="hero__content">
-            <ul class="hero__info">
-              <li>
-                <p>Онлайн</p>
-              </li>
-              <li>
-                <p>3 місяці</p>
-              </li>
-              <li>
-                <p class="cDate">14 лютого</p>
-              </li>
-            </ul>
-            <h1 class="hero__title">
-              Інтенсивна <span>освітня програма</span> для керівників бізнесу
-              <b>Ceo</b>
-            </h1>
-            <p class="hero__subtitle">
-              Стань еталонним лідером для своєї компанії
+            <p class="hero__title">
+              Інтенсивна освітня <br />
+              програма для <br />
+              <span>керівників бізнесу</span>
+
+              <!-- <strong>12 березня</strong> -->
             </p>
-            <a class="hero__btn" href="#packages">ЗАРЕЄСТРУВАТИСЯ</a>
+            <h1>CEO</h1>
+            <p class="hero__subtitle">
+              Стань еталонним лідером <br />
+              для своєї компанії
+            </p>
+            <a class="hero__btn btn_fixed-bottom-hidden" href="#register"
+              >ЗАРЕЄСТРУВАТИСЯ</a
+            >
           </div>
-          <div class="hero__image"></div>
+          <div class="hero__images">
+            <div class="hero__image_sm"></div>
+            <div class="hero__image_bg"></div>
+            <a href="#register" class="hero__images_btn"
+              ><span
+                >залишити <br />
+                заявку</span
+              ></a
+            >
+          </div>
         </div>
       </section>
       <section class="line" id="line">
@@ -144,39 +324,21 @@
       </section>
       <section class="about" id="about">
         <div class="about__container">
-          <p class="about__text">
-            Більше ніж 10 років компанія
-            <span>«Бізнес-Конструктор»</span> навчає власників та керівників
-            компаній <br />ефективному управлінню бізнесом.
-          </p>
-          <div class="about__image1"></div>
-          <p class="about__text2">
-            Сьогодні ми раді представити тобі кульмінацію багаторічних
-            напрацювань — найбільш ефективну та концентровану освітню програму
-            для навчання перших осіб компаній.
-          </p>
-          <div class="about__block">
-            <h2 class="about__title">
-              Назва освітньої програми <br />
-              говорить сама за себе — <i>« <b>Ceo</b> »</i>
-            </h2>
-          </div>
           <div class="about__info">
             <p class="about__info_text">
               Цей 3-місячний курс дозволить тобі в найкоротші терміни здобути
               всі необхідні знання та компетенції, які дозволять тобі стати
               еталонним CEO для своєї компанії.
             </p>
-            <div
-              class="about__image2 lazy"
-              data-bg="img/about__image2.png"
-            ></div>
             <ul class="about__info_list">
               <li>3 місяці навчання в онлайн форматі</li>
               <li>Індивідуальний експертний супровід</li>
               <li>Практичні завдання та шаблони документів</li>
               <li>Робота в професійному оточенні однодумців</li>
-              <li>Сертифікат про проходження програми</li>
+              <li>
+                Сертифікат про проходження <br />
+                програми
+              </li>
             </ul>
           </div>
           <h2 class="about__slogan">
@@ -194,7 +356,7 @@
           <div class="for__block">
             <div
               class="for__block_decor lazy"
-              data-bg="img/for__decor.png"
+              data-bg="img/for__block_decor.svg"
             ></div>
             <h2 class="for__title"><span>ДЛЯ КОГО</span> ПРОГРАМА</h2>
             <div class="for__items">
@@ -232,22 +394,27 @@
               <h3 class="item__number">01</h3>
               <p class="item__text">
                 <b>Чітко зрозумієш цілі та завдання позиції СЕО</b> та значно
-                підвищиш ефективність свого робочого процесу
+                підвищиш ефективність свого <br />
+                робочого процесу
               </p>
             </div>
             <div class="item">
               <h3 class="item__number">02</h3>
               <p class="item__text">
-                <b>Навчишся будувати стратегію компанії</b> та організовувати
-                високу дисципліну реалізації стратегічних проектів
+                <b
+                  >Навчишся будувати <br />
+                  стратегію компанії</b
+                >
+                та організовувати високу дисципліну реалізації стратегічних
+                проектів
               </p>
             </div>
             <div class="item">
               <h3 class="item__number">03</h3>
               <p class="item__text">
                 <b
-                  >Сформуєш комплексне розуміння діяльності бізнесу як
-                  системи</b
+                  >Сформуєш комплексне розуміння діяльності <br />
+                  бізнесу як системи</b
                 >
                 та навчишся налагоджувати ефективну взаємодію всіх елементів
               </p>
@@ -256,24 +423,30 @@
               <h3 class="item__number">04</h3>
               <p class="item__text">
                 <b>Навчишся тримати стратегічний фокус</b> без надмірного
-                залучення в операційні процеси
+                залучення <br />
+                в операційні процеси
               </p>
             </div>
             <div class="item">
               <h3 class="item__number">05</h3>
               <p class="item__text">
-                <b>Опануєш методи побудови сильної команди</b> та значно
-                підвищиш якість взаємодії в команді
+                <b
+                  >Опануєш методи <br />
+                  побудови сильної <br />
+                  команди</b
+                >
+                та значно підвищиш якість взаємодії в команді
               </p>
             </div>
             <div class="item">
               <h3 class="item__number">06</h3>
               <p class="item__text">
                 <b
-                  >Впровадиш інструменти управління всіма ключовими функціями
-                  бізнесу</b
-                >
-                та навчишся будувати системні та прибуткові компанії
+                  >Впровадиш інструменти управління всіма <br />
+                  ключовими функціями бізнесу <br
+                /></b>
+                та навчишся будувати <br />
+                системні та прибуткові компанії
               </p>
             </div>
           </div>
@@ -297,355 +470,11 @@
         </div>
       </section>
       <section class="decor" id="decor">
-        <div class="decor__image lazy" data-bg="img/decor.png"></div>
+        <div class="decor__image lazy" data-bg="img/decor.svg"></div>
       </section>
-      <section class="program" id="program">
-        <div class="program__container">
-          <h2 class="program__title"><span>Структура</span> програми</h2>
-          <div class="program__items">
-            <div class="item">
-              <p class="item__number">01</p>
-              <h4 class="item__title">Роль та функції СЕО</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль, функціонал та очікувані результати роботи СЕО</li>
-                <li>Еволюція ролі CEO з розвитком компанії</li>
-                <li>Взаємодія CEO із ключовими центрами відповідальності</li>
-                <li>Баланс між зовнішнім та внутрішнім середовищем бізнесу</li>
-                <li>Принципи ефективного лідерства</li>
-                <li>Організація робочого часу CEO</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">02</p>
-              <h4 class="item__title">Особиста ефективність СЕО</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Особиста ефективність СЕО</li>
-                <li>Організація робочого часу CEO</li>
-                <li>Лідерство та принципи створення сильної компанії</li>
-                <li>Аудит команди</li>
-                <li>Етапи розвитку компанії</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">03</p>
-              <h4 class="item__title">
-                Стратегія бізнесу та бізнес-планування
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Бізнес-модель та product-market fit</li>
-                <li>Стратегія масштабування компанії</li>
-                <li>Ринок та цільовий споживач</li>
-                <li>Методи дослідження ринку</li>
-                <li>
-                  Unique Selling Proposition (USP) та конкурентна стратегія
-                </li>
-                <li>Методи аналізу конкурентів</li>
-                <li>Benchmarking</li>
-                <li>Продукт та управління шляхом клієнта (Customer Journey)</li>
-                <li>Сегментація цільової аудиторії та продуктів компанії</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">04</p>
-              <h4 class="item__title">
-                Система залучення та утримання клієнтів
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Стратегія залучення та утримання клієнтів</li>
-                <li>Inbound та outbound підходи у залученні клієнтів</li>
-                <li>Brand-маркетинг та performance-маркетинг</li>
-                <li>Юніт-економіка та моделювання маркетингових воронок</li>
-                <li>Сучасні інструменти Інтернет-маркетингу</li>
-                <li>Управління продажами та CRM</li>
-                <li>Відмінність продажів у B2C та B2B сегментах</li>
-                <li>Технології та стандарти продажів</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">05</p>
-              <h4 class="item__title">
-                Організаційна структура та регламентація зон відповідальності
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>
-                  Основні принципи побудови ефективної організаційної структури
-                </li>
-                <li>Види організаційних структур</li>
-                <li>
-                  C-level та ключові центри відповідальності в організаційній
-                  структурі
-                </li>
-                <li>Еволюція організаційної структури з розвитком компанії</li>
-                <li>
-                  Регламентація зон відповідальності в організаційній структурі
-                </li>
-                <li>
-                  Карти посади та очікувані результати роботи співробітників
-                </li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">06</p>
-              <h4 class="item__title">
-                Бізнес-процеси та організація ефективної взаємодії у команді
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Опис бізнес-процесів</li>
-                <li>Формат BPMN 2.0</li>
-                <li>Принцип внутрішнього клієнта</li>
-                <li>Підвищення якості взаємодії в команді</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">07</p>
-              <h4 class="item__title">
-                HR-менеджмент та розвиток корпоративної культури
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль HR-функції в компанії</li>
-                <li>Управління якісним складом команди</li>
-                <li>Рекрутинг</li>
-                <li>Система вступної адаптації та атестації</li>
-                <li>Управління мотивацією співробітників</li>
-                <li>Оцінка та розвиток персоналу</li>
-                <li>Розвиток керівників</li>
-                <li>Корпоративна культура та принципи її формування</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">08</p>
-              <h4 class="item__title">Розвиток керівників</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Принципи ефективного керівника</li>
-                <li>Службове лідерство vs. Жорсткий менеджмент</li>
-                <li>Ситуаційне лідерство</li>
-                <li>Управління за цілями</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">09</p>
-              <h4 class="item__title">Бренд-маркетинг</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>
-                  Сила бренду: управління впізнаваністю та лояльністю до бренду
-                </li>
-                <li>ATL та BTL реклама</li>
-                <li>PR</li>
-                <li>SMM для розвитку бренду</li>
-                <li>Контент-маркетинг</li>
-                <li>Інфлюєнс-маркетинг</li>
-                <li>Event-маркетинг</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">10</p>
-              <h4 class="item__title">
-                Performance-маркетинг та управління продажами
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Завдання performance-маркетингу</li>
-                <li>
-                  Управління психологією цільового клієнта: Awarness,
-                  Consideration, Conversion.
-                </li>
-                <li>Воронка залучення клієнтів</li>
-                <li>Методи лідогенерації</li>
-                <li>CRM-система</li>
-                <li>Керування продажами</li>
-                <li>Технології та стандарти продажів</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">11</p>
-              <h4 class="item__title">Управління фінансами</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>
-                  Головні фінансові звіти бізнесу: Balance, P&L та Cashflow
-                </li>
-                <li>Роль CFO та процес управління фінансами</li>
-                <li>Управління грошовими потоками</li>
-                <li>Фінансове планування та бюджетування</li>
-                <li>Фінансова модель компанії</li>
-                <li>Капіталізація бізнесу та залучення інвестицій</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">12</p>
-              <h4 class="item__title">Операційне керування</h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Регулярний менеджмент</li>
-                <li>Правила ефективного проведення управлінських заходів</li>
-                <li>Побудова dashboard-ів та система внутрішньої звітності</li>
-                <li>Підходи до управління проектами: waterfall та agile.</li>
-                <li>Забезпечення дисципліни виконання завдань.</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">13</p>
-              <h4 class="item__title">
-                Стратегічне планування та забезпечення дисципліни реалізації
-                стратегії
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Ритм заходів щодо стратегічного планування</li>
-                <li>Бачення майбутнього компанії та CEO view</li>
-                <li>Правила постановки цілей</li>
-                <li>Взаємозв'язок між цілями бізнесу</li>
-                <li>Метод OKR у стратегічному плануванні</li>
-                <li>Забезпечення дисципліни реалізації стратегічних планів</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">14</p>
-              <h4 class="item__title">
-                Залучення інвестицій <span>[пакет участі PRO]</span>
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль, функціонал та очікувані результати роботи СЕО</li>
-                <li>Еволюція ролі CEO з розвитком компанії</li>
-                <li>Взаємодія CEO із ключовими центрами відповідальності</li>
-                <li>Баланс між зовнішнім та внутрішнім середовищем бізнесу</li>
-                <li>Принципи ефективного лідерства</li>
-                <li>Організація робочого часу CEO</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">15</p>
-              <h4 class="item__title">
-                Міжнародний розвиток <span>[пакет участі PRO]</span>
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль, функціонал та очікувані результати роботи СЕО</li>
-                <li>Еволюція ролі CEO з розвитком компанії</li>
-                <li>Взаємодія CEO із ключовими центрами відповідальності</li>
-                <li>Баланс між зовнішнім та внутрішнім середовищем бізнесу</li>
-                <li>Принципи ефективного лідерства</li>
-                <li>Організація робочого часу CEO</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">16</p>
-              <h4 class="item__title">
-                HR-маркетинг і бренд роботодавця
-                <br />
-                <span>[пакет участі PRO]</span>
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль, функціонал та очікувані результати роботи СЕО</li>
-                <li>Еволюція ролі CEO з розвитком компанії</li>
-                <li>Взаємодія CEO із ключовими центрами відповідальності</li>
-                <li>Баланс між зовнішнім та внутрішнім середовищем бізнесу</li>
-                <li>Принципи ефективного лідерства</li>
-                <li>Організація робочого часу CEO</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="item__number">17</p>
-              <h4 class="item__title">
-                Управління проєктами <span>[пакет участі PRO]</span>
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Роль, функціонал та очікувані результати роботи СЕО</li>
-                <li>Еволюція ролі CEO з розвитком компанії</li>
-                <li>Взаємодія CEO із ключовими центрами відповідальності</li>
-                <li>Баланс між зовнішнім та внутрішнім середовищем бізнесу</li>
-                <li>Принципи ефективного лідерства</li>
-                <li>Організація робочого часу CEO</li>
-              </ul>
-            </div>
-          </div>
-          <div class="block">
-            <div class="block__content">
-              <h2 class="block__title">
-                Авторська методологія <b>та система навчання</b>
-              </h2>
-              <p class="block__text">
-                дозволять у найкоротший термін отримати практичні інструменти й
-                алгоритми з побудови системного управління компанією та
-                опанувати навички топ-управлінця.
-              </p>
-            </div>
-            <div class="block__buttons">
-              <p class="block__buttons_text">
-                Залиш заявку, щоб забронювати участь.
-              </p>
-              <a class="block__buttons_btn" href="#register">ЗАРЕЄСТРУВАТИСЯ</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="how" id="how">
-        <div class="how__image lazy" data-bg="img/how__image.png"></div>
-        <div class="how__container">
-          <h2 class="how__title">
-            <span>ЯК ПРОХОДИТЬ НАВЧАННЯ</span>
-          </h2>
-          <div class="how__items">
-            <div class="item">
-              <p class="item__title">
-                НАВЧАЄШСЯ ОНЛАЙН У БУДЬ-ЯКОМУ <br />
-                МІСЦІ В БУДЬ-ЯКИЙ ЧАС
-              </p>
-              <div class="item__text">
-                Все навчання відбувається в зручному онлайн-кабінеті, де ти
-                щотижня отримуєш доступ до нового модуля програми (перегляд
-                матеріалів займає 2-3 години на тиждень).
-              </div>
-            </div>
-            <div class="item">
-              <p class="item__title">
-                ВИКОНУЄШ ЗАВДАННЯ ТА ЗАКРІПЛЮЄШ <br />
-                ЗНАННЯ НА ПРАКТИЦІ
-              </p>
-              <div class="item__text">
-                Після перегляду кожного модулю ти проходиш невеличке тестування,
-                після чого отримуєш практичні завдання, які допоможуть тобі
-                закріпити нову навичку. Завдання можуть виконуватись як на базі
-                неіснуючої компанії, так і на базі реального діючого бізнесу.
-              </div>
-            </div>
-            <div class="item">
-              <p class="item__title">
-                ОТРИМУЄШ СУПРОВІД ПРОФЕСІЙНОГО <br />
-                БІЗНЕС-КОНСУЛЬТАНТА
-              </p>
-              <div class="item__text">
-                Всі 3 місяці тебе супроводжує професійний консультант
-                «Бізнес-Конструктор», який допомагає тобі доводити всі завдання
-                до ідеалу, а також знаходити відповіді на свої запитання.
-              </div>
-            </div>
-            <div class="item">
-              <p class="item__title">
-                ЩОТИЖНЯ МАЄШ МОЖЛИВІСТЬ РОЗБИРАТИ СВІЙ КЕЙС З ГОЛОВНИМ ЕКСПЕРТОМ
-              </p>
-              <div class="item__text">
-                Щотижня Кирило Куницький проводить онлайн майстер-групи в ZOOM,
-                на яких розбирає всі наявні питання та допомагає знаходити
-                найбільш ефективні рішення.
-              </div>
-            </div>
-          </div>
-          <a class="how__btn" href="#register">ХОЧУ НА ПРОГРАМУ</a>
-        </div>
-      </section>
+
+      <?php include 'program.php' ?>
+
       <section class="expert" id="expert">
         <div class="expert__container">
           <div class="expert__content">
@@ -657,9 +486,10 @@
             </p>
             <ul class="expert__bio">
               <li>
-                Бізнесмен із 18-річним досвідом управління компаніями у сфері
+                Бізнесмен із 20-річним досвідом управління компаніями у сфері
                 логістики, туризму, постачання промислового обладнання,
-                роздрібної торгівлі, виробництва ювелірних прикрас та IT.
+                роздрібної торгівлі, виробництва ювелірних <br />
+                прикрас та IT.
               </li>
               <li>
                 Протягом останніх 10 років Кирило особисто консультує власників
@@ -680,78 +510,126 @@
           </div>
         </div>
       </section>
-      <section class="packages" id="packages">
-        <div class="packages__container">
-          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
-          <div class="packages__items">
-            <div class="item item--core core_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">CORE</p>
-              </div>
-              <ul class="item__info">
-                <li>3 місяці навчання в онлайн-форматі</li>
-                <li>13 модулів програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом 3х місяців
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким (12
-                  онлайн-зустрічей)
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми 3 місяцi після її завершення
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-core"
-                href="#register"
-                data-package="core"
-                >ЗАРЕЄСТРУВАТИСЯ</a
-              >
+
+      <section class="format" id="format">
+        <div class="format__table">
+          <div class="container">
+            <h2 class="title title--big">
+              Формат участі
+              <span>в програмі </span>
+            </h2>
+            <div class="format__packeges">
+              <p>CORE</p>
+              <p>PRO</p>
+              <p>PREMIUM</p>
             </div>
-            <div class="item item--pro pro_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">PRO</p>
-              </div>
-              <ul class="item__info">
-                <li>4 місяці навчання в онлайн-форматі</li>
-                <li>17 модулів програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>4х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(16 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(4 онлайн-зустрічі)</b>
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми 3 місяцi після її завершення
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-pro"
-                href="#register"
-                data-package="pro"
-                >ЗАРЕЄСТРУВАТИСЯ</a
+            <table>
+              <tr>
+                <td>Навчання в онлайн-форматі</td>
+                <td class="text">3 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">4 міс.</td>
+              </tr>
+              <tr>
+                <td>Кількість модулів програми</td>
+                <td class="text">13</td>
+                <td class="text">13</td>
+                <td class="text">17</td>
+              </tr>
+              <tr>
+                <td>Доступ до матеріалів програми після її завершення</td>
+                <td class="text">3 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">12 міс.</td>
+              </tr>
+              <tr>
+                <td>Case study: відповіді на запитання від експерта</td>
+                <td class="text text--small">
+                  watch only <br /> (6 зустрічей)
+                </td>
+                <td class="text text--small">6 зустрічей</td>
+                <td class="text text--small">24 зустрічі</td>
+              </tr>
+              <tr>
+                <td>
+                  Доступ до практичних матеріалів: інструкцій, чек-листів та
+                  шаблонів
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Сертифікат про проходження навчання на програмі</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Супровід куратором по організаційно-технічним питанням
+                  протягом навчання
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Закрита група в Telegram для нетворкінгу з учасниками програми
+                  з підтримкою куратора 
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Воркшопи по розробору кейсів з бізнес-консультантами та
+                  експертами
+                </td>
+                <td class="text">в записі</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Індивідуальний зворотний зв'язок від бізнес-консультанта по
+                  практичним завданням програми
+                </td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Квиток на Саміт у 2024 році (пакет PREMIUM)</td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
+                  вашого ТОП-менеджера
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="format__btns">
+              <a id="btn-core" href="#register" data-package="core">Замовити</a>
+              <a id="btn-pro" href="#register" data-package="pro">Замовити</a>
+              <a id="btn-premium" href="#register" data-package="premium"
+                >Замовити</a
               >
             </div>
           </div>
         </div>
       </section>
+
       <section class="register" id="register">
         <div class="register__container">
           <p class="register__title">
@@ -767,14 +645,14 @@
               </p>
               <ul class="block__info">
                 <li>
-                  <p>Онлайн</p>
+                  <p>онлайн</p>
                 </li>
                 <li>
                   <p>3 місяці</p>
                 </li>
-                <li>
-                  <p class="cDate">14 лютого</p>
-                </li>
+                <!-- <li>
+                  <p>12 березня</p>
+                </li> -->
               </ul>
             </div>
             <div class="block__form">
@@ -795,6 +673,14 @@
                       data-id=""
                     >
                       <span>PRO</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab premium_price"
+                      data-id=""
+                    >
+                      <span>PREMIUM</span>
                     </div>
                   </li>
                 </ul>
@@ -932,20 +818,75 @@
                   <a href="http://privacy.bizconstructor.com/"
                     >Політикою конфіденційності</a
                   >.
-                  <a href="http://refund.bizconstructor.com/"
-                    >Політика повернення</a
-                  >
+                  <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                 </p>
               </form>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="how" id="how">
+        <div class="how__image lazy" data-bg="img/how__image.svg"></div>
+        <div class="how__container">
+          <h2 class="how__title">
+            <span>ЯК ПРОХОДИТЬ НАВЧАННЯ</span>
+          </h2>
+          <div class="how__items">
+            <div class="item">
+              <p class="item__title">
+                НАВЧАЄШСЯ ОНЛАЙН У БУДЬ-ЯКОМУ <br />
+                МІСЦІ В БУДЬ-ЯКИЙ ЧАС
+              </p>
+              <div class="item__text">
+                Все навчання відбувається в зручному онлайн-кабінеті, де ти
+                щотижня отримуєш доступ до нового модуля програми (перегляд
+                матеріалів займає 2-3 години на тиждень).
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__title">
+                ВИКОНУЄШ ЗАВДАННЯ ТА ЗАКРІПЛЮЄШ <br />
+                ЗНАННЯ НА ПРАКТИЦІ
+              </p>
+              <div class="item__text">
+                Після перегляду кожного модулю ти проходиш невеличке тестування,
+                після чого отримуєш практичні завдання, які допоможуть тобі
+                закріпити нову навичку. Завдання можуть виконуватись як на базі
+                неіснуючої компанії, так і на базі реального діючого бізнесу.
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__title">
+                ОТРИМУЄШ СУПРОВІД ПРОФЕСІЙНОГО <br />
+                БІЗНЕС-КОНСУЛЬТАНТА
+              </p>
+              <div class="item__text">
+                Всі 3 місяці тебе супроводжує професійний консультант
+                «Бізнес-Конструктор», який допомагає тобі доводити всі завдання
+                до ідеалу, а також знаходити відповіді на свої запитання.
+              </div>
+            </div>
+            <div class="item">
+              <p class="item__title">
+                ЩОТИЖНЯ МАЄШ МОЖЛИВІСТЬ РОЗБИРАТИ СВІЙ КЕЙС З ГОЛОВНИМ ЕКСПЕРТОМ
+              </p>
+              <div class="item__text">
+                Щотижня Кирило Куницький проводить онлайн майстер-групи в ZOOM,
+                на яких розбирає всі наявні питання та допомагає знаходити
+                найбільш ефективні рішення.
+              </div>
+            </div>
+          </div>
+          <a class="how__btn" href="#register">ХОЧУ НА ПРОГРАМУ</a>
+        </div>
+      </section>
+
       <section class="company" id="company">
         <div class="company__container">
           <div
             class="company__decor lazy"
-            data-bg="img/company__decor.png"
+            data-bg="img/company__decor.svg"
           ></div>
           <h2 class="company__title">
             <span>ПРО НАС</span>
@@ -997,67 +938,71 @@
             <div class="swiper-wrapper">
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/atan.png"
+                data-bg="img/clients/1.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/ohmylook.png"
+                data-bg="img/clients/2.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/castrofamily.png"
+                data-bg="img/clients/3.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/kino.png"
+                data-bg="img/clients/4.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/moyo.png"
+                data-bg="img/clients/5.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/megogo.png"
+                data-bg="img/clients/6.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/sherif.png"
+                data-bg="img/clients/7.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/kyrag.png"
+                data-bg="img/clients/8.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/atan.png"
+                data-bg="img/clients/10.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/ohmylook.png"
+                data-bg="img/clients/11.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/castrofamily.png"
+                data-bg="img/clients/12.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/kino.png"
+                data-bg="img/clients/13.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/moyo.png"
+                data-bg="img/clients/14.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/megogo.png"
+                data-bg="img/clients/15.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/sherif.png"
+                data-bg="img/clients/16.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/kyrag.png"
+                data-bg="img/clients/17.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/18.png"
               ></div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -1066,14 +1011,8 @@
         </div>
       </section>
       <section class="footer" id="footer">
-        <div
-          class="footer__decor footer__decor--1 lazy"
-          data-bg="img/footer__decor--1.png"
-        ></div>
-        <div
-          class="footer__decor footer__decor--2 lazy"
-          data-bg="img/footer__decor--2.png"
-        ></div>
+        <!-- <div class="footer__decor footer__decor--1 lazy" data-bg="img/footer__decor--1.png"></div>
+      <div class="footer__decor footer__decor--2 lazy" data-bg="img/footer__decor--2.png"></div> -->
         <div class="footer__container">
           <div class="footer__menu">
             <h5 class="footer__menu_title">Корисно</h5>
@@ -1108,10 +1047,7 @@
             <h5 class="footer__links_title">Клієнтам</h5>
             <ul class="footer__menu_list">
               <li>
-                <a
-                  href="http://refund.bizconstructor.com/ua?_ga=2.84367262.645259001.1658240152-892051805.1657004770"
-                  >Умови повернення коштів</a
-                >
+                <!-- <a href="http://refund.bizconstructor.com/ua?_ga=2.84367262.645259001.1658240152-892051805.1657004770">Умови повернення коштів</a> -->
               </li>
               <li>
                 <a
@@ -1143,7 +1079,7 @@
                 >
                   <path
                     d="M4.47669 6.79257C4.47669 7.44719 4.47669 10.369 4.47669 10.369H1.85645V14.7424H4.47669V27.7384H9.85921V14.7427H13.4711C13.4711 14.7427 13.8094 12.6458 13.9734 10.3529C13.5033 10.3529 9.87956 10.3529 9.87956 10.3529C9.87956 10.3529 9.87956 7.80866 9.87956 7.3627C9.87956 6.91578 10.4664 6.3146 11.0465 6.3146C11.6254 6.3146 12.8473 6.3146 13.9791 6.3146C13.9791 5.71917 13.9791 3.66181 13.9791 1.76172C12.4682 1.76172 10.7494 1.76172 9.99172 1.76172C4.34364 1.76142 4.47669 6.1391 4.47669 6.79257Z"
-                    fill="#7032EC"
+                    fill="#DDFE65"
                   ></path>
                 </svg>
               </a>
@@ -1161,15 +1097,15 @@
                   <g clip-path="url(#clip0_116_885)">
                     <path
                       d="M16.3582 0.486328H6.26379C2.83579 0.486328 0.046875 3.27537 0.046875 6.70337V16.7978C0.046875 20.2259 2.83579 23.0148 6.26379 23.0148H16.3582C19.7864 23.0148 22.5754 20.2258 22.5754 16.7978V6.70337C22.5755 3.27537 19.7864 0.486328 16.3582 0.486328ZM20.5767 16.7978C20.5767 19.1237 18.6843 21.016 16.3583 21.016H6.26379C3.93794 21.0161 2.04571 19.1237 2.04571 16.7978V6.70337C2.04571 4.37753 3.93794 2.48516 6.26379 2.48516H16.3582C18.6842 2.48516 20.5765 4.37753 20.5765 6.70337V16.7978H20.5767Z"
-                      fill="#7032EC"
+                      fill="#DDFE65"
                     ></path>
                     <path
                       d="M11.3118 5.94434C8.11092 5.94434 5.50684 8.54842 5.50684 11.7494C5.50684 14.9502 8.11092 17.5541 11.3118 17.5541C14.5127 17.5541 17.1168 14.9502 17.1168 11.7494C17.1168 8.54842 14.5127 5.94434 11.3118 5.94434ZM11.3118 15.5552C9.21321 15.5552 7.50568 13.8479 7.50568 11.7493C7.50568 9.65045 9.21308 7.94304 11.3118 7.94304C13.4106 7.94304 15.118 9.65045 15.118 11.7493C15.118 13.8479 13.4104 15.5552 11.3118 15.5552Z"
-                      fill="#7032EC"
+                      fill="#DDFE65"
                     ></path>
                     <path
                       d="M17.3614 4.24902C16.9762 4.24902 16.5979 4.40493 16.326 4.6781C16.0527 4.94995 15.8955 5.32839 15.8955 5.71483C15.8955 6.10008 16.0528 6.47839 16.326 6.75156C16.5978 7.0234 16.9762 7.18065 17.3614 7.18065C17.7478 7.18065 18.1249 7.0234 18.3981 6.75156C18.6713 6.47839 18.8272 6.09994 18.8272 5.71483C18.8272 5.32839 18.6713 4.94995 18.3981 4.6781C18.1262 4.40493 17.7478 4.24902 17.3614 4.24902Z"
-                      fill="#7032EC"
+                      fill="#DDFE65"
                     ></path>
                   </g>
                   <defs>
@@ -1192,7 +1128,7 @@
                 >
                   <path
                     d="M9.72623 16.0359L9.31621 21.8032C9.90285 21.8032 10.1569 21.5512 10.4616 21.2486L13.212 18.62L18.9111 22.7936C19.9563 23.3762 20.6927 23.0694 20.9747 21.8321L24.7155 4.30305L24.7166 4.30202C25.0481 2.75692 24.1578 2.15273 23.1394 2.53178L1.15074 10.9503C-0.349941 11.5328 -0.327219 12.3694 0.895638 12.7485L6.51727 14.497L19.5752 6.32634C20.1897 5.91941 20.7485 6.14458 20.2889 6.55151L9.72623 16.0359Z"
-                    fill="#7032EC"
+                    fill="#DDFE65"
                   ></path>
                 </svg>
               </a>
@@ -1212,7 +1148,7 @@
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M7.08026 0.0947266C3.52536 0.0947266 0.643555 2.97654 0.643555 6.53143V12.9682C0.643555 16.5231 3.52536 19.4049 7.08025 19.4049H21.5629C25.1178 19.4049 27.9996 16.5231 27.9996 12.9682V6.53143C27.9996 2.97654 25.1178 0.0947266 21.5629 0.0947266H7.08026ZM11.9083 13.7027V6.53187L18.1114 10.1172L11.9083 13.7027Z"
-                      fill="#7032EC"
+                      fill="#DDFE65"
                     ></path>
                   </g>
                   <defs>
@@ -1244,34 +1180,39 @@
     <script>
       $(document).ready(function () {
         // Дата мероприятия
-        let cDate = "14 лютого",
+        let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000685548064",
+          cLandingId = "2108311000842441051",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000685548087",
+          cLandingIdPro = "2108311000842441074",
+          // Landing id // Online Pro
+          cLandingIdPremium = "2108311000882667052",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://online.masterclassb.com/crq1lr";
+          cSuccess_url = "https://web.bizconstructor.com/crq1lr";
 
         //  дата скидки (автозамена)
         let dataDeadline;
         // dataDeadline = foundSale.date;
 
         // Проверка данных с универсального блока (Удаем тут, если удалили с блока)
-        if (cDate !== "date") {
-          $(".cDate").each(function () {
-            $(this).html(cDate);
-          });
-        }
+        // if (cDate !=='date'){
+        // 	$('.cDate').each(function (){
+        // 		$(this).html(cDate);
+        // 	});
+        // };
         if (cLandingId !== "id") {
           $("input[name='landing_id']").val(cLandingId);
           $(".core_price").attr("data-id", cLandingId);
         }
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+        if (cLandingIdPremium !== "id") {
+          $(".premium_price").attr("data-id", cLandingIdPremium);
         }
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);
@@ -1309,6 +1250,9 @@
 
       $("#btn-pro").click(function () {
         $(".packages-btns__pack-name.pro_price").click();
+      });
+      $("#btn-premium").click(function () {
+        $(".packages-btns__pack-name.premium_price").click();
       });
     </script>
     <script>

@@ -11,6 +11,7 @@
       property="og:title"
       content="CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор"
     />
+
     <meta
       property="og:description"
       content="Ефективна та концентрована освітня програма для навчання перших осіб компанії"
@@ -1133,6 +1134,9 @@
     </div>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      window.location = "https://ceo.bizconstructor.com/new";
+    </script>
     <script>
       $(document).ready(function () {
         // Дата мероприятия

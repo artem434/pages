@@ -181,7 +181,7 @@
           </div>
           <div class="item">
             <p class="item__number">14</p>
-            <h4 class="item__title">Залучення інвестицій <span>[пакет участі PRO]</span></h4>
+            <h4 class="item__title">Залучення інвестицій <span>[пакет участі PREMIUM]</span></h4>
             <div class="item__more"></div>
             <ul class="item__info">
               <li>Капіталізація бізнесу</li>
@@ -193,7 +193,7 @@
           </div>
           <div class="item">
             <p class="item__number">15</p>
-            <h4 class="item__title">Міжнародний розвиток <span>[пакет участі PRO]</span></h4>
+            <h4 class="item__title">Міжнародний розвиток <span>[пакет участі PREMIUM]</span></h4>
             <div class="item__more"></div>
             <ul class="item__info">
               <li>Бізнес-модель міжнародних продажів та вибір географії</li>
@@ -204,7 +204,7 @@
           </div>
           <div class="item">
             <p class="item__number">16</p>
-            <h4 class="item__title">HR-маркетинг і бренд роботодавця <span> <br>[пакет участі PRO]</span></h4>
+            <h4 class="item__title">HR-маркетинг і бренд роботодавця <span> <br>[пакет участі PREMIUM]</span></h4>
             <div class="item__more"></div>
             <ul class="item__info">
               <li>Інструменти HR-маркетингу</li>
@@ -215,7 +215,7 @@
           </div>
           <div class="item">
             <p class="item__number">17</p>
-            <h4 class="item__title">Управління проектами <span>[пакет участі PRO]</span></h4>
+            <h4 class="item__title">Управління проектами <span>[пакет участі PREMIUM]</span></h4>
             <div class="item__more"></div>
             <ul class="item__info">
               <li>Методи управлiння проектами</li>

@@ -511,79 +511,119 @@
         </div>
       </section>
 
-      <section class="packages" id="packages">
-        <div class="packages__container">
-          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
-          <div class="packages__items">
-            <div class="item item--core core_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">CORE</p>
-              </div>
-              <ul class="item__info">
-                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>13 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>3х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(12 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми 3 місяцi після її завершення
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(3 онлайн-зустрічі)</b>
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-core"
-                href="#register"
-                data-package="core"
-                >ЗАРЕЄСТРУВАТИСЯ</a
-              >
+      <section class="format" id="format">
+        <div class="format__table">
+          <div class="container">
+            <h2 class="title title--big">
+              Формат участі
+              <span>в програмі </span>
+            </h2>
+            <div class="format__packeges">
+              <p>CORE</p>
+              <p>PRO</p>
+              <p>PREMIUM</p>
             </div>
-            <div class="item item--pro pro_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">PRO</p>
-              </div>
-              <ul class="item__info">
-                <li><b>4 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>17 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>4х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(16 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <br />
-                  <b> 3 місяцi</b> після її завершення
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(4 онлайн-зустрічі)</b>
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-pro"
-                href="#register"
-                data-package="pro"
-                >ЗАРЕЄСТРУВАТИСЯ</a
+            <table>
+              <tr>
+                <td>Навчання в онлайн-форматі</td>
+                <td class="text">3 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">4 міс.</td>
+              </tr>
+              <tr>
+                <td>Кількість модулів програми</td>
+                <td class="text">13</td>
+                <td class="text">13</td>
+                <td class="text">17</td>
+              </tr>
+              <tr>
+                <td>Доступ до матеріалів програми після її завершення</td>
+                <td class="text">2 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">12 міс.</td>
+              </tr>
+              <tr>
+                <td>Case study: відповіді на запитання від експерта</td>
+                <td class="text text--small">
+                  watch only <br /> (6 зустрічей)
+                </td>
+                <td class="text text--small">6 зустрічей</td>
+                <td class="text text--small">24 зустрічі</td>
+              </tr>
+              <tr>
+                <td>
+                  Доступ до практичних матеріалів: інструкцій, чек-листів та
+                  шаблонів
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Сертифікат про проходження навчання на програмі</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Супровід куратором по організаційно-технічним питанням
+                  протягом навчання
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Закрита група в Telegram для нетворкінгу з учасниками програми
+                  з підтримкою куратора 
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Воркшопи по розробору кейсів з бізнес-консультантами та
+                  експертами
+                </td>
+                <td class="text">в записі</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Індивідуальний зворотний зв'язок від бізнес-консультанта по
+                  практичним завданням програми
+                </td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Квиток на Саміт у 2024 році (пакет PREMIUM)</td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
+                  вашого ТОП-менеджера
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="format__btns">
+              <a id="btn-core" href="#register" data-package="core">Замовити</a>
+              <a id="btn-pro" href="#register" data-package="pro">Замовити</a>
+              <a id="btn-premium" href="#register" data-package="premium"
+                >Замовити</a
               >
             </div>
           </div>
@@ -633,6 +673,14 @@
                       data-id=""
                     >
                       <span>PRO</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab premium_price"
+                      data-id=""
+                    >
+                      <span>PREMIUM</span>
                     </div>
                   </li>
                 </ul>
@@ -1134,9 +1182,11 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000844239051",
+          cLandingId = "2108311000842441051",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000844239074",
+          cLandingIdPro = "2108311000842441074",
+          // Landing id // Online Pro
+          cLandingIdPremium = "2108311000882667052",
           // es_mail_id
           cMail_id = "",
           // es_id
@@ -1160,6 +1210,9 @@
         }
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+        if (cLandingIdPremium !== "id") {
+          $(".premium_price").attr("data-id", cLandingIdPremium);
         }
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);
@@ -1197,6 +1250,9 @@
 
       $("#btn-pro").click(function () {
         $(".packages-btns__pack-name.pro_price").click();
+      });
+      $("#btn-premium").click(function () {
+        $(".packages-btns__pack-name.premium_price").click();
       });
     </script>
     <script>

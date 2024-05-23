@@ -260,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </section>
-    <section class="packages" id="packages">
+    <!-- <section class="packages" id="packages">
       <div class="packages__container">
         <h2 class="packages__title">
           <span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ
@@ -303,7 +303,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    
     <section class="register" id="register">
       <div class="register__container">
         <p class="register__title">Навчись будувати системну компанію та стань кращим CEO в своїй галузі</p>
@@ -546,6 +547,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+      window.location = "https://ceo.bizconstructor.com/new";
+    </script>
   <script>
       $(document).ready(function () {
       	// Дата мероприятия

@@ -430,6 +430,7 @@ h1 {
   font-family: "Neue Machina";
   font-size: var(--h1);
   font-weight: 800;
+  z-index: 1;
   line-height: 98%;
   text-transform: uppercase;
 }

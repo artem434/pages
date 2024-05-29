@@ -1384,6 +1384,7 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+        window.location.href = "https://medceo.bizconstructor.com/offer_new";
       $(document).ready(function () {
         // Дата мероприятия
         let cDate = "18 січня ",

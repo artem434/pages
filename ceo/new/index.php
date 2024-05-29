@@ -534,7 +534,7 @@
                 <td>Кількість модулів програми</td>
                 <td class="text">13</td>
                 <td class="text">13</td>
-                <td class="text">17</td>
+                <td class="text">13</td>
               </tr>
               <tr>
                 <td>Доступ до матеріалів програми після її завершення</td>
@@ -545,10 +545,10 @@
               <tr>
                 <td>Case study: відповіді на запитання від експерта</td>
                 <td class="text text--small">
-                  watch only <br /> (6 зустрічей)
+                  watch only 
                 </td>
-                <td class="text text--small">6 зустрічей</td>
-                <td class="text text--small">24 зустрічі</td>
+                <td ></td>
+                <td></td>
               </tr>
               <tr>
                 <td>
@@ -602,18 +602,40 @@
                 <td></td>
                 <td></td>
               </tr>
+              <tr>
+                <td>
+                Додатковий модуль про залучення інвестицій 
+                </td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
 
               <tr>
-                <td>Квиток на Саміт у 2024 році (пакет PREMIUM)</td>
+                <td>
+                Додаткові три модулі програми про міжнародне масштабування бізнесу, HR-маркетинг і бренд роботодавця, управління проектами 
+                </td>
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
                 <td>
-                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
-                  вашого ТОП-менеджера
-                </td>
+                Бонусний модуль “Особистий бренд власника бізнесу”
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                Доступ до зустрічей Case study (відповіді на запитання від Кирила Куницького) протягом року
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                Навчання на програмі "Ефективний керівник" (пакет PRO) для вашого топменеджера
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>

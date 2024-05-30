@@ -6,7 +6,7 @@
         <div class="program__items">
           <div class="item">
             <p class="item__number">01</p>
-            <h4 class="item__title">Роль і функції СЕО</h4>
+            <h4 class="item__title">Модель системного бізнесу та роль СЕО</h4>
             <div class="item__more"></div>
             <ul class="item__info">
               <li>Роль, функціонал та очікувані результати роботи СЕО.</li>

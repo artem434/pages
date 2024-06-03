@@ -480,7 +480,7 @@ a {
 
 .btn-page {
   border-radius: 5px;
-  background: #017f4a;
+  background: #ff016b;
   font-size: 22px;
   color: #ffffff;
   width: 100%;
@@ -691,7 +691,7 @@ a {
 }
 
 .burger span {
-  background: #017f4a;
+  background: #ff016b;
   position: absolute;
   display: block;
   width: 100%;
@@ -823,7 +823,7 @@ a {
   }
 }
 .hero__date b {
-  color: #017f4a;
+  color: #ff016b;
   font-weight: 700;
 }
 @media (min-width: 1200px) {
@@ -836,7 +836,7 @@ a {
   width: 2px;
   height: 17px;
   border-radius: 3px;
-  background: #017f4a;
+  background: #ff016b;
   margin: 0 6px;
 }
 @media (min-width: 1200px) {
@@ -849,7 +849,7 @@ a {
   background: #ffefee;
   display: inline-block;
   padding: 4px 8px;
-  color: #fb443d;
+  color: #000;
   text-align: center;
   font-size: 14px;
   margin-bottom: 10px;
@@ -867,7 +867,7 @@ a {
   margin-right: 6px;
 }
 .hero__title {
-  color: #017f4a;
+  color: #ff016b;
   font-size: 27px;
   font-style: normal;
   font-weight: 800;
@@ -928,18 +928,18 @@ a {
 }
 .hero__bonus-image {
   z-index: -1;
-  width: 128.255px;
-  height: 101.214px;
+  width: 109.255px;
+  height: 84.214px;
   background-size: cover;
   position: absolute;
-  top: -89px;
-  right: -19px;
+  top: -71px;
+  right: -2px;
 }
 .hero__bonus-image::before {
   position: absolute;
   content: "";
-  top: -28px;
-  right: -20px;
+  top: -38px;
+  right: -13px;
   background: url("../img/hero-gift.png") no-repeat center;
   background-size: cover;
   width: 65px;
@@ -950,15 +950,15 @@ a {
   .hero__bonus-image::before {
     width: 95px;
     height: 95px;
-    right: -63px;
+    right: -58px;
   }
 }
 @media (min-width: 1200px) {
   .hero__bonus-image {
-    width: 179.889px;
-    height: 153.911px;
-    top: -117px;
-    right: 335px;
+    width: 167.889px;
+    height: 135.911px;
+    top: -115px;
+    right: 360px;
   }
 }
 @keyframes rot {
@@ -972,7 +972,7 @@ a {
 .hero__img {
   margin: 0 auto;
   position: absolute;
-  bottom: 0;
+  bottom: -22px;
   left: 50%;
   transform: translate(-50%, 0);
   max-width: 340px;
@@ -981,10 +981,10 @@ a {
 @media (min-width: 1200px) {
   .hero__img {
     left: inherit;
-    right: -362px;
+    right: -222px;
     top: 0;
     bottom: inherit;
-    max-width: 560px;
+    max-width: 443px;
   }
 }
 .hero__img img {
@@ -1097,7 +1097,7 @@ a {
 }
 .program__item-day {
   border-radius: 3px;
-  background: #017f4a;
+  background: #ff016b;
   color: #fff;
   padding: 5px;
   margin-right: 18px;
@@ -1121,7 +1121,7 @@ a {
 }
 @media (min-width: 1200px) {
   .program .btn {
-    background-color: #017f4a;
+    background-color: #ff016b;
     display: block;
     font-size: 18px;
     color: #fff;
@@ -1156,7 +1156,7 @@ a {
   }
 }
 .double .title b {
-  color: #fb443d;
+  color: #ff016b;
   font-weight: 800;
 }
 .double ul {
@@ -1192,14 +1192,14 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='22' viewBox='0 0 23 22' fill='none'%3E%3Cpath d='M3.5 10L10.5 16L19.5 5' stroke='%23017F4A' stroke-width='4'/%3E%3C/svg%3E") 50%/contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16' fill='none'%3E%3Cpath d='M1.5 7L8.5 13L17.5 2' stroke='%23FF016B' stroke-width='4'/%3E%3C/svg%3E") 50%/contain no-repeat;
 }
 .double .btn {
   display: none;
 }
 @media (min-width: 1200px) {
   .double .btn {
-    background-color: #fb443d;
+    background-color: #ff016b;
     display: block;
     font-size: 18px;
     color: #fff;
@@ -1243,7 +1243,7 @@ a {
   justify-content: center;
   height: 50px;
   border-radius: 5px;
-  background: #fb443d;
+  background: #ff016b;
   box-shadow: 0px 4px 32px 0px rgba(193, 193, 193, 0.24);
 }
 @media (min-width: 1200px) {
@@ -1268,13 +1268,13 @@ a {
   }
 }
 .lecturer__item:nth-child(even) .lecturer__name {
-  color: #fb443d;
+  color: #ff016b;
 }
 .lecturer__item:nth-child(even) ul li {
-  color: #fb443d;
+  color: #ff016b;
 }
 .lecturer__name {
-  color: #017f4a;
+  color: #ff016b;
   font-size: 22px;
   font-weight: 800;
   line-height: normal;
@@ -1316,7 +1316,7 @@ a {
   }
 }
 .lecturer ul li {
-  color: #017f4a;
+  color: #ff016b;
   margin-left: 20px;
 }
 @media (min-width: 1200px) {
@@ -1372,7 +1372,7 @@ a {
   text-align: center;
 }
 .mistakes .title span {
-  color: #017f4a;
+  color: #ff016b;
 }
 @media (min-width: 1200px) {
   .mistakes .title {
@@ -1471,7 +1471,7 @@ a {
   margin-bottom: 18px;
 }
 .registration__title b {
-  color: #017f4a;
+  color: #ff016b;
   display: block;
   font-size: 18px;
   font-weight: 800;
@@ -1482,7 +1482,7 @@ a {
   font-weight: 800;
 }
 .registration__gift b {
-  color: #fb443d;
+  color: #ff016b;
 }
 @media (min-width: 1200px) {
   .registration .form {
@@ -1603,7 +1603,7 @@ a {
 .nums__indicator {
   display: flex;
   align-items: center;
-  color: #fb443d;
+  color: #ff016b;
   font-family: "MuseoSansCyrl";
   font-size: 45px;
   font-weight: 900;
@@ -1737,7 +1737,7 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #017f4a;
+  -webkit-text-stroke: 1px #ff016b;
   animation-name: ticker;
   animation-duration: 10s;
   animation-timing-function: linear;

@@ -22,7 +22,7 @@
       padding-top: 50px;
     }
     b {
-      color: #017f4a;
+      color: #ff016b;
       font-weight: 700;
 
       @include media-breakpoint-up(xl) {
@@ -37,7 +37,7 @@
       width: 2px;
       height: 17px;
       border-radius: 3px;
-      background: #017f4a;
+      background: #ff016b;
       margin: 0 6px;
       @include media-breakpoint-up(xl) {
         margin: 12px;
@@ -49,7 +49,7 @@
     background: #ffefee;
     display: inline-block;
     padding: 4px 8px;
-    color: #fb443d;
+    color: #000;
     text-align: center;
     font-size: 14px;
     margin-bottom: 10px;
@@ -67,7 +67,7 @@
     }
   }
   &__title {
-    color: #017f4a;
+    color: #ff016b;
     font-size: 27px;
     font-style: normal;
     font-weight: 800;
@@ -128,17 +128,17 @@
 
   &__bonus-image {
     z-index: -1;
-    width: 128.255px;
-    height: 101.214px;
+    width: 109.255px;
+    height: 84.214px;
     background-size: cover;
     position: absolute;
-    top: -89px;
-    right: -19px;
+    top: -71px;
+    right: -2px;
     &::before {
       position: absolute;
       content: "";
-      top: -28px;
-      right: -20px;
+      top: -38px;
+      right: -13px;
       background: url("../img/hero-gift.png") no-repeat center;
       background-size: cover;
       width: 65px;
@@ -148,15 +148,15 @@
       @include media-breakpoint-up(xl) {
         width: 95px;
         height: 95px;
-        right: -63px;
+        right: -58px;
       }
     }
 
     @include media-breakpoint-up(xl) {
-      width: 179.889px;
-      height: 153.911px;
-      top: -117px;
-      right: 335px;
+      width: 167.889px;
+      height: 135.911px;
+      top: -115px;
+      right: 360px;
     }
   }
   @keyframes rot {
@@ -170,7 +170,7 @@
   &__img {
     margin: 0 auto;
     position: absolute;
-    bottom: 0;
+    bottom: -22px;
     left: 50%;
     transform: translate(-50%, 0);
     max-width: 340px;
@@ -178,10 +178,10 @@
 
     @include media-breakpoint-up(xl) {
       left: inherit;
-      right: -362px;
+      right: -222px;
       top: 0;
       bottom: inherit;
-      max-width: 560px;
+      max-width: 443px;
     }
 
     img {

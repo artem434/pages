@@ -1314,6 +1314,9 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
       </div>
       <!-- END HIDDEN ELEMENTS (MODALS)-->
     </div>
+    <script>
+      window.location = "https://buildceo.bizconstructor.com/build2";
+    </script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script>

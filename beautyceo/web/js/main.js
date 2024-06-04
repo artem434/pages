@@ -472,7 +472,8 @@ const clientsSlider = new Swiper(".clients__slider", {
       slidesPerView: 4,
     },
     1260: {
-      slidesPerView: 8,
+      spaceBetween: 44,
+      slidesPerView: 6,
     },
   },
   navigation: {

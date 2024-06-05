@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="uk-UA">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-      CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор
+      СЕО | Intensive educational program for business leaders | Business
+      Constructor
     </title>
+    <meta
+      name="description"
+      content="This 3-month course will allow you to acquire all the necessary knowledge and competencies in the shortest possible time to become a top CEO for your company."
+      data-vmid="description"
+    />
     <!-- SEO-->
     <meta
       property="og:title"
-      content="CEO | Інтенсивна освітня програма для керівників | Бізнес-Конструктор"
+      content="СЕО | Intensive educational program for business leaders | Business Constructor"
     />
-
     <meta
       property="og:description"
-      content="Ефективна та концентрована освітня програма для навчання перших осіб компанії"
+      content="This 3-month course will allow you to acquire all the necessary knowledge and competencies in the shortest possible time to become a top CEO for your company."
     />
     <meta property="og:image" content="img/og-image.png" />
     <meta property="og:url" content="" />
@@ -258,10 +263,10 @@
           <a class="header__logo" href="https://ceo.bizconstructor.com/new"></a>
           <ul class="header__menu">
             <li>
-              <a href="#program">Структура програми</a>
+              <a href="#program">Program</a>
             </li>
             <li>
-              <a href="#expert">Експерт</a>
+              <a href="#expert">Expert</a>
             </li>
             <li>
               <a class="phone" href="tel:+380931701239"
@@ -269,7 +274,7 @@
               >
             </li>
             <li class="btn">
-              <a href="#register">Реєстрація</a>
+              <a href="#register">Registration</a>
             </li>
           </ul>
           <div class="header__burger">
@@ -283,20 +288,20 @@
         <div class="hero__container">
           <div class="hero__content">
             <p class="hero__title">
-              Інтенсивна освітня <br />
-              програма для <br />
-              <span>керівників бізнесу</span>
+              Intensive educational <br />
+              program for
+              <span>business leaders</span>
 
               <!-- <strong>12 березня</strong> -->
             </p>
             <h1>CEO</h1>
             <p class="hero__subtitle">
-              Стань еталонним лідером <br />
-              для своєї компанії
+              Become a best leader <br />
+              for your company
             </p>
             <a class="hero__btn btn_fixed-bottom-hidden" href="#register"
-              >ЗАРЕЄСТРУВАТИСЯ</a
-            >
+              >Register now
+            </a>
           </div>
           <div class="hero__images">
             <div class="hero__image_sm"></div>
@@ -327,28 +332,21 @@
         <div class="about__container">
           <div class="about__info">
             <p class="about__info_text">
-              Цей 3-місячний курс дозволить тобі в найкоротші терміни здобути
-              всі необхідні знання та компетенції, які дозволять тобі стати
-              еталонним CEO для своєї компанії.
+              This 3-month course will allow you to acquire all the necessary
+              knowledge and competencies in the shortest possible time to become
+              a top CEO for your company.
             </p>
             <ul class="about__info_list">
-              <li>3 місяці навчання в онлайн форматі</li>
-              <li>Індивідуальний експертний супровід</li>
-              <li>Практичні завдання та шаблони документів</li>
-              <li>Робота в професійному оточенні однодумців</li>
-              <li>
-                Сертифікат про проходження <br />
-                програми
-              </li>
+              <li>3 months of online learning</li>
+              <li>Individual expert support</li>
+              <li>Practical tasks and document templates</li>
+              <li>Work in a professional environment of teammates</li>
+              <li>Certificate of Program Completion</li>
             </ul>
           </div>
           <h2 class="about__slogan">
-            Так швидко
-            <span
-              >твій професійний <br />
-              рівень
-            </span>
-            ще ніколи не зростав
+            Your <span>professional level</span> <br />
+            has never grown so quickly!
           </h2>
         </div>
       </section>
@@ -359,33 +357,33 @@
               class="for__block_decor lazy"
               data-bg="img/for__block_decor.svg"
             ></div>
-            <h2 class="for__title"><span>ДЛЯ КОГО</span> ПРОГРАМА</h2>
+            <h2 class="for__title"><span>WHO THE PROGRAM </span> IS FOR</h2>
             <div class="for__items">
               <div class="item">
-                <h3 class="item__title">Керівники</h3>
+                <h3 class="item__title">Leaders</h3>
                 <p class="item__text">
-                  які прагнуть вирости професійно та карʼєрно як управлінці
+                  who want to grow professionally and career-wise as managers
                 </p>
               </div>
               <div class="item">
-                <h3 class="item__title">Власники бізнесу</h3>
+                <h3 class="item__title">Active CEOs</h3>
                 <p class="item__text">
-                  які прагнуть більш ефективно керувати своїм бізнесом або
-                  виростити CEO всередині компанії
+                  seeking to significantly improve their competencies in a short
+                  time
                 </p>
               </div>
               <div class="item">
-                <h3 class="item__title">Діючі CEO,</h3>
+                <h3 class="item__title">Business owners</h3>
                 <p class="item__text">
-                  що прагнуть в короткі терміни значно підвищити рівень власних
-                  компетенцій
+                  who want to manage their business more effectively or grow a
+                  CEO within the company
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="results" id="results">
+      <!-- <section class="results" id="results">
         <div class="results__container">
           <h2 class="results__title">
             <span>ПІСЛЯ НАВЧАННЯ</span> НА ПРОГРАМІ ТИ:
@@ -469,7 +467,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="decor" id="decor">
         <div class="decor__image lazy" data-bg="img/decor.svg"></div>
       </section>
@@ -479,30 +477,28 @@
       <section class="expert" id="expert">
         <div class="expert__container">
           <div class="expert__content">
-            <p class="expert__uptitle">Експерт програми</p>
-            <p class="expert__name">КИРИЛО <b>КУНИЦЬКИЙ</b></p>
+            <p class="expert__uptitle">Expert</p>
+            <p class="expert__name">KYRYLO <b>KUNYTSKYI</b></p>
             <p class="expert__prof">
-              Засновник міжнародної <br />освітньо-консалтингової компанії
-              «Бізнес-Конструктор»
+              Founder and CEO of <br />
+              the international educational and consulting company Business
+              Constructor
             </p>
             <ul class="expert__bio">
               <li>
-                Бізнесмен із 20-річним досвідом управління компаніями у сфері
-                логістики, туризму, постачання промислового обладнання,
-                роздрібної торгівлі, виробництва ювелірних <br />
-                прикрас та IT.
+                A businessman with 18 years of experience in managing companies
+                in logistics, tourism, industrial equipment supply, retail,
+                jewelry production, and IT.
               </li>
               <li>
-                Протягом останніх 10 років Кирило особисто консультує власників
-                та топ-менеджмент топових компаній (Епіцентр, Шериф, Планета
-                Кіно, Золотий Вік, G.Bar, Gastro Family, Taryan Group, KAN
-                Development, MTI, Ultra Group та багато інших).
+                For the past 10 years, Kyrylo has been personally advising
+                owners and top management of top companies.
               </li>
               <li>
-                Візитна картка Кирила – власні унікальні технології ведення
-                бізнесу, які працюють не тільки в його компаніях, а й успішно
-                впроваджено більш ніж 25 000 підприємств, що є клієнтами
-                компанії «Бізнес-Конструктор».
+                Kyrylo's main feature is his own unique business technologies,
+                which are used not only in his companies, but have been
+                successfully implemented by more than 25,000 companies that are
+                clients of Business Constructor.
               </li>
             </ul>
           </div>
@@ -512,79 +508,140 @@
         </div>
       </section>
 
-      <section class="packages" id="packages">
-        <div class="packages__container">
-          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
-          <div class="packages__items">
-            <div class="item item--core core_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">CORE</p>
-              </div>
-              <ul class="item__info">
-                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>13 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>3х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(12 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми 3 місяцi після її завершення
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(3 онлайн-зустрічі)</b>
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-core"
-                href="#register"
-                data-package="core"
-                >ЗАРЕЄСТРУВАТИСЯ</a
-              >
+      <section class="format" id="format">
+        <div class="format__table">
+          <div class="container">
+            <h2 class="title title--big">
+              CHOOSE YOUR
+
+              <span>PACKAGE </span>
+            </h2>
+            <div class="format__packeges">
+              <p>CORE</p>
+              <p>PRO</p>
+              <p>PREMIUM</p>
             </div>
-            <div class="item item--pro pro_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">PRO</p>
-              </div>
-              <ul class="item__info">
-                <li><b>4 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>17 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>4х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(16 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Спілкування з іншими участниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <br />
-                  <b> 3 місяцi</b> після її завершення
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(4 онлайн-зустрічі)</b>
-                </li>
-              </ul>
-              <a
-                class="item__btn"
-                id="btn-pro"
-                href="#register"
-                data-package="pro"
-                >ЗАРЕЄСТРУВАТИСЯ</a
+            <table>
+              <tr>
+                <td>Studying online</td>
+                <td class="text">3 month</td>
+                <td class="text">3 month</td>
+                <td class="text">4 month</td>
+              </tr>
+              <tr>
+                <td>Number of program modules</td>
+                <td class="text">13</td>
+                <td class="text">13</td>
+                <td class="text">13</td>
+              </tr>
+              <tr>
+                <td>Access to the program materials after its completion</td>
+                <td class="text">2 month</td>
+                <td class="text">3 month</td>
+                <td class="text">12 month</td>
+              </tr>
+              <tr>
+                <td>Case study: expert's feedback</td>
+                <td class="text text--small">watch only</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Access to practical materials: instructions, checklists and
+                  templates
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Certificate of completion of the program</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Support by a curator on organizational and technical issues
+                  during the program
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Private Telegram group for networking with the support of a
+                  curator
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Case study workshops with business consultants and experts
+                </td>
+                <td class="text">in the record</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Individual feedback from a business consultant</td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Additional module on investment raising</td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>
+                  Additional 3 program modules on international business
+                  scaling, HR marketing and employer brand, project management
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bonus module “Personal brand of a business owner”</td>
+
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Access to Case study meetings (feedback from Kirill Kunitsky)
+                </td>
+
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Studying at the "Effective Leader" program (PRO package) for
+                  your top manager
+                </td>
+
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="format__btns">
+              <a id="btn-core" href="#register" data-package="core">Apply</a>
+              <a id="btn-pro" href="#register" data-package="pro">Apply</a>
+              <a id="btn-premium" href="#register" data-package="premium"
+                >Apply</a
               >
             </div>
           </div>
@@ -594,31 +651,27 @@
       <section class="register" id="register">
         <div class="register__container">
           <p class="register__title">
-            Навчись будувати системну компанію та стань кращим CEO в своїй
-            галузі
+            Learn how to build a successful company and become the best CEO in
+            your industry
           </p>
           <div class="block">
             <div class="block__content">
-              <p class="block__title">ЗАЛИШ <b>ЗАЯВКУ</b></p>
+              <p class="block__title"><b>APPLY</b> FOR THE</p>
               <p class="block__subtitle">
-                НА ПРОГРАМУ «СЕО» <br />
-                НА СПЕЦІАЛЬНИХ УМОВАХ та отримай бонус
+                CEO” PROGRAM <br />
+                NOW AND GET THE BEST DEAL
               </p>
-              <!-- <ul class="block__info">
+              <ul class="block__info">
                 <li>
-                  <p>онлайн</p>
+                  <p>Online</p>
                 </li>
                 <li>
-                  <p>3 місяці</p>
+                  <p>3 month</p>
                 </li>
-                <li>
+                <!-- <li>
                   <p>12 березня</p>
-                </li>
-              </ul> -->
-              <p class="block__description">
-                Переходь в Telegram, там ми з тобою звʼяжемося та надамо
-                детальну інформацію щодо програми
-              </p>
+                </li> -->
+              </ul>
             </div>
             <div class="block__form">
               <form class="form zoho_url" id="form" method="post">
@@ -640,15 +693,23 @@
                       <span>PRO</span>
                     </div>
                   </li>
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab premium_price"
+                      data-id=""
+                    >
+                      <span>PREMIUM</span>
+                    </div>
+                  </li>
                 </ul>
 
-                <p class="form__title">Реєстрація</p>
+                <p class="form__title">Register now</p>
                 <label class="input__wrap">
                   <input
                     class="input"
                     name="name"
                     type="text"
-                    placeholder="Твоє ім’я"
+                    placeholder="First name"
                     required=""
                   />
                 </label>
@@ -658,7 +719,7 @@
                     id="phone"
                     name="phone"
                     type="tel"
-                    placeholder="Твій номер телефону"
+                    placeholder="Phone number"
                     required=""
                   />
                 </label>
@@ -667,7 +728,7 @@
                     class="input"
                     name="email"
                     type="email"
-                    placeholder="Твій email"
+                    placeholder="Email "
                     required=""
                   />
                 </label>
@@ -764,16 +825,13 @@
                     value="false"
                     autocomplete="off"
                   />
-                  <input type="hidden" name="send_to_gf" value="gf_ceo_new2" />
+                  <input type="hidden" name="send_to_gf" value="gf_ceo_eng" />
                 </div>
-                <button class="form__btn subm" type="submit">
-                  ЗАЛИШИТИ ЗАЯВКУ
-                </button>
+                <button class="form__btn subm" type="submit">APPLY</button>
                 <p class="form__agree">
-                  Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку
-                  твоїх персональних даних згідно з
-                  <a href="http://privacy.bizconstructor.com/"
-                    >Політикою конфіденційності</a
+                  By clicking the “Submit an application” button, you consent to
+                  the processing of your personal data in accordance with the
+                  <a href="http://privacy.bizconstructor.com/">Privacy Policy</a
                   >.
                   <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                 </p>
@@ -783,7 +841,7 @@
         </div>
       </section>
 
-      <section class="how" id="how">
+      <!-- <section class="how" id="how">
         <div class="how__image lazy" data-bg="img/how__image.svg"></div>
         <div class="how__container">
           <h2 class="how__title">
@@ -837,7 +895,7 @@
           </div>
           <a class="how__btn" href="#register">ХОЧУ НА ПРОГРАМУ</a>
         </div>
-      </section>
+      </section> -->
 
       <section class="company" id="company">
         <div class="company__container">
@@ -846,51 +904,48 @@
             data-bg="img/company__decor.svg"
           ></div>
           <h2 class="company__title">
-            <span>ПРО НАС</span>
+            <span>ABOUT US </span>
             <b
-              >«Бізнес-
+              >«Business
               <br />
-              <i>Конструктор»</i>
+              <i>Constructor</i>
             </b>
           </h2>
           <p class="company__text">
-            — це міжнародна освітньо-консалтингова компанія. Ми допомагаємо
-            власникам бізнесу та топ-менеджменту систематизувати роботу своїх
-            компаній за допомогою інноваційних освітньо-консалтингових
-            продуктів, створених на методології Кирила Куницького.
+            is an international educational and consulting company that has been
+            helping business owners and top managers build a systematic and
+            efficient business for over 10 years.
+
             <br />
-            <br />Завдяки багаторічній практиці роботи з тисячами компаній та
-            постійному вивченню найкращого світового досвіду, ми створили
-            методологію систематизації бізнесу, яка дозволяє в найкоротші
-            терміни значно підняти ефективність роботи будь-якої компанії.
+            <br />Thanks to our many years of experience working with thousands
+            of companies and constant study of the world's best practices, we
+            have created a business systematization methodology that allows us
+            to significantly improve the efficiency of any company in the
+            shortest possible time.
           </p>
           <div class="company__items">
             <div class="item">
-              <p class="item__title">20 000+</p>
-              <p class="item__text">клієнтів</p>
+              <p class="item__title">10+</p>
+              <p class="item__text">years of experience</p>
             </div>
             <div class="item">
-              <p class="item__title">10 <span>років</span></p>
-              <p class="item__text">на ринку, працюємо з 2013 року</p>
-            </div>
-            <div class="item">
-              <p class="item__title">20+</p>
-              <p class="item__text">країн, в яких працюємо</p>
+              <p class="item__title">5000+</p>
+              <p class="item__text">corporate clients</p>
             </div>
             <div class="item">
               <p class="item__title">25 000+</p>
-              <p class="item__text">випускників освітніх програм</p>
+              <p class="item__text">participants of educational programs</p>
             </div>
             <div class="item">
               <p class="item__title">400+</p>
-              <p class="item__text">проведених івентів</p>
+              <p class="item__text">business events organized</p>
             </div>
           </div>
         </div>
       </section>
       <section class="clients" id="clients">
         <div class="clients__container">
-          <h2 class="clients__title">Серед наших клієнтів</h2>
+          <h2 class="clients__title">AMONG OUR CLIENTS</h2>
           <div class="clients__slider swiper">
             <div class="swiper-wrapper">
               <div
@@ -972,36 +1027,36 @@
       <div class="footer__decor footer__decor--2 lazy" data-bg="img/footer__decor--2.png"></div> -->
         <div class="footer__container">
           <div class="footer__menu">
-            <h5 class="footer__menu_title">Корисно</h5>
+            <h5 class="footer__menu_title">Recommended</h5>
             <ul class="footer__menu_list">
               <li>
                 <a
                   href="http://bizconstructor.com/about?_ga=2.150560566.1675371198.1664796566-206334048.1655729050"
-                  >Про Нас</a
-                >
+                  >About us
+                </a>
               </li>
               <li>
                 <a
                   href="http://bizconstructor.com/blog?_ga=2.150631350.1675371198.1664796566-206334048.1655729050"
-                  >Блог Бізнес-Конструктор</a
-                >
+                  >Business Constructor Blog
+                </a>
               </li>
               <li>
                 <a
                   href="http://www.kunitsky.com/?_ga=2.150631350.1675371198.1664796566-206334048.1655729050"
-                  >Блог Кирила Куницького</a
-                >
+                  >Kirill Kunitsky's blog
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.work.ua/jobs/by-company/448901?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
-                  >Робота в Бізнес-Конструктор</a
-                >
+                  >We’re hiring
+                </a>
               </li>
             </ul>
           </div>
           <div class="footer__links">
-            <h5 class="footer__links_title">Клієнтам</h5>
+            <h5 class="footer__links_title">For clients</h5>
             <ul class="footer__menu_list">
               <li>
                 <!-- <a href="http://refund.bizconstructor.com/ua?_ga=2.84367262.645259001.1658240152-892051805.1657004770">Умови повернення коштів</a> -->
@@ -1009,19 +1064,19 @@
               <li>
                 <a
                   href="http://privacy.bizconstructor.com/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
-                  >Політика конфіденційності</a
-                >
+                  >Privacy policy
+                </a>
               </li>
               <li>
                 <a
                   href="http://terms-conditions.bizconstructor.com/ua?_ga=2.75242514.1675371198.1664796566-206334048.1655729050"
-                  >Публічна оферта UA</a
+                  >Public offer UA</a
                 >
               </li>
             </ul>
           </div>
           <div class="footer__social">
-            <h5 class="footer__social_title">Наші соц.мережі</h5>
+            <h5 class="footer__social_title">Join us on social media</h5>
             <div class="footer__social_links">
               <a
                 class="footer__social_link"
@@ -1134,23 +1189,22 @@
     </div>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script>
-      window.location = "https://ceo.bizconstructor.com/new";
-    </script> -->
     <script>
       $(document).ready(function () {
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000844239051",
+          cLandingId = "2108311000890714447",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000844239074",
+          cLandingIdPro = "2108311000890714447",
+          // Landing id // Online Pro
+          cLandingIdPremium = "2108311000890714447",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://web.bizconstructor.com/ubh6b7";
+          cSuccess_url = "https://web.bizconstructor.com/crq1lr";
 
         //  дата скидки (автозамена)
         let dataDeadline;
@@ -1168,6 +1222,9 @@
         }
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+        if (cLandingIdPremium !== "id") {
+          $(".premium_price").attr("data-id", cLandingIdPremium);
         }
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);
@@ -1205,6 +1262,9 @@
 
       $("#btn-pro").click(function () {
         $(".packages-btns__pack-name.pro_price").click();
+      });
+      $("#btn-premium").click(function () {
+        $(".packages-btns__pack-name.premium_price").click();
       });
     </script>
     <script>

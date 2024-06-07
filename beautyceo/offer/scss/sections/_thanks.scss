@@ -1,0 +1,68 @@
+.thanks {
+  flex: 1 0 auto;
+  color: #fff;
+
+  .container {
+    position: relative;
+    background: url(../img/bg-thanks-min.jpeg) no-repeat center;
+    max-width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: 66px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 80px;
+    }
+    span {
+      color: $maincolor;
+    }
+  }
+
+  p {
+    font-size: 24px;
+  }
+  .submit-btns {
+    width: 300px;
+
+    @include media-breakpoint-up(xl) {
+      width: 400px;
+    }
+    .btn {
+      width: 100%;
+      max-width: 400px;
+      background-color: $maincolor;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+  }
+}

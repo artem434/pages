@@ -268,11 +268,11 @@
             <li>
               <a href="#expert">Expert</a>
             </li>
-            <li>
+            <!-- <li>
               <a class="phone" href="tel:+380931701239"
                 >+38 ( 093 ) 170 12 39</a
               >
-            </li>
+            </li> -->
             <li class="btn">
               <a href="#register">Registration</a>
             </li>
@@ -308,8 +308,8 @@
             <div class="hero__image_bg"></div>
             <a href="#register" class="hero__images_btn"
               ><span
-                >залишити <br />
-                заявку</span
+                >Register <br />
+                now</span
               ></a
             >
           </div>
@@ -318,13 +318,13 @@
       <section class="line" id="line">
         <div class="line__slider swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
-            <div class="swiper-slide">БІЗНЕС-КОНСТРУКТОР</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
+            <div class="swiper-slide">BUSINESS-CONSTRUCTOR</div>
           </div>
         </div>
       </section>

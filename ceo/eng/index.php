@@ -21,7 +21,7 @@
       property="og:description"
       content="This 3-month course will allow you to acquire all the necessary knowledge and competencies in the shortest possible time to become a top CEO for your company."
     />
-    <meta property="og:image" content="img/og-image.png" />
+    <meta property="og:image" content="img/og-image.jpg" />
     <meta property="og:url" content="" />
     <meta
       name="viewport"

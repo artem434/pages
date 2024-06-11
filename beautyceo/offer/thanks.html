@@ -228,7 +228,7 @@
       // Landing id // Online Premium
       let cLandingIdPremium = "2108311000891329083";
 
-      const PackageSaleOnline = "2108311000888840207";
+      const PackageSaleOnline = "2108311000891329110";
     </script>
 
     <script>
@@ -294,7 +294,7 @@
 
         let pay_data = {
           merchantAccount: "bizconstructor_com2",
-          merchantDomainName: "https://changers.education/hrm2/offer",
+          merchantDomainName: "https://beautyceo.bizconstructor.com/offer",
           authorizationType: "SimpleSignature",
           merchantSignature: "",
           orderReference: "Order" + Date.now(),
@@ -327,7 +327,7 @@
         $(form).find("input[name='success_url']").val("");
         $(form).find("input[name='error_url']").val("");
 
-        //   console.log(pay_data)
+        console.log(pay_data);
         wayforpay.run(
           pay_data,
           function (response) {
@@ -364,7 +364,7 @@
 
         if (response.ok) {
           let result = await response.json();
-          //   console.log(result)
+          console.log(result);
           pay_data.merchantSignature = result.hash;
         }
       }

@@ -31,6 +31,9 @@ $(document).ready(function () {
       preferredCountries: ["ua", "kz"],
     });
   });
+  var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+  });
 
   $("form [type=submit]").on("click", function (e) {
     e.preventDefault();

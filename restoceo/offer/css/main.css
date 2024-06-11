@@ -3518,3 +3518,89 @@ strong.medical b {
     margin: 0 auto !important;
   }
 }
+
+.thanks {
+  flex: 1 0 auto;
+  color: #000;
+}
+.thanks .container {
+  position: relative;
+  background: url(../img/bg-thanks-min.jpeg) no-repeat center;
+  max-width: 100%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thanks__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.thanks h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .thanks h1 {
+    font-size: 24px;
+  }
+}
+.thanks h2 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .thanks h2 {
+    font-size: 54px;
+    max-width: 800px;
+  }
+}
+.thanks h2 span {
+  color: #d00000;
+}
+.thanks p {
+  font-size: 24px;
+}
+.thanks .submit-btns {
+  width: 300px;
+}
+.btn-page {
+  border: 2px solid #d00000;
+  font-size: 18px;
+  color: #d00000;
+  width: 100%;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-weight: 700;
+  max-width: 300px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .btn-page {
+    font-size: 20px;
+  }
+}
+.btn-page:hover {
+  background-color: #d00000;
+  color: #fff;
+}
+.btn-page--full {
+  background-color: #ff016b;
+}
+.btn-page--full:hover {
+  background-color: #ffffff;
+  color: #000;
+}

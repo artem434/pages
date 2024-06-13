@@ -1323,7 +1323,7 @@ $(".zoho_url").submit(function (e) {
             }
 
             // Send data to Pipedrive
-            sendDataToPipedrive({ name: name, email: email, phone: phone });
+            //sendDataToPipedrive({ name: name, email: email, phone: phone });
           }
         }
       })

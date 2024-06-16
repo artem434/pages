@@ -676,7 +676,7 @@
             <div class="block__form">
               <form class="form zoho_url" id="form" method="post">
                 <div class="loader"></div>
-                <ul class="form__package">
+                <!-- <ul class="form__package">
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab core_price"
@@ -701,7 +701,7 @@
                       <span>PREMIUM</span>
                     </div>
                   </li>
-                </ul>
+                </ul> -->
 
                 <p class="form__title">Register now</p>
                 <label class="input__wrap">
@@ -1204,7 +1204,7 @@
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://web.bizconstructor.com/crq1lr";
+          cSuccess_url = "https://ceo.bizconstructor.com/eng/thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;

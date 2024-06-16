@@ -734,6 +734,7 @@ a {
   padding: 9px 11px;
   font-size: 16px;
   border: solid 1px #6b6b6b;
+  color: #fff;
 }
 @media (min-width: 1200px) {
   .hero .form .input__wrap .input {

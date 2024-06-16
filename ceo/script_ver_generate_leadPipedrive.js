@@ -1282,36 +1282,36 @@ $(".zoho_url").submit(function (e) {
                 fbcapiData,
                 "https://cap1.space/fb-capi.php/"
               ).finally(() => {
-                // if (server_response.link !== false) {
-                //   if (!quizComplete) {
-                //     LP.CORE.showModal("#modal__quiz");
-                //   } else {
-                //     if (get_params == "false") {
-                //       server_response_link = server_response.link.split("?")[0];
-                //     } else {
-                //       server_response_link = server_response.link;
-                //     }
-                //     setTimeout(function () {
-                //       document.location.href = server_response_link;
-                //     }, 250);
-                //   }
-                // }
+                if (server_response.link !== false) {
+                  if (!quizComplete) {
+                    LP.CORE.showModal("#modal__quiz");
+                  } else {
+                    if (get_params == "false") {
+                      server_response_link = server_response.link.split("?")[0];
+                    } else {
+                      server_response_link = server_response.link;
+                    }
+                    setTimeout(function () {
+                      document.location.href = server_response_link;
+                    }, 250);
+                  }
+                }
               });
             } else {
-              // if (server_response.link !== false) {
-              //   if (!quizComplete) {
-              //     LP.CORE.showModal("#modal__quiz");
-              //   } else {
-              //     if (get_params == "false") {
-              //       server_response_link = server_response.link.split("?")[0];
-              //     } else {
-              //       server_response_link = server_response.link;
-              //     }
-              //     setTimeout(function () {
-              //       document.location.href = server_response_link;
-              //     }, 250);
-              //   }
-              // }
+              if (server_response.link !== false) {
+                if (!quizComplete) {
+                  LP.CORE.showModal("#modal__quiz");
+                } else {
+                  if (get_params == "false") {
+                    server_response_link = server_response.link.split("?")[0];
+                  } else {
+                    server_response_link = server_response.link;
+                  }
+                  setTimeout(function () {
+                    document.location.href = server_response_link;
+                  }, 250);
+                }
+              }
             }
 
             // Facebook pixel tracking
@@ -1323,7 +1323,7 @@ $(".zoho_url").submit(function (e) {
             }
 
             // Send data to Pipedrive
-            //sendDataToPipedrive({ name: name, email: email, phone: phone });
+            sendDataToPipedrive({ name: name, email: email, phone: phone });
           }
         }
       })
@@ -1407,6 +1407,7 @@ function sendDataToPipedrive(data) {
 
   var utm_source = params["utm_source"];
   var utm_campaign = params["utm_campaign"];
+  var utm_medium = params["utm_medium"];
   $.ajax({
     url: API_URL,
     type: "POST",
@@ -1420,6 +1421,8 @@ function sendDataToPipedrive(data) {
       phone: data.phone,
       "1270774a4c06b5b037295365f4cd862ffa64cc7e": utm_source,
       "617788c5068a48c40edec294da8716d2b68f84b0": utm_campaign,
+      "93c59dac7c738a180d65b69b2c000460a78cae7c": utm_medium,
+      "6fb82cbc393d63566c23446a25dbfe583bf9bc7c": "BC",
     }),
     success: function (response) {
       console.log("Success:", response);

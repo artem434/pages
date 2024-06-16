@@ -234,17 +234,17 @@
                     />
                   </label>
                   <label class="input__wrap">
-                    <div class="intl-tel-input allow-dropdown">
-                      <input
-                        class="input input-phone"
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        placeholder="Ваш номер телефону"
-                        required="true"
-                        autocomplete="off"
-                      />
-                    </div>
+                    <!-- <span class="input__label">Номер телефону:</span> -->
+                    <input
+                      class="input phone"
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      required=""
+                      inputmode="tel"
+                      autocomplete="off"
+                      placeholder="Моб. телефон"
+                    />
                   </label>
                   <div class="form__input-text">
                     <input
@@ -370,11 +370,7 @@
                     autocomplete="off"
                   />
 
-                  <input
-                    type="hidden"
-                    name="send_to_gf"
-                    value="gf_startup_bonus1"
-                  />
+                  <input type="hidden" name="send_to_gf" value="gf_present1" />
                 </div>
 
                 <input type="hidden" name="rolecompany" value="" /><input
@@ -526,7 +522,7 @@
       <!-- END HIDDEN ELEMENTS (MODALS)-->
     </div>
     <script src="js/libs.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script>
       $(document).ready(function () {
         // Дата мероприятия
@@ -597,20 +593,20 @@
         $(".packages-btns__pack-name.pro_price").click();
       });
     </script>
-    <script>
+    <!-- <script>
       document.write(
         `<script src="../script_ver_generate_leadPipedrive.js?ver=${Math.floor(
           Math.random() * 100
         )}"><\/script>`
       );
-    </script>
-    <!-- <script>
+    </script> -->
+    <script>
       document.write(
-        `<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js?ver=${Math.floor(
+        `<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_leadPipedrive.js?ver=${Math.floor(
           Math.random() * 100
         )}"><\/script>`
       );
-    </script> -->
+    </script>
 
     <!-- FB CAPI Script -->
     <script>

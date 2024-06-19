@@ -1,0 +1,174 @@
+.registration {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  &__inner {
+    border-radius: 7px;
+    padding: 20px;
+    border: 2px solid #44a900;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      display: flex;
+      width: 836px;
+      margin: 0 auto;
+      padding: 32px 16px;
+      gap: 32px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    border-radius: 7px;
+    background: #44a900;
+    padding: 20px;
+    color: #fff;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+    b {
+      display: block;
+      font-size: 18px;
+
+      font-weight: 800;
+    }
+  }
+
+  &__gift {
+    font-size: 16px;
+
+    font-weight: 500;
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+    b {
+    }
+  }
+
+  &__list {
+    font-size: 15px;
+    padding-top: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 0;
+      font-size: 16px;
+      gap: 20px;
+    }
+  }
+  .form {
+    @include media-breakpoint-up(xl) {
+      margin-left: 46px;
+    }
+    &__title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-top: 22px;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-bottom: 26px;
+      }
+    }
+
+    &__input {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 19px;
+      }
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+    .input__label {
+      color: #fff;
+      font-family: "MuseoSansCyrl";
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .input {
+      background-color: transparent;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    .btn-page {
+      border: none;
+      margin-bottom: 14px;
+      max-width: 100%;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      padding: 12px 0;
+      font-weight: 400;
+      background-color: #44a900;
+
+      &:hover {
+        background-color: #388803;
+      }
+
+      span {
+        display: inline;
+        font-weight: 700;
+      }
+    }
+
+    &__notice {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+
+      a {
+        text-decoration: underline;
+        color: #fff;
+
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}

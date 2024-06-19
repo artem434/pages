@@ -33,54 +33,51 @@ $.get("https://ipapi.co/json/", function (obj) {
     preferredCountries: ["ua", "kz"],
   });
 });
-
-$("form [type=sumbit]").on("click", function (e) {
+$("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
   form.addClass("loading");
   setTimeout(function () {
     form.submit();
-  }, 1000);
+  }, 500);
 });
 
 function validate(formid) {
   var output = false;
+  var name, email, phone;
   form = $(formid);
   form.addClass("loading");
-  form.find("input[name=name]").focus();
-  form.find("input[name=email]").focus();
-  form.find("input[name=phone]").focus();
+  form.find('input[name="name"]').focus();
+  form.find('input[name="email"]').focus();
+  form.find('input[name="phone"]').focus();
   form.find('button[type="submit"]').focus();
-  const formdata = {
-    name: form.find("input[name=name]").val(),
-    email: form.find("input[name=email]").val(),
-    phone: form.find("input[name=phone]").val().replace(/\s/g, ""),
-    utm_source: form.find("input[name=utm_source]").val(),
-    utm_medium: form.find("input[name=utm_medium]").val(),
-    utm_term: form.find("input[name=utm_term]").val(),
-    utm_campaign: form.find("input[name=utm_campaign]").val(),
-    utm_content: form.find("input[name=utm_content]").val(),
-  };
-  if ($(".error").length > 0) {
-    form.find("input.error").first().focus();
-    form.removeClass("loading");
-  } else {
+  name = form.find('input[name="name"]').val();
+  email = form.find('input[name="email"]').val();
+  phone = form.find('input[name="phone"]').val();
+  phone = phone.replace(/\s/g, "");
+  if ($(".not_error").length >= 3) {
     $.ajax({
       type: "POST",
       url: "mailer/export.php",
       async: false,
-      data: formdata,
+      data: {
+        name: name,
+        email: email,
+        phone: phone,
+      },
       success: function (res) {
-        setCookie("name", formdata.name, 365);
-        setCookie("email", formdata.email, 365);
-        setCookie("phone", formdata.phone, 365);
-        window.location.href = form.find("input[name=success_url]").val();
+        setCookie("name", name, 365);
+        setCookie("email", email, 365);
+        setCookie("phone", phone, 365);
+        window.location.href = "/success.html";
       },
     });
+  } else {
+    form.find("input.error").first().focus();
+    form.removeClass("loading");
   }
   return output;
 }
-
 // SMOOTH SCROLL //
 
 $('a[href*="#"]')

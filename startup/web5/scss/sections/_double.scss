@@ -1,0 +1,92 @@
+.double {
+  padding-bottom: 30px;
+  background: #313131;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 114px;
+  }
+
+  &__dec {
+    width: 488px;
+    height: 782px;
+    position: absolute;
+    right: 0;
+    top: 74px;
+  }
+  .title {
+    padding-top: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 50px;
+      font-size: 28px;
+      max-width: 826px;
+    }
+
+    span {
+      color: #44a900;
+      font-weight: 700;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 26px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 40px;
+      gap: 24px;
+      max-width: 777px;
+    }
+    li {
+      color: #fff;
+      font-size: 18px;
+      position: relative;
+      font-weight: 400;
+      padding-left: 40px;
+      font-family: "Montserrat", sans-serif;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Crect x='1' y='1' width='24' height='24' rx='4' stroke='%2344A900' stroke-width='2'/%3E%3Cpath d='M19.7749 7.41L18.3649 6L12.7749 11.59L7.1849 6L5.7749 7.41L11.3649 13L5.7749 18.59L7.1849 20L12.7749 14.41L18.3649 20L19.7749 18.59L14.1849 13L19.7749 7.41Z' fill='%2344A900'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+
+        @include media-breakpoint-up(xl) {
+          top: 0;
+        }
+      }
+    }
+  }
+  .btn {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      background-color: #44a900;
+      display: block;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 46px;
+      max-width: 280px;
+
+      &:hover {
+        background-color: #388803;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+:root {
+  --container-width: 1160px;
+  --transition: 0.3s ease;
+  --default-font-family: "Gilroy";
+  --heading-font-family: "Neue Machina";
+  --sp: 66px;
+  --accent: #4c09d2;
+  --fiolet: #8041ff;
+  --dark: #1f2229;
+  --bg: #fff;
+  --text-color: #000000;
+  --fz-default: 20px;
+  --h1: 32px;
+  --h2: 42px;
+  --h3: 32px;
+  --h4: 28px;
+  --l: 24px;
+  --m: 22px;
+  --s: 18px;
+  --xs: 16px;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$white: #ffffff;
+$orange: #f76800;
+$bg: #1f1f1f;
+$black: #000;
+$greay: #3d3d3d;
+$maincolor: #9ff565;
+
+$hoverBTN: #7ecd4a;
+
+$maxWidth: 1140px;
+
+%content {
+  max-width: 375px;
+  padding: 0 16px;
+  position: relative;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1200px;
+  }
+}

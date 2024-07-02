@@ -2717,7 +2717,7 @@ button {
   .hero-form__bonus {
     bottom: 264px;
     z-index: -1;
-    left: 80%;
+    left: 86%;
     transform: translateX(-50%);
   }
 

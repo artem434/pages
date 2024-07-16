@@ -298,7 +298,6 @@ form input.error {
 }
 
 form input.not_error {
-  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
   border: 2px solid #99ff99 !important;
 }
 
@@ -414,10 +413,6 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   font-size: 18px;
-  -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0px 1000px #1e1e1e inset;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 .btn-page {
@@ -1027,11 +1022,11 @@ select:-webkit-autofill:focus {
   background: url("../img/hero-bg.png") 50%/contain no-repeat;
 }
 .hero .hero__form .form .input::-moz-placeholder {
-  color: #acacac;
+  color: #000;
   padding-left: 11px;
 }
 .hero .hero__form .form .input::placeholder {
-  color: #acacac;
+  color: #000;
   padding-left: 11px;
 }
 .hero .hero__form_title {
@@ -1078,12 +1073,16 @@ select:-webkit-autofill:focus {
 }
 .hero .hero__form .form .input {
   background: #f7f7f7;
-  color: #000;
+  color: #000 !important;
+  webkit-text-fill-color: #000;
   font-size: 20px;
   font-weight: 400;
   height: 44px;
   padding-left: 8px;
   line-height: 44px;
+}
+.hero input.not_error {
+  box-shadow: none;
 }
 .hero .hero__form_sub-block {
   display: flex;

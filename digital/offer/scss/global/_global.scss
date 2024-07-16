@@ -74,7 +74,6 @@ form input.error {
 }
 
 form input.not_error {
-  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
   border: 2px solid #99ff99 !important;
 }
 
@@ -192,7 +191,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   font-size: 18px;
-  -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0px 1000px $bg inset;
-  transition: background-color 5000s ease-in-out 0s;
+  // -webkit-text-fill-color: #fff;
+  //-webkit-box-shadow: 0 0 0px 1000px $bg inset;
+  //transition: background-color 5000s ease-in-out 0s;
 }

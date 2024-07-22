@@ -1,0 +1,17 @@
+.title {
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 26px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 46px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  span {
+    color: $color-main;
+  }
+}

@@ -1,0 +1,214 @@
+.questions {
+  padding: 58px 0 69px;
+  position: relative;
+
+  .dec-1 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-size: cover;
+    bottom: -52px;
+    left: -47px;
+    transform: rotate(-90deg);
+  }
+
+  .dec-2 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-size: cover;
+    bottom: -45px;
+    right: -84px;
+  }
+
+  &__ellipse {
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      bottom: -190px;
+      left: -200px;
+      background-size: cover;
+      z-index: -1;
+      width: 1249px;
+      height: 865px;
+      transform: rotate(45deg);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+
+    .dec-1 {
+      width: 280px;
+      height: 280px;
+      position: absolute;
+      background-size: cover;
+      bottom: 10px;
+      left: 20px;
+    }
+
+    .dec-2 {
+      width: 586px;
+      height: 586px;
+      position: absolute;
+      background-size: cover;
+      top: 0px;
+      right: -220px;
+    }
+  }
+
+  .container {
+    max-width: 780px;
+  }
+  .desc {
+    padding: 18px 32px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(13px);
+  }
+  .questions__row {
+    position: relative;
+    counter-increment: count;
+    margin-bottom: 20px;
+    &.active {
+      .desc__title {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Crect x='9' y='20' width='18' height='4' transform='rotate(-90 9 20)' fill='%231F2229'/%3E%3Crect x='2' y='9' width='18' height='4' fill='%231F2229'/%3E%3C/svg%3E")
+          right top no-repeat;
+      }
+
+      .desc__list {
+        margin-top: 30px;
+      }
+    }
+    // &:last-child {
+    //   &::after {
+    //     top: auto;
+    //     bottom: 0;
+    //   }
+    // }
+
+    .desc__title {
+      display: flex;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33' fill='none'%3E%3Crect x='15' y='26' width='18' height='4' transform='rotate(-90 15 26)' fill='%2304AEF3'/%3E%3Crect x='8' y='15' width='18' height='4' fill='%2304AEF3'/%3E%3C/svg%3E")
+        right top no-repeat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+    }
+    .desc__list {
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease;
+      font-size: 16px;
+      color: #fff;
+      padding-left: 0;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+    }
+    .cell {
+      padding-top: 18px;
+      .icon {
+        width: 22px;
+        height: 22px;
+        margin: 0 auto;
+      }
+      &.yes {
+        .icon {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M3 10L10 16L19 5' stroke='%233217FF' stroke-width='4'/%3E%3C/svg%3E")
+            center/contain no-repeat;
+        }
+      }
+      &.no {
+        .icon {
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Crect x='6.05029' y='3.22192' width='18' height='4' transform='rotate(45 6.05029 3.22192)' fill='%23BCBCBC'/%3E%3Crect x='3.22168' y='15.95' width='18' height='4' transform='rotate(-45 3.22168 15.95)' fill='%23BCBCBC'/%3E%3C/svg%3E")
+            center/contain no-repeat;
+        }
+      }
+    }
+  }
+
+  .active {
+    border-radius: 12px;
+    border: 1px solid #04aef3;
+    background: rgba(4, 174, 243, 0.07);
+    backdrop-filter: blur(13px);
+    .desc__list {
+      max-height: 10000px;
+      display: block;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 0;
+
+      @include media-breakpoint-up(xl) {
+        padding-right: 100px;
+      }
+    }
+    .desc__title {
+      color: #04aef3;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33' fill='none'%3E%3Crect x='8' y='15' width='18' height='4' fill='%2304AEF3'/%3E%3C/svg%3E");
+    }
+  }
+
+  .questions__btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+      position: relative;
+      margin-top: 48px;
+      display: block;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .questions {
+      padding-top: 48px;
+    }
+
+    .questions__row.active .desc__list {
+      margin-top: 18px;
+    }
+
+    .questions__row .desc {
+      padding: 10px 16px 10px 10px;
+    }
+
+    .questions__row .desc__title {
+      padding-right: 18px;
+      font-size: 16px;
+      background-size: 18px !important;
+      text-transform: uppercase;
+    }
+
+    .questions__row .desc__title::before {
+      flex: 0 0 23px;
+    }
+
+    .questions__row .desc__list li {
+      padding-left: 18px;
+      background-size: 14px !important;
+      font-size: 14px;
+    }
+
+    .questions__row .desc__list li:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    .questions__row .cell {
+      padding-top: 10px;
+    }
+
+    .questions__row .cell .icon {
+      width: 18px;
+      height: 20px;
+    }
+
+    .questions__btn {
+      display: none;
+    }
+  }
+}

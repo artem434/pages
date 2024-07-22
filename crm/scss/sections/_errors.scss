@@ -1,0 +1,78 @@
+.errors {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .dec-1 {
+      width: 280px;
+      height: 280px;
+      position: absolute;
+      background-size: cover;
+      top: 410px;
+
+      right: -0px;
+    }
+
+    .dec-2 {
+      width: 586px;
+      height: 586px;
+      position: absolute;
+      background-size: cover;
+      transform: rotate(45deg);
+      top: -20px;
+      right: -220px;
+    }
+  }
+  .container {
+    @include media-breakpoint-up(xl) {
+      max-width: 1076px;
+    }
+  }
+  ul {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(13px);
+    gap: 12px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 30px 32px;
+      row-gap: 22px;
+      column-gap: 40px;
+      align-items: center;
+    }
+
+    li {
+      position: relative;
+      display: flex;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 483px;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        max-width: 22px;
+        width: 100%;
+        height: 22px;
+        margin-right: 8px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.48275 4.19258C7.22598 3.93581 6.80968 3.93581 6.55291 4.19258L4.37361 6.37188C4.11684 6.62865 4.11684 7.04495 4.37361 7.30172L7.58948 10.5176C7.84625 10.7744 7.84625 11.1907 7.58948 11.4474L4.37398 14.6629C4.11721 14.9197 4.11721 15.336 4.37398 15.5928L6.55328 17.7721C6.81005 18.0288 7.22636 18.0288 7.48313 17.7721L10.6986 14.5566C10.9554 14.2998 11.3717 14.2998 11.6285 14.5566L14.844 17.7721C15.1007 18.0288 15.517 18.0288 15.7738 17.7721L17.9531 15.5928C18.2099 15.336 18.2099 14.9197 17.9531 14.6629L14.7376 11.4474C14.4808 11.1907 14.4808 10.7744 14.7376 10.5176L17.9535 7.30172C18.2103 7.04495 18.2103 6.62865 17.9535 6.37188L15.7742 4.19258C15.5174 3.93581 15.1011 3.93581 14.8443 4.19258L11.6285 7.40845C11.3717 7.66522 10.9554 7.66522 10.6986 7.40845L7.48275 4.19258Z' fill='%23815DFF'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+      }
+      b {
+        font-weight: 600;
+        color: $color-main;
+      }
+    }
+  }
+}

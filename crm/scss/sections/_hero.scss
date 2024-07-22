@@ -1,0 +1,244 @@
+.hero {
+  padding-top: 100px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 100px;
+  }
+
+  .dec-1 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-size: cover;
+    top: 754px;
+    left: -40px;
+
+    @include media-breakpoint-up(xl) {
+      width: 369px;
+      height: 369px;
+      top: 70px;
+      left: -200px;
+    }
+  }
+
+  .dec-3 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-size: cover;
+    top: 679px;
+    left: -65px;
+
+    @include media-breakpoint-up(xl) {
+      width: 280px;
+      height: 280px;
+      top: 305px;
+      left: -150px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .dec-2 {
+      width: 123px;
+      height: 285px;
+      position: absolute;
+      background-size: cover;
+      top: 405px;
+      right: 0px;
+    }
+
+    .dec-4 {
+      width: 380px;
+      height: 571px;
+      position: absolute;
+      background-size: cover;
+      top: 500px;
+      right: 0px;
+    }
+  }
+
+  &__date {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98%;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      left: 60px;
+      top: 174px;
+    }
+
+    span {
+      color: $color-main;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1; /* 45.08px */
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-top: 305px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 60px;
+      margin-bottom: 19px;
+      padding-top: 380px;
+    }
+
+    b {
+      font-size: 40px;
+      font-weight: 700;
+      display: block;
+      @include media-breakpoint-up(xl) {
+        font-size: 98px;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $color-main;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include media-breakpoint-up(xl) {
+      width: 100%;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2.5px);
+    padding: 20px 22px 20px 30px;
+    text-align: left;
+    font-size: 14px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 18px 22px;
+    }
+
+    &:nth-child(1) {
+      transform: translateX(-45px);
+
+      @include media-breakpoint-up(xl) {
+        width: 452px;
+        transform: translate(0);
+      }
+    }
+
+    &:nth-child(2) {
+      transform: translateX(55px);
+
+      @include media-breakpoint-up(xl) {
+        width: 387px;
+        margin-top: 40px;
+        transform: translate(0);
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    b {
+      color: $color-main;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__img {
+    width: 304.257px;
+    height: 421.36px;
+    background-size: cover;
+    background-position-x: -19px;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+
+    @include media-breakpoint-up(xl) {
+      width: 546px;
+      height: 589px;
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-size: cover;
+    z-index: -1;
+    width: 649px;
+    height: 465px;
+    @include media-breakpoint-up(xl) {
+      transform: translate(0);
+      position: absolute;
+      bottom: -190px;
+      left: 0;
+      background-size: cover;
+      z-index: -1;
+      width: 1249px;
+      height: 865px;
+    }
+  }
+
+  &__btn {
+    // position: fixed;
+    // z-index: 10;
+    // width: 340px;
+    // height: 56px;
+    // bottom: 15px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    margin-bottom: 25px;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 14px 16px;
+    }
+  }
+}

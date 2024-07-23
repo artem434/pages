@@ -1135,6 +1135,7 @@ a {
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .how {
@@ -1170,6 +1171,7 @@ a {
     background: url(../img/dec.png) no-repeat center;
     width: 1446px;
     height: 1446px;
+    z-index: -1;
     display: block;
   }
 }
@@ -1668,30 +1670,21 @@ a {
 .packages {
   position: relative;
 }
-@media (min-width: 1200px) {
-  .packages:before {
-    content: "";
-    position: absolute;
-    left: 51%;
-    bottom: 109px;
-    transform: translate(-50%, 0);
-    background: url(../img/register-decor.png) center no-repeat;
-    width: 1625px;
-    height: 1033px;
-    background-size: contain;
-    z-index: 1;
-  }
+.packages .container {
+  position: relative;
 }
 @media (min-width: 1200px) {
   .packages .container::before {
     content: "";
     position: absolute;
-    bottom: -400px;
+    bottom: -50px;
     left: -300px;
     background: url(../img/dec.png) no-repeat center;
-    width: 1446px;
-    height: 1446px;
+    width: 746px;
+    height: 746px;
     display: block;
+    background-size: cover;
+    z-index: -1;
   }
 }
 .packages .title {

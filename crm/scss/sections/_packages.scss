@@ -1,31 +1,20 @@
 .packages {
   position: relative;
 
-  @include media-breakpoint-up(xl) {
-    &:before {
-      content: "";
-      position: absolute;
-      left: 51%;
-      bottom: 109px;
-      transform: translate(-50%, 0);
-      background: url(../img/register-decor.png) center no-repeat;
-      width: 1625px;
-      height: 1033px;
-      background-size: contain;
-      z-index: 1;
-    }
-  }
   .container {
+    position: relative;
     @include media-breakpoint-up(xl) {
       &::before {
         content: "";
         position: absolute;
-        bottom: -400px;
+        bottom: -50px;
         left: -300px;
         background: url(../img/dec.png) no-repeat center;
-        width: 1446px;
-        height: 1446px;
+        width: 746px;
+        height: 746px;
         display: block;
+        background-size: cover;
+        z-index: -1;
       }
     }
   }

@@ -733,7 +733,7 @@ a {
   }
 }
 .hero__img {
-  width: 304.257px;
+  width: 380.257px;
   height: 421.36px;
   background-size: cover;
   background-position-x: -19px;
@@ -1339,17 +1339,17 @@ a {
   height: 640px;
   position: absolute;
   top: -21px;
-  left: 54%;
+  left: 59%;
   transform: translate(-50%, 0);
   background-size: contain;
   z-index: -1;
 }
 @media (min-width: 1200px) {
   .expert__img {
-    width: 1086px;
-    height: 828px;
+    width: 1061px;
+    height: 800px;
     top: inherit;
-    bottom: -258px;
+    bottom: -222px;
     right: -306px;
     left: inherit;
     transform: translate(0, 0);

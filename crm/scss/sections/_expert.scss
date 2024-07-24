@@ -100,16 +100,16 @@
     height: 640px;
     position: absolute;
     top: -21px;
-    left: 54%;
+    left: 59%;
     transform: translate(-50%, 0);
     background-size: contain;
     z-index: -1;
 
     @include media-breakpoint-up(xl) {
-      width: 1086px;
-      height: 828px;
+      width: 1061px;
+      height: 800px;
       top: inherit;
-      bottom: -258px;
+      bottom: -222px;
       right: -306px;
       left: inherit;
       transform: translate(0, 0);

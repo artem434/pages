@@ -1282,11 +1282,11 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000842441051",
+          cLandingId = "2108311000917624032",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000842441074",
+          cLandingIdPro = "2108311000917624059",
           // Landing id // Online Pro
-          cLandingIdPremium = "2108311000882667052",
+          cLandingIdPremium = "2108311000917624086",
           // es_mail_id
           cMail_id = "",
           // es_id

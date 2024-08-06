@@ -145,6 +145,12 @@
         color: $maincolor;
       }
     }
+    ul {
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
   }
 
   &__certificat {

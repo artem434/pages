@@ -1,5 +1,6 @@
 .clients {
   max-width: 323px;
+  position: relative;
 
   @include media-breakpoint-up(xl) {
     max-width: 800px;

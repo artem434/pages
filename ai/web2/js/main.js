@@ -155,35 +155,34 @@ $(".slider__class").on("init", function (event, slick) {
 
 ///AUTO DATE
 
-let newDate = new Date();
+function updateDate() {
+  let newDate = new Date();
 
-const dateCopy = new Date(newDate.getTime());
-const nextMonday = new Date(
-  dateCopy.setDate(dateCopy.getDate() + ((7 - dateCopy.getDay() + 1) % 7 || 7))
-);
+  if (newDate.getHours() >= 18) {
+    newDate.setDate(newDate.getDate() + 1);
+  }
 
-if (newDate.getDay() == 1 && newDate.getHours() < 19) {
-  // newDate.setDate( newDate.Date() + 7);
-  console.log("today is Monday");
-} else {
-  newDate = nextMonday;
+  let month = [
+    "січня",
+    "лютого",
+    "березня",
+    "квітня",
+    "травня",
+    "червня",
+    "липня",
+    "серпня",
+    "вересня",
+    "жовтня",
+    "листопада",
+    "грудня",
+  ];
+
+  $(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
 }
 
-let month = [
-  "січня",
-  "лютого",
-  "березня",
-  "квітня",
-  "травня",
-  "червня",
-  "липня",
-  "серпня",
-  "вересня",
-  "жовтня",
-  "листопада",
-  "грудня",
-];
-
+$(document).ready(function () {
+  updateDate();
+});
 // $('.cDate').text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
 // let timer = `${newDate.getFullYear()},${newDate.getMonth()},${newDate.getDate()},24`;
 // $('.cDate').text('20 апреля');

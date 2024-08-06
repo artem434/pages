@@ -489,40 +489,31 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 hidePackagesBtn();
 
-let targetDay = 2;
-let newDate = new Date();
+function updateDate() {
+  let newDate = new Date();
 
-const dateCopy = new Date(newDate.getTime());
-const nextMonday = new Date(
-  dateCopy.setDate(
-    dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
-  )
-);
+  if (newDate.getHours() >= 18) {
+    newDate.setDate(newDate.getDate() + 1);
+  }
 
-console.log(newDate.getDay());
+  let month = [
+    "січня",
+    "лютого",
+    "березня",
+    "квітня",
+    "травня",
+    "червня",
+    "липня",
+    "серпня",
+    "вересня",
+    "жовтня",
+    "листопада",
+    "грудня",
+  ];
 
-// if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
-if (newDate.getDay() == 2 && newDate.getHours() < 19) {
-  // newDate.setDate( newDate.Date() + 7);
-  // console.log('today is Monday');
-  console.log("today is Tuesday");
-} else {
-  newDate = nextMonday;
+  $(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
 }
 
-let month = [
-  "січня",
-  "лютого",
-  "березня",
-  "квітня",
-  "травня",
-  "червня",
-  "липня",
-  "серпня",
-  "вересня",
-  "жовтня",
-  "листопада",
-  "грудня",
-];
-
-$(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
+$(document).ready(function () {
+  updateDate();
+});

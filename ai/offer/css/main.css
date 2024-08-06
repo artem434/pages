@@ -2688,6 +2688,12 @@ select:-webkit-autofill:focus {
 .lectors__text b span {
   color: #5da3fb;
 }
+.lectors__text ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 .lectors .btn {
   max-width: 100%;
   background: #e9ff62;
@@ -2814,6 +2820,7 @@ select:-webkit-autofill:focus {
 }
 .clients {
   max-width: 323px;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .clients {

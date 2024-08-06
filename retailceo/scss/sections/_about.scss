@@ -2,6 +2,8 @@
   padding-top: 66px;
   padding-bottom: 62px;
   color: #1f2229;
+  position: relative;
+  z-index: 0;
 
   @include media-breakpoint-up(xl) {
     padding-bottom: 120px;

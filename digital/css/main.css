@@ -1575,14 +1575,14 @@ select:-webkit-autofill:focus {
   font-weight: 700;
   color: #000;
 }
+.program .item__title span {
+  color: #0abc40;
+}
 @media (min-width: 1200px) {
   .program .item__title {
     width: calc(100% - 270px);
     font-size: 22px;
   }
-}
-.program .item__title span {
-  color: #f76800;
 }
 .program .item__more {
   display: flex;

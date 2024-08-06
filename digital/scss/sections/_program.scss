@@ -113,13 +113,16 @@
       font-size: 14px;
       font-weight: 700;
       color: $black;
+
+      span {
+        color: $maincolor;
+      }
       @include media-breakpoint-up(xl) {
         width: calc(100% - 270px);
         font-size: 22px;
       }
 
       span {
-        color: $orange;
       }
     }
 

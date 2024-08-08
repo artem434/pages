@@ -3121,6 +3121,26 @@ a {
   position: relative;
   color: #fff;
 }
+
+.format__description {
+  font-size: 24x;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: "moloko", sans-serif;
+  font-weight: 600;
+  margin-top: 32px;
+}
+
+.format__description b {
+  color: #ddfe65;
+}
+
+.format__description span {
+  background-color: #ddfe65;
+  color: #000;
+}
+
 .format__title {
   font-size: 54px;
   font-weight: 700;

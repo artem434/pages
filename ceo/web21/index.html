@@ -149,7 +149,7 @@
                 <span>Безкоштовний майстер-клас Кирила Куницького</span>
               </div>
               <ul class="hero__data-list _bold">
-                <li class="hero__data-item">7 серпня</li>
+                <li class="hero__data-item cDate">7 серпня</li>
                 <li class="hero__data-item">19:00</li>
                 <li class="hero__data-item">Онлайн</li>
               </ul>
@@ -1167,7 +1167,7 @@
                   онлайн
                 </div>
                 <div
-                  class="registration__info-item registration__info-item_date"
+                  class="registration__info-item registration__info-item_date cDate"
                 >
                   7 серпня
                 </div>
@@ -1648,24 +1648,16 @@
         "листопада",
         "грудня",
       ];
-      let tomorrowDate = new Date();
-      //tomorrowDate.setDate(tomorrowDate.getDate() + 1);
-
-      // let cDate =
-      //   "Дата: " +
-      //   tomorrowDate.getDate() +
-      //   " " +
-      //   months[tomorrowDate.getMonth()];
 
       let today = new Date();
 
       if (today.getHours() >= 18) {
-        console.log(tomorrowDate);
         today.setDate(today.getDate() + 1);
       }
 
       let cDate = today.getDate() + " " + months[today.getMonth()];
       console.log(cDate);
+
       if (cDate !== "date") {
         $(".cDate").each(function () {
           $(this).html(cDate);

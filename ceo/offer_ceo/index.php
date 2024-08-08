@@ -518,8 +518,8 @@
               <tr>
                 <td>Кількість модулів програми</td>
                 <td class="text">13</td>
-                <td class="text">13</td>
-                <td class="text">13</td>
+                <td class="text">14</td>
+                <td class="text">17</td>
               </tr>
               <tr>
                 <td>Доступ до матеріалів програми після її завершення</td>
@@ -529,10 +529,8 @@
               </tr>
               <tr>
                 <td>Case study: відповіді на запитання від експерта</td>
-                <td class="text text--small">
-                  watch only 
-                </td>
-                <td ></td>
+                <td class="text text--small">watch only</td>
+                <td></td>
                 <td></td>
               </tr>
               <tr>
@@ -588,9 +586,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
-                Додатковий модуль про залучення інвестицій 
-                </td>
+                <td>Додатковий модуль про залучення інвестицій</td>
                 <td class="no-active"></td>
                 <td></td>
                 <td></td>
@@ -598,29 +594,37 @@
 
               <tr>
                 <td>
-                Додаткові три модулі програми про міжнародне масштабування бізнесу, HR-маркетинг і бренд роботодавця, управління проектами 
+                  Додаткові три модулі програми про міжнародне масштабування
+                  бізнесу, HR-маркетинг і бренд роботодавця, управління
+                  проектами
                 </td>
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
-                <td>
-                Бонусний модуль “Особистий бренд власника бізнесу”
+                <td>Бонусний модуль “Особистий бренд власника бізнесу”</td>
+
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
                 <td>
-                Доступ до зустрічей Case study (відповіді на запитання від Кирила Куницького) протягом року
+                  Доступ до зустрічей Case study (відповіді на запитання від
+                  Кирила Куницького) протягом року
+                </td>
+
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
                 <td>
-                Навчання на програмі "Ефективний керівник" (пакет PRO) для вашого топменеджера
+                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
+                  вашого топменеджера
+                </td>
+
                 <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
@@ -633,6 +637,10 @@
                 >Замовити</a
               >
             </div>
+            <p class="format__description">
+              *Діють знижки <span>до 60%</span> на участь в програмі для
+              <b>резидентів HOLDERS</b>
+            </p>
           </div>
         </div>
       </section>
@@ -1377,11 +1385,11 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000882667103",
+          cLandingId = "2108311000922801223",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000882667130",
+          cLandingIdPro = "2108311000922801252",
           // Landing id // Online Premium
-          cLandingIdPremium = "2108311000882667157",
+          cLandingIdPremium = "2108311000922801279",
           // es_mail_id
           cMail_id = "",
           // es_id

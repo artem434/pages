@@ -1,0 +1,114 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $bg;
+  min-width: 360px;
+  color: $white;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+body.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body.fixed section {
+  filter: blur(2px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 10px;
+  width: 100%;
+}
+
+form input.error {
+  box-shadow: inset 0px 0px 20px 1px rgba(255, 0, 0, 0.3);
+  border: 2px solid red !important;
+}
+
+form input.not_error {
+  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
+  border: 2px solid #99ff99 !important;
+}
+
+.swiper-button-prev {
+  left: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M15.0667 23.1875L16.4767 21.7775L10.8967 16.1875L23.0667 16.1875L23.0666 14.1875L10.8966 14.1875L16.4866 8.6075L15.0666 7.1875L7.06665 15.1875L15.0667 23.1875Z' fill='%2304AEF3'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M14.9333 7.81445L13.5233 9.22445L19.1033 14.8145L6.93335 14.8145L6.93335 16.8145L19.1033 16.8145L13.5133 22.3945L14.9333 23.8145L22.9333 15.8145L14.9333 7.81445Z' fill='%2304AEF3'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+    //transform: rotate(180deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-none {
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+.d-xl-block {
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
+}
+.container {
+  max-width: 388px;
+  padding: 0 16px;
+  position: relative;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $maxWidth;
+  }
+}

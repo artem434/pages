@@ -1,0 +1,67 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 22px;
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+      margin-bottom: 28px;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 150px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 22px;
+    }
+
+    p {
+      font-size: 16px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+
+      b {
+        font-weight: 700;
+        line-height: normal;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+
+        span {
+          color: $color-main;
+        }
+        strong {
+          color: $color-main-second;
+        }
+      }
+    }
+  }
+}

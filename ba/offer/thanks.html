@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Бізнес-асистент CEO | Інтенсивна освітня програма для асистентів керівника
+      | Бізнес-Конструктор
+    </title>
+    <meta
+      name="description"
+      content="Перетворіть свого асистента з виконавця у стратегічного партнера"
+      data-vmid="description"
+    />
+    <!-- SEO-->
+    <meta
+      property="og:title"
+      content="Бізнес-асистент CEO | Інтенсивна освітня програма для асистентів керівника | Бізнес-Конструктор"
+    />
+    <meta
+      property="og:description"
+      content="Перетворіть свого асистента з виконавця у стратегічного партнера"
+    />
+    <meta property="og:image" content="img/og-image.png" />
+    <meta property="og:url" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
+    />
+    <script src="js/modernizr-custom.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "207946528779724");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=207946528779724&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TZ48NNJ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "hxq8cxegar");
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="profit">
+        <div class="container">
+          <div class="profit__toptext">дякуємо за реєстрацію!</div>
+          <div class="fake-line"></div>
+          <h1 class="profit__title">
+            Найближчим часом менеджер зв’яжеться з вами для уточнення деталей!
+          </h1>
+
+          <!-- <p class="speacial-date">Спеціальна ціна дійсна до <b class="data_deadline">29.07</b>
+        </p> -->
+        </div>
+      </section>
+    </div>
+    <script src="../js/libs.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+    <script>
+      // Landing id // Online
+      const cLandingId = "2108311000880227301";
+
+      // Landing id // про
+      const cLandingIdPro = "2108311000880227340";
+
+      // Landing id // Премиум
+      const cLandingIdPremium = "2108311000876844224";
+
+      // пакеты предоплаты
+      const PackageSaleOnline = "2108311000880227379 ";
+
+      const PackageSaleOnlinePremium = "2108311000880227379 ";
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        // Узнаем выбранный пакет
+        const urlWithPackage = new URL(window.location.href);
+        let currentPackage = urlWithPackage.searchParams.get("landing_id");
+        let currentPackageSale;
+
+        if (currentPackage) {
+          $("input[name='landing_id']").val(currentPackage);
+        } else {
+          $(".select-id").html("не обраний");
+          $("#salePrice, #fullPrice").prop("disabled", true);
+          $("#salePrice, #fullPrice, .sale_desc").css("display", "none");
+        }
+
+        // Online
+        if (currentPackage == cLandingId) {
+          $(".select-id").html("CORE");
+          currentPackageSale = PackageSaleOnline;
+
+          // Premium
+        } else if (currentPackage == cLandingIdPremium) {
+          $(".select-id").html("PREMIUM");
+          currentPackageSale = PackageSaleOnlinePremium;
+        }
+        //про
+        else if (currentPackage == cLandingIdPro) {
+          $(".select-id").html("PRO");
+          currentPackageSale = PackageSaleOnlinePremium;
+        }
+
+        $("#salePrice").click(function () {
+          sendForm.bind($(this))();
+          sendForm(currentPackageSale);
+        });
+        $("#fullPrice").click(function () {
+          sendForm.bind($(this))();
+          sendForm(currentPackage);
+        });
+
+        function sendForm(id_landing_package) {
+          var $this = $(this);
+          $this.html("Обработка запроса...");
+
+          $("input[name='landing_id']").val(id_landing_package);
+          $("#salePrice, #fullPrice").prop("disabled", true);
+
+          setTimeout(() => {
+            $("#btn-send").click();
+          }, 100);
+        }
+      });
+    </script>
+
+    <!-- <script>
+        document.write(`<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script.js?ver=${Math.floor(Math.random() * 100)}"><\/script>`);
+    </script> -->
+    <script>
+      document.write(
+        `<script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js?ver=${Math.floor(
+          Math.random() * 100
+        )}"><\/script>`
+      );
+    </script>
+  </body>
+</html>

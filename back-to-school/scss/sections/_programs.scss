@@ -1,0 +1,273 @@
+.programs {
+  .container {
+    @extend %content;
+    position: relative;
+    padding: 68px 16px;
+    @include media-breakpoint-up(xl) {
+      padding: 128px 0;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 78px;
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+      margin-bottom: 88px;
+    }
+
+    span {
+      color: $orange;
+
+      @include media-breakpoint-up(xl) {
+        display: inline;
+      }
+    }
+
+    br {
+      display: block;
+
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: 0;
+      background: url(../img/sale.png) no-repeat center;
+      background-size: contain;
+      width: 138px;
+      height: 64px;
+
+      @include media-breakpoint-up(xl) {
+        right: 640px;
+        top: -48px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+  &__btn {
+    display: none;
+    margin-top: 100px;
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+
+    .btn {
+      max-width: 425px;
+      font-size: 32px;
+      margin: 0 auto;
+      line-height: 72px;
+      position: relative;
+      z-index: 1;
+    }
+    .arrow--left {
+      left: 50px;
+    }
+    .arrow--right {
+      right: 50px;
+    }
+  }
+
+  .program {
+    color: #fff;
+    position: relative;
+    padding-top: 16px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 990px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover {
+        .program__sale {
+          animation: wiggle 2s linear;
+        }
+      }
+    }
+
+    &__link {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 60%,
+        transparent 100%
+      );
+      background-size: 20px 1px;
+      border: none;
+      left: 0;
+      top: 0px;
+    }
+
+    &--last {
+      border: 1px solid #fff;
+      padding: 18px 20px;
+
+      &::before {
+        content: none;
+      }
+
+      .program__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        max-width: 200px;
+
+        @include media-breakpoint-up(xl) {
+          max-width: 214px;
+        }
+        b {
+          color: $orange;
+        }
+      }
+      .program__sale {
+        top: 66px;
+        right: 10px;
+
+        @include media-breakpoint-up(xl) {
+          position: relative;
+          top: 0;
+          right: 0;
+        }
+      }
+      .program__text {
+        @include media-breakpoint-up(xl) {
+          width: 486px;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 24px;
+
+      @include media-breakpoint-up(xl) {
+        width: 214px;
+      }
+      span {
+        font-weight: 700;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #000;
+        background-color: $orange;
+        padding: 0 4px;
+      }
+
+      &-big {
+        font-size: 37px;
+      }
+    }
+    &__text {
+      @include media-breakpoint-up(xl) {
+        order: 1;
+        width: 506px;
+      }
+      b {
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        margin-bottom: 10px;
+
+        span {
+          color: $orange;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+
+    &__sale {
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      color: #fff961;
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      @include media-breakpoint-up(xl) {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+    &__btn {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+      .btn {
+        background-color: transparent;
+        border: solid 1px $orange;
+        color: $orange;
+        padding: 0 16px;
+        max-width: 272px;
+        margin: 16px auto 0;
+      }
+    }
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}

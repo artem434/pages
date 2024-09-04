@@ -710,10 +710,7 @@
                     Гудима
                   </div>
                   <div class="speaker__info-desc">
-                    Власник стоматологічної клініки <b>"Dentaro Garden"</b>,
-                    засновник та головний лектор навчального центру
-                    <b>"Dentaro Study Club"</b>, засновник зуботехнічної
-                    лабораторії <b>"Dentaro Lab"</b>
+                  Власник клініки <b>Dentaro Garden</b> засновник зуботехнічної лабораторії <b>Dentaro Lab</b> та навчального центру <b>Dentaro Study Club</b>
                   </div>
                 </div>
                 <div

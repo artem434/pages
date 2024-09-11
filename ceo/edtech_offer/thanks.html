@@ -300,7 +300,17 @@
         // Узнаем выбранный пакет
         const urlWithPackage = new URL(window.location.href);
         let currentPackage = urlWithPackage.searchParams.get("landing_id");
-        let currentPackageSale = PackageSaleOnline;
+
+let selectIdElement = document.querySelector('.select-id');
+        //let currentPackageSale = PackageSaleOnline;
+        console.log(currentPackage)
+        if (currentPackage === cLandingId) {
+    selectIdElement.innerHTML = 'CORE';
+} else if (currentPackage === cLandingIdPro) {
+    selectIdElement.innerHTML = 'PRO';
+} else if (currentPackage === cLandingIdPremium) {
+    selectIdElement.innerHTML = 'Premium';
+}
 
         if (currentPackage) {
           $("input[name='landing_id']").val(currentPackage);

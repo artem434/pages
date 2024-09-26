@@ -32,8 +32,8 @@
 }
 
 .intl-tel-input input,
-.intl-tel-input input[type=text],
-.intl-tel-input input[type=tel] {
+.intl-tel-input input[type="text"],
+.intl-tel-input input[type="tel"] {
   position: relative;
   z-index: 0;
   margin-top: 0 !important;
@@ -91,7 +91,7 @@
   padding: 0;
   margin: 0 0 0 -1px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   white-space: nowrap;
   max-height: 200px;
   overflow-y: scroll;
@@ -110,7 +110,7 @@
 .intl-tel-input .country-list .divider {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
 
 .intl-tel-input .country-list .country {
@@ -137,11 +137,11 @@
 }
 
 .intl-tel-input.allow-dropdown input,
-.intl-tel-input.allow-dropdown input[type=text],
-.intl-tel-input.allow-dropdown input[type=tel],
+.intl-tel-input.allow-dropdown input[type="text"],
+.intl-tel-input.allow-dropdown input[type="tel"],
 .intl-tel-input.separate-dial-code input,
-.intl-tel-input.separate-dial-code input[type=text],
-.intl-tel-input.separate-dial-code input[type=tel] {
+.intl-tel-input.separate-dial-code input[type="text"],
+.intl-tel-input.separate-dial-code input[type="tel"] {
   padding-right: 6px;
   padding-left: 52px;
   margin-left: 0;
@@ -171,8 +171,14 @@
   cursor: default;
 }
 
-.intl-tel-input.allow-dropdown input[disabled] + .flag-container:hover .selected-flag,
-.intl-tel-input.allow-dropdown input[readonly] + .flag-container:hover .selected-flag {
+.intl-tel-input.allow-dropdown
+  input[disabled]
+  + .flag-container:hover
+  .selected-flag,
+.intl-tel-input.allow-dropdown
+  input[readonly]
+  + .flag-container:hover
+  .selected-flag {
   background: transparent;
 }
 
@@ -188,8 +194,8 @@
 }
 
 .intl-tel-input.separate-dial-code.iti-sdc-2 input,
-.intl-tel-input.separate-dial-code.iti-sdc-2 input[type=text],
-.intl-tel-input.separate-dial-code.iti-sdc-2 input[type=tel] {
+.intl-tel-input.separate-dial-code.iti-sdc-2 input[type="text"],
+.intl-tel-input.separate-dial-code.iti-sdc-2 input[type="tel"] {
   padding-left: 66px;
 }
 
@@ -198,8 +204,8 @@
 }
 
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input,
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=text],
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=tel] {
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type="text"],
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type="tel"] {
   padding-left: 76px;
 }
 
@@ -208,8 +214,8 @@
 }
 
 .intl-tel-input.separate-dial-code.iti-sdc-3 input,
-.intl-tel-input.separate-dial-code.iti-sdc-3 input[type=text],
-.intl-tel-input.separate-dial-code.iti-sdc-3 input[type=tel] {
+.intl-tel-input.separate-dial-code.iti-sdc-3 input[type="text"],
+.intl-tel-input.separate-dial-code.iti-sdc-3 input[type="tel"] {
   padding-left: 74px;
 }
 
@@ -218,8 +224,8 @@
 }
 
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input,
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text],
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel] {
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type="text"],
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type="tel"] {
   padding-left: 84px;
 }
 
@@ -228,8 +234,8 @@
 }
 
 .intl-tel-input.separate-dial-code.iti-sdc-4 input,
-.intl-tel-input.separate-dial-code.iti-sdc-4 input[type=text],
-.intl-tel-input.separate-dial-code.iti-sdc-4 input[type=tel] {
+.intl-tel-input.separate-dial-code.iti-sdc-4 input[type="text"],
+.intl-tel-input.separate-dial-code.iti-sdc-4 input[type="tel"] {
   padding-left: 82px;
 }
 
@@ -238,8 +244,8 @@
 }
 
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input,
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text],
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel] {
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type="text"],
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type="tel"] {
   padding-left: 92px;
 }
 
@@ -248,8 +254,8 @@
 }
 
 .intl-tel-input.separate-dial-code.iti-sdc-5 input,
-.intl-tel-input.separate-dial-code.iti-sdc-5 input[type=text],
-.intl-tel-input.separate-dial-code.iti-sdc-5 input[type=tel] {
+.intl-tel-input.separate-dial-code.iti-sdc-5 input[type="text"],
+.intl-tel-input.separate-dial-code.iti-sdc-5 input[type="tel"] {
   padding-left: 90px;
 }
 
@@ -258,8 +264,8 @@
 }
 
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input,
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=text],
-.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=tel] {
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type="text"],
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type="tel"] {
   padding-left: 100px;
 }
 
@@ -1611,7 +1617,7 @@
 }
 
 .iti-flag {
-  background: url("../img/flags.png") no-repeat 20px 0 #DBDBDB;
+  background: url("../img/flags.png") no-repeat 20px 0 #dbdbdb;
   width: 20px;
   height: 15px;
   box-shadow: 0px 0px 1px 0px #888;
@@ -1796,7 +1802,9 @@
   order: 9999;
 }
 
-.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+.swiper-centered.swiper-horizontal
+  > .swiper-wrapper
+  > .swiper-slide:first-child {
   -webkit-margin-start: var(--swiper-centered-offset-before);
   margin-inline-start: var(--swiper-centered-offset-before);
 }
@@ -1996,8 +2004,14 @@
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
   display: inline-block;
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #000);
@@ -2035,7 +2049,8 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-vertical.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
   display: block;
 }
@@ -2047,30 +2062,40 @@ button.swiper-pagination-bullet {
   width: 8px;
 }
 
-.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
-.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-vertical
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   display: inline-block;
   transition: 200ms transform, 200ms top;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
 }
 
-.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   transition: 200ms transform, 200ms left;
 }
 
-.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-horizontal.swiper-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   transition: 200ms transform, 200ms right;
 }
 
@@ -2098,7 +2123,8 @@ button.swiper-pagination-bullet {
 
 .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal,
-.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
   width: 100%;
   height: 4px;
@@ -2108,7 +2134,8 @@ button.swiper-pagination-bullet {
 
 .swiper-vertical > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-vertical,
-.swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-horizontal
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
 .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
   width: 4px;
   height: 100%;
@@ -2403,8 +2430,13 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .iti-flag {
     background-size: 5630px 15px;
   }
 }
+
+

@@ -239,19 +239,30 @@
     </script>
     <!-- End VWO Async SmartCode -->
 
-<!-- Start esputnik scripts -->
+    <!-- Start esputnik scripts -->
     <script>
- (function(i,s,o,g,r,a,m){
- i["esSdk"] = r;
- i[r] = i[r] || function() {
-  (i[r].q = i[r].q || []).push(arguments)
- }, a=s.createElement(o), m=s.getElementsByTagName(o)[0]; a.async=1; a.src=g;
- m.parentNode.insertBefore(a,m)}
- ) (window, document, "script", "https://esputnik.com/scripts/v1/public/scripts?apiKey=eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NTI0ZWZhYTJkYzI2MGRmYTM4YTE1NDBlMWEyZjE0N2QzYTIyZDFkMzU2ZWQ4OWExNGE5NGY3MWMxOTc1ZTE4MjViNWZjMmEwMmI0YTIyZDYxNGIzY2Y0ZDgzZWRkMTcwZWU5ZWY3YTA3MjI3Y2JjYmEzNDQyOTM3YzRmZmEwM2Y0ODhkNjYwMjQ3ZjY3NTFhNTYyYjUyM2FlOTMwNzQ5NWFkZWY2OWU5OTFkNjM1ZmY1MDBhZTk2OTVhYzg0ODMyMTY0In0.Vq063dWNPyKVKC1DxW8LmS5lu89eirgm90_ziXGdfvsdRDVuWrK1dKzr7UjyWG4bX4hoOvt8EreNurBuJh1wag&domain=8D93082A-8AF9-4296-8C22-9596F368D60B", "es");
- es("pushOn");
-
-</script>
- <!-- End esputnik scripts -->
+      (function (i, s, o, g, r, a, m) {
+        i["esSdk"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (a = s.createElement(o)),
+          (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://esputnik.com/scripts/v1/public/scripts?apiKey=eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NTI0ZWZhYTJkYzI2MGRmYTM4YTE1NDBlMWEyZjE0N2QzYTIyZDFkMzU2ZWQ4OWExNGE5NGY3MWMxOTc1ZTE4MjViNWZjMmEwMmI0YTIyZDYxNGIzY2Y0ZDgzZWRkMTcwZWU5ZWY3YTA3MjI3Y2JjYmEzNDQyOTM3YzRmZmEwM2Y0ODhkNjYwMjQ3ZjY3NTFhNTYyYjUyM2FlOTMwNzQ5NWFkZWY2OWU5OTFkNjM1ZmY1MDBhZTk2OTVhYzg0ODMyMTY0In0.Vq063dWNPyKVKC1DxW8LmS5lu89eirgm90_ziXGdfvsdRDVuWrK1dKzr7UjyWG4bX4hoOvt8EreNurBuJh1wag&domain=8D93082A-8AF9-4296-8C22-9596F368D60B",
+        "es"
+      );
+      es("pushOn");
+    </script>
+    <!-- End esputnik scripts -->
   </head>
 
   <body>
@@ -310,10 +321,41 @@
             <a class="hero__btn btn_fixed-bottom-hidden" href="#register"
               >ЗАРЕЄСТРУВАТИСЯ</a
             >
+            <div class="hero__new">оновлений формат</div>
           </div>
           <div class="hero__images">
-            <div class="hero__image_sm"></div>
-            <div class="hero__image_bg"></div>
+            <div class="hero__names">
+              <div class="hero__name">
+                <strong
+                  >Дмитро <br />
+                  Стрижов</strong
+                >
+                <span
+                  >засновник та член Advisory Board Холдингу
+                  <b>SHERIFF</b></span
+                >
+              </div>
+              <div class="hero__name">
+                <strong
+                  >Кирило <br />
+                  Куницький</strong
+                >
+                <span>CEO і засновник <b>«Бізнеса-Конструктор»</b></span>
+              </div>
+              <div class="hero__name">
+                <strong
+                  >Володимир <br />
+                  Матвійчук</strong
+                >
+                <span>співзасновник мережі <b>«Галя Балувана»</b></span>
+              </div>
+            </div>
+            <div
+              class="hero__lectors lazy"
+              data-bg="img/hero_lectors.webp"
+            ></div>
+            <!-- <div class="hero__image_sm"></div>
+            <div class="hero__image_bg"></div> -->
             <a href="#register" class="hero__images_btn"
               ><span
                 >залишити <br />
@@ -524,6 +566,52 @@
           </div>
         </div>
       </section>
+      <div class="lectors">
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Дмитро <br />
+              Стрижов
+            </p>
+            <div class="lectors__text">
+              засновник та член Advisory Board Холдингу SHERIFF, магістр
+              державного управління у сфері національної безпеки
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-2.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Володимир <br />
+              Матвійчук
+            </p>
+            <div class="lectors__text">
+              співзасновник мережі Галя Балувана та власник мережі MultiСook та
+              Gabar-Multibar
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__subname">
+              Спікер <br />
+              узгоджується
+            </p>
+          </div>
+        </div>
+        <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__subname">
+              Спікер <br />
+              узгоджується
+            </p>
+          </div>
+        </div>
+      </div>
 
       <section class="format" id="format">
         <div class="format__table">
@@ -867,7 +955,7 @@
       </section>
 
       <section class="how" id="how">
-        <div class="how__image lazy" data-bg="img/how__image.svg"></div>
+        <!-- <div class="lectors__image lazy" data-bg="img/lectors__image.svg"></div> -->
         <div class="how__container">
           <h2 class="how__title">
             <span>ЯК ПРОХОДИТЬ НАВЧАННЯ</span>

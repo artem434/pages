@@ -131,7 +131,7 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
-          <a class="header__logo" href="/"></a>
+          <a class="header__logo" href=""></a>
           <ul class="header__menu">
             <li><a href="#program">Структура програми</a></li>
             <li><a href="#speakers">Експерт</a></li>

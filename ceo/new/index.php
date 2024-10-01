@@ -324,7 +324,7 @@
             <div class="hero__new">оновлений формат</div>
           </div>
           <div class="hero__images">
-            <div class="hero__names">
+            <!-- <div class="hero__names">
               <div class="hero__name">
                 <strong
                   >Дмитро <br />
@@ -349,10 +349,10 @@
                 >
                 <span>співзасновник мережі <b>«Галя Балувана»</b></span>
               </div>
-            </div>
+            </div> -->
             <div
               class="hero__lectors lazy"
-              data-bg="img/hero_lectors.webp"
+              data-bg="img/hero_lectors1.webp"
             ></div>
             <!-- <div class="hero__image_sm"></div>
             <div class="hero__image_bg"></div> -->
@@ -593,13 +593,16 @@
             </div>
           </div>
         </div>
-        <div class="lectors__item lectors__item--who">
-          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
           <div class="lectors__footer">
-            <p class="lectors__subname">
-              Спікер <br />
-              узгоджується
+            <p class="lectors__name">
+              Максим <br />
+              Плахтій
             </p>
+            <div class="lectors__text">
+              стратег, підприємець, засновник Karabas.com, професор економіки
+            </div>
           </div>
         </div>
         <div class="lectors__item lectors__item--who">

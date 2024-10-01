@@ -474,7 +474,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, 0);
   width: 1500px;
-  height: 450px;
+  height: 516px;
   background-size: cover;
   background-position: center center;
 }
@@ -562,7 +562,7 @@ h1 {
   left: 88%;
   text-transform: uppercase;
   transform: rotate(4.436deg) translateY(-50%);
-  top: 70%;
+  bottom: 80%;
   transition: 0.3s all;
 }
 
@@ -950,6 +950,7 @@ a {
   align-items: center;
   justify-content: space-between;
   column-gap: 15px;
+  padding-bottom: 350px;
 }
 
 .hero__info {
@@ -2362,8 +2363,8 @@ a {
 
   @media (max-width: 767px) {
     .hero__lectors {
-      width: 700px;
-      height: 300px;
+      width: 600px;
+      height: 208px;
     }
     .hero__names {
       padding-top: 160px;
@@ -2379,7 +2380,8 @@ a {
       font-size: 12px;
     }
     .hero__images_btn {
-      top: -16%;
+      bottom: inherit;
+      top: -231px;
       left: 70%;
     }
     .hero__new {
@@ -2831,6 +2833,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    padding-bottom: 180px;
   }
 
   .hero__title br {

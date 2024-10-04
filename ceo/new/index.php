@@ -352,7 +352,7 @@
             </div> -->
             <div
               class="hero__lectors lazy"
-              data-bg="img/hero_lectors1.webp"
+              data-bg="img/hero_lectors.webp"
             ></div>
             <!-- <div class="hero__image_sm"></div>
             <div class="hero__image_bg"></div> -->

@@ -370,7 +370,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   font-size: 18px;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #000;
   -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;

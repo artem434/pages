@@ -1,0 +1,309 @@
+.hero {
+  padding-bottom: 40px;
+
+  .container {
+    padding-bottom: 320px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 2px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      margin-bottom: 36px;
+      padding-top: 50px;
+    }
+    b {
+      color: #20a29f;
+      font-weight: 700;
+
+      @include media-breakpoint-up(xl) {
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 2px;
+      height: 17px;
+      border-radius: 3px;
+      background: #20a29f;
+      margin: 0 6px;
+      @include media-breakpoint-up(xl) {
+        margin: 12px;
+      }
+    }
+  }
+  &__live {
+    border-radius: 7px;
+    background: #e5f3f3;
+    display: inline-block;
+    padding: 4px 8px;
+    color: #20a29f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      padding: 6px 15px;
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+  &__title {
+    color: #20a29f;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 38px;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+      margin-bottom: 34px;
+      max-width: 500px;
+    }
+
+    b {
+      color: #fb443d;
+      font-weight: 800;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    padding-right: 95px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      padding-right: 0;
+      width: 450px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__add_btm {
+    margin-top: 18px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+      color: #000;
+      font-size: 16px;
+    }
+  }
+
+  .hero-block__btm {
+    position: relative;
+  }
+
+  &__bonus-image {
+    z-index: -1;
+    width: 165px;
+    height: 175.557px;
+    background-size: cover;
+    position: absolute;
+    top: -114px;
+    right: -31px;
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: -12px;
+    //   right: 0;
+    //   background: url("../img/hero-gift.png") no-repeat center;
+    //   background-size: cover;
+    //   width: 65px;
+    //   height: 65px;
+    //   animation: 9s linear 0s normal none infinite running rot;
+
+    //   @include media-breakpoint-up(xl) {
+    //     width: 95px;
+    //     height: 95px;
+    //     right: 8px;
+    //   }
+    // }
+
+    @include media-breakpoint-up(xl) {
+      width: 185.277px;
+      height: 197.132px;
+      top: -128px;
+      right: 461px;
+      z-index: -1;
+      background-size: contain;
+    }
+  }
+
+  &__dec {
+    @include media-breakpoint-up(xl) {
+      width: 1439.531px;
+      height: 476.164px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 53px;
+      left: -141px;
+      z-index: -1;
+    }
+  }
+
+  &__timer {
+    display: inline;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    border-radius: 5px;
+    background: #21b6b2;
+    padding: 4px 6px;
+    box-shadow: 0px 4px 32px 0px rgba(107, 107, 107, 0.25);
+    transform: rotate(16.314deg);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 375px;
+    height: 339px;
+
+    @include media-breakpoint-up(xl) {
+      left: inherit;
+      right: -270px;
+      top: 80px;
+      bottom: inherit;
+      width: 518px;
+      height: 524px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 18px;
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+
+    .btn {
+      color: #fff;
+      border: none;
+      font-weight: 400;
+      max-width: 100%;
+      font-size: 16px;
+      background-color: red;
+      transition: all 0.4s;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:disabled {
+        transition: all 0.4s;
+        background-color: #dcdcdc;
+        color: #000;
+      }
+    }
+  }
+
+  .hero-form {
+    position: relative;
+    padding: 2px 12px 14px 12px;
+    background: #ffffff;
+    box-shadow: 0px 4px 32px rgb(157, 169, 194, 25%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    z-index: 1;
+
+    @include media-breakpoint-up(xl) {
+      padding: 18px;
+      margin: 0 auto;
+    }
+  }
+
+  .hero-form__form {
+    position: relative;
+    z-index: 3;
+    flex: 1 1 auto;
+  }
+
+  .hero-form .form {
+    display: flex;
+    max-width: initial;
+    align-items: center;
+  }
+
+  .hero-form .form__input {
+    width: 100%;
+  }
+}
+
+.form .input {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 60px;
+  display: block;
+}

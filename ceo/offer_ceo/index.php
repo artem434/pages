@@ -832,6 +832,69 @@
           </div>
         </div>
       </section>
+      <div class="lectors">
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Дмитро <br />
+              Стрижов
+            </p>
+            <div class="lectors__text">
+              засновник та член Advisory Board Холдингу SHERIFF, магістр
+              державного управління у сфері національної безпеки
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-2.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Володимир <br />
+              Матвійчук
+            </p>
+            <div class="lectors__text">
+              співзасновник мережі Галя Балувана та власник мережі MultiСook та
+              Gabar-Multibar
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Максим <br />
+              Плахтій
+            </p>
+            <div class="lectors__text">
+              стратег, підприємець, засновник Karabas.com, професор економіки
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Марина <br />
+              Авдєєва
+            </p>
+            <div class="lectors__text">
+              Co-owner «Арсенал Страхування», founder Easy Peasy Insurtech,
+              входить до ТОП-100 найвпливовіших українок за версією економічного
+              видання «Фокус»
+            </div>
+          </div>
+        </div>
+        <!-- <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__subname">
+              Спікер <br />
+              узгоджується
+            </p>
+          </div>
+        </div> -->
+      </div>
 
       <section class="register" id="register">
         <div class="register__container">

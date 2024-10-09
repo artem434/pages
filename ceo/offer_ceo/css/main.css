@@ -3527,3 +3527,48 @@ a {
     font-size: 16px;
   }
 }
+.lectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  row-gap: 46px;
+  padding: 46px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lectors__image {
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  border-radius: 24px;
+  background: 50% / cover no-repeat;
+}
+
+.lectors__item {
+  width: 276px;
+  display: block;
+}
+.lectors__name {
+  font: 800 30px / 100% "Neue Machina";
+  text-transform: uppercase;
+  color: #ddfe65;
+  margin-bottom: 10px;
+}
+.lectors__subname {
+  font: 500 26px / 100% "Neue Machina";
+  color: #a2a2a2;
+}
+.lectors__footer {
+  padding-top: 16px;
+}
+.lectors__text {
+  font-size: 16px;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .lectors__item--who {
+    display: none;
+  }
+}

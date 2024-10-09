@@ -352,7 +352,7 @@
             </div> -->
             <div
               class="hero__lectors lazy"
-              data-bg="img/hero_lectors.webp"
+              data-bg="img/hero_lectors1.webp"
             ></div>
             <!-- <div class="hero__image_sm"></div>
             <div class="hero__image_bg"></div> -->
@@ -606,6 +606,20 @@
           </div>
         </div>
         <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Марина <br />
+              Авдєєва
+            </p>
+            <div class="lectors__text">
+              Co-owner «Арсенал Страхування», founder Easy Peasy Insurtech,
+              входить до ТОП-100 найвпливовіших українок за версією економічного
+              видання «Фокус»
+            </div>
+          </div>
+        </div>
+        <!-- <div class="lectors__item lectors__item--who">
           <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
           <div class="lectors__footer">
             <p class="lectors__subname">
@@ -613,7 +627,7 @@
               узгоджується
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <section class="format" id="format">

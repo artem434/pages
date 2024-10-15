@@ -307,7 +307,7 @@
               <form class="form zoho_url" id="form" method="post">
                 <div class="loader"></div>
                 <p class="form__title">
-                  Тільки для учасників ефіру діє <span>знижка 40%</span>
+                  Тільки для учасників ефіру діє <span>знижка до 40%</span>
                 </p>
                 <div class="form__package-body">
                   <ul class="form__package">

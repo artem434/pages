@@ -868,7 +868,7 @@ a {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    font-size: 38px;
+    font-size: 34px;
     max-width: 554px;
     margin-bottom: 10px;
   }

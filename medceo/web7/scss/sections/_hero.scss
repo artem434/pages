@@ -4,6 +4,9 @@
   .container {
     padding-bottom: 320px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     @include media-breakpoint-up(xl) {
       padding-bottom: 40px;
@@ -19,8 +22,8 @@
 
     @include media-breakpoint-up(xl) {
       font-size: 18px;
-      margin-bottom: 36px;
-      padding-top: 50px;
+      margin-bottom: 22px;
+      padding-top: 24px;
     }
     b {
       color: #20a29f;
@@ -69,7 +72,7 @@
   }
   &__title {
     color: #20a29f;
-    font-size: 27px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -82,17 +85,19 @@
     }
   }
   &__subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 16px;
+
+    padding-right: 95px;
 
     @include media-breakpoint-up(xl) {
       font-size: 24px;
+      padding-right: 0;
       margin-bottom: 34px;
-      max-width: 500px;
+      max-width: 630px;
     }
 
     b {
@@ -102,13 +107,17 @@
   }
   &__description {
     font-size: 14px;
-    padding-right: 95px;
+    padding-top: 32px;
+    //padding-right: 95px;
+    order: 1;
 
     @include media-breakpoint-up(xl) {
       font-size: 18px;
+      order: 0;
+      padding-top: 0;
       padding-right: 0;
       width: 450px;
-      margin-bottom: 65px;
+      margin-bottom: 22px;
     }
   }
 
@@ -125,6 +134,7 @@
 
   .hero-block__btm {
     position: relative;
+    width: 100%;
   }
 
   &__bonus-image {

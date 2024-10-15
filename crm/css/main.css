@@ -1381,6 +1381,9 @@ a {
     font-size: 18px;
   }
 }
+.expert ul li b {
+  font-weight: 600;
+}
 .expert__btn {
   display: none;
 }

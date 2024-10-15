@@ -1,0 +1,75 @@
+.double {
+  padding-bottom: 30px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 114px;
+  }
+  .title {
+    border-radius: 10px;
+    background: #ffefee;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      padding: 30px 41px;
+      font-size: 28px;
+      margin-bottom: 46px;
+    }
+    b {
+      color: #ff016b;
+      font-weight: 800;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+      gap: 24px;
+      max-width: 777px;
+    }
+    li {
+      color: #1f2229;
+      font-size: 18px;
+      position: relative;
+      font-weight: 400;
+      padding-left: 40px;
+      font-family: "Montserrat", sans-serif;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+
+      &::before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16' fill='none'%3E%3Cpath d='M1.5 7L8.5 13L17.5 2' stroke='%23FF016B' stroke-width='4'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+      }
+    }
+  }
+  .btn {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      background-color: #ff016b;
+      display: block;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 46px;
+      max-width: 280px;
+    }
+  }
+}

@@ -1705,6 +1705,7 @@ strong.medical b {
 .speakers__list-item:nth-child(5) .speaker__photo,
 .speakers__list-item:nth-child(8) .speaker__photo,
 .speakers__list-item:nth-child(12) .speaker__photo,
+.speakers__list-item:nth-child(13) .speaker__photo,
 .speakers__list-item:nth-child(9) .speaker__photo {
   order: 2;
 }
@@ -1713,6 +1714,7 @@ strong.medical b {
 .speakers__list-item:nth-child(5) .speaker__info,
 .speakers__list-item:nth-child(8) .speaker__info,
 .speakers__list-item:nth-child(12) .speaker__info,
+.speakers__list-item:nth-child(13) .speaker__info,
 .speakers__list-item:nth-child(9) .speaker__info {
   order: 1;
   text-align: right;

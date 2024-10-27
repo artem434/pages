@@ -753,16 +753,7 @@
                 <td class="no-active"></td>
                 <td></td>
               </tr>
-              <tr>
-                <td>
-                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
-                  вашого топменеджера
-                </td>
-
-                <td class="no-active"></td>
-                <td class="no-active"></td>
-                <td></td>
-              </tr>
+           
             </table>
             <div class="format__btns">
               <a id="btn-core" href="#register" data-package="core">Замовити</a>
@@ -1387,11 +1378,11 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000940768032",
+          cLandingId = "2108311000959276036",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000940768059",
+          cLandingIdPro = "2108311000959276063",
           // Landing id // Online Pro
-          cLandingIdPremium = "2108311000940768086",
+          cLandingIdPremium = "2108311000959276090",
           // es_mail_id
           cMail_id = "",
           // es_id

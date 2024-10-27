@@ -298,3 +298,7 @@ $(window).scroll(function () {
 if (window.innerWidth > 1000) {
   $(".item__more").click(function () {});
 }
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".scroll-container"),
+  smooth: true,
+});

@@ -176,7 +176,7 @@
             <div class="block__content">
               <p class="block__title">
                 Тільки для учасників <br />
-                ефіру діє <span>знижка 40%</span>
+                ефіру діє <span>знижка ДО 40%</span>
               </p>
             </div>
             <div class="block__form">
@@ -199,6 +199,14 @@
                         data-id=""
                       >
                         <span>PRO</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div
+                        class="packages-btns__pack-name tabs__tab premium_price"
+                        data-id=""
+                      >
+                        <span>premium</span>
                       </div>
                     </li>
                   </ul>
@@ -370,112 +378,154 @@
         </div>
       </section>
 
-      <section class="packages" id="packages">
-        <div class="packages__container">
-          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
-          <div class="packages__items">
-            <div class="item item--core package_price core_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">CORE</p>
-              </div>
-              <ul class="item__info item__info_dark">
-                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>13 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>3-х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(12 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(3 онлайн-зустрічі)</b>
-                </li>
-                <li>
-                  Спілкування з іншими учасниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <br />
-                  3 місяцi після її завершення
-                </li>
-              </ul>
-              <!-- <div class="item__price">
-                            <p class="item__price-text">Вартість участі сьогодні: </p>
-                            <p class="item__price-value full">
-                                <span class="item__price-value-currency">€</span>
-                                <span class="item__price-value-count  price-full-redline"></span>
-                            </p>
-                            <p class="item__price-value accent">
-                                <span class="item__price-value-currency">€</span>
-                                <span class="item__price-value-count price-discount-big"></span>
-                            </p>
-                        </div> -->
-              <a
-                class="item__btn"
-                id="btn-core"
-                href="#register"
-                data-package="core"
-                >ВИБРАТИ</a
-              >
-            </div>
-            <div class="item item--pro package_price pro_price" data-id="">
-              <div class="item__header">
-                <p class="item__title">PRO</p>
-              </div>
-              <ul class="item__info">
-                <li><b>4 місяці</b> навчання в онлайн-форматі</li>
-                <li><b>17 модулів</b> програми</li>
-                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
-                <li>
-                  Супровід персональним бізнес-консультантом протягом
-                  <b>4-х місяців</b>
-                </li>
-                <li>
-                  Щотижневий розбір кейсів з Кирилом Куницьким
-                  <b>(16 онлайн-зустрічей)</b>
-                </li>
-                <li>
-                  Участь в майстер-майндах по колективному знаходженню рішень
-                  поточних задач <b>(4 онлайн-зустрічі)</b>
-                </li>
-                <li>
-                  Спілкування з іншими учасниками в закритій групі в Telegram
-                </li>
-                <li>
-                  Додатковий доступ до програми <br />
-                  <b>4 місяці</b> після її завершення
-                </li>
-              </ul>
-              <!-- <div class="item__price">
-                <p class="item__price-text">Вартість участі сьогодні:</p>
-                <p class="item__price-value full">
-                  <span class="item__price-value-currency">€</span>
-                  <span
-                    class="item__price-value-count price-full-redline"
-                  ></span>
-                </p>
-                <p class="item__price-value">
-                  <span class="item__price-value-currency">€</span>
-                  <span
-                    class="item__price-value-count price-discount-big"
-                  ></span>
-                </p>
-              </div> -->
-              <a
-                class="item__btn"
-                id="btn-pro"
-                href="#register"
-                data-package="pro"
-                >ВИБРАТИ</a
-              >
+      <section class="format" id="format">
+        <div class="format__table">
+          <div class="container">
+            <h2 class="title title--big">
+              Формат участі
+              <span>в програмі </span>
+            </h2>
+
+            <table>
+              <tr class="format__packeges">
+                <td></td>
+                <td class="text">CORE</td>
+                <td class="text">PRO</td>
+                <td class="text">PREMIUM</td>
+              </tr>
+              <tr>
+                <td>Навчання в онлайн-форматі</td>
+                <td class="text">3 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">4 міс.</td>
+              </tr>
+              <tr>
+                <td>Кількість модулів програми</td>
+                <td class="text">13</td>
+                <td class="text">14</td>
+                <td class="text">17</td>
+              </tr>
+              <tr>
+                <td>Доступ до матеріалів програми після її завершення</td>
+                <td class="text">2 міс.</td>
+                <td class="text">3 міс.</td>
+                <td class="text">12 міс.</td>
+              </tr>
+              <tr>
+                <td>
+                  Case study: відповіді на запитання від експерта (6 зустрічей з
+                  Кирилом Куницьким)
+                </td>
+                <td class="text text--small">watch only</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Доступ до практичних матеріалів: інструкцій, чек-листів та
+                  шаблонів
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Сертифікат про проходження навчання на програмі</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Супровід куратором по організаційно-технічним питанням
+                  протягом навчання
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Закрита група в Telegram для нетворкінгу з учасниками програми
+                  з підтримкою куратора 
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Воркшопи по розробору кейсів з бізнес-консультантами та
+                  експертами
+                </td>
+                <td class="text">в записі</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Індивідуальний зворотний зв'язок від бізнес-консультанта по
+                  практичним завданням програми
+                </td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Додатковий модуль 14 про залучення інвестицій</td>
+                <td class="no-active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Додаткові модулі 15-17 про міжнародне масштабування,
+                  HR-маркетинг і бренд роботодавця, управління проектами
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Бонусний модуль “Особистий бренд власника бізнесу”</td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Доступ до зустрічей Case study (відповіді на запитання від
+                  Кирила Куницького) протягом року
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Індивідуальна консультація від галузевого експерта</td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Квиток на Всеукраїнський Ресторанний Саміт (пакет PREMIUM)
+                </td>
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="format__btns">
+              <a data-id="2108311000961862145" href="#register">Замовити</a>
+              <a data-id="2108311000961862172" href="#register">Замовити</a>
+              <a data-id="2108311000961862199" href="#register">Замовити</a>
             </div>
           </div>
         </div>
       </section>
-
       <section class="about" id="about">
         <div class="about__container">
           <p class="about__text">
@@ -1475,6 +1525,14 @@
                       <span>PRO</span>
                     </div>
                   </li>
+                  <li>
+                    <div
+                      class="packages-btns__pack-name tabs__tab premium_price"
+                      data-id=""
+                    >
+                      <span>PREMIUM</span>
+                    </div>
+                  </li>
                 </ul>
 
                 <p class="form__title">Реєстрація</p>
@@ -1936,9 +1994,10 @@
         // Дата мероприятия
         let cDate = "3 жовтня",
           // Landing id // Online
-          cLandingId = "2108311000856338090",
+          cLandingId = "2108311000961862145",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000856338113",
+          cLandingIdPro = "2108311000961862172",
+          cLandingIdPremium = "2108311000961862199",
           // es_mail_id
           cMail_id = "",
           // es_id
@@ -1963,6 +2022,10 @@
         }
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
+        }
+
+        if (cLandingIdPro !== "id") {
+          $(".premium_price").attr("data-id", cLandingIdPremium);
         }
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);

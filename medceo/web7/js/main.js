@@ -488,27 +488,22 @@ const clientsSlider = new Swiper(".clients__slider", {
 
 hidePackagesBtn();
 
-let targetDay = 3;
-let newDate = new Date();
+// Створюємо дату за замовчуванням - 6 листопада
+let displayDate = new Date(2024, 10, 6); // Рік, місяць (листопад = 10), день
 
-const dateCopy = new Date(newDate.getTime());
-const nextMonday = new Date(
-  dateCopy.setDate(
-    dateCopy.getDate() + ((7 - dateCopy.getDay() + targetDay) % 7 || 7)
-  )
-);
+let newDate = new Date(); // Поточна дата
 
-console.log(newDate.getDay());
+// Визначаємо порогову дату - 6 листопада 2024 о 18:00
+let thresholdDate = new Date(2024, 10, 6, 18, 0, 0); // 18:00:00
 
-// if(newDate.getDay() == targetDay && newDate.getHours() < 19) {
-if (newDate.getDay() == 3 && newDate.getHours() < 19) {
-  // newDate.setDate( newDate.Date() + 7);
-  // console.log('today is Monday');
-  console.log("today is Tuesday");
-} else {
-  newDate = nextMonday;
+// Перевірка, чи поточна дата та час більші за порогову дату
+if (newDate > thresholdDate) {
+  // Встановлюємо дату для відображення на 20 листопада
+  displayDate.setDate(20);
+  displayDate.setMonth(10); // Листопад
 }
 
+// Масив назв місяців
 let month = [
   "січня",
   "лютого",
@@ -524,4 +519,5 @@ let month = [
   "грудня",
 ];
 
-$(".cDate").text(`${newDate.getDate()} ${month[newDate.getMonth()]}`);
+// Відображення дати
+$(".cDate").text(`${displayDate.getDate()} ${month[displayDate.getMonth()]}`);

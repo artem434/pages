@@ -48,7 +48,7 @@
       row-gap: 82px;
       column-gap: 38px;
       justify-content: center;
-      align-items: baseline;
+      margin-bottom: 120px;
     }
   }
 
@@ -63,23 +63,23 @@
     &-1 {
       width: 1289.031px;
       height: 57.755px;
-      top: 413px;
+      top: -66px;
       left: -240px;
 
       @include media-breakpoint-up(xl) {
-        top: 300px;
+        top: -72px;
         left: -200px;
       }
     }
     &-2 {
       width: 1289.031px;
       height: 57.755px;
-      bottom: 644px;
+      bottom: 288px;
       left: 0px;
       transform: rotate(180deg);
 
       @include media-breakpoint-up(xl) {
-        bottom: 442px;
+        bottom: 222px;
         left: 64px;
       }
     }
@@ -94,22 +94,22 @@
     text-align: center;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -6px;
-      right: -18px;
-      background: url(../img/sale.png) no-repeat center;
-      background-size: cover;
-      width: 68px;
-      height: 68px;
-      @include media-breakpoint-up(xl) {
-        width: 107px;
-        height: 107px;
-        top: -22px;
-        right: -44px;
-      }
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -6px;
+    //   right: -18px;
+    //   background: url(../img/sale.png) no-repeat center;
+    //   background-size: cover;
+    //   width: 68px;
+    //   height: 68px;
+    //   @include media-breakpoint-up(xl) {
+    //     width: 107px;
+    //     height: 107px;
+    //     top: -22px;
+    //     right: -44px;
+    //   }
+    // }
 
     @include media-breakpoint-up(xl) {
       max-width: 400px;
@@ -133,9 +133,31 @@
         }
       }
     }
+    &--slide {
+      margin: 0 auto 50px;
+
+      .program__title {
+        @include media-breakpoint-up(xl) {
+          min-width: 350px;
+        }
+      }
+    }
 
     &--padding {
       margin-bottom: 128px;
+    }
+    &--padding-top {
+      margin-top: 128px;
+      max-width: 343px;
+      @include media-breakpoint-up(xl) {
+        max-width: 832px;
+      }
+
+      .program__title {
+        strong {
+          font-size: 32px;
+        }
+      }
     }
 
     &__title {
@@ -148,6 +170,8 @@
 
       @include media-breakpoint-up(xl) {
         font-size: 100px;
+
+        text-align: center;
       }
 
       span {
@@ -161,7 +185,7 @@
 
         span {
           color: #fff;
-          font-size: 56px;
+          font-size: 25px;
         }
       }
 
@@ -171,6 +195,7 @@
         font-size: 30px;
 
         @include media-breakpoint-up(xl) {
+          font-size: 38px;
         }
       }
       strong {
@@ -200,7 +225,12 @@
       }
       p {
         @include media-breakpoint-up(xl) {
-          font-size: 20px;
+          font-size: 18px;
+        }
+
+        b {
+          display: inline;
+          color: $orange;
         }
       }
     }
@@ -217,5 +247,9 @@
         max-width: 100%;
       }
     }
+  }
+
+  .pr {
+    padding-bottom: 50px;
   }
 }

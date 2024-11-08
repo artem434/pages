@@ -156,6 +156,49 @@ const lineSlider = new Swiper(".line__slider", {
   },
 });
 
+const programmsSlider = new Swiper(".programmms", {
+  loop: false,
+  spaceBetween: 24,
+  slidesPerView: 1,
+  effect: "fade", // Додаємо fade-ефект
+  fadeEffect: {
+    crossFade: true, // Плавний перехід між слайдами
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+      updateCustomPagination(this.realIndex); // Оновлення активної вкладки під час ініціалізації
+    },
+    slideChange: function () {
+      updateCustomPagination(this.realIndex); // Оновлення активної вкладки при зміні слайду
+    },
+  },
+});
+
+function updateCustomPagination(activeIndex) {
+  document.querySelectorAll(".custom-pagination-tab").forEach((tab, index) => {
+    if (index === activeIndex) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+}
+
+// Додаємо події кліку на кастомні вкладки
+document.querySelectorAll(".custom-pagination-tab").forEach((tab) => {
+  tab.addEventListener("click", function () {
+    const index = parseInt(this.getAttribute("data-index"), 10);
+    programmsSlider.loopFix(); // Виправляє стан циклічності перед переходом
+    programmsSlider.slideTo(index); // Переходимо на вказаний слайд
+  });
+});
+
 const clientsSlider = new Swiper(".clients__slider", {
   loop: true,
   spaceBetween: 24,

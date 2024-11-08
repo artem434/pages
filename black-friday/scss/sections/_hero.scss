@@ -99,12 +99,30 @@
     span {
       display: block;
       color: #cf0;
-      font-size: 44px;
+      font-size: 64px;
       font-weight: 700;
       text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: url(../img/dec-9.png) no-repeat center;
+        bottom: -170px;
+        left: 0;
+        width: 248px;
+        height: 115px;
+        background-size: cover;
+
+        @include media-breakpoint-up(xl) {
+          width: 340px;
+          bottom: 150px;
+          height: 146px;
+        }
+      }
 
       @include media-breakpoint-up(xl) {
-        font-size: 140px;
+        font-size: 190px;
       }
     }
   }

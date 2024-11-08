@@ -60,8 +60,9 @@ form input.not_error {
   left: 0;
   &::after {
     content: "";
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGNzY4MDAiLz4KPC9zdmc+Cg==")
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='33' viewBox='0 0 20 33' fill='none'%3E%3Cpath d='M0.190829 4.4775L12.0225 16.5L0.190827 28.5488L3.83333 32.25L19.3333 16.5L3.83333 0.75L0.190829 4.4775Z' fill='%23CCFF00'/%3E%3C/svg%3E")
       center/contain no-repeat;
+    transform: rotate(180deg);
     width: 30px;
     height: 30px;
   }
@@ -71,11 +72,10 @@ form input.not_error {
   right: 0;
   &::after {
     content: "";
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjA2NjcgMjMuMTg2NUwxNi40NzY3IDIxLjc3NjVMMTAuODk2NyAxNi4xODY1TDIzLjA2NjcgMTYuMTg2NUwyMy4wNjY2IDE0LjE4NjVMMTAuODk2NiAxNC4xODY1TDE2LjQ4NjYgOC42MDY1MkwxNS4wNjY2IDcuMTg2NTJMNy4wNjY2NSAxNS4xODY1TDE1LjA2NjcgMjMuMTg2NVoiIGZpbGw9IiNGNzY4MDAiLz4KPC9zdmc+Cg==")
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='33' viewBox='0 0 20 33' fill='none'%3E%3Cpath d='M0.190829 4.4775L12.0225 16.5L0.190827 28.5488L3.83333 32.25L19.3333 16.5L3.83333 0.75L0.190829 4.4775Z' fill='%23CCFF00'/%3E%3C/svg%3E")
       center/contain no-repeat;
     width: 30px;
     height: 30px;
-    transform: rotate(180deg);
   }
 }
 

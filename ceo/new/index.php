@@ -745,6 +745,16 @@
               </tr>
               <tr>
                 <td>
+                  Бонусний модуль від Д. Стрижова "Роль корпоративного
+                  управління та Advisory Board у масштабуванні бізнесу"
+                </td>
+
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
                   Доступ до зустрічей Case study (відповіді на запитання від
                   Кирила Куницького) протягом року
                 </td>
@@ -753,7 +763,16 @@
                 <td class="no-active"></td>
                 <td></td>
               </tr>
-           
+              <tr>
+                <td>
+                  Навчання на програмі "Ефективний керівник" (пакет PRO) для
+                  топменеджера
+                </td>
+
+                <td class="no-active"></td>
+                <td class="no-active"></td>
+                <td></td>
+              </tr>
             </table>
             <div class="format__btns">
               <a id="btn-core" href="#register" data-package="core">Замовити</a>

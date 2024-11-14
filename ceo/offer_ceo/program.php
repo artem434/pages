@@ -224,6 +224,20 @@
               <li>Автоматизація управління проєктами</li>
             </ul>
           </div>
+          <div class="item">
+            <p class="item__number">18</p>
+            <h4 class="item__title"> <span>Бонусний модуль від Дмитра Стрижова</span> <br>Роль корпоративного управління та Advisory Board у масштабуванні бізнесу <span>[пакет участі PREMIUM]</span></h4>
+            <div class="item__more"></div>
+            <ul class="item__info">
+            <li>  Етапи розвитку бізнесу в Україні</li>
+            <li>"Чарівна пігулка" для бізнесу – Advisory Board</li>
+            <li>Роль Board на різних етапах життєвого циклу компанії</li>
+            <li>Переваги залучення фахівців до Advisory Board</li>
+            <li>Створення Advisory Board: практичний досвід холдингу "Шериф"</li>
+            <li>Кращі практики для ефективної роботи Board</li>
+            <li>Рекомендації для створення Advisory Board </li>
+            </ul>
+          </div>
         </div>
         <div class="block">
           <div class="block__content">

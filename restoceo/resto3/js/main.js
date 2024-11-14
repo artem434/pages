@@ -276,39 +276,39 @@ $(document).ready(function () {
     });
   });
 });
-function updateTimer() {
-  var now = new Date();
-  var friday = new Date(now);
+// function updateTimer() {
+//   var now = new Date();
+//   var friday = new Date(now);
 
-  friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
-  friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
+//   friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
+//   friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
 
-  // Перевіряємо, чи вже відбулася п'ятниця цього тижня
-  if (now.getDay() >= 5) {
-    // Якщо так, знаходимо наступну п'ятницю
-    friday.setDate(friday.getDate() + 7);
-  }
+//   // Перевіряємо, чи вже відбулася п'ятниця цього тижня
+//   if (now.getDay() >= 5) {
+//     // Якщо так, знаходимо наступну п'ятницю
+//     friday.setDate(friday.getDate() + 7);
+//   }
 
-  var difference = friday - now;
+//   var difference = friday - now;
 
-  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(
-    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+//   var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(
+//     (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+//   );
+//   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  hours = hours < 10 ? "0" + hours : hours;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
+//   hours = hours < 10 ? "0" + hours : hours;
+//   minutes = minutes < 10 ? "0" + minutes : minutes;
+//   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
+//   document.getElementById("days").innerText = days;
+//   document.getElementById("hours").innerText = hours;
+//   document.getElementById("minutes").innerText = minutes;
+//   document.getElementById("seconds").innerText = seconds;
 
-  setTimeout(updateTimer, 1000);
-}
+//   setTimeout(updateTimer, 1000);
+// }
 
-// Запускаємо таймер
-updateTimer();
+// // Запускаємо таймер
+// updateTimer();

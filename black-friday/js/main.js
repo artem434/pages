@@ -310,19 +310,24 @@ $listItems.click(function () {
   var relValue = $(this).attr("rel");
   $landingIdInput.val(relValue);
 });
+var $landingIdInput = $('input[name="landing_id"]');
 $(".program-btn").click(function () {
-  // Получить значение атрибута "data-rel" из элемента .program-btn
+  // Отримуємо значення атрибута "data-rel" з елемента .program-btn
   var dataRel = $(this).data("rel");
 
-  // Найти соответствующий элемент <select>
+  // Знаходимо відповідний елемент <select>
   var $select = $("select");
 
-  // Установить выбранный вариант
+  // Встановлюємо вибраний варіант
   $select.val(dataRel);
 
-  // Обновить отображение стилизированного элемента
+  // Оновлюємо відображення стилізованого елемента
   var $styledSelect = $select.next("div.styledSelect");
   $styledSelect.text($select.children("option:selected").text());
+
+  // Знаходимо інпут з name="landing_id" і записуємо значення dataRel
+  var $landingIdInput = $('input[name="landing_id"]');
+  $landingIdInput.val(dataRel);
 });
 
 const header = document.querySelector(".header");

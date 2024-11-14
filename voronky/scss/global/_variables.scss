@@ -1,0 +1,37 @@
+:root {
+  --container-width: 1160px;
+  --transition: 0.3s ease;
+  --default-font-family: "Gilroy";
+  --heading-font-family: "Neue Machina";
+  --sp: 66px;
+  --accent: #3ec284;
+  --fiolet: #3ec284;
+  --dark: #1f2229;
+  --bg: #fff;
+  --text-color: #000000;
+  --fz-default: 20px;
+  --h1: 32px;
+  --h2: 42px;
+  --h3: 32px;
+  --h4: 28px;
+  --l: 24px;
+  --m: 22px;
+  --s: 18px;
+  --xs: 16px;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$white: #ffffff;
+$color-main: #3ec284;
+$bg: #040504;
+$black: #040504;
+$greay: #3d3d3d;
+
+$maxWidth: 1200px;

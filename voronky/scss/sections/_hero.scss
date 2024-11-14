@@ -213,7 +213,7 @@
     @include media-breakpoint-up(xl) {
       transform: translate(0);
       position: absolute;
-      bottom: -190px;
+      top: -200px;
       left: 0;
       background-size: cover;
       z-index: -1;
@@ -239,6 +239,10 @@
     .btn {
       font-size: 16px;
       padding: 14px 16px;
+
+      @include media-breakpoint-up(xl) {
+        text-align: center;
+      }
     }
   }
 }

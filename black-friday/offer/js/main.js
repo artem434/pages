@@ -156,6 +156,49 @@ const lineSlider = new Swiper(".line__slider", {
   },
 });
 
+const programmsSlider = new Swiper(".programmms", {
+  loop: false,
+  spaceBetween: 24,
+  slidesPerView: 1,
+  effect: "fade", // Додаємо fade-ефект
+  fadeEffect: {
+    crossFade: true, // Плавний перехід між слайдами
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+      updateCustomPagination(this.realIndex); // Оновлення активної вкладки під час ініціалізації
+    },
+    slideChange: function () {
+      updateCustomPagination(this.realIndex); // Оновлення активної вкладки при зміні слайду
+    },
+  },
+});
+
+function updateCustomPagination(activeIndex) {
+  document.querySelectorAll(".custom-pagination-tab").forEach((tab, index) => {
+    if (index === activeIndex) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+}
+
+// Додаємо події кліку на кастомні вкладки
+document.querySelectorAll(".custom-pagination-tab").forEach((tab) => {
+  tab.addEventListener("click", function () {
+    const index = parseInt(this.getAttribute("data-index"), 10);
+    programmsSlider.loopFix(); // Виправляє стан циклічності перед переходом
+    programmsSlider.slideTo(index); // Переходимо на вказаний слайд
+  });
+});
+
 const clientsSlider = new Swiper(".clients__slider", {
   loop: true,
   spaceBetween: 24,
@@ -181,41 +224,6 @@ const clientsSlider = new Swiper(".clients__slider", {
   },
 });
 
-// const slider = new Swiper('.slider', {
-// 	speed: 8000,
-// 	spaceBetween: 20,
-// 	loop: true,
-// 	freeMode: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 2,
-// 	freeModeMomentum: false,
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		dynamicBullets: true,
-// 	},
-// 	navigation: {
-// 		nextEl: ".swiper-button-next",
-// 		prevEl: ".swiper-button-prev",
-// 	},
-// 	autoplay: {
-// 		delay: 0,
-// 		disableOnInteraction: false
-// 	},
-// 	on: {
-// 		init: function () {
-// 			lazyLoadInstance.update();
-// 		},
-// 	},
-// 	breakpoints: {
-// 		760: {
-// 			slidesPerView: 4,
-// 		},
-// 		1260: {
-// 			slidesPerView: 5,
-// 		},
-// 	},
-// });
-
 $(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
@@ -229,115 +237,123 @@ $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
 });
+// Ітеруємо по кожному select в усіх формах
+$("select").each(function () {
+  var $this = $(this),
+    numberOfOptions = $this.children("option").length;
 
-$(document).ready(function () {
-  var aboutElementId = "about";
-  var $heroBtn = $(".hero__btn");
+  // Ховаємо select
+  $this.addClass("s-hidden").wrap('<div class="select"></div>');
 
-  $(window).scroll(function () {
-    var aboutOffset = $("#" + aboutElementId).offset().top;
-    var scrollPosition = $(window).scrollTop();
+  // Додаємо стилізований div після select
+  $this.after('<div class="styledSelect"></div>');
 
-    $heroBtn.toggleClass("active", scrollPosition >= aboutOffset);
+  var $styledSelect = $this.next("div.styledSelect");
+  $styledSelect.text($this.children("option").eq(0).text());
 
-    if (scrollPosition < aboutOffset) {
-      $heroBtn.removeClass("active");
-    }
+  // Додаємо ul для опцій
+  var $list = $("<ul />", { class: "options" }).insertAfter($styledSelect);
+
+  // Додаємо li для кожної опції
+  for (var i = 1; i < numberOfOptions; i++) {
+    $("<li />", {
+      text: $this.children("option").eq(i).text(),
+      rel: $this.children("option").eq(i).val(),
+    }).appendTo($list);
+  }
+
+  var $listItems = $list.children("li");
+
+  // Показуємо/ховаємо список
+  $styledSelect.click(function (e) {
+    e.stopPropagation();
+    $("div.styledSelect.active")
+      .not(this)
+      .removeClass("active")
+      .next("ul.options")
+      .hide();
+    $(this).toggleClass("active").next("ul.options").toggle();
+  });
+
+  // При кліку на елемент списку оновлюємо вибір
+  $listItems.click(function (e) {
+    e.stopPropagation();
+    var selectedText = $(this).text();
+    var selectedValue = $(this).attr("rel");
+
+    $styledSelect.text(selectedText).removeClass("active");
+    $this.val(selectedValue);
+    $list.hide();
+
+    // Оновлюємо значення відповідного інпуту в межах форми
+    var $form = $this.closest("form");
+    var $landingIdInput = $form.find('input[name="landing_id"]');
+    $landingIdInput.val(selectedValue);
+  });
+
+  // Закриваємо список при кліку поза ним
+  $(document).click(function () {
+    $styledSelect.removeClass("active");
+    $list.hide();
   });
 });
 
-const expertsSlider = new Swiper(".experts__list", {
-  //centeredSlides: true,
-  loop: true,
-  spaceBetween: 20,
-  slidesPerView: 1,
-  speed: 1000,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  autoplay: {
-    //delay: 1000,
-  },
-  navigation: {
-    nextEl: ".next-experts",
-    prevEl: ".prev-experts",
-  },
+// Обробник для кнопок з класом .program-btn (тільки для #form)
+$(".program-btn").click(function () {
+  var $form = $("#form"); // Робота лише з #form
+  var dataRel = $(this).data("rel");
+  var $select = $form.find("select");
 
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-  breakpoints: {
-    // 760: {
-    //   slidesPerView: 4,
-    // },
-    1200: {
-      slidesPerView: 4,
-      loop: true,
-      // loop: false,
-    },
-  },
+  // Встановлюємо вибране значення
+  $select.val(dataRel);
+
+  // Оновлюємо стилізований елемент
+  var $styledSelect = $select.next("div.styledSelect");
+  $styledSelect.text($select.children("option:selected").text());
+
+  // Оновлюємо значення інпуту в межах #form
+  var $landingIdInput = $form.find('input[name="landing_id"]');
+  $landingIdInput.val(dataRel);
 });
-// var mySwiper = new Swiper(".hero__slider", {
-//   loop: true,
-//   slidesPerView: 1,
-//   speed: 1000,
-//   centeredSlides: true,
-//   effect: "coverflow",
-//   coverflow: {
-//     rotate: 0,
-//     stretch: 0,
-//     depth: 100,
-//     modifier: 1,
-//     //slideShadows: true,
-//   },
-//   on: {
-//     init: function () {
-//       lazyLoadInstance.update();
-//     },
-//   },
-//   autoplay: {
-//     delay: 500,
-//   },
-//   navigation: {
-//     nextEl: ".hero-next",
-//     prevEl: ".hero-prev",
-//   },
-// });
-function updateTimer() {
-  var now = new Date();
-  var friday = new Date(now);
 
-  friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
-  friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
+const header = document.querySelector(".header");
+let isHeaderVisible = false;
 
-  // Перевіряємо, чи вже відбулася п'ятниця цього тижня
-  if (now.getDay() >= 5) {
-    // Якщо так, знаходимо наступну п'ятницю
-    friday.setDate(friday.getDate() + 7);
+window.addEventListener("scroll", () => {
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth > 767) {
+    const currentScrollPosition = window.scrollY;
+    const isScrollingDown = currentScrollPosition > 0;
+
+    if (isScrollingDown !== isHeaderVisible) {
+      header.style.display = isScrollingDown ? "block" : "none";
+      isHeaderVisible = isScrollingDown;
+    }
   }
+});
 
-  var difference = friday - now;
+const registerSection = document.querySelector("#register");
+const button = document.querySelector(".btn-page-fix"); // Замініть "your-button-id" на ідентифікатор вашої кнопки
+let isButtonVisible = false;
 
-  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(
-    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const registerSectionTop = registerSection.offsetTop;
+  const registerSectionHeight = registerSection.offsetHeight;
 
-  hours = hours < 10 ? "0" + hours : hours;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
-
-  setTimeout(updateTimer, 1000);
-}
-
-// Запускаємо таймер
-updateTimer();
+  if (
+    scrollY >= registerSectionTop &&
+    scrollY <= registerSectionTop + registerSectionHeight
+  ) {
+    if (!isButtonVisible) {
+      button.style.display = "none";
+      isButtonVisible = true;
+    }
+  } else {
+    if (isButtonVisible) {
+      button.style.display = "block";
+      isButtonVisible = false;
+    }
+  }
+});

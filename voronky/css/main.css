@@ -850,6 +850,9 @@ a {
 .about__item p {
   font-size: 14px;
 }
+.about__item p span {
+  color: #3ec284;
+}
 @media (min-width: 1200px) {
   .about__item p {
     font-size: 18px;

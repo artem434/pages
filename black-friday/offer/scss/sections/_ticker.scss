@@ -1,0 +1,91 @@
+@-webkit-keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes ticker-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes ticker-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.ticker {
+  display: flex;
+  padding: 0;
+}
+
+.ticker__string {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ticker__string--left {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $orange;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.ticker__string--right {
+  color: #fff;
+  -webkit-animation-name: ticker-right;
+  animation-name: ticker-right;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.ticker__string span {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  padding: 0 22px;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1;
+  @include media-breakpoint-up(xl) {
+    font-size: 96px;
+  }
+}

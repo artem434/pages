@@ -56,6 +56,10 @@
     p {
       font-size: 14px;
 
+      span {
+        color: $color-main;
+      }
+
       @include media-breakpoint-up(xl) {
         font-size: 18px;
       }

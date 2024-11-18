@@ -137,6 +137,25 @@ $('a[href*="#"]')
     }
   });
 
+const lineSlider = new Swiper(".line__slider", {
+  speed: 8000,
+  loop: true,
+  // freeMode: true,
+  spaceBetween: 34,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  freeModeMomentum: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+});
+
 const clientsSlider = new Swiper(".clients__slider", {
   loop: true,
   spaceBetween: 24,
@@ -162,31 +181,69 @@ const clientsSlider = new Swiper(".clients__slider", {
   },
 });
 
-var mySwiper = new Swiper(".swiper-container", {
-  loop: true,
-  slidesPerView: 1,
-  speed: 1000,
-  centeredSlides: true,
-  effect: "coverflow",
-  coverflow: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    //slideShadows: true,
-  },
-  on: {
-    init: function () {
-      lazyLoadInstance.update();
-    },
-  },
-  autoplay: {
-    delay: 500,
-  },
-  navigation: {
-    nextEl: ".hero-next",
-    prevEl: ".hero-prev",
-  },
+// const slider = new Swiper('.slider', {
+// 	speed: 8000,
+// 	spaceBetween: 20,
+// 	loop: true,
+// 	freeMode: true,
+// 	centeredSlides: true,
+// 	slidesPerView: 2,
+// 	freeModeMomentum: false,
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		dynamicBullets: true,
+// 	},
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// 	autoplay: {
+// 		delay: 0,
+// 		disableOnInteraction: false
+// 	},
+// 	on: {
+// 		init: function () {
+// 			lazyLoadInstance.update();
+// 		},
+// 	},
+// 	breakpoints: {
+// 		760: {
+// 			slidesPerView: 4,
+// 		},
+// 		1260: {
+// 			slidesPerView: 5,
+// 		},
+// 	},
+// });
+
+$(".item__more, .program .item__title").on("click", function () {
+  $(this).parent().toggleClass("active");
+});
+
+$(".packages .item__btn").on("click", function () {
+  let package = $(this).data("package");
+  $("input[name=package][value=" + package + "]").prop("checked", true);
+});
+
+$(".header__burger").on("click", function () {
+  $(".header").toggleClass("active");
+  $("body").toggleClass("fixed");
+});
+
+$(document).ready(function () {
+  var aboutElementId = "about";
+  var $heroBtn = $(".hero__btn");
+
+  $(window).scroll(function () {
+    var aboutOffset = $("#" + aboutElementId).offset().top;
+    var scrollPosition = $(window).scrollTop();
+
+    $heroBtn.toggleClass("active", scrollPosition >= aboutOffset);
+
+    if (scrollPosition < aboutOffset) {
+      $heroBtn.removeClass("active");
+    }
+  });
 });
 
 const expertsSlider = new Swiper(".experts__list", {
@@ -222,93 +279,65 @@ const expertsSlider = new Swiper(".experts__list", {
     },
   },
 });
+var mySwiper = new Swiper(".hero__slider", {
+  loop: true,
+  slidesPerView: 1,
+  speed: 1000,
+  centeredSlides: true,
+  effect: "coverflow",
+  coverflow: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    //slideShadows: true,
+  },
+  // on: {
+  //   init: function () {
+  //     lazyLoadInstance.update();
+  //   },
+  // },
+  autoplay: {
+    delay: 500,
+  },
+  navigation: {
+    nextEl: ".hero-next",
+    prevEl: ".hero-prev",
+  },
+});
+function updateTimer() {
+  var now = new Date();
+  var friday = new Date(now);
 
-mySwiper.on("slideChange", function () {
-  // Удаляем класс active у всех элементов списка
-  document.querySelectorAll(".hero__lector-item").forEach(function (el) {
-    el.classList.remove("active");
-  });
+  friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
+  friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
 
-  // Получаем индекс активного слайда
-  var activeSlideIndex = mySwiper.realIndex; // realIndex учитывает loop и centeredSlides
+  // Перевіряємо, чи вже відбулася п'ятниця цього тижня
+  if (now.getDay() >= 5) {
+    // Якщо так, знаходимо наступну п'ятницю
+    friday.setDate(friday.getDate() + 7);
+  }
 
-  // Добавляем класс active соответствующему элементу списка
-  var activeListItem = document.querySelector(
-    ".hero__lector-item:nth-child(" + (activeSlideIndex + 1) + ")"
+  var difference = friday - now;
+
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor(
+    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
   );
-  activeListItem.classList.add("active");
-});
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-$(".item__more, .program .item__title").on("click", function () {
-  $(this).parent().toggleClass("active");
-});
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
 
-$(".packages .item__btn").on("click", function () {
-  let package = $(this).data("package");
-  $("input[name=package][value=" + package + "]").prop("checked", true);
-});
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
 
-$(".header__burger").on("click", function () {
-  $(".header").toggleClass("active");
-  $("body").toggleClass("fixed");
-});
+  setTimeout(updateTimer, 1000);
+}
 
-$(document).ready(function () {
-  var aboutElementId = "about";
-  var $heroBtn = $(".hero__btn");
-
-  $(window).scroll(function () {
-    var aboutOffset = $("#" + aboutElementId).offset().top;
-    var scrollPosition = $(window).scrollTop();
-
-    $heroBtn.toggleClass("active", scrollPosition >= aboutOffset);
-
-    if (scrollPosition < aboutOffset) {
-      $heroBtn.removeClass("active");
-    }
-
-    // Видаляємо клас "active", коли сторінка докручується до якого-небудь елемента з id, що починається на "#anchor"
-    $('[id^="register"]').each(function () {
-      var anchorOffset = $(this).offset().top;
-      if (scrollPosition >= anchorOffset) {
-        $heroBtn.removeClass("active");
-      }
-    });
-  });
-});
-// function updateTimer() {
-//   var now = new Date();
-//   var friday = new Date(now);
-
-//   friday.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
-//   friday.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00:00
-
-//   // Перевіряємо, чи вже відбулася п'ятниця цього тижня
-//   if (now.getDay() >= 5) {
-//     // Якщо так, знаходимо наступну п'ятницю
-//     friday.setDate(friday.getDate() + 7);
-//   }
-
-//   var difference = friday - now;
-
-//   var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor(
-//     (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-//   );
-//   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-//   hours = hours < 10 ? "0" + hours : hours;
-//   minutes = minutes < 10 ? "0" + minutes : minutes;
-//   seconds = seconds < 10 ? "0" + seconds : seconds;
-
-//   document.getElementById("days").innerText = days;
-//   document.getElementById("hours").innerText = hours;
-//   document.getElementById("minutes").innerText = minutes;
-//   document.getElementById("seconds").innerText = seconds;
-
-//   setTimeout(updateTimer, 1000);
-// }
-
-// // Запускаємо таймер
-// updateTimer();
+// Запускаємо таймер
+updateTimer();

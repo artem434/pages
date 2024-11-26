@@ -2363,8 +2363,8 @@ a {
 
   @media (max-width: 767px) {
     .hero__lectors {
-      width: 600px;
-      height: 208px;
+      width: 512px;
+      height: 176px;
     }
     .hero__names {
       padding-top: 160px;
@@ -3443,7 +3443,7 @@ a {
 .lectors {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 44px;
   justify-content: center;
   row-gap: 46px;
   padding: 46px 0;

@@ -3530,7 +3530,7 @@ a {
 .lectors {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 44px;
   justify-content: center;
   row-gap: 46px;
   padding: 46px 0;

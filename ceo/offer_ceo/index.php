@@ -881,7 +881,7 @@
             </div>
           </div>
         </div>
-        <div class="lectors__item lectors__item--who">
+        <div class="lectors__item">
           <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
           <div class="lectors__footer">
             <p class="lectors__name">
@@ -893,6 +893,36 @@
               входить до ТОП-100 найвпливовіших українок за версією економічного
               видання «Фокус»
             </div>
+          </div>
+        </div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-5.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__name">
+              Ігор <br />
+              Сироватко
+            </p>
+            <div class="lectors__text">
+              <ul>
+                <li>Операційний директор OLX в Україні та Центральній Азії</li>
+                <li>
+                  Бізнес коуч для власників бізнесу (Mindvalley Business Coach)
+                </li>
+                <li>
+                  Сертифікований лідер впровадження стандартів клієнтського
+                  сервісу COPC
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lectors__item lectors__item--who">
+          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+          <div class="lectors__footer">
+            <p class="lectors__subname">
+              Спікер <br />
+              узгоджується
+            </p>
           </div>
         </div>
         <!-- <div class="lectors__item lectors__item--who">

@@ -710,7 +710,9 @@
                     Гудима
                   </div>
                   <div class="speaker__info-desc">
-                  Власник клініки <b>Dentaro Garden</b> засновник зуботехнічної лабораторії <b>Dentaro Lab</b> та навчального центру <b>Dentaro Study Club</b>
+                    Власник клініки <b>Dentaro Garden</b> засновник
+                    зуботехнічної лабораторії <b>Dentaro Lab</b> та навчального
+                    центру <b>Dentaro Study Club</b>
                   </div>
                 </div>
                 <div
@@ -1359,9 +1361,8 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        window.location.href = "https://medceo.bizconstructor.com/new2/";
+      window.location.href = "https://medceo.bizconstructor.com/new2/";
       $(document).ready(function () {
-      
         // Дата мероприятия
         let cDate = "18 січня ",
           // Landing id // Online

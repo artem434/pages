@@ -271,9 +271,40 @@ a {
   }
 }
 
+@keyframes runLine {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.line {
+  width: 100000%;
+  height: 45px;
+  background: url(../img/line-bg.png);
+  animation: runLine 40000s linear infinite;
+  background-size: auto 100%;
+}
+
+@media (min-width: 1200px) {
+  .line {
+    height: 55px;
+  }
+}
+.line--blue {
+  background: url(../img/line-bg--blue.png);
+  background-size: auto 100%;
+}
+
+.line--lectors {
+  background: url(../img/line-bg--lectors.jpeg);
+  background-size: auto 100%;
+}
+
 .btn-page {
   background-color: #3ec284;
-  font-size: 22px;
+  font-size: 19px;
   color: #ffffff;
   width: 100%;
   line-height: 56px;
@@ -298,6 +329,7 @@ a {
 }
 
 .btn--fix {
+  text-align: center;
   position: fixed;
   bottom: 12px;
   left: 50%;
@@ -635,7 +667,7 @@ a {
   line-height: 1.1; /* 45.08px */
   text-transform: uppercase;
   margin-bottom: 12px;
-  padding-top: 305px;
+  padding-top: 280px;
 }
 @media (min-width: 1200px) {
   .hero h1 {
@@ -645,13 +677,13 @@ a {
   }
 }
 .hero h1 b {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 700;
   display: block;
 }
 @media (min-width: 1200px) {
   .hero h1 b {
-    font-size: 92px;
+    font-size: 73px;
   }
 }
 .hero__subtitle {
@@ -738,7 +770,7 @@ a {
   background-size: cover;
   background-position-x: -19px;
   position: absolute;
-  top: 27px;
+  top: -30px;
   left: 50%;
   z-index: -1;
   transform: translate(-50%, 0);
@@ -746,6 +778,7 @@ a {
 @media (min-width: 1200px) {
   .hero__img {
     width: 546px;
+    top: -44px;
     height: 589px;
   }
 }
@@ -809,6 +842,20 @@ a {
     flex-direction: row;
     gap: 150px;
   }
+}
+.about h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about h3 span {
+  color: #3ec284;
+}
+.about h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3ec284;
 }
 .about__item {
   display: flex;
@@ -1314,7 +1361,7 @@ a {
   }
 }
 .expert__title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   background: #040504;
   padding: 6px 14px;
@@ -1327,6 +1374,7 @@ a {
 @media (min-width: 1200px) {
   .expert__title {
     margin-bottom: 22px;
+    font-size: 22px;
     left: inherit;
     transform: translateX(0);
   }
@@ -2174,8 +2222,8 @@ a {
 @media (min-width: 1200px) {
   .register__ellipse {
     position: absolute;
-    bottom: -190px;
-    left: 0;
+    bottom: 93px;
+    left: 600px;
     background-size: cover;
     z-index: -1;
     width: 1249px;

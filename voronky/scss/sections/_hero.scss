@@ -88,7 +88,7 @@
     line-height: 1.1; /* 45.08px */
     text-transform: uppercase;
     margin-bottom: 12px;
-    padding-top: 305px;
+    padding-top: 280px;
 
     @include media-breakpoint-up(xl) {
       font-size: 52px;
@@ -97,11 +97,11 @@
     }
 
     b {
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 700;
       display: block;
       @include media-breakpoint-up(xl) {
-        font-size: 92px;
+        font-size: 73px;
       }
     }
   }
@@ -190,13 +190,14 @@
     background-size: cover;
     background-position-x: -19px;
     position: absolute;
-    top: 27px;
+    top: -30px;
     left: 50%;
     z-index: -1;
     transform: translate(-50%, 0);
 
     @include media-breakpoint-up(xl) {
       width: 546px;
+      top: -44px;
       height: 589px;
     }
   }

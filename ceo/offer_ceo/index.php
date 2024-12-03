@@ -254,7 +254,7 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
-          <a class="header__logo" href="https://ceo.bizconstructor.com/new"></a>
+          <a class="header__logo" href="https://ceo.bizconstructor.com/offer_ceo"></a>
           <ul class="header__menu">
             <li>
               <a href="#program">Структура програми</a>

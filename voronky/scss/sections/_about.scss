@@ -17,6 +17,22 @@
     }
   }
 
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    span {
+      color: #3ec284;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3ec284;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;

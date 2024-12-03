@@ -112,3 +112,31 @@ a {
     max-width: $maxWidth;
   }
 }
+@keyframes runLine {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.line {
+  width: 100000%;
+  height: 45px;
+  background: url(../img/line-bg.png);
+  animation: runLine 40000s linear infinite;
+  background-size: auto 100%;
+}
+@media (min-width: 1200px) {
+  .line {
+    height: 55px;
+  }
+}
+.line--blue {
+  background: url(../img/line-bg--blue.png);
+  background-size: auto 100%;
+}
+.line--lectors {
+  background: url(../img/line-bg--lectors.jpeg);
+  background-size: auto 100%;
+}

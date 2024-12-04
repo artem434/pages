@@ -1,190 +1,80 @@
 <!DOCTYPE html>
-<html lang="uk-UA">
+<html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://restoceo.bizconstructor.com/offer/css/libs.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://restoceo.bizconstructor.com/offer/css/main.css"
-    />
-    <link
-      rel="icon"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs with Independent Content</title>
     <style>
-      .info_form {
-        background-color: transparent !important;
+      .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin-right: 5px;
       }
-      .hero {
-        padding: 50px 0;
+      .tab.active {
+        background-color: #007bff;
+        color: white;
       }
-      .hero .block {
-        margin: 0 auto;
+      .content {
+        display: none;
+        margin-top: 20px;
+      }
+      .content.active {
+        display: block;
       }
     </style>
   </head>
-
   <body>
-    <div class="wrapper">
-      <section class="hero" id="hero">
-        <div class="block">
-          <div class="block__form">
-            <div class="anchor" id="anchor"></div>
-            <form class="form zoho_url" id="form" method="post">
-              <div class="loader"></div>
-
-              <label class="input__wrap">
-                <input
-                  class="input"
-                  name="name"
-                  type="text"
-                  placeholder="Твоє ім’я"
-                  required=""
-                />
-              </label>
-              <label class="input__wrap">
-                <input
-                  class="input"
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="Твій номер телефону"
-                  required=""
-                />
-              </label>
-              <label class="input__wrap">
-                <input
-                  class="input"
-                  name="email"
-                  type="email"
-                  placeholder="Твій email"
-                  required=""
-                />
-              </label>
-              <div class="hidden">
-                <input type="hidden" name="ref" value="" autocomplete="off" />
-                <input type="hidden" name="ga" value="" autocomplete="off" />
-                <input
-                  type="hidden"
-                  name="ym_uid"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="utm_source"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="utm_medium"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="utm_term"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="utm_content"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="utm_campaign"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="google_client_id"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="landing_id"
-                  value=""
-                  autocomplete="off"
-                />
-                <!-- Landing_id-->
-                <input
-                  type="hidden"
-                  name="es_mail_id"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="convert_in_zoho"
-                  autocomplete="off"
-                />
-                <input type="hidden" name="es_id" value="" autocomplete="off" />
-                <input
-                  type="hidden"
-                  name="token"
-                  value="LapQMWHF9k5QPPGRkfRnAtACAGwUcX2tkaVgyDuQe76crMGnrU"
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="success_url"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="error_url"
-                  value=""
-                  autocomplete="off"
-                />
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value="false"
-                  autocomplete="off"
-                />
-                <input type="hidden" name="send_to_gf" value="restoceo_offer" />
-              </div>
-              <button class="form__btn subm" type="submit">
-                ЗАЛИШИТИ ЗАЯВКУ
-              </button>
-              <p class="form__agree">
-                Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку
-                твоїх персональних даних згідно з
-                <a href="http://privacy.bizconstructor.com/"
-                  >Політикою конфіденційності</a
-                >.
-                <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
-              </p>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- END HIDDEN ELEMENTS (MODALS)-->
+    <div id="tabs">
+      <div data-tab="tab1" class="tab">Tab 1</div>
+      <div data-tab="tab2" class="tab">Tab 2</div>
+      <div data-tab="tab3" class="tab">Tab 3</div>
     </div>
 
-    <script src="js/libs.min.js"></script>
+    <div id="contents">
+      <div id="content-tab1" class="content">
+        <p>Content for Tab 22</p>
+      </div>
+      <div id="content-tab2" class="content">
+        <p>Content for Tab 2</p>
+      </div>
+      <div id="content-tab3" class="content">
+        <p>Content for Tab 3</p>
+      </div>
+    </div>
 
-    <script src="js/webinar_form.js"></script>
-    <script src="https://forstas.bizconstructor.com/tilda-assets/src/js/script_ver_generate_lead.js"></script>
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const contents = document.querySelectorAll(".content");
+
+      // Get active tab from URL or default to 'tab1'
+      const activeTab =
+        new URLSearchParams(window.location.search).get("tab") || "tab1";
+
+      // Set active tab and show corresponding content
+      function setActiveTab(tabName) {
+        tabs.forEach((tab) =>
+          tab.classList.toggle("active", tab.dataset.tab === tabName)
+        );
+        contents.forEach((content) =>
+          content.classList.toggle(
+            "active",
+            content.id === `content-${tabName}`
+          )
+        );
+        const params = new URLSearchParams();
+        params.set("tab", tabName);
+        window.history.replaceState({}, "", `?${params.toString()}`);
+      }
+
+      // Event listener for tab clicks
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => setActiveTab(tab.dataset.tab));
+      });
+
+      // Initialize active tab
+      setActiveTab(activeTab);
+    </script>
   </body>
 </html>

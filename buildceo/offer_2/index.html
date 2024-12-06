@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-      Retail CEO | Інтенсивна освітня програма для керівників сфери роздрібної
-      торгівлі | Бізнес-Конструктор
+      CEO будівельної компанії | Інтенсивна освітня програма для керівників |
+      Бізнес-Конструктор
     </title>
     <meta
       name="description"
-      content="Стань еталонним лідером для команди в галузі ритейлу"
+      content="Стань еталонним лідером для команди в своїй будівельній компанії"
       data-vmid="description"
     />
     <!-- SEO-->
     <meta
       property="og:title"
-      content="Retail CEO | Інтенсивна освітня програма для керівників сфери роздрібної
-        торгівлі | Бізнес-Конструктор"
+      content="CEO будівельної компанії | Інтенсивна освітня програма для керівників | Бізнес-Конструктор"
     />
     <meta
       property="og:description"
-      content="Стань еталонним лідером для команди в галузі ритейлу"
+      content="Стань еталонним лідером для команди в своїй будівельній компанії"
     />
     <meta property="og:image" content="img/og-image.png" />
     <meta property="og:url" content="" />
@@ -114,6 +113,135 @@
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "hxq8cxegar");
     </script>
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 780161,
+            version = 2.0,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style =
+              "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(
+              localStorage.getItem("_vwo_" + account_id + "_config")
+            );
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined"
+                ? use_existing_jquery
+                : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined"
+                ? library_tolerance
+                : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function () {
+              if (!f) {
+                f = true;
+                var e = d.getElementById("_vis_opt_path_hides");
+                if (e) e.parentNode.removeChild(e);
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            load: function (e) {
+              var t = this.getSettings(),
+                n = d.createElement("script"),
+                i = this;
+              if (t) {
+                n.textContent = t;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  i.load(e);
+                }
+              } else {
+                n.fetchPriority = "high";
+                n.src = e;
+                n.type = "text/javascript";
+                n.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(n);
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t = d.currentScript,
+                n = d.createElement("style"),
+                i = this.hide_element(),
+                r = t && !t.async && i ? i + this.hide_element_style() : "",
+                c = d.getElementsByTagName("head")[0];
+              n.setAttribute("id", "_vis_opt_path_hides");
+              v && n.setAttribute("nonce", v.nonce);
+              n.setAttribute("type", "text/css");
+              if (n.styleSheet) n.styleSheet.cssText = r;
+              else n.appendChild(d.createTextNode(r));
+              c.appendChild(n);
+              this.load(
+                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                  account_id +
+                  "&u=" +
+                  encodeURIComponent(d.URL) +
+                  "&vn=" +
+                  version
+              );
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
   </head>
 
   <body>
@@ -157,53 +285,58 @@
 
       <section class="hero" id="hero">
         <div class="container">
+          <div class="hero__description">
+            Інтенсивна <br class="d-xl-none" /><span>освітня програма </span>
+            <br class="d-none d-xl-block" />для керівників будівельного бізнесу
+          </div>
+          <h1>CEO</h1>
+          <div class="hero__subtitle">
+            будівельної <br class="d-none d-xl-block" />
+            компанії
+          </div>
           <div class="hero__info">3 місяці <span>|</span> онлайн</div>
           <div class="hero__text">
-            Інтенсивна <span>освітня програма</span> <br />
-            ДЛЯ ВЛАСНИКІВ БІЗНЕСУ <br class="d-xl-none" />
-            <span>В РОЗДРІБНІЙ ТОРГІВЛІ</span>
+            Стань <span>еталонним лідером </span> <br class="d-xl-none" />
+            для своєї компанії
           </div>
-          <h1>Retail CEO</h1>
-          <div class="hero__description">
-            Стань еталонним лідером для своєї компанії
-          </div>
-
-          <!-- <div
-            class="hero__img lazy entered loaded d-xl-none"
-            data-bg="img/hero-dec-mob.png"
-          ></div>
-          <div
-            class="hero__img lazy entered loaded d-none d-xl-block"
-            data-bg="img/hero-dec.png"
-          ></div> -->
           <div class="hero__form">
-            <form class="form zoho_url" id="form" method="post">
+            <div class="anchor" id="anchor"></div>
+            <form
+              class="form zoho_url"
+              id="form"
+              method="post"
+              data-gtm-vis-first-on-screen-8399674_49="1020314"
+              data-gtm-vis-recent-on-screen-8399674_49="1413492"
+              data-gtm-vis-total-visible-time-8399674_49="500"
+              data-gtm-vis-has-fired-8399674_49="1"
+            >
+              <div class="loader"></div>
               <div class="hero__form_title">
                 Тільки для учасників <br />
-                ефіру діє <b>знижка до 40%</b>
+                ефіру діє <b>знижка 40%</b>
               </div>
               <div class="hero__form_sub-block">
                 <ul class="form__package">
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab core_price"
-                      data-id=""
+                      data-id="2108311000959276117"
                     >
                       <span>CORE</span>
                     </div>
                   </li>
                   <li>
                     <div
-                      class="packages-btns__pack-name tabs__tab pro_price"
-                      data-id=""
+                      class="packages-btns__pack-name tabs__tab pro_price active__button__id tabs__tab--active"
+                      data-id="2108311000979732525"
                     >
                       <span>PRO</span>
                     </div>
                   </li>
                   <li>
                     <div
-                      class="packages-btns__pack-name tabs__tab premium_price"
-                      data-id=""
+                      class="packages-btns__pack-name tabs__tab premium_price active__button__id tabs__tab--active"
+                      data-id="2108311000979732552 "
                     >
                       <span>PREMIUM</span>
                     </div>
@@ -224,33 +357,38 @@
                   </div>
                 </div>
               </div>
+
               <!-- <p class="form__title">Реєстрація</p> -->
+              <label class="input__wrap">
+                <div class="intl-tel-input allow-dropdown">
+                  <input
+                    class="input"
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="Твій номер телефону"
+                    required="true"
+                    autocomplete="off"
+                  />
+                </div>
+              </label>
               <label class="input__wrap">
                 <input
                   class="input"
                   name="name"
                   type="text"
                   placeholder="Твоє ім’я"
-                  required=""
+                  required="true"
                 />
               </label>
+
               <label class="input__wrap">
                 <input
                   class="input"
                   name="email"
                   type="email"
                   placeholder="Твій email"
-                  required=""
-                />
-              </label>
-              <label class="input__wrap">
-                <input
-                  class="input"
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="Твій номер телефону"
-                  required=""
+                  required="true"
                 />
               </label>
               <div class="hidden">
@@ -295,13 +433,13 @@
                 <input
                   type="hidden"
                   name="google_client_id"
-                  value=""
+                  value="1545177109.1691918230"
                   autocomplete="off"
                 />
                 <input
                   type="hidden"
                   name="landing_id"
-                  value=""
+                  value="2108311000979732525"
                   autocomplete="off"
                 />
                 <!-- Landing_id-->
@@ -316,7 +454,12 @@
                   name="convert_in_zoho"
                   autocomplete="off"
                 />
-                <input type="hidden" name="es_id" value="" autocomplete="off" />
+                <input
+                  type="hidden"
+                  name="es_id"
+                  value="1154"
+                  autocomplete="off"
+                />
                 <input
                   type="hidden"
                   name="token"
@@ -326,13 +469,13 @@
                 <input
                   type="hidden"
                   name="success_url"
-                  value=""
+                  value="https://buildceo.bizconstructor.com/offer_2/thanks.html"
                   autocomplete="off"
                 />
                 <input
                   type="hidden"
                   name="error_url"
-                  value=""
+                  value="https://buildceo.bizconstructor.com/offer_2/thanks.html"
                   autocomplete="off"
                 />
                 <input
@@ -344,156 +487,56 @@
                 <input
                   type="hidden"
                   name="send_to_gf"
-                  value="gf_retailceo.offer"
+                  value="gf_buildceo_offer2"
                 />
               </div>
-              <button class="form__btn subm" type="submit">
-                <div class="loader">
-                  <div class="circle">
-                    <div class="dot"></div>
-                    <div class="outline"></div>
-                  </div>
-                  <div class="circle">
-                    <div class="dot"></div>
-                    <div class="outline"></div>
-                  </div>
-                  <div class="circle">
-                    <div class="dot"></div>
-                    <div class="outline"></div>
-                  </div>
-                  <div class="circle">
-                    <div class="dot"></div>
-                    <div class="outline"></div>
-                  </div>
-                </div>
-                Зареєструватися
+              <button class="form__btn btn-page subm" type="submit">
+                ЗАЛИШИТИ ЗАЯВКУ
               </button>
-              <!-- <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/'>Політикою конфіденційності</a>. <a href="http://refund.bizconstructor.com/">Політика повернення</a>
-                        </p> -->
+
+              <input type="hidden" name="rolecompany" value="" /><input
+                type="hidden"
+                name="countcompany"
+                value=""
+              /><input
+                type="hidden"
+                name="location_href"
+                value="https://buildceo.bizconstructor.com/"
+              />
             </form>
           </div>
+          <div class="hero__btn d-none" id="btn">
+            <a href="#register" class="btn btn-page btn-page--full">
+              ЗАРЕЄСТРУВАТИСЯ
+            </a>
+          </div>
+
+          <!-- <div class="hero__btn">
+            <a href="#anchor" class="btn-page btn--hero"
+              >Зареєструватися
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <circle
+                  cx="23.1378"
+                  cy="20.158"
+                  r="14.175"
+                  stroke="white"
+                  stroke-width="1.62"
+                />
+                <path
+                  d="M1.86285 19.7529C1.4155 19.7529 1.05285 20.1156 1.05285 20.5629C1.05285 21.0103 1.4155 21.3729 1.86285 21.3729V19.7529ZM28.3556 21.1357C28.6719 20.8194 28.6719 20.3065 28.3556 19.9902L23.2008 14.8354C22.8845 14.519 22.3716 14.519 22.0553 14.8354C21.739 15.1517 21.739 15.6646 22.0553 15.9809L26.6373 20.5629L22.0553 25.145C21.739 25.4613 21.739 25.9742 22.0553 26.2905C22.3716 26.6068 22.8845 26.6068 23.2008 26.2905L28.3556 21.1357ZM1.86285 21.3729H27.7829V19.7529H1.86285V21.3729Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div> -->
         </div>
       </section>
-      <div class="hero__btn">
-        <a href="#anchor" class="btn-page btn--hero btn--radius btn--fix"
-          >Зареєструватися
-        </a>
-      </div>
-      <div class="ticker">
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-      </div>
-
       <section class="format" id="format">
         <div class="format__table">
           <div class="container">
@@ -619,20 +662,21 @@
               </tr>
             </table>
             <div class="format__btns">
-              <a data-id="2108311000925062599" href="#register">Замовити</a>
-              <a data-id="2108311000940768306" href="#register">Замовити</a>
-              <a data-id="2108311000940768333 " href="#register">Замовити</a>
+              <a data-id="2108311000959276117" href="#register">Замовити</a>
+              <a data-id="2108311000979732525" href="#register">Замовити</a>
+              <a data-id="2108311000979732552 " href="#register">Замовити</a>
             </div>
           </div>
         </div>
       </section>
+
       <section class="about" id="about">
         <div class="container">
           <div class="about__content">
             <p class="about__text">
-              Ця  програма дозволить в найкоротші терміни здобути всі необхідні
-              знання та компетенції, які допоможуть тобі стати еталонним CEO для
-              своєї компанії на ринку ритейлу.
+              Цей 3-місячний курс дозволить в найкоротші терміни здобути всі
+              необхідні знання та компетенції, які допоможуть тобі стати
+              еталонним CEO для своєї компанії.
             </p>
             <ul>
               <li>3 місяці навчання в онлайн форматі</li>
@@ -642,10 +686,6 @@
               <li>Сертифікат про проходження програми</li>
             </ul>
           </div>
-          <div
-            class="about__img lazy entered loaded d-none d-xl-block"
-            data-bg="img/about-dec.png"
-          ></div>
           <h3 class="about__title">
             Так швидко
             <span
@@ -664,30 +704,121 @@
             <ul>
               <li>
                 <hr />
-                <b>Власники бізнесу у сфері роздрібної торгівлі,</b>
+                <b
+                  >Керівники <br />
+                  будівельних компаній</b
+                >
+                <p>які прагнуть вирости професійно та карʼєрно як управлінці</p>
+              </li>
+              <li>
+                <hr />
+                <b
+                  >Власники <br />
+                  будівельного бізнесу</b
+                >
                 <p>
                   які прагнуть більш ефективно керувати своїм бізнесом або
-                  виростити CEO всередині бізнесу
+                  виростити CEO всередині компанії
                 </p>
               </li>
               <li>
                 <hr />
-                <b>Підприємці, які планують розпочати бізнес у сфері ритейлу</b>
-                <p>та хочуть значно підвищити рівень власних компетенцій</p>
-              </li>
-              <li>
-                <hr />
-                <b>Управлінці компаній у сфері ритейлу,</b>
-                <p>котрі прагнуть вирости професійно та карʼєрно</p>
+                <b
+                  >Чинні CEO <br />
+                  будівельних компаній</b
+                >
+                <p>
+                  що прагнуть в короткі терміни значно підвищити рівень власних
+                  компетенцій
+                </p>
               </li>
             </ul>
           </div>
-          <div
-            class="for__img lazy entered loaded"
-            data-bg="img/for-dec.png"
-          ></div>
         </div>
       </section>
+
+      <section class="results" id="results">
+        <div class="container">
+          <h3 class="results__title">
+            ПІСЛЯ НАВЧАННЯ <span>НА ПРОГРАМІ ТИ:</span>
+          </h3>
+
+          <ul>
+            <li>
+              <strong>01</strong>
+              <p>
+                <b>Чітко зрозумієш цілі та завдання позиції СЕО </b> та значно
+                підвищиш ефективність свого робочого процесу
+              </p>
+            </li>
+            <li>
+              <strong>02</strong>
+              <p>
+                <b>Навчишся будувати стратегію компанії </b>та організовувати
+                високу дисципліну реалізації стратегічних проектів
+              </p>
+            </li>
+            <li>
+              <strong>03</strong>
+              <p>
+                <b
+                  >Сформуєш комплексне розуміння діяльності бізнесу як системи </b
+                >та навчишся налагоджувати ефективну взаємодію всіх елементів
+              </p>
+            </li>
+            <li>
+              <strong>04</strong>
+              <p>
+                <b>Навчишся тримати стратегічний фокус </b>без надмірного
+                залучення в операційні процеси
+              </p>
+            </li>
+            <li>
+              <strong>05</strong>
+              <p>
+                <b>Опануєш методи побудови сильної команди </b>та значно
+                підвищиш якість взаємодії в команді
+              </p>
+            </li>
+            <li>
+              <strong>06</strong>
+              <p>
+                <b
+                  >Впровадиш інструменти управління всіма ключовими функціями
+                  бізнесу
+                </b>
+                та навчишся будувати системні та прибуткові компанії
+              </p>
+            </li>
+          </ul>
+          <div class="results__subblock">
+            <div class="results__subtitle">
+              <span
+                >« <b>CEO</b> <br />БУДІВЕЛЬНОЇ <br />
+                КОМПАНІЇ»</span
+              >
+            </div>
+            <div class="results__subtext">
+              <p>
+                значно перевищує за своєю ефективністю та практичністю більшість
+                існуючих MBA-програм.
+              </p>
+
+              <p>
+                Всі інструменти, які ти будеш вивчати, поєднані в єдину
+                комплексну систему і викладаються в максимально практичній
+                формі.
+              </p>
+              <div class="results__btn">
+                <a href="#ankor" class="btn-page btn--radius"
+                  >ЗАРЕЄСТРУВАТИСЯ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="program" id="program">
         <div class="container">
           <h3 class="program__title"><span>структура</span> програми</h3>
@@ -699,12 +830,14 @@
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
-                <li>Модель системного бізнесу в сфері роздрібної торгівлі</li>
+                <li>Модель системного бізнесу в будівельній галузі</li>
                 <li>Діагностика поточного стану компанії</li>
                 <li>Дорожня карта розвитку бізнесу</li>
                 <li>Функціонал та компетенції ефективного CEO</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">02</p>
@@ -719,17 +852,21 @@
                 </li>
                 <li>Робота з персональним асистентом</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">03</p>
               <h4 class="item__title">
-                Стратегія бізнесу і бізнес-планування в ритейлі
+                Стратегія бізнесу та бізнес-планування
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
-                <li>Бізнес-модель та product-market fit в ритейлі</li>
-                <li>Стратегія масштабування бізнесу</li>
+                <li>
+                  Бізнес-модель та product-market fit в будівельній галузі
+                </li>
+                <li>Стратегія масштабування компанії</li>
                 <li>Ринок та цільовий споживач</li>
                 <li>Методи дослідження ринку</li>
                 <li>
@@ -741,47 +878,42 @@
                 <li>Сегментація цільової аудиторії та продуктів компанії</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Тарас Середюк
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">04</p>
               <h4 class="item__title">
-                Система залучення та втримання клієнтів у сфері роздрібної
-                торгівлі
+                Система залучення та утримання клієнтів
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>
-                  Стратегія залучення та утримання клієнтів у сфері роздрібної
-                  торгівлі
+                  Стратегія залучення та утримання клієнтів у будівельній галузі
                 </li>
                 <li>Inbound та outbound підходи у залученні клієнтів</li>
                 <li>Brand-маркетинг та performance-маркетинг</li>
                 <li>Юніт-економіка та моделювання маркетингових воронок</li>
                 <li>Сучасні інструменти Інтернет-маркетингу</li>
-                <li>Е-Commerce та управління інтернет-магазином</li>
                 <li>Управління продажами та CRM</li>
                 <li>Методологія утримання клієнтів та збільшення LTV</li>
-                <li>Програми лояльності</li>
-                <li>Управління трафіком</li>
                 <li>Відмінність продажів у B2C та B2B сегментах</li>
                 <li>Технології та стандарти продажів</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Євген Клопотенко
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">05</p>
               <h4 class="item__title">
-                Організаційна структура і регламентація зон відповідальності
+                Організаційна структура та регламентація зон відповідальності
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>
                   Основні принципи побудови ефективної організаційної структури
-                  в ритейлі
+                  в будівельному бізнесу
                 </li>
                 <li>
                   Види організаційних структур в залежності від діяльності та
@@ -799,38 +931,41 @@
                   Карти посади та очікувані результати роботи співробітників
                 </li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">06</p>
               <h4 class="item__title">
-                Бізнес-процеси і організація ефективної взаємодії в команді в
-                ритейлі
+                Бізнес-процеси та організація ефективної взаємодії у команді
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>Опис бізнес-процесів</li>
                 <li>Формат BPMN 2.0</li>
+                <li>Впровадження SOP (Standard Operating Procedures)</li>
                 <li>Принцип внутрішнього клієнта</li>
-
                 <li>Підвищення якості взаємодії у команді</li>
                 <li>
                   Як привчити команду працювати за встановленими процесами
                 </li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Євген Чернишенко
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">07</p>
               <h4 class="item__title">
-                HR-менеджмент і розвиток корпоративної культури
+                HR-менеджмент та розвиток корпоративної культури
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>Роль HR-функції у компанії</li>
-                <li>Специфіка функції управління торгівельним персоналом</li>
+                <li>
+                  Специфіка функції управління персоналом в будівельному бізнесі
+                </li>
                 <li>Управління якісним складом команди</li>
                 <li>HR-директор та його функціонал</li>
                 <li>Ефективний процес рекрутингу</li>
@@ -843,7 +978,9 @@
                 <li>Побудова автоматизованої системи адаптації в LMS</li>
                 <li>Звільнення співробітників</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">08</p>
@@ -858,14 +995,14 @@
                 <li>Оцінка та розвиток персоналу</li>
                 <li>Використання грейдів у розвитку команди</li>
                 <li>Корпоративна культура та принципи її формування</li>
-                <li>Принципи управління лінійним персоналом</li>
+                <li>Принципи управління робочим персоналом</li>
                 <li>Розвиток керівників</li>
                 <li>Ситуаційне лідерство</li>
                 <li>Система адаптації нових керівників</li>
                 <li>Впровадження принципу "другого пілота"</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Дмитро Запорожець
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
@@ -886,13 +1023,13 @@
                 <li>Особистий бренд СЕО</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Дмитро Борисов
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">10</p>
               <h4 class="item__title">
-                Performance-маркетинг і управління продажами в ритейлі
+                Performance-маркетинг та управління продажами
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
@@ -904,30 +1041,21 @@
                 </li>
                 <li>Inbound та Outbound підходи до залучення клієнтів</li>
                 <li>Воронка залучення клієнтів</li>
-                <li>Управління трафіком</li>
-                <li>Управління асортиментом</li>
-                <li>Категорійний менеджмент</li>
-                <li>Мерчендайзинг та викладка товару</li>
-                <li>Програми лояльності</li>
-                <li>
-                  Управління продажами (і/чи клієнтський сервіс) в торговому
-                  залі
-                </li>
-                <li>Інструменти впливу на збільшення обсягів продажів</li>
                 <li>Аналітика і управління маркетинговим бюджетом</li>
-
                 <li>Функція продажів та лідогенерація</li>
-                <li>Відділ продажів в структурі компанії</li>
+                <li>Відділ продажів у структурі компанії</li>
                 <li>Робота з CRM</li>
                 <li>Технології та стандарти продажів</li>
                 <li>Юніт-економіка</li>
                 <li>Утримання клієнтів та управління зростанням LTV</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">11</p>
-              <h4 class="item__title">Управління фінансами в ритейлі</h4>
+              <h4 class="item__title">Управління фінансами</h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>Основні помилки в управлінні фінансами компанії</li>
@@ -944,18 +1072,20 @@
                   Звіт про рух грошових коштів (Cashflow) та управління
                   ліквідністю бізнесу
                 </li>
-                <li>Специфіка ведення управлінської звітності в ритейл</li>
+                <li>
+                  Специфіка ведення управлінської звітності в будівельній галузі
+                </li>
                 <li>Фінансова модель компанії</li>
                 <li>Фінансове планування та бюджетування</li>
                 <li>Фінансовий аналіз</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Олександр Савілов
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">12</p>
-              <h4 class="item__title">Операційне управління в ритейлі</h4>
+              <h4 class="item__title">Операційне управління</h4>
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>Регулярний менеджмент</li>
@@ -965,13 +1095,13 @@
                 <li>Забезпечення дисципліни виконання завдань</li>
               </ul>
               <div class="item__speaker">
-                Експерти – Кирило Куницький, Олена Борисова
+                <span>Спікер: </span>Кирило Куницький
               </div>
             </div>
             <div class="item">
               <p class="item__number">13</p>
               <h4 class="item__title">
-                Стратегічне планування і забезпечення дисципліни реалізації
+                Стратегічне планування та забезпечення дисципліни реалізації
                 стратегії
               </h4>
               <div class="item__more"></div>
@@ -980,12 +1110,14 @@
                 <li>Бачення майбутнього компанії та CEO view</li>
                 <li>Підготовка і проведення стратегічної сесії</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">14</p>
               <h4 class="item__title">
-                Залучення інвестицій <span> [пакет участі PRO, PREMIUM]</span>
+                Залучення інвестицій <span>[пакет участі PRO, PREMIUM]</span>
               </h4>
               <div class="item__more"></div>
               <ul class="item__info">
@@ -996,7 +1128,9 @@
                 <li>Правила побудови відносин з інвесторами</li>
                 <li>Продаж бізнесу</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">15</p>
@@ -1006,8 +1140,7 @@
               <div class="item__more"></div>
               <ul class="item__info">
                 <li>
-                  Сценарії міжнародного масштабування бізнесу в сфері роздрібної
-                  торгівлі
+                  Сценарії міжнародного масштабування будівельного бізнесу
                 </li>
                 <li>Вибір географії та макроекономічний аналіз країн</li>
                 <li>Побудова міжнародних продажів віддалено</li>
@@ -1016,7 +1149,9 @@
                   Відкриття та розвиток повноцінного філіалу в іншій країні
                 </li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">16</p>
@@ -1034,7 +1169,9 @@
                   exit-інтерв'ю
                 </li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
+              </div>
             </div>
             <div class="item">
               <p class="item__number">17</p>
@@ -1048,61 +1185,37 @@
                 <li>Agile та SCRUM</li>
                 <li>Автоматизація управління проєктами</li>
               </ul>
-              <div class="item__speaker">Експерт – Кирило Куницький</div>
-            </div>
-
-            <!-- <div class="item">
-              <p class="item__number item__number--bonus">БОНУС!</p>
-              <h4 class="item__title">
-                <span>[пакет участі PRO] </span>Юридичні аспекти для СЕО
-                ресторанного бізнесу
-              </h4>
-              <div class="item__more"></div>
-              <ul class="item__info">
-                <li>Дозвільні та інші документи, які потрібні в закладі</li>
-                <li>HACCP та харчова безпека в закладі</li>
-                <li>Перевірки державних органів та їх супроводження</li>
-              </ul>
-              <div class="item__speaker item__speaker--bonus">
-                Галузеві експерти – Євген Комаров, Олександр Григорчук, Михайло
-                Носалик
+              <div class="item__speaker">
+                <span>Спікер: </span>Кирило Куницький
               </div>
-            </div> -->
+            </div>
           </div>
+        </div>
+      </section>
 
-          <section class="methodology" id="methodology">
-            <div class="methodology__content">
-              <div class="methodology__block">
-                <div class="methodology__title">
-                  Авторська методологія <br />
-                  <span>та система навчання</span>
-                </div>
-                <div class="methodology__text">
-                  <p>
-                    дозволять у найкоротший термін значно підняти рівень власних
-                    компетенцій, що призведе до миттєвого зростання вашого
-                    бізнесу.
-                  </p>
-                </div>
-              </div>
-              <div class="methodology__btn">
-                <p>Залишай заявку, щоб забронювати участь.</p>
-                <a href="#anchor" class="btn-page btn--radius"
-                  >ЗАРЕЄСТРУВАТИСЯ</a
-                >
-              </div>
+      <section class="methodology" id="methodology">
+        <div class="container">
+          <div class="methodology__content">
+            <div class="methodology__title">
+              Авторська методологія <b>та система навчання</b>
             </div>
-          </section>
+            <div class="methodology__text">
+              <p>
+                дозволять у найкоротший термін значно підняти рівень власних
+                компетенцій, що призведе до миттєвого зростання вашого бізнесу.
+              </p>
+              <p>Залишай заявку, щоб забронювати участь.</p>
+            </div>
+          </div>
+          <div class="methodology__btn">
+            <a href="#anchor" class="btn-page btn--radius">ЗАРЕЄСТРУВАТИСЯ</a>
+          </div>
         </div>
       </section>
 
       <section class="speakers" id="speakers">
-        <!-- <div
-          class="speakers__img lazy entered loaded d-none d-xl-block"
-          data-bg="img/speakers-dec.png"
-        ></div> -->
         <div class="container">
-          <h3 class="speakers__title"><span>експерти</span> програми</h3>
+          <h3 class="speakers__title"><span>експерти </span> програми</h3>
 
           <div class="speakers__list">
             <div class="speakers__item speaker speaker--main">
@@ -1126,33 +1239,18 @@
             <div class="speakers__item speaker">
               <div
                 class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-2.jpeg"
+                data-bg="img/speaker-2.jpg"
               ></div>
               <div class="speaker__body">
                 <div class="speaker__block">
                   <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Олексій <br />
-                    Гулий
-                  </div>
-                  <div class="speaker__list">
-                    <li>
-                      Founder мережі магазинів техніки та аксесуарів «Техно
-                      Їжак»
-                    </li>
-                  </div>
-
-                  <!-- <div class="speaker__name">Дмитро Запорожець</div>
+                  <div class="speaker__name">Анна Попруга</div>
                   <ul class="speaker__list">
                     <li>
-                      власник київських ресторанів «ЖЗЛ» і «Улюблений дядя»,
-                      «Італійська Редакція», «Eastman», «Electron», ще семи
-                      закладів в Харкові, а також «Villa Space» на Шрі-Ланці
+                      Marketing&Lease Director, KAN Development (ЖК "Паркове
+                      Місто", "Комфорт Таун" та інші)
                     </li>
-                    <li>
-                      засновник сім'ї ресторанів і готелів First Line Group
-                    </li>
-                  </ul> -->
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1160,66 +1258,100 @@
             <div class="speakers__item speaker">
               <div
                 class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-3.jpeg"
+                data-bg="img/speaker-3.jpg"
               ></div>
               <div class="speaker__body">
                 <div class="speaker__block">
                   <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Микола <br />
-                    Чумак
-                  </div>
-                  <div class="speaker__list">
-                    <li>Співвласник та CEO IDNT</li>
-                  </div>
-
-                  <!-- <div class="speaker__name">Микола 
-Чумак</div>
+                  <div class="speaker__name">Дар'я Шкуренко</div>
                   <ul class="speaker__list">
                     <li>
-                      співвласник ресторанів «MAFIA», «CASTA», «Georgia», «BAO»,
-                      «NAM»
+                      Співзасновниця та керуючий партнер консалтингової агенції
+                      "NO matter"
                     </li>
 
                     <li>
-                      творець документального фільму «Гуманітарний ресторан»
+                      Екс-заступник комерційного директора SAGA Development
                     </li>
-                  </ul> -->
+                    <li>Спікер DIM.RIA та address.ua</li>
+                  </ul>
                 </div>
               </div>
             </div>
+
             <div class="speakers__item speaker speaker--reverse">
               <div
                 class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-4.jpeg"
+                data-bg="img/speaker-4.jpg"
               ></div>
               <div class="speaker__body">
                 <div class="speaker__block">
                   <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Олена <br />
-                    Коронотова
-                  </div>
+                  <div class="speaker__name">Дмитро Васильєв</div>
                   <ul class="speaker__list">
-                    <li>Співвласниця та Керуюча Партнерка IDNT</li>
+                    <li>
+                      СЕО та головний архітектор Archimatika (ЖК "Файна Таун",
+                      ЖК "Республіка", ЖК "Комфорт Таун" та інші)
+                    </li>
                   </ul>
-
-                  <!-- <div class="speaker__name">Дмитро Борисов</div>
-                  <ul class="speaker__list">
-                    <li>
-                      бізнесмен, власник, бренд-шеф – food tech компаній
-                      «Ресторани Дмитра Борисова», «GastroFamily», «GastroFamily
-                      Franchising», «Borysov Academy» (64 ресторани, франшиза)
-                    </li>
-                    <li>
-                      керівник проектів в 29 містах України, Польщі, Чехії,
-                      Німеччини, Португалії, Канади
-                    </li>
-                  </ul> -->
                 </div>
               </div>
             </div>
 
+            <div class="speakers__item speaker speaker--reverse">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-5.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Павло Чиклікчи</div>
+                  <ul class="speaker__list">
+                    <li>Власник ТОВ "Агро Інвест Брусилів"</li>
+                    <li>Співзасновник компанії CorQ</li>
+                    <li>Керівник проектів KAN Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="speakers__item speaker">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-6.jpg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Володимир Лімаков</div>
+                  <ul class="speaker__list">
+                    <li>Засновник і керуючий партнер Riviera Village</li>
+
+                    <li>Екс-голова казначейства Citigroup в Україні</li>
+                    <li>
+                      Регіональний керівник відділу деривативів і структурованих
+                      продуктів
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="speakers__item speaker">
+              <div
+                class="speaker__photo lazy entered loaded"
+                data-bg="img/speaker-7.jpeg"
+              ></div>
+              <div class="speaker__body">
+                <div class="speaker__block">
+                  <div class="speaker__info">Галузевий експерт</div>
+                  <div class="speaker__name">Олена Мурадян</div>
+                  <ul class="speaker__list">
+                    <li>СЕО групи компаній бренду "SHELEST"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="speakers__item speaker speaker--reverse">
               <div
                 class="speaker__photo lazy entered loaded"
@@ -1228,374 +1360,125 @@
               <div class="speaker__body">
                 <div class="speaker__block">
                   <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Сергій <br />
-                    Костецький
-                  </div>
-                  <div class="speaker__list">
-                    <li>засновник українського бренду базового одягу SOLMAR</li>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="speakers__item speaker">
-              <div
-                class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-9.jpeg"
-              ></div>
-              <div class="speaker__body">
-                <div class="speaker__block">
-                  <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Степан <br />
-                    Слинчук
-                  </div>
-                  <div class="speaker__list">
-                    <li>
-                      Виконавчий директор ювелірного дому SOVA, бренду ювелірних
-                      подарунків LOVE YOU
-                    </li>
-                  </div>
-
-                  <!-- <div class="speaker__name">Дмитро Борисов</div>
+                  <div class="speaker__name">Євген Кудрявченко</div>
                   <ul class="speaker__list">
                     <li>
-                      бізнесмен, власник, бренд-шеф – food tech компаній
-                      «Ресторани Дмитра Борисова», «GastroFamily», «GastroFamily
-                      Franchising», «Borysov Academy» (64 ресторани, франшиза)
+                      Засновник Vintage Web Production (серед клієнтів: DIM,
+                      Ковальска, Дія, Socar, Okko, Ощадбанк, Toyota, Lexus,
+                      Novus, PocketBook, Laba, ПУМБ, Чорноморка, Sweet.Tv,
+                      Danone, BODO, Helen Marlen, Guzema та інші)
                     </li>
-                    <li>
-                      керівник проектів в 29 містах України, Польщі, Чехії,
-                      Німеччини, Португалії, Канади
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-            <div class="speakers__item speaker">
-              <div
-                class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-5.jpeg"
-              ></div>
-              <div class="speaker__body">
-                <div class="speaker__block">
-                  <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    НАДІЯ <br />
-                    БАДЕР-БАЄР
-                  </div>
-                  <div class="speaker__list">
-                    <li>
-                      екс-СМО в Prostor, Цитрус, Дім Комфорт (Казахстан),
-                      Техномарт (Узбекистан)
-                    </li>
-                    <li>керуючий партнер Suzirya Kazakhstan</li>
-                  </div>
-
-                  <!-- <div class="speaker__name">Дмитро Борисов</div>
-                  <ul class="speaker__list">
-                    <li>
-                      бізнесмен, власник, бренд-шеф – food tech компаній
-                      «Ресторани Дмитра Борисова», «GastroFamily», «GastroFamily
-                      Franchising», «Borysov Academy» (64 ресторани, франшиза)
-                    </li>
-                    <li>
-                      керівник проектів в 29 містах України, Польщі, Чехії,
-                      Німеччини, Португалії, Канади
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-            <div class="speakers__item speaker speaker--reverse">
-              <div
-                class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-6.jpeg"
-              ></div>
-              <div class="speaker__body">
-                <div class="speaker__block">
-                  <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Маріанна <br />
-                    Самсонова
-                  </div>
-                  <ul class="speaker__list">
-                    <li>Cпіввласниця мережі магазинів USUPSO та O!SOME</li>
-                    <li>експерт з побудови Ритейл-мережі</li>
+                    <li>Засновник Ukrainian Digital Community</li>
                   </ul>
-
-                  <!-- <div class="speaker__name">Микола 
-Чумак</div>
-                  <ul class="speaker__list">
-                    <li>
-                      співвласник ресторанів «MAFIA», «CASTA», «Georgia», «BAO»,
-                      «NAM»
-                    </li>
-
-                    <li>
-                      творець документального фільму «Гуманітарний ресторан»
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-            <div class="speakers__item speaker speaker--reverse">
-              <div
-                class="speaker__photo lazy entered loaded"
-                data-bg="img/speaker-11.jpg"
-              ></div>
-              <div class="speaker__body">
-                <div class="speaker__block">
-                  <div class="speaker__info">Галузевий експерт</div>
-                  <div class="speaker__name">
-                    Ольга <br />
-                    Павлова
-                  </div>
-                  <ul class="speaker__list">
-                    <li>
-                      Експертка з візуального мерчендайзингу, засновниця
-                      компанії ARTLEVEL, Першої Школи Мерчендайзингу в Україні
-                      та Клубу Ритейлерів.
-                    </li>
-                  </ul>
-
-                  <!-- <div class="speaker__name">Микола 
-Чумак</div>
-                  <ul class="speaker__list">
-                    <li>
-                      співвласник ресторанів «MAFIA», «CASTA», «Georgia», «BAO»,
-                      «NAM»
-                    </li>
-
-                    <li>
-                      творець документального фільму «Гуманітарний ресторан»
-                    </li>
-                  </ul> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="ticker">
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-        <div class="ticker__string">
-          <span class="ticker__icon">
-            <svg
-              width="36"
-              height="37"
-              viewBox="0 0 36 37"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M36 23.9607V16.5971L32.3501 14.1426V6.36985L24.7188 1.46076L20.5714 4.48803L14.4332 0.642578L7.21659 5.87894V7.5153L0 12.8335V20.1971L4.14746 22.8971V30.9152L11.7788 35.8243L16.0922 32.7153L22.2305 36.6426L29.4469 31.4062V28.9517L36 23.9607ZM7.79723 14.1426V8.25166L13.6037 3.99712V9.96985L7.79723 14.1426ZM14.5161 9.88802V3.9153L21.152 8.25166V13.9789L14.5161 9.88802ZM8.37787 26.6608L14.4332 22.2425L20.8203 26.3335L14.765 30.7516L8.37787 26.6608ZM13.9355 15.6971V21.5062L8.04608 25.8425V20.0335L13.9355 15.6971ZM8.04608 14.9608L14.1014 10.6244L20.8203 14.6335L18.0829 16.6789L14.4332 14.388L11.0322 16.8426L8.04608 14.9608ZM7.13363 23.879L1.16129 19.9517L7.29953 15.5335L10.2857 17.3334L7.13363 19.6243V23.879ZM21.0691 23.3063V25.5153L14.8479 21.5062V15.6153L17.6682 17.4153V21.097L21.0691 23.3063ZM6.96774 8.8244V14.7153L0.912442 19.0516V13.2426L6.96774 8.8244ZM15.2627 32.1426L11.6958 34.7608L5.30875 30.6699L8.87557 28.0517L15.2627 32.1426ZM28.2028 31.1607L22.1474 35.579L15.4286 31.2426L21.4838 26.8244L28.2028 31.1607ZM32.3501 21.3425V15.2062L35.1704 17.0881V22.9789L32.3501 21.3425ZM25.1337 8.8244V2.76985L31.4378 6.86076V13.0789L25.1337 8.8244ZM25.1337 15.7789V9.80622L31.4378 13.9789V19.788L29.9446 18.8063L25.1337 15.7789ZM31.1889 20.6881L25.2166 25.0245L18.8294 20.9334L24.7188 16.5971L31.1889 20.6881ZM21.8985 23.879L25.2166 26.0061L28.5345 23.6335V24.4517V30.4244L21.8985 26.1698V23.879ZM31.2719 21.6698L34.8386 23.7971L29.4469 27.8062V24.0426V22.9789L31.2719 21.6698ZM19.8249 5.06075L18.9124 5.71531L14.8479 3.09713V1.86985L19.8249 5.06075Z"
-              ></path>
-            </svg>
-          </span>
-          <span>Бізнес-Конструктор</span>
-        </div>
-      </div>
-      <section class="results" id="results">
+
+      <!-- <section class="packages" id="packages">
         <div class="container">
-          <h3 class="results__title">
-            <span>ПІСЛЯ НАВЧАННЯ</span> НА ПРОГРАМІ ТИ:
-          </h3>
-
-          <ul>
-            <li>
-              <strong>01</strong>
-              <p>
-                <b>Чітко зрозумієш цілі та завдання позиції СЕО</b> та значно
-                піднімеш ефективність свого робочого процесу
-              </p>
-            </li>
-            <li>
-              <strong>02</strong>
-              <p>
-                <b>Навчишся будувати стратегію компанії</b> та організовувати
-                високу дисципліну реалізації стратегічних проектів
-              </p>
-            </li>
-            <li>
-              <strong>03</strong>
-              <p>
-                <b
-                  >Сформуєш комплексне розуміння діяльності бізнесу як
-                  системи</b
-                >
-                та навчишся налагоджувати ефективну взаємодію всіх елементів
-              </p>
-            </li>
-            <li>
-              <strong>04</strong>
-              <p>
-                <b>Навчишся тримати стратегічний фокус</b> без надмірного
-                залучення в операційні процеси
-              </p>
-            </li>
-            <li>
-              <strong>05</strong>
-              <p>
-                <b>Опануєш методи побудови&nbsp;сильної команди</b> та значно
-                підвищиш якість взаємодії в команді
-              </p>
-            </li>
-            <li>
-              <strong>06</strong>
-              <p>
-                <b
-                  >Впровадиш інструменти управління всіма ключовими функціями
-                  бізнесу</b
-                >
-                та навчишся будувати системні та прибуткові компанії
-              </p>
-            </li>
-          </ul>
-          <div class="results__subblock" id="hidde">
-            <div class="results__subtitle">
-              <strong>Програма</strong>
-              <span
-                ><b
-                  >«Retail <br />
-                  CEO»</b
-                >
-                <br
-              /></span>
-            </div>
-            <div class="results__subtext">
-              <p>
-                значно перевищує за своєю ефективністю та практичністю більшість
-                існуючих MBA-програм.
-              </p>
-
-              <p>
-                Всі інструменти, які ти будеш вивчати, поєднані в єдину
-                комплексну систему та викладаються в максимально практичній
-                формі.
-              </p>
-              <div class="results__btn">
-                <a href="#anchor" class="btn-page btn--radius"
-                  >ЗАРЕЄСТРУВАТИСЯ</a
-                >
+          <h2 class="packages__title"><span>ФОРМАТ УЧАСТІ</span> В ПРОГРАМІ</h2>
+          <div class="packages__items">
+            <div
+              class="item item--core core_price active__button__id tabs__tab--active"
+              data-id="2108311000959276117"
+            >
+              <div class="item__header">
+                <p class="item__title">CORE</p>
               </div>
+              <ul class="item__info">
+                <li><b>3 місяці</b> навчання в онлайн-форматі</li>
+                <li><b>13 модулів програми</b></li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом
+                  <b>протягом 3-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(12 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(3 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми 3&nbsp;місяцi після її
+                  завершення
+                </li>
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--core"
+                id="btn-core"
+                href="#anchor"
+                data-package="core"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
+            </div>
+
+            <div class="item item--pro pro_price" data-id="2108311000979732525">
+              <div class="item__header">
+                <p class="item__title">PRO</p>
+              </div>
+              <ul class="item__info">
+                <li><b>4 місяці навчання в онлайн-форматі</b></li>
+                <li><b>17 модулів програми</b></li>
+                <li>Доступ до бібліотеки практичних матеріалів та шаблонів</li>
+                <li>
+                  Супровід персональним бізнес-консультантом протягом
+                  <b>4-х місяців</b>
+                </li>
+                <li>
+                  Щотижневий розбір кейсів з Кирилом Куницьким
+                  <b>(16 онлайн-зустрічей)</b>
+                </li>
+                <li>
+                  Участь в майстер-майндах по колективному знаходженню рішень
+                  поточних задач <b>(4 онлайн-зустрічі)</b>
+                </li>
+                <li>
+                  Спілкування з іншими учасниками в закритій групі в Telegram
+                </li>
+                <li>
+                  Додатковий доступ до програми 4&nbsp;місяці після її
+                  завершення
+                </li>
+              </ul>
+              <a
+                class="item__btn btn-page btn--radius btn--pro"
+                id="btn-pro"
+                href="#anchor"
+                data-package="pro"
+                >ЗАРЕЄСТРУВАТИСЯ</a
+              >
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="register" id="register">
         <div class="container">
           <h3 class="register__title">
-            Навчись будувати системну компанію та стань <br />
-            кращим CEO у галузі ритейлу
+            Навчись будувати системну компанію та стань кращим CEO у своїй
+            галузі
           </h3>
           <div class="block">
             <div class="block__content">
               <p class="block__title">ЗАЛИШ <b>ЗАЯВКУ</b></p>
               <p class="block__subtitle">
-                НА ПРОГРАМУ <span>«Retail CEO»</span> НА СПЕЦІАЛЬНИХ УМОВАХ
+                НА ПРОГРАМУ <br />«CEO БУДІВЕЛЬНОЇ КОМПАНІЇ» <br /><b
+                  >НА СПЕЦІАЛЬНИХ УМОВАХ</b
+                >
               </p>
               <ul class="block__info">
                 <li><p>Онлайн</p></li>
                 <li><p>3 місяці</p></li>
-                <!-- <li><p class="cDate">16 листопада</p></li> -->
+                <!-- <li><p class="cDate">17 жовтня</p></li> -->
               </ul>
             </div>
             <div class="block__form">
@@ -1610,76 +1493,67 @@
                 data-gtm-vis-has-fired-8399674_49="1"
               >
                 <div class="loader"></div>
-                <p class="form__title">Реєстрація</p>
                 <ul class="form__package">
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab core_price"
-                      data-id="2108311000945081001"
+                      data-id="2108311000959276117"
                     >
                       <span>CORE</span>
                     </div>
                   </li>
                   <li>
                     <div
-                      class="packages-btns__pack-name tabs__tab pro_price"
-                      data-id="2108311000945081076"
+                      class="packages-btns__pack-name tabs__tab pro_price active__button__id tabs__tab--active"
+                      data-id="2108311000979732525"
                     >
                       <span>PRO</span>
                     </div>
                   </li>
                   <li>
                     <div
-                      class="packages-btns__pack-name tabs__tab premium_price"
-                      data-id=""
+                      class="packages-btns__pack-name tabs__tab premium_price active__button__id tabs__tab--active"
+                      data-id="2108311000979732552"
                     >
                       <span>PREMIUM</span>
                     </div>
                   </li>
                 </ul>
-                <label class="form__input input__wrap">
+
+                <p class="form__title">Реєстрація</p>
+                <label class="input__wrap">
+                  <div class="intl-tel-input allow-dropdown">
+                    <input
+                      class="input"
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="Твій номер телефону"
+                      required="true"
+                      autocomplete="off"
+                    />
+                  </div>
+                </label>
+                <label class="input__wrap">
                   <input
                     class="input"
                     name="name"
                     type="text"
                     placeholder="Твоє ім’я"
-                    required=""
-                  />
-                  <!-- <input
-                    class="hidden-name-input input"
-                    type="text"
-                    name="name"
                     required="true"
-                    autocomplete="off"
-                    value="Unknow User"
-                  /> -->
+                  />
                 </label>
-                <label class="form__input input__wrap">
-                  <!-- <span class="input__label">Номер телефону:</span> -->
-                  <div class="intl-tel-input allow-dropdown">
-                    <input
-                      class="input phone"
-                      id="phone"
-                      type="tel"
-                      name="phone"
-                      required="true"
-                      inputmode="tel"
-                      autocomplete="off"
-                      placeholder="Твій номер телефону"
-                    />
-                  </div>
-                </label>
-                <label class="form__input">
-                  <!-- <span class="input__label">Email:</span> -->
+
+                <label class="input__wrap">
                   <input
-                    class="input email"
-                    type="email"
+                    class="input"
                     name="email"
+                    type="email"
                     placeholder="Твій email"
                     required="true"
                   />
                 </label>
-                <div class="form__hidden hidden">
+                <div class="hidden">
                   <input type="hidden" name="ref" value="" autocomplete="off" />
                   <input type="hidden" name="ga" value="" autocomplete="off" />
                   <input
@@ -1727,9 +1601,10 @@
                   <input
                     type="hidden"
                     name="landing_id"
-                    value="2108311000756773961"
+                    value="2108311000979732525"
                     autocomplete="off"
                   />
+                  <!-- Landing_id-->
                   <input
                     type="hidden"
                     name="es_mail_id"
@@ -1744,7 +1619,7 @@
                   <input
                     type="hidden"
                     name="es_id"
-                    value=""
+                    value="1154"
                     autocomplete="off"
                   />
                   <input
@@ -1756,13 +1631,13 @@
                   <input
                     type="hidden"
                     name="success_url"
-                    value="https://retailceo.bizconstructor.com/offer/thanks.html"
+                    value="https://buildceo.bizconstructor.com/offer_2/thanks.html"
                     autocomplete="off"
                   />
                   <input
                     type="hidden"
                     name="error_url"
-                    value=""
+                    value="https://buildceo.bizconstructor.com/offer_2/thanks.html"
                     autocomplete="off"
                   />
                   <input
@@ -1774,7 +1649,7 @@
                   <input
                     type="hidden"
                     name="send_to_gf"
-                    value="gf_retailceo.offer"
+                    value="gf_buildceo_offer2"
                   />
                 </div>
                 <button class="form__btn btn-page subm" type="submit">
@@ -1804,10 +1679,6 @@
       </section>
 
       <section class="how" id="how">
-        <div
-          class="how__img lazy entered loaded d-none d-xl-block"
-          data-bg="img/how-dec.png"
-        ></div>
         <div class="container">
           <div class="how__title">ЯК ПРОХОДИТЬ НАВЧАННЯ</div>
 
@@ -1857,18 +1728,70 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
 
-          <div class="how__btn">
-            <a href="#anchor" class="btn-page">ХОЧУ НА ПРОГРАМУ</a>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="title title--big">
+            Вас також можуть <span>зацікавити програми:</span>
+          </h2>
+          <div class="projects__content">
+            <div
+              class="projects__item lazy"
+              data-bg="img/projects-photo-1-min.jpg"
+            >
+              <a
+                class="projects__link"
+                href="https://chief.bizconstructor.com/new/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+              ></a>
+              <a
+                href="https://chief.bizconstructor.com/new/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+                class="projects__btn"
+              >
+                Детальніше
+                <span></span>
+              </a>
+            </div>
+            <div
+              class="projects__item lazy"
+              data-bg="img/projects-photo-2-min.jpg"
+            >
+              <a
+                class="projects__link"
+                href="https://ba.bizconstructor.com/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+              ></a>
+              <a
+                href="https://ba.bizconstructor.com/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+                class="projects__btn"
+                >Детальніше <span></span
+              ></a>
+            </div>
+            <div
+              class="projects__item lazy"
+              data-bg="img/projects-photo-3-min.jpg"
+            >
+              <a
+                class="projects__link"
+                href="https://crm.bizconstructor.com/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+              ></a>
+              <a
+                href="https://crm.bizconstructor.com/?utm_source=landing&utm_medium=BUDCEO&utm_campaign=recommandation_block"
+                target="_blank"
+                class="projects__btn"
+                >Детальніше <span></span
+              ></a>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="company" id="company">
-        <div
-          class="company__img lazy entered loaded d-none d-xl-block"
-          data-bg="img/company-dec.png"
-        ></div>
         <div class="container">
           <h2 class="company__title">
             <span>ПРО НАС</span><b>«Бізнес- <i>Конструктор»</i></b>
@@ -1909,6 +1832,14 @@
             <div class="swiper-wrapper">
               <div
                 class="swiper-slide logo lazy"
+                data-bg="img/clients/3.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/5.jpg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
                 data-bg="img/clients/1.png"
               ></div>
               <div
@@ -1917,31 +1848,93 @@
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/3.png"
+                data-bg="img/clients/BD-Holding.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/4.png"
+                data-bg="img/clients/6.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/5.png"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/6.jpeg"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/7.png"
+                data-bg="img/clients/7.svg"
               ></div>
               <div
                 class="swiper-slide logo lazy"
                 data-bg="img/clients/8.png"
               ></div>
+              <!-- <div class="swiper-slide logo lazy" data-bg="img/clients/9.svg"></div> -->
+
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/9.png"
+                data-bg="img/clients/00.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/04.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/01.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/ohmylook.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/02.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/atan.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/03.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/castrofamily.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/05.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/moyo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/06.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/megogo.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/07.webp"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/sherif.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/08.jpg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/kyrag.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/09.svg"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/atan.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
@@ -1949,11 +1942,32 @@
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/11.webp"
+                data-bg="img/clients/ohmylook.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/11.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/castrofamily.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
                 data-bg="img/clients/12.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/kino.png"
+              ></div>
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/13.png"
+              ></div>
+
+              <div
+                class="swiper-slide logo lazy"
+                data-bg="img/clients/14.png"
               ></div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -1963,18 +1977,6 @@
       </section>
 
       <section class="footer" id="footer">
-        <div
-          class="footer__decor footer__decor--1 lazy entered loaded"
-          data-bg="img/footer__decor--1.png"
-          data-ll-status="loaded"
-          style="background-image: url('img/footer__decor--1.png')"
-        ></div>
-        <div
-          class="footer__decor footer__decor--2 lazy entered loaded"
-          data-bg="img/footer__decor--2.png"
-          data-ll-status="loaded"
-          style="background-image: url('img/footer__decor--2.png')"
-        ></div>
         <div class="footer__container">
           <div class="footer__menu">
             <h5 class="footer__menu_title">Корисно</h5>
@@ -2133,20 +2135,18 @@
     <script>
       $(document).ready(function () {
         // Дата мероприятия
-        let cDate = "16 листопада ",
+        let cDate = "17 жовтня",
           // Landing id // Online
-          cLandingId = "2108311000945081001",
+          cLandingId = "2108311000959276117",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000945081076",
-          // Landing id // Online Premium
-          cLandingIdPremium = "2108311000945081103",
+          cLandingIdPro = "2108311000979732525",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
           cSuccess_url =
-            "https://retailceo.bizconstructor.com/offer/thanks.html";
+            "https://buildceo.bizconstructor.com/offer_2/thanks.html";
 
         //  дата скидки (автозамена)
         let dataDeadline;
@@ -2164,9 +2164,6 @@
         }
         if (cLandingIdPro !== "id") {
           $(".pro_price").attr("data-id", cLandingIdPro);
-        }
-        if (cLandingIdPremium !== "id") {
-          $(".premium_price").attr("data-id", cLandingIdPremium);
         }
         if (cMail_id !== "es_mail_id") {
           $("input[name='es_mail_id']").val(cMail_id);
@@ -2198,13 +2195,13 @@
       });
 
       // Настройка собитыий при клике на кнопки пакета
-      // $("#btn-core").click(function () {
-      //   $(".packages-btns__pack-name.core_price").click();
-      // });
+      $("#btn-core").click(function () {
+        $(".packages-btns__pack-name.core_price").click();
+      });
 
-      // $("#btn-pro").click(function () {
-      //   $(".packages-btns__pack-name.pro_price").click();
-      // });
+      $("#btn-pro").click(function () {
+        $(".packages-btns__pack-name.pro_price").click();
+      });
     </script>
     <script>
       document.write(

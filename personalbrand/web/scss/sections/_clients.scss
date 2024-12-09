@@ -1,0 +1,82 @@
+.clients {
+  padding-top: 62px;
+  padding-bottom: 62px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #263238;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  .clients__inner {
+    padding-bottom: 70px;
+  }
+
+  .clients__head {
+    margin-bottom: 45px;
+  }
+
+  .clients__title {
+    color: #263238;
+    text-align: center;
+    font-family: "MuseoSansCyrl";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: left;
+  }
+
+  .clients__logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12.5px;
+  }
+
+  .clients__logo-item {
+    flex: 0 0 33.333%;
+    padding: 4px;
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 20%;
+      padding: 12.5px;
+    }
+  }
+
+  .clients__logo {
+    box-shadow: 0px 0px 20px 1px #ece9e9;
+    background: center/cover no-repeat;
+    padding-bottom: 55.95%;
+    border-radius: 5px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .clients__head {
+    margin-bottom: 12px;
+  }
+
+  .clients__title {
+    font-size: 22px;
+  }
+
+  .clients__logo-list {
+    margin: -4px;
+  }
+
+  .clients__logo-item {
+  }
+
+  .clients__logo {
+    padding-bottom: 65%;
+  }
+}

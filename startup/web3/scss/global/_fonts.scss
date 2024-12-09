@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 300;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl")
+      format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 500;
+  font-style: "italic";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500Italic.svg#MuseoSansCyrl")
+      format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 500;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.svg#MuseoSansCyrl")
+      format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 700;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl")
+      format("svg");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 900;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl")
+      format("svg");
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  font-weight: 400;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/NeueMachina/NeueMachina-Regular.eot");
+  src: url("../fonts/NeueMachina/NeueMachina-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Regular.svg#NeueMachina")
+      format("svg");
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  font-weight: 500;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/NeueMachina/NeueMachina-Medium.eot");
+  src: url("../fonts/NeueMachina/NeueMachina-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Medium.svg#NeueMachina") format("svg");
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  font-weight: 700;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/NeueMachina/NeueMachina-Bold.eot");
+  src: url("../fonts/NeueMachina/NeueMachina-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Bold.svg#NeueMachina") format("svg");
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  font-weight: 900;
+  font-style: "normal";
+  font-display: swap;
+  src: url("../fonts/NeueMachina/NeueMachina-Ultrabold.eot");
+  src: url("../fonts/NeueMachina/NeueMachina-Ultrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.woff") format("woff"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.ttf") format("truetype"),
+    url("../fonts/NeueMachina/NeueMachina-Ultrabold.svg#NeueMachina")
+      format("svg");
+}

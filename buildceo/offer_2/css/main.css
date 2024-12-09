@@ -351,12 +351,12 @@ a {
 .profit .btn.trasparent {
   margin-right: 10px;
   color: #fff;
-  border: 1px solid var(--accent);
-  background: var(--accent);
+  border: 1px solid #f76800;
+  background: #f76800;
 }
 
 .profit .btn.full {
-  background: var(--accent);
+  background: #f76800;
 }
 
 .profit .speacial-date {
@@ -979,10 +979,10 @@ a {
     max-width: 325px;
   }
   .hero .hero__form_title {
-    font-size: 20px;
+    font-size: 19px;
   }
   .hero .hero__form_title b {
-    font-size: 22px;
+    font-size: 19px;
   }
   .hero .hero__timer_item .time {
     font-size: 18px;

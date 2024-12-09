@@ -1,0 +1,107 @@
+.program {
+  padding-top: 30px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 114px;
+  }
+
+  .title {
+    font-weight: 800;
+    color: #263238;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 36px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+
+    li {
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 4px 32px 0px rgba(198, 198, 198, 0.24);
+      display: flex;
+      padding: 18px;
+      align-items: center;
+      position: relative;
+      gap: 22px;
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_499_3573)'%3E%3Cpath d='M17.3147 9.5417L2.65877 0.414204C2.4852 0.305305 2.2562 0.357732 2.1473 0.53134C2.07802 0.641723 2.07179 0.78038 2.13078 0.896551L6.61179 9.85671L2.12893 18.8184C2.03613 19.0011 2.109 19.2244 2.2917 19.3172C2.40791 19.3762 2.54653 19.37 2.65691 19.3007L17.3129 10.1732C17.487 10.0653 17.5407 9.83656 17.4328 9.66236C17.4026 9.61368 17.3615 9.57261 17.3129 9.54244L17.3147 9.5417Z' fill='%2344A900'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_499_3573'%3E%3Crect width='19' height='19' fill='white' transform='translate(0.288574 0.357422)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+          50% / contain no-repeat;
+
+        @include media-breakpoint-up(xl) {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__subtext {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 12px;
+    text-align: center;
+    display: block;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+      max-width: 670px;
+      margin: 0 auto 46px;
+    }
+  }
+
+  &__item-day {
+    border-radius: 3px;
+    background: #017f4a;
+    color: #fff;
+    padding: 5px;
+    margin-right: 18px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 12px;
+      margin-right: 23px;
+    }
+  }
+
+  &__item-title {
+    b {
+      font-weight: 800;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+  }
+
+  .btn {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      background-color: #44a900;
+      display: block;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 auto;
+      &:hover {
+        background-color: #388803;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $bg;
+  min-width: 360px;
+  color: $black;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+body.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body.fixed section {
+  filter: blur(2px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 10px;
+  width: 100%;
+}
+
+form input.error {
+  box-shadow: inset 0px 0px 20px 1px rgba(255, 0, 0, 0.3);
+  border: 2px solid red !important;
+}
+
+form input.not_error {
+  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
+  border: 2px solid #99ff99 !important;
+}
+
+.swiper-button-prev {
+  left: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='33' viewBox='0 0 20 33' fill='none'%3E%3Cpath d='M19.8091 4.4775L7.97747 16.5L19.8091 28.5488L16.1666 32.25L0.666642 16.5L16.1666 0.75L19.8091 4.4775Z' fill='%233B9AEF'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='33' viewBox='0 0 20 33' fill='none'%3E%3Cpath d='M19.8091 4.4775L7.97747 16.5L19.8091 28.5488L16.1666 32.25L0.666642 16.5L16.1666 0.75L19.8091 4.4775Z' fill='%233B9AEF'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-none {
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+.d-xl-block {
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
+}

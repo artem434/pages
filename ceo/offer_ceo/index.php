@@ -916,13 +916,20 @@
             </div>
           </div>
         </div>
-        <div class="lectors__item lectors__item--who">
-          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+        <div class="lectors__item">
+          <div class="lectors__image lazy" data-bg="img/lector-6.jpg"></div>
           <div class="lectors__footer">
-            <p class="lectors__subname">
-              Спікер <br />
-              узгоджується
+            <p class="lectors__name">
+              Юлія <br />
+              Коляда
             </p>
+            <div class="lectors__text">
+              <ul>
+                <li>
+                  Лідер продуктового та діджитал напрямку в компанії Fedoriv
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- <div class="lectors__item lectors__item--who">
@@ -1488,11 +1495,11 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311000959276117",
+          cLandingId = "2108311000981754013",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000959276144",
+          cLandingIdPro = "2108311000981754040",
           // Landing id // Online Premium
-          cLandingIdPremium = "2108311000959276183",
+          cLandingIdPremium = "2108311000981754067",
           // es_mail_id
           cMail_id = "",
           // es_id

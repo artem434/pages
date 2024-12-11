@@ -1,0 +1,153 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  min-width: 360px;
+  color: #273339;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+.lines {
+  display: flex;
+  gap: 133px;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  left: 50%;
+  transform: translate(-50%, 0);
+  &__item {
+    background-color: #ebebeb;
+    height: 100%;
+    width: 1px;
+  }
+}
+
+.form:before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(31, 34, 41, 0.6274509804) url(../img/loading.svg) 50%
+    no-repeat;
+  z-index: 10;
+  color: rgba(31, 34, 41, 0.6274509804);
+}
+
+.form.loading:before {
+  display: block;
+}
+
+.bg {
+  background: #313131;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+
+  &__dec {
+    width: 404px;
+    height: 853px;
+    position: absolute;
+    left: -102px;
+    top: -74px;
+  }
+}
+
+body.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body.fixed section {
+  filter: blur(2px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 10px;
+  width: 100%;
+}
+
+form input.error {
+  box-shadow: inset 0px 0px 20px 1px rgba(255, 0, 0, 0.3);
+  border: 2px solid red !important;
+}
+
+form input.not_error {
+  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
+  border: 2px solid #99ff99 !important;
+}
+
+.swiper-button-prev {
+  left: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M15.0664 23.0122L16.4764 21.6022L10.8964 16.0122L23.0664 16.0122L23.0664 14.0122L10.8964 14.0122L16.4864 8.43221L15.0664 7.01221L7.06641 15.0122L15.0664 23.0122Z' fill='%23FB443D'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M15.0664 23.0122L16.4764 21.6022L10.8964 16.0122L23.0664 16.0122L23.0664 14.0122L10.8964 14.0122L16.4864 8.43221L15.0664 7.01221L7.06641 15.0122L15.0664 23.0122Z' fill='%23FB443D'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-none {
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+.d-xl-block {
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
+}
+
+.title {
+}

@@ -1,0 +1,156 @@
+.nums {
+  position: relative;
+}
+
+.nums__inner {
+  padding: 77px 0 115px 0;
+  position: relative;
+}
+
+.nums__decor {
+  height: 344px;
+  width: 523px;
+  position: absolute;
+  top: 65%;
+  right: 0;
+  background: center/contain no-repeat;
+  transform: translateX(35%) rotate(343deg);
+}
+
+.nums__bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: 34px center/contain no-repeat;
+}
+
+.nums__bg_mob {
+  display: none;
+}
+
+.nums__head {
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.nums__title {
+  color: #263238;
+  font-family: "MuseoSansCyrl";
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.nums__row {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nums__col {
+  padding-left: 50px;
+}
+
+.nums__col:first-child {
+  padding-left: 40px;
+}
+
+.nums__indicator {
+  display: flex;
+  align-items: center;
+  color: #44a900;
+
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.nums__indicator-value {
+  font-size: 45px;
+  margin-right: 3px;
+}
+
+.nums__indicator-additional {
+  font-size: 28px;
+}
+
+.nums__indicator-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.37;
+  font-family: "MuseoSansCyrl";
+  color: #171718;
+}
+@media only screen and (max-width: 1260px) {
+  .nums__decor {
+    height: 300px;
+    width: 456px;
+    top: 70%;
+    transform: translateX(15%) rotate(343deg);
+  }
+
+  .nums__title {
+    font-size: 28px;
+  }
+
+  .nums__indicator-value {
+    font-size: 35px;
+  }
+
+  .nums__indicator-additional {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nums__decor {
+    height: 239px;
+    height: 364px;
+    top: 40px;
+    right: 0;
+    transform: translateX(65%) rotate(280deg);
+  }
+
+  .nums__inner {
+    padding: 26px 0 46px;
+  }
+
+  .nums__bg_mob {
+    display: block;
+  }
+
+  .nums__head {
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+  }
+
+  .nums__title {
+    font-size: 23px;
+    padding-left: 0px;
+  }
+
+  .nums__row {
+    padding: 0px 27px 0 0px;
+    flex-direction: column;
+  }
+
+  .nums__col {
+    padding-left: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .nums__indicator-description span br {
+    display: none;
+  }
+
+  .nums__col:first-child {
+    padding-left: 0;
+  }
+
+  .nums__col:last-child {
+    margin-bottom: 0px;
+  }
+}

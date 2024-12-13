@@ -134,7 +134,7 @@
         text-align: left;
         flex: 0 0 50%;
         display: flex;
-        align-items: center;
+        align-items: baseline;
       }
     }
     &__photo {
@@ -170,6 +170,10 @@
 
       @include media-breakpoint-up(xl) {
         font-size: 28px;
+      }
+
+      span {
+        text-transform: none;
       }
     }
 

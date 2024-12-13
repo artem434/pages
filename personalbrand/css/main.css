@@ -1677,7 +1677,7 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 1200px) {
   .program__result {
-    max-width: 584px;
+    max-width: 492px;
     width: 100%;
   }
 }

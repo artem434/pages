@@ -1,0 +1,283 @@
+.failure {
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+
+  &__shadow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 775px;
+    height: 775px;
+    position: absolute;
+    transform: scale(0.4);
+    top: -10px;
+    left: -160px;
+
+    @include media-breakpoint-up(xl) {
+      transform: scale(1);
+      z-index: -1;
+      top: 110px;
+      left: 460px;
+    }
+  }
+  &__title {
+    padding-bottom: 32px;
+    padding-top: 48px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      padding-bottom: 46px;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 62px;
+    }
+
+    h2 {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 42px;
+      }
+
+      span {
+        color: $maincolor;
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0px;
+        right: -30px;
+        background: url(../img/like.png) no-repeat center;
+        background-size: cover;
+        width: 500px;
+        animation: shake 1s ease-in-out infinite;
+        height: 400px;
+      }
+    }
+    p {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 18px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 34px;
+        margin-bottom: 50px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+    ul {
+      border: solid 1px #393939;
+      background-color: $bg;
+      margin-top: 22px;
+      max-width: 302px;
+      margin: 22px auto 0;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 840px;
+        width: 100%;
+        margin: 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+      }
+
+      li {
+        padding: 14px 12px;
+        border-bottom: solid 1px #393939;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @include media-breakpoint-up(xl) {
+          padding: 10px 0px;
+          border-bottom: none;
+          border-right: none;
+          font-size: 20px;
+          align-items: flex-start;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          min-width: 24px;
+          height: 24px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cg clip-path='url(%23clip0_132_9461)'%3E%3Cpath d='M20.0791 4.5791L17.4632 4.5791L17.454 14.9405L6.16492 3.65149L4.30969 5.50671L15.5987 16.7958L5.2373 16.7865L5.2373 19.4209L20.0791 19.4209L20.0791 4.5791Z' fill='%239FF565'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_132_9461'%3E%3Crect width='24' height='24' fill='white' transform='translate(24.5) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+            50% no-repeat;
+          // position: absolute;
+          // left: 50%;
+          // top: 50%;
+          // transform: translate(-50%, -50%);
+        }
+
+        &:last-child {
+          border: none;
+
+          @include media-breakpoint-up(xl) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 36px;
+    padding: 14px 12px;
+    font-size: 18px;
+    line-height: 1.35;
+    border: 1px dashed $maincolor;
+    text-align: center;
+    background: $bg;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+      padding: 14px 12px;
+      margin-top: 58px;
+    }
+
+    b {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    padding: 14px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $maincolor;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 30px;
+      padding: 26px 0;
+    }
+  }
+  &__description {
+    margin-top: 18px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+      margin-top: 48px;
+    }
+
+    b {
+      color: $maincolor;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    right: 11px;
+    top: 286px;
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      top: 252px;
+      right: 68px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='59' height='59' viewBox='0 0 59 59' fill='none'%3E%3Cg clip-path='url(%23clip0_132_1368)'%3E%3Cpath d='M47.2385 48.0935L47.2385 41.7718L22.1984 41.7494L49.4803 14.4676L44.9968 9.9841L17.7149 37.266L17.7374 12.2258L11.3708 12.2258L11.3708 48.0935L47.2385 48.0935Z' fill='%239FF565'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_132_1368'%3E%3Crect width='58' height='58' fill='white' transform='translate(58.3047 58.7773) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+        50% no-repeat;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .circle {
+      width: 132px;
+      height: 132px;
+      background-size: cover;
+      animation: 20s linear 0s normal none infinite running rot;
+
+      @include media-breakpoint-up(xl) {
+        width: 210px;
+        height: 210px;
+      }
+    }
+  }
+
+  &__circle-2 {
+    position: absolute;
+    right: 11px;
+    top: 286px;
+    z-index: -1;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      top: 502px;
+      right: 320px;
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='85' height='86' viewBox='0 0 85 86' fill='none'%3E%3Cg clip-path='url(%23clip0_140_2948)'%3E%3Cpath d='M68.6508 43.2877L64.0651 38.6957L45.8603 56.843L45.8876 17.2364L39.3787 17.2319L39.3514 56.8385L21.2041 38.6336L16.5796 43.2518L42.5972 69.3053L68.6508 43.2877Z' fill='%239FF565'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_140_2948'%3E%3Crect width='59.5398' height='59.5398' fill='white' transform='translate(84.4375 43.0205) rotate(135.039)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+        50% no-repeat;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .circle {
+      width: 132px;
+      height: 132px;
+      background-size: cover;
+      animation: 18s linear 0s normal none infinite running rot-revers;
+
+      @include media-breakpoint-up(xl) {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  }
+
+  &__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1114px;
+    height: 519px;
+    position: absolute;
+    top: 186px;
+    right: -220px;
+
+    @include media-breakpoint-up(xl) {
+      width: 674.18px;
+      height: 781.876px;
+      top: 286px;
+      right: -100px;
+    }
+  }
+}

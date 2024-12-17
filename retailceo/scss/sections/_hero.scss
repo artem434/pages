@@ -153,7 +153,7 @@
 
   &__img {
     width: 422.635px;
-    height: 184.067px;
+    height: 220px;
     position: absolute;
     top: 76px;
     left: -24px;
@@ -162,7 +162,7 @@
 
     @include media-breakpoint-up(xl) {
       width: 957px;
-      height: 302px;
+      height: 324px;
       left: 50%;
       transform: translate(-50%, 0);
       top: 50px;

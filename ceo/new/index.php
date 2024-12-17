@@ -567,104 +567,139 @@
         </div>
       </section>
       <div class="lectors">
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Дмитро <br />
-              Стрижов
-            </p>
-            <div class="lectors__text">
-              засновник та член Advisory Board Холдингу SHERIFF, магістр
-              державного управління у сфері національної безпеки
+        <div class="experts__list swiper">
+          <div class="swiper-wrapper">
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Дмитро <br />
+                  Стрижов
+                </p>
+                <div class="lectors__text">
+                  засновник та член Advisory Board Холдингу SHERIFF, магістр
+                  державного управління у сфері національної безпеки
+                </div>
+              </div>
             </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-2.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Володимир <br />
+                  Матвійчук
+                </p>
+                <div class="lectors__text">
+                  співзасновник мережі Галя Балувана та власник мережі MultiСook
+                  та Gabar-Multibar
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Максим <br />
+                  Плахтій
+                </p>
+                <div class="lectors__text">
+                  стратег, підприємець, засновник Karabas.com, професор
+                  економіки
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Марина <br />
+                  Авдєєва
+                </p>
+                <div class="lectors__text">
+                  Co-owner «Арсенал Страхування», founder Easy Peasy Insurtech,
+                  входить до ТОП-100 найвпливовіших українок за версією
+                  економічного видання «Фокус»
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-5.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Ігор <br />
+                  Сироватко
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Операційний директор OLX в Україні та Центральній Азії
+                    </li>
+                    <li>
+                      Бізнес коуч для власників бізнесу (Mindvalley Business
+                      Coach)
+                    </li>
+                    <li>
+                      Сертифікований лідер впровадження стандартів клієнтського
+                      сервісу COPC
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-6.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Юлія <br />
+                  Коляда
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Лідер продуктового та діджитал напрямку в компанії Fedoriv
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-7.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Олег <br />
+                  Любарець
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      CMO із 10 річним досвідом у розробці та впровадженні
+                      маркетингової та продуктової стратегії в країнах Європи та
+                      СНД.
+                    </li>
+                    <li>
+                      Очолював відділи маркетингу в компаніях: MOYO, Rocket
+                      Delivery, Liki24, Autodoc та ін.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="lectors__item lectors__item--who">
+              <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__subname">
+                  Спікер <br />
+                  узгоджується
+                </p>
+              </div>
+            </div> -->
           </div>
         </div>
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-2.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Володимир <br />
-              Матвійчук
-            </p>
-            <div class="lectors__text">
-              співзасновник мережі Галя Балувана та власник мережі MultiСook та
-              Gabar-Multibar
-            </div>
-          </div>
+        <div class="experts__navigation">
+          <div class="swiper-button-prev prev-experts"></div>
+
+          <div class="swiper-button-next next-experts"></div>
         </div>
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Максим <br />
-              Плахтій
-            </p>
-            <div class="lectors__text">
-              стратег, підприємець, засновник Karabas.com, професор економіки
-            </div>
-          </div>
-        </div>
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Марина <br />
-              Авдєєва
-            </p>
-            <div class="lectors__text">
-              Co-owner «Арсенал Страхування», founder Easy Peasy Insurtech,
-              входить до ТОП-100 найвпливовіших українок за версією економічного
-              видання «Фокус»
-            </div>
-          </div>
-        </div>
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-5.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Ігор <br />
-              Сироватко
-            </p>
-            <div class="lectors__text">
-              <ul>
-                <li>Операційний директор OLX в Україні та Центральній Азії</li>
-                <li>
-                  Бізнес коуч для власників бізнесу (Mindvalley Business Coach)
-                </li>
-                <li>
-                  Сертифікований лідер впровадження стандартів клієнтського
-                  сервісу COPC
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="lectors__item">
-          <div class="lectors__image lazy" data-bg="img/lector-6.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__name">
-              Юлія <br />
-              Коляда
-            </p>
-            <div class="lectors__text">
-              <ul>
-                <li>
-                  Лідер продуктового та діджитал напрямку в компанії Fedoriv
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="lectors__item lectors__item--who">
-          <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
-          <div class="lectors__footer">
-            <p class="lectors__subname">
-              Спікер <br />
-              узгоджується
-            </p>
-          </div>
-        </div> -->
       </div>
 
       <section class="format" id="format">
@@ -849,7 +884,6 @@
             </div>
             <div class="block__form">
               <form class="form zoho_url" id="form" method="post">
-                <div class="loader"></div>
                 <ul class="form__package">
                   <li>
                     <div
@@ -1013,6 +1047,139 @@
                   <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                 </p>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title"><span>Відгуки </span> про навчання</h2>
+          <div class="reviews__block">
+            <div class="reviews__item">
+              <div class="youtube-slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="hFAMbHFv3_Q"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/hFAMbHFv3_Q/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="iOAKvo-2cnw"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/iOAKvo-2cnw/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="4Q4aVRLnlVI"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/4Q4aVRLnlVI/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="DUYYnoNgCsI"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/DUYYnoNgCsI/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="VwOnCPG5Rc8"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/VwOnCPG5Rc8/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="i4V85AjIVd0"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/i4V85AjIVd0/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews1-min.png"
+                        alt="Review Image 1"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews2-min.png"
+                        alt="Review Image 2"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews3-min.png"
+                        alt="Review Image 3"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews4-min.png"
+                        alt="Review Image 4"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="youtube-prev"></div>
+              <div class="youtube-next"></div>
             </div>
           </div>
         </div>

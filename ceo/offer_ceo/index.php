@@ -254,7 +254,10 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
-          <a class="header__logo" href="https://ceo.bizconstructor.com/offer_ceo"></a>
+          <a
+            class="header__logo"
+            href="https://ceo.bizconstructor.com/offer_ceo"
+          ></a>
           <ul class="header__menu">
             <li>
               <a href="#program">Структура програми</a>
@@ -1134,6 +1137,138 @@
                   <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                 </p>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title"><span>Відгуки </span> про навчання</h2>
+          <div class="reviews__block">
+            <div class="reviews__item">
+              <div class="youtube-slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="hFAMbHFv3_Q"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/hFAMbHFv3_Q/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="iOAKvo-2cnw"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/iOAKvo-2cnw/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="4Q4aVRLnlVI"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/4Q4aVRLnlVI/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="DUYYnoNgCsI"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/DUYYnoNgCsI/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="VwOnCPG5Rc8"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/VwOnCPG5Rc8/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="video-wrapper">
+                        <div
+                          class="video-thumbnail"
+                          data-video-id="i4V85AjIVd0"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/i4V85AjIVd0/hqdefault.jpg"
+                            alt="Video Preview"
+                          />
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews1-min.png"
+                        alt="Review Image 1"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews2-min.png"
+                        alt="Review Image 2"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews3-min.png"
+                        alt="Review Image 3"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-slide-img">
+                      <img
+                        class="reviews__image"
+                        src="img/reviews4-min.png"
+                        alt="Review Image 4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="youtube-prev"></div>
+                <div class="youtube-next"></div>
+              </div>
             </div>
           </div>
         </div>

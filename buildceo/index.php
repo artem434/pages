@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link
+      <link
       rel="icon"
       href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
       sizes="32x32"

@@ -1,0 +1,133 @@
+.process {
+  padding-bottom: 0px;
+  text-align: center;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      margin-bottom: 62px;
+    }
+    b {
+      color: $maincolor;
+    }
+  }
+
+  &__content {
+    text-align: left;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    background-color: #fdfdff;
+    border: solid 1px #cddeff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      width: 556px;
+      padding: 40px;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      text-align: left;
+      text-transform: uppercase;
+      padding-bottom: 12px;
+      border-bottom: dashed 1px $greay;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 30px;
+        padding-bottom: 22px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        min-width: 100px;
+      }
+
+      i {
+        font-style: italic;
+        color: $maincolor;
+      }
+    }
+    ol {
+      list-style-type: decimal;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-left: 18px;
+      margin-top: 12px;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+      }
+
+      li {
+        font-size: 14px;
+        &::marker {
+          color: $maincolor;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__body {
+    padding-top: 12px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: row;
+      gap: 38px;
+      padding-top: 22px;
+    }
+  }
+
+  &__label {
+    background-color: $maincolor;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: $white;
+    padding: 8px 26px;
+    border-radius: 62px;
+    width: 198px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      width: 248px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    @include media-breakpoint-up(xl) {
+      margin-top: 32px;
+    }
+  }
+}

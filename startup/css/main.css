@@ -2459,7 +2459,7 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 1200px) {
   .format__packeges {
-    padding: 34px 24px 34px;
+    padding: 34px 34px 34px;
   }
 }
 .format__packeges p {
@@ -2476,7 +2476,7 @@ select:-webkit-autofill:focus {
   .format__packeges p {
     font-size: 30px;
     padding: 6px 10px;
-    margin-right: 31px;
+    margin-right: 56px;
   }
 }
 .format__packeges p:nth-child(2) {
@@ -2497,8 +2497,8 @@ select:-webkit-autofill:focus {
   .format__btns {
     display: flex;
     justify-content: flex-end;
-    padding-right: 8px;
-    gap: 18px;
+    padding-right: 18px;
+    gap: 34px;
     margin-top: 14px;
   }
   .format__btns a {

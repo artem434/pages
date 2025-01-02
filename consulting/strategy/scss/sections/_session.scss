@@ -1,0 +1,101 @@
+.session {
+  padding-bottom: 0px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      margin-bottom: 62px;
+    }
+    span {
+      color: $maincolor;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      align-items: end;
+    }
+  }
+
+  &__item {
+    border-width: 2px;
+    border-style: solid;
+    border-image-source: repeating-linear-gradient(
+      45deg,
+      #3217ff 0,
+      #3217ff 15px,
+      transparent 15px,
+      transparent 30px
+    );
+    border-image-slice: 1;
+    border-radius: 14px;
+    padding: 28px 31px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 566px;
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #2d2d2d;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 19px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 240px;
+          height: 40px;
+          background: url("data:image/svg+xml,%3Csvg width='248' height='42' viewBox='0 0 248 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M240.406 1H241.406V0H240.406V1ZM239.699 41.7071C240.09 42.0976 240.723 42.0976 241.113 41.7071L247.477 35.3431C247.868 34.9526 247.868 34.3195 247.477 33.9289C247.087 33.5384 246.454 33.5384 246.063 33.9289L240.406 39.5858L234.749 33.9289C234.359 33.5384 233.726 33.5384 233.335 33.9289C232.945 34.3195 232.945 34.9526 233.335 35.3431L239.699 41.7071ZM0.40625 2H10.4063V0H0.40625V2ZM30.4062 2H50.4062V0H30.4062V2ZM70.4062 2H90.4062V0H70.4062V2ZM110.406 2H130.406V0H110.406V2ZM150.406 2H170.406V0H150.406V2ZM190.406 2H210.406V0H190.406V2ZM230.406 2H240.406V0H230.406V2ZM239.406 1V11H241.406V1H239.406ZM239.406 31V41H241.406V31H239.406Z' fill='%233217FF' /%3E%3C/svg%3E")
+            no-repeat center;
+          top: -42px;
+          background-size: contain;
+          right: -270px;
+        }
+      }
+    }
+
+    &:last-child {
+      border: none;
+      background: linear-gradient(144deg, #3217fd 0%, #1f0f9d 100%);
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 153%;
+      padding: 20px;
+      color: #fff;
+      margin-top: -12px;
+      max-width: 308px;
+      margin-left: 18px;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 518px;
+        font-size: 20px;
+        margin-left: -18px;
+        margin-bottom: 12px;
+      }
+
+      b {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}

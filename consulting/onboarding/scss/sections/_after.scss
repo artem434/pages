@@ -29,7 +29,7 @@
 
     @include media-breakpoint-up(xl) {
       gap: 33px;
-      align-items: start;
+      align-items: normal;
       justify-content: center;
       position: relative;
       z-index: 1;
@@ -37,7 +37,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 48%;
+        top: 52%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 1289px;

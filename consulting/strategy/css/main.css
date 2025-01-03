@@ -860,6 +860,17 @@ select:-webkit-autofill:focus {
     max-width: 590px;
   }
 }
+.hero__btn .btn {
+  line-height: 1.3;
+  padding: 6px 12px;
+  gap: 4px;
+}
+@media (min-width: 1200px) {
+  .hero__btn .btn {
+    padding: 18px 12px;
+    gap: 22px;
+  }
+}
 .hero__btn .btn span {
   display: none;
 }
@@ -1144,7 +1155,7 @@ select:-webkit-autofill:focus {
     width: 240px;
     height: 40px;
     background: url("data:image/svg+xml,%3Csvg width='248' height='42' viewBox='0 0 248 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M240.406 1H241.406V0H240.406V1ZM239.699 41.7071C240.09 42.0976 240.723 42.0976 241.113 41.7071L247.477 35.3431C247.868 34.9526 247.868 34.3195 247.477 33.9289C247.087 33.5384 246.454 33.5384 246.063 33.9289L240.406 39.5858L234.749 33.9289C234.359 33.5384 233.726 33.5384 233.335 33.9289C232.945 34.3195 232.945 34.9526 233.335 35.3431L239.699 41.7071ZM0.40625 2H10.4063V0H0.40625V2ZM30.4062 2H50.4062V0H30.4062V2ZM70.4062 2H90.4062V0H70.4062V2ZM110.406 2H130.406V0H110.406V2ZM150.406 2H170.406V0H150.406V2ZM190.406 2H210.406V0H190.406V2ZM230.406 2H240.406V0H230.406V2ZM239.406 1V11H241.406V1H239.406ZM239.406 31V41H241.406V31H239.406Z' fill='%233217FF' /%3E%3C/svg%3E") no-repeat center;
-    top: -42px;
+    top: 0px;
     background-size: contain;
     right: -270px;
   }
@@ -1166,7 +1177,7 @@ select:-webkit-autofill:focus {
     max-width: 518px;
     font-size: 20px;
     margin-left: -18px;
-    margin-bottom: 12px;
+    margin-bottom: -12px;
   }
 }
 .session__item:last-child b {
@@ -1391,9 +1402,11 @@ select:-webkit-autofill:focus {
   }
 }
 .help__icon {
-  width: 50px;
-  height: 50px;
+  width: 18px;
+  height: 18px;
   background-size: contain;
+  background-color: #3217ff;
+  border-radius: 50%;
 }
 .help h2 {
   font-weight: 600;
@@ -1700,6 +1713,25 @@ select:-webkit-autofill:focus {
   .stage__btn {
     display: block;
     margin: 26px 40px 0;
+  }
+}
+.stage__btn .btn {
+  line-height: 1.3;
+  padding: 6px 12px;
+  gap: 4px;
+}
+@media (min-width: 1200px) {
+  .stage__btn .btn {
+    padding: 18px 12px;
+    gap: 22px;
+  }
+}
+.stage__btn .btn span {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .stage__btn .btn span {
+    display: inline-block;
   }
 }
 

@@ -1219,7 +1219,6 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .after ul {
     gap: 33px;
-    align-items: start;
     justify-content: center;
     position: relative;
     z-index: 1;
@@ -1633,7 +1632,7 @@ select:-webkit-autofill:focus {
   width: 100%;
 }
 .reviews__img {
-  width: 86px;
+  min-width: 86px;
   height: 86px;
   border-radius: 50%;
   background-size: cover;

@@ -1696,7 +1696,7 @@ select:-webkit-autofill:focus {
 .stage ul li {
   font-size: 18px;
   line-height: 156%;
-  font-weight: 600;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .stage ul li {

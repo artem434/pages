@@ -312,3 +312,16 @@ $(window).scroll(function () {
 if (window.innerWidth > 1000) {
   $(".item__more").click(function () {});
 }
+document.querySelectorAll(".toggle-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const list = button.previousElementSibling;
+    console.log(list);
+    list.classList.toggle("open");
+
+    if (list.classList.contains("open")) {
+      button.textContent = "Згорнути";
+    } else {
+      button.textContent = "Більше";
+    }
+  });
+});

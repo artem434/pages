@@ -202,7 +202,7 @@
         width: 301px;
         height: 460px;
         background-position: center top;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
       }
 
@@ -233,6 +233,32 @@
       p {
         font-size: 14px;
       }
+      ul {
+        text-align: left;
+        list-style-type: circle;
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 14px;
+        max-height: 2.6em;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        &.open {
+          max-height: 100em;
+          transition: max-height 0.3s ease;
+        }
+      }
+    }
+    .toggle-button {
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 5px;
+      font-size: 14px;
+      text-decoration: underline;
     }
 
     &__navigation {

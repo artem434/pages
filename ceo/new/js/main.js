@@ -29,13 +29,43 @@ $.get("https://ipapi.co/json/", function (obj) {
   } else {
     $("input[name=phone]").val(obj.country_calling_code);
   }
-  $("input[name=phone]").intlTelInput({
-    // utilsScript       : '/js/utils.js',
+
+  // Ініціалізуємо телефонний інпут
+  var phoneInput = $("input[name=phone]").intlTelInput({
+    // utilsScript: '/js/utils.js',
     defaultCountry: "auto",
     separateDialCode: false,
     nationalMode: false,
     initialCountry: obj.country_code,
     preferredCountries: ["ua", "kz"],
+  });
+
+  // Додаємо індикатор статусу
+  $("input[name=phone]").after('<div class="phone-validation-status"></div>');
+
+  // Додаємо обробник події input
+  $("input[name=phone]").on("input", function () {
+    var $status = $(this).next(".phone-validation-status");
+    var isValid = $(this).intlTelInput("isValidNumber");
+    var errorCode = $(this).intlTelInput("getValidationError");
+
+    var errorMap = [
+      " Вірний номер",
+      " Невірний код країни",
+      " Номер занадто короткий",
+      " Номер занадто довгий",
+      " Невірна довжина номера",
+    ];
+
+    $status.text(errorMap[errorCode]);
+    $status.css("color", isValid ? "green" : "red");
+
+    // Додаємо/видаляємо класи валідації
+    if (isValid) {
+      $(this).removeClass("error").addClass("not_error");
+    } else {
+      $(this).removeClass("not_error").addClass("error");
+    }
   });
 });
 

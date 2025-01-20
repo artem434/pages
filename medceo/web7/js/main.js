@@ -71,6 +71,13 @@ $.get("https://ipapi.co/json/", function (obj) {
     initialCountry: obj.country_code,
     preferredCountries: ["ua", "ru", "by", "kz"],
   });
+  $("input.phone").on("input", function () {
+    if (phoneInput.intlTelInput("isValidNumber")) {
+      $(this).removeClass("error").addClass("not_error");
+    } else {
+      $(this).removeClass("not_error").addClass("error");
+    }
+  });
 
   // SNG OR NOT //
   var sng_country = [
@@ -521,3 +528,23 @@ let month = [
 
 // Відображення дати
 $(".cDate").text(`${displayDate.getDate()} ${month[displayDate.getMonth()]}`);
+
+// Додайте після інпута div для відображення статусу
+$("input.phone").after('<div class="phone-validation-status"></div>');
+
+$("input.phone").on("input", function () {
+  var $status = $(this).next(".phone-validation-status");
+  var isValid = $(this).intlTelInput("isValidNumber");
+  var errorCode = $(this).intlTelInput("getValidationError");
+
+  var errorMap = [
+    "✅ Правильний номер",
+    "❌ Неправильний код країни",
+    "❌ Номер занадто короткий",
+    "❌ Номер занадто довгий",
+    "❌ Неправильна довжина номера",
+  ];
+
+  $status.text(errorMap[errorCode]);
+  $status.css("color", isValid ? "green" : "red");
+});

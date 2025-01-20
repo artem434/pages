@@ -269,3 +269,6 @@ function updateTimer() {
 }
 
 updateTimer();
+$(".item__more, .program .faq .item__title").on("click", function () {
+  $(this).parent().toggleClass("active");
+});

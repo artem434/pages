@@ -406,3 +406,36 @@ $(document).ready(function () {
     },
   });
 });
+function openPopup(type, url, isImage = false) {
+  var popupHtml = `
+  <div class="${type}-popup">
+    <div class="${type}-popup__overlay">
+      <div class="${type}-popup__content">
+    <div class="${type}-popup__block">
+      ${
+        isImage
+          ? `<img src="${url}" alt="Review Image" />`
+          : `<iframe src="${url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+      }
+      <button class="${type}-popup__close">&times;</button>
+    </div>
+    </div></div>
+  
+  </div>
+  `;
+  $("body").append(popupHtml);
+  $(`.${type}-popup`).fadeIn(300);
+}
+$(document).on("click", ".reviews__image", function () {
+  var imageUrl = $(this).attr("src");
+  openPopup("image", imageUrl, true);
+});
+$(document).on(
+  "click",
+  ".image-popup__overlay, .image-popup__close, .video-popup__overlay, .video-popup__close",
+  function () {
+    $(".image-popup, .video-popup").fadeOut(300, function () {
+      $(this).remove();
+    });
+  }
+);

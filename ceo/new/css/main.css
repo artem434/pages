@@ -3835,3 +3835,7 @@ a {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34' fill='none'%3E%3Crect width='34' height='34' rx='17' fill='%23DDFE65'/%3E%3Cpath d='M16.9422 10.3384L15.7202 11.5604L20.5562 16.405L10.0088 16.405L10.0088 18.1384L20.5562 18.1384L15.7115 22.9744L16.9422 24.205L23.8755 17.2717L16.9422 10.3384Z' fill='black'/%3E%3C/svg%3E")
     center/contain no-repeat;
 }
+.phone-validation-status {
+  font-size: 14px;
+  position: absolute;
+}

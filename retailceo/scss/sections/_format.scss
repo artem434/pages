@@ -62,7 +62,7 @@
     padding: 10px 0px 10px;
 
     @include media-breakpoint-up(xl) {
-      padding: 32px 8px 16px 0;
+      padding: 32px 24px 16px 0;
     }
 
     p {
@@ -78,7 +78,7 @@
       @include media-breakpoint-up(xl) {
         font-size: 20px;
         padding: 6px 10px;
-        margin-right: 66px;
+        margin-right: 74px;
       }
 
       &:nth-child(2) {
@@ -100,8 +100,8 @@
     @include media-breakpoint-up(xl) {
       display: flex;
       justify-content: flex-end;
-      padding-right: 8px;
-      gap: 30px;
+      padding-right: 26px;
+      gap: 40px;
       margin-top: 14px;
 
       a {

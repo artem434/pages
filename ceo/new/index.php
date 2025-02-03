@@ -42,7 +42,27 @@
       content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
     />
     <script src="js/modernizr-custom.js"></script>
-
+    <script type="text/javascript">
+      (function (d, s, u, e, p) {
+        (p = d.getElementsByTagName(s)[0]),
+          (e = d.createElement(s)),
+          (e.async = 1),
+          (e.src = u),
+          p.parentNode.insertBefore(e, p);
+      })(
+        document,
+        "script",
+        "https://script.ringostat.com/v4/3e/3ecbf6ced7895a0f2d0be81690fe3f2912292bea.js"
+      );
+      var pw = function () {
+        if (typeof ringostatAnalytics === "undefined") {
+          setTimeout(pw, 100);
+        } else {
+          ringostatAnalytics.sendHit("pageview");
+        }
+      };
+      pw();
+    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -684,6 +704,43 @@
                 </div>
               </div>
             </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-8.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Тетяна <br />
+                  Мокренко
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Співвласниця діджитал- агенції «МОКО», реалізовує/ла
+                      проєкти для таких великих компаній: Ощадбанк, Нова пошта,
+                      Галичина, Артеріум, Ковальська, МХП, Volkswagen, Vodafone,
+                      Subaru, Bosch, Siemens, та інші
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-9.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Олександр <br />
+                  Крутих
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Засновник брендинг-агенції ZOND, розробили понад 300
+                      проєктів в різних нішах та ринках, підприємницький досвід
+                      20+ років
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <!-- <div class="lectors__item lectors__item--who">
               <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
               <div class="lectors__footer">
@@ -710,32 +767,31 @@
               <span>в програмі </span>
             </h2>
             <div class="format__packeges">
-              <p>CORE</p>
               <p>PRO</p>
               <p>PREMIUM</p>
             </div>
             <table>
               <tr>
                 <td>Навчання в онлайн-форматі</td>
-                <td class="text">3 міс.</td>
+
                 <td class="text">3 міс.</td>
                 <td class="text">4 міс.</td>
               </tr>
               <tr>
                 <td>Кількість модулів програми</td>
-                <td class="text">13</td>
+
                 <td class="text">13</td>
                 <td class="text">13</td>
               </tr>
               <tr>
                 <td>Доступ до матеріалів програми після її завершення</td>
-                <td class="text">2 міс.</td>
+
                 <td class="text">3 міс.</td>
                 <td class="text">12 міс.</td>
               </tr>
               <tr>
                 <td>Case study: відповіді на запитання від експерта</td>
-                <td class="text text--small">watch only</td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -744,14 +800,14 @@
                   Доступ до практичних матеріалів: інструкцій, чек-листів та
                   шаблонів
                 </td>
-                <td></td>
+
                 <td></td>
                 <td></td>
               </tr>
 
               <tr>
                 <td>Сертифікат про проходження навчання на програмі</td>
-                <td></td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -760,7 +816,7 @@
                   Супровід куратором по організаційно-технічним питанням
                   протягом навчання
                 </td>
-                <td></td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -769,7 +825,7 @@
                   Закрита група в Telegram для нетворкінгу з учасниками програми
                   з підтримкою куратора 
                 </td>
-                <td></td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -778,7 +834,7 @@
                   Воркшопи по розробору кейсів з бізнес-консультантами та
                   експертами
                 </td>
-                <td class="text">в записі</td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -787,13 +843,13 @@
                   Індивідуальний зворотний зв'язок від бізнес-консультанта по
                   практичним завданням програми
                 </td>
-                <td class="no-active"></td>
+
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td>Додатковий модуль про залучення інвестицій</td>
-                <td class="no-active"></td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -804,14 +860,13 @@
                   бізнесу, HR-маркетинг і бренд роботодавця, управління
                   проектами
                 </td>
-                <td class="no-active"></td>
+
                 <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
                 <td>Бонусний модуль “Особистий бренд власника бізнесу”</td>
 
-                <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
@@ -822,7 +877,6 @@
                 </td>
 
                 <td class="no-active"></td>
-                <td class="no-active"></td>
                 <td></td>
               </tr>
               <tr>
@@ -831,7 +885,6 @@
                   Кирила Куницького) протягом року
                 </td>
 
-                <td class="no-active"></td>
                 <td class="no-active"></td>
                 <td></td>
               </tr>
@@ -842,12 +895,10 @@
                 </td>
 
                 <td class="no-active"></td>
-                <td class="no-active"></td>
                 <td></td>
               </tr>
             </table>
             <div class="format__btns">
-              <a id="btn-core" href="#register" data-package="core">Замовити</a>
               <a id="btn-pro" href="#register" data-package="pro">Замовити</a>
               <a id="btn-premium" href="#register" data-package="premium"
                 >Замовити</a
@@ -885,14 +936,6 @@
             <div class="block__form">
               <form class="form zoho_url" id="form" method="post">
                 <ul class="form__package">
-                  <li>
-                    <div
-                      class="packages-btns__pack-name tabs__tab core_price"
-                      data-id=""
-                    >
-                      <span>CORE</span>
-                    </div>
-                  </li>
                   <li>
                     <div
                       class="packages-btns__pack-name tabs__tab pro_price"

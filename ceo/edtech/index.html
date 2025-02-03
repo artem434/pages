@@ -49,7 +49,27 @@
     />
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/modernizr-custom.js"></script>
-
+    <script type="text/javascript">
+      (function (d, s, u, e, p) {
+        (p = d.getElementsByTagName(s)[0]),
+          (e = d.createElement(s)),
+          (e.async = 1),
+          (e.src = u),
+          p.parentNode.insertBefore(e, p);
+      })(
+        document,
+        "script",
+        "https://script.ringostat.com/v4/3e/3ecbf6ced7895a0f2d0be81690fe3f2912292bea.js"
+      );
+      var pw = function () {
+        if (typeof ringostatAnalytics === "undefined") {
+          setTimeout(pw, 100);
+        } else {
+          ringostatAnalytics.sendHit("pageview");
+        }
+      };
+      pw();
+    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -1111,11 +1131,11 @@
             </div>
             <div class="register__form">
               <div class="register__package">
-                <span data-id="2108311000971717038" class="tabs__tab--active"
+                <span data-id="2108311001004798032" class="tabs__tab--active"
                   >CORE</span
                 >
-                <span data-id="2108311000971717065">PRO</span>
-                <span data-id="2108311000971717106">PREMIUM</span>
+                <span data-id="2108311001004798059">PRO</span>
+                <span data-id="2108311001004798086">PREMIUM</span>
               </div>
 
               <form
@@ -1617,9 +1637,9 @@
         // Дата мероприятия
         let cDate = "22 серпня",
           // Landing id // Online
-          cLandingId = "2108311000971717038",
+          cLandingId = "2108311001004798032",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311000971717065",
+          cLandingIdPro = "2108311001004798059",
           // es_mail_id
           cMail_id = "",
           // es_id

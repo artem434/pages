@@ -57,7 +57,27 @@
     />
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/modernizr-custom.js"></script>
-
+    <script type="text/javascript">
+      (function (d, s, u, e, p) {
+        (p = d.getElementsByTagName(s)[0]),
+          (e = d.createElement(s)),
+          (e.async = 1),
+          (e.src = u),
+          p.parentNode.insertBefore(e, p);
+      })(
+        document,
+        "script",
+        "https://script.ringostat.com/v4/3e/3ecbf6ced7895a0f2d0be81690fe3f2912292bea.js"
+      );
+      var pw = function () {
+        if (typeof ringostatAnalytics === "undefined") {
+          setTimeout(pw, 100);
+        } else {
+          ringostatAnalytics.sendHit("pageview");
+        }
+      };
+      pw();
+    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {

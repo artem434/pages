@@ -302,7 +302,27 @@
         })();
     </script>
     <!-- End VWO Async SmartCode -->
-
+    <script type="text/javascript">
+      (function (d, s, u, e, p) {
+        (p = d.getElementsByTagName(s)[0]),
+          (e = d.createElement(s)),
+          (e.async = 1),
+          (e.src = u),
+          p.parentNode.insertBefore(e, p);
+      })(
+        document,
+        "script",
+        "https://script.ringostat.com/v4/3e/3ecbf6ced7895a0f2d0be81690fe3f2912292bea.js"
+      );
+      var pw = function () {
+        if (typeof ringostatAnalytics === "undefined") {
+          setTimeout(pw, 100);
+        } else {
+          ringostatAnalytics.sendHit("pageview");
+        }
+      };
+      pw();
+    </script>
     <meta
       http-equiv="origin-trial"
       content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"

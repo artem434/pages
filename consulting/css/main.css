@@ -466,6 +466,8 @@ select:-webkit-autofill:focus {
   display: flex;
   flex-direction: row;
   gap: 22px;
+  line-height: 1.2;
+  padding: 6px 18px;
 }
 @media (min-width: 1200px) {
   .btn-page {

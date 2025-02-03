@@ -935,6 +935,43 @@
             </div>
           </div>
         </div>
+        <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-8.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Тетяна <br />
+                  Мокренко
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Співвласниця діджитал- агенції «МОКО», реалізовує/ла
+                      проєкти для таких великих компаній: Ощадбанк, Нова пошта,
+                      Галичина, Артеріум, Ковальська, МХП, Volkswagen, Vodafone,
+                      Subaru, Bosch, Siemens, та інші
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-9.jpg"></div>
+              <div class="lectors__footer">
+                <p class="lectors__name">
+                  Олександр <br />
+                  Крутих
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      Засновник брендинг-агенції ZOND, розробили понад 300
+                      проєктів в різних нішах та ринках, підприємницький досвід
+                      20+ років
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         <!-- <div class="lectors__item lectors__item--who">
           <div class="lectors__image lazy" data-bg="img/lector.jpg"></div>
           <div class="lectors__footer">

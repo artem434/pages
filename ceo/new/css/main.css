@@ -474,7 +474,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, 0);
   width: 1500px;
-  height: 466px;
+  height: 366px;
   background-size: cover;
   background-position: center center;
 }
@@ -559,10 +559,10 @@ h1 {
   font-size: 22px;
   font-weight: 900;
   text-align: center;
-  left: 98%;
+  left: 89%;
   text-transform: uppercase;
   transform: rotate(4.436deg) translateY(-50%);
-  bottom: 80%;
+  bottom: 254px;
   transition: 0.3s all;
 }
 
@@ -953,7 +953,7 @@ a {
   align-items: center;
   justify-content: space-between;
   column-gap: 15px;
-  padding-bottom: 350px;
+  padding-bottom: 300px;
 }
 
 .hero__info {
@@ -2367,7 +2367,7 @@ a {
   @media (max-width: 767px) {
     .hero__lectors {
       width: 512px;
-      height: 146px;
+      height: 120px;
     }
     .hero__names {
       padding-top: 160px;
@@ -2384,7 +2384,7 @@ a {
     }
     .hero__images_btn {
       bottom: inherit;
-      top: -231px;
+      top: -170px;
       left: 70%;
     }
     .hero__new {
@@ -2836,7 +2836,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding-bottom: 180px;
+    padding-bottom: 100px;
   }
 
   .hero__title br {
@@ -3259,7 +3259,7 @@ a {
 }
 @media (min-width: 1200px) {
   .format__packeges {
-    padding: 32px 8px 16px 0;
+    padding: 32px 28px 16px 0;
   }
 }
 .format__packeges p {
@@ -3298,7 +3298,7 @@ a {
   .format__btns {
     display: flex;
     justify-content: flex-end;
-    padding-right: 8px;
+    padding-right: 30px;
     gap: 32px;
     margin-top: 14px;
   }

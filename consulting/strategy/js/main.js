@@ -188,3 +188,113 @@ const casesSlider = new Swiper(".cases__content", {
 $(".item__more, .program .faq .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  initialSlide: 2,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 15,
+    stretch: 0,
+    depth: 350,
+    modifier: 1,
+    slideShadows: true,
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
+  navigation: {
+    nextEl: ".next-video",
+    prevEl: ".prev-video",
+  },
+});
+if (typeof YT === "undefined" || typeof YT.Player === "undefined") {
+  loadYouTubeAPI();
+} else {
+  onYouTubeIframeAPIReady();
+}
+
+function loadYouTubeAPI() {
+  var tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+}
+
+function onYouTubeIframeAPIReady() {
+  $(".swiper-slide iframe").each(function (index, iframe) {
+    var player = new YT.Player(iframe, {
+      events: {
+        onStateChange: onPlayerStateChange,
+      },
+    });
+    players.push(player);
+  });
+}
+
+function stopAllVideos() {
+  players.forEach(function (player) {
+    if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+      player.pauseVideo();
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING) {
+    players.forEach(function (player) {
+      if (player !== event.target) {
+        player.pauseVideo();
+      }
+    });
+  }
+}
+
+function openPopup(type, url, isImage = false) {
+  var popupHtml = `
+  <div class="${type}-popup">
+    <div class="${type}-popup__overlay">
+      <div class="${type}-popup__content">
+    <div class="${type}-popup__block">
+      ${
+        isImage
+          ? `<img src="${url}" alt="Review Image" />`
+          : `<iframe src="${url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+      }
+      <button class="${type}-popup__close">&times;</button>
+    </div>
+    </div></div>
+  
+  </div>
+  `;
+  $("body").append(popupHtml);
+  $(`.${type}-popup`).fadeIn(300);
+}
+
+$(document).on("click", ".reviews__image", function () {
+  var imageUrl = $(this).attr("src");
+  openPopup("image", imageUrl, true);
+});
+
+$(document).on(
+  "click",
+  ".swiper-slide .video-wrapper .video-thumbnail",
+  function () {
+    var videoId = $(this).data("video-id");
+    var videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0`;
+    openPopup("video", videoUrl);
+  }
+);
+
+// Закриття попапів
+$(document).on(
+  "click",
+  ".image-popup__overlay, .image-popup__close, .video-popup__overlay, .video-popup__close",
+  function () {
+    $(".image-popup, .video-popup").fadeOut(300, function () {
+      $(this).remove();
+    });
+  }
+);

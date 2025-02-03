@@ -1472,7 +1472,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
               </a>
               <a
                 class="footer__social_link"
-                href=" https://t.me/bizkonstructor?_ga=2.175258786.1675371198.1664796566-206334048.1655729050"
+                href="https://t.me/+qZlyzXe3lXE1Nzli"
               >
                 <svg
                   width="25"

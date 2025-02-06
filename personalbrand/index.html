@@ -48,7 +48,27 @@
       content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
     />
     <script src="js/modernizr-custom.js"></script>
-
+    <script type="text/javascript">
+      (function (d, s, u, e, p) {
+        (p = d.getElementsByTagName(s)[0]),
+          (e = d.createElement(s)),
+          (e.async = 1),
+          (e.src = u),
+          p.parentNode.insertBefore(e, p);
+      })(
+        document,
+        "script",
+        "https://script.ringostat.com/v4/3e/3ecbf6ced7895a0f2d0be81690fe3f2912292bea.js"
+      );
+      var pw = function () {
+        if (typeof ringostatAnalytics === "undefined") {
+          setTimeout(pw, 100);
+        } else {
+          ringostatAnalytics.sendHit("pageview");
+        }
+      };
+      pw();
+    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -164,7 +184,7 @@
             data-ll-status="loaded"
             style="background-image: url('img/shadow.png')"
           ></div>
-          <div class="hero__date">30 січня <span>•</span> онлайн</div>
+          <div class="hero__date">онлайн</div>
           <div class="hero__subtitle">
             <strong> Інтенсивна освітня програма</strong> для власників бізнесу,
             які хочуть <b>впевнено заявити про себе</b>
@@ -1064,10 +1084,32 @@
               <div class="experts__item swiper-slide">
                 <div
                   class="img"
-                  data-bg="img/expert.jpeg"
+                  data-bg="img/expert-1.jpeg"
                   data-ll-status="loaded"
-                  style="background-image: url('img/expert.jpeg')"
+                  style="background-image: url('img/expert-9_1.jpg')"
                 ></div>
+                <div class="experts__bottom">
+                  <b
+                    >Альона <br />
+                    Євтищенко</b
+                  >
+                  <ul class="">
+                    <li>
+                      спеціалістка з візуальних комунікацій, візуальний стратег
+                      з досвідом у сфері 6+ років
+                    </li>
+                    <li>
+                      понад 8 років працювала в сфері digital marketing.
+                      Консультує, навчає, створює візуальні стратегії для
+                      бізнесу та особистих брендів
+                    </li>
+                    <li>
+                      співпрацювала з Bogika, Writy, lletsell, M-TAC, Stone
+                      Studio, Агуня, Palmers, Чудо, Suzuki та інші
+                    </li>
+                  </ul>
+                  <button class="toggle-button">Більше</button>
+                </div>
               </div>
               <div class="experts__item swiper-slide">
                 <div
@@ -1349,9 +1391,7 @@
               ></div>
             </div> -->
             <div class="register__item">
-              <div class="register__date">
-                онлайн <span>•</span> 2 місяці <span>•</span> 30 січня
-              </div>
+              <div class="register__date">онлайн</div>
               <div class="register__text">
                 <b>Залишайте ЗАЯВКУ</b>
                 <span>НА ПРОГРАМУ</span>

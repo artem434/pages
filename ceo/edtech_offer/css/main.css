@@ -1715,7 +1715,7 @@ select:-webkit-autofill:focus {
   line-height: normal;
   text-transform: uppercase;
   color: #ffffff;
-  width: 57px;
+  width: 66px;
   background-color: #75e585;
   text-align: center;
   padding: 4px 0;
@@ -1723,7 +1723,7 @@ select:-webkit-autofill:focus {
 @media (min-width: 1200px) {
   .format__packeges p {
     font-size: 24px;
-    width: 161px;
+    width: 186px;
     padding: 24px 0px;
   }
 }
@@ -1732,12 +1732,12 @@ select:-webkit-autofill:focus {
 }
 .format__packeges p:last-child {
   margin-right: 0;
-  width: 79px;
+  width: 92px;
   background-color: #009716;
 }
 @media (min-width: 1200px) {
   .format__packeges p:last-child {
-    width: 158px;
+    width: 186px;
   }
 }
 .format__btns {
@@ -1748,7 +1748,7 @@ select:-webkit-autofill:focus {
     display: flex;
     justify-content: flex-end;
     gap: 44px;
-    padding: 14px 22px;
+    padding: 14px 42px;
   }
   .format__btns a {
     font-size: 20px;

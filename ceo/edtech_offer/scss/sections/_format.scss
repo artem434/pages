@@ -71,14 +71,14 @@
       line-height: normal;
       text-transform: uppercase;
       color: $white;
-      width: 57px;
+      width: 66px;
       background-color: #75e585;
       text-align: center;
       padding: 4px 0;
 
       @include media-breakpoint-up(xl) {
         font-size: 24px;
-        width: 161px;
+        width: 186px;
         padding: 24px 0px;
       }
 
@@ -87,11 +87,11 @@
       }
       &:last-child {
         margin-right: 0;
-        width: 79px;
+        width: 92px;
         background-color: #009716;
 
         @include media-breakpoint-up(xl) {
-          width: 158px;
+          width: 186px;
         }
       }
     }
@@ -103,9 +103,8 @@
     @include media-breakpoint-up(xl) {
       display: flex;
       justify-content: flex-end;
-
       gap: 44px;
-      padding: 14px 22px;
+      padding: 14px 42px;
 
       a {
         font-size: 20px;

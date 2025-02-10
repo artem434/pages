@@ -3192,7 +3192,7 @@ a {
 }
 @media (min-width: 1200px) {
   .format__packeges {
-    padding: 32px 8px 16px 0;
+    padding: 32px 28px 16px 0;
   }
 }
 .format__packeges p {
@@ -3231,7 +3231,7 @@ a {
   .format__btns {
     display: flex;
     justify-content: flex-end;
-    padding-right: 8px;
+    padding-right: 28px;
     gap: 32px;
     margin-top: 14px;
   }

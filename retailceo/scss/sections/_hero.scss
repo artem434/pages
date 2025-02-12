@@ -153,19 +153,19 @@
 
   &__img {
     width: 422.635px;
-    height: 220px;
+    height: 236px;
     position: absolute;
-    top: 76px;
+    top: 42px;
     left: -24px;
     z-index: -1;
     background-size: cover;
 
     @include media-breakpoint-up(xl) {
       width: 957px;
-      height: 324px;
+      height: 364px;
       left: 50%;
       transform: translate(-50%, 0);
-      top: 50px;
+      top: 20px;
     }
   }
 }

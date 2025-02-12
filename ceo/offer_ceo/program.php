@@ -184,7 +184,7 @@
           </div>
           <div class="item">
             <p class="item__number">14</p>
-            <h4 class="item__title">Залучення інвестицій  <span>[пакети участі PRO, PREMIUM]</span></h4>
+            <h4 class="item__title">Залучення інвестицій  </h4>
             <div class="item__more"></div>
             <ul class="item__info">
             <li>Залучення інвестицій</li>

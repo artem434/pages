@@ -284,15 +284,15 @@
 
     <script>
       // Landing id // Online
-      let cLandingId = "2108311000926172229";
+      let cLandingId = "2108311001010817201";
 
       // Landing id // Online Pro
-      let cLandingIdPro = "2108311000926172268";
+      let cLandingIdPro = "2108311001010817206";
 
       // Landing id // Online Premium
-      let cLandingIdPremium = "2108311000926172295";
+      let cLandingIdPremium = "2108311001010817233";
 
-      const PackageSaleOnline = "2108311000926172322";
+      const PackageSaleOnline = "2108311001017226504";
     </script>
 
     <script>
@@ -302,7 +302,7 @@
         let currentPackage = urlWithPackage.searchParams.get("landing_id");
 
 let selectIdElement = document.querySelector('.select-id');
-        //let currentPackageSale = PackageSaleOnline;
+        let currentPackageSale = PackageSaleOnline;
         console.log(currentPackage)
         if (currentPackage === cLandingId) {
     selectIdElement.innerHTML = 'CORE';

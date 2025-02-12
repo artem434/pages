@@ -913,9 +913,9 @@ a {
 }
 .hero__img {
   width: 422.635px;
-  height: 220px;
+  height: 236px;
   position: absolute;
-  top: 76px;
+  top: 42px;
   left: -24px;
   z-index: -1;
   background-size: cover;
@@ -923,10 +923,10 @@ a {
 @media (min-width: 1200px) {
   .hero__img {
     width: 957px;
-    height: 324px;
+    height: 364px;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 50px;
+    top: 20px;
   }
 }
 @keyframes ticker {
@@ -1899,6 +1899,7 @@ a {
   height: 280px;
   background-size: cover;
   background-position: top center;
+  filter: grayscale(100%);
 }
 @media (min-width: 1200px) {
   .speakers .speaker__photo {

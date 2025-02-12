@@ -1,0 +1,317 @@
+.hero {
+  padding-bottom: 40px;
+
+  .container {
+    padding-bottom: 340px;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 88px;
+      margin-bottom: 44px;
+      position: relative;
+    }
+  }
+  &__dec {
+    position: absolute;
+
+    &--1 {
+      left: -330px;
+      width: 306px;
+      height: 545px;
+      top: 0;
+    }
+    &--2 {
+      right: -157px;
+      top: 62px;
+      width: 261px;
+      height: 457px;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 4px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 14px;
+      margin-bottom: 36px;
+      padding-top: 70px;
+    }
+    b {
+      color: #017f4a;
+      font-weight: 700;
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 2px;
+      height: 17px;
+      border-radius: 3px;
+      background: #f5c120;
+      margin: 0 6px;
+      @include media-breakpoint-up(xl) {
+        margin: 12px;
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-up(xl) {
+        flex-direction: row;
+        align-items: baseline;
+
+        b {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  &__live {
+    border-radius: 7px;
+    background: rgba(225, 244, 227, 0.93);
+    display: inline-block;
+    padding: 4px 8px;
+    color: #2b6432;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      padding: 6px 15px;
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+
+  &__title {
+    color: #f5c120;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 44px;
+      max-width: 554px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: block;
+      color: #000;
+      font-size: 26px;
+    }
+  }
+  &__subtitle {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 74px;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      margin-bottom: 108px;
+      max-width: 595px;
+    }
+
+    b {
+      color: #2b6432;
+      font-weight: 800;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    padding-right: 95px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      padding-right: 0;
+      width: 500px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__btm {
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__add_btm {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 3330px;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      left: inherit;
+      right: -200px;
+      top: 78px;
+      bottom: inherit;
+      max-width: 460px;
+    }
+
+    img {
+      width: 100%;
+      background-size: contain;
+      height: 100%;
+    }
+  }
+
+  &__bonus-image {
+    z-index: -1;
+    width: 175.255px;
+    height: 101.214px;
+    background-size: cover;
+    position: absolute;
+    top: -89px;
+    right: -31px;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -12px;
+      right: 0;
+      background: url("../img/hero-gift.png") no-repeat center;
+      background-size: cover;
+      width: 65px;
+      height: 65px;
+      animation: 9s linear 0s normal none infinite running rot;
+
+      @include media-breakpoint-up(xl) {
+        width: 95px;
+        height: 95px;
+        right: 8px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 276.889px;
+      height: 159.911px;
+      top: -140px;
+      right: 300px;
+    }
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 18px;
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+
+    .btn {
+      color: #f5c120;
+      border: none;
+      font-weight: 400;
+      max-width: 100%;
+      font-size: 16px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .hero-form {
+    position: relative;
+    padding: 2px 12px 14px 12px;
+    background: #ffffff;
+    box-shadow: 0px 4px 32px rgb(157, 169, 194, 25%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 16px;
+      margin: 0 auto;
+    }
+  }
+
+  .hero-form__form {
+    position: relative;
+    z-index: 3;
+    flex: 1 1 auto;
+  }
+
+  .hero-form .form {
+    display: flex;
+    max-width: initial;
+    align-items: center;
+  }
+
+  .hero-form .form__input {
+    width: 100%;
+  }
+}
+
+.form .input {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 60px;
+  display: block;
+}

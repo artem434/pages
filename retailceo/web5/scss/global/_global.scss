@@ -1,0 +1,240 @@
+body {
+  font-family: "MuseoSansCyrl", sans-serif;
+  background: $bg;
+  min-width: 360px;
+  color: #273339;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+body.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body.fixed section {
+  filter: blur(2px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 10px;
+  width: 100%;
+}
+
+form input.error {
+  box-shadow: inset 0px 0px 20px 1px rgba(255, 0, 0, 0.3);
+  border: 2px solid red !important;
+}
+
+form input.not_error {
+  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
+  border: 2px solid #99ff99 !important;
+}
+
+.swiper-button-prev {
+  left: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M15.0664 23.0122L16.4764 21.6022L10.8964 16.0122L23.0664 16.0122L23.0664 14.0122L10.8964 14.0122L16.4864 8.43221L15.0664 7.01221L7.06641 15.0122L15.0664 23.0122Z' fill='%23FB443D'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  &::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' viewBox='0 0 30 31' fill='none'%3E%3Cpath d='M15.0664 23.0122L16.4764 21.6022L10.8964 16.0122L23.0664 16.0122L23.0664 14.0122L10.8964 14.0122L16.4864 8.43221L15.0664 7.01221L7.06641 15.0122L15.0664 23.0122Z' fill='%23FB443D'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-none {
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+.d-xl-block {
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
+}
+.subm {
+  position: relative;
+}
+$background-color_1: #273339;
+$background-color_2: transparent;
+$background-color_3: var(--color);
+.loading {
+  .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: $background-color_1;
+    --color: hsl(0, 0%, 87%);
+    --animation: 2s ease-in-out infinite;
+    opacity: 0.6;
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border: solid 2px var(--color);
+      border-radius: 50%;
+      margin: 0 10px;
+      background-color: $background-color_2;
+      animation: circle-keys var(--animation);
+      .dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $background-color_3;
+        animation: dot-keys var(--animation);
+      }
+      .outline {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: outline-keys var(--animation);
+      }
+    }
+  }
+  .circle {
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+      .dot {
+        animation-delay: 0.3s;
+      }
+      .outline {
+        animation-delay: 1.2s;
+      }
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+      .dot {
+        animation-delay: 0.6s;
+      }
+      .outline {
+        animation-delay: 1.5s;
+      }
+    }
+    &:nth-child(4) {
+      animation-delay: 0.9s;
+      .dot {
+        animation-delay: 0.9s;
+      }
+      .outline {
+        animation-delay: 1.8s;
+      }
+    }
+    &:nth-child(5) {
+      animation-delay: 1.2s;
+      .dot {
+        animation-delay: 1.2s;
+      }
+      .outline {
+        animation-delay: 2.1s;
+      }
+    }
+    &:nth-child(1) {
+      .outline {
+        animation-delay: 0.9s;
+      }
+    }
+  }
+}
+
+@keyframes circle-keys {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-keys {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outline-keys {
+  0% {
+    transform: scale(0);
+    outline: solid 20px var(--color);
+    outline-offset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    outline: solid 0 transparent;
+    outline-offset: 20px;
+    opacity: 0;
+  }
+}

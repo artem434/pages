@@ -1286,6 +1286,7 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
+  filter: grayscale(100%);
 }
 @media (min-width: 1200px) {
   .lecturer__photo-image {

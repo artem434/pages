@@ -1,0 +1,375 @@
+.programs {
+  position: relative;
+  .container {
+    @extend %content;
+    position: relative;
+    padding: 68px 0px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      padding: 128px 0;
+    }
+  }
+
+  &__dec {
+    position: absolute;
+    background-size: cover;
+
+    &-1 {
+      width: 339px;
+      height: 357px;
+      top: 442px;
+      right: -218px;
+      display: block;
+      z-index: -1;
+    }
+
+    &-2 {
+      width: 451px;
+      height: 458px;
+      bottom: 2px;
+      left: -318px;
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+    }
+
+    span {
+      display: block;
+      color: $orange;
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    padding: 18px 29px;
+    text-align: center;
+    border: solid 3px $orange;
+    background: rgba(59, 154, 239, 0.2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      max-width: 988px;
+      margin: 0 auto 16px;
+    }
+
+    span {
+      color: $orange;
+      text-transform: uppercase;
+      display: block;
+      font-size: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      row-gap: 32px;
+      column-gap: 38px;
+      justify-content: center;
+    }
+  }
+  &__btn {
+    display: none;
+    background-color: $orange;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+
+      max-width: 988px;
+      margin: 32px auto 0;
+    }
+    margin-top: 100px;
+    position: relative;
+
+    .btn {
+      max-width: 600px;
+      font-size: 32px;
+      margin-left: auto;
+      line-height: 72px;
+      position: relative;
+      background-color: transparent;
+      margin: 0 auto;
+      z-index: 1;
+      text-transform: uppercase;
+    }
+    .arrow {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transform: rotate(180deg);
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        display: flex;
+      }
+
+      &__item {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        transform: rotate(-180deg);
+        animation: arrow 2s infinite;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='17' viewBox='0 0 19 17' fill='none'%3E%3Cpath d='M7.90297 1.8959L13.641 7.18802L0 7.18802L0 9.81198H13.641L7.90297 15.1051L9.78544 17L19 8.5L9.78544 0L7.90297 1.8959Z' fill='black'/%3E%3C/svg%3E")
+          right top no-repeat;
+        background-size: contain;
+
+        &:nth-child(odd) {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          transform: rotate(-180deg);
+          animation: arrow 2s infinite;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='17' viewBox='0 0 19 17' fill='none'%3E%3Cpath d='M7.90297 1.8959L13.641 7.18802L0 7.18802L0 9.81198H13.641L7.90297 15.1051L9.78544 17L19 8.5L9.78544 0L7.90297 1.8959Z' fill='black'/%3E%3C/svg%3E")
+            right top no-repeat;
+          background-size: contain;
+        }
+
+        &:nth-child(1) {
+          //left: 25px;
+          animation-delay: -1s;
+        }
+        &:nth-child(2) {
+          animation-delay: -0.8s;
+        }
+        &:nth-child(3) {
+          //right: 25px;
+          animation-delay: -0.6s;
+        }
+
+        &:nth-child(4) {
+          //left: 25px;
+          animation-delay: -0.4s;
+        }
+        &:nth-child(5) {
+          animation-delay: -0.2s;
+        }
+        &:nth-child(6) {
+          //right: 25px;
+        }
+      }
+
+      &--left {
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        transform: translate(0, -50%) rotate(180deg);
+        right: inherit;
+        left: -0px;
+      }
+      &--right {
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: inherit;
+        right: -0px;
+      }
+    }
+  }
+
+  .program {
+    border: solid 1px #fff;
+    padding: 26px 24px 60px 24px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    gap: 26px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 400px;
+      width: 100%;
+      padding: 28px 28px 46px 28px;
+      text-align: left;
+      gap: 30px;
+
+      &--long {
+        @include media-breakpoint-up(xl) {
+          max-width: 988px;
+          flex-direction: row;
+          padding: 28px;
+          gap: 74px;
+        }
+        .program__btn {
+          transform: translate(0, 0);
+          left: inherit;
+          right: 50px;
+
+          @include media-breakpoint-up(xl) {
+            top: 16px;
+            right: 16px;
+          }
+        }
+      }
+    }
+
+    &__item {
+      &:nth-child(2) {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -40px;
+          left: 0;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='32' viewBox='0 0 33 32' fill='none'%3E%3Crect x='0.5' width='32' height='32' fill='white'/%3E%3Cpath d='M23.5 14.1515V17.8485H18.3824V23H14.5882V17.8485H9.5V14.1515H14.5882V9H18.3824V14.1515H23.5Z' fill='black'/%3E%3C/svg%3E")
+            no-repeat center;
+          width: 32px;
+          height: 32px;
+          display: block;
+
+          @include media-breakpoint-up(xl) {
+            top: -46px;
+          }
+        }
+      }
+    }
+
+    // &:nth-child(2) {
+    //   .program__btn {
+    //     &::before {
+    //       content: " -25%";
+    //     }
+    //   }
+    // }
+
+    &__title {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 8px;
+
+      span {
+        color: $orange;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+      b {
+        font-weight: 700;
+        display: block;
+        margin: 10px 0;
+
+        span {
+          color: $orange;
+        }
+      }
+    }
+    &__btn {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      max-width: 282px;
+      width: 100%;
+      z-index: 1;
+      // &::before {
+      //   position: absolute;
+      //   content: "-40%";
+      //   right: -14.709px;
+      //   transform: rotate(7.248deg);
+      //   top: -21.439px;
+      //   padding: 4px 10px;
+      //   color: #000;
+      //   font-weight: 700;
+      //   background-color: #fff;
+      //   font-size: 22px;
+      // }
+      .btn {
+        text-transform: uppercase;
+        max-width: 100%;
+        background-color: #0d0c36;
+        border: 1px solid #fff;
+        color: $orange;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.toggleBtn::before {
+  content: "+";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  color: $orange;
+}
+
+.toggleBtn.active::before {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+
+  h4 {
+    font-weight: 700;
+    color: $orange;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: disc;
+    line-height: 1.2;
+    padding-left: 18px;
+    li {
+      margin-bottom: 8px;
+      b {
+        margin: 0 !important;
+        display: inline !important;
+      }
+    }
+  }
+}

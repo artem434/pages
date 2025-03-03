@@ -1452,18 +1452,6 @@ select:-webkit-autofill:focus {
 .startup .container {
   position: relative;
 }
-@media (min-width: 1200px) {
-  .startup .container::after {
-    content: "";
-    position: absolute;
-    bottom: -18px;
-    left: 90px;
-    background: url(../img/like-left.png) no-repeat center;
-    background-size: cover;
-    width: 135px;
-    height: 108px;
-  }
-}
 .startup__shadow {
   background-size: cover;
   background-position: center;
@@ -2660,6 +2648,7 @@ select:-webkit-autofill:focus {
     padding-right: 40px;
     max-width: 1196.5px;
     width: 100%;
+    padding-top: 72px;
     margin: 0 auto;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1197' height='970' viewBox='0 0 1197 970' fill='none'%3E%3Cpath d='M647.557 53.9385L647.445 54H647.317H1V969.5H1196.5V0.5H745.128L647.557 53.9385Z' fill='%231F1F1F' stroke='white'/%3E%3C/svg%3E") top no-repeat;
     padding-bottom: 30px;

@@ -2,18 +2,18 @@
   .container {
     position: relative;
 
-    @include media-breakpoint-up(xl) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -18px;
-        left: 90px;
-        background: url(../img/like-left.png) no-repeat center;
-        background-size: cover;
-        width: 135px;
-        height: 108px;
-      }
-    }
+    // @include media-breakpoint-up(xl) {
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: -18px;
+    //     left: 90px;
+    //     background: url(../img/like-left.png) no-repeat center;
+    //     background-size: cover;
+    //     width: 135px;
+    //     height: 108px;
+    //   }
+    // }
   }
 
   &__shadow {

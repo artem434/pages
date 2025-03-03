@@ -1,0 +1,248 @@
+.company {
+  position: relative;
+  color: $black;
+  text-align: center;
+
+  @include media-breakpoint-up(xl) {
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__shadow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 775px;
+    height: 775px;
+    position: absolute;
+    transform: scale(0.4);
+    top: -334px;
+    left: -181px;
+
+    @include media-breakpoint-up(xl) {
+      transform: scale(1);
+      z-index: -1;
+      left: 180px;
+    }
+  }
+
+  &__title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 946px;
+      margin: 0 auto;
+    }
+
+    br {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+
+    span {
+      display: inline-block;
+      background-color: $maincolor;
+      color: $white;
+      font-size: 24px;
+      padding: 12px 11px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 36px;
+      }
+    }
+    p {
+      margin-top: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 52px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__block {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      gap: 42px;
+      margin-top: 80px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    //gap: 22px;
+    margin: 18px 0;
+
+    @include media-breakpoint-up(xl) {
+      //gap: 15px;
+    }
+  }
+  &__logos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 346.496px;
+    height: 190px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+      width: 562.323px;
+      height: 275.16px;
+      margin: -40px auto 0;
+      background-size: cover;
+    }
+  }
+
+  &__dec {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1770.398px;
+    height: 524.609px;
+    position: absolute;
+    top: 11px;
+    right: -281px;
+
+    @include media-breakpoint-up(xl) {
+      top: 50px;
+      right: -100px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.6;
+    b {
+      font-weight: 700;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 512px;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+  ul {
+    //padding-bottom: 330px;
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+
+    @include media-breakpoint-up(xl) {
+      //padding-bottom: 206px;
+      padding-top: 38px;
+    }
+
+    li {
+      border: 1px solid #d3d3d3;
+      text-align: left;
+      backdrop-filter: blur(3px);
+      padding: 12px;
+      flex: 0 0 47%;
+      color: #000;
+      //position: absolute;
+      font-size: 14px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+        padding: 24px;
+        flex: 0 0 18%;
+      }
+
+      b {
+        display: block;
+        font-size: 26px;
+        font-weight: 700;
+        color: $maincolor;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: 13px;
+        width: 24px;
+        height: 24px;
+        background: $maincolor
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 6.99984L9 18.9998L3.5 13.4998L4.91 12.0898L9 16.1698L19.59 5.58984L21 6.99984Z' fill='white'/%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-up(xl) {
+          left: 20px;
+        }
+      }
+
+      // &:nth-child(1) {
+      //   max-width: 161px;
+      //   left: 78px;
+      //   top: 0;
+      //   z-index: 1;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 216px;
+      //     top: -170px;
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   max-width: 123px;
+      //   right: -11px;
+      //   top: 92px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 256px;
+      //     top: 40px;
+      //     right: inherit;
+      //     left: 200px;
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   max-width: 110px;
+      //   left: 0;
+      //   top: 52px;
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 183px;
+      //     top: 20px;
+      //     left: 500px;
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   max-width: 250px;
+      //   left: 0px;
+      //   bottom: 0px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 210px;
+      //     left: inherit;
+      //     right: 206px;
+      //     bottom: inherit;
+      //     top: 80px;
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   max-width: 134px;
+      //   right: 118px;
+      //   top: 148px;
+
+      //   @include media-breakpoint-up(xl) {
+      //     max-width: 181px;
+      //     right: inherit;
+      //     top: 40px;
+      //     right: 0px;
+      //   }
+      // }
+    }
+  }
+}

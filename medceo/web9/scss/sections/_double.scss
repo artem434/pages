@@ -1,0 +1,79 @@
+.double {
+  padding-bottom: 30px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 114px;
+  }
+  .title {
+    border-radius: 10px;
+    background: #e5f3f3;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    line-height: normal;
+
+    @include media-breakpoint-up(xl) {
+      padding: 30px 41px;
+      font-size: 28px;
+      margin-bottom: 46px;
+    }
+    b {
+      color: #20a29f;
+      font-weight: 800;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+      gap: 24px;
+      max-width: 100%;
+    }
+    li {
+      color: #1f2229;
+      font-size: 18px;
+      position: relative;
+      font-weight: 400;
+      padding-left: 40px;
+      font-family: "Montserrat", sans-serif;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+
+      &::before {
+        content: "";
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='12' viewBox='0 0 21 12' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.3533 0.601339C15.7248 0.945364 15.747 1.52535 15.4029 1.89675L7.14722 10.8098C6.47119 11.5397 5.34392 11.5397 4.6679 10.8098L1.22463 7.09238C0.880613 6.72095 0.902816 6.14098 1.27423 5.79695C1.64564 5.45293 2.22562 5.4752 2.56964 5.84654L5.90755 9.45023L14.058 0.65094C14.402 0.279525 14.982 0.257323 15.3533 0.601339ZM19.9371 0.601339C20.3085 0.945364 20.3308 1.52534 19.9867 1.89675L11.731 10.8098C11.3869 11.1812 10.807 11.2035 10.4355 10.8594C10.0641 10.5154 10.0419 9.93543 10.3859 9.56399L18.6417 0.65094C18.9857 0.279525 19.5657 0.257323 19.9371 0.601339Z' fill='%2320A29F'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+      }
+    }
+  }
+  .btn {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      background-color: #20a29f;
+      display: block;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 46px;
+      max-width: 280px;
+    }
+
+    &:hover {
+      background-color: #208e8c;
+    }
+  }
+}

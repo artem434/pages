@@ -1,0 +1,89 @@
+.program {
+  padding-top: 30px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 114px;
+  }
+
+  .title {
+    font-weight: 800;
+    color: #263238;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 28px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 36px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+
+    li {
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 4px 32px 0px rgba(198, 198, 198, 0.24);
+      display: flex;
+      padding: 18px;
+      align-items: center;
+      position: relative;
+      padding-left: 20px;
+      &::before {
+        content: "";
+        display: block;
+        min-width: 22px;
+        height: 22px;
+        margin-right: 20px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='12' viewBox='0 0 21 12' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.3533 0.601339C15.7248 0.945364 15.747 1.52535 15.4029 1.89675L7.14722 10.8098C6.47119 11.5397 5.34392 11.5397 4.6679 10.8098L1.22463 7.09238C0.880613 6.72095 0.902816 6.14098 1.27423 5.79695C1.64564 5.45293 2.22562 5.4752 2.56964 5.84654L5.90755 9.45023L14.058 0.65094C14.402 0.279525 14.982 0.257323 15.3533 0.601339ZM19.9371 0.601339C20.3085 0.945364 20.3308 1.52534 19.9867 1.89675L11.731 10.8098C11.3869 11.1812 10.807 11.2035 10.4355 10.8594C10.0641 10.5154 10.0419 9.93543 10.3859 9.56399L18.6417 0.65094C18.9857 0.279525 19.5657 0.257323 19.9371 0.601339Z' fill='%2320A29F'/%3E%3C/svg%3E")
+          50% / contain no-repeat;
+      }
+    }
+  }
+
+  &__item-day {
+    border-radius: 3px;
+    background: #20a29f;
+    color: #fff;
+    padding: 5px;
+    margin-right: 18px;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 12px;
+      margin-right: 23px;
+    }
+  }
+
+  &__item-title {
+    b {
+      font-weight: 800;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+    }
+  }
+
+  .btn {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      background-color: #20a29f;
+      display: block;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 auto;
+    }
+    &:hover {
+      background-color: #208e8c;
+    }
+  }
+}

@@ -2024,6 +2024,7 @@ a {
   height: 280px;
   background-size: cover;
   background-position: top center;
+  filter: grayscale(100%);
 }
 @media (min-width: 1200px) {
   .speakers .speaker__photo {

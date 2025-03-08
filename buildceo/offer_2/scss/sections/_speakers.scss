@@ -126,6 +126,7 @@
       height: 280px;
       background-size: cover;
       background-position: top center;
+      filter: grayscale(100%);
 
       @include media-breakpoint-up(xl) {
         height: 380px;

@@ -60,10 +60,10 @@ form input.not_error {
   left: -16px;
   &::after {
     content: "";
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%23FF5A18' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%23FF5A18'/%3E%3C/svg%3E")
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.71285 18.5401L10.0664 18.8936L10.42 18.5401L11.83 17.1301L12.1832 16.7768L11.8303 16.4233L7.10199 11.6865L18.0664 11.6865L18.5664 11.6865L18.5664 11.1865L18.5664 9.18652L18.5664 8.68652L18.0664 8.68652L7.10504 8.68652L11.8396 3.96039L12.1938 3.60684L11.84 3.25297L10.42 1.83297L10.0664 1.47942L9.71285 1.83297L1.71285 9.83297L1.3593 10.1865L1.71285 10.5401L9.71285 18.5401Z' fill='%23DDFE65' stroke='black' /%3E%3C/svg%3E")
       center/contain no-repeat;
-    min-width: 44px;
-    height: 44px;
+    min-width: 20px;
+    height: 20px;
   }
 }
 
@@ -71,10 +71,10 @@ form input.not_error {
   right: -16px;
   &::after {
     content: "";
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='45' viewBox='0 0 44 45' fill='none'%3E%3Crect x='1' y='1' width='42' height='42' rx='21' transform='matrix(4.60819e-08 1 1 -4.09221e-08 4.09221e-08 0.5)' stroke='%23FF5A18' stroke-width='2'/%3E%3Cpath d='M22.5 12.5L24.2625 14.2625L17.2875 21.25L32.5 21.25L32.5 23.75L17.2875 23.75L24.275 30.725L22.5 32.5L12.5 22.5L22.5 12.5Z' fill='%23FF5A18'/%3E%3C/svg%3E")
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.71285 18.5401L10.0664 18.8936L10.42 18.5401L11.83 17.1301L12.1832 16.7768L11.8303 16.4233L7.10199 11.6865L18.0664 11.6865L18.5664 11.6865L18.5664 11.1865L18.5664 9.18652L18.5664 8.68652L18.0664 8.68652L7.10504 8.68652L11.8396 3.96039L12.1938 3.60684L11.84 3.25297L10.42 1.83297L10.0664 1.47942L9.71285 1.83297L1.71285 9.83297L1.3593 10.1865L1.71285 10.5401L9.71285 18.5401Z' fill='%23DDFE65' stroke='black' /%3E%3C/svg%3E")
       center/contain no-repeat;
-    min-width: 44px;
-    height: 44px;
+    min-width: 20px;
+    height: 20px;
     transform: rotate(180deg);
   }
 }
@@ -162,7 +162,7 @@ a {
   }
 
   @include media-breakpoint-up(xl) {
-    max-width: 1200px;
+    max-width: 1352px;
     padding: 72px 16px;
   }
 }

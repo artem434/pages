@@ -163,9 +163,47 @@ const expertsSlider = new Swiper(".hero__slider", {
   },
 });
 
+const clientsSlider = new Swiper(".clients__slider", {
+  speed: 2000,
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 2,
+  freeModeMomentum: false,
+  disableOnInteraction: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    760: {
+      slidesPerView: 4,
+    },
+    1260: {
+      slidesPerView: 8,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+});
+
 $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
+});
+
+$(".item__more, .program .faq .item__title").on("click", function () {
+  $(this).parent().toggleClass("active");
+});
+$(".packages .item__btn").on("click", function () {
+  let package = $(this).data("package");
+  $("input[name=package][value=" + package + "]").prop("checked", true);
 });
 
 $(document).ready(function () {
@@ -184,7 +222,142 @@ $(document).ready(function () {
     );
   });
 });
-const scroller = new LocomotiveScroll({
-  el: document.querySelector(".wrapper"),
-  smooth: true,
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.querySelectorAll(".right-to-left").forEach((element) => {
+    gsap.to(element, {
+      x: "0", // Рухається справа наліво
+      //ease: "power1.out", // Плавніший рух
+      scrollTrigger: {
+        trigger: element,
+        start: "top 90%", // Починає рух, коли 80% блоку видно
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
+  });
+
+  document.querySelectorAll(".left-to-right").forEach((element) => {
+    gsap.to(element, {
+      x: "0", // Рухається зліва направо
+      //ease: "power1.out", // Плавніший рух
+      scrollTrigger: {
+        trigger: element,
+        start: "top 90%", // Починає рух, коли 80% блоку видно
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
+  });
 });
+
+var youtubeSwiper = new Swiper(".swiper-container", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".youtube-next",
+    prevEl: ".youtube-prev",
+  },
+  breakpoints: {
+    760: {
+      slidesPerView: 3,
+    },
+  },
+  on: {
+    slideChange: function () {
+      stopAllVideos();
+    },
+  },
+});
+
+if (typeof YT === "undefined" || typeof YT.Player === "undefined") {
+  loadYouTubeAPI();
+} else {
+  onYouTubeIframeAPIReady();
+}
+
+function loadYouTubeAPI() {
+  var tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+}
+
+function onYouTubeIframeAPIReady() {
+  $(".swiper-slide iframe").each(function (index, iframe) {
+    var player = new YT.Player(iframe, {
+      events: {
+        onStateChange: onPlayerStateChange,
+      },
+    });
+    players.push(player);
+  });
+}
+
+function stopAllVideos() {
+  players.forEach(function (player) {
+    if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+      player.pauseVideo();
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING) {
+    players.forEach(function (player) {
+      if (player !== event.target) {
+        player.pauseVideo();
+      }
+    });
+  }
+}
+
+function openPopup(type, url, isImage = false) {
+  var popupHtml = `
+  <div class="${type}-popup">
+    <div class="${type}-popup__overlay">
+      <div class="${type}-popup__content">
+    <div class="${type}-popup__block">
+      ${
+        isImage
+          ? `<img src="${url}" alt="Review Image" />`
+          : `<iframe src="${url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+      }
+      <button class="${type}-popup__close">&times;</button>
+    </div>
+    </div></div>
+  
+  </div>
+  `;
+  $("body").append(popupHtml);
+  $(`.${type}-popup`).fadeIn(300);
+}
+
+$(document).on("click", ".reviews__image", function () {
+  var imageUrl = $(this).attr("src");
+  openPopup("image", imageUrl, true);
+});
+
+$(document).on(
+  "click",
+  ".swiper-slide .video-wrapper .video-thumbnail",
+  function () {
+    var videoId = $(this).data("video-id");
+    var videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0`;
+    openPopup("video", videoUrl);
+  }
+);
+
+// Закриття попапів
+$(document).on(
+  "click",
+  ".image-popup__overlay, .image-popup__close, .video-popup__overlay, .video-popup__close",
+  function () {
+    $(".image-popup, .video-popup").fadeOut(300, function () {
+      $(this).remove();
+    });
+  }
+);

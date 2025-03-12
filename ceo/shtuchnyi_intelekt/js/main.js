@@ -140,6 +140,21 @@ $('a[href*="#"]')
     }
   });
 
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".scroll-text").forEach((text) => {
+  gsap.to(text, {
+    opacity: 1,
+    x: 0, // Рухаємось вліво або вправо до нуля
+    duration: 1,
+    scrollTrigger: {
+      trigger: text,
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+  });
+});
+
 const tickerSlider = new Swiper(".ticker--line", {
   speed: 4000,
   loop: true,

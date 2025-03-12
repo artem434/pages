@@ -1,121 +1,97 @@
 .who {
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    background: url(../img/dec.webp) no-repeat center;
-    background-size: cover;
-    width: 1672px;
-    height: 658px;
-    z-index: -2;
-    top: 0px;
-    left: -900px;
+
+  .container {
+    margin-top: 24px;
 
     @include media-breakpoint-up(xl) {
-      top: -270px;
-      left: 0px;
-      //animation: rotateOnlyRight 20s linear infinite;
+      margin-top: 64px;
     }
   }
+
   h2 {
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 105%;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+    margin: 12px 0;
+    line-height: 1.6;
+    //text-align: center;
 
     @include media-breakpoint-up(xl) {
-      font-size: 78px;
-      margin-bottom: 0;
-      margin-top: 54px;
     }
-  }
-
-  &__block {
-    @include media-breakpoint-up(xl) {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-    position: relative;
-    justify-content: space-between;
-    border-left: solid 1px rgba(255, 255, 255, 0.3);
-    border-right: solid 1px rgba(255, 255, 255, 0.3);
-    max-width: 600px;
-
-    @include media-breakpoint-up(xl) {
-      margin-top: 0;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      height: 1px;
-      width: 1000%;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    @include media-breakpoint-up(xl) {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        height: 1px;
-        width: 1000%;
-        background-color: rgba(255, 255, 255, 0.3);
-      }
-    }
-
-    li {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 12px 10px;
-      position: relative;
+    span {
+      font-weight: 700;
+      font-size: 29px;
+      text-transform: uppercase;
+      text-align: right;
+      color: #ddfe65;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
 
       @include media-breakpoint-up(xl) {
-        font-size: 18px;
-        padding: 22px 64px;
+        font-size: 60px;
+        margin-bottom: 10px;
       }
+    }
 
-      b {
-        color: $maincolor;
-        font-weight: 600;
+    b {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 29px;
+      text-transform: uppercase;
+      background-color: $maincolor;
+      border-radius: 10px;
+      padding: 3px 8px;
+      @include media-breakpoint-up(xl) {
+        font-size: 60px;
+        padding: 3px 4px;
       }
+    }
+  }
+  &__first {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        height: 1px;
-        width: 1000%;
-        background-color: rgba(255, 255, 255, 0.3);
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      font-size: 30px;
+    }
+  }
 
-        @include media-breakpoint-up(xl) {
-          width: 100%;
-        }
+  &__second {
+    font-weight: 700;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 100px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 60px;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      padding-left: 0;
+
+      br {
+        display: none;
       }
+    }
 
-      &::before {
-        content: "";
-        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L19 19M19 19V3.20408M19 19H3.20408' stroke='%23FF5A18' stroke-width='2' /%3E%3C/svg%3E")
-          no-repeat center;
-        width: 20px;
-        height: 20px;
-        background-size: cover;
-        flex: 0 0 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 195px;
+      height: 11px;
+      background: url(../img/dec-1.svg) no-repeat center center;
+      background-size: contain;
+      bottom: -20px;
+      left: 100px;
+
+      @include media-breakpoint-up(xl) {
+        width: 500px;
+        height: 17px;
       }
     }
   }

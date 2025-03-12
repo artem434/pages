@@ -9,16 +9,33 @@
 @import "./sections/btn";
 @import "./sections/header";
 @import "./sections/hero";
-@import "./sections/expert";
-@import "./sections/clients";
-@import "./sections/company";
-@import "./sections/register";
-@import "./sections/chance";
-@import "./sections/feel";
-@import "./sections/need";
-@import "./sections/attention";
-@import "./sections/format";
+@import "./sections/program";
 @import "./sections/who";
-@import "./sections/how";
-
+@import "./sections/lector";
+@import "./sections/problem";
+@import "./sections/business";
+@import "./sections/clients";
+@import "./sections/faq";
+@import "./sections/register";
+@import "./sections/company";
+@import "./sections/reviews";
 @import "./sections/footer";
+.scroll-text {
+  opacity: 1;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.right-to-left {
+  transform: translateX(-100%);
+  @include media-breakpoint-up(xl) {
+    transform: translateX(0%);
+  }
+}
+
+.left-to-right {
+  transform: translateX(100%);
+  @include media-breakpoint-up(xl) {
+    transform: translateX(0%);
+  }
+}

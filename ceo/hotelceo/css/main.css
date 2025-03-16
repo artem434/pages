@@ -3230,6 +3230,7 @@ a {
   .hero__title {
     font-size: 30px;
     text-align: left;
+    max-width: 280px;
   }
 }
 .format__title span {

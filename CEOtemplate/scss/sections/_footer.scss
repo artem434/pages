@@ -1,0 +1,72 @@
+.footer {
+  background-color: $greay;
+  padding: 48px 0;
+  color: $white;
+  margin-top: 32px;
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 70px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 268px;
+
+    @media (min-width: 760px) {
+      max-width: $maxWidth;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    h5 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__social {
+    svg {
+      fill: $orange;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .footer__decor--1 {
+    position: absolute;
+    left: calc(50% - 800px);
+    top: -100px;
+  }
+
+  .footer__decor--2 {
+    position: absolute;
+    top: 70px;
+    right: calc(50% - 600px);
+  }
+
+  .footer__container {
+    justify-content: space-between;
+    gap: 40px;
+  }
+}

@@ -300,7 +300,7 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="header__container">
-          <a class="header__logo" href="https://ceo.bizconstructor.com/new"></a>
+          <div class="header__logo"></div>
           <ul class="header__menu">
             <li>
               <a href="#program">Структура програми</a>
@@ -327,7 +327,7 @@
       <section class="hero" id="hero">
         <div class="hero__container">
           <div class="hero__info">
-            <p>3 місяці</p>
+            <p>Старт 15 травня</p>
             <p>Online-формат</p>
             <p>Індивідуальний експертний супровід</p>
           </div>
@@ -610,28 +610,15 @@
               </tr>
               <tr>
                 <td>
-                  Воркшопи по розробору кейсів з бізнес-консультантами та
+                  Воркшопи по розбору кейсів з бізнес-консультантами та
                   експертами
                 </td>
 
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
-                <td>
-                  Індивідуальний зворотний зв'язок від бізнес-консультанта по
-                  практичним завданням програми
-                </td>
+           
 
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Додатковий модуль про залучення інвестицій</td>
-
-                <td></td>
-                <td></td>
-              </tr>
 
               <tr>
                 <td>
@@ -684,8 +671,14 @@
               </tr>
             </table>
             <div class="format__btns">
-              <a id="btn-pro" href="#form" data-package="pro">Замовити</a>
-              <a id="btn-premium" href="#form" data-package="premium"
+              <a id="btn-pro" href="#form" data-package="pro" class="pro_price"
+                >Замовити</a
+              >
+              <a
+                id="btn-premium"
+                class="premium_price"
+                href="#form"
+                data-package="premium"
                 >Замовити</a
               >
             </div>
@@ -728,7 +721,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="packages-btns__pack-name">
+                    <div class="packages-btns__pack-name premium_price">
                       <span>PREMIUM</span>
                     </div>
                   </li>
@@ -1424,17 +1417,17 @@
         // Дата мероприятия
         let cDate = "5 вересня",
           // Landing id // Online
-          cLandingId = "2108311001025837219",
+          cLandingId = "2108311001031086113",
           // Landing id // Online Pro
-          cLandingIdPro = "2108311001025837219",
+          cLandingIdPro = "2108311001031086088",
           // Landing id // Online Pro
-          cLandingIdPremium = "2108311001025837219",
+          cLandingIdPremium = "2108311001031086113",
           // es_mail_id
           cMail_id = "",
           // es_id
           cEs_id = "1154",
           // success_url
-          cSuccess_url = "https://ceo.bizconstructor.com/hotelceo/thanks.html";
+          cSuccess_url = "https://web.bizconstructor.com/ez20vb";
 
         //  дата скидки (автозамена)
         let dataDeadline;

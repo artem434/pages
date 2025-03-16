@@ -1,0 +1,36 @@
+.btn-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+
+  border-radius: 6px;
+  background-color: $maincolor;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $maincolor;
+    border: 2px solid$maincolor;
+    cursor: pointer;
+    .icon-left {
+      transform: rotate(180deg) scale(2); // Обертання по годинниковій стрілці
+    }
+
+    .icon-right {
+      transform: rotate(-180deg) scale(2); // Обертання проти годинникової стрілки
+    }
+  }
+}
+.icon-left,
+.icon-right {
+  width: 11px;
+  height: 11px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,22 @@
+.title {
+  background: linear-gradient(267deg, #fff 81.21%, #787878 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 105%;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 68px;
+    margin-bottom: 38px;
+  }
+
+  span {
+    -webkit-text-fill-color: $maincolor;
+    color: $maincolor;
+  }
+}

@@ -88,6 +88,8 @@
     height: 172.768px;
     background-size: cover;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     @include media-breakpoint-up(xl) {
       width: 278.158px;

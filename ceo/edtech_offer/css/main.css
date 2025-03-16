@@ -1596,6 +1596,8 @@ select:-webkit-autofill:focus {
   height: 172.768px;
   background-size: cover;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 @media (min-width: 1200px) {
   .experts__img {

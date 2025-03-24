@@ -1,6 +1,8 @@
 .issues {
   background-color: $maincolor;
   margin-top: 12px;
+  z-index: 1;
+  position: relative;
 
   @include media-breakpoint-up(xl) {
     margin-top: 20px;

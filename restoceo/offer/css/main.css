@@ -1613,6 +1613,7 @@ strong.medical b {
   flex: 0 0 50%;
   height: 278px;
   background: 0px 0px / cover no-repeat;
+  filter: grayscale(1);
 }
 .speaker__info {
   order: 2;

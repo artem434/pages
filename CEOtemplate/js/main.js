@@ -86,56 +86,73 @@ function validate(formid) {
   return output;
 }
 
-// SMOOTH SCROLL //
-
+//SMOOTH SCROLL //
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
   .not('[href*="modal"]')
   .click(function (event) {
-    // On-page links
     $(".header").removeClass("active");
     $("body").removeClass("fixed");
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        // var headerHeight = $('.header').height();
-        var headerHeight = 0;
-        if ($(window).width() < 760) {
-          headerHeight = 0;
-        }
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top - headerHeight,
-          },
-          {
-            // Set the duration long enough to allow time
-            // to lazy load the elements.
-            duration: 1500,
-            // At each animation step, check whether the target has moved.
-            step: function (now, fx) {
-              // Where is the target now located on the page?
-              // i.e. its location will change as images etc. are lazy loaded
-              var newOffset = target.offset().top - headerHeight;
-              // If where we were originally planning to scroll to is not
-              // the same as the new offset (newOffset) then change where
-              // the animation is scrolling to (fx.end).
-              if (fx.end !== newOffset) fx.end = newOffset;
-            },
-          }
-        );
-      }
+    event.preventDefault();
+
+    var target = $(this.hash);
+    if (target.length) {
+      var offset = target.offset().top - 0; // Віднімаємо 170px
+      location.href = "#" + target.attr("id");
+      window.scrollTo(0, offset);
     }
   });
+
+// $('a[href*="#"]')
+//   .not('[href="#"]')
+//   .not('[href="#0"]')
+//   .not('[href*="modal"]')
+//   .click(function (event) {
+//     // On-page links
+//     $(".header").removeClass("active");
+//     $("body").removeClass("fixed");
+
+//     // if (
+//     //   location.pathname.replace(/^\//, "") ==
+//     //     this.pathname.replace(/^\//, "") &&
+//     //   location.hostname == this.hostname
+//     // ) {
+//     //   // Figure out element to scroll to
+//     //   var target = $(this.hash);
+//     //   target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+//     //   // Does a scroll target exist?
+//     //   if (target.length) {
+//     //     // Only prevent default if animation is actually gonna happen
+//     //     event.preventDefault();
+//     //     // var headerHeight = $('.header').height();
+//     //     var headerHeight = 0;
+//     //     if ($(window).width() < 760) {
+//     //       headerHeight = 0;
+//     //     }
+//     //     $("html, body").animate(
+//     //       {
+//     //         scrollTop: target.offset().top - headerHeight,
+//     //       },
+//     //       {
+//     //         // Set the duration long enough to allow time
+//     //         // to lazy load the elements.
+//     //         duration: 1500,
+//     //         // At each animation step, check whether the target has moved.
+//     //         step: function (now, fx) {
+//     //           // Where is the target now located on the page?
+//     //           // i.e. its location will change as images etc. are lazy loaded
+//     //           var newOffset = target.offset().top - headerHeight;
+//     //           // If where we were originally planning to scroll to is not
+//     //           // the same as the new offset (newOffset) then change where
+//     //           // the animation is scrolling to (fx.end).
+//     //           if (fx.end !== newOffset) fx.end = newOffset;
+//     //         },
+//     //       }
+//     //     );
+//     //   }
+//     // }
+//   });
 
 const lineSlider = new Swiper(".line__slider", {
   speed: 8000,
@@ -230,19 +247,19 @@ $(".header__burger").on("click", function () {
   $("body").toggleClass("fixed");
 });
 gsap.registerPlugin(ScrollTrigger);
-gsap.utils.toArray(".title").forEach((title) => {
-  gsap.from(title, {
-    opacity: 0,
-    y: 50, // Зміщення вниз на старті
-    duration: 1, // Тривалість анімації
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: title, // Для кожного заголовка окремий тригер
-      start: "top 80%", // Анімація почнеться, коли заголовок буде в цій зоні
-      toggleActions: "play none none reverse", // При скролі назад - прибирає ефект
-    },
-  });
-});
+// gsap.utils.toArray(".title").forEach((title) => {
+//   gsap.from(title, {
+//     opacity: 0,
+//     y: 50, // Зміщення вниз на старті
+//     duration: 1, // Тривалість анімації
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: title, // Для кожного заголовка окремий тригер
+//       start: "top 80%", // Анімація почнеться, коли заголовок буде в цій зоні
+//       toggleActions: "play none none reverse", // При скролі назад - прибирає ефект
+//     },
+//   });
+// });
 
 gsap.from(".problems__item ", {
   opacity: 0,
@@ -274,108 +291,67 @@ function animateElement(selector) {
   });
 }
 
-// Використовуємо функцію для обох блоків
 animateElement(".issues");
 animateElement(".info");
-// Додати плавний перехід для зміни властивостей
 
-let cards = gsap.utils.toArray(".card");
-
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".stack-section",
-    start: "top 10px",
-    end: `+=${cards.length * 40}%`,
-    scrub: true,
-    pin: true,
-  },
-});
-
-// Перша картка завжди видима
-gsap.set(cards[0], {
-  opacity: 1,
-  pointerEvents: "auto",
-});
-
-// Перша картка завжди видима та не змінюється
-tl.to(
-  cards[0],
-  {
-    x: 0,
-    y: 0,
-    scale: 1,
-    duration: 0.5,
-    ease: "power2.out",
-  },
-  0
-);
-
-cards.forEach((card, i) => {
-  if (i !== 0) {
-    // Всі картки, крім першої
-    gsap.set(card, {
-      opacity: 1, // Спочатку приховані
-      y: 492, // Починають нижче, щоб виїжджали вгору
-      scale: 0.9, // Трохи зменшені для ефекту появи
-    });
-
-    tl.to(
-      card,
-      {
-        opacity: 1,
-        y: i * 10, // Виїжджають вгору
-        scale: 1,
-        duration: 0.1,
-        ease: "power2.out",
-        zIndex: 100, // Додаємо z-index 100
-      },
-      `+=${i * 0.5}`
-    );
-  }
-});
-
-// Створюємо анімацію для кожного блока змін
 if (window.matchMedia("(max-width: 768px)").matches) {
-  gsap.utils.toArray(".change").forEach((change, i) => {
-    // Анімація прозорості та зміщення
-    gsap.from(change, {
-      opacity: 0.5, // Початкова прозорість
-      y: 50, // Початкове зміщення вниз
-      duration: 1, // Тривалість анімації
-      ease: "power2.out", // Тип easing
-      scrollTrigger: {
-        trigger: change, // Кожен блок змін має свій trigger
-        start: "top 30%", // Анімація починається, коли верх блока потрапляє в зону видимості
-        end: "top 0%", // Анімація закінчується, коли верх блока виходить із зони видимості
-        scrub: true, // Синхронізує анімацію з прокручуванням
-        toggleActions: "play none none reverse", // Відтворює анімацію при прокручуванні
-      },
+  document.addEventListener("DOMContentLoaded", () => {
+    const changes = document.querySelectorAll(".change");
+
+    // Встановлюємо висоту всіх блоків на 150px та колір фону для неактивного блоку
+    changes.forEach((change) => {
+      gsap.set(change, { height: 150 });
+      gsap.set(change.querySelector(".change__body"), {
+        opacity: 0,
+        y: 10,
+        maxHeight: 0,
+      });
+      // Колір для неактивного блоку
+      gsap.set(change, { backgroundColor: "#1a1a1a" });
     });
 
-    // Для того, щоб блоки плавно наїжджали один на одного, можна використовувати затримку:
-    gsap.to(change, {
-      y: 0, // Зміщення на -50px, щоб блоки наїжджали один на одного
-      stagger: 0.3, // Затримка між анімаціями
-      scrollTrigger: {
-        trigger: change, // Тригер для кожного блоку
-        start: "top 30%", // Коли блок потрапляє в зону видимості
-        end: "top 0%", // Анімація закінчується, коли блок виходить із зони видимості
-        scrub: true, // Синхронізує анімацію з прокручуванням
-      },
+    // Анімація для першого елемента (за замовчуванням)
+    const firstChange = changes[0];
+    gsap.to(firstChange, { height: 330, duration: 0.3, ease: "power2.out" });
+    gsap.to(firstChange.querySelector(".change__body"), {
+      opacity: 1,
+      y: 0,
+      duration: 0.3,
+      maxHeight: "210px",
     });
+    // Встановлюємо колір для першого блоку
+    gsap.to(firstChange, { backgroundColor: "#DF0013", duration: 0.3 });
 
-    // Зміна кольору до червоного
+    changes.forEach((change) => {
+      change.addEventListener("click", () => {
+        // Закриваємо всі блоки і змінюємо колір на стандартний для неактивних
+        changes.forEach((otherChange) => {
+          if (otherChange !== change) {
+            gsap.to(otherChange, {
+              height: 150,
+              duration: 0.3,
+              ease: "power2.out",
+            });
+            gsap.to(otherChange.querySelector(".change__body"), {
+              opacity: 0,
+              y: 10,
+              duration: 0.3,
+              maxHeight: 0,
+            });
+            gsap.to(otherChange, { backgroundColor: "#1a1a1a", duration: 0.3 });
+          }
+        });
 
-    // Якщо ви хочете змінювати колір фону
-    gsap.to(change, {
-      backgroundColor: "#df0013", // Зміна кольору фону до червоного
-      duration: 1,
-      scrollTrigger: {
-        trigger: change,
-        start: "top 60%",
-        end: "top 30%",
-        scrub: true,
-      },
+        // Відкриваємо обраний блок і змінюємо колір на #DF0013
+        gsap.to(change, { height: 330, duration: 0.3, ease: "power2.out" });
+        gsap.to(change.querySelector(".change__body"), {
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          maxHeight: "210px",
+        });
+        gsap.to(change, { backgroundColor: "#DF0013", duration: 0.3 });
+      });
     });
   });
 }
@@ -434,7 +410,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btnPage.addEventListener("click", () => {
     if (!isExpanded) {
-      // Відкриваємо всі модулі
       gsap.to(itemsContainer, {
         height: "auto",
         duration: 0.6,
@@ -452,8 +427,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       btnPage.querySelector("span").textContent = "Згорнути модулі";
+      btnPage.removeAttribute("href");
     } else {
-      // Закриваємо модулі з урахуванням розміру екрану
       gsap.to(modules, {
         opacity: (i) => (i < 2 ? 1 : i === 2 ? 0.5 : 0),
         filter: (i) => (i === 2 ? "blur(2px)" : "blur(0px)"),
@@ -468,16 +443,19 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       btnPage.querySelector("span").textContent = "Всі модулі програми";
+      btnPage.setAttribute("href", "#program");
     }
 
     isExpanded = !isExpanded;
   });
 });
+
 document.querySelectorAll(".btn-page--description").forEach((btn) => {
   btn.addEventListener("click", function () {
     const formatItem = this.closest(".item").cloneNode(true);
     const popup = document.querySelector(".popup");
     const popupBody = document.querySelector(".popup__body");
+    const popupContent = document.querySelector(".popup__content");
 
     // Очищаємо попередній контент і додаємо клонований блок
     popupBody.innerHTML = "";
@@ -488,25 +466,54 @@ document.querySelectorAll(".btn-page--description").forEach((btn) => {
 
     // Відкриваємо попап з анімацією GSAP
     gsap.to(popup, { opacity: 1, visibility: "visible", duration: 0.5 });
-    gsap.from(".popup__content", {
+    gsap.from(popupContent, {
       scale: 1,
       opacity: 1,
       duration: 0.5,
       ease: "power2.out",
     });
 
-    // Закриття попапа при кліку на кнопку в клонованому елементі
+    // Закриття попапа при кліку на кнопку всередині попапа
     popupBody
       .querySelector(".btn-page--description")
       .addEventListener("click", (e) => {
         e.stopPropagation();
         closePopup();
       });
+
+    // Закриття при кліку на .btn-page--main
+    const btnMain = popupBody.querySelector(".btn-page--main");
+    if (btnMain) {
+      btnMain.addEventListener("click", (e) => {
+        e.stopPropagation();
+        closePopup();
+      });
+    }
   });
 });
 
 // Закриття попапа при кліку на .popup__close
 document.querySelector(".popup__close").addEventListener("click", closePopup);
+
+// Закриття при кліку поза попапом
+document.querySelector(".popup").addEventListener("click", function (e) {
+  if (!e.target.closest(".popup__content")) {
+    closePopup();
+  }
+});
+
+// Функція закриття попапа
+function closePopup() {
+  const popup = document.querySelector(".popup");
+  gsap.to(popup, {
+    opacity: 0,
+    visibility: "hidden",
+    duration: 0.5,
+    onComplete: () => {
+      document.body.classList.remove("no-scroll");
+    },
+  });
+}
 
 function closePopup() {
   gsap.to(".popup", {
@@ -601,6 +608,13 @@ function openPopup(type, url, isImage = false) {
   $("body").append(popupHtml);
   $(`.${type}-popup`).fadeIn(300);
 }
+$(".video__content").on("click", function () {
+  let videoUrl = $(this).data("video-url");
+  let videoId = videoUrl.split("/").pop(); // Отримуємо ID відео
+  let embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+
+  openPopup("video", embedUrl, false);
+});
 
 $(document).on("click", ".reviews__image", function () {
   var imageUrl = $(this).attr("src");
@@ -669,4 +683,29 @@ gsap.from(".company__item", {
     start: "top 80%", // Коли текст компанії входить в область видимості
     toggleActions: "play none none reverse",
   },
+});
+let cards = gsap.utils.toArray(".card");
+
+cards.forEach((card, i) => {
+  gsap.fromTo(
+    card,
+    {
+      opacity: 0,
+      y: 16, // Починають нижче
+      scale: 0.9, // Трохи менші
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 1.2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 80%", // Починає анімацію, коли картка входить у вікно
+        end: "top 40%",
+        scrub: true,
+      },
+    }
+  );
 });

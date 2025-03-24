@@ -4,6 +4,7 @@
   .container {
     position: relative;
   }
+
   &__gift {
     display: flex;
     align-items: center;
@@ -41,6 +42,9 @@
       background: center no-repeat;
       background-size: contain;
       margin-right: 10px;
+
+      @include media-breakpoint-up(xl) {
+      }
     }
   }
 
@@ -91,7 +95,7 @@
     svg {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: 100px;
       width: 26px;
       height: 26px;
       background-size: contain;
@@ -106,7 +110,7 @@
       }
     }
     .title {
-      font-size: 41px;
+      font-size: 37px;
       margin-bottom: 0;
 
       @include media-breakpoint-up(xl) {
@@ -174,6 +178,38 @@
       display: flex;
       flex-direction: column;
 
+      &__package {
+        display: inline-flex;
+        color: #000;
+        position: relative;
+        gap: 5px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 28px;
+        }
+
+        input:checked + span,
+        .tabs__tab--active span {
+          background: $maincolor;
+          color: #fff;
+        }
+
+        span {
+          display: inline-flex;
+          height: 34px;
+          border: 1px solid rgba(26, 26, 26, 0.2);
+          padding: 0 12px;
+          font-size: 16px;
+          align-items: center;
+          cursor: pointer;
+          font-weight: 700;
+
+          @include media-breakpoint-up(xl) {
+            font-size: 24px;
+          }
+        }
+      }
+
       .input__wrap {
         display: block;
         text-align: left;
@@ -182,7 +218,7 @@
 
       .input {
         width: 100%;
-        height: 60px;
+        height: 52px;
         background: transparent;
         border: none;
         border-bottom: 2px solid #000;

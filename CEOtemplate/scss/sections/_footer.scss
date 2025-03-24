@@ -43,6 +43,11 @@
     svg {
       fill: $orange;
     }
+    &_links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__socials {

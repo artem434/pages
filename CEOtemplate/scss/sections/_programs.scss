@@ -1,4 +1,22 @@
 .programs {
+  .container {
+    position: relative;
+  }
+  &--dec {
+    background-size: contain;
+    width: 1181px;
+    height: 720px;
+    position: absolute;
+    top: 250px;
+    right: -600px;
+    z-index: -1;
+    transform: rotate(90deg);
+    @include media-breakpoint-up(xl) {
+      right: inherit;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
   &__titles {
     position: relative;
     h2 {
@@ -89,6 +107,7 @@
       gap: 8px;
       opacity: 0.5;
       filter: blur(2px);
+      background-color: $bg;
 
       &:nth-child(1) {
         opacity: 1;

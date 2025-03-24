@@ -14,12 +14,15 @@
       padding-bottom: 120px;
     }
   }
-  .container::before,
-  .container::after,
-  .hero-shadow {
-    content: "";
-    position: absolute;
-    pointer-events: none; /* Не блокує взаємодію з контентом */
+
+  @include media-breakpoint-up(xl) {
+    .container::before,
+    .container::after,
+    .hero-shadow {
+      content: "";
+      position: absolute;
+      pointer-events: none; /* Не блокує взаємодію з контентом */
+    }
   }
 
   .container::before, /* Лівий затемнений край */
@@ -33,12 +36,12 @@
 
   .container::before {
     left: -44px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(to right, rgba(1, 1, 1, 1), transparent);
   }
 
   .container::after {
     right: -44px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(to left, rgba(1, 1, 1, 1), transparent);
   }
 
   .hero-shadow {
@@ -49,7 +52,7 @@
     bottom: 0;
     width: 120%;
     height: 30%; /* Висота затемнення */
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(to top, rgba(1, 1, 1, 1), transparent);
   }
 
   .video-container {
@@ -57,10 +60,20 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-
     height: 100%;
     background: url(../img/bg.webp) center/contain no-repeat;
     display: flex;
+  }
+
+  &--red-dec {
+    @include media-breakpoint-up(xl) {
+      background-size: contain;
+      width: 698px;
+      height: 753px;
+      position: absolute;
+      bottom: -100px;
+      right: -120px;
+    }
   }
 
   &__date {
@@ -71,7 +84,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 250px;
     position: relative;
 
     @include media-breakpoint-up(xl) {
@@ -116,10 +129,10 @@
   &__block-top {
     text-align: right;
     z-index: 1;
-    padding-bottom: 250px;
 
     @include media-breakpoint-up(xl) {
       max-width: 450px;
+      padding-top: 0;
       padding-bottom: 0;
       margin-left: auto;
     }
@@ -128,6 +141,22 @@
   &__block-bottom {
     text-align: center;
     z-index: 1;
+    position: relative;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: -86px;
+      left: 39%;
+      width: 403px;
+      height: 434px;
+      transform: translate(-50%, 0);
+      background: url(../img/dec-red-small.png) no-repeat center;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        top: -56px;
+      }
+    }
 
     @include media-breakpoint-up(xl) {
       text-align: left;

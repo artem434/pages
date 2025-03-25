@@ -1,0 +1,115 @@
+.changes {
+  position: relative;
+  &--dec {
+    background-size: contain;
+    width: 1181px;
+    height: 720px;
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, 0);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      gap: 16px;
+      flex-direction: row;
+    }
+  }
+  .change {
+    box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.35);
+    background: #1a1a1a;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.acvive {
+      background-color: $maincolor;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 32px 28px;
+      background-color: $maincolor;
+      width: 248px;
+      height: 530px;
+
+      &.active {
+        background: #1a1a1a;
+        gap: 88px;
+        width: 512px;
+
+        .change__header {
+          flex-direction: row;
+        }
+      }
+
+      &:nth-child(even) {
+        flex-direction: column-reverse;
+      }
+    }
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @include media-breakpoint-up(xl) {
+        flex-direction: column;
+      }
+
+      span {
+        font-size: 36px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 46px;
+          text-align: center;
+        }
+      }
+
+      b {
+        font-size: 88px;
+        display: block;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 300;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 158px;
+        }
+      }
+    }
+    &__body {
+      margin-top: 16px;
+      @include media-breakpoint-up(xl) {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 14px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}

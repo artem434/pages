@@ -26,21 +26,21 @@
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="icon"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-32x32.png"
+      href="https://bizconstructor.com/wp-content/uploads/2024/12/cropped-favicone-32x32-1-32x32.png"
       sizes="32x32"
     />
     <link
       rel="icon"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-192x192.png"
+      href="https://bizconstructor.com/wp-content/uploads/2024/12/cropped-favicone-32x32-1-192x192.png"
       sizes="192x192"
     />
     <link
-      rel="apple-touch-icon-precomposed"
-      href="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-180x180.png"
+      rel="apple-touch-icon"
+      href="https://bizconstructor.com/wp-content/uploads/2024/12/cropped-favicone-32x32-1-180x180.png"
     />
     <meta
       name="msapplication-TileImage"
-      content="https://bizconstructor.com/ua/wp-content/uploads/sites/8/2019/08/cropped-Frame-270x270.png"
+      content="https://bizconstructor.com/wp-content/uploads/2024/12/cropped-favicone-32x32-1-270x270.png"
     />
     <script src="js/modernizr-custom.js"></script>
     <script type="text/javascript">
@@ -513,7 +513,11 @@
                   value="false"
                   autocomplete="off"
                 />
-                <input type="hidden" name="send_to_gf" value="gf_hotelсео_offer" />
+                <input
+                  type="hidden"
+                  name="send_to_gf"
+                  value="gf_hotelсео_offer"
+                />
               </div>
               <button class="form__btn subm" type="submit">
                 ЗАЛИШИТИ ЗАЯВКУ
@@ -626,6 +630,83 @@
       <div class="lectors">
         <div class="experts__list swiper">
           <div class="swiper-wrapper">
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Євген <br />
+                  Аміров
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>засновник <span>Clever Hospitality</span></span>
+                    </li>
+                    <li><span>15 років в туризмі на ключових посадах</span></li>
+                    <li>
+                      <span>
+                        8 років європейської практики на посаді CEO керуючої
+                        компанії готельних комплексів у Греції, міських готелів
+                        у Німеччині та Нідерландах</span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >Реалізовані проекти в Украіні  Join Up! і Phoenix</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-2.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Нестор <br />
+                  Мельник
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>
+                        співзасновник і CEO <span>Skogur</span> — одного з
+                        перших та найбільших автономних котеджних містечок на
+                        заході України</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Артур <br />
+                  Лупашко
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>
+                        засновник групи компаній
+                        <span> Ribas Hotels Group</span></span
+                      >
+                    </li>
+                    <li>
+                      <span>
+                        автор книги
+                        <span>"Більше ніж сервіс"</span></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="lectors__item swiper-slide">
               <div
                 class="lectors__image lazy"
@@ -1011,7 +1092,11 @@
                     value="false"
                     autocomplete="off"
                   />
-                  <input type="hidden" name="send_to_gf" value="gf_hotelсео_offer" />
+                  <input
+                    type="hidden"
+                    name="send_to_gf"
+                    value="gf_hotelсео_offer"
+                  />
                 </div>
                 <button class="form__btn subm" type="submit">
                   ЗАЛИШИТИ ЗАЯВКУ
@@ -1334,71 +1419,59 @@
             <div class="swiper-wrapper">
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/1.png"
-              ></div>
-              <!-- <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/2.png"
-              ></div> -->
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/3.png"
+                data-bg="img/clients1/1.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/4.png"
+                data-bg="img/clients1/2.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/5.png"
+                data-bg="img/clients1/3.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/6.png"
+                data-bg="img/clients1/4.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/7.png"
+                data-bg="img/clients1/5.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/8.png"
+                data-bg="img/clients1/6.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/10.png"
+                data-bg="img/clients1/7.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/11.png"
+                data-bg="img/clients1/8.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/12.png"
+                data-bg="img/clients1/9.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/13.png"
+                data-bg="img/clients1/10.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/14.png"
+                data-bg="img/clients1/11.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/15.png"
+                data-bg="img/clients1/12.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/16.png"
+                data-bg="img/clients1/13.png"
               ></div>
               <div
                 class="swiper-slide logo lazy"
-                data-bg="img/clients/17.png"
-              ></div>
-              <div
-                class="swiper-slide logo lazy"
-                data-bg="img/clients/18.png"
+                data-bg="img/clients1/14.png"
               ></div>
             </div>
             <div class="swiper-button-prev"></div>

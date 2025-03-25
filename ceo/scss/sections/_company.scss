@@ -1,0 +1,67 @@
+.company {
+  position: relative;
+
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $maincolor;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 30px;
+    }
+  }
+
+  &__block {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 800px;
+      font-size: 18px;
+      gap: 28px;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 420px;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      max-width: 140px;
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 40px;
+        color: $maincolor;
+        color: $maincolor;
+      }
+      b {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 131%;
+      }
+    }
+  }
+}

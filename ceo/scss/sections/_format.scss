@@ -1,0 +1,185 @@
+.format {
+  &__content {
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+}
+.item {
+  padding: 12px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding: 26px;
+    max-width: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 77%;
+    z-index: 1;
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-bottom: solid 1px #252626;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    font-weight: 300;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 56px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    svg {
+      transform: scale(-1);
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include media-breakpoint-up(xl) {
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+
+    li {
+      font-size: 14px;
+      line-height: 136%;
+      padding-left: 24px;
+      position: relative;
+      display: none;
+      &:nth-child(-n + 4) {
+        display: block;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+
+      &::before {
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.85592 0.650146L1.50619 0.292812L0.791522 0.992275L1.14125 1.34961L1.85592 0.650146ZM12.6427 13.1011C12.8358 13.2984 13.1524 13.3018 13.3497 13.1087C13.5471 12.9155 13.5505 12.5989 13.3573 12.4016L12.6427 13.1011ZM1.14125 1.34961L12.6427 13.1011L13.3573 12.4016L1.85592 0.650146L1.14125 1.34961Z' fill='%23DF0013' /%3E%3Cpath d='M12.75 12.7528L0.998559 12.7528' stroke='%23DF0013' stroke-linecap='square' /%3E%3Cpath d='M13 12.7526L13 1.00112' stroke='%23DF0013' stroke-linecap='square' /%3E%3C/svg%3E")
+          no-repeat center;
+        background-size: contain;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 6px;
+        top: 6px;
+      }
+
+      &.no-active {
+        color: #808080;
+        &::before {
+          background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.85592 0.650146L1.50619 0.292812L0.791522 0.992275L1.14125 1.34961L1.85592 0.650146ZM12.6427 13.1011C12.8358 13.2984 13.1524 13.3018 13.3497 13.1087C13.5471 12.9155 13.5505 12.5989 13.3573 12.4016L12.6427 13.1011ZM1.14125 1.34961L12.6427 13.1011L13.3573 12.4016L1.85592 0.650146L1.14125 1.34961Z' fill='%23808080' /%3E%3Cpath d='M12.75 12.7528L0.998559 12.7528' stroke='%23808080' stroke-linecap='square' /%3E%3Cpath d='M13 12.7526L13 1.00118' stroke='%23808080' stroke-linecap='square' /%3E%3C/svg%3E")
+            no-repeat center;
+
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .btn-page {
+    font-size: 20px;
+    z-index: 1;
+
+    &--description {
+      font-size: 14px;
+      background: #1a1a1a;
+      border-right: solid 1px $maincolor;
+      color: $maincolor;
+      text-transform: lowercase;
+      max-width: 260px;
+      position: absolute;
+      bottom: 76px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 10px 0;
+      z-index: 2;
+
+      @include media-breakpoint-up(xl) {
+        bottom: 100px;
+      }
+
+      span {
+        color: $maincolor;
+      }
+
+      svg {
+        fill: $maincolor;
+        color: $maincolor;
+      }
+
+      &:hover {
+        svg {
+          fill: #fff;
+          color: #fff;
+        }
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    &--main {
+      max-width: 100%;
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 32px;
+      }
+    }
+  }
+  &--online {
+    color: #fff;
+    background-color: #1a1a1a;
+
+    h4 {
+      svg {
+        fill: #fff;
+        color: #fff;
+      }
+    }
+    &::before {
+      background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+    }
+  }
+
+  &--offline {
+    color: #000;
+    background-color: #f4f4f4;
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(244, 244, 244, 0) 0%,
+        #f4f4f4 100%
+      );
+    }
+    .btn-page--description {
+      background-color: #fff;
+    }
+  }
+}

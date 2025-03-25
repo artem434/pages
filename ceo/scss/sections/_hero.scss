@@ -1,0 +1,197 @@
+.hero {
+  // background: rgba(0, 0, 0, 0.3) url(../img/bg.webp) no-repeat center center;
+  background-size: contain;
+  position: relative;
+
+  .container {
+    padding-top: 100px;
+    z-index: 1;
+    @include media-breakpoint-up(xl) {
+      padding-top: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 120px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .container::before,
+    .container::after,
+    .hero-shadow {
+      content: "";
+      position: absolute;
+      pointer-events: none; /* Не блокує взаємодію з контентом */
+    }
+  }
+
+  .container::before, /* Лівий затемнений край */
+   .container::after {
+    /* Правий затемнений край */
+    top: 0;
+    width: 40%; /* Ширина затемнення */
+    height: 100%;
+    z-index: 0;
+  }
+
+  .container::before {
+    left: -44px;
+    background: linear-gradient(to right, rgba(1, 1, 1, 1), transparent);
+  }
+
+  .container::after {
+    right: -44px;
+    background: linear-gradient(to left, rgba(1, 1, 1, 1), transparent);
+  }
+
+  .hero-shadow {
+    /* Затемнення знизу */
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
+    bottom: 0;
+    width: 120%;
+    height: 30%; /* Висота затемнення */
+    background: linear-gradient(to top, rgba(1, 1, 1, 1), transparent);
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
+    background: url(../img/bg.webp) center/contain no-repeat;
+    display: flex;
+  }
+
+  &--red-dec {
+    @include media-breakpoint-up(xl) {
+      background-size: contain;
+      width: 698px;
+      height: 753px;
+      position: absolute;
+      bottom: -100px;
+      right: -120px;
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 250px;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -24px;
+      left: 68px;
+      content: "вперше";
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px 0 rgba(224, 0, 19, 0.95);
+      background: #e00013;
+      transform: rotate(3deg);
+      color: #fff;
+      padding: 2px 6px;
+    }
+
+    span {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $maincolor;
+    }
+  }
+  &__info {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+    }
+  }
+
+  &__block-top {
+    text-align: right;
+    z-index: 1;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 450px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__block-bottom {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: -86px;
+      left: 39%;
+      width: 403px;
+      height: 434px;
+      transform: translate(-50%, 0);
+      background: url(../img/dec-red-small.png) no-repeat center;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        top: -56px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+      max-width: 450px;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 112px;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 161px;
+        margin-bottom: 20px;
+      }
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 118%;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 34px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .btn-page {
+    @include media-breakpoint-up(xl) {
+    }
+    &::after {
+      background-color: $black;
+    }
+  }
+}

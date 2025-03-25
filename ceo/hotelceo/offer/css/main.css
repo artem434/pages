@@ -3517,8 +3517,23 @@ a {
   padding-top: 16px;
 }
 .lectors__text {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.2;
   color: #fff;
+}
+.lectors__text ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  color: var(--accent);
+}
+
+.lectors__text ul li span {
+  color: #fff;
+}
+
+.lectors__text ul li span span {
+  color: var(--accent);
+  font-weight: 600;
 }
 @media (max-width: 1200px) {
   .lectors__item--who {

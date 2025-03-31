@@ -233,6 +233,29 @@ const expertsSlider = new Swiper(".experts__list", {
   },
 });
 
+
+const teachingSlider = new Swiper(".teaching__list", {
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 20,
+  effect: "fade",
+  slidesPerView: 1,
+  autoHeight: true, 
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".next-teaching",
+    prevEl: ".prev-teaching",
+  },
+
+  on: {
+    init: function () {
+      lazyLoadInstance.update();
+    },
+  },
+});
+
 $(".item__more, .program .item__title").on("click", function () {
   $(this).parent().toggleClass("active");
 });
@@ -684,28 +707,28 @@ gsap.from(".company__item", {
     toggleActions: "play none none reverse",
   },
 });
-let cards = gsap.utils.toArray(".card");
+// let cards = gsap.utils.toArray(".card");
 
-cards.forEach((card, i) => {
-  gsap.fromTo(
-    card,
-    {
-      opacity: 0,
-      y: 16, // Починають нижче
-      scale: 0.9, // Трохи менші
-    },
-    {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      duration: 1.2,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: card,
-        start: "top 80%", // Починає анімацію, коли картка входить у вікно
-        end: "top 40%",
-        scrub: true,
-      },
-    }
-  );
-});
+// cards.forEach((card, i) => {
+//   gsap.fromTo(
+//     card,
+//     {
+//       opacity: 0,
+//       y: 16, // Починають нижче
+//       scale: 0.9, // Трохи менші
+//     },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       scale: 1,
+//       duration: 1.2,
+//       ease: "power2.out",
+//       scrollTrigger: {
+//         trigger: card,
+//         start: "top 80%", // Починає анімацію, коли картка входить у вікно
+//         end: "top 40%",
+//         scrub: true,
+//       },
+//     }
+//   );
+// });

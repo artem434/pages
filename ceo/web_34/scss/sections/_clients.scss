@@ -1,0 +1,33 @@
+.clients {
+  padding-top: 40px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 30px;
+      margin-bottom: 54px;
+    }
+
+    span {
+      color: $maincolor;
+    }
+  }
+  &__content {
+    padding: 0 52px;
+    position: relative;
+  }
+
+  &__slider {
+    padding: 0 24px;
+  }
+
+  .logo {
+    background: 50% / contain no-repeat;
+    height: 102px;
+  }
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./global//mixins";
+@import "./global/variables";
+@import "./global/reset";
+@import "./global/fonts";
+@import "./global/global";
+@import "./sections/title";
+@import "./sections/btn";
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/program";
+@import "./sections/who";
+@import "./sections/lector";
+@import "./sections/problem";
+@import "./sections/business";
+@import "./sections/clients";
+@import "./sections/faq";
+@import "./sections/register";
+@import "./sections/company";
+@import "./sections/reviews";
+@import "./sections/footer";
+.scroll-text {
+  opacity: 1;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.right-to-left {
+  transform: translateX(-100%);
+  @include media-breakpoint-up(xl) {
+    transform: translateX(0%);
+  }
+}
+
+.left-to-right {
+  transform: translateX(100%);
+  @include media-breakpoint-up(xl) {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,138 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 150px;
+    }
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    span {
+      color: $color-holders;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-holders;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 22px;
+      min-width: 480px;
+    }
+
+    ul {
+      list-style-type: disc;
+      color: $color-main;
+      padding-left: 22px;
+      font-size: 14px;
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+
+    strong {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+
+      span {
+        color: $color-main;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+    }
+
+    b {
+      color: $color-main;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__btn {
+  }
+  &.about--holders {
+    .container {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/dec-holders-l.png) no-repeat center;
+        top: 0;
+        left: -300px;
+        width: 338px;
+        height: 371px;
+        background-size: contain;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background: url(../img/dec-holders-r.png) no-repeat center;
+        bottom: -150px;
+        right: -160px;
+        width: 338px;
+        height: 371px;
+        background-size: contain;
+        z-index: -1;
+
+        @include media-breakpoint-up(xl) {
+          bottom: 0px;
+        }
+      }
+    }
+
+    .btn-page {
+      background-color: $color-holders;
+
+      &:hover {
+        color: $color-holders;
+        background-color: #fff;
+      }
+    }
+  }
+}

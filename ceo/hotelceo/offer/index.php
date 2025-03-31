@@ -627,9 +627,35 @@
           </div>
         </div>
       </section>
-      <div class="lectors">
+    <div class="lectors">
         <div class="experts__list swiper">
           <div class="swiper-wrapper">
+              <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Артур <br />
+                  Лупашко
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>
+                        засновник групи компаній
+                        <span> Ribas Hotels Group</span></span
+                      >
+                    </li>
+                    <li>
+                      <span>
+                        автор книги
+                        <span>"Більше ніж сервіс"</span></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="lectors__item swiper-slide">
               <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
               <div class="lectors__footer">
@@ -681,26 +707,121 @@
                 </div>
               </div>
             </div>
+          
             <div class="lectors__item swiper-slide">
-              <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
+              <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
               <div class="lectors__footer">
                 <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
                 <p class="lectors__name">
-                  Артур <br />
-                  Лупашко
+                  Гліб <br />
+                  Кузнєцов
                 </p>
                 <div class="lectors__text">
                   <ul>
                     <li>
                       <span>
-                        засновник групи компаній
-                        <span> Ribas Hotels Group</span></span
-                      >
+                        CEO Керуючої компанії <span>ApGrade Hotels</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span> отельєр з 15+ років досвіду в ніші</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-5.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Артур <br />
+                  Снігир
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span> СЕО <span>MEDVINO Safari & Lodgest</span> </span>
+                    </li>
+                    <li>
+                      <span> Готельєр з 15 річним досвідом </span>
+                    </li>
+                    <li>
+                      <span> Запустив те перезапустив понад 20 об'єктів </span>
+                    </li>
+                    <li>
+                      <span
+                        >Проконсультував понад 200 готелів та ресторанів
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-6.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Анастасія <br />
+                  Панова
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span> експерт у сфері гостинності та серсісу </span>
                     </li>
                     <li>
                       <span>
-                        автор книги
-                        <span>"Більше ніж сервіс"</span></span
+                        засновниця авторських курсів
+                        <span>«NOVA HOSPITALITY SCHOOL»</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        понад 12 років досвіду у провідних готелях Іспанії,
+                        Греції, Польщі на керуючих посадах</span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >викладач кафедри туризму та готельно-ресторанної справи
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-7.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Максим <br />
+                  Бондарук
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>
+                        28 років досвіду управління готелями та консалтингу в
+                        готельній сфері.
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        >Керування різними типами об’єктів розміщення: від
+                        заміських комплексів до 5* готелів, у тому числі
+                        Генеральним менеджером готелю
+                        <span>Premier Palace Kyiv</span>,
+                        <span>Premier Dnister Lviv</span> та партнером в
+                        <span>HeyDay Hotel Partners</span>. </span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >Експерт в побудові ефективних команд різних розмірів та
+                        перезапуску кризових/стагнуючих бізнесів</span
                       >
                     </li>
                   </ul>

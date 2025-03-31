@@ -76,6 +76,10 @@ $("form .subm").on("click", function (e) {
   setCookie("name", $('input[name="name"]').val(), 365);
   setCookie("email", $('input[name="email"]').val(), 365);
   setCookie("phone", $('input[name="phone"]').val(), 365);
+  // Додаємо відстеження LinkedIn
+  if (window.lintrk) {
+    window.lintrk("track", { conversion_id: 21670585 });
+  }
   setTimeout(function () {
     form.submit();
   }, 1000);

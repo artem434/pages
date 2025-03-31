@@ -1,0 +1,82 @@
+.program {
+  position: relative;
+
+  .container {
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+      margin-bottom: 38px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 20px;
+      margin-bottom: 38px;
+    }
+
+    li {
+      border-radius: 7px;
+      padding: 12px 12px 12px 9px;
+      line-height: 1.2;
+      background: #ededec;
+      display: flex;
+      gap: 16px;
+      padding: 17px 27px 17px 17px;
+      align-items: center;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__icon {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 38px;
+    height: 38px;
+    border-radius: 7px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 30px;
+      margin-bottom: 38px;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

@@ -817,7 +817,7 @@
                 <p class="form__agree">
                   By clicking the “Submit an application” button, you consent to
                   the processing of your personal data in accordance with the
-                  <a href="http://privacy.bizconstructor.com/">Privacy Policy</a
+                  <a href="http://privacy.bizconstructor.com/ua/">Privacy Policy</a
                   >.
                   <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                 </p>
@@ -1049,7 +1049,7 @@
               </li>
               <li>
                 <a
-                  href="http://privacy.bizconstructor.com/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
+                  href="http://privacy.bizconstructor.com/ua/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
                   >Privacy policy
                 </a>
               </li>

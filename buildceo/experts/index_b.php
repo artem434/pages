@@ -494,7 +494,7 @@
                                 <input type="hidden" name="send_to_gf" value="buildceo">
                             </div>
                             <button class="form__btn subm" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
-                            <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/'>Політикою конфіденційності</a>. <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
+                            <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/ua/'>Політикою конфіденційності</a>. <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
                             </p>
                         </form>
                     </div>
@@ -652,7 +652,7 @@
                             <!-- <a href="http://refund.bizconstructor.com/ua?_ga=2.84367262.645259001.1658240152-892051805.1657004770">Умови повернення коштів</a> -->
                         </li>
                         <li>
-                            <a href="http://privacy.bizconstructor.com/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050">Політика конфіденційності</a>
+                            <a href="http://privacy.bizconstructor.com/ua/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050">Політика конфіденційності</a>
                         </li>
                         <li>
                             <a href="http://terms-conditions.bizconstructor.com/ua?_ga=2.75242514.1675371198.1664796566-206334048.1655729050">Публічна оферта UA</a>

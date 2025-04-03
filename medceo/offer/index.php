@@ -317,7 +317,7 @@
               <button class="form__btn subm" type="submit">
                 Зареєструватися
               </button>
-              <!-- <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/'>Політикою конфіденційності</a>. <a href="http://refund.bizconstructor.com/">Політика повернення</a>
+              <!-- <p class="form__agree">Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку твоїх персональних даних згідно з <a href='http://privacy.bizconstructor.com/ua/'>Політикою конфіденційності</a>. <a href="http://refund.bizconstructor.com/">Політика повернення</a>
                     </p> -->
             </form>
           </div>
@@ -980,7 +980,7 @@
                 <p class="form__agree">
                   Натискаючи кнопку «Залишити заявку», ти даєш згоду на обробку
                   твоїх персональних даних згідно з
-                  <a href="http://privacy.bizconstructor.com/"
+                  <a href="http://privacy.bizconstructor.com/ua/"
                     >Політикою конфіденційності</a
                   >.
                   <!-- <a href="http://refund.bizconstructor.com/">Політика повернення</a> -->
@@ -1242,7 +1242,7 @@
               </li>
               <li>
                 <a
-                  href="http://privacy.bizconstructor.com/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
+                  href="http://privacy.bizconstructor.com/ua/ua/?_ga=2.153252920.1675371198.1664796566-206334048.1655729050"
                   >Політика конфіденційності</a
                 >
               </li>

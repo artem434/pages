@@ -1,0 +1,173 @@
+.register {
+  position: relative;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  .container {
+    padding-top: 48px;
+    position: relative;
+  }
+
+  &__content {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: block;
+    }
+
+    b {
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $maincolor;
+    }
+  }
+
+  &__title {
+    h3 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 160%;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 18px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 40px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 36px;
+        color: #e8ff55;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 56px;
+        }
+      }
+    }
+    h4 {
+      text-transform: uppercase;
+      padding-left: 98px;
+      margin-bottom: 28px;
+      position: relative;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 117%;
+      position: relative;
+      text-transform: uppercase;
+      color: #fff;
+
+      span {
+        color: #e8ff55;
+        font-style: italic;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 69px;
+        height: 72px;
+        background: url("data:image/svg+xml,%3Csvg width='80' height='82' viewBox='0 0 80 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.538354 76.8688L0.066673 77.3304L0.989964 78.2738L1.46165 77.8121L0.538354 76.8688ZM79.4616 1.47168C79.7221 1.21672 79.7266 0.798857 79.4717 0.538354C79.2167 0.277852 78.7989 0.273359 78.5384 0.528319L79.4616 1.47168ZM1.46165 77.8121L79.4616 1.47168L78.5384 0.528319L0.538354 76.8688L1.46165 77.8121Z' fill='white' /%3E%3Cpath d='M79 2.66016V80.6602' stroke='white' stroke-width='1.32' stroke-linecap='square' /%3E%3Cpath d='M79.0001 0.999947L1.00012 0.999947' stroke='white' stroke-width='1.32' stroke-linecap='square' /%3E%3C/svg%3E")
+          no-repeat center center;
+        background-size: contain;
+        left: 12px;
+        z-index: 0;
+        bottom: 20px;
+
+        @include media-breakpoint-up(xl) {
+          width: 80px;
+          height: 82px;
+          left: 0px;
+          bottom: 97px;
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 56px;
+        max-width: 600px;
+      }
+    }
+  }
+
+  &__form {
+    background: #fff;
+    padding: 16px;
+    @include media-breakpoint-up(xl) {
+      max-width: 780px;
+      padding: 38px 62px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      .input__wrap {
+        display: block;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .input {
+        width: 100%;
+        height: 60px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #000;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 60px;
+        display: block;
+        color: #000;
+      }
+
+      .input::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .input::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .intl-tel-input {
+        width: 100%;
+      }
+      &__btn {
+        text-transform: uppercase;
+        padding: 20px 10px;
+        @include media-breakpoint-up(xl) {
+          width: 100%;
+        }
+      }
+
+      &__agree {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 12px;
+        }
+        a {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

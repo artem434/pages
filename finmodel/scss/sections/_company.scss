@@ -72,9 +72,13 @@
     gap: 20px;
     margin-top: 56px;
 
+    @include media-breakpoint-up(xl) {
+      padding-right: 100px;
+    }
+
     li {
       width: calc(50% - 10px);
-      font-size: 18px;
+      font-size: 20px;
 
       @include media-breakpoint-up(xl) {
         width: 100%;

@@ -74,7 +74,7 @@
     border-radius: 27px;
 
     @include media-breakpoint-up(xl) {
-      padding: 48px 32px 48px 48px;
+      padding: 34px 26px;
     }
 
     &__header {
@@ -103,13 +103,13 @@
         gap: 14px;
       }
       li {
-        padding-left: 44px;
+        padding-left: 30px;
         position: relative;
         font-weight: 400;
 
         @include media-breakpoint-up(xl) {
           font-size: 18px;
-          width: 48%;
+          width: 49%;
         }
 
         i {

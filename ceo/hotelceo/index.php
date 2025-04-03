@@ -462,7 +462,7 @@
       <div class="lectors">
         <div class="experts__list swiper">
           <div class="swiper-wrapper">
-              <div class="lectors__item swiper-slide">
+            <div class="lectors__item swiper-slide">
               <div class="lectors__image lazy" data-bg="img/lector-3.jpg"></div>
               <div class="lectors__footer">
                 <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
@@ -539,7 +539,7 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="lectors__item swiper-slide">
               <div class="lectors__image lazy" data-bg="img/lector-4.jpg"></div>
               <div class="lectors__footer">
@@ -624,72 +624,42 @@
                 </div>
               </div>
             </div>
+            
             <div class="lectors__item swiper-slide">
-              <div class="lectors__image lazy" data-bg="img/lector-7.jpg"></div>
+              <div class="lectors__image lazy" data-bg="img/lector-8.jpg"></div>
               <div class="lectors__footer">
                 <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
                 <p class="lectors__name">
-                  Максим <br />
-                  Бондарук
+                  Олександр <br />
+                  Чорний
                 </p>
                 <div class="lectors__text">
                   <ul>
                     <li>
                       <span>
-                        28 років досвіду управління готелями та консалтингу в
-                        готельній сфері.
+                        CEO <span>Smart Education Hotel School</span>
                       </span>
                     </li>
                     <li>
-                      <span
-                        >Керування різними типами об’єктів розміщення: від
-                        заміських комплексів до 5* готелів, у тому числі
-                        Генеральним менеджером готелю
-                        <span>Premier Palace Kyiv</span>,
-                        <span>Premier Dnister Lviv</span> та партнером в
-                        <span>HeyDay Hotel Partners</span>. </span
-                      >
+                      <span>Сертифікований бізнес-тренер  </span>
                     </li>
                     <li>
                       <span
-                        >Експерт в побудові ефективних команд різних розмірів та
-                        перезапуску кризових/стагнуючих бізнесів</span
-                      >
+                        >3 освіти – юриспруденція, історія, маркетинг.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Навчання в Smart Education вже пройшли понад 1800
+                        учасників з України, Грузії, Польщі, Німеччини, Непалу,
+                        Молдови.
+                      </span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="lectors__item swiper-slide">
-              <div
-                class="lectors__image lazy"
-                data-bg="img/lector-male.png"
-              ></div>
-              <div class="lectors__footer">
-                <p class="lectors_subname">Експерт з маркетингу</p>
-                <!-- <p class="lectors__name">
-                  Дмитро <br />
-                  Стрижов
-                </p>
-                <div class="lectors__text">
-                  засновник та член Advisory Board Холдингу SHERIFF, магістр
-                  державного управління у сфері національної безпеки
-                </div> -->
-              </div>
-            </div>
-            <div class="lectors__item swiper-slide">
-              <div
-                class="lectors__image lazy"
-                data-bg="img/lector-female.png"
-              ></div>
-              <div class="lectors__footer">
-                <p class="lectors_subname">Фахівець з масштабування бізнесу</p>
-                <!-- <div class="lectors__text">
-                  співзасновник мережі Галя Балувана та власник мережі MultiСook
-                  та Gabar-Multibar
-                </div> -->
-              </div>
-            </div>
+
             <div class="lectors__item swiper-slide">
               <div
                 class="lectors__image lazy"

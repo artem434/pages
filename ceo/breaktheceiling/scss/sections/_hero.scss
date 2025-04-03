@@ -1,0 +1,201 @@
+.hero {
+  padding-top: 98px;
+  padding-bottom: 0px;
+  text-align: left;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 180px;
+    padding-bottom: 0;
+
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 36px;
+    z-index: 2;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 340px;
+      right: 60px;
+      width: 130px;
+      height: 130px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='151' height='151' viewBox='0 0 151 151' fill='none'%3E%3Crect x='21.5713' y='21.5714' width='107.857' height='107.857' rx='53.9286' fill='url(%23paint0_linear_304_98)'/%3E%3Cpath d='M95.9922 75.5007L65.2529 93.248L65.2529 57.7533L95.9922 75.5007Z' fill='white'/%3E%3Ccircle cx='75.5' cy='75.5' r='74.9607' stroke='url(%23paint1_linear_304_98)' stroke-width='1.07857'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_304_98' x1='75.4999' y1='21.5714' x2='75.4999' y2='129.429' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233317FE'/%3E%3Cstop offset='0.63' stop-color='%2374088C'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_304_98' x1='75.5' y1='0' x2='75.5' y2='151' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233317FE'/%3E%3Cstop offset='0.63' stop-color='%2374088C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+        no-repeat center;
+      background-size: contain;
+
+      @include media-breakpoint-up(xl) {
+        width: 151px;
+        height: 151px;
+        right: 230px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 154px;
+    }
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 7px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      padding: 4px 18px;
+      font-size: 18px;
+      margin-bottom: 54px;
+    }
+
+    b {
+      color: $mainblue;
+      font-weight: 700;
+    }
+
+    br {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+  }
+
+  // &__shadow {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 600px;
+  //   z-index: 1;
+  //   background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  //   @include media-breakpoint-up(xl) {
+  //     display: none;
+  //   }
+  // }
+
+  &__img {
+    width: 384px;
+    height: 669px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -84px;
+    right: -100px;
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      width: 707px;
+      height: 787px;
+      bottom: -75px;
+      right: -68px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 180px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 38px;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 66px;
+      max-width: 764px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 140px;
+    padding-right: 174px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 30px;
+      font-weight: 500;
+      max-width: 661px;
+      padding-right: 0;
+      margin-bottom: 54px;
+    }
+  }
+
+  &__btn {
+    max-width: 343px;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__gift {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 460px;
+    }
+    p {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #fff;
+      text-align: left;
+
+      @include media-breakpoint-up(xl) {
+        color: #000;
+        font-size: 16px;
+      }
+
+      b {
+        font-weight: 700;
+      }
+    }
+
+    &-icon {
+      min-width: 50px;
+      height: 50px;
+      background: center no-repeat;
+      background-size: contain;
+      margin-right: 10px;
+    }
+  }
+}

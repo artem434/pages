@@ -1,6 +1,6 @@
 .program {
   padding: 58px 0 69px;
-
+  position: relative;
   @include media-breakpoint-up(xl) {
     padding-top: 80px;
   }

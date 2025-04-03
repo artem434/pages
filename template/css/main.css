@@ -224,14 +224,6 @@ body {
   line-height: normal;
 }
 
-body.fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
 body.fixed section {
   filter: blur(2px);
 }

@@ -1166,16 +1166,38 @@ button {
 
 .hero {
   position: relative;
+  background: rgba(0, 89, 13, 1)
+    linear-gradient(77deg, rgba(0, 151, 22, 0.6) 0%, rgba(0, 151, 22, 0.6) 100%);
 }
 
-.hero::before {
+.hero__img {
+  position: absolute;
+  bottom: 220px;
+  left: 54%;
+  transform: translateX(-50%);
+  width: 394px;
+  height: 390px;
+  background-size: contain;
+
+  @media only screen and (min-width: 1024px) {
+    width: 554px;
+    height: 547px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    transform: translateX(0%);
+    left: inherit;
+    right: -60px;
+  }
+}
+
+/* .hero::before {
   content: "";
   background: url("../img/hero_bg.png") center/cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -99;
-}
+} */
 
 .hero__inner {
   padding-top: 100px;
@@ -1192,7 +1214,9 @@ button {
 
 .hero-block__btm {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 23px;
+  z-index: 2;
+  position: relative;
 }
 .form__btn-wrap {
   width: 100%;
@@ -1241,7 +1265,9 @@ button {
 
 .hero-form__bonus-image {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
+  left: 50px;
+  transform: scale(0.9);
   /* transform: translate(20%, -45%); */
   background: center / contain no-repeat;
   width: 354.943px;
@@ -1338,8 +1364,9 @@ button {
   line-height: 1.2;
   text-transform: uppercase;
   @media only screen and (min-width: 760px) {
-    font-size: 32px;
-    margin-bottom: 62px;
+    font-size: 41px;
+    margin-bottom: 14px;
+    max-width: 620px;
   }
 }
 
@@ -1352,9 +1379,9 @@ button {
   font-family: "MuseoSansCyrl";
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   margin-top: 18px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .hero__data-list {
@@ -1829,6 +1856,28 @@ button {
   display: flex;
   margin: -20px;
   padding-top: 0;
+}
+
+.lecturer__inner--revert {
+  flex-direction: row-reverse;
+  gap: 74px;
+  @media only screen and (max-width: 1024px) {
+    gap: 0;
+  }
+}
+.lecturer__inner--revert .lecturer__info {
+  display: flex;
+  flex-direction: column;
+  flex: inherit;
+  justify-content: center;
+}
+
+.lecturer__inner--revert .lecturer__info p {
+  padding-right: 300px !important;
+
+  @media only screen and (max-width: 1024px) {
+    padding-right: 0 !important;
+  }
 }
 
 .lecturer__info {
@@ -2339,8 +2388,8 @@ button {
   }
 
   .hero__title {
-    font-size: 36px;
-    max-width: 535px;
+    font-size: 41px;
+    max-width: 620px;
   }
 
   .hero__title br {
@@ -2551,7 +2600,7 @@ button {
     font-size: 14px;
   }
   .hero-block__btm {
-    margin-top: 0;
+    margin-top: 280px;
   }
 
   .wrapper {
@@ -2774,10 +2823,10 @@ button {
   }
 
   .hero-form__bonus-image {
-    bottom: -13px;
+    bottom: 323px;
     width: 214px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 56%;
+    transform: translateX(-50%) scale(0.8);
   }
 
   .hero-form__bonus-image::before {

@@ -489,6 +489,32 @@
               </div>
             </div>
             <div class="lectors__item swiper-slide">
+              <div class="lectors__image lazy" data-bg="img/lector-9.jpg"></div>
+              <div class="lectors__footer">
+                <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
+                <p class="lectors__name">
+                  Ірина <br />
+                  Сідлецька
+                </p>
+                <div class="lectors__text">
+                  <ul>
+                    <li>
+                      <span>
+                        Президентка
+                        <span> UHRA</span></span
+                      >
+                    </li>
+                    <li>
+                      <span>
+                        CEO
+                        <span>Vertex Hotel Group</span></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lectors__item swiper-slide">
               <div class="lectors__image lazy" data-bg="img/lector-1.jpg"></div>
               <div class="lectors__footer">
                 <!-- <p class="lectors_subname">Експерт з маркетингу</p> -->
@@ -624,7 +650,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="lectors__item swiper-slide">
               <div class="lectors__image lazy" data-bg="img/lector-8.jpg"></div>
               <div class="lectors__footer">

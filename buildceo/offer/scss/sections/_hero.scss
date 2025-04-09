@@ -1,0 +1,403 @@
+.no-webp .hero {
+  background: url(../img/hero-xl.jpg) top center no-repeat;
+}
+.hero {
+  background: url(../img/hero-xl.webp) top center no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 56px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 136px;
+    padding-bottom: 86px;
+  }
+
+  .container {
+    @extend %content;
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+  &__form {
+    border: 3px solid #ff8129;
+    padding: 16px;
+    border-radius: 16px;
+    background: #5a5a5a;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 490px;
+    }
+  }
+  h1 {
+    color: $orange;
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 202px;
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 20px;
+
+      .btn {
+        width: auto;
+        padding: 0 40px;
+
+        @include media-breakpoint-up(xl) {
+          max-width: 400px;
+        }
+      }
+    }
+
+    .btn-page--full {
+      position: fixed;
+      z-index: 10;
+      width: 340px;
+      height: 56px;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-breakpoint-up(xl) {
+        position: relative;
+        left: inherit;
+        bottom: inherit;
+        left: inherit;
+        transform: translate(0);
+      }
+    }
+
+    .btn-page-nofull {
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        display: inherit;
+        background-color: $bg;
+        position: relative;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 44px;
+      padding-bottom: 42px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    color: $white;
+    font-weight: 500;
+    display: flex;
+    padding-bottom: 28px;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 44px;
+      font-size: 22px;
+    }
+
+    span {
+      color: $orange;
+      padding: 0 12px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 28px;
+    position: relative;
+    padding-left: 12px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 272px;
+    }
+
+    &::after {
+      content: "“";
+      color: $orange;
+      position: absolute;
+      font-style: italic;
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__btn {
+    position: fixed;
+    z-index: 10;
+    width: 340px;
+    height: 56px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      left: inherit;
+      transform: translate(0);
+    }
+  }
+  .form {
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
+    &__title {
+      color: $orange;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &__package {
+      display: inline-flex;
+      background-color: #fff;
+      border-radius: 32px;
+      padding: 2px;
+      position: relative;
+      gap: 0px;
+      margin-bottom: 35px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 28px;
+        padding: 2px 4px;
+      }
+
+      input:checked + span,
+      .tabs__tab--active span {
+        background: $orange;
+        border-radius: 32px;
+      }
+
+      &__btn {
+        @include media-breakpoint-up(xl) {
+          max-width: 100%;
+        }
+      }
+
+      span {
+        display: inline-flex;
+        height: 34px;
+        padding: 0 4px;
+        text-transform: uppercase;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+          height: 38px;
+          padding: 0 8px;
+        }
+      }
+    }
+
+    .input__wrap {
+      display: block;
+      text-align: left;
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+    .input {
+      width: 100%;
+      height: 60px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #fff;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 60px;
+      display: block;
+      color: #fff;
+    }
+
+    .intl-tel-input {
+      width: 100%;
+    }
+
+    &__btn {
+      margin: 30px 0 14px;
+      border: none;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+      &:hover {
+        background-color: $white;
+        color: $black;
+        cursor: pointer;
+      }
+    }
+
+    &__agree {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: left;
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+  .hero__form_sub-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .hero__form_sub-block .form__package {
+    margin-bottom: 0;
+  }
+
+  .hero__timer_item .time {
+    color: #fff;
+
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .hero__timer_item span {
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .hero__timer_item {
+    position: relative;
+  }
+
+  .hero__timer_item::before {
+    content: ":";
+    position: absolute;
+    color: #fff;
+
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    right: -13px;
+    top: -1px;
+  }
+
+  .hero__timer_item:last-child::before {
+    display: none;
+  }
+
+  .hero__form_timer {
+    display: flex;
+    width: 100%;
+    max-width: 161px;
+    justify-content: space-between;
+  }
+
+  .hero__timer_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+  }
+  .hero__form_title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .hero__form_title b {
+    padding: 3px 0;
+    color: #fff;
+
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #ff8129;
+  }
+  @media (max-width: 1260px) {
+    .hero__form {
+      max-width: 325px;
+    }
+    .hero__form_title {
+      font-size: 19px;
+    }
+
+    .hero__form_title b {
+      font-size: 19px;
+    }
+
+    .hero__timer_item .time {
+      font-size: 18px;
+    }
+
+    .hero__timer_item::before {
+      font-size: 22px;
+      right: -4px;
+    }
+
+    .hero__form {
+      padding: 25px 15px;
+    }
+
+    .hero__container {
+      padding-bottom: 14px;
+    }
+
+    .hero__container::before {
+      bottom: -26px;
+      right: 50px;
+    }
+  }
+}

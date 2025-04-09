@@ -1,0 +1,167 @@
+.no-webp .results {
+  background: url(../img/results-bg.jpg) center no-repeat;
+}
+.results {
+  background: url(../img/results-bg.webp) center no-repeat;
+
+  background-size: cover;
+  .container {
+    @extend%content!optional;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 26px;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+
+    span {
+      color: $orange;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  &__content {
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    li {
+      max-width: 343px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(0px);
+      padding: 32px;
+
+      @include media-breakpoint-up(xl) {
+        padding: 24px 32px;
+        max-width: 360px;
+
+        &:nth-child(4) {
+          transform: translateY(-24px);
+        }
+
+        &:nth-child(5) {
+          transform: translateY(-24px);
+        }
+      }
+
+      &:last-child {
+        b {
+          display: inline;
+        }
+      }
+
+      strong {
+        color: $orange;
+        font-size: 26px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 14px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 32px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 20px;
+        }
+
+        b {
+          font-weight: 700;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__subblock {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    color: $white;
+    max-width: 360px;
+
+    span {
+      margin-left: auto;
+      display: block;
+      width: 273px;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 133%;
+
+      b {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $orange;
+        @include media-breakpoint-up(xl) {
+          font-size: 74px;
+        }
+      }
+    }
+  }
+
+  &__subtext {
+    color: $white;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 86px;
+      margin-top: 40px;
+      margin-right: 112px;
+    }
+
+    p {
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+    }
+    //margin-bottom: 24px;
+  }
+
+  &__btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+}

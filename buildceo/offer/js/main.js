@@ -42,11 +42,12 @@ $.get("https://ipapi.co/json/", function (obj) {
 $("form .subm").on("click", function (e) {
   e.preventDefault();
   var form = $(this).closest("form");
+  var submitButton = form.find(".form__btn");
   form.addClass("loading");
-  form.find(".subm").prop("disabled", true);
   setCookie("name", $('input[name="name"]').val(), 365);
   setCookie("email", $('input[name="email"]').val(), 365);
   setCookie("phone", $('input[name="phone"]').val(), 365);
+  submitButton.prop("disabled", true);
   setTimeout(function () {
     form.submit();
   }, 1000);
@@ -233,3 +234,38 @@ $(".header__burger").on("click", function () {
   $(".header").toggleClass("active");
   $("body").toggleClass("fixed");
 });
+$(document).ready(function () {
+  var ranges = [
+    { topId: "hero", bottomId: "format" },
+    { topId: "register", bottomId: "how" },
+  ];
+  var $heroBtn = $(".hero__btn");
+
+  $(window).scroll(function () {
+    var scrollPosition = $(window).scrollTop();
+    var showButton = ranges.every(function (range) {
+      var topOffset = $("#" + range.topId).offset().top;
+      var bottomOffset = $("#" + range.bottomId).offset().top;
+      return scrollPosition < topOffset || scrollPosition > bottomOffset;
+    });
+
+    $heroBtn.toggleClass("d-none", !showButton);
+  });
+});
+
+// $(document).ready(function () {
+//   var topElementId = "register";
+//   var bottomElementId = "footer";
+//   var $heroBtn = $(".btn-page--full");
+
+//   $(window).scroll(function () {
+//     var topOffset = $("#" + topElementId).offset().top;
+//     var bottomOffset = $("#" + bottomElementId).offset().top;
+//     var scrollPosition = $(window).scrollTop();
+
+//     $heroBtn.toggleClass(
+//       "d-none",
+//       scrollPosition >= topOffset && scrollPosition <= bottomOffset
+//     );
+//   });
+// });

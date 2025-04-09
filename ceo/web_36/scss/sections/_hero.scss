@@ -1,0 +1,243 @@
+.hero {
+  padding-top: 98px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: linear-gradient(43deg, #dad9d6 0%, #b5a69d 100%);
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 152px;
+    padding-bottom: 0;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 36px;
+    z-index: 2;
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 54px;
+    }
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 4px 52px;
+    border-radius: 7px;
+    background-color: $maincolor;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(xl) {
+      padding: 4px 18px;
+    }
+
+    span {
+      display: block;
+    }
+
+    b {
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #000;
+
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 313px;
+    height: 579px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+
+    @include media-breakpoint-up(xl) {
+      width: 461px;
+      height: 842px;
+      bottom: -300px;
+      left: 77%;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 180px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 28px;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 110%;
+    //text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 52px;
+      color: #000;
+      max-width: 760px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__slider {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    padding: 8px 13px;
+    width: 331px;
+    backdrop-filter: blur(14px);
+    background: rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    position: relative;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 100px;
+      background: transparent;
+      width: 451px;
+      margin-bottom: 38px;
+    }
+
+    .subtitle {
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        line-height: 1.4;
+        color: #fff;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+          text-align: left;
+          color: #000;
+        }
+      }
+      &__number {
+        border-radius: 7px 7px 0 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 37px;
+        height: 34px;
+        background-color: $maincolor;
+        position: absolute;
+        top: -44px;
+        left: 0;
+
+        @include media-breakpoint-up(xl) {
+          border-radius: 7px 0 0 7px;
+          top: 0px;
+          left: -50px;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      display: inline-flex;
+      bottom: 8px;
+      right: 18px;
+      left: inherit;
+      width: max-content;
+      .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        margin: 0 2px;
+        &.swiper-pagination-bullet-active {
+          background-color: $maincolor;
+        }
+      }
+    }
+  }
+  &__btn {
+    max-width: 300px;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__gift {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 460px;
+    }
+    p {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #fff;
+      text-align: left;
+
+      @include media-breakpoint-up(xl) {
+        color: #000;
+        font-size: 16px;
+      }
+
+      b {
+        font-weight: 700;
+      }
+    }
+
+    &-icon {
+      min-width: 50px;
+      height: 50px;
+      background: center no-repeat;
+      background-size: contain;
+      margin-right: 10px;
+    }
+  }
+}
